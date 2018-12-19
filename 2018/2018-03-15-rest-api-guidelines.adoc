@@ -1,0 +1,49 @@
+= REST API Guidelines
+Orest Ivasiv
+2018-03-15
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: api
+:source-highlighter: prettify
+:icons: font
+:my-image-dir: /images
+:ref-microsoft: https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md
+:ref-zalando: https://github.com/zalando/restful-api-guidelines
+:ref-paypal: https://github.com/paypal/api-standards/blob/master/api-style-guide.md
+
+
+REST API is the most popular interface for communication between different component of the system.
+There are a lot of different common sense approaches to design RESTful API.
+Despite this fact it is always better to have something written as a reference to follow common principles during API design of the system.
+
+Here I have collected some REST API guidelines and API References. It's nice start point for your _inspiration_.
+
+== REST API Guidelines
+
+- *{ref-microsoft}[Microsoft]* - REST API Guidelines
+- *https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design[Microsoft]* - Best Practices - API Design
+- *{ref-zalando}[Zalando]* - REST API Guidelines
+- *{ref-paypal}[Paypal]* - REST API Guidelines
+- *https://developer.atlassian.com/server/framework/atlassian-sdk/atlassian-rest-api-design-guidelines-version-1/[Atlassian]* - REST API design guidelines version 1
+- *https://developers.digitalocean.com/documentation/v2/[Digital Ocean]* - API v2 Introduction
+- *https://cloud.google.com/apis/design/[Google Cloud Platform]* - API Design Guide
+- *http://restful-api-design.readthedocs.io/en/latest/[Red Hat]* Lessons learnt from designing the Red Hat Enterprise Virtualization API
+- *https://github.com/AusDTO/apiguide[Australian Government Agencies]* - AusDTO API Design Guide
+- *https://github.com/cloudfoundry/cc-api-v3-style-guide[Cloud Foundry]* - Cloud Controller API v3 Style Guide (Proposal)
+- *https://geemus.gitbooks.io/http-api-design/content/en/[Heroku]* - API Design Guide
+- *http://www.restapitutorial.com/[A RESTful Tutorial]*
+
+
+== Sample APIs
+
+- https://developer.github.com/v3/[GitHub REST API v3]
+- https://developer.twitter.com/en/docs/basics/getting-started[Twitter API]
+- https://developers.google.com/drive/v2/reference/[Google Drive APIs]
+- https://developers.trello.com/reference/[Trello API]
+- https://api.stackexchange.com/docs[Stack Exchange API v2.2]
+- https://developer.atlassian.com/cloud/jira/platform/rest/[Jira API]
+- https://stripe.com/docs/api[Stripe API]
+- https://devcenter.heroku.com/articles/platform-api-reference[Heroku API]
+- https://docs.travis-ci.com/api[Travis CI API]
+
+Also, *Apigee* provides huge list of different API providers in one place: https://apigee.com/providers
