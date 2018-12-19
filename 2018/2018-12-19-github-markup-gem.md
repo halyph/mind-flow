@@ -22,7 +22,9 @@ Also, do not forget to push the newly created image to Docker Hub:
 docker push halyph/markup
 ```
 
-Now, I can try to run `github/markup` on some local/test files:
+Now, I can try to run `github/markup` on some local/test files.
+
+Lol, I noticed that this Docker file does not support my needs :-/ I need to fix it a bit.
 
 ## References
 
