@@ -1,4 +1,5 @@
 # mind-flow
+[[digging-prog-langs](https://github.com/halyph/digging-prog-langs)] | [[About](about.md)]
 _Another try of blogging or personal knowladge base_
 
 ## 2018
