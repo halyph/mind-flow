@@ -1,6 +1,6 @@
 # Mind~Flow
 
-[[digging-prog-langs](https://github.com/halyph/digging-prog-langs)] | [[About](about.md)]
+[[digging-prog-langs](https://github.com/halyph/digging-prog-langs)]  [[About](about.md)]
 
 _Another try of blogging or personal knowladge base_
 
