@@ -1,4 +1,4 @@
-> **tags**: ruby, markdown, github
+> **tags**: [ruby, markdown, github]
 
 # Verify Ruby `github/markup` gem for markdown rendering
 
