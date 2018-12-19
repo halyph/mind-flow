@@ -2,7 +2,7 @@
 
 # How to configure docker bash completion on Mac
 
-Run the next commands to add complitoin to `docker`, `docker-machine` and `docker-compose`:
+Run the next commands to add completion to `docker`, `docker-machine` and `docker-compose`:
 ```
 cd $(brew --prefix)/etc/bash_completion.d
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
