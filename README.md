@@ -1,5 +1,5 @@
 # mind-flow
-Another try of blogging or personal knowladge base
+_Another try of blogging or personal knowladge base_
 
 ## 2018
 
