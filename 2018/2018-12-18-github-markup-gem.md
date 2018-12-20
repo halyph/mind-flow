@@ -1,6 +1,5 @@
-> **tags**: [ruby, markdown, github]
-
 # [WIP] Verify Ruby `github/markup` gem for markdown rendering
+> **tags**: | ruby | markdown | github |
 
 I've cloned [github/markup](https://github.com/github/markup) and tried to built my own Docker image:
 

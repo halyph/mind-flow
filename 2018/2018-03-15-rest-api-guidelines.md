@@ -1,6 +1,6 @@
-> **tags**: [api, rest]
-
 # REST API Guidelines
+> **tags**: | api | rest |
+
 
 REST API is the most popular interface for communication between different component of the system.
 There are a lot of different common sense approaches to design RESTful API.

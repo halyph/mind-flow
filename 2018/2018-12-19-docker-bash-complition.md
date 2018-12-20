@@ -1,8 +1,9 @@
-> **tags**: [docker, bash]
-
 # How to configure docker bash completion on Mac
+> **tags**: | docker | bash |
+
 
 Run the next commands to add completion to `docker`, `docker-machine` and `docker-compose`:
+
 ```
 cd $(brew --prefix)/etc/bash_completion.d
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
@@ -11,6 +12,7 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-comple
 ```
 
 or like in official docker doc (both approaches are equal):
+
 ```
 etc=/Applications/Docker.app/Contents/Resources/etc
 ln -s $etc/docker.bash-completion $(brew --prefix)/etc/bash_completion.d/docker
@@ -19,6 +21,7 @@ ln -s $etc/docker-compose.bash-completion $(brew --prefix)/etc/bash_completion.d
 ```
 
 We assume that `.bash_profile` has the next lines:
+
 ```
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
