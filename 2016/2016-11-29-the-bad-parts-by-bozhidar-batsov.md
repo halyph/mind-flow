@@ -1,10 +1,7 @@
 # Ruby: The Bad Parts by Bozhidar Batsov
 > **tags**: | ruby |
 
-## Table of Contents
-
 - [Ruby: The Bad Parts by Bozhidar Batsov](#ruby-the-bad-parts-by-bozhidar-batsov)
-  - [Table of Contents](#table-of-contents)
   - [Reference](#reference)
   - [The Problem :-)](#the-problem)
   - [The Real Problem](#the-real-problem)
@@ -16,19 +13,15 @@
     - [The useless stuff](#the-useless-stuff)
   - [The bad stuff](#the-bad-stuff)
 
----
-
-These notes are compilled from:
-- https://speakerdeck.com/bbatsov/ruby-the-bad-parts
-
 ## Reference
+
+These notes are compilled from: https://speakerdeck.com/bbatsov/ruby-the-bad-parts
 
 - http://batsov.com
   - http://batsov.com/articles/categories/style/
   - http://batsov.com/articles/2014/02/05/a-list-of-deprecated-stuff-in-ruby/
 - [Ruby: The Bad Parts by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-the-bad-parts)
 - [Ruby 4.0: To Infinity and Beyond (Athens Ruby Meetup) by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-4-dot-0-to-infinity-and-beyond-athens-ruby-meetup)
-
 
 ## The Problem :-)
 
