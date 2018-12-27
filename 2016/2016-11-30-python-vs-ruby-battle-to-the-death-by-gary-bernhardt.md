@@ -1,5 +1,5 @@
 # Python vs. Ruby: A Battle to The Death by Gary Bernhardt
-> **tags**: | ruby | python |
+> **tags**: | ruby | python | vs | comparison |
 
 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](#python-vs-ruby-a-battle-to-the-death-by-gary-bernhardt)
   - [Ruby Experience](#ruby-experience)
@@ -22,9 +22,9 @@
 
 ## Ruby Experience
 
-* `end` for block
-* () are optional
-* method name can be ended in `!` or `?`
+- `end` for block
+- () are optional
+- method name can be ended in `!` or `?`
 
 ## I. Ruby Complaints
 
