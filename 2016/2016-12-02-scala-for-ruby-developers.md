@@ -51,7 +51,7 @@
 
 
 ## References
-- [Ruby vs Scala](https://github.com/KamilLelonek/scala-vs-ruby)
+- [Github - Ruby vs Scala](https://github.com/KamilLelonek/scala-vs-ruby)
   - http://www.slideshare.net/squixy/scala-vs-ruby-45694031
 - http://www.slideshare.net/El_Picador/scala-vs-ruby
 
