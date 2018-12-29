@@ -11,7 +11,43 @@ I've decided to collect all of them based on my priority. It might be helpful in
 - [LeetCode](https://leetcode.com)
 - [HackerRank](https://www.hackerrank.com)
 
+
 ### [LeetCode](https://leetcode.com)
+
+#### Contests
+
+Coding Contest is free. There were 116 contests (today is 2018-12-29). It's a weekly event, i.e. it's good playground for checking your skills.
+
+#### Problems
+
+**Leetcode** has 950+ problems which can be use for personal training. These problems have solution(s) and discussion. I.e. it's very good resource for practicing Coding Challenges.
+
+Unfortunately, company-related problems are not free and included in *Premium* subscription.
+
+#### Tutorials
+
+- Interview
+  - *Premium*
+    - Google
+    - Facebook
+    - Microsoft
+    - Amazon
+    - Yelp
+    - Bloomberg
+  - Rock the Behavioral Interview
+  - Coding Interview Strategy
+  - Top Interview Questions (Easy, Medium and Hard)
+- Learn
+  - Binary Tree
+  - Binary Search
+  - Introduction to Ruby
+  - N-ary Tree
+  - Binary Search Tree
+  - Trie
+  - Hash Table
+  - Array and Strings
+  - Linked List
+  - Queue and Stacks
 
 ### [HackerRank](https://www.hackerrank.com)
 
@@ -65,10 +101,10 @@ The solutions to these challenges can be submitted in different programming lang
 - Regex
 - Security
 
-
-
 ### Others
 
+- [Topcoder](https://www.topcoder.com/)
+- [CodeForces](http://codeforces.com/)
 - [projecteuler.net](https://projecteuler.net/)
 
 ## Articles/Stories
@@ -87,7 +123,7 @@ The solutions to these challenges can be submitted in different programming lang
 ## Courses
 
 - [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)
-- Coursera: [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) and [Algorithms, Part II
+- *Coursera*: [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) and [Algorithms, Part II
 ](https://www.coursera.org/learn/algorithms-part2)
 
 ## Videos (*Coding and System Design Interview Questions*)
