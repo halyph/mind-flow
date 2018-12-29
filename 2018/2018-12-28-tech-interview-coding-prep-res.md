@@ -6,17 +6,48 @@ I've decided to collect all of them based on my priority. It might be helpful in
 
 ***NOTE***: *This is [WIP](https://en.wikipedia.org/wiki/Work_in_process) article and I will update it on regular basis*
 
+- [Practicing Technical Interview](#practicing-technical-interview)
+  - [Programming Contests and Coding Challenges](#programming-contests-and-coding-challenges)
+    - [LeetCode](#leetcode)
+      - [Contests](#contests)
+      - [Problems](#problems)
+      - [Tutorials](#tutorials)
+    - [HackerRank](#hackerrank)
+      - [Contests](#contests-1)
+      - [HackerRank Skills](#hackerrank-skills)
+        - [Problem Solving](#problem-solving)
+        - [Language Proficiency](#language-proficiency)
+        - [Specialized Skills](#specialized-skills)
+    - [Hackerearth](#hackerearth)
+    - [CS Academy](#cs-academy)
+    - [CodeSignal](#codesignal)
+    - [InterviewBit](#interviewbit)
+      - [Practice](#practice)
+    - [Others](#others)
+      - [Not Good](#not-good)
+  - [Articles/Stories](#articlesstories)
+  - [Books](#books)
+  - [Courses](#courses)
+  - [Videos (*Coding and System Design Interview Questions*)](#videos-coding-and-system-design-interview-questions)
+
+---
+
 ## Programming Contests and Coding Challenges
 
 - [LeetCode](https://leetcode.com)
 - [HackerRank](https://www.hackerrank.com)
-
+- [Hackerearth](https://www.hackerearth.com)
+- [CS Academy](https://csacademy.com)
+- [CodeSignal](https://codesignal.com/)
+- [InterviewBit](https://www.interviewbit.com)
 
 ### [LeetCode](https://leetcode.com)
 
 #### Contests
 
 Coding Contest is free. There were 116 contests (today is 2018-12-29). It's a weekly event, i.e. it's good playground for checking your skills.
+
+Sample solutions: https://github.com/Semaserg/LeetCodeProblems
 
 #### Problems
 
@@ -63,6 +94,8 @@ This resource has Tutorials, Skills and Contests (see details below)
 
 This site supports contests calendar. These contests are pretty regular. Have a look: https://www.hackerrank.com/contests
 
+Sample solutions: https://github.com/RodneyShag/HackerRank_solutions
+
 #### HackerRank Skills
 
 ##### Problem Solving
@@ -101,11 +134,137 @@ The solutions to these challenges can be submitted in different programming lang
 - Regex
 - Security
 
+### [Hackerearth](https://www.hackerearth.com)
+
+In general it is a Competitive programming site, but except this it contains some tutorials/learning materials and sample programming challenges.
+
+- [Programming Tutorials and Practice Problems](https://www.hackerearth.com/practice/)
+  - Basic Programming
+  - Data Structures (Arrays, Stacks, Queues, Hash Tables, Linked Lists, Trees, Trie, Segment Trees, Suffix Tree, etc)
+  - Algorithms (Search, Sort, Greedy Algorithms, Graphs, Strings, Dynamic Programming)
+  - Math (Number Theory, Combinatorics, Geometry)
+  - Machine Learning
+    - Statistics
+    - Data Manipulation and visualization
+    - Machine Learning Algorithms
+  - Python
+
+### [CS Academy](https://csacademy.com)
+
+This resource has nice tutorials/learning materials and sample programming challenges
+
+- Ad Hoc
+- Backtracking
+- Binary Search
+- Bits
+  - Bitset
+  - Bitwise Operations
+  - Gray Codes
+- Constructive Algorithms
+- Data Structures
+  - Binary Search Tree
+  - Deque
+  - Disjoint Sets
+  - Fenwick Tree
+  - Hashing
+  - Hashmap
+  - Heap
+  - Linked Lists
+  - Range Minimum Query
+  - Segment Tree
+  - Stack
+  - Trie
+- Divide and Conquer
+- Dynamic Programming
+  - Exponential States
+  - Matrix Exponentiation
+  - Tree Dynamic Programming
+- Enforced Template
+- Game Theory
+  - Nim
+  - Sprague Grundy
+- Geometry
+  - Convex Hull
+  - Sweep Line (Geometry)
+- Graphs
+  - BFS
+  - DFS
+  - Dijkstra
+  - Flood Fill
+  - Maximum Flow
+  - Maximum Independent Set
+  - Maximum Matching
+  - Strongly Connected Components
+  - Topological Sorting
+- Greedy
+- Implementation
+- Interactive
+  - Adaptive
+- Iteration
+  - Sweep Line (Iteration)
+  - Two Pointers
+- Math
+  - Burnside's Lemma
+  - Combinatorics
+  - Expected Value
+  - FFT
+  - Gaussian Elimination
+  - Greatest Common Divisor
+  - Permutation
+  - Pigeonhole Principle
+  - Sieve of Eratosthenes
+- Recursion
+- Sorting
+  - Median
+- Sqrt Decomposition
+  - Strings
+  - KMP
+  - Longest Common Prefix
+  - Longest Common Suffix
+  - Z Algorithm
+- Ternary Search
+- Trees
+  - Centroid Decomposition
+  - Lowest Common Ancestor
+
+### [CodeSignal](https://codesignal.com/)
+
+Interesting site. Need to be checked
+This resource has very interesting arcade base coding challanges. Looks like a game. I must check it deeper.
+
+### [InterviewBit](https://www.interviewbit.com)
+
+This site is totally dedicated to interviewing. The target market is USA.
+It has very interesting *Practice* section: Programming, System Design, Scripting, Databases, Mock Interview and Puzzles.
+
+#### Practice
+
+- System Design Interview Questions
+- Google Interview Questions
+- Facebook Interview Questions
+- Amazon Interview Questions
+- Microsoft Interview Questions
+- Puzzles Questions
+
 ### Others
 
+- [Codewars](https://www.codewars.com)
+  - Looks like interesting site, I have to check it
+- [Codebyte](https://www.coderbyte.com) is not free (monthly/annual Subscription).
+  - But it has open tutorials 
 - [Topcoder](https://www.topcoder.com/)
 - [CodeForces](http://codeforces.com/)
+- [CodeChef](https://www.codechef.com/)
 - [projecteuler.net](https://projecteuler.net/)
+- [Kattis](https://open.kattis.com/)
+
+#### Not Good
+
+- [Spoj - Sphere online judge](https://www.spoj.com)
+- [AtCoder](https://atcoder.jp/)
+- [Virtual Judge](https://vjudge.net)
+
+---
 
 ## Articles/Stories
 
@@ -114,6 +273,7 @@ The solutions to these challenges can be submitted in different programming lang
   - [Quora wiki - How do I prepare to answer **design** questions in a technical interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview) - Here you can find a lot of useful resources
   - [Google Doc - Algorithms and Data Structures - **Notes**](https://docs.google.com/document/d/1yMBDTeM49rm8Yni-BYzxakwSW3Ce_MKum65s6wEPQic/edit)
   - [Larrr.com - Resume check](http://larrr.com/category/resume/resume-check/)
+  - [Careercup - This Is What A GOOD Resume Should Look Like](https://www.careercup.com/resume)
 
 ## Books
 
@@ -141,3 +301,4 @@ The solutions to these challenges can be submitted in different programming lang
 - [Youtube - Coding Made Simple](https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw) by *Tushar Roy* - *System Design Interview* (~5 videos, *nice cases*) and *Coding interview* tasks
 - [Youtube - Tech Dummies - Narendra L](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA) - *System Design Interview* samples (~20 videos, *interesting cases*)
 - [Youtube - Gaurav Sen](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw) - *System Design Interview* (~15 videos, *basics*) and Coding Challenges
+- [Youtuby - Code Report](https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ) by *Conor Hoekstra*- Channel about competitive programming
