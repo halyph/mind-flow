@@ -4,14 +4,80 @@
 Well, I've been reading many posts about technical interview preparation and many people suggesting different resources: sites, books, youtube channels.
 I've decided to collect all of them based on my priority. It might be helpful in future. 😉
 
-***NOTE***: *This is WIP article and I will update it on regular basis*
+***NOTE***: *This is [WIP](https://en.wikipedia.org/wiki/Work_in_process) article and I will update it on regular basis*
 
-## References
+## Programming Contests and Coding Challenges
 
-### Articles
+- [LeetCode](https://leetcode.com)
+- [HackerRank](https://www.hackerrank.com)
+
+### [LeetCode](https://leetcode.com)
+
+### [HackerRank](https://www.hackerrank.com)
+
+- [**Youtube Channel**](https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww)
+- [Blog](https://blog.hackerrank.com/)
+  - This blog is interesting and it contains a lot of articles
+  - Interviews and Stories
+- [Scoring Documentation](https://www.hackerrank.com/scoring)
+
+This resource has Tutorials, Skills and Contests (see details below)
+
+#### Contests
+
+This site supports contests calendar. These contests are pretty regular. Have a look: https://www.hackerrank.com/contests
+
+#### HackerRank Skills
+
+##### Problem Solving
+
+- Algorithms
+- Data Structures
+- Mathematics
+
+The solutions to these challenges can be submitted in different programming languages: C, C++, Go, Java, JavaScript, Haskell, Kotlin, Python, Ruby (check [a list of all supported languages](https://www.hackerrank.com/environment/languages)).
+
+##### Language Proficiency
+
+- C
+- C++
+- Java
+- Python
+- Ruby
+- Linux Shell
+- Functional Programming
+  - Haskell
+  - Clojure
+  - Scala
+  - Erlang
+  - OCaml
+  - Common Lisp (SBCL)
+  - F#
+  - Racket
+  - Elixir
+
+##### Specialized Skills
+
+- Artificial Intelligence
+- SQL
+- Databases
+- Distributed Systems
+- Regex
+- Security
+
+
+
+### Others
+
+- [projecteuler.net](https://projecteuler.net/)
+
+## Articles/Stories
 
 - *Youtube - 'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee*: [Youtube](https://www.youtube.com/watch?v=YJZCUhxNCv8) and [Slides](https://speakerdeck.com/sangjunglee/how-to-get-a-job-at-the-big-4)
 - [Как попасть в Google: инструкция по подготовке](https://dou.ua/lenta/articles/google-interview/) by Sergey Sema
+  - [Quora wiki - How do I prepare to answer **design** questions in a technical interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview) - Here you can find a lot of useful resources
+  - [Google Doc - Algorithms and Data Structures - **Notes**](https://docs.google.com/document/d/1yMBDTeM49rm8Yni-BYzxakwSW3Ce_MKum65s6wEPQic/edit)
+  - [Larrr.com - Resume check](http://larrr.com/category/resume/resume-check/)
 
 ## Books
 
@@ -24,16 +90,18 @@ I've decided to collect all of them based on my priority. It might be helpful in
 - Coursera: [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) and [Algorithms, Part II
 ](https://www.coursera.org/learn/algorithms-part2)
 
-## Videos
+## Videos (*Coding and System Design Interview Questions*)
 
-- [Youtube - Jackson Gabbard](https://www.youtube.com/channel/UCcdCkJKXlRoXVD03eo-q8mQ/)
+- [Youtube - Jackson Gabbard (worked at Facebook)](https://www.youtube.com/channel/UCcdCkJKXlRoXVD03eo-q8mQ/)
   - [Episode 06: Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
   - [Episode 07: Intro to Behavioural Interviews](https://www.youtube.com/watch?v=PJKYqLP6MRE)
-  - **Coding Interview Problems**
+  - *Coding Interview Problems*
     - Coding Interview Problem: Calendar Conflicts
     - Coding Interview Problem: Dinner Party
     - [Coding Interview Problem: Largest Rectangle in a Histogram](https://www.youtube.com/watch?v=VNbkzsnllsU)  
     - [Coding Interview Problem: Permutation Generator](https://www.youtube.com/watch?v=V7hHupttzVk)
 - [Youtube - Byte By Byte](https://www.youtube.com/channel/UCWSYAntBbdd2SLYUqPIxo0w) - Coding interviews channel. There are around 50+ videos: code challenges, advices etc.
-- [Youtube - Success in Tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw) - This channel has very interesting *System Design Interview* samples
-- [Youtube - Tushar Roy - Coding Made Simple](https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw) - *System Design Interview* samples and coding interview tasks
+- [Youtube - Success in Tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw) by *Ramon Lopez* - *System Design Interview* (~6 videos, *nice cases*)
+- [Youtube - Coding Made Simple](https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw) by *Tushar Roy* - *System Design Interview* (~5 videos, *nice cases*) and *Coding interview* tasks
+- [Youtube - Tech Dummies - Narendra L](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA) - *System Design Interview* samples (~20 videos, *interesting cases*)
+- [Youtube - Gaurav Sen](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw) - *System Design Interview* (~15 videos, *basics*) and Coding Challenges
