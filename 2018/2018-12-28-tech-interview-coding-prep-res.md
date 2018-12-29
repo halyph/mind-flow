@@ -56,7 +56,10 @@ I've decided to collect all of them based on my priority. It might be helpful in
 
 Coding Contest is free. There were 116 contests (today is 2018-12-29). It's a weekly event, i.e. it's good playground for checking your skills.
 
-Sample solutions: https://github.com/Semaserg/LeetCodeProblems
+Sample solutions:
+
+- [Github - Semaserg/LeetCodeProblems](https://github.com/Semaserg/LeetCodeProblems)
+- [Github - RatulSaha/leetcode](https://github.com/RatulSaha/leetcode)
 
 #### Problems
 
