@@ -1,12 +1,20 @@
-# Resources for Practicing Technical Interview
+# Resources for Practicing Coding Interview
 > **tags**: | interview |
 
-Well, I've been reading many posts about technical interview preparation and many people suggesting different resources: sites, books, youtube channels.
+Well, I've been reading many posts about technical interview preparation and many people suggesting different resources: sites, books, [youtube channels](2018-12-29-system-design-interview-prep.md).
+
 I've decided to collect all of them based on my priority. It might be helpful in future. 😉
 
 ***NOTE***: *This is [WIP](https://en.wikipedia.org/wiki/Work_in_process) article and I will update it on regular basis*
 
-- [Resources for Practicing Technical Interview](#resources-for-practicing-technical-interview)
+**Related posts:**
+
+- 2018-12-29 - [Resources for System Design Interview](2018-12-29-system-design-interview-prep.md)
+- 2018-12-28 - [Resources for Practicing Coding Interview](2018-12-28-tech-interview-coding-prep-res.md)
+
+**Table of Contents**
+
+- [Resources for Practicing Coding Interview](#resources-for-practicing-coding-interview)
   - [Programming Contests and Coding Challenges](#programming-contests-and-coding-challenges)
     - [LeetCode](#leetcode)
       - [Contests](#contests)
@@ -28,7 +36,6 @@ I've decided to collect all of them based on my priority. It might be helpful in
   - [Articles/Stories](#articlesstories)
   - [Books](#books)
   - [Courses](#courses)
-  - [Videos (*Coding and System Design Interview Questions*)](#videos-coding-and-system-design-interview-questions)
 
 ---
 
@@ -268,6 +275,8 @@ It has very interesting *Practice* section: Programming, System Design, Scriptin
 
 ## Articles/Stories
 
+- [Coding Interview University](https://github.com/jwasham/coding-interview-university)
+- [Preparing for Programming interview with Python](https://medium.com/@ratulsaha/preparing-for-programming-interview-as-a-phd-student-with-python-5f8af8b40d5f)
 - *'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee*: [Youtube](https://www.youtube.com/watch?v=YJZCUhxNCv8) and [Slides](https://speakerdeck.com/sangjunglee/how-to-get-a-job-at-the-big-4)
 - [Как попасть в Google: инструкция по подготовке](https://dou.ua/lenta/articles/google-interview/) by Sergey Sema
   - [Quora wiki - How do I prepare to answer **design** questions in a technical interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview) - Here you can find a lot of useful resources
@@ -282,23 +291,5 @@ It has very interesting *Practice* section: Programming, System Design, Scriptin
 
 ## Courses
 
-- [Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)
-- *Coursera*: [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) and [Algorithms, Part II
-](https://www.coursera.org/learn/algorithms-part2)
-
-## Videos (*Coding and System Design Interview Questions*)
-
-- [Youtube - Jackson Gabbard (worked at Facebook)](https://www.youtube.com/channel/UCcdCkJKXlRoXVD03eo-q8mQ/)
-  - [Episode 06: Intro to Architecture and Systems Design Interviews](https://www.youtube.com/watch?v=ZgdS0EUmn70)
-  - [Episode 07: Intro to Behavioural Interviews](https://www.youtube.com/watch?v=PJKYqLP6MRE)
-  - *Coding Interview Problems*
-    - Coding Interview Problem: Calendar Conflicts
-    - Coding Interview Problem: Dinner Party
-    - [Coding Interview Problem: Largest Rectangle in a Histogram](https://www.youtube.com/watch?v=VNbkzsnllsU)  
-    - [Coding Interview Problem: Permutation Generator](https://www.youtube.com/watch?v=V7hHupttzVk)
-- [Youtube - Byte By Byte](https://www.youtube.com/channel/UCWSYAntBbdd2SLYUqPIxo0w) - Coding interviews channel. There are around 50+ videos: code challenges, advices etc.
-- [Youtube - Success in Tech](https://www.youtube.com/channel/UC-vYrOAmtrx9sBzJAf3x_xw) by *Ramon Lopez* - *System Design Interview* (~6 videos, *nice cases*)
-- [Youtube - Coding Made Simple](https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw) by *Tushar Roy* - *System Design Interview* (~5 videos, *nice cases*) and *Coding interview* tasks
-- [Youtube - Tech Dummies - Narendra L](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA) - *System Design Interview* samples (~20 videos, *interesting cases*)
-- [Youtube - Gaurav Sen](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw) - *System Design Interview* (~15 videos, *basics*) and Coding Challenges
-- [Youtuby - Code Report](https://www.youtube.com/channel/UC1kBxkk2bcG78YBX7LMl9pQ) by *Conor Hoekstra*- Channel about competitive programming
+- *Coursera*: [Algorithms, Part I](https://www.coursera.org/learn/algorithms-part1) and [Algorithms, Part II](https://www.coursera.org/learn/algorithms-part2)
+- [HiredInTech - Algorithm Design for Tech Interviews](https://www.hiredintech.com/courses/algorithm-design)
