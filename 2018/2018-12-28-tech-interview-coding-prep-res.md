@@ -12,6 +12,8 @@ I've decided to collect all of them based on my priority. It might be helpful in
 - 2018-12-29 - [Resources for System Design Interview](2018-12-29-system-design-interview-prep.md)
 - 2018-12-28 - [Resources for Practicing Coding Interview](2018-12-28-tech-interview-coding-prep-res.md)
 
+---
+
 **Table of Contents**
 
 - [Resources for Practicing Coding Interview](#resources-for-practicing-coding-interview)
@@ -287,6 +289,8 @@ It has very interesting *Practice* section: Programming, System Design, Scriptin
 ## Books
 
 - [Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition by *Gayle Laakmann McDowell*](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
+  - [Cracking the Coding Interview 6th Ed. Solutions in](https://github.com/careercup/CtCI-6th-Edition) 16 programming languages
+  - [Python Solutions to Cracking the Coding Interview, 6th Edition](https://github.com/careercup/CtCI-6th-Edition-Python)
 - [Programming Interviews Exposed: Secrets to Landing Your Next Job 3rd Edition by *John Mongan, Noah Suojanen Kindler, Eric GiguÃ¨re*](https://www.amazon.com/Programming-Interviews-Exposed-Secrets-Landing/dp/1118261364)
 
 ## Courses
