@@ -1,4 +1,4 @@
-# Practicing Technical Interview
+# Resources for Practicing Technical Interview
 > **tags**: | interview |
 
 Well, I've been reading many posts about technical interview preparation and many people suggesting different resources: sites, books, youtube channels.
@@ -6,7 +6,7 @@ I've decided to collect all of them based on my priority. It might be helpful in
 
 ***NOTE***: *This is [WIP](https://en.wikipedia.org/wiki/Work_in_process) article and I will update it on regular basis*
 
-- [Practicing Technical Interview](#practicing-technical-interview)
+- [Resources for Practicing Technical Interview](#resources-for-practicing-technical-interview)
   - [Programming Contests and Coding Challenges](#programming-contests-and-coding-challenges)
     - [LeetCode](#leetcode)
       - [Contests](#contests)
