@@ -268,12 +268,12 @@ It has very interesting *Practice* section: Programming, System Design, Scriptin
 
 ## Articles/Stories
 
-- *Youtube - 'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee*: [Youtube](https://www.youtube.com/watch?v=YJZCUhxNCv8) and [Slides](https://speakerdeck.com/sangjunglee/how-to-get-a-job-at-the-big-4)
+- *'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' by Sean Lee*: [Youtube](https://www.youtube.com/watch?v=YJZCUhxNCv8) and [Slides](https://speakerdeck.com/sangjunglee/how-to-get-a-job-at-the-big-4)
 - [Как попасть в Google: инструкция по подготовке](https://dou.ua/lenta/articles/google-interview/) by Sergey Sema
   - [Quora wiki - How do I prepare to answer **design** questions in a technical interview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview) - Here you can find a lot of useful resources
   - [Google Doc - Algorithms and Data Structures - **Notes**](https://docs.google.com/document/d/1yMBDTeM49rm8Yni-BYzxakwSW3Ce_MKum65s6wEPQic/edit)
-  - [Larrr.com - Resume check](http://larrr.com/category/resume/resume-check/)
-  - [Careercup - This Is What A GOOD Resume Should Look Like](https://www.careercup.com/resume)
+- [Larrr.com - Resume check](http://larrr.com/category/resume/resume-check/)
+- [Careercup - This Is What A GOOD Resume Should Look Like](https://www.careercup.com/resume)
 
 ## Books
 
