@@ -32,7 +32,7 @@ See below the list of different topics and direction I am interested in (grouped
   - [*Анализ данных на Python в примерах и задачах. Часть 1, (весна 2018)*](https://compscicenter.ru/courses/data-mining-python/2018-spring/) and [Youtube](https://www.youtube.com/watch?v=enpPFqcIFj8&list=PLlb7e2G7aSpRb95_Wi7lZ-zA6fOjV3_l7)
   - [*Анализ данных на Python в примерах и задачах. Часть 2, (осень 2018)*](https://compscicenter.ru/courses/data-mining-python2/2018-autumn/) and [Youtube](https://www.youtube.com/watch?v=5l0e_Q0gpnc&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y)
   - [*Анализ данных на R в примерах и задачах, Часть 1, (весна 2016)*](https://compscicenter.ru/courses/data-mining-r-problems/2016-spring/) and [Youtube](https://www.youtube.com/watch?v=8mwJ3mEjdIg&list=PLlb7e2G7aSpSSa_PlFEwnd6-3gzAa08_m) 
-  - [*Анализ данных на R в примерах и задачах, Часть 2, (весна 2017)*](https://compscicenter.ru/courses/data-mining-r-problems-2/2017-spring/) and [Youtube](https://www.youtube.com/watch?v=orgXajB6z58&list=PLlb7e2G7aSpTh7pQG8ek1Uv5-zatv84vY))
+  - [*Анализ данных на R в примерах и задачах, Часть 2, (весна 2017)*](https://compscicenter.ru/courses/data-mining-r-problems-2/2017-spring/) and [Youtube](https://www.youtube.com/watch?v=orgXajB6z58&list=PLlb7e2G7aSpTh7pQG8ek1Uv5-zatv84vY)
 
 ### Stepik
 
