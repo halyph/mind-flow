@@ -39,6 +39,9 @@ See below the list of different topics and direction I am interested in (grouped
 - [Анализ данных в R](https://stepik.org/course/129)
 - [Анализ данных в R. Часть 2](https://stepik.org/course/724)
 - [Основы программирования на R](https://stepik.org/course/497)
+- [Основы статистики](https://stepik.org/course/76)
+- [Основы статистики. Часть 2](https://stepik.org/course/524)
+- [Основы статистики. Часть 3](https://stepik.org/course/2152)
 
 ## Software Engineering
 
