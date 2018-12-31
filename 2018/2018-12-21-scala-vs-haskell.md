@@ -1,5 +1,5 @@
-# Scala vs Haskell
-> **tags**: | scala | haskell |
+# [WIP] Scala vs Haskell
+> **tags**: | scala | haskell | vs | comparison |
 
 ## References
 
