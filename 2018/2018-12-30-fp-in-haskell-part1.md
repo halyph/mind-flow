@@ -1,7 +1,7 @@
 # [WIP] Functional programming in Haskell - Part 1
 > **tags**: | haskell | functional programming |
 
-This is a notes related to MOOC Stepik cource ["Функциональное программирование на языке Haskell"](https://stepik.org/course/75). This course is in Russian language and I decided to make notes. It might be useful for me in future or for somebody else.
+These notes are related to MOOC Stepik cource ["Функциональное программирование на языке Haskell"](https://stepik.org/course/75). This course is in Russian language and I decided to make notes. It might be useful for me in future or for somebody else.
 
 ## General thoughts which are not related to this course
 
