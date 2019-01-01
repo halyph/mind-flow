@@ -33,12 +33,16 @@ See below the list of different topics and direction I am interested in (grouped
   - [*Анализ данных на Python в примерах и задачах. Часть 2, (осень 2018)*](https://compscicenter.ru/courses/data-mining-python2/2018-autumn/) and [Youtube](https://www.youtube.com/watch?v=5l0e_Q0gpnc&list=PLlb7e2G7aSpT1ntsozWmWJ4kGUsUs141Y)
   - [*Анализ данных на R в примерах и задачах, Часть 1, (весна 2016)*](https://compscicenter.ru/courses/data-mining-r-problems/2016-spring/) and [Youtube](https://www.youtube.com/watch?v=8mwJ3mEjdIg&list=PLlb7e2G7aSpSSa_PlFEwnd6-3gzAa08_m) 
   - [*Анализ данных на R в примерах и задачах, Часть 2, (весна 2017)*](https://compscicenter.ru/courses/data-mining-r-problems-2/2017-spring/) and [Youtube](https://www.youtube.com/watch?v=orgXajB6z58&list=PLlb7e2G7aSpTh7pQG8ek1Uv5-zatv84vY)
+- [Введение в анализ данных (весна 2016)](https://www.youtube.com/watch?v=uZ-l13XzejA&list=PLrCZzMib1e9p5F99rIOzugNgQP5KHHfK8)
 
 ### Stepik
 
 - [Анализ данных в R](https://stepik.org/course/129)
 - [Анализ данных в R. Часть 2](https://stepik.org/course/724)
 - [Основы программирования на R](https://stepik.org/course/497)
+- [Основы статистики](https://stepik.org/course/76)
+- [Основы статистики. Часть 2](https://stepik.org/course/524)
+- [Основы статистики. Часть 3](https://stepik.org/course/2152)
 
 ## Software Engineering
 
@@ -74,5 +78,8 @@ See below the list of different topics and direction I am interested in (grouped
 
 ## Math
 
-- [Математический анализ (часть 1)](https://stepik.org/course/716/syllabus)
-- [Основы перечислительной комбинаторики](https://stepik.org/course/125/syllabus)
+- [Математический анализ (часть 1)](https://stepik.org/course/716)
+- [Математический анализ (часть 2)](https://stepik.org/course/711)
+- [Теория вероятностей](https://stepik.org/course/3089)
+- [Основы перечислительной комбинаторики](https://stepik.org/course/125)
+
