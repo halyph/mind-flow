@@ -78,5 +78,8 @@ See below the list of different topics and direction I am interested in (grouped
 
 ## Math
 
-- [Математический анализ (часть 1)](https://stepik.org/course/716/syllabus)
-- [Основы перечислительной комбинаторики](https://stepik.org/course/125/syllabus)
+- [Математический анализ (часть 1)](https://stepik.org/course/716)
+- [Математический анализ (часть 2)](https://stepik.org/course/711)
+- [Теория вероятностей](https://stepik.org/course/3089)
+- [Основы перечислительной комбинаторики](https://stepik.org/course/125)
+
