@@ -20,6 +20,7 @@ In general, I've been doing programming language ecosystem discovery before jump
 - Cheat Sheets
   - [Basic Haskell Cheat Sheet](https://matela.com.br/pub/cheat-sheets/haskell-ucs-0.5.pdf)
   - [The Haskell Cheatsheet by *Justin Bailey*](http://cheatsheet.codeslower.com/)
+- Book ["Learn You a Haskell for Great Good!" by Miran Lipovača](http://learnyouahaskell.com/chapters). This book is very cool if you'd like to know basics.
 
 ## Development environment for this course
 
