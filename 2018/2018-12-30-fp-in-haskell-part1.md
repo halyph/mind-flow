@@ -38,3 +38,7 @@ docker run -it --rm -v $(pwd):/home haskell:8 /bin/bash
 ```
 
 This approach is not perfect, but now you can avoid build tool issues.
+
+## Status update
+
+Unfortunatelly, my plan has been changed and I have decided to stop this course due to overload on other directions. But this particular course is cool and teacher is cool. I highly recommend it.
