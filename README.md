@@ -4,6 +4,10 @@
 
 _Another try of blogging or personal knowledge base_
 
+## 2019
+
+- 2019-01-13 - [Top "Algorithms and Data Structures" Books](2019/2019-01-13-alg-and-ds-books.md)
+
 ## 2018
 
 - 2018-12-31 - [Thoughts about Blogging](2018/2018-12-31-about-blogging.md)
