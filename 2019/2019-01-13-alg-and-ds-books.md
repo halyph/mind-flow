@@ -142,7 +142,7 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
 19. Algorithmic Resources
 
 
-## Data Structures and Algorithms in Python,  1st Edition
+## Data Structures and Algorithms in Python, 1st Edition
 
 <img src="2019-01-13-alg-and-ds-books/ds_n_alg_in_py.jpg" width="30%" height="30%"/>
 
