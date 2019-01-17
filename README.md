@@ -11,7 +11,7 @@ _Another try of blogging or personal knowledge base_
 ## 2018
 
 - 2018-12-31 - [Thoughts about Blogging](2018/2018-12-31-about-blogging.md)
-- 2018-12-30 - [[WIP] Functional programming in Haskell - Part 1](2018/2018-12-30-fp-in-haskell-part1.md)
+- 2018-12-30 - [Functional programming in Haskell - Part 1](2018/2018-12-30-fp-in-haskell-part1.md)
 - 2018-12-29 - [Resources for System Design Interview](2018/2018-12-29-system-design-interview-prep.md)
 - 2018-12-28 - [Resources for Practicing Coding Interview](2018/2018-12-28-tech-interview-coding-prep-res.md)
 - 2018-12-21 - [[WIP] Scala vs Haskell](2018/2018-12-21-scala-vs-haskell.md)

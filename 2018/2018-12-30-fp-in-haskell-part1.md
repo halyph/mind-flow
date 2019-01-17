@@ -1,6 +1,10 @@
 # Functional programming in Haskell - Part 1
 > **tags**: | haskell | functional programming |
 
+**UPD** (2018-0114): I put this MOOC on hold. Unfortunatelly, my plan has been changed and I have decided to stop doing this course due to overload on other directions. But this particular course is cool and teacher is cool. I highly recommend it.
+
+---
+
 These notes are related to MOOC Stepik cource ["Функциональное программирование на языке Haskell"](https://stepik.org/course/75). This course is in Russian language and I decided to make notes. It might be useful for me in future or for somebody else.
 
 ## General thoughts which are not related to this course
@@ -39,7 +43,3 @@ docker run -it --rm -v $(pwd):/home haskell:8 /bin/bash
 ```
 
 This approach is not perfect, but now you can avoid build tool issues.
-
-## Status update
-
-Unfortunatelly, my plan has been changed and I have decided to stop this course due to overload on other directions. But this particular course is cool and teacher is cool. I highly recommend it.
