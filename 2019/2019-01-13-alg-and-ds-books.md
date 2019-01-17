@@ -21,36 +21,36 @@ I have a my list several books related to this topic. I've decided to list it he
 
 **Table of Contents**:
 
-1. Fundamentals
-    1. Basic Programming Model 
-    2. Data Abstraction 
-    3. Bags, Queues, and Stacks 
-    4. Analysis of Algorithms 
-    5. Case Study: Union-Find 
-2. Sorting
-   1. Elementary Sorts 
-   2. Mergesort 
-   3. Quicksort 
-   4. Priority Queues 
-   5. Applications 
-3. Searching
-   1. Symbol Tables 
-   2. Binary Search Trees 
-   3. Balanced Search Trees 
-   4. Hash Tables 
-   5. Applications 
-4. Graphs 
-    1. Undirected Graphs 
-    2. Directed Graphs 
-    3. Minimum Spanning Trees 
-    4. Shortest Paths 
-5. Strings
-   1. String Sorts 
-   2. Tries 
-   3. Substring Search 
-   4. Regular Expressions 
-   5. Data Compression 
-6. Context
+- 1 Fundamentals
+  - 1.1 Basic Programming Model 
+  - 1.2. Data Abstraction 
+  - 1.3. Bags, Queues, and Stacks 
+  - 1.4. Analysis of Algorithms 
+  - 1.5. Case Study: Union-Find 
+- 2 Sorting
+  - 2.1. Elementary Sorts 
+  - 2.2. Mergesort 
+  - 2.3. Quicksort 
+  - 2.4. Priority Queues 
+  - 2.5. Applications 
+- 3 Searching
+  - 3.1. Symbol Tables 
+  - 3.2. Binary Search Trees 
+  - 3.3. Balanced Search Trees 
+  - 3.4. Hash Tables 
+  - 3.5. Applications 
+- 4 Graphs 
+  - 4.1. Undirected Graphs 
+  - 4.2. Directed Graphs 
+  - 4.3. Minimum Spanning Trees 
+  - 4.4. Shortest Paths 
+- 5 Strings
+  - 5.1. String Sorts 
+  - 5.2. Tries 
+  - 5.3. Substring Search 
+  - 5.4. Regular Expressions 
+  - 5.5. Data Compression 
+- 6 Context
 
 ## Introduction to Algorithms, 3rd Edition
 
