@@ -40,7 +40,7 @@ I have collected some amount of these repos.
 - 💛 [theanalyst/awesome-distributed-systems](https://github.com/theanalyst/awesome-distributed-systems)
   - **tags:** [awersome] [system design] [distributed system]
   - **Comments:** List on awesome material on distributed systems
-- [https://github.com/kilimchoi/engineering-blogs](https://github.com/kilimchoi/engineering-blogs)
+- [kilimchoi/engineering-blogs](https://github.com/kilimchoi/engineering-blogs)
   - **tags:** [blog] [company]
   - **Comments:**: A curated list of engineering blogs
 
