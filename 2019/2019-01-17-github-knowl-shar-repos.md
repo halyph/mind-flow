@@ -97,6 +97,9 @@ I have collected some amount of these repos.
 - [ShuaiW/data-science-question-answer](https://github.com/ShuaiW/data-science-question-answer)
   - **tags:** [interview] [data science] [machine learning]
   - **Comments:** A repo for data science related questions and answers.
+- [hangtwenty/dive-into-machine-learning](https://github.com/hangtwenty/dive-into-machine-learning)
+  - **tags:** [machine learning] [book] [mooc] [tips] [python]
+  - **Comments:** Dive into Machine Learning with Python Jupyter notebook and scikit-learn!
 
 ## R
 
