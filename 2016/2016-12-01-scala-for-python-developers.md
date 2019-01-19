@@ -1,63 +1,34 @@
 # Scala for Python Developers by _Kevin Stanton_
 > **tags**: | scala | python | vs | comparison |
 
-- [Scala for Python Developers by _Kevin Stanton_](#scala-for-python-developers-by-kevin-stanton)
-  - [Reference](#reference)
-  - [1. Classes](#1-classes)
-    - [Python](#python)
-    - [Scala](#scala)
-  - [2. Dictionaries and Maps](#2-dictionaries-and-maps)
-    - [Python](#python-1)
-    - [Scala](#scala-1)
-  - [3. IO and Files](#3-io-and-files)
-    - [Python](#python-2)
-    - [Scala](#scala-2)
-  - [4. For Comprehensions](#4-for-comprehensions)
-    - [Python](#python-3)
-    - [Scala](#scala-3)
-  - [5. Function literals](#5-function-literals)
-    - [Python](#python-4)
-    - [Scala](#scala-4)
-  - [6. Functions one-liner](#6-functions-one-liner)
-    - [Python](#python-5)
-    - [Scala](#scala-5)
-  - [7. Functions](#7-functions)
-    - [Python](#python-6)
-    - [Scala](#scala-6)
-  - [8. Java interop](#8-java-interop)
-    - [Python](#python-7)
-    - [Scala](#scala-7)
-  - [9. Lists](#9-lists)
-    - [Overview](#overview)
-      - [Python](#python-8)
-      - [Scala](#scala-8)
-    - [Concatenating lists](#concatenating-lists)
-      - [Python](#python-9)
-      - [Scala](#scala-9)
-    - [Sorting a list](#sorting-a-list)
-      - [Python](#python-10)
-      - [Scala](#scala-10)
-  - [10. Looping range and notes on operators](#10-looping-range-and-notes-on-operators)
-    - [Loop over range of numbers](#loop-over-range-of-numbers)
-      - [Python](#python-11)
-      - [Scala](#scala-11)
-    - [Operators](#operators)
-      - [Python](#python-12)
-      - [Scala](#scala-12)
-  - [11. Sets](#11-sets)
-    - [Python](#python-13)
-    - [Scala](#scala-13)
-  - [12. Tuples](#12-tuples)
-    - [Python](#python-14)
-    - [Scala](#scala-14)
+- [Reference](#reference)
+- [1. Classes](#1-classes)
+- [2. Dictionaries and Maps](#2-dictionaries-and-maps)
+- [3. IO and Files](#3-io-and-files)
+- [4. For Comprehensions](#4-for-comprehensions)
+- [5. Function literals](#5-function-literals)
+- [6. Functions one-liner](#6-functions-one-liner)
+- [7. Functions](#7-functions)
+- [8. Java interop](#8-java-interop)
+- [9. Lists](#9-lists)
+  - [9.1. Overview](#91-overview)
+  - [9.2. Concatenating lists](#92-concatenating-lists)
+  - [9.3. Sorting a list](#93-sorting-a-list)
+- [10. Looping range and notes on operators](#10-looping-range-and-notes-on-operators)
+  - [10.1. Loop over range of numbers](#101-loop-over-range-of-numbers)
+  - [10.2. Operators](#102-operators)
+- [11. Sets](#11-sets)
+- [12. Tuples](#12-tuples)
 
 ## Reference
 
 - [Github - stantonk/scala-for-python-developers](https://github.com/stantonk/scala-for-python-developers)
 
+---
+
 ## 1. Classes
 
-### Python
+**Python**
 
 ```python
 class Dog(object):
@@ -73,7 +44,7 @@ dog.speak()
 dog.command('sit')
 ```
 
-### Scala
+**Scala**
 
 ```scala
 class Dog(name: String) {
@@ -111,7 +82,7 @@ dog.command("sit")
 
 ## 2. Dictionaries and Maps
 
-### Python
+**Python**
 
 ```python
 
@@ -130,7 +101,7 @@ quack
 what does the fox say: ??????
 ```
 
-### Scala
+**Scala**
 
 ```scala
 var x = Map("dog" -> "Woof", "cat" -> "Meow")
@@ -153,7 +124,7 @@ println("what does the fox say: " + x("fox"))
 
 ## 3. IO and Files
 
-### Python
+**Python**
 
 ```python
 import sys
@@ -165,7 +136,7 @@ else:
 
 ```
 
-### Scala
+**Scala**
  
 ```scala
 import scala.io.Source
@@ -180,7 +151,7 @@ if (args.length > 0) {
 
 ## 4. For Comprehensions
 
-### Python
+**Python**
 
 ```python
 Python
@@ -188,7 +159,7 @@ l = [1, 2, 3, 4, 5, 6]
 evens = [n for n in l if n % 2 == 0]
 ```
 
-### Scala
+**Scala**
 
 ```scala
 val l = List(1, 2, 3, 4, 5, 6)
@@ -197,7 +168,7 @@ val evens = for (n <- l if n % 2 == 0) yield n
 
 ## 5. Function literals
 
-### Python
+**Python**
 
 ```python
 
@@ -215,7 +186,7 @@ print greeting("world")
 
 ```
 
-### Scala
+**Scala**
 
 ```scala
 var greeting = (name: String) => "Hello " + name
@@ -228,7 +199,7 @@ println(greeting("world"))
 
 ## 6. Functions one-liner
 
-### Python
+**Python**
 
 ```python
 def max2(x, y): return x if x > y else y
@@ -238,7 +209,7 @@ def max2(x, y): return x if x > y else y
 19
 ```
 
-### Scala
+**Scala**
 
 ```scala
 // scala, function definition (brief)
@@ -252,7 +223,7 @@ max2(19, 17)
 
 ## 7. Functions
 
-### Python
+**Python**
 
 ```python
 
@@ -263,7 +234,7 @@ def max(x, y):
     return y
 ```
 
-### Scala
+**Scala**
 
 ```scala
 def max(x: Int, y: Int): Int = {
@@ -303,13 +274,13 @@ http://stackoverflow.com/questions/2209179/type-inference-on-method-return-type
 
 ##  8. Java interop
 
-### Python
+**Python**
 
 _This isn't for Python programmers, but it is pretty cool to see how seamlessly
 Java code can be used in Scala. The entire world of existing Java libraries
 can be leveraged._
 
-### Scala
+**Scala**
 
 ```scala
 import java.io.{FileReader, BufferedReader, IOException}
@@ -337,9 +308,9 @@ if (args.length > 0) {
 
 ## 9. Lists
 
-### Overview
+### 9.1. Overview
 
-#### Python
+**Python**
 
 ```python
 l = ["one", "two", "three"]
@@ -349,7 +320,7 @@ for a in l:
 */
 ```
 
-#### Scala
+**Scala**
 
 ```scala
 val l = List("one", "two", "three")
@@ -364,9 +335,9 @@ you're actually making a method call.
 `println(l(0))` <-- outputs "one"
 `println(l.apply(0))` <-- outputs "one"
  
-### Concatenating lists
+### 9.2. Concatenating lists
 
-#### Python
+**Python**
 
 ```python
 list1 = [1, 2]
@@ -374,7 +345,7 @@ list2 = [3, 4]
 biglist = list1 + list2
 ```
 
-#### Scala
+**Scala**
 
 ```scala
 // scala concatenating lists
@@ -408,9 +379,9 @@ inefficient:
 list1.insert(0, 1)
 ```
 
-### Sorting a list
+### 9.3. Sorting a list
 
-#### Python
+**Python**
 
 ```python
 alist = [7, 2, 18, 3, 6]
@@ -418,7 +389,7 @@ sorted(alist) # returns a new list, sorted
 alist.sort() # sorts the list in place
 ```
 
-#### Scala
+**Scala**
 
 ```scala
 val alist = List(7, 2, 18, 3, 6)
@@ -427,9 +398,9 @@ println(alist.sorted)
 
 ## 10. Looping range and notes on operators
 
-### Loop over range of numbers
+### 10.1. Loop over range of numbers
 
-#### Python
+**Python**
 
 ```python
 for i in range(0, 5):
@@ -438,7 +409,7 @@ for i in range(0, 5):
 
 Note, last number printed is 4.
 
-#### Scala
+**Scala**
 
 ```scala
 // Scala is inclusive over the range, last number printed is 5
@@ -456,13 +427,13 @@ for (i <- 0.to(5))
 // res17: scala.collection.immutable.Range.Inclusive = Range(0, 1, 2, 3, 4, 5)
 ```
 
-### Operators
+### 10.2. Operators
 
 This may seem somewhat odd, but it actually is similar (at least to my
 non-expert eye) to how operators are implemented in languages like Python
 and PHP, e.g.
 
-#### Python
+**Python**
 
 ```python
 >>> x = 5
@@ -474,7 +445,7 @@ and PHP, e.g.
 7
 ```
 
-#### Scala
+**Scala**
 
 ```scala
 val x = 5
@@ -489,7 +460,7 @@ x + 2
 
 ## 11. Sets
 
-### Python
+**Python**
 
 ```python
 >>> basket1 = set(["apple", "pear"])
@@ -501,7 +472,7 @@ common to both: set(['apple'])
 in either basket: set(['strawberry', 'grape', 'apple', 'pear', 'starfruit'])
 ```
 
-### Scala
+**Scala**
 
 ```scala
 var basket1 = Set("apple", "pear")
@@ -526,7 +497,7 @@ var hashSet = HashSet(1, 2, 3)
 
 ## 12. Tuples
 
-### Python
+**Python**
 
 ```python
 
@@ -537,7 +508,7 @@ var hashSet = HashSet(1, 2, 3)
 foo
 ```
 
-### Scala
+**Scala**
 
 ```scala
 val pair = (1, "foo")

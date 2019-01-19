@@ -1,17 +1,16 @@
 # Ruby: The Bad Parts by Bozhidar Batsov
 > **tags**: | ruby |
 
-- [Ruby: The Bad Parts by Bozhidar Batsov](#ruby-the-bad-parts-by-bozhidar-batsov)
-  - [Reference](#reference)
-  - [The Problem :-)](#the-problem)
-  - [The Real Problem](#the-real-problem)
-    - [Problems with the Runtime](#problems-with-the-runtime)
-    - [Rubygems and Bundler](#rubygems-and-bundler)
-  - [The Rails Effect](#the-rails-effect)
-  - [Stewardship](#stewardship)
-  - [Problem with the Language](#problem-with-the-language)
-    - [The useless stuff](#the-useless-stuff)
-  - [The bad stuff](#the-bad-stuff)
+- [Reference](#reference)
+- [The Problem :-)](#the-problem)
+- [The Real Problem](#the-real-problem)
+  - [Problems with the Runtime](#problems-with-the-runtime)
+  - [Rubygems and Bundler](#rubygems-and-bundler)
+- [The Rails Effect](#the-rails-effect)
+- [Stewardship](#stewardship)
+- [Problem with the Language](#problem-with-the-language)
+  - [The useless stuff](#the-useless-stuff)
+- [The bad stuff](#the-bad-stuff)
 
 ## Reference
 

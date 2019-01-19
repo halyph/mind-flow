@@ -1,53 +1,20 @@
 # Scala for Ruby Developers
 > **tags**: | scala | python | vs | comparison |
 
-- [Scala for Ruby Developers](#scala-for-ruby-developers)
-  - [References](#references)
-  - [1. Initial Ruby vs Scala comparison](#1-initial-ruby-vs-scala-comparison)
-    - [Ruby](#ruby)
-    - [Scala](#scala)
-  - [2.1 Map and Reduce](#21-map-and-reduce)
-    - [Ruby](#ruby-1)
-    - [Scala](#scala-1)
-  - [2.2 Labmdas](#22-labmdas)
-    - [Scala](#scala-2)
-    - [Ruby](#ruby-2)
-  - [3. Named Arguments](#3-named-arguments)
-    - [Ruby](#ruby-3)
-    - [Scala](#scala-3)
-  - [Types](#types)
-    - [Scala](#scala-4)
-    - [Ruby](#ruby-4)
-  - [4. Partial Functions](#4-partial-functions)
-    - [Ruby](#ruby-5)
-    - [Scala](#scala-5)
-    - [Ruby](#ruby-6)
-    - [Scala](#scala-6)
-  - [5. Pattern Matching](#5-pattern-matching)
-    - [Ruby](#ruby-7)
-    - [Scala](#scala-7)
-    - [Scala](#scala-8)
-    - [Ruby](#ruby-8)
-  - [6. Random from array](#6-random-from-array)
-    - [Ruby](#ruby-9)
-    - [Scala](#scala-9)
-  - [7. Monkey Patching](#7-monkey-patching)
-    - [Ruby](#ruby-10)
-    - [Scala](#scala-10)
-    - [Ruby](#ruby-11)
-    - [Scala](#scala-11)
-    - [Ruby](#ruby-12)
-    - [Scala](#scala-12)
-  - [8. Mixins](#8-mixins)
-    - [Scala](#scala-13)
-    - [Ruby](#ruby-13)
-  - [9. Line Ending](#9-line-ending)
-  - [10. Dynamic calls](#10-dynamic-calls)
-    - [Ruby](#ruby-14)
-    - [Scala](#scala-14)
-  - [11. Duck Typing](#11-duck-typing)
-    - [Ruby](#ruby-15)
-    - [Scala](#scala-15)
+- [References](#references)
+- [1. Initial Ruby vs Scala comparison](#1-initial-ruby-vs-scala-comparison)
+- [2.1 Map and Reduce](#21-map-and-reduce)
+- [2.2 Labmdas](#22-labmdas)
+- [3. Named Arguments](#3-named-arguments)
+- [4. Partial Functions](#4-partial-functions)
+- [5. Pattern Matching](#5-pattern-matching)
+- [6. Random from array](#6-random-from-array)
+- [7. Monkey Patching](#7-monkey-patching)
+- [8. Mixins](#8-mixins)
+- [9. Line Ending](#9-line-ending)
+- [10. Dynamic calls](#10-dynamic-calls)
+- [11. Duck Typing](#11-duck-typing)
+- [12. Types](#12-types)
 
 
 ## References
@@ -55,9 +22,11 @@
   - http://www.slideshare.net/squixy/scala-vs-ruby-45694031
 - http://www.slideshare.net/El_Picador/scala-vs-ruby
 
+---
+
 ## 1. Initial Ruby vs Scala comparison
 
-### Ruby
+**Ruby**
 
 - Designed for humans, not machines
 - Extreme flexibility: if you mess up, it’s on you
@@ -67,7 +36,7 @@
 - Things move quickly, learn to keep up
 - Passionate and vibrant community
 
-### Scala
+**Scala**
 
 - Have the best of both object oriented and functional programming worlds
 - Let the compiler do some of the work for you
@@ -77,7 +46,7 @@
 
 ## 2.1 Map and Reduce
 
-### Ruby
+**Ruby**
 
 ```ruby
 def fun
@@ -85,7 +54,7 @@ def fun
 end
 ```
 
-### Scala
+**Scala**
 
 ```scala
 def fun = (3 to 999).filter { n => n % 5 == 0 || n % 3 == 0 }.reduce(_+_)
@@ -93,7 +62,7 @@ def fun = (3 to 999).filter { n => n % 5 == 0 || n % 3 == 0 }.reduce(_+_)
 
 ## 2.2 Labmdas
 
-### Scala
+**Scala**
 
 ```scala
 list.filter(_ % 2 == 0)
@@ -103,7 +72,7 @@ list.filter {
         }
 ```
 
-### Ruby
+**Ruby**
 
 ```ruby
 list.select do |e| 
@@ -115,7 +84,7 @@ end
 
 > Show an example of named arguments in constructors of functions
 
-### Ruby
+**Ruby**
 
 ```ruby
 class Foo
@@ -134,7 +103,7 @@ Bar.new(foo = 1, bar = false)
 
 ```
 
-### Scala
+**Scala**
 
 ```scala
 case class Foo(foo: Int, bar: Boolean)
@@ -148,26 +117,11 @@ def bar(attr: String) = {}
 bar(attr = "")
 ```
 
-## Types
-
-### Scala
-
-```scala
-var hash = new HashMap[Int, String]
-```
-
-### Ruby
-
-```ruby
-hash = Hash.new 
-hash = 3
-```
-
 ## 4. Partial Functions
 
 > You are given a function that sums two numbers:
 
-### Ruby
+**Ruby**
 
 ```ruby
 def add(a, b)
@@ -175,7 +129,7 @@ def add(a, b)
 end
 ```
 
-### Scala
+**Scala**
 
 ```scala
 def add(a: Int, b: Int) = a + b
@@ -185,7 +139,7 @@ def add(a: Int, b: Int) = a + b
 
 > Write a function called `add2`, that uses `add` function, takes one parameter and adds `2` to it.
 
-### Ruby
+**Ruby**
 
 ```ruby
 [1] (pry) main: 0> def add(a, b)
@@ -203,7 +157,7 @@ def add(a: Int, b: Int) = a + b
 => 5
 ```
 
-### Scala
+**Scala**
 
 ```scala
 scala> def add(a: Int, b: Int) = a + b
@@ -220,7 +174,7 @@ res4: Int = 5
 
 > Write a function that checks whether a given argument is an integer or string. Otherwise print `Not match`
 
-### Ruby
+**Ruby**
 
 ```ruby
 [0] (pry) main: 0> def pattern_matching(value)
@@ -244,7 +198,7 @@ Not match
 
 ```
 
-### Scala
+**Scala**
 
 ```scala
 scala> :paste
@@ -272,7 +226,7 @@ Not match
 
 
 
-### Scala
+**Scala**
 
 ```scala
 def matchTest(x: Any): Any = x match {
@@ -282,7 +236,7 @@ def matchTest(x: Any): Any = x match {
 }
 ```
 
-### Ruby
+**Ruby**
 
 `gem install case`
 
@@ -301,7 +255,7 @@ end end
 
 > Write a function that finds a random element from given array.
 
-### Ruby
+**Ruby**
 
 ```ruby
 def get_random_element(array)
@@ -309,7 +263,7 @@ def get_random_element(array)
 end
 ```
 
-### Scala
+**Scala**
 
 ```scala
 import scala.util.Random
@@ -321,7 +275,7 @@ def getRandomElement[T](list: Seq[T]): T = list(Random nextInt list.length)
 
 > Write a function belonging to String class that allows to remove all occurrences of given substring.
 
-### Ruby
+**Ruby**
 
 ```ruby
 String.class_eval do    # ALWAYS .class_eval
@@ -331,7 +285,7 @@ String.class_eval do    # ALWAYS .class_eval
 end
 ```
 
-### Scala
+**Scala**
 
 ```scala
 implicit class SuperString(val string: String) extends AnyVal {
@@ -341,7 +295,7 @@ implicit class SuperString(val string: String) extends AnyVal {
 
 > Usage
 
-### Ruby 
+**Ruby** 
 
 ```ruby
 [0] (pry) main: 0> String.class_eval do    # ALWAYS .class_eval
@@ -355,7 +309,7 @@ implicit class SuperString(val string: String) extends AnyVal {
 => "es"
 ```
 
-### Scala
+**Scala**
 
 ```scala
 scala> implicit class SuperString(val string: String) extends AnyVal {
@@ -367,7 +321,7 @@ scala> "test" remove "t"
 res0: String = es
 ```
 
-### Ruby
+**Ruby**
 
 > Monkey Patching
 
@@ -388,7 +342,7 @@ puts "a".to_s # => Monkey !
 puts "a".my_method # => Patch !
 ```
 
-### Scala
+**Scala**
 
 > Implicits
 
@@ -406,7 +360,7 @@ println("a".myMethod) // => Patch !
 
 > Create a `Helper` mixin with auxilary method that can be adopted in many classes
 
-### Scala
+**Scala**
 
 ```scala
 scala> trait Helper {
@@ -425,7 +379,7 @@ scala> (new IncludeHelper).help
 res0: String = I'm from helper
 ```
 
-### Ruby
+**Ruby**
 
 ```ruby
 [1] (pry) main: 0> module Helper
@@ -448,7 +402,7 @@ Both Languages should not end line with `;`
 
 ## 10. Dynamic calls
 
-### Ruby
+**Ruby**
 
 ```ruby
 class Animal
@@ -468,7 +422,7 @@ animal.qualk # => Animal says : qualks !
 animal.say("hello") # => Animal wants to say hello
 ```
 
-### Scala
+**Scala**
 
 ```scala
 class Animal extends Dynamic {
@@ -486,7 +440,7 @@ animal.say("hello") // => Animal wants to say hello
 
 ## 11. Duck Typing
 
-### Ruby
+**Ruby**
 
 ```ruby
 
@@ -511,9 +465,9 @@ act_as_a_duck(duck)
 act_as_a_duck(platypus)
 ```
 
-### Scala
+**Scala**
 
-``` scala
+```scala
 class Duck {
   def quack = ... 
   def walk = ...
@@ -533,4 +487,19 @@ val duck = new Duck
 val platypus = new Platypus
 ActAsADuck(duck)
 ActAsADuck(platypus)
+```
+
+## 12. Types
+
+**Scala**
+
+```scala
+var hash = new HashMap[Int, String]
+```
+
+**Ruby**
+
+```ruby
+hash = Hash.new 
+hash = 3
 ```
