@@ -25,7 +25,9 @@ First of all it's not my writings and it's just a copy of posts from [@DjangoTri
 - [Iteration without indexes](#iteration-without-indexes)
 - [Generators](#generators)
 - [Sets](#sets)
-- [TTT](#ttt)
+- [Function arguments](#function-arguments)
+- [Classes and inheritance](#classes-and-inheritance)
+- [Class properties: getters and setters](#class-properties-getters-and-setters)
 
 ## References
 
@@ -537,16 +539,202 @@ for (let elem of s.values()) {
 s.delete('C')
 ```
 
-## TTT
+## Function arguments
 
 **Python**
 
 ```python
+from pprint import pprint
 
+def report(post_id, reason='not-relevant'):
+    pprint({'post_id': post_id, 'reason': reason})
+
+report(42)
+report(post_id=24, reason='spam')
+
+# Positional arguments
+def add_tags(post_id, *tags):
+    pprint({'post_id': post_id, 'tags': tags})
+
+add_tags(42, 'python', 'javascript', 'django')
+
+# Keyword arguments
+def create_post(**options):
+    pprint(options)
+
+create_post(
+    title='Hello, World!', 
+    content='This is our first post.',
+    is_published=True,
+)
+create_post(
+    title='Hello again!',
+    content='This is our second post.',
+)
 ```
 
 **JavaScript**
 
 ```javascript
+function report(post_id, reason='not-relevant') {
+    console.log({post_id: post_id, reason: reason});
+}
 
+report(42);
+report(post_id=24, reason='spam');
+
+// Positional arguments
+function add_tags(post_id, ...tags) {
+    console.log({post_id: post_id, tags: tags});
+}
+
+add_tags(42, 'python', 'javascript', 'django');
+
+// Keyword arguments
+function create_post(options) {
+    console.log(options);
+}
+
+create_post({
+    'title': 'Hello, World!',
+    'content': 'This is our first post.',
+    'is_published': true
+});
+create_post({
+    'title': 'Hello again!',
+    'content': 'This is our second post.'
+});
+```
+
+## Classes and inheritance
+
+**Python**
+
+```python
+class Post(object):
+    def __init__(self, id, title):
+        self.id = id
+        self.title = title
+
+    def __str__(self):
+        return self.title
+
+post = Post(42, 'Hello, World!')
+isinstance(post, Post) == True
+print(post)  # Hello, World!
+
+# Inheritance
+class Article(Post):
+    def __init__(self, id, title, content):
+        super(Article, self).__init__(id, title)
+        self.content = content
+
+class Link(Post):
+    def __init__(self, id, title, url):
+        super(Link, self).__init__(id, title)
+        self.url = url
+
+    def __str__(self):
+        return '{} ({})'.format(
+            super(Link, self).__str__(),
+            self.url,
+        )
+
+article = Article(1, 'Hello, World!', 'This is my first article.')
+link = Link(2, 'DjangoTricks', 'https://djangotricks.blogspot.com')
+isinstance(article, Post) == True
+isinstance(link, Post) == True
+print(link)
+# DjangoTricks (https://djangotricks.blogspot.com)
+```
+
+**JavaScript**
+
+```javascript
+class Post {
+    constructor (id, title) {
+        this.id = id;
+        this.title = title;
+    }
+    toString() {
+        return this.title;
+    }
+}
+
+post = new Post(42, 'Hello, World!');
+post instanceof Post === true;
+console.log(post.toString());  // Hello, World!
+
+// Inheritance
+class Article extends Post {
+    constructor (id, title, content) {
+        super(id, title);
+        this.content = content;
+    }
+}
+
+class Link extends Post {
+    constructor (id, title, url) {
+        super(id, title);
+        this.url = url;
+    }
+    toString() {
+        return super.toString() + ' (' + this.url + ')';
+    }
+}
+
+article = new Article(1, 'Hello, World!', 'This is my first article.');
+link = new Link(2, 'DjangoTricks', 'https://djangotricks.blogspot.com');
+article instanceof Post === true;
+link instanceof Post === true;
+console.log(link.toString());
+// DjangoTricks (https://djangotricks.blogspot.com)
+```
+
+## Class properties: getters and setters
+
+**Python**
+
+```python
+class Post(object):
+    def __init__(self, id, title):
+        self.id = id
+        self.title = title
+        self._slug = ''
+
+    @property
+    def slug(self):
+        return self._slug
+
+    @slug.setter
+    def slug(self, value):
+        self._slug = value
+
+post = new Post(1, 'Hello, World!')
+post.slug = 'hello-world'
+print(post.slug)
+```
+
+**JavaScript**
+
+```javascript
+class Post {
+    constructor (id, title) {
+        this.id = id;
+        this.title = title;
+        this._slug = '';
+    }
+
+    set slug(value) {
+        this._slug = value;
+    }
+
+    get slug() {
+        return this._slug;
+    }
+}
+
+post = new Post(1, 'Hello, World!');
+post.slug = 'hello-world';
+console.log(post.slug);
 ```
