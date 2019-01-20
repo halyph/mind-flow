@@ -12,12 +12,19 @@ First of all it's not my writings and it's just a copy of posts from [@DjangoTri
 - [Operations with list items](#operations-with-list-items)
 - [Joining lists of strings](#joining-lists-of-strings)
 - [JSON](#json)
-- [Splitting strings by regular expressions](#splitting-strings-by-regular-expressions)
-- [Matching regular expression patterns in strings](#matching-regular-expression-patterns-in-strings)
-- [Search sub-string](#search-sub-string)
-- [Replacing patterns in strings using regular expressions](#replacing-patterns-in-strings-using-regular-expressions)
-- [Replacing patterns in strings using a function call](#replacing-patterns-in-strings-using-a-function-call)
+- [Working with Strings](#working-with-strings)
+  - [Splitting strings by regular expressions](#splitting-strings-by-regular-expressions)
+  - [Matching regular expression patterns in strings](#matching-regular-expression-patterns-in-strings)
+  - [Search sub-string](#search-sub-string)
+  - [Replacing patterns in strings using regular expressions](#replacing-patterns-in-strings-using-regular-expressions)
+  - [Replacing patterns in strings using a function call](#replacing-patterns-in-strings-using-a-function-call)
 - [Error handling](#error-handling)
+- [Variables in strings](#variables-in-strings)
+- [Unpacking lists](#unpacking-lists)
+- [Lambda functions](#lambda-functions)
+- [Iteration without indexes](#iteration-without-indexes)
+- [Generators](#generators)
+- [Sets](#sets)
 - [TTT](#ttt)
 
 ## References
@@ -202,7 +209,9 @@ json_data = JSON.stringify(dictionary, null, 4);
 dictionary = JSON.parse(json_data);
 ```
 
-## Splitting strings by regular expressions
+## Working with Strings
+
+### Splitting strings by regular expressions
 
 **Python**
 
@@ -228,7 +237,7 @@ sentences = text.split(delimiter)
 // sentences === ["Hello", "What's new", "Follow me", ""]
 ```
 
-## Matching regular expression patterns in strings
+### Matching regular expression patterns in strings
 
 **Python**
 
@@ -256,7 +265,7 @@ match = 'hi@example.com'.match(pattern);
 // match[2] === 'example.com'
 ```
 
-## Search sub-string
+### Search sub-string
 
 **Python**
 
@@ -277,7 +286,7 @@ if (first_match > -1) {
 }
 ```
 
-## Replacing patterns in strings using regular expressions
+### Replacing patterns in strings using regular expressions
 
 **Python**
 
@@ -303,7 +312,7 @@ html = 'Say hi at hi@example.com'.replace(
 // html === 'Say hi at <a href="mailto:hi@example.com">hi@example.com</a>'
 ```
 
-## Replacing patterns in strings using a function call
+### Replacing patterns in strings using a function call
 
 **Python**
 
@@ -373,6 +382,159 @@ try {
 } finally {
     console.log('Finishing');
 }
+```
+
+## Variables in strings
+
+```
+name = 'World'
+value = 'Hello, ' + name + '!\nWelcome!'
+```
+
+**Python**
+
+```python
+name = 'World'
+value = f"""Hello, {name}!
+Welcome!"""
+
+price = 14.9
+value = f'Price: {price:.2f} €'  # 'Price: 14.90 €'
+```
+
+**JavaScript**
+
+```javascript
+name = 'World';
+value = `Hello, ${name}!
+Welcome!`;
+
+price = 14.9;
+value = `Price ${price.toFixed(2)} €`;  // 'Price: 14.90 €'
+```
+
+## Unpacking lists
+
+**Python**
+
+```python
+[a, b, c] = [1, 2, 3]
+
+# E.g. popular variable swap
+a = 1
+b = 2
+a, b = b, a  # swap values
+
+# Python 3.6
+first, second, *the_rest = [1, 2, 3, 4]
+# first == 1
+# second == 2
+# the_rest == [3, 4]
+```
+
+**JavaScript**
+
+```javascript
+// ECMAScript 6
+[first, second, ...the_rest] = [1, 2, 3, 4];
+// first === 1
+// last === 2
+// the_rest === [3, 4]
+```
+
+## Lambda functions
+
+**Python**
+
+```python
+sum = lambda x, y: x + y
+square = lambda x: x ** 2
+```
+
+**JavaScript**
+
+```javascript
+sum = (x, y) => x + y;
+square = x => Math.pow(x, 2);
+```
+
+## Iteration without indexes
+
+**Python**
+
+```python
+for item in ['A', 'B', 'C']:
+    print(item)
+
+for character in 'ABC':
+    print(character)
+```
+
+**JavaScript**
+
+```javascript
+for (let item of ['A', 'B', 'C']) {
+    console.log(item);
+}
+
+for (let character of 'ABC') {
+    console.log(character);
+}
+```
+
+## Generators
+
+**Python**
+
+```python
+def countdown(counter):
+    while counter > 0:
+        yield counter
+        counter -= 1
+
+for counter in countdown(10):
+    print(counter)
+```
+
+**JavaScript**
+
+```javascript
+function* countdown(counter) {
+    while (counter > 0) {
+        yield counter;
+        counter--;
+    }
+}
+for (let counter of countdown(10)) {
+    console.log(counter);
+}
+```
+
+## Sets
+
+**Python**
+
+```python
+s = set(['A'])
+s.add('B'); s.add('C')
+'A' in s
+len(s) == 3
+for elem in s:
+    print(elem)
+s.remove('C')
+```
+
+**JavaScript**
+
+```javascript
+s = new Set(['A']);
+s.add('B').add('C');
+s.has('A') === true;
+s.size === 3;
+for (let elem of s.values()) {
+    console.log(elem);
+}
+s.delete('C')
 ```
 
 ## TTT
