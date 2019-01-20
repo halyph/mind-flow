@@ -1,9 +1,18 @@
-# Github Knowledge Sharing Resources
+# Algorithms, System Design, Interview Preparation - Github Repos
+
 > **tags**: | github | java | python | data science | machine learning | interview | algorithms |
 
-I've notice very interesting tendency on Github - people likes to share non-code repos. The most popular is "awersome" and "interview preparation" repos.
+I've notice very interesting tendency on Github - people likes to share non-code repos. The most popular is "awesome" and "interview preparation" repos.
 I have collected some amount of these repos.
 
+- [Coding Interview Preparation](#coding-interview-preparation)
+- [System design](#system-design)
+- [Algorithms](#algorithms)
+- [Design Patters](#design-patters)
+- [Miscellaneous](#miscellaneous)
+- [Web](#web)
+
+---
 
 ## Coding Interview Preparation
 
@@ -79,43 +88,6 @@ I have collected some amount of these repos.
 - [DovAmir/awesome-design-patterns](https://github.com/DovAmir/awesome-design-patterns)
   - **tags:** [gof] [design patterns] [cloud] [db] [devops] [awesome]
   - **Comments:** A curated list of software and architecture related design patterns.
-
-## Machine Learning
-
-- [ZuzooVn/machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
-  - **tags:**  [machine learning] [book] [video] [mooc]
-  - **Comments:** Impressive notes "How to become ML engineer". I can say it's very nice collection.
-- [kailashahirwar/cheatsheets-ai](https://github.com/kailashahirwar/cheatsheets-ai)
-  - **tags:** [cheatsheet] [python] [panda] [numpy] [machine learning] [R]
-  - **Comments:** Essential *Cheat Sheets* for deep learning and machine learning researchers
-- [trekhleb/homemade-machine-learning](https://github.com/trekhleb/homemade-machine-learning)  
-  - **tags:** [python] [machine learning]
-  - **Comments:** Python examples of popular machine learning algorithms with interactive Jupyter demos and math being explained
-- [trekhleb/machine-learning-octave](https://github.com/trekhleb/machine-learning-octave)
-  - **tags:** [octave] [machine learning]
-  - **Comments:** MatLab/Octave examples of popular machine learning algorithms with code examples and mathematics being explained
-- [ShuaiW/data-science-question-answer](https://github.com/ShuaiW/data-science-question-answer)
-  - **tags:** [interview] [data science] [machine learning]
-  - **Comments:** A repo for data science related questions and answers.
-- [hangtwenty/dive-into-machine-learning](https://github.com/hangtwenty/dive-into-machine-learning)
-  - **tags:** [machine learning] [book] [mooc] [tips] [python]
-  - **Comments:** Dive into Machine Learning with Python Jupyter notebook and scikit-learn!
-
-## R
-
-- [swcarpentry/r-novice-inflammation](https://github.com/swcarpentry/r-novice-inflammation)
-  - **Title:** Introduction to R for non-programmers using inflammation data.
-  - **tags:** [R]
-  - **Comments:** 
-- [ProjectMOSAIC/LittleBooks](https://github.com/ProjectMOSAIC/LittleBooks)
-  - **tags:** [R] [calculus] [statistics]
-  - **Comments:** Materials for the MOSAIC "Teaching Statistics with R and RStudio"
-
-## Python
-
-- [swcarpentry/python-novice-inflammation](https://github.com/swcarpentry/python-novice-inflammation)
-  - **tags:** [python] [machine learning]
-  - **Comments:** Software Carpentry introduction to Python for novices using inflammation data
 
 ## Miscellaneous
 

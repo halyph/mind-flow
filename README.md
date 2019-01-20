@@ -6,7 +6,8 @@ _Another try of blogging or personal knowledge base_
 
 ## 2019
 
-- 2019-01-17 - [Github Knowledge Sharing Resources](2019/2019-01-17-github-knowl-shar-repos.md)
+- 2019-01-19 - [Python vs Javascript comparison](2019/2019-01-19-python-vs-javascritp.md)
+- 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 - 2019-01-13 - [Top "Algorithms and Data Structures" Books](2019/2019-01-13-alg-and-ds-books.md)
 
 ## 2018

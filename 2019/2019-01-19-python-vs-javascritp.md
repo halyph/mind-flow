@@ -1,5 +1,5 @@
 # Python vs Javascript comparison
-> **tags**: [python] [javascript] [vs]
+> **tags**: | python | javascript | vs | comparison |
 
 First of all it's not my writings and it's just a copy of posts from [@DjangoTricks](https://djangotricks.blogspot.com) blog by Aidas Bendoraitis (see [References](#references) below)
 
