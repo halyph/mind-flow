@@ -1,7 +1,9 @@
 # Ruby vs Javascript comparison
-> **tags**: | Ruby | javascript | vs | comparison |
+> **tags**: | ruby | javascript | vs | comparison |
 
 First of all it's not my writings and it's just a copy of *Artem's Tyurin* [agentcooper/js-ruby-comparison](https://github.com/agentcooper/js-ruby-comparison) repo 
+
+*Note:* This comparison uses pre-*ES6* code snippets.
 
 - [Arrays](#arrays)
   - [Manipulation](#manipulation)
@@ -10,11 +12,18 @@ First of all it's not my writings and it's just a copy of *Artem's Tyurin* [agen
   - [Slices](#slices)
   - [Iterating elements](#iterating-elements)
 - [Strings](#strings)
-- [TT](#tt)
+- [Hash](#hash)
+- [Functions](#functions)
+  - [Basic usage](#basic-usage)
+  - [Multiple arguments](#multiple-arguments)
+  - [Definition and invocation order](#definition-and-invocation-order)
+- [Classes](#classes)
+- [Math](#math)
+- [Other](#other)
 
 ---
 
-## Arrays 
+## Arrays
 
 ### Manipulation
 
@@ -160,16 +169,216 @@ for (elem of a) {
 
 ## Strings
 
-## TT 
+**Ruby**
+
+```ruby
+'hello'.index('e')    # 1
+'hello'.rindex('l')   # 3
+
+if 'hello'.include? 'lo' then puts 'found' end
+
+'hello' * 3           # 'hellohellohello'
+
+'a/b/c'.split('/')    # ['a', 'b', 'c']
+```
+
+**JavaScript**
+
+```javascript
+'hello'.indexOf('e')             // 1
+'hello'.lastIndexOf('l')         // 3
+
+if (~'hello'.indexOf('lo')) { console.log('found'); }
+
+(new Array(3 + 1)).join('hello') // 'hellohellohello'
+
+'a/b/c'.split('/')               // ['a', 'b', 'c']
+```
+
+## Hash
 
 **Ruby**
 
 ```ruby
+h = {}
+h['a'] = 1
+h['b'] = 2
+
+h.each {|key, value| puts "#{key} #{value}" }
+
+h.keys # ['a', 'b']
+h.has_key?('c') # false
+
+h.length # 2
+
+h.delete("b")
+```
+
+**JavaScript**
+
+```javascript
+var h = {};
+h['a'] = 1;
+h['b'] = 2;
+
+for (key in h) { console.log(key, h[key]); }
+
+Object.keys(h); // ['a', 'b']
+h.hasOwnProperty('c') // false
+
+Object.keys(h).length // 2
+
+delete h.b
+```
+
+## Functions
+
+### Basic usage
+
+**Ruby**
+
+```ruby
+def plus_5(num = 0) num + 5 end
+
+plus_5     # 5
+plus_5(10) # 15
+
+[5, 10, 15].map { |k| plus_5(k) } # [10, 15, 20]
+```
+
+**JavaScript**
+
+```javascript
+function plus_5(num) { return (num || 0) + 5; }
+
+plus_5();   // 5
+plus_5(10); // 15
+
+[5, 10, 15].map(plus_5); // [10, 15, 20]
+```
+
+### Multiple arguments
+
+**Ruby**
+
+```ruby
+def f(*args)
+  puts args
+end
 
 ```
 
 **JavaScript**
 
 ```javascript
+function f() {
+  var args = Array.prototype.slice.call(arguments);
+  console.log(args);
+}
+```
 
+### Definition and invocation order
+
+**Ruby**
+
+```ruby
+sample_func
+
+def sample_func
+  puts "Hello World"
+end
+
+# => NameError: undefined local
+# variable or method `sample_func'
+```
+
+**JavaScript**
+
+```javascript
+sample_func();
+
+function sample_func() {
+  console.log("Hello World");
+};
+
+// => Hello World
+```
+
+## Classes
+
+**Ruby**
+
+```ruby
+class Person
+  attr_accessor :firstName, :lastName
+
+  def initialize(firstName, lastName)
+    @firstName = firstName
+    @lastName = lastName
+  end
+
+  def fullName
+    @firstName + " " + @lastName
+  end
+end
+
+john = Person.new("John", "Malkovic")
+john.fullName # "John Malkovic"
+```
+
+**JavaScript**
+
+I'm lazy to write this example in ES6
+
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+Person.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
+}
+
+var john = new Person("John", "Malkovic");
+john.fullName(); // "John Malkovic"
+```
+
+## Math
+
+**Ruby**
+
+```ruby
+[-5, -1, -8].max            # -1
+
+[-5, 15, 20].reduce(0, &:+) # 30
+```
+
+**JavaScript**
+
+```javascript
+Math.max.apply(null, [-5, -1, -8]) // -1
+
+[-5, 15, 20].reduce(function(sum, value) { return sum + value; }, 0) // 30
+[-5, 15, 20].reduce((sum, value) => sum + value, 0) // 30
+```
+
+## Other
+
+**Ruby**
+
+```ruby
+prng = Random.new()
+prng.rand(5..9) # one of [5, 6, 7, 8, 9]
+
+a, b = b, a # switch a and b
+```
+
+**JavaScript**
+
+```javascript
+function rand(a, b) { return Math.floor(Math.random() * (b - a + 1) + a); }
+rand(5, 9); // one of [5, 6, 7, 8, 9]
+
+a = [b, b = a][0] // do not try at home :-)
 ```
