@@ -6,6 +6,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2019
 
+- 2019-01-23 - [Go vs Python comparison](2019/2019-01-23-go-vs-python.md)
 - 2019-01-22 - [PostgreSQL command line cheatsheet](2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 - 2019-01-20 - [Ruby vs Javascript comparison](2019/2019-01-20-ruby-vs-javascript.md)
 - 2019-01-19 - [Python vs Javascript comparison](2019/2019-01-19-python-vs-javascript.md)
