@@ -31,7 +31,7 @@ It's not my writings and it's just a copy of [Go vs. Python by *Peter Bengtsson*
 
 ## References
 
-- http://govspy.peterbe.com/
+- [http://govspy.peterbe.com/](http://govspy.peterbe.com/)
 
 ---
 

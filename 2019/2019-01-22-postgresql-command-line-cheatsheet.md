@@ -235,6 +235,6 @@ psql -h localhost -U postgres -d somedb
 
 ## References
 
-- https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546
-- http://www.postgresqltutorial.com/postgresql-cheat-sheet/
-- http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf
+- [https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546](https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546)
+- [http://www.postgresqltutorial.com/postgresql-cheat-sheet/](http://www.postgresqltutorial.com/postgresql-cheat-sheet/)
+- [http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf](http://www.postgresonline.com/downloads/special_feature/postgresql83_psql_cheatsheet.pdf)
