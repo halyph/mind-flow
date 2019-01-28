@@ -1,6 +1,19 @@
 # Russian MOOCs
 > **tags:** | mooc |
 
+- [Algorithms and Data Structures](#algorithms-and-data-structures)
+- [Data Science and Machine Learning](#data-science-and-machine-learning)
+  - [Stepik](#stepik)
+- [Software Engineering](#software-engineering)
+  - [Data Bases](#data-bases)
+  - [Highload](#highload)
+  - [Python](#python)
+  - [Haskell](#haskell)
+- [System Programming and Linux](#system-programming-and-linux)
+- [Math](#math)
+
+---
+
 Glossary:
 
 - [MOOC](https://en.wikipedia.org/wiki/Massive_open_online_course) - Massive open online course
@@ -56,6 +69,27 @@ See below the list of different topics and direction I am interested in (grouped
 - [*CSC - Базы данных (осень 2013)*, Вадим Цесько](https://www.youtube.com/playlist?list=PLlb7e2G7aSpTABCq2ifA8dac39QuxbR1K)
 - [*CSC - Базы данных (осень 2017)*](https://www.youtube.com/playlist?list=PLlb7e2G7aSpRsPnjtSi2q0GXZdUXuXO46)
 - *Технологии хранения и обработки больших объёмов данных*, Дмитрий Барашев: [CSC](https://compscicenter.ru/courses/big-data/2015-spring/) and [Youtube](https://www.youtube.com/playlist?list=PLlb7e2G7aSpS_tveNoxgn1Zqmg-VhD95i)
+
+
+### Highload
+
+- [Highload. Проектирование высоконагруженных систем. (Технополис, осень 2017)](https://www.youtube.com/watch?v=2LTuRDFAzqc&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [1. HIGHLOAD. Введение](https://www.youtube.com/watch?v=2LTuRDFAzqc&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=1)
+  - [2. HIGHLOAD. Типовые архитектуры](https://www.youtube.com/watch?v=m9S37qxbvN8&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=2)
+  - [3. HIGHLOAD. Эксплуатация систем | Технострим](https://www.youtube.com/watch?v=fiNHRraxI88&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=3)
+  - [4. HIGHLOAD. Сетевой стек](https://www.youtube.com/watch?v=mbRqZw0CA1k&index=4&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [5. HIGHLOAD. Балансировка и маршрутизация](https://www.youtube.com/watch?v=CEZ2uxhQ0jY&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=5)
+  - [6. HIGHLOAD. Процессоры и память](https://www.youtube.com/watch?v=9KiDoUguWfQ&index=6&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [7. HIGHLOAD. Хранилища данных](https://www.youtube.com/watch?v=_d38g1tpLd8&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=7)
+  - [8. HIGHLOAD. JVM. Java в высоконагруженных системах](https://www.youtube.com/watch?v=NV6YnptgvV4&index=8&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [9. HIGHLOAD. Мониторинг](https://www.youtube.com/watch?v=4VJfcFiGNgU&index=9&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [10. HIGHLOAD. Облака](https://www.youtube.com/watch?v=thcE53dogZk&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=10)
+  - [11. HIGHLOAD. Дополнительные главы. Actor Model. Futures. Reactive streams](https://www.youtube.com/watch?v=fpfAPsiEscw&index=11&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [12. HIGHLOAD. Дополнительные главы. Live-coding второго этапа проекта](https://www.youtube.com/watch?v=8yqU6GE6PuQ&index=12&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [13. HIGHLOAD. Дополнительные главы. Мониторинг и диагностика JVM](https://www.youtube.com/watch?v=RwcVOEOI4yE&index=13&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [14. HIGHLOAD. Дополнительные главы. Site Reliability Engineering](https://www.youtube.com/watch?v=4VW4FGYHMPs&index=14&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [15. HIGHLOAD. Дополнительные главы. Современные структуры данных](https://www.youtube.com/watch?v=eVDWMRPsjo4&index=15&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40)
+  - [16. HIGHLOAD. Дополнительные главы. Репликация](https://www.youtube.com/watch?v=GSxz1Dnj230&list=PLrCZzMib1e9rZohs_FJg8MK52Ey494z40&index=16)
 
 ### Python
 
