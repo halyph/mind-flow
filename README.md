@@ -6,6 +6,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2019
 
+- 2019-02-07 - [Data Science YouTube Channels (Python, R)](2019/2019-02-07-py-r-youtube-channels.md)
 - 2019-01-26 - [Machine Learning and Data Science MOOCs](2019/2019-01-26-ml-ds-mooc.md)
 - 2019-01-23 - [Go vs Python comparison](2019/2019-01-23-go-vs-python.md)
 - 2019-01-22 - [PostgreSQL command line cheatsheet](2019/2019-01-22-postgresql-command-line-cheatsheet.md)
