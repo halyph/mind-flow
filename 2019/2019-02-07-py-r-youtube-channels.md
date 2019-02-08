@@ -12,7 +12,7 @@ There are tons of different YouTube channels dedicated to Python and R. Some of 
 - [LearnR](https://www.youtube.com/user/TheLearnR). This channel is dedicated to R.
 - [MarinStatsLectures-R Programming & Statistics](https://www.youtube.com/user/marinstatlectures/playlists). Statistics, Data Science and R Programming.
 - [Data School](https://www.youtube.com/user/dataschool) - Data Science Python and R video series.
-  - [Introduction to Statistical Learning - Playlists](https://www.youtube.com/user/dataschool/playlists?view=50&flow=grid&shelf_id=4) - it's a set of playlist accompanying the book [An Introduction to Statistical Learning with Applications in R by *Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani*](http://www-bcf.usc.edu/~gareth/ISL/)
+  - [Introduction to Statistical Learning - Playlists](https://www.youtube.com/user/dataschool/playlists?view=50&flow=grid&shelf_id=4) - it's a set of playlists accompanying the book [An Introduction to Statistical Learning with Applications in R by *Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani*](http://www-bcf.usc.edu/~gareth/ISL/)
 - [Video screencast tutorials on introductory topics in R and RStudio
  by Hefin Rhys](https://www.youtube.com/channel/UCctc3RvC6n5dJXP_NR7wfjQ)
 - [R Programming 101](https://www.youtube.com/channel/UCfJyQ3P2k_SuqfxVdqIEQNw/videos) - it's a new channel and the author is planning to publish R tutorials.
