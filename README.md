@@ -6,6 +6,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2019
 
+- 2019-02-10 - [Data Science Learning Resources](2019/2019-02-10-ds-learning-res.md)
 - 2019-02-07 - [Data Science YouTube Channels (Python, R)](2019/2019-02-07-py-r-youtube-channels.md)
 - 2019-01-26 - [Machine Learning and Data Science MOOCs](2019/2019-01-26-ml-ds-mooc.md)
 - 2019-01-23 - [Go vs Python comparison](2019/2019-01-23-go-vs-python.md)
