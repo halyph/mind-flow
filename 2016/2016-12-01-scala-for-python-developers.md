@@ -1,5 +1,5 @@
 # Scala for Python Developers by _Kevin Stanton_
-> **tags**: | scala | python | vs | comparison |
+> | scala | python | vs | comparison |
 
 - [Reference](#reference)
 - [1. Classes](#1-classes)

@@ -1,5 +1,5 @@
 # Functional programming in Haskell - Part 1
-> **tags**: | haskell | functional programming |
+> | haskell | functional programming |
 
 **UPD** (2018-0114): I put this MOOC on hold. Unfortunatelly, my plan has been changed and I have decided to stop doing this course due to overload on other directions. But this particular course is cool and teacher is cool. I highly recommend it.
 

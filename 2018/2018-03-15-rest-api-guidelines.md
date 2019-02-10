@@ -1,5 +1,5 @@
 # REST API Guidelines
-> **tags**: | api | rest |
+> | api | rest |
 
 
 REST API is the most popular interface for communication between different component of the system.

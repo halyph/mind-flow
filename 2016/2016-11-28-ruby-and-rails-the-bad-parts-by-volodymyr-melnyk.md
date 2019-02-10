@@ -1,5 +1,5 @@
 # Ruby and Rails: The Bad Parts by Volodymyr Melnyk
-> **tags**: | ruby |
+> | ruby |
 
 - [References](#references)
 - [Good Parts](#good-parts)

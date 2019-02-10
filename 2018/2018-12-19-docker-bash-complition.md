@@ -1,5 +1,5 @@
 # How to configure docker bash completion on Mac
-> **tags**: | docker | bash |
+> | docker | bash |
 
 
 Run the next commands to add completion to `docker`, `docker-machine` and `docker-compose`:

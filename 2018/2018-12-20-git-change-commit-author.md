@@ -1,5 +1,5 @@
 # Git - How to change commit author for the last commit
-> **tags**: | git |
+> | git |
 
 ```
 git commit --amend --author="Orest Ivasiv <halyph@gmail.com>"

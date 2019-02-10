@@ -1,5 +1,5 @@
 # Go vs Python comparison
-> **tags**: | python | golang | vs | comparison |
+> | python | golang | vs | comparison |
 
 It's not my writings and it's just a copy of [Go vs. Python by *Peter Bengtsson*](ttp://govspy.peterbe.com/) (see [References](#references) below)
 

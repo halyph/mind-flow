@@ -1,5 +1,5 @@
 # Ruby: The Bad Parts by Bozhidar Batsov
-> **tags**: | ruby |
+> | ruby |
 
 - [Reference](#reference)
 - [The Problem :-)](#the-problem)

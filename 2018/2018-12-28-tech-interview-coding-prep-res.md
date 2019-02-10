@@ -1,5 +1,5 @@
 # Resources for Practicing Coding Interview
-> **tags**: | interview |
+> | interview |
 
 Well, I've been reading many posts about technical interview preparation and many people suggesting different resources: sites, books, [youtube channels](2018-12-29-system-design-interview-prep.md).
 

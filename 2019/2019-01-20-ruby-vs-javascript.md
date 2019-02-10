@@ -1,5 +1,5 @@
 # Ruby vs Javascript comparison
-> **tags**: | ruby | javascript | vs | comparison |
+> | ruby | javascript | vs | comparison |
 
 First of all it's not my writings and it's just a copy of *Artem's Tyurin* [agentcooper/js-ruby-comparison](https://github.com/agentcooper/js-ruby-comparison) repo 
 

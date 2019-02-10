@@ -1,5 +1,5 @@
 # Scala for Ruby Developers
-> **tags**: | scala | python | vs | comparison |
+> | scala | python | vs | comparison |
 
 - [References](#references)
 - [1. Initial Ruby vs Scala comparison](#1-initial-ruby-vs-scala-comparison)

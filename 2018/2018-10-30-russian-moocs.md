@@ -1,5 +1,5 @@
 # Russian MOOCs
-> **tags:** | mooc |
+> | mooc |
 
 - [Algorithms and Data Structures](#algorithms-and-data-structures)
 - [Data Science and Machine Learning](#data-science-and-machine-learning)

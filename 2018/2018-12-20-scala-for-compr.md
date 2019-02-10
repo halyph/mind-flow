@@ -1,5 +1,5 @@
 # [WIP] Note: Scala `for`-comprehensions
-> **tags**: | scala | video |
+> | scala | video |
 
 This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: _"For: What is it good for? — Josh Suereth & Dick Wall"_ (see references).
 

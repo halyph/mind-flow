@@ -1,5 +1,5 @@
 # Thoughts about Blogging
-> **tags**: | blog |
+> | blog |
 
 I started blogging in 2009 using [Blogger.com](https://www.blogger.com). I had been using it from 2009 till 2014.
 In total, I wrote there 116 posts (the last one I don't count), see grouped by year below:
