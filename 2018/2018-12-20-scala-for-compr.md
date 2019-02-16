@@ -27,16 +27,25 @@ Actually, I have found github repo with Jupiter notebooks. But, I don't like thi
   - [02.08](#0208)
   - [02.09](#0209)
   - [02.10](#0210)
-- [03 - Options, options, options](#03---options-options-options)
+- [03 - Options](#03---options)
   - [03.01](#0301)
   - [03.02](#0302)
   - [03.03](#0303)
-- [04 - Embrace the Future](#04---embrace-the-future)
+- [04 - Future](#04---future)
   - [04.01](#0401)
   - [04.02](#0402)
   - [04.03](#0403)
-- [05 - Guards! Guards!](#05---guards-guards)
+- [05 - Guards](#05---guards)
   - [05.01](#0501)
+  - [05.02](#0502)
+  - [05.03](#0503)
+  - [05.04](#0504)
+- [06 - Inline Assignments](#06---inline-assignments)
+  - [06.01](#0601)
+  - [06.02](#0602)
+  - [06.03](#0603)
+  - [06.04](#0604)
+- [07 - Generators](#07---generators)
 
 ## References
 
@@ -546,7 +555,7 @@ for {
 res0: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 2, 3, 2, 4, 6, 3, 6, 9, 2, 4, 6, 4, 8, 12, 6, 12, 18, 3, 6, 9, 6, 12, 18, 9, 18, 27)
 ```
 
-## 03 - Options, options, options
+## 03 - Options
 
 ### 03.01
 
@@ -607,7 +616,7 @@ oz: Some[Int] = Some(3)
 oResult: Option[Int] = None
 ```
 
-## 04 - Embrace the Future
+## 04 - Future
 
 ### 04.01
 
@@ -675,14 +684,282 @@ at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 ```
 
-## 05 - Guards! Guards!
+## 05 - Guards
 
 ### 05.01
 
 ```scala
+for {
+    x <- 1 to 10
+    y <- 1 to 10
+    if x % 4 < y % 5
+    if x % 2 == 0
+} yield x * y
 
 // Output
+res0: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  8,
+  16,
+  18,
+  4,
+  8,
+  12,
+  16,
+  24,
+  28,
+  32,
+  36,
+  18,
+  24,
+  48,
+  54,
+  8,
+  16,
+  24,
+...
 ```
+
+### 05.02
+
+```scala
+for {
+    i <- 1 to 10
+    j <- 1 to 10
+    if i % 3 == 0 || j % 3 == 0
+    k <- 1 to 10
+    if i * j * k % 2 == 0
+} yield i * j * k
+
+// Output
+res1: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  12,
+  18,
+  24,
+  30,
+  6,
+  12,
+  18,
+  24,
+  30,
+  36,
+  42,
+  48,
+  54,
+  60,
+  18,
+  36,
+  54,
+  72,
+...
+```
+
+### 05.03
+
+```scala
+(1 to 10).flatMap { i =>
+  (1 to 10).withFilter(j => i % 3 == 0 || j % 3 == 0).flatMap { j =>
+    (1 to 10).withFilter(k => i * j * k % 2 == 0).map { k =>
+      i * j * k
+    }
+  }
+}
+
+// Output
+res2: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  12,
+  18,
+  24,
+  30,
+  6,
+  12,
+  18,
+  24,
+  30,
+  36,
+  42,
+  48,
+  54,
+  60,
+  18,
+  36,
+  54,
+  72,
+...
+```
+
+### 05.04
+
+```scala
+for {
+    i <- 1 to 10
+    j <- 1 to 10
+    if i % 3 == 0 || j % 3 == 0
+    k <- 1 to 10
+    if i * j * k % 2 == 0
+} yield i * j * k
+
+// Output
+res3: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  12,
+  18,
+  24,
+  30,
+  6,
+  12,
+  18,
+  24,
+  30,
+  36,
+  42,
+  48,
+  54,
+  60,
+  18,
+  36,
+  54,
+  72,
+...
+```
+
+## 06 - Inline Assignments
+
+### 06.01
+
+```scala
+for {
+    i <- 1 to 10
+    j <- 1 to 10
+    if i % 3 == 0 || j % 3 == 0
+    k <- 1 to 10
+    if i * j * k % 2 == 0
+} yield i * j * k  // why repeat this?
+
+// Output
+res0: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  12,
+  18,
+  24,
+  30,
+  6,
+  12,
+  18,
+  24,
+  30,
+  36,
+  42,
+  48,
+  54,
+  60,
+  18,
+  36,
+  54,
+  72,
+...
+```
+
+### 06.02
+
+```scala
+for {
+    i <- 1 to 10
+    j <- 1 to 10
+    if i % 3 == 0 || j % 3 == 0
+    
+    k <- 1 to 10
+    
+    mult = i * j * k
+    if mult % 2 == 0
+} yield mult
+
+// Output
+res1: collection.immutable.IndexedSeq[Int] = Vector(
+  6,
+  12,
+  18,
+  24,
+  30,
+  6,
+  12,
+  18,
+  24,
+  30,
+  36,
+  42,
+  48,
+  54,
+  60,
+  18,
+  36,
+  54,
+  72,
+...
+```
+
+### 06.03
+
+```scala
+(1 to 10).flatMap { i =>
+  (1 to 10).withFilter(j => i % 3 == 0 || j % 3 == 0).flatMap { j =>
+    (1 to 10).map { k =>
+      val mult = i * j * k
+     (k, mult)
+    }.withFilter { 
+      case (k, mult) => mult % 2 == 0 
+    }.map { 
+      case(k, mult) => mult
+    }
+  }
+}
+
+// Output
+res0: scala.collection.immutable.IndexedSeq[Int] = Vector(6, 12, 18, 24, 30, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 18, 36, 54, 72, 90, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 18, 36, 54, 72, 90, 108, 126, 144, 162, 180, 6, 12, 18, 24, 30, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 18, 36, 54, 72, 90, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 30, 60, 90, 120, 150, 18, 36, 54, 72, 90, 108, 126, 144, 162, 180, 42, 84, 126, 168, 210, 24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 54, 108, 162, 216, 270, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 36, 72, 108, 144, 180, 216, 252, 288, 324, 360, 30, 60, 90, 120, 150, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 90,...
+```
+
+### 06.04
+
+```scala
+// what else can we do with assiGnments?
+val mults = for {
+    i <- 1 to 5
+    _ = println(s"i is $i")   // or logger.info(s"$i") - SIDE EFFECTS!
+    j <- 1 to 5
+} yield i * j
+
+// Output
+i is 1
+i is 2
+i is 3
+i is 4
+i is 5
+mults: collection.immutable.IndexedSeq[Int] = Vector(
+  1,
+  2,
+  3,
+  4,
+  5,
+  2,
+  4,
+  6,
+  8,
+  10,
+  3,
+  6,
+  9,
+  12,
+  15,
+  4,
+  8,
+  12,
+  16,
+...
+```
+
+## 07 - Generators
 
 ```scala
 
@@ -693,37 +970,46 @@ at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
-
 ```scala
 
 // Output
 ```
+```scala
 
+// Output
+```
+```scala
+
+// Output
+```
+```scala
+
+// Output
+```
+```scala
+
+// Output
+```
 ```scala
 
 // Output
