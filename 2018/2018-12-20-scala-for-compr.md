@@ -28,6 +28,15 @@ Actually, I have found github repo with Jupiter notebooks. But, I don't like thi
   - [02.09](#0209)
   - [02.10](#0210)
 - [03 - Options, options, options](#03---options-options-options)
+  - [03.01](#0301)
+  - [03.02](#0302)
+  - [03.03](#0303)
+- [04 - Embrace the Future](#04---embrace-the-future)
+  - [04.01](#0401)
+  - [04.02](#0402)
+  - [04.03](#0403)
+- [05 - Guards! Guards!](#05---guards-guards)
+  - [05.01](#0501)
 
 ## References
 
@@ -539,35 +548,136 @@ res0: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 2, 3, 2, 4, 6, 3, 6
 
 ## 03 - Options, options, options
 
-```scala
-
-// Output
-```
+### 03.01
 
 ```scala
+val x = 1
+val y = 2
+val z = 3
 
 // Output
+val result = x * y * z
+x: Int = 1
+y: Int = 2
+z: Int = 3
+result: Int = 6
 ```
+
+### 03.02
 
 ```scala
+val ox = Some(1)
+val oy = Some(2)
+val oz = Some(3)
+
+val oResult = for {
+  x <- ox
+  y <- oy
+  z <- oz
+} yield {
+  x * y * z
+}
 
 // Output
+ox: Some[Int] = Some(1)
+oy: Some[Int] = Some(2)
+oz: Some[Int] = Some(3)
+oResult: Option[Int] = Some(6)
 ```
+
+### 03.03
 
 ```scala
+val ox = Some(1)
+val oy: Option[Int] = None
+val oz = Some(3)
+
+val oResult = for {
+  x <- ox
+  y <- oy
+  z <- oz
+} yield {
+  x * y * z
+}
 
 // Output
+ox: Some[Int] = Some(1)
+oy: Option[Int] = None
+oz: Some[Int] = Some(3)
+oResult: Option[Int] = None
 ```
+
+## 04 - Embrace the Future
+
+### 04.01
 
 ```scala
+import scala.concurrent._
+import ExecutionContext.Implicits.global
+import duration._
+
+val f1 = Future { Thread.sleep(10000); 6 }
+val f2 = Future { Thread.sleep(10000); 7 }
+
+val f3 = for {
+    x <- f1
+    y <- f2
+} yield x * y
+
+f3.value
 
 // Output
+f1: Future[Int] = List(scala.concurrent.impl.CallbackRunnable@5e5167e0)
+f2: Future[Int] = List()
+f3: Future[Int] = List()
+res2_3: Option[scala.util.Try[Int]] = None
 ```
+
+### 04.02
 
 ```scala
+Await.result(f3, 11.seconds)
+// Output
+res3: Int = 42
+```
+
+### 04.03
+
+```scala
+val f1 = Future { Thread.sleep(1000); 6 }
+val f2 = Future { Thread.sleep(1000); 7 / 0 }
+
+val f3 = for {
+    x <- f1
+    y <- f2
+} yield x * y
+
+f3.value
+Await.result(f3, 2.seconds)
 
 // Output
+res0: Option[scala.util.Try[Int]] = None
+
+java.lang.ArithmeticException: / by zero
+at .$anonfun$f2$1(<console>:18)
+at scala.runtime.java8.JFunction0$mcI$sp.apply(JFunction0$mcI$sp.java:23)
+at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:658)
+at scala.util.Success.$anonfun$map$1(Try.scala:255)
+at scala.util.Success.map(Try.scala:213)
+at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 ```
+
+## 05 - Guards! Guards!
+
+### 05.01
 
 ```scala
 
