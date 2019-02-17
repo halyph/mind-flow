@@ -1,11 +1,12 @@
 # Scala `for`-comprehensions
-> | scala | video |
+> | scala | video | functional programming |
 
 This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: _"For: What is it good for? — Josh Suereth & Dick Wall"_ (see references).
 
 Actually, I have found github repo with Jupiter notebooks. But, I don't like this format and decided to store these notes here.
 
 - [References](#references)
+- [- "The Essence of the Iterator Pattern" post by *Eric Torreborre*](#%22the-essence-of-the-iterator-pattern%22-post-by-eric-torreborre)
 - [01 - For "loops"](#01---for-%22loops%22)
 - [02 - For with yield](#02---for-with-yield)
 - [03 - Options](#03---options)
@@ -16,13 +17,19 @@ Actually, I have found github repo with Jupiter notebooks. But, I don't like thi
 - [08 - For Grep and Glory](#08---for-grep-and-glory)
 - [09 - Desugaring the fors](#09---desugaring-the-fors)
 - [10 - Other Monads](#10---other-monads)
+- [11 - `scala-arm`](#11---scala-arm)
+- [12 - Monads don't mix](#12---monads-dont-mix)
+- [13 - `Emm & M[_]`](#13---emm--m)
+- [14 - How to Option Your Futures](#14---how-to-option-your-futures)
+- [15 - Sink](#15---sink)
 
 ## References
 
 - [Youtube: For: What is it good for? — Josh Suereth & Dick Wall](https://www.youtube.com/watch?v=WDaw2yXAa50)
 - [Github: dickwall/use-the-fors-luke](https://github.com/dickwall/use-the-fors-luke) - soutse code realted to "For: What is it good for?" talk
 - [Github: jsuereth/intro-to-fp](https://github.com/jsuereth/intro-to-fp) - This repo contains nice sample of "monadic" Github client
-
+- [Github: jsuereth/scala-arm](https://github.com/jsuereth/scala-arm) - This project aims to be the Scala Incubator project for Automatic-Resource-Management in the scala library 
+- ["The Essence of the Iterator Pattern" post by *Eric Torreborre*](http://etorreborre.blogspot.com/2011/06/essence-of-iterator-pattern.html)
 ---
 
 ## 01 - For "loops"
@@ -1236,26 +1243,474 @@ superaccessors   6  add super accessors in traits and nested classes
 ### 10.01 <!-- omit in toc -->
 
 ```scala
+val e1: Either[String, Int] = Right(6)
+val e2: Either[String, Int] = Right(7)
+
+for {
+    x <- e1.right
+    y <- e2.right
+} yield x * y
 
 // Output
+e1: Either[String, Int] = Right(6)
+e2: Either[String, Int] = Right(7)
+res0_2: Either[String, Int] = Right(42)
 ```
 
+### 10.02 <!-- omit in toc -->
+
 ```scala
+val e1: Either[String, Int] = Right(6)
+val e2: Either[String, Int] = Left("Bad Number")
+
+for {
+    x <- e1.right
+    y <- e2.right
+} yield x * y
 
 // Output
+e1: Either[String, Int] = Right(6)
+e2: Either[String, Int] = Left("Bad Number")
+res1_2: Either[String, Int] = Left("Bad Number")
 ```
 
+### 10.03 <!-- omit in toc -->
+
 ```scala
+// add to classpath:
+// ----
+// classpath.add("org.scalactic" %% "scalactic" % "3.0.0")
+// ----
+
+import org.scalactic._
+
+def parseName(input: String): String Or ErrorMessage = {
+  val trimmed = input.trim
+  if (!trimmed.isEmpty) Good(trimmed) else Bad(s""""${input}" is not a valid name""")
+}
+
+def parseAge(input: String): Int Or ErrorMessage = {
+  try {
+    val age = input.trim.toInt
+    if (age >= 0) Good(age) else Bad(s""""${age}" is not a valid age""")
+  }
+  catch {
+    case _: NumberFormatException => Bad(s""""${input}" is not a valid integer""")
+  }
+}
+
+case class Person(name: String, age: Int)
+
+def parsePerson(inputName: String, inputAge: String): Person Or ErrorMessage =
+  for {
+    name <- parseName(inputName)
+    age <- parseAge(inputAge)
+  } yield Person(name, age)
+
+parsePerson("Sally", "25")
+parsePerson("     ", "22")
+parsePerson("Sally", "twenty eight")
 
 // Output
+res5_0: Or[Person, ErrorMessage] = Good(Person("Sally", 25))
+res5_1: Or[Person, ErrorMessage] = Bad(
+  """
+"     " is not a valid name
+  """
+)
+res5_2: Or[Person, ErrorMessage] = Bad(
+  """
+twenty eight" is not a valid integer
+  """
+)
 ```
 
-```scala
+### 10.04 <!-- omit in toc -->
 
-// Output
+```scala
+// add to classpath:
+// ----
+// classpath.add("org.typelevel" %% "cats" % "0.7.2")
+// ----
+
+import cats.data._
+
+type IndexState[A] = State[Int, A]
+// This returns a next `State` and the index to use for the current node.
+
+def nextIdx: State[Int, Int] =
+  State { currentIndex =>
+    (currentIndex + 1, currentIndex)
+  }
+
+val program: State[Int, (Int, Int, Int)] = 
+ for {
+   x <- nextIdx
+   y <- nextIdx
+   z <- nextIdx
+ } yield (x,y,z)
+
+program.run(1).value
 ```
 
+## 11 - `scala-arm`
+
 ```scala
+// add to classpath:
+// ----
+// classpath.add("com.jsuereth" %% "scala-arm" % "1.4")
+// ----
+
+import java.io._
+import resource._
+// Copy input into output.
+for {
+  input  <- managed(new java.io.FileInputStream("test.txt"))
+  output <- managed(new java.io.FileOutputStream("test2.txt"))
+} {
+  val buffer = new Array[Byte](512)
+  def read(): Unit = input.read(buffer) match {
+    case -1 => ()
+    case  n =>
+      output.write(buffer,0,n)
+      read()
+  }
+  read()
+}
+```
+
+## 12 - Monads don't mix
+
+### 12.01 <!-- omit in toc -->
+
+```scala
+case class Passenger(name: String, cellPhoneNumber: Option[String])
+case class Carriage(passengers: List[Passenger])
+case class Train(name: String, carriages: List[Carriage])
+case class Route(name: String, activeTrain: Option[Train])
+
+val route1 = Route("Glen Gach to Glen Pach",
+  Some(Train("The Flying Scotsman",
+    List(Carriage(List(
+                    Passenger("Rob Roy", Some("121-212-1212")), 
+                    Passenger("Connor McCleod", None))),
+      Carriage(List(Passenger("Joey McDougall", Some("454-545-4545")))))
+  ))
+)
+
+val route2 = Route("Defuncto 1", None)
+
+val route3 = Route("Busy Route of Luddites",
+  Some(Train("The Tech Express",
+    List(Carriage(List(
+                    Passenger("Ug", None), Passenger("Glug", None))),
+      Carriage(Nil),
+      Carriage(List(Passenger("Smug", Some("323-232-3232")))))
+  ))
+)
+
+val routes = List(route1, route2, route3)
+
+// ---
+
+for {
+  route <- routes
+  active <- route.activeTrain   // huh!
+  carriage <- active.carriages
+  passenger <- carriage.passengers
+  number <- passenger.cellPhoneNumber
+} yield number
+
 
 // Output
+Main.scala:28: type mismatch;
+ found   : List[String]
+ required: Option[?]
+    carriage <- active.carriages
+             ^
+```
+
+### 12.02 <!-- omit in toc -->
+
+```scala
+routes.flatMap { route =>  // Seq  (flatMap A => Seq[B])
+    route.activeTrain.flatMap { active =>  // Option  (flatMap A => Option[B]) // these two
+        active.carriages.flatMap { carriage =>  // Seq  (flatMap A => Seq[B])  // are the problem...
+            carriage.passengers.flatMap { passenger =>  // Seq
+                passenger.cellPhoneNumber.map { number =>  // Option
+                    number
+                }
+            }
+        }
+    }
+}
+
+// Output
+Main.scala:27: type mismatch;
+ found   : List[String]
+ required: Option[?]
+        active.carriages.flatMap { carriage =>  // Seq  (flatMap A => Seq[B])  // are the problem...
+                                 ^
+```
+
+### 12.03 <!-- omit in toc -->
+
+```scala
+for {
+    route <- routes
+    active <- route.activeTrain.toSeq   // recommended whenever mixing options and seqs
+    carriage <- active.carriages
+    passenger <- carriage.passengers
+    number <- passenger.cellPhoneNumber.toSeq  // unnecessary here, but still clear
+} yield number
+
+// Output
+res2: List[String] = List("121-212-1212", "454-545-4545", "323-232-3232")
+```
+
+### 12.04 <!-- omit in toc -->
+
+```scala
+import scala.concurrent._
+import ExecutionContext.Implicits.global
+import duration._
+
+val fListONums = Future(List(1,2,3,4,5))
+def square(x: Int): Future[Int] = Future(x * x)
+
+for {
+    nums <- fListONums
+    num <- nums    // doh! - no mixie!
+    sq <- square(num)
+} yield sq
+
+// Output
+Main.scala:43: type mismatch;
+ found   : scala.concurrent.Future[Int]
+ required: scala.collection.GenTraversableOnce[?]
+    sq <- square(num)
+       ^
+Main.scala:42: type mismatch;
+ found   : List[Nothing]
+ required: scala.concurrent.Future[?]
+    num <- nums    // doh! - no mixie!
+        ^
+```
+
+### 12.05 <!-- omit in toc -->
+
+```scala
+val fListONums = Future(List(1,2,3,4,5))
+def square(x: Int): Future[Int] = Future(x * x)
+
+for {
+    nums <- fListONums
+    squares <- Future.traverse(nums)(x => square(x))  // Seq[Int] & Int => Future[Int] => Future[Seq[Int]]
+} yield squares
+
+// Output
+fListONums: Future[List[Int]] = Success(List(1, 2, 3, 4, 5))
+res4_2: Future[List[Int]] = Success(List(1, 4, 9, 16, 25))
+```
+
+## 13 - `Emm  & M[_]`
+
+### 13.01 <!-- omit in toc -->
+
+```scala
+// classpath.addRepository("https://dl.bintray.com/djspiewak/maven")
+// classpath.add("com.codecommit" %% "emm-cats" % "0.2.1")
+// ---
+
+import emm._
+import emm.compat.cats._
+import cats.std.list._
+import cats.std.option._
+import cats.std.future._
+import scala.concurrent.{Await, Future}
+import scala.concurrent.duration._
+
+implicit val ec = scala.concurrent.ExecutionContext.global
+
+type E = Future |: Option |: Base
+
+val effect1 = Option(3).liftM[E]
+
+val effect2 = Option(2).liftM[E]
+//val effect2 = (None: Option[Int]).liftM[E]
+
+val effect3 = Future { Thread.sleep(5000); 7}.liftM[E]
+
+val effect4 = for {
+  x <- effect1
+  y <- effect2
+  z <- effect3
+} yield x * y * z
+
+effect4.run.value
+
+effect1
+effect2
+effect3
+
+Await.result(effect4.run, 10 seconds)
+```
+
+## 14 - How to Option Your Futures
+
+### 14.01 <!-- omit in toc -->
+
+```scala
+import scala.concurrent._
+import scala.concurrent.ExecutionContext.Implicits.global
+import duration._
+
+val f1 = Future(10)
+val o2 = Option(20)
+val f3 = Future(30)
+
+val result = for {
+    x <- f1
+    y <- o2
+    z <- f3
+} yield x * y * z  // Sad Vader...
+
+// Output
+Main.scala:44: type mismatch;
+ found   : scala.concurrent.Future[Int]
+ required: Option[?]
+    z <- f3
+      ^
+Main.scala:43: type mismatch;
+ found   : Option[Nothing]
+ required: scala.concurrent.Future[?]
+    y <- o2
+      ^
+```
+
+### 14.02 <!-- omit in toc -->
+
+```scala
+val result = for {
+    x   <- f1
+    z   <- f3
+    res =  for (y <- o2) yield x * y * z
+} yield res
+
+Await.result(result, 1.second)
+
+// Output
+result: Future[Option[Int]] = Success(Some(6000))
+res2_1: Option[Int] = Some(6000)
+```
+
+### 14.03 <!-- omit in toc -->
+
+```scala
+def multOptions(o1: Option[Int], o2: Option[Int], o3: Option[Int]): Option[Int] =
+  for {
+    x <- o1
+    y <- o2
+    z <- o3
+  } yield x * y * z
+
+val result = for {
+    v1 <- f1
+    v3 <- f3
+} yield multOptions(Some(v1), o2, Some(v3))
+
+Await.result(result, 1.second)
+
+// Output
+result: Future[Option[Int]] = Success(Some(6000))
+res3_2: Option[Int] = Some(6000)
+```
+
+## 15 - Sink
+
+### 15.01 <!-- omit in toc -->
+
+```scala
+trait Sink[To] { sink =>
+  def apply(t: To): Unit
+  final def stage[E]: StagedSink[E, E, To] = StagedSink(StagedSink.stagedIdentity[E], this)
+}
+
+final case class StagedSink[First,Current,Final](staged: First => Traversable[Current], sink: Sink[Final]) {
+  def map[B, To](f: Current => B)(implicit isDone: CanSink[First, B, Final, To]): To = isDone.result(this, f)
+  def flatMap[B, To](f: Current => TraversableOnce[B])(implicit isDone: CanSink[First, B, Final, To]): To = isDone.result2(this, f)
+  def withFilter(f: Current => Boolean): StagedSink[First, Current,Final] =
+    StagedSink(staged andThen { xs => 
+       for(x <- xs; if f(x)) yield x
+    }, sink)
+}
+
+object StagedSink {
+  def stagedIdentity[E]: E => Traversable[E] = (e: E) => List(e)
+}
+
+trait CanSink[First, Now, Final, To] {
+  def result[E](in: StagedSink[First, E, Final], f: E => Now): To
+  def result2[E](in: StagedSink[First, E, Final], f: E => TraversableOnce[Now]): To
+}
+
+trait LowPrioritySinkImplicits {
+  implicit def sinkChain[First, Now, Final]: CanSink[First, Now, Final, StagedSink[First, Now, Final]] =
+    new CanSink[First,Now, Final, StagedSink[First, Now, Final]] {
+      def result[E](in: StagedSink[First, E, Final], f: E => Now): StagedSink[First, Now, Final] =
+        StagedSink(in.staged andThen (x => x map f), in.sink)
+      def result2[E](in: StagedSink[First, E, Final], f: E => TraversableOnce[Now]): StagedSink[First, Now, Final] =
+        StagedSink(in.staged andThen (x => x flatMap f), in.sink)
+    }
+}
+
+object CanSink extends LowPrioritySinkImplicits {
+  implicit def finalSink[First, E]: CanSink[First, E,E, Sink[First]] =
+    new CanSink[First, E,E, Sink[First]] {
+      def result[A](ss: StagedSink[First, A, E], f: A => E): Sink[First] =
+        new Sink[First] {
+          def apply(in: First): Unit = {
+            val staged = ss.staged.andThen { xs => xs map f }
+            for { x <- staged(in) } ss.sink(x)
+          }
+        }
+      def result2[A](ss: StagedSink[First, A, E], f: A => TraversableOnce[E]): Sink[First] =
+        new Sink[First] {
+          def apply(in: First): Unit = {
+            val staged = ss.staged.andThen { xs => xs flatMap f }
+            for { x <- staged(in) } ss.sink(x)
+          }
+        }
+    }
+
+}
+```
+
+### 15.02 <!-- omit in toc -->
+
+```scala
+case class User(name: String, city: String) {
+     def livesIn(in: String): Boolean = city == in
+  }
+
+  object stdout extends  Sink[String] {
+     override def apply(in: String): Unit = System.out.println(in);
+  }
+
+  def userSink: Sink[User] =  
+    for {
+      user <- stdout.stage[User]
+      if user livesIn "pittsburgh"
+    } yield user.name
+
+
+  for {
+     user <- List(User("josh", "pittsburgh"), User("dick","morgan hill"))
+  }  userSink(user)
+
+// Output
+josh
+defined class User
+defined object stdout
+defined function userSink
 ```
