@@ -34,7 +34,7 @@ Actually, I have found github repository with Jupiter notebooks. But, I don't li
 
 ## 01 - For "loops"
 
-### 01.01 <!-- omit in toc -->
+### 01.01<!-- omit in toc -->
 
 ```scala
 for (i <- 1 to 10) println("hello world")
@@ -52,7 +52,7 @@ hello world
 hello world
 ```
 
-### 01.02 <!-- omit in toc -->
+### 01.02<!-- omit in toc -->
 
 ```scala
 for (i <- 1 to 10) println(i * i)
@@ -70,7 +70,7 @@ for (i <- 1 to 10) println(i * i)
 100
 ```
 
-### 01.03 <!-- omit in toc -->
+### 01.03<!-- omit in toc -->
 
 ```scala
 for (_ <- 1 to 10) println("hello world")
@@ -88,7 +88,7 @@ hello world
 hello world
 ```
 
-### 01.04 <!-- omit in toc -->
+### 01.04<!-- omit in toc -->
 
 ```scala
 for (i <- 1 to 10) {
@@ -109,7 +109,7 @@ the square of  9 is  81
 the square of 10 is 100
 ```
 
-### 01.05 <!-- omit in toc -->
+### 01.05<!-- omit in toc -->
 
 ```scala
 (1 to 10)
@@ -118,7 +118,7 @@ the square of 10 is 100
 res0: scala.collection.immutable.Range.Inclusive = Range 1 to 10
 ```
 
-### 01.06 <!-- omit in toc -->
+### 01.06<!-- omit in toc -->
 
 ```scala
 (1 to 10).foreach { i =>
@@ -139,7 +139,7 @@ the square of  9 is  81
 the square of 10 is 100
 ```
 
-### 01.07 <!-- omit in toc -->
+### 01.07<!-- omit in toc -->
 
 ```scala
 for {
@@ -175,7 +175,7 @@ for {
 5 times 5 is 25
 ```
 
-### 01.08 <!-- omit in toc -->
+### 01.08<!-- omit in toc -->
 
 ```scala
 (1 to 5).foreach { i =>
@@ -212,7 +212,7 @@ for {
 5 times 5 is 25
 ```
 
-### 01.09 <!-- omit in toc -->
+### 01.09<!-- omit in toc -->
 
 ```scala
 val x1 = (1 to 5).foreach { i =>
@@ -303,7 +303,7 @@ res3: reflect.runtime.universe.TypeTag[Unit] = TypeTag[Unit]
 
 ## 02 - For with yield
 
-### 02.01 <!-- omit in toc -->
+### 02.01<!-- omit in toc -->
 
 ```scala
 val squares = for (i <- 1 to 10) yield (i * i)
@@ -312,7 +312,7 @@ val squares = for (i <- 1 to 10) yield (i * i)
 squares: collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 ```
 
-### 02.02 <!-- omit in toc -->
+### 02.02<!-- omit in toc -->
 
 ```scala
 val squareMap = (for (i <- 1 to 10) yield (i -> (i * i))).toMap
@@ -332,7 +332,7 @@ squareMap: Map[Int, Int] = Map(
 )
 ```
 
-### 02.03 <!-- omit in toc -->
+### 02.03<!-- omit in toc -->
 
 ```scala
 case class TimesResult(i: Int, j: Int, mult: Int)
@@ -368,7 +368,7 @@ timesTable: collection.immutable.IndexedSeq[$user.TimesResult] = Vector(
 ...
 ```
 
-### 02.04 <!-- omit in toc -->
+### 02.04<!-- omit in toc -->
 
 ```scala
 val squares = (1 to 10).map(i => i * i)
@@ -378,7 +378,7 @@ val squares = (1 to 10).map(i => i * i)
 squares: collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25, 36, 49, 64, 81, 100)
 ```
 
-### 02.05 <!-- omit in toc -->
+### 02.05<!-- omit in toc -->
 
 ```scala
 val squaresMap = (1 to 10).map(i => i -> (i * i)).toMap
@@ -398,7 +398,7 @@ squaresMap: scala.collection.immutable.Map[Int,Int] = Map(
 )
 ```
 
-### 02.06 <!-- omit in toc -->
+### 02.06<!-- omit in toc -->
 
 ```scala
 val timesTable = (1 to 5).map(i => (1 to 5).map (j => TimesResult(i, j, i * j)))
@@ -428,7 +428,7 @@ timesTable: collection.immutable.IndexedSeq[collection.immutable.IndexedSeq[Time
 ...
 ```
 
-### 02.07 <!-- omit in toc -->
+### 02.07<!-- omit in toc -->
 
 ```scala
 
@@ -458,7 +458,7 @@ res5: collection.immutable.IndexedSeq[TimesResult] = Vector(
 ...
 ```
 
-### 02.08 <!-- omit in toc -->
+### 02.08<!-- omit in toc -->
 
 ```scala
 val timesTableFlat = (1 to 5).flatMap(i => (1 to 5).map(j => TimesResult(i, j, i*j)))
@@ -487,7 +487,7 @@ timesTableFlat: collection.immutable.IndexedSeq[TimesResult] = Vector(
 ...
 ```
 
-### 02.09 <!-- omit in toc -->
+### 02.09<!-- omit in toc -->
 
 ```scala
 
@@ -520,7 +520,7 @@ timesTableFlat: collection.immutable.IndexedSeq[TimesResult] = Vector(
 ...
 ```
 
-### 02.10 <!-- omit in toc -->
+### 02.10<!-- omit in toc -->
 
 ```scala
 for {
@@ -535,7 +535,7 @@ res0: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 2, 3, 2, 4, 6, 3, 6
 
 ## 03 - Options
 
-### 03.01 <!-- omit in toc -->
+### 03.01<!-- omit in toc -->
 
 ```scala
 val x = 1
@@ -550,7 +550,7 @@ z: Int = 3
 result: Int = 6
 ```
 
-### 03.02 <!-- omit in toc -->
+### 03.02<!-- omit in toc -->
 
 ```scala
 val ox = Some(1)
@@ -572,7 +572,7 @@ oz: Some[Int] = Some(3)
 oResult: Option[Int] = Some(6)
 ```
 
-### 03.03 <!-- omit in toc -->
+### 03.03<!-- omit in toc -->
 
 ```scala
 val ox = Some(1)
@@ -596,7 +596,7 @@ oResult: Option[Int] = None
 
 ## 04 - Future
 
-### 04.01 <!-- omit in toc -->
+### 04.01<!-- omit in toc -->
 
 ```scala
 import scala.concurrent._
@@ -620,7 +620,7 @@ f3: Future[Int] = List()
 res2_3: Option[scala.util.Try[Int]] = None
 ```
 
-### 04.02 <!-- omit in toc -->
+### 04.02<!-- omit in toc -->
 
 ```scala
 Await.result(f3, 11.seconds)
@@ -628,7 +628,7 @@ Await.result(f3, 11.seconds)
 res3: Int = 42
 ```
 
-### 04.03 <!-- omit in toc -->
+### 04.03<!-- omit in toc -->
 
 ```scala
 val f1 = Future { Thread.sleep(1000); 6 }
@@ -664,7 +664,7 @@ at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
 
 ## 05 - Guards
 
-### 05.01 <!-- omit in toc -->
+### 05.01<!-- omit in toc -->
 
 ```scala
 for {
@@ -698,7 +698,7 @@ res0: collection.immutable.IndexedSeq[Int] = Vector(
 ...
 ```
 
-### 05.02 <!-- omit in toc -->
+### 05.02<!-- omit in toc -->
 
 ```scala
 for {
@@ -733,7 +733,7 @@ res1: collection.immutable.IndexedSeq[Int] = Vector(
 ...
 ```
 
-### 05.03 <!-- omit in toc -->
+### 05.03<!-- omit in toc -->
 
 ```scala
 (1 to 10).flatMap { i =>
@@ -768,7 +768,7 @@ res2: collection.immutable.IndexedSeq[Int] = Vector(
 ...
 ```
 
-### 05.04 <!-- omit in toc -->
+### 05.04<!-- omit in toc -->
 
 ```scala
 for {
@@ -805,7 +805,7 @@ res3: collection.immutable.IndexedSeq[Int] = Vector(
 
 ## 06 - Inline Assignments
 
-### 06.01 <!-- omit in toc -->
+### 06.01<!-- omit in toc -->
 
 ```scala
 for {
@@ -840,7 +840,7 @@ res0: collection.immutable.IndexedSeq[Int] = Vector(
 ...
 ```
 
-### 06.02 <!-- omit in toc -->
+### 06.02<!-- omit in toc -->
 
 ```scala
 for {
@@ -878,7 +878,7 @@ res1: collection.immutable.IndexedSeq[Int] = Vector(
 ...
 ```
 
-### 06.03 <!-- omit in toc -->
+### 06.03<!-- omit in toc -->
 
 ```scala
 (1 to 10).flatMap { i =>
@@ -898,7 +898,7 @@ res1: collection.immutable.IndexedSeq[Int] = Vector(
 res0: scala.collection.immutable.IndexedSeq[Int] = Vector(6, 12, 18, 24, 30, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 18, 36, 54, 72, 90, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 18, 36, 54, 72, 90, 108, 126, 144, 162, 180, 6, 12, 18, 24, 30, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60, 18, 36, 54, 72, 90, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 30, 60, 90, 120, 150, 18, 36, 54, 72, 90, 108, 126, 144, 162, 180, 42, 84, 126, 168, 210, 24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 54, 108, 162, 216, 270, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 12, 24, 36, 48, 60, 72, 84, 96, 108, 120, 24, 48, 72, 96, 120, 144, 168, 192, 216, 240, 36, 72, 108, 144, 180, 216, 252, 288, 324, 360, 30, 60, 90, 120, 150, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 90,...
 ```
 
-### 06.04 <!-- omit in toc -->
+### 06.04<!-- omit in toc -->
 
 ```scala
 // what else can we do with assiGnments?
@@ -939,7 +939,7 @@ mults: collection.immutable.IndexedSeq[Int] = Vector(
 
 ## 07 - Generators
 
-### 07.01 <!-- omit in toc -->
+### 07.01<!-- omit in toc -->
 
 ```scala
 for (i <- 1 to 5) yield i * i
@@ -947,7 +947,7 @@ for (i <- 1 to 5) yield i * i
 res0: collection.immutable.IndexedSeq[Int] = Vector(1, 4, 9, 16, 25)
 ```
 
-### 07.02 <!-- omit in toc -->
+### 07.02<!-- omit in toc -->
 
 ```scala
 val treasureMap = Map(
@@ -971,7 +971,7 @@ treasureMap: Map[Int, String] = Map(
 )
 ```
 
-### 07.03 <!-- omit in toc -->
+### 07.03<!-- omit in toc -->
 
 ```scala
 treasureMap.head match {
@@ -981,7 +981,7 @@ treasureMap.head match {
 Step 1: Go to island
 ```
 
-### 07.04 <!-- omit in toc -->
+### 07.04<!-- omit in toc -->
 
 ```scala
 treasureMap.map {
@@ -995,7 +995,7 @@ Step 3: Dig to find treasure
 res3: collection.immutable.Iterable[Unit] = List((), (), ())
 ```
 
-### 07.05 <!-- omit in toc -->
+### 07.05<!-- omit in toc -->
 
 ```scala
 val (stepNo, instruction) = treasureMap.head
@@ -1005,7 +1005,7 @@ stepNo: Int = 1
 instruction: String = "Go to island"
 ```
 
-### 07.06 <!-- omit in toc -->
+### 07.06<!-- omit in toc -->
 
 ```scala
 val foo: Any = "foo"
@@ -1015,7 +1015,7 @@ val (stepNo, instruction) = foo
 scala.MatchError: foo (of class java.lang.String) (foo (of class java.lang.String))
 ```
 
-### 07.07 <!-- omit in toc -->
+### 07.07<!-- omit in toc -->
 
 ```scala
 case class Person(first: String, last: String, age: Int)
@@ -1042,7 +1042,7 @@ people: Seq[$user.Person] = List(
 )
 ```
 
-### 07.08 <!-- omit in toc -->
+### 07.08<!-- omit in toc -->
 
 ```scala
 object Even {
@@ -1080,7 +1080,7 @@ res7_1: collection.immutable.IndexedSeq[Int] = Vector(
 
 ## 08 - For Grep and Glory
 
-### 08.01 <!-- omit in toc -->
+### 08.01<!-- omit in toc -->
 
 ```scala
 val filesHere = (new java.io.File(".")).listFiles
@@ -1088,14 +1088,14 @@ for (file <- filesHere if file.getName.endsWith(".ipynb"))
     println(file)
 ```
 
-### 08.02 <!-- omit in toc -->
+### 08.02<!-- omit in toc -->
 
 ```scala
 def fileLines(file: java.io.File) =
     scala.io.Source.fromFile(file).getLines.toList
 ```
 
-### 08.03 <!-- omit in toc -->
+### 08.03<!-- omit in toc -->
 
 ```scala
 val grepResults = for {
@@ -1112,7 +1112,7 @@ grepResults foreach println
 
 ## 09 - Desugaring the fors
 
-### 09.01 <!-- omit in toc -->
+### 09.01<!-- omit in toc -->
 
 ```scala
 object ForExpansion1 {
@@ -1139,7 +1139,7 @@ package <empty> {
 }
 ```
 
-### 09.02 <!-- omit in toc -->
+### 09.02<!-- omit in toc -->
 
 ```scala
 object ForExpansion2 {
@@ -1168,7 +1168,7 @@ package <empty> {
 }
 ```
 
-### 09.03 <!-- omit in toc -->
+### 09.03<!-- omit in toc -->
 
 ```scala
 object ForExpansion3 {
@@ -1205,7 +1205,7 @@ package <empty> {
 }
 ```
 
-### 09.04 <!-- omit in toc -->
+### 09.04<!-- omit in toc -->
 
 ```
 $ scalac -Xshow-phases
@@ -1240,7 +1240,7 @@ superaccessors   6  add super accessors in traits and nested classes
 
 ## 10 - Other Monads
 
-### 10.01 <!-- omit in toc -->
+### 10.01<!-- omit in toc -->
 
 ```scala
 val e1: Either[String, Int] = Right(6)
@@ -1257,7 +1257,7 @@ e2: Either[String, Int] = Right(7)
 res0_2: Either[String, Int] = Right(42)
 ```
 
-### 10.02 <!-- omit in toc -->
+### 10.02<!-- omit in toc -->
 
 ```scala
 val e1: Either[String, Int] = Right(6)
@@ -1274,7 +1274,7 @@ e2: Either[String, Int] = Left("Bad Number")
 res1_2: Either[String, Int] = Left("Bad Number")
 ```
 
-### 10.03 <!-- omit in toc -->
+### 10.03<!-- omit in toc -->
 
 ```scala
 // add to classpath:
@@ -1325,7 +1325,7 @@ twenty eight" is not a valid integer
 )
 ```
 
-### 10.04 <!-- omit in toc -->
+### 10.04<!-- omit in toc -->
 
 ```scala
 // add to classpath:
@@ -1381,7 +1381,7 @@ for {
 
 ## 12 - Monads don't mix
 
-### 12.01 <!-- omit in toc -->
+### 12.01<!-- omit in toc -->
 
 ```scala
 case class Passenger(name: String, cellPhoneNumber: Option[String])
@@ -1430,7 +1430,7 @@ Main.scala:28: type mismatch;
              ^
 ```
 
-### 12.02 <!-- omit in toc -->
+### 12.02<!-- omit in toc -->
 
 ```scala
 routes.flatMap { route =>  // Seq  (flatMap A => Seq[B])
@@ -1453,7 +1453,7 @@ Main.scala:27: type mismatch;
                                  ^
 ```
 
-### 12.03 <!-- omit in toc -->
+### 12.03<!-- omit in toc -->
 
 ```scala
 for {
@@ -1468,7 +1468,7 @@ for {
 res2: List[String] = List("121-212-1212", "454-545-4545", "323-232-3232")
 ```
 
-### 12.04 <!-- omit in toc -->
+### 12.04<!-- omit in toc -->
 
 ```scala
 import scala.concurrent._
@@ -1497,7 +1497,7 @@ Main.scala:42: type mismatch;
         ^
 ```
 
-### 12.05 <!-- omit in toc -->
+### 12.05<!-- omit in toc -->
 
 ```scala
 val fListONums = Future(List(1,2,3,4,5))
@@ -1515,7 +1515,7 @@ res4_2: Future[List[Int]] = Success(List(1, 4, 9, 16, 25))
 
 ## 13 - `Emm  & M[_]`
 
-### 13.01 <!-- omit in toc -->
+### 13.01<!-- omit in toc -->
 
 ```scala
 // classpath.addRepository("https://dl.bintray.com/djspiewak/maven")
@@ -1558,7 +1558,7 @@ Await.result(effect4.run, 10 seconds)
 
 ## 14 - How to Option Your Futures
 
-### 14.01 <!-- omit in toc -->
+### 14.01<!-- omit in toc -->
 
 ```scala
 import scala.concurrent._
@@ -1588,7 +1588,7 @@ Main.scala:43: type mismatch;
       ^
 ```
 
-### 14.02 <!-- omit in toc -->
+### 14.02<!-- omit in toc -->
 
 ```scala
 val result = for {
@@ -1604,7 +1604,7 @@ result: Future[Option[Int]] = Success(Some(6000))
 res2_1: Option[Int] = Some(6000)
 ```
 
-### 14.03 <!-- omit in toc -->
+### 14.03<!-- omit in toc -->
 
 ```scala
 def multOptions(o1: Option[Int], o2: Option[Int], o3: Option[Int]): Option[Int] =
@@ -1628,7 +1628,7 @@ res3_2: Option[Int] = Some(6000)
 
 ## 15 - Sink
 
-### 15.01 <!-- omit in toc -->
+### 15.01<!-- omit in toc -->
 
 ```scala
 trait Sink[To] { sink =>
@@ -1686,7 +1686,7 @@ object CanSink extends LowPrioritySinkImplicits {
 }
 ```
 
-### 15.02 <!-- omit in toc -->
+### 15.02<!-- omit in toc -->
 
 ```scala
 case class User(name: String, city: String) {
