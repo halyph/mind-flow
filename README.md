@@ -23,7 +23,7 @@ _Another try of blogging or personal knowledge base_
 - 2018-12-29 - [Resources for System Design Interview](2018/2018-12-29-system-design-interview-prep.md)
 - 2018-12-28 - [Resources for Practicing Coding Interview](2018/2018-12-28-tech-interview-coding-prep-res.md)
 - 2018-12-21 - [[WIP] Scala vs Haskell](2018/2018-12-21-scala-vs-haskell.md)
-- 2018-12-20 - [[WIP] Note: Scala `for`-comprehensions](2018/2018-12-20-scala-for-compr.md)
+- 2018-12-20 - [Scala `for`-comprehensions](2018/2018-12-20-scala-for-compr.md)
 - 2018-12-20 - [Git Notes](2018/2018-12-20-git-notes.md)
 - 2018-12-19 - [How to configure docker bash completion on Mac](2018/2018-12-19-docker-bash-complition.md)
 - 2018-12-18 - [[WIP] Verify Ruby `github/markup` gem for markdown rendering](2018/2018-12-18-github-markup-gem.md)

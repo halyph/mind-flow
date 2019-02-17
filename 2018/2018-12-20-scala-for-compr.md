@@ -3,10 +3,9 @@
 
 This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: _"For: What is it good for? — Josh Suereth & Dick Wall"_ (see references).
 
-Actually, I have found github repo with Jupiter notebooks. But, I don't like this format and decided to store these notes here.
+Actually, I have found github repository with Jupiter notebooks. But, I don't like this format and decided to store these notes here.
 
 - [References](#references)
-- [- "The Essence of the Iterator Pattern" post by *Eric Torreborre*](#%22the-essence-of-the-iterator-pattern%22-post-by-eric-torreborre)
 - [01 - For "loops"](#01---for-%22loops%22)
 - [02 - For with yield](#02---for-with-yield)
 - [03 - Options](#03---options)
@@ -30,6 +29,7 @@ Actually, I have found github repo with Jupiter notebooks. But, I don't like thi
 - [Github: jsuereth/intro-to-fp](https://github.com/jsuereth/intro-to-fp) - This repo contains nice sample of "monadic" Github client
 - [Github: jsuereth/scala-arm](https://github.com/jsuereth/scala-arm) - This project aims to be the Scala Incubator project for Automatic-Resource-Management in the scala library 
 - ["The Essence of the Iterator Pattern" post by *Eric Torreborre*](http://etorreborre.blogspot.com/2011/06/essence-of-iterator-pattern.html)
+
 ---
 
 ## 01 - For "loops"
