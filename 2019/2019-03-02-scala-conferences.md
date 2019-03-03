@@ -23,14 +23,14 @@
 ## USA
 
 - **[Scala By the Bay](http://scala.bythebay.io/)** - [Videos](https://www.youtube.com/user/FunctionalTV). **Location**: San Francisco.
-- **[Northeast Scala Symposium](https://nescala.io)** - [Videos](https://www.youtube.com/channel/UC8F-eU3OSAzQhtwzhr13BSA). **Location**: Philadelphia / Boston / New York City
-- **[LambdaConf](http://lambdaconf.us/)** - [Videos](https://www.youtube.com/channel/UCEtohQeDqMSebi2yvLMUItg). **Location**: Boulder, Colorado
+- **[Northeast Scala Symposium](https://nescala.io)** - [Videos](https://www.youtube.com/channel/UC8F-eU3OSAzQhtwzhr13BSA). **Location**: Philadelphia / Boston / New York City.
+- **[LambdaConf](http://lambdaconf.us/)** - [Videos](https://www.youtube.com/channel/UCEtohQeDqMSebi2yvLMUItg). **Location**: Boulder, Colorado.
 
 ## Poland
 
 - **[ScalaWave](https://scalawave.io/)** - [Videos](https://www.youtube.com/channel/UC1VAdzkoY7M2e3msbW9Ur8w). **Location**: Gdańsk.
 - **[Scalar](http://scalar-conf.com/)** - [Videos](https://www.youtube.com/channel/UCDHLL2QvdpCytAfBiwUeKgg/playlists). **Location**: Warsaw.
-- **[Lambda Days](http://www.lambdadays.org)** - VIDEO TBD. **Location**: Krakow.
+- **[Lambda Days](http://www.lambdadays.org)** - [Video](https://www.youtube.com/user/ErlangSolutions/). **Location**: Krakow.
 - **[Scala.sphere.it](https://scala.sphere.it/)** - [Videos](https://www.youtube.com/channel/UC2D5QYMoclw4fz8YWFgC4sg). **Location**: Krakow.
 
 ## Portugal
