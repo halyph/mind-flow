@@ -24,6 +24,9 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
   - [2.7 - Sorting the list using existing predefined comparator](#27---sorting-the-list-using-existing-predefined-comparator)
   - [2.8 - Iterating the map (`forEach` and map transform)](#28---iterating-the-map-foreach-and-map-transform)
   - [2.9 - Remove with predicate](#29---remove-with-predicate)
+  - [2.10 - Avoid code-duplication with lambdas](#210---avoid-code-duplication-with-lambdas)
+  - [2.11 - List of optionals](#211---list-of-optionals)
+  - [2.12 - Checked Exceptions & Lambda](#212---checked-exceptions--lambda)
 - [3 - Stream API](#3---stream-api)
   - [Incorrect usage](#incorrect-usage)
     - [3.1 - Forgotten termin operation](#31---forgotten-termin-operation)
@@ -41,7 +44,7 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
     - [3.11 - Use data structure features](#311---use-data-structure-features)
     - [3.12 - Do not mix imperative code with streams](#312---do-not-mix-imperative-code-with-streams)
     - [3.13 - Match element in functional style](#313---match-element-in-functional-style)
-  - [3.14 - Nested `forEach` is *anti-pattern*](#314---nested-foreach-is-anti-pattern)
+    - [3.14 - Nested `forEach` is *anti-pattern*](#314---nested-foreach-is-anti-pattern)
     - [3.15 - Prefer specialized streams](#315---prefer-specialized-streams)
     - [3.16 - Poor Domain Model causes complex Data Access code](#316---poor-domain-model-causes-complex-data-access-code)
     - [3.17 - Do not use old-style code with new constructs](#317---do-not-use-old-style-code-with-new-constructs)
@@ -1017,15 +1020,123 @@ public class RemoveElementWithIterator {
 }
 ```
 
+### 2.10 - Avoid code-duplication with lambdas
+
+```java
+
+// @Ugly
+private void logUpper(String str) {
+    //super interesting code
+    System.out.println(str.toUpperCase());
+    //even more interesting code
+}
+private void logLower(String str) {
+    //super interesting code
+    System.out.println(str.toLowerCase());
+    //even more interesting code
+}
+
+// @Good
+private void logUpper(String string) {
+    doSuperCoolStuff(string, s -> s.toUpperCase());
+}
+private void logLower(String string) {
+    doSuperCoolStuff(string, s -> s.toLowerCase());
+}
+private void doFoo(String str, Function<String, String> func) {
+    //super interesting code
+    System.out.println(func.apply(str));
+    //even more interesting code
+}
+```
+
+### 2.11 - List of optionals
+
+```java
+beerLib.stream()
+    .map(Beer::getDescription) //returns optional 
+
+//java 8 style
+beerLib.stream()
+    .map(Beer::getDescription) //returns optional
+    .filter(Optional::isPresent)
+    .map(Optional::get)
+    .forEach(System.out::println);
+
+//java 8 flatMap
+beerLib.stream()
+    .map(Beer::getDescription) //returns optional
+    .flatMap(o -> o.map(Stream::of).orElse(Stream.empty()))
+    .forEach(System.out::println);
+
+//java 9 flatMap
+beerLib.stream()
+    .map(Beer::getDescription) //returns optional
+    .flatMap(Optional::stream)
+    .forEach(System.out::println);
+```
+
+### 2.12 - Checked Exceptions & Lambda
+
+```java
+public Beer doSomething(Beer beer) throws IsEmptyException { ... }
+
+Function <Beer,Beer> fBeer = beer -> doSomething(beer) // Don't do this
+```
+
+```java
+// @Ugly
+public Beer doSomething(Beer beer) throws IsEmptyException { ... }
+
+beerLib.stream()
+    .map(beer -> {
+        try {
+            return doSomething(beer);
+        } catch (IsEmptyException e) {
+            throw new RuntimeException(e);
+        }
+    };)
+    .collect(Collectors.toList());
+
+beerLib.stream()
+    .map(this::wrappedDoSomeThing)
+    .collect(Collectors.toList());
+```
+
+Exception Utility
+
+```java
+// @Better
+@FunctionalInterface
+public interface CheckedFunction<T, R> {
+    public R apply(T t) throws Exception;
+}
+
+public static <T, R> Function<T, R> wrap(CheckedFunction<T, R> function) {
+    return t -> {
+        try {
+            return function.apply(t);
+        } catch (Exception ex) {
+            throw new RuntimeException(ex);
+        }
+    };
+};
+
+beerLib.stream()
+    .map(wrap(beer -> doSomething(beer)))
+    .collect(Collectors.toList());
+```
+
 ## 3 - Stream API
 
 > - Don't use external state with streams
-> - Don't mix streams and imperative code 
+> - Don't mix streams and imperative code
 > - Avoid complex nested streams
 > - Avoid loop by design, think in pipeline
 > - Follow true functional approach without side effects
 > - Use typed streams for primitives
 > - Take a look at extension like jool, StreamEx
+> - Stream is not a data structure
 
 ### Incorrect usage
 
@@ -1091,6 +1202,18 @@ public class InfiniteStreams {
     }
 }
 ```
+
+- Look closer at the order of operations
+- Only use infinite streams when absolute necessary
+
+**Solution**:
+
+```java
+IntStrean.range(0, 10);
+IntStrean.rangeClosed(0, 10);
+IntStrean.iterate(0, i -> i < 10, i -> i + 10); // Java 9 and up
+```
+
 
 #### 3.3 - Use stream more than once
 
@@ -1692,7 +1815,7 @@ public class MatchElementInFunctionalStyle {
 }
 ```
 
-### 3.14 - Nested `forEach` is *anti-pattern*
+#### 3.14 - Nested `forEach` is *anti-pattern*
 
 ```java
 package com.xpinjection.java8.misused.stream;
@@ -2078,8 +2201,9 @@ public class TimeApiIgnorance {
 
 - [Repo - xpinjection/java8-misuses](https://github.com/xpinjection/java8-misuses)
 - [Video - JUGLviv meetup: Java 8 – The Good, the Bad and the Ugly](https://www.youtube.com/watch?v=_BDMPpGf1fA)
-- [Video - Java 8, the Good, the Bad and the Ugly [updated version] (Mikalai Alimenkou, XP Injection)](https://www.youtube.com/watch?v=td4vAzWPRpw)
-- [Video - Common Mistakes Made in Functional Java](https://www.youtube.com/watch?v=VU7LyEOewvw)
+- [Video - Java 8, the Good, the Bad and the Ugly [updated version] (*Mikalai Alimenkou, XP Injection)*](https://www.youtube.com/watch?v=td4vAzWPRpw)
+- [Video - Common Mistakes Made in Functional Java by *Brian Vermeer*](https://www.youtube.com/watch?v=VU7LyEOewvw)
+  - [Slides - Writing better functional java code devnexus by *Brian Vermeer*](https://www.slideshare.net/BrianVermeer/writing-better-functional-java-code-devnexus-137963441)
 - Libraries:
   - [jOOL](https://github.com/jOOQ/jOOL)
   - [StreamEx](https://github.com/amaembo/streamex)
