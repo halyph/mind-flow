@@ -24,9 +24,30 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
   - [2.7 - Sorting the list using existing predefined comparator](#27---sorting-the-list-using-existing-predefined-comparator)
   - [2.8 - Iterating the map (`forEach` and map transform)](#28---iterating-the-map-foreach-and-map-transform)
   - [2.9 - Remove with predicate](#29---remove-with-predicate)
-- [3- Stream API](#3--stream-api)
-  - [Incorrect](#incorrect)
+- [3 - Stream API](#3---stream-api)
+  - [Incorrect usage](#incorrect-usage)
+    - [3.1 - Forgotten termin operation](#31---forgotten-termin-operation)
+    - [3.2 - Infinite stream](#32---infinite-stream)
+    - [3.3 - Use stream more than once](#33---use-stream-more-than-once)
+  - [Collectors](#collectors)
+    - [3.4 - Avoid `forEach` and apply mapping to target type](#34---avoid-foreach-and-apply-mapping-to-target-type)
+    - [3.5 - Collectors chain](#35---collectors-chain)
+    - [3.6 - Do not use external collection for grouping](#36---do-not-use-external-collection-for-grouping)
+    - [3.7 - Calculate statistics in single run with collector](#37---calculate-statistics-in-single-run-with-collector)
+    - [3.8 - Convert stream to array](#38---convert-stream-to-array)
+    - [3.9 - Use functional approach when "map-reduce"](#39---use-functional-approach-when-%22map-reduce%22)
   - [Misuses](#misuses)
+    - [3.10 - Stream generation](#310---stream-generation)
+    - [3.11 - Use data structure features](#311---use-data-structure-features)
+    - [3.12 - Do not mix imperative code with streams](#312---do-not-mix-imperative-code-with-streams)
+    - [3.13 - Match element in functional style](#313---match-element-in-functional-style)
+  - [3.14 - Nested `forEach` is *anti-pattern*](#314---nested-foreach-is-anti-pattern)
+    - [3.15 - Prefer specialized streams](#315---prefer-specialized-streams)
+    - [3.16 - Poor Domain Model causes complex Data Access code](#316---poor-domain-model-causes-complex-data-access-code)
+    - [3.17 - Do not use old-style code with new constructs](#317---do-not-use-old-style-code-with-new-constructs)
+    - [3.18 - Know when to use `skip` and `limit`](#318---know-when-to-use-skip-and-limit)
+    - [3.19 - Type of stream could be changed](#319---type-of-stream-could-be-changed)
+    - [3.20 - Use stream to build map is over-complication](#320---use-stream-to-build-map-is-over-complication)
 - [References](#references)
 
 ---
@@ -994,37 +1015,1020 @@ public class RemoveElementWithIterator {
 }
 ```
 
-## 3- Stream API
+## 3 - Stream API
 
-### Incorrect
+> - Don't use external state with streams
+> - Don't mix streams and imperative code 
+> - Avoid complex nested streams
+> - Avoid loop by design, think in pipeline
+> - Follow true functional approach without side effects
+> - Use typed streams for primitives
+> - Take a look at extension like jool, StreamEx
 
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/incorrect/UseStreamMoreThanOnce.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/incorrect/ForgotTerminalOperation.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/incorrect/InfiniteStreams.java
+### Incorrect usage
+
+#### 3.1 - Forgotten termin operation
+
+```java
+package com.xpinjection.java8.misused.stream.incorrect;
+
+import com.xpinjection.java8.misused.Annotations.Bad;
+import java.util.stream.IntStream;
+
+public class ForgotTerminalOperation {
+    @Bad
+    public void willDoNothingInReality() {
+        IntStream.range(1, 5)
+                .peek(System.out::println)
+                .peek(i -> {
+                    if (i == 5)
+                        throw new RuntimeException("bang");
+                });
+    }
+}
+```
+
+#### 3.2 - Infinite stream
+
+```java
+package com.xpinjection.java8.misused.stream.incorrect;
+
+import com.xpinjection.java8.misused.Annotations.Bad;
+import com.xpinjection.java8.misused.Annotations.Good;
+
+import java.util.stream.IntStream;
+
+public class InfiniteStreams {
+    @Bad
+    public void infinite(){
+        IntStream.iterate(0, i -> i + 1)
+                .forEach(System.out::println);
+    }
+
+    @Good
+    public void validOne(){
+        IntStream.iterate(0, i -> i + 1)
+                .limit(10)
+                .forEach(System.out::println);
+    }
+
+    @Bad
+    public void stillInfinite(){
+        IntStream.iterate(0, i -> ( i + 1 ) % 2)
+                .distinct()
+                .limit(10)
+                .forEach(System.out::println);
+    }
+
+    @Good
+    public void butThisOneIfFine(){
+        IntStream.iterate(0, i -> ( i + 1 ) % 2)
+                .limit(10)
+                .distinct()
+                .forEach(System.out::println);
+    }
+}
+```
+
+#### 3.3 - Use stream more than once
+
+```java
+package com.xpinjection.java8.misused.stream.incorrect;
+
+import com.xpinjection.java8.misused.Annotations.Bad;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class UseStreamMoreThanOnce {
+    @Bad
+    public void streamIsClosedAfterTerminalOperation() {
+        int[] array = new int[]{1, 2};
+        IntStream stream = Arrays.stream(array);
+        stream.forEach(System.out::println);
+        array[0] = 2;
+        stream.forEach(System.out::println);
+        //IllegalStateException: stream has already been operated upon or closed
+    }
+}
+```
+
+### Collectors
+
+#### 3.4 - Avoid `forEach` and apply mapping to target type
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class AvoidLoopsInStreams {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class UseExternalCounter {
+        public double countAverageRolesPerUser() {
+            if (users.isEmpty()) {
+                return 0;
+            }
+            AtomicInteger totalCount = new AtomicInteger();
+            users.forEach(u -> totalCount.addAndGet(u.getRoles().size()));
+            return totalCount.doubleValue() / users.size();
+        }
+    }
+
+    @Good
+    class ApplyMappingsToTargetType {
+        public double countAverageRolesPerUser() {
+            return users.stream()
+                    .mapToDouble(u -> u.getRoles().size())
+                    .average()
+                    .orElse(0);
+        }
+    }
+}
+```
+
+#### 3.5 - Collectors chain
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.List;
+import java.util.Map;
+
+import static java.util.Comparator.comparing;
+import static java.util.stream.Collectors.*;
+
+public class CollectorsChain {
+    @Ugly
+    class GroupByAndTransformResultingMap {
+        public Map<String, Integer> getMaxAgeByUserName(List<User> users) {
+            return users.stream()
+                    .collect(groupingBy(User::getName))
+                    .entrySet().stream()
+                    .collect(toMap(
+                            Map.Entry::getKey,
+                            e -> e.getValue().stream()
+                                    .map(User::getAge)
+                                    .reduce(0, Integer::max)
+                    ));
+        }
+    }
+
+    @Ugly
+    class GroupByWithMaxCollectorUnwrappingOptionalWithFinisher {
+        public Map<String, Integer> getMaxAgeByUserName(List<User> users) {
+            return users.stream().collect(groupingBy(User::getName,
+                    collectingAndThen(maxBy(comparing(User::getAge)),
+                            user -> user.get().getAge())));
+        }
+    }
+
+    @Good
+    class CollectToMapWithMergeFunction {
+        public Map<String, Integer> getMaxAgeByUserName(List<User> users) {
+            return users.stream()
+                    .collect(toMap(User::getName,
+                            User::getAge,
+                            Integer::max));
+        }
+    }
+
+    @Good
+    class ApplyReduceCollectorAsDownstream {
+        public Map<String, Integer> getMaxAgeByUserName(List<User> users) {
+            return users.stream()
+                    .collect(groupingBy(User::getName,
+                            mapping(User::getAge,
+                            reducing(0, Integer::max))));
+        }
+    }
+}
+```
+
+#### 3.6 - Do not use external collection for grouping
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+import static java.util.stream.Collectors.*;
+
+public class ExternalCollectionForGrouping {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class ExternalStateIsUsedForStreamOperations {
+        public Map<String, Set<User>> findEditors() {
+            Map<String, Set<User>> editors = new HashMap<>();
+            users.forEach(u -> u.getRoles().stream()
+                    .filter(r -> r.getPermissions().contains(Permission.EDIT))
+                    .forEach(r -> {
+                        //is it better to use Multiset and avoid this complex code
+                        Set<User> usersInRole = editors.get(r.getName());
+                        if (usersInRole == null) {
+                            usersInRole = new HashSet<>();
+                            editors.put(r.getName(), usersInRole);
+                        }
+                        usersInRole.add(u);
+                    })
+            );
+            return editors;
+        }
+    }
+
+    @Good
+    class TuplesAreUsedWhenStateIsNeededOnLaterPhase {
+        public Map<String, Set<User>> findEditors() {
+            return users.stream()
+                    .flatMap(u -> u.getRoles().stream()
+                        .filter(r -> r.getPermissions().contains(Permission.EDIT))
+                        .map(r -> new Pair<>(r, u))
+                    ).collect(groupingBy(p -> p.getKey().getName(),
+                            mapping(Pair::getValue, toSet())));
+        }
+    }
+
+    //any tuple implementation from 3rd party libraries
+    class Pair<K, V> {
+        private final K key;
+        private final V value;
+
+        Pair(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        K getKey() {
+            return key;
+        }
+
+        V getValue() {
+            return value;
+        }
+    }
+}
+```
+
+#### 3.7 - Calculate statistics in single run with collector
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.IntSummaryStatistics;
+import java.util.List;
+import java.util.stream.IntStream;
+
+import static java.util.stream.Collectors.summarizingInt;
+
+public class StatisticsCalculation {
+    @Ugly
+    class IterateThroughValuesSeveralTimes {
+        public void printNameStats(List<User> users) {
+            getNameLengthStream(users)
+                    .max()
+                    .ifPresent(max -> System.out.println("MAX: " + max));
+            getNameLengthStream(users)
+                    .min()
+                    .ifPresent(min -> System.out.println("MIN: " + min));
+        }
+
+        private IntStream getNameLengthStream(List<User> users) {
+            return users.stream()
+                    .mapToInt(user -> user.getName().length());
+        }
+    }
+
+    @Good
+    class CalculateStatisticsInSingleRunWithCollector {
+        public void registerUsers(List<User> users) {
+            IntSummaryStatistics statistics = users.stream()
+                    .collect(summarizingInt(user -> user.getName().length()));
+            System.out.println("MAX: " + statistics.getMax());
+            System.out.println("MIN: " + statistics.getMin());
+        }
+    }
+}
+```
+
+#### 3.8 - Convert stream to array
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class StreamMayBeConvertedToArray {
+    @Ugly
+    class ConvertToArrayViaList {
+        public String[] getUserNames(List<User> users) {
+            List<String> names = users.stream()
+                    .map(User::getName)
+                    .collect(Collectors.toList());
+            return names.toArray(new String[names.size()]);
+        }
+    }
+
+    @Good
+    class ConvertToArrayDirectly {
+        public String[] getUserNames(List<User> users) {
+            return users.stream()
+                    .map(User::getName)
+                    .toArray(String[]::new);
+        }
+    }
+}
+```
+
+#### 3.9 - Use functional approach when "map-reduce"
+
+```java
+package com.xpinjection.java8.misused.stream.collectors;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.List;
+
+import static java.util.Comparator.comparingInt;
+
+public class TrueFunctionalApproach {
+    @Ugly
+    class BeforeJava8 {
+        public User findUsersWithMostRoles(List<User> users) {
+            if (users.isEmpty()) {
+                return null;
+            }
+            User mostPowerful = users.iterator().next();
+            for (User user : users) {
+                if (user.getRoles().size() > mostPowerful.getRoles().size()) {
+                    mostPowerful = user;
+                }
+            }
+            return mostPowerful;
+        }
+    }
+
+    @Ugly
+    class NaiveStreamsApproach {
+        public User findUsersWithMostRoles(List<User> users) {
+            return users.stream()
+                    .sorted(comparingInt(u -> u.getRoles().size()))
+                    .findFirst()
+                    .orElse(null);
+        }
+    }
+
+    @Ugly
+    class StreamsWithReduction {
+        public User findUsersWithMostRoles(List<User> users) {
+            return users.stream()
+                    .reduce((u1, u2) ->
+                            u1.getRoles().size() > u2.getRoles().size() ? u1 : u2)
+                    .orElse(null);
+        }
+    }
+
+    @Good
+    class MaxWithComparator {
+        public User findUsersWithMostRoles(List<User> users) {
+            return users.stream()
+                    .max(comparingInt(u -> u.getRoles().size()))
+                    .orElse(null);
+        }
+    }
+}
+```
 
 ### Misuses
 
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/SameOldCodeStyleWithNewConstructs.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/NestedForEach.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/MatchElementInFunctionalStyle.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/ImperativeCodeMix.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/collectors/ExternalCollectionForGrouping.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/PreferSpecializedStreams.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/DoNotNeglectDataStructures.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/WantToUseStreamsEverywhere.java
+#### 3.10 - Stream generation
 
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/collectors/AvoidLoopsInStreams.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/collectors/TrueFunctionalApproach.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/collectors/StreamMayBeConvertedToArray.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/stream/UntypedStreamsCouldBeConverted.java
+```java
+package com.xpinjection.java8.misused.stream;
 
-Don't use external state with streams
-Don't mix streams and imperative code 
-Avoid complex nested streams
-Avoid loop by design, think in pipeline
-Follow true functional approach without side effects
-Use typed streams for primitives
-Take a look at extension like jool, StreamEx
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.Role;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
+public class CreationOptions {
+    @Ugly
+    public Stream<Permission> getStreamFromList() {
+        return Arrays.asList(Permission.ADD, Permission.DELETE).stream();
+    }
+
+    @Good
+    public Stream<Permission> getStreamFromElements() {
+        return Stream.of(Permission.ADD, Permission.DELETE);
+    }
+
+    @Ugly
+    public Stream<Role> generateStreamByMappingCopies(int n) {
+        return Collections.nCopies(n, "ignored").stream()
+                .map(s -> new Role());
+    }
+
+    @Ugly
+    public Stream<Role> generateStreamFromRange(int n) {
+        return IntStream.range(0, n).mapToObj(i -> new Role());
+    }
+
+    @Good
+    public Stream<Role> generateStreamFromSupplierWithLimit(int n) {
+        return Stream.generate(Role::new).limit(n);
+    }
+
+    @Ugly
+    public Stream<Role> generateStreamFromArrayWithRange(Role[] roles, int max) {
+        int to = Integer.min(roles.length, max);
+        return IntStream.range(0, to).mapToObj(i -> roles[i]);
+    }
+
+    @Good
+    public Stream<Role> generateStreamFromArrayWithLimit(Role[] roles, int max) {
+        return Stream.of(roles).limit(max);
+    }
+}
+```
+
+#### 3.11 - Use data structure features
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.*;
+
+import static java.util.stream.Collectors.toList;
+
+public class DoNotNeglectDataStructures {
+    @Ugly
+    class UnnecessaryUseOfNestedStreamOperations {
+        public List<Order> filterOrdersByStatuses(List<Order> orders, Set<Status> appropriateStatuses) {
+            return orders.stream()
+                    .filter(order ->
+                            appropriateStatuses.stream().anyMatch(order.getStatus()::equals))
+                    .collect(toList());
+        }
+    }
+
+    @Good
+    class UseOfDataStructure {
+        public List<Order> filterOrdersByStatuses(List<Order> orders, Set<Status> appropriateStatuses) {
+            return orders.stream()
+                    .filter(order -> appropriateStatuses.contains(order.getStatus()))
+                    .collect(toList());
+        }
+    }
+
+    @Ugly
+    class StateIsStoredInBadDataStructure {
+        private final List<Order> orders = new ArrayList<>();
+
+        public void placeOrder(Order order) {
+            orders.add(order);
+        }
+
+        public List<Order> getOrdersInStatus(Status status) {
+            return orders.stream()
+                    .filter(order -> order.getStatus() == status)
+                    .collect(toList());
+        }
+    }
+
+    @Good
+    class InternalDataStructureMayBeOptimizedForAccessMethods {
+        //Use multimap instead from external collections like Guava
+        private final Map<Status, List<Order>> orders = new EnumMap<>(Status.class);
+
+        public void placeOrder(Order order) {
+            orders.computeIfAbsent(order.getStatus(), status -> new ArrayList<>()).add(order);
+        }
+
+        public List<Order> getOrdersInStatus(Status status) {
+            return orders.get(status);
+        }
+    }
+
+    class Order {
+        private Status status = Status.ACTIVE;
+
+        Status getStatus() {
+            return status;
+        }
+
+        void setStatus(Status status) {
+            this.status = status;
+        }
+    }
+
+    enum Status {
+        ACTIVE, SUSPENDED, CLOSED
+    }
+}
+```
+
+#### 3.12 - Do not mix imperative code with streams
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.Role;
+import com.xpinjection.java8.misused.User;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
+public class ImperativeCodeMix {
+    private static final String ADMIN_ROLE = "admin";
+
+    private final List<User> users = new ArrayList<>();
+
+    @Ugly
+    class TooVerboseMixOfStreamOperationsAndImperativeCode {
+        public boolean hasAdmin() {
+            return users.stream()
+                    .map(u -> {
+                        if (u == null) {
+                            throw new NullPointerException();
+                        }
+                        return u;
+                    })
+                    .flatMap(u -> u.getRoles().stream())
+                    .map(Role::getName)
+                    .anyMatch(name -> ADMIN_ROLE.equals(name));
+        }
+    }
+
+    @Good
+    class NiceAndCleanStreamOperationsChain {
+        public boolean hasAdmin(Permission permission) {
+            return users.stream()
+                    .map(Objects::requireNonNull)
+                    .flatMap(u -> u.getRoles().stream())
+                    .map(Role::getName)
+                    .anyMatch(ADMIN_ROLE::equals);
+        }
+    }
+}
+```
+
+#### 3.13 - Match element in functional style
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class MatchElementInFunctionalStyle {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class UseOldSchoolIterationsWithForEachAndExternalBoolean {
+        public boolean checkPermission(Permission permission) {
+            AtomicBoolean found = new AtomicBoolean();
+            users.forEach(
+                    u -> u.getRoles().forEach(
+                            r -> {
+                                if (r.getPermissions().contains(permission)) {
+                                    found.set(true);
+                                }
+                            }
+                    )
+            );
+            return found.get();
+        }
+    }
+
+    @Ugly
+    class TryToUseFunctionalStyleWithStreamFilter {
+        public boolean checkPermission(Permission permission) {
+            return users.stream().filter(
+                    u -> u.getRoles().stream()
+                            .filter(r -> r.getPermissions().contains(permission))
+                            .count() > 0)
+                    .findFirst().isPresent();
+        }
+    }
+
+    @Ugly
+    class TryToUseStreamMatching {
+        public boolean checkPermission(Permission permission) {
+            return users.stream()
+                    .anyMatch(u -> u.getRoles().stream()
+                            .anyMatch(r -> r.getPermissions().contains(permission)));
+        }
+    }
+
+    @Good
+    class UseFlatMapForSubCollections {
+        public boolean checkPermission(Permission permission) {
+            return users.stream()
+                    .flatMap(u -> u.getRoles().stream())
+                    .anyMatch(r -> r.getPermissions().contains(permission));
+        }
+    }
+
+    @Good
+    class UseFlatMapWithMethodReferencesForSubCollections {
+        public boolean checkPermission(Permission permission) {
+            return users.stream()
+                    .map(User::getRoles)
+                    .flatMap(Set::stream)
+                    .anyMatch(r -> r.getPermissions().contains(permission));
+        }
+    }
+}
+```
+
+### 3.14 - Nested `forEach` is *anti-pattern*
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import static java.util.stream.Collectors.toSet;
+
+public class NestedForEach {
+    @Ugly
+    class NestedForEachWithExternalCollection {
+        public Set<String> retrievePromoRuleNames(List<BusinessTransaction> transactions) {
+            Set<String> ruleNamesWithPromo = new HashSet<>();
+            transactions.forEach(transaction -> transaction.getRules().stream()
+                    .filter(BusinessRule::isPromotion)
+                    .forEach(rule -> ruleNamesWithPromo.add(rule.getRuleName())));
+            return ruleNamesWithPromo;
+        }
+    }
+
+    @Good
+    class StreamOperationsChain {
+        public Set<String> retrievePromoRuleNames(List<BusinessTransaction> transactions) {
+            return transactions.stream()
+                    .flatMap(t -> t.getRules().stream())
+                    .filter(BusinessRule::isPromotion)
+                    .map(BusinessRule::getRuleName)
+                    .collect(toSet());
+        }
+    }
+
+    class BusinessTransaction {
+        List<BusinessRule> getRules() {
+            return new ArrayList<>(); //stub
+        }
+    }
+
+    class BusinessRule {
+        String getRuleName() {
+            return ""; //stub
+        }
+
+        boolean isPromotion() {
+            return false; //stub
+        }
+    }
+}
+```
+
+#### 3.15 - Prefer specialized streams
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class PreferSpecializedStreams {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class GeneralStreamUsage {
+        public int getTotalAge() {
+            return users.stream()
+                    .map(User::getAge)
+                    .reduce(0, Integer::sum);
+        }
+    }
+
+    @Good
+    class SpecializedStreamUsage {
+        public int getTotalAge() {
+            return users.stream()
+                    .mapToInt(User::getAge)
+                    .sum();
+        }
+    }
+
+    @Ugly
+    class FlatMapToCountElementsInAllCollections {
+        public int countEmployees(Map<String, List<User>> departments) {
+            return (int) departments.values().stream()
+                    .flatMap(List::stream)
+                    .count();
+        }
+    }
+
+    @Good
+    class MapToIntToSimplifyCalculation {
+        public long countEmployees(Map<String, List<User>> departments) {
+            return departments.values().stream()
+                    .mapToInt(List::size)
+                    .sum();
+        }
+    }
+}
+```
+
+#### 3.16 - Poor Domain Model causes complex Data Access code
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Role;
+import com.xpinjection.java8.misused.User;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RichDomainModel {
+    @Ugly
+    class PoorDomainModelCausesComplexDataAccessCode {
+        private final List<User> users = new ArrayList<>();
+
+        public User findUserInRole(String roleName) {
+            for (User user : users) {
+                for (Role role : user.getRoles()) {
+                    if (roleName.equals(role.getName())) {
+                        return user;
+                    }
+                }
+            }
+            return null;
+        }
+    }
+
+    @Ugly
+    class StreamVersionLooksNotMuchBetter {
+        private final List<User> users = new ArrayList<>();
+
+        public User findUserInRole(String roleName) {
+            return users.stream().filter(user -> user.getRoles().stream()
+                            .map(Role::getName)
+                            .anyMatch(roleName::equals))
+                    .findAny()
+                    .orElse(null);
+        }
+    }
+
+    @Good
+    class RichDomainModelCouldSimplifyAccessCode {
+        private final List<BetterUser> users = new ArrayList<>();
+
+        public User findUserInRole(String roleName) {
+            return users.stream()
+                    .filter(user -> user.hasRole(roleName))
+                    .findAny()
+                    .orElse(null);
+        }
+
+        class BetterUser extends User {
+            BetterUser(long id, String name, int age) {
+                super(id, name, age);
+            }
+
+            boolean hasRole(String roleName) {
+                return getRoles().stream()
+                        .map(Role::getName)
+                        .anyMatch(roleName::equals);
+            }
+        }
+    }
+}
+```
+
+#### 3.17 - Do not use old-style code with new constructs
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.User;
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.Collection;
+import java.util.Objects;
+
+import static java.util.Optional.ofNullable;
+
+public class SameOldCodeStyleWithNewConstructs {
+    @Ugly
+    class NoMoreThanSameOldLoopWithIf {
+        public void registerUsers(Collection<User> users) {
+            users.stream().forEach(user ->
+                    ofNullable(user).ifPresent(u -> {
+                        //register user
+                    })
+            );
+        }
+    }
+
+    @Good
+    class NewStreamStyleWithMethodReference {
+        public void registerUsers(Collection<User> users) {
+            users.stream()
+                    .filter(Objects::nonNull)
+                    .forEach(this::registerUser);
+        }
+
+        private void registerUser(User user){
+            //register user
+        }
+    }
+}
+```
+
+#### 3.18 - Know when to use `skip` and `limit`
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.User;
+
+import java.util.List;
+
+import static com.xpinjection.java8.misused.Annotations.Good;
+import static com.xpinjection.java8.misused.Annotations.Ugly;
+
+public class SkipAndLimitOnListIsWaste {
+    @Ugly
+    class SkipSomeElementsAndThenTakeSomeForProcessing {
+        public void registerUsers(List<User> users) {
+            users.stream().skip(5).limit(10)
+                    .forEach(SkipAndLimitOnListIsWaste.this::registerUser);
+        }
+    }
+
+    @Good
+    class SublistDoNotWasteProcessingTime {
+        public void registerUsers(List<User> users) {
+            users.subList(5, 15)
+                    .forEach(SkipAndLimitOnListIsWaste.this::registerUser);
+        }
+    }
+
+    private void registerUser(User user) {
+        //register user
+    }
+}
+```
+
+#### 3.19 - Type of stream could be changed
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.List;
+
+public class UntypedStreamsCouldBeConverted {
+    @Ugly
+    class ProcessOnlyValuesOfSpecialType {
+        public int countDoubleNaNs(List numbers) {
+            int count = 0;
+            for (Object e : numbers) {
+                if (e instanceof Double) {
+                    Double d = (Double) e;
+                    if (d.isNaN()) {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+    }
+
+    @Good
+    class TypeOfStreamCouldBeChanged {
+        public int countDoubleNaNs(List numbers) {
+            return (int) numbers.stream()
+                    .filter(Double.class::isInstance)
+                    .mapToDouble(Double.class::cast)
+                    .filter(Double::isNaN)
+                    .count();
+        }
+    }
+}
+```
+
+#### 3.20 - Use stream to build map is over-complication
+
+```java
+package com.xpinjection.java8.misused.stream;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.AbstractMap;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.collectingAndThen;
+import static java.util.stream.Collectors.toMap;
+
+public class WantToUseStreamsEverywhere {
+    @Ugly
+    class UseStreamToBuildMap {
+        public Map<String, Object> getJpaProperties() {
+            return Stream.of(
+                    new AbstractMap.SimpleEntry<>("hibernate.show_sql", "true"),
+                    new AbstractMap.SimpleEntry<>("hibernate.format_sql", "true")
+            ).collect(collectingAndThen(
+                    toMap(Map.Entry::getKey, Map.Entry::getValue),
+                    Collections::unmodifiableMap)
+            );
+        }
+    }
+
+    @Good
+    class UseOldPlainMap {
+        public Map<String, Object> getJpaProperties() {
+            Map<String, Object> properties = new HashMap<>();
+            properties.put("hibernate.show_sql", "true");
+            properties.put("hibernate.format_sql", "true");
+            return Collections.unmodifiableMap(properties);
+        }
+    }
+}
+```
+
 
 ## References
 
