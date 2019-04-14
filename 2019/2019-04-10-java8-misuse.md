@@ -4,6 +4,7 @@
 These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjection/java8-misuses) repository.
 
 **Table of Contents**
+- [Domain Model](#domain-model)
 - [Optional](#optional)
 - [Lambdas](#lambdas)
 - [Stream API](#stream-api)
@@ -12,6 +13,76 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
 - [References](#references)
 
 ---
+
+## Domain Model
+
+All the cases are based on the next domain model:
+
+```java
+package com.xpinjection.java8.misused;
+
+public class Annotations {
+    public @interface Good{}
+    public @interface Bad{}
+    public @interface Ugly{}
+}
+```
+
+```java
+public enum Permission {ADD, EDIT, SEARCH, DELETE}
+```
+
+```java
+public class Role {
+    private String name;
+    private Set<Permission> permissions = EnumSet.noneOf(Permission.class);
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+    public Set<Permission> getPermissions() { return permissions; }
+    public void setPermissions(Set<Permission> permissions) { this.permissions = permissions; }
+
+    @Override public boolean equals(Object o) { // ... the details are not important  }
+    @Override public int hashCode() { return name.hashCode(); }
+}
+```
+
+```java
+public class User {
+    private Long id;
+    private String name;
+    private int age;
+    private Set<Role> roles = new HashSet<>();
+
+    public User(long id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getName() { return name; }
+
+    public void setName(String name) { this.name = name; }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+    public Set<Role> getRoles() { return roles; }
+    public void setRoles(Set<Role> roles) { this.roles = roles; }
+}
+```
+
+```java
+public class UserDto {
+    private Long id;
+    private String name;
+
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+```
 
 ## Optional
 
