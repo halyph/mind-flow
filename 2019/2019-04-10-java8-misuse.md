@@ -1,4 +1,4 @@
-# [WIP] Common misuses of Java 8 features
+# Common misuses of Java 8+ features
 > | java |
 
 These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjection/java8-misuses) repository.
