@@ -1,4 +1,4 @@
-# [WIP] Common misuses of new Java 8 features and other mistakes
+# [WIP] Common misuses of Java 8 features
 > | java |
 
 These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjection/java8-misuses) repository.
@@ -15,7 +15,16 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
   - [1.7 - Optional Over Engineering (`if` not `null` might be *simpler*)](#17---optional-over-engineering-if-not-null-might-be-simpler)
   - [1.8 - Value presence strict check (chained `ifPresent`)](#18---value-presence-strict-check-chained-ifpresent)
 - [2 - Lambdas](#2---lambdas)
-- [Stream API](#stream-api)
+  - [2.1 - Avoid Complex Lambdas](#21---avoid-complex-lambdas)
+  - [2.2 - Avoid Long Lambdas](#22---avoid-long-lambdas)
+  - [2.3 - Class Design (methods' naming)](#23---class-design-methods-naming)
+  - [2.4 - Lambdas are not always the best option (method reference works as well)](#24---lambdas-are-not-always-the-best-option-method-reference-works-as-well)
+  - [2.5 - Lazy calculations improve performance (*log* if `logger.isDebugEnabled()`)](#25---lazy-calculations-improve-performance-log-if-loggerisdebugenabled)
+  - [2.6 - Emulate Multimap](#26---emulate-multimap)
+  - [2.7 - Sorting the list using existing predefined comparator](#27---sorting-the-list-using-existing-predefined-comparator)
+  - [2.8 - Iterating the map (`forEach` and map transform)](#28---iterating-the-map-foreach-and-map-transform)
+  - [2.9 - Remove with predicate](#29---remove-with-predicate)
+- [3- Stream API](#3--stream-api)
   - [Incorrect](#incorrect)
   - [Misuses](#misuses)
 - [References](#references)
@@ -47,6 +56,7 @@ public class Role {
 
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+
     public Set<Permission> getPermissions() { return permissions; }
     public void setPermissions(Set<Permission> permissions) { this.permissions = permissions; }
 
@@ -70,11 +80,13 @@ public class User {
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
-    public String getName() { return name; }
 
+    public String getName() { return name; }
     public void setName(String name) { this.name = name; }
+
     public int getAge() { return age; }
     public void setAge(int age) { this.age = age; }
+
     public Set<Role> getRoles() { return roles; }
     public void setRoles(Set<Role> roles) { this.roles = roles; }
 }
@@ -566,28 +578,423 @@ public class StrictCheckOfValuePresence {
 
 ## 2 - Lambdas
 
-- AvoidLongLambdas
-  - https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/AvoidLongLambdas.java
-- AvoidComplexLambdas
-  - https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/AvoidComplexLambdas.java
-- ListSorting
-  - https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/collections/ListSorting.java
-- MapIterating
-  - https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/collections/MapIterating.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/LazyCalculationsImprovePerformance.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/LambdasAreNotAlwaysTheBestOption.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/collections/EmulateMultimap.java
-- https://github.com/xpinjection/java8-misuses/blob/master/src/com/xpinjection/java8/misused/lambda/collections/RemoveElementWithIterator.java
+> - Be concrete with functional interfaces
+> - Avoid long or complex lambda expressions!
+> - Prefer reusable method reference
+> - Use specific methods on collections
+> - Lazy calculation improve performance
+> - Check popular API changes for lambda support
 
-Be concrete with functional interfaces
-Avoid long or complex lambda expressions !
-Prefer reusable method reference
-Use specific methods on collections
+### 2.1 - Avoid Complex Lambdas
 
-Lazy calculation improve performance
-Check popular API changes for lambda support
+```java
+package com.xpinjection.java8.misused.lambda;
 
-## Stream API
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.Role;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.function.Predicate;
+
+import static java.util.stream.Collectors.toSet;
+
+public class AvoidComplexLambdas {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class UsingComplexLambdaInPlace {
+        public Set<User> findEditors() {
+            return users.stream()
+                    .filter(u -> u.getRoles().stream()
+                            .anyMatch(r -> r.getPermissions().contains(Permission.EDIT)))
+                    .collect(toSet());
+        }
+    }
+
+    @Good
+    class ComplexityExtractedToMethodReference {
+        public Set<User> checkPermission(Permission permission) {
+            return users.stream()
+                    //.filter(this::hasEditPermission)
+                    .filter(hasPermission(Permission.EDIT))
+                    .collect(toSet());
+        }
+
+        private Predicate<User> hasPermission(Permission permission) {
+            return user -> user.getRoles().stream()
+                    .map(Role::getPermissions)
+                    .anyMatch(permissions -> permissions.contains(permission));
+        }
+
+        private boolean hasEditPermission(User user) {
+            return hasPermission(Permission.EDIT).test(user);
+        }
+    }
+}
+```
+
+### 2.2 - Avoid Long Lambdas
+
+```java
+package com.xpinjection.java8.misused.lambda;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+import com.xpinjection.java8.misused.UserDto;
+
+import java.util.List;
+import java.util.function.Function;
+
+import static java.util.stream.Collectors.toList;
+
+public class AvoidLongLambdas {
+    @Ugly
+    class LongLambdaInPlace {
+        public List<UserDto> convertToDto(List<User> users){
+            return users.stream()
+                    .map(user -> {
+                        UserDto dto = new UserDto();
+                        dto.setId(user.getId());
+                        dto.setName(user.getName());
+                        //it happens to be much more fields 
+                        //   and much more logic in terms of remapping these fields
+                        return dto;
+                    })
+                    .collect(toList());
+        }
+    }
+
+    @Good
+    class MethodReferenceInsteadOfLambda {
+        //particular toDto could be implemented as a separate class or as a lambda function
+        private final Function<User, UserDto> toDto = this::convertToDto;
+
+        public List<UserDto> convertToDto(List<User> users){
+            return users.stream()
+                    .map(toDto)
+                    .collect(toList());
+        }
+
+        private UserDto convertToDto(User user){
+            UserDto dto = new UserDto();
+            dto.setId(user.getId());
+            dto.setName(user.getName());
+            return dto;
+        }
+    }
+}
+```
+
+### 2.3 - Class Design (methods' naming)
+
+```java
+package com.xpinjection.java8.misused.lambda;
+
+import com.xpinjection.java8.misused.Annotations.Bad;
+import com.xpinjection.java8.misused.Annotations.Good;
+
+import java.util.function.Function;
+import java.util.function.UnaryOperator;
+
+public class ClassDesign {
+    @Bad
+    static class AmbiguousOverloadedMethods {
+        interface AmbiguousService<T> {
+            <R> R process(Function<T, R> fn);
+
+            T process(UnaryOperator<T> fn);
+        }
+
+        public void usage(AmbiguousService<String> service) {
+            //which method you intended to call??? both are acceptable.
+            service.process(String::toUpperCase);
+        }
+    }
+
+    @Good
+    static class SeparateSpecializedMethods {
+        interface ClearService<T> {
+            <R> R convert(Function<T, R> fn);
+
+            T process(UnaryOperator<T> fn);
+        }
+
+        public void usage(ClearService<String> service) {
+            //now it's clear which method will be called.
+            service.convert(String::toUpperCase);
+        }
+    }
+}
+```
+
+### 2.4 - Lambdas are not always the best option (method reference works as well)
+
+```java
+package com.xpinjection.java8.misused.lambda;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.Optional;
+
+public class LambdasAreNotAlwaysTheBestOption {
+    @Ugly
+    class UnneededLambdasUsage {
+        public void processAndPrint(String name) {
+            Optional.ofNullable(name)
+                    //.filter(s -> !s.isEmpty())
+                    .map(s -> s.toUpperCase())
+                    .map(s -> doProcess(s))
+                    .ifPresent(s -> System.out.print(s));
+        }
+
+        private String doProcess(String name) {
+            return "MR. " + name;
+        }
+    }
+
+    @Good
+    class MethodReferenceUsage {
+        public void processAndPrint(String name) {
+            Optional.ofNullable(name)
+                    //.filter(StringUtils::isNotEmpty) // replace with appropriate library method ref
+                    .map(String::toUpperCase)
+                    .map(this::doProcess)
+                    .ifPresent(System.out::print);
+        }
+
+        private String doProcess(String name) {
+            return "MR. " + name;
+        }
+    }
+}
+```
+
+### 2.5 - Lazy calculations improve performance (*log* if `logger.isDebugEnabled()`)
+
+```java
+package com.xpinjection.java8.misused.lambda;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.Set;
+import java.util.function.Supplier;
+
+public class LazyCalculationsImprovePerformance {
+    @Ugly
+    static class LoggingWithAdditionalCheckToAvoidCalculations {
+        private static final Log LOG = null; // init logger with factory
+
+        public void sendWelcomeEmailToUsers(Set<User> users) {
+            // send email
+            if (LOG.isDebugEnabled()) {
+                LOG.debug("Emails have been sent for users: " + users);
+            }
+        }
+
+        interface Log {
+            void debug(String message);
+
+            boolean isDebugEnabled();
+        }
+    }
+
+    @Good
+    static class PassLambdaToLazyCalculateValueForLogMessage {
+        private static final Log LOG = null; // init logger with factory
+
+        public void sendWelcomeEmailToUsers(Set<User> users) {
+            // send email
+            LOG.debug(() -> "Emails have been sent for users: " + users);
+        }
+
+        interface Log {
+            void debug(String message);
+
+            boolean isDebugEnabled();
+
+            default void debug(Supplier<String> message) {
+                if (isDebugEnabled()) {
+                    debug(message.get());
+                }
+            }
+        }
+    }
+}
+```
+
+### 2.6 - Emulate Multimap
+
+```java
+package com.xpinjection.java8.misused.lambda.collections;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.*;
+
+public class EmulateMultimap {
+    private final Map<String, Set<User>> usersByRole = new HashMap<>();
+
+    @Ugly
+    class ManuallyInsertSetOnFirstValueForTheKey {
+        public void addUser(User user) {
+            user.getRoles().forEach(r -> {
+                Set<User> usersInRole = usersByRole.get(r.getName());
+                if (usersInRole == null) {
+                    usersInRole = new HashSet<>();
+                    usersByRole.put(r.getName(), usersInRole);
+                }
+                usersInRole.add(user);
+            });
+        }
+
+        public Set<User> getUsersInRole(String role) {
+            Set<User> users = usersByRole.get(role);
+            return users == null ? Collections.emptySet() : users;
+        }
+    }
+
+    @Good
+    class ComputeEmptySetIfKeyIsAbsent {
+        public void addUser(User user) {
+            user.getRoles().forEach(r -> usersByRole
+                    .computeIfAbsent(r.getName(), k -> new HashSet<>())
+                    .add(user));
+        }
+
+        public Set<User> getUsersInRole(String role) {
+            return usersByRole.getOrDefault(role, Collections.emptySet());
+        }
+    }
+}
+```
+
+### 2.7 - Sorting the list using existing predefined comparator
+
+```java
+package com.xpinjection.java8.misused.lambda.collections;
+
+import com.xpinjection.java8.misused.User;
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.util.List;
+
+import static java.util.Comparator.comparing;
+
+public class ListSorting {
+    @Ugly
+    class UsingCustomComparator {
+        public void sortUsersById(List<User> users) {
+            users.sort((x, y) -> Long.compare(x.getId(), y.getId()));
+        }
+    }
+
+    @Good
+    class UsingExistingPredefinedComparator {
+        public void sortUsersById(List<User> users) {
+            users.sort(comparing(User::getId));
+        }
+    }
+}
+```
+
+### 2.8 - Iterating the map (`forEach` and map transform)
+
+```java
+package com.xpinjection.java8.misused.lambda.collections;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static java.util.stream.Collectors.toMap;
+
+public class MapIterating {
+    @Ugly
+    class UsingOldGoodEntrySet {
+        public Map<String, String> getUserNames(Map<String, User> users) {
+            Map<String, String> userNames = new HashMap<>();
+            users.entrySet().forEach(user ->
+                    userNames.put(user.getKey(), user.getValue().getName()));
+            return userNames;
+        }
+    }
+
+    @Good
+    class UsingMapForEach {
+        public Map<String, String> getUserNames(Map<String, User> users) {
+            Map<String, String> userNames = new HashMap<>();
+            users.forEach((key, value) -> userNames.put(key, value.getName()));
+            return userNames;
+        }
+    }
+
+    @Good
+    class UsingMapTransform {
+        public Map<String, String> getUserNames(Map<String, User> users) {
+            return users.entrySet().stream()
+                    .collect(toMap(Map.Entry::getKey,
+                            entry -> entry.getValue().getName()));
+        }
+    }
+}
+```
+
+### 2.9 - Remove with predicate
+
+```java
+package com.xpinjection.java8.misused.lambda.collections;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+import com.xpinjection.java8.misused.Permission;
+import com.xpinjection.java8.misused.User;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class RemoveElementWithIterator {
+    private final Set<User> users = new HashSet<>();
+
+    @Ugly
+    class ManuallyRemoveElementWithIteratorRemove {
+        public void removeUsersWithPermission(Permission permission) {
+            Iterator<User> iterator = users.iterator();
+            while (iterator.hasNext()) {
+                User user = iterator.next();
+                if (user.getRoles().stream()
+                        .anyMatch(r -> r.getPermissions().contains(permission))) {
+                    iterator.remove();
+                }
+            }
+        }
+    }
+
+    @Good
+    class RemoveWithPredicate {
+        public void removeUsersWithPermission(Permission permission) {
+            users.removeIf(user -> user.getRoles().stream()
+                    .anyMatch(r -> r.getPermissions().contains(permission)));
+        }
+    }
+}
+```
+
+## 3- Stream API
 
 ### Incorrect
 
