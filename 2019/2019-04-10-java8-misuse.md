@@ -48,6 +48,8 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
     - [3.18 - Know when to use `skip` and `limit`](#318---know-when-to-use-skip-and-limit)
     - [3.19 - Type of stream could be changed](#319---type-of-stream-could-be-changed)
     - [3.20 - Use stream to build map is over-complication](#320---use-stream-to-build-map-is-over-complication)
+- [4 - Time API](#4---time-api)
+  - [4.1 - Ignore Java 8 Time API](#41---ignore-java-8-time-api)
 - [References](#references)
 
 ---
@@ -2029,6 +2031,48 @@ public class WantToUseStreamsEverywhere {
 }
 ```
 
+## 4 - Time API
+
+### 4.1 - Ignore Java 8 Time API
+
+```java
+package com.xpinjection.java8.misused.time;
+
+import com.xpinjection.java8.misused.Annotations.Good;
+import com.xpinjection.java8.misused.Annotations.Ugly;
+
+import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+
+import static java.time.temporal.ChronoUnit.DAYS;
+
+public class TimeApiIgnorance {
+    @Ugly
+    class AddDayInPreJava8Style {
+        public Date tomorrow() {
+            Calendar now = Calendar.getInstance();
+            now.add(Calendar.DAY_OF_MONTH, 1);
+            return now.getTime();
+        }
+    }
+
+    @Ugly
+    class AddDayInefficient {
+        public LocalDate tomorrow() {
+            return LocalDate.now().plus(1, DAYS);
+        }
+    }
+
+    @Good
+    class AddDayInJava8Style {
+        public LocalDate tomorrow() {
+            return LocalDate.now().plusDays(1);
+        }
+    }
+}
+
+```
 
 ## References
 
