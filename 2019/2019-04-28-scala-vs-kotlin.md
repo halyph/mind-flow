@@ -15,6 +15,8 @@ This page is just collection of notes from ["Kotlin vs Scala" by Urs Peter & Joo
   - [Functions under the hood and Types](#functions-under-the-hood-and-types)
   - [Type Aliases](#type-aliases)
 - [Null Safety](#null-safety)
+  - [Optional Value](#optional-value)
+    - [Nullable Types](#nullable-types)
 
 ---
 
@@ -238,6 +240,63 @@ typealias IntToStringFun = Function1<Int, String>
 ```
 
 ## Null Safety
+
+### Optional Value
+
+**Scala**
+
+ Scala solves optionality with the `Option` type, which is well adopted in Scala APIs
+
+```scala
+case class Booking(destination: Option[Destination] = None)
+case class Destination(hotel: Option[Hotel] = None)
+case class Hotel(name: String, stars: Option[Int] = None)
+
+// The functional approach 
+
+val bOpt = Some(Booking(Some(Destination(Some(Hotel("Sunset Paradise", Some(5)))))))
+
+var stars = "*" * bOpt.flatMap(_.destination).flatMap(_.hotel).flatMap(_.stars).getOrElse(0)
+
+// or `for` expressions can be used to access optional values
+stars = "*" * (for {
+  booking <- bOpt
+  dest <- booking.destination hotel <- dest.hotel
+  stars <- hotel.stars
+} yield stars).getOrElse(0)
+```
+
+Kotlin solves optionality on the language level with Nullable types. Every type can also be a Nullable Type: Syntax: <Typename>?
+
+**Kotlin**
+
+```kotlin
+class Booking(val destination:Destination? = null)
+class Destination(val hotel:Hotel? = null)
+class Hotel(val name:String, val stars:Int? = null)
+```
+
+Since nullability is part of the type system no wrapper is needed: The required type or null can be used.
+
+```kotlin
+val booking:Booking? = Booking(Destination(Hotel("Sunset Paradise", 5))) 
+
+// To safely access nullable types the ? can be used with ?: for the alternative case.
+val stars = "*".repeat(booking?.destination?.hotel?.stars ?: 0) //-> "*****"
+
+//  After checking for not null a type is ‘smart casted’ to its non-null type: here from Booking? to Booking
+if(booking != null) {
+  println(booking.destination)
+}
+```
+
+#### Nullable Types
+
+- At first awkward, but eventually they are great to work with
+- Less verbose than Options on the declaration and usage side
+- Offers much better interoperability with Java than Scala Options
+- Most loved feature in Kotlin!
+
 
 **Scala**
 
