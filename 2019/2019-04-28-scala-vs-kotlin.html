@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>Scala vs Kotlin</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="scala-vs-kotlin">Scala vs Kotlin</h1>
+<blockquote>
+<p>| java | kotlin | vs | comparison |</p>
+</blockquote>
+<p>This page is just collection of notes from <a href="https://www.youtube.com/watch?v=MsMejigb1Zk">&quot;Kotlin vs Scala&quot; by Urs Peter &amp; Joost Heijkoop</a></p>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#object-orientation">Object Orientation</a>
+<ul>
+<li><a href="#class">Class</a></li>
+<li><a href="#comparing-oo-between">Comparing OO between</a></li>
+<li><a href="#inheritance">Inheritance</a></li>
+<li><a href="#value-classes">Value Classes</a></li>
+</ul>
+</li>
+<li><a href="#functional-programming">Functional Programming</a>
+<ul>
+<li><a href="#declaring-and-calling-functions">Declaring and Calling Functions</a></li>
+<li><a href="#curring-and-partially-applied-functions">Curring and partially applied functions</a></li>
+<li><a href="#functions-under-the-hood-and-types">Functions under the hood and Types</a></li>
+<li><a href="#type-aliases">Type Aliases</a></li>
+</ul>
+</li>
+<li><a href="#null-safety">Null Safety</a>
+<ul>
+<li><a href="#optional-value">Optional Value</a>
+<ul>
+<li><a href="#nullable-types">Nullable Types</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pattern-matching">Pattern Matching</a>
+<ul>
+<li><a href="#destructuring">Destructuring</a></li>
+</ul>
+</li>
+<li><a href="#composition">Composition</a>
+<ul>
+<li><a href="#composition-with-traits">Composition with Traits</a></li>
+<li><a href="#composition-with-delegation">Composition with Delegation</a></li>
+</ul>
+</li>
+<li><a href="#extensions">Extensions</a></li>
+</ul>
+<hr>
+<h2 id="object-orientation">Object Orientation</h2>
+<h3 id="class">Class</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>(<span class="hljs-params">val name:<span class="hljs-type">String</span>, var age:<span class="hljs-type">Int</span> = 0</span>)</span>
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(<span class="hljs-keyword">val</span> name:String, <span class="hljs-keyword">var</span> age:<span class="hljs-built_in">Int</span> = <span class="hljs-number">0</span>)
+</div></code></pre>
+<h3 id="comparing-oo-between">Comparing OO between</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>(<span class="hljs-params">var name: <span class="hljs-type">String</span>, var age: <span class="hljs-type">Int</span> = 0</span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Ordered</span>[<span class="hljs-type">Person</span>] </span>{
+  
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sayHi</span></span>(): <span class="hljs-type">String</span> = {
+    <span class="hljs-string">"Hi"</span>
+  }
+  
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">compare</span></span>(other: <span class="hljs-type">Person</span>): <span class="hljs-type">Int</span> = age - other.age
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">+</span></span>(lifetime: <span class="hljs-type">Int</span>): <span class="hljs-type">Person</span> = {
+    age += lifetime
+    <span class="hljs-keyword">this</span>
+  }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Person</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">newBorn</span></span>(name:<span class="hljs-type">String</span>) = <span class="hljs-keyword">new</span> <span class="hljs-type">Person</span>(name, <span class="hljs-number">0</span>)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">apply</span></span>() = <span class="hljs-keyword">new</span> <span class="hljs-type">Person</span>(<span class="hljs-string">"John Doe"</span>, <span class="hljs-number">-1</span>)
+}
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(<span class="hljs-keyword">var</span> name: String, <span class="hljs-keyword">var</span> age: <span class="hljs-built_in">Int</span> = <span class="hljs-number">0</span>): Comparable&lt;Person&gt; {
+  
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">sayHi</span><span class="hljs-params">()</span></span>: String {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"Hi"</span>
+  }
+
+  <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">plus</span><span class="hljs-params">(lifetime: <span class="hljs-type">Int</span>)</span></span>: Person {
+    age += lifetime
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>
+  }
+
+  <span class="hljs-keyword">override</span> <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(p: <span class="hljs-type">Person</span>)</span></span> = age - p.age
+  
+  <span class="hljs-keyword">companion</span> <span class="hljs-keyword">object</span> {
+    <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">newBorn</span><span class="hljs-params">(name:<span class="hljs-type">String</span>)</span></span> = Person(name)
+    <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">invoke</span><span class="hljs-params">()</span></span> = Person(<span class="hljs-string">"John Doe"</span>)
+  }
+}
+</div></code></pre>
+<h3 id="inheritance">Inheritance</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Species</span>(<span class="hljs-params">val kind:<span class="hljs-type">String</span></span>) </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">eats</span></span>:<span class="hljs-type">Seq</span>[<span class="hljs-type">String</span>] = <span class="hljs-type">Seq</span>()
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>(<span class="hljs-params">val name:<span class="hljs-type">String</span>, var age:<span class="hljs-type">Int</span></span>) <span class="hljs-keyword">extends</span> <span class="hljs-title">Species</span>(<span class="hljs-params">"<span class="hljs-type">Homo</span> <span class="hljs-type">Sapiens</span>"</span>) </span>{
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">eats</span></span>:<span class="hljs-type">Seq</span>[<span class="hljs-type">String</span>] = <span class="hljs-type">Seq</span>(<span class="hljs-string">"..."</span>)
+}
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">open</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Species</span></span>(<span class="hljs-keyword">val</span> kind:String) {
+  <span class="hljs-keyword">open</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">eats</span><span class="hljs-params">()</span></span>:List&lt;String&gt; = emptyList()
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(<span class="hljs-keyword">val</span> name:String, <span class="hljs-keyword">var</span> age:<span class="hljs-built_in">Int</span> = <span class="hljs-number">0</span>):Species(<span class="hljs-string">"Homo Sapiens"</span>) {
+  <span class="hljs-keyword">override</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">eats</span><span class="hljs-params">()</span></span>:List&lt;String&gt; = listOf(<span class="hljs-string">"..."</span>)
+}
+</div></code></pre>
+<h3 id="value-classes">Value Classes</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name:<span class="hljs-type">String</span>, var age:<span class="hljs-type">Int</span> = 0</span>)</span>
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">data</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(<span class="hljs-keyword">val</span> name:String, <span class="hljs-keyword">var</span> age:<span class="hljs-built_in">Int</span> = <span class="hljs-number">0</span>)
+</div></code></pre>
+<pre><code class="language-java"><div>val jack = Person(<span class="hljs-string">"Jack"</span>, <span class="hljs-number">42</span>)
+<span class="hljs-comment">// jack: Person(name=Jack, age=32)</span>
+
+jack == Person(<span class="hljs-string">"Jack"</span>, <span class="hljs-number">42</span>)
+<span class="hljs-comment">// res1: true</span>
+
+val fred = jack.copy(name = <span class="hljs-string">"Fred"</span>)
+<span class="hljs-comment">// fred: Person(name=Jack, age=32)</span>
+</div></code></pre>
+<h2 id="functional-programming">Functional Programming</h2>
+<h3 id="declaring-and-calling-functions">Declaring and Calling Functions</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">doWithText</span></span>(path: <span class="hljs-type">File</span>, transFun: (<span class="hljs-type">String</span>) =&gt; <span class="hljs-type">String</span>): <span class="hljs-type">String</span> =
+  transFun(<span class="hljs-type">FileUtils</span>.readFileToString(path))
+
+doWithText(<span class="hljs-keyword">new</span> <span class="hljs-type">File</span>(<span class="hljs-string">"/news.txt"</span>), txt =&gt; txt.toUpperCase())
+doWithText(<span class="hljs-keyword">new</span> <span class="hljs-type">File</span>(<span class="hljs-string">"/news.txt"</span>), _.toUpperCase())
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">writeToFile</span></span>(file: <span class="hljs-type">File</span>, block: =&gt; <span class="hljs-type">String</span>) {
+  <span class="hljs-keyword">if</span> (file.isFile) <span class="hljs-type">FileUtils</span>.writeStringToFile(file, block)
+}
+
+writeToFile(<span class="hljs-keyword">new</span> <span class="hljs-type">File</span>(<span class="hljs-string">"/srocks.txt"</span>), <span class="hljs-string">"Scala rocks! "</span> * <span class="hljs-number">1000</span>)
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">doWithText</span><span class="hljs-params">(path: <span class="hljs-type">File</span>, transFun: (<span class="hljs-type">String</span>)</span></span> -&gt; String): String =
+  transFun(FileUtils.readFileToString(path))
+
+<span class="hljs-comment">// On the call-side a function must be wrapped within {}</span>
+doWithText(File(<span class="hljs-string">"/text.txt"</span>)){ txt -&gt; txt.toUpperCase() }
+
+<span class="hljs-comment">// it serves as placeholder of the function parameter.</span>
+doWithText(File(<span class="hljs-string">"/text.txt"</span>)){ it.toUpperCase() }
+
+<span class="hljs-comment">// Kotlin supports no-argument functions, similar to Scala’s call-by name arguments</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">writeToFile</span><span class="hljs-params">(file:<span class="hljs-type">File</span>, block: ()</span></span> -&gt; String) {
+  <span class="hljs-keyword">if</span>(file.isFile)FileUtils.writeStringToFile(file, block())
+}
+
+<span class="hljs-comment">// On the call-side the empty argument and arrow can be omitted</span>
+writeToFile(File(<span class="hljs-string">"/krocks.txt"</span>)){<span class="hljs-string">"Kotlin rocks! "</span>.repeat(<span class="hljs-number">1000</span>)}
+</div></code></pre>
+<h3 id="curring-and-partially-applied-functions">Curring and partially applied functions</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">modN</span></span>(n: <span class="hljs-type">Int</span>)(x: <span class="hljs-type">Int</span>) = ((x % n) == <span class="hljs-number">0</span>) 
+<span class="hljs-keyword">val</span> modTwo = modN(<span class="hljs-number">2</span>)(_)
+<span class="hljs-type">Seq</span>(<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>) filter modTwo
+
+<span class="hljs-keyword">val</span> greaterThan100 = <span class="hljs-type">Math</span>.max(<span class="hljs-number">100</span>, _:<span class="hljs-type">Int</span>) 
+greaterThan100(<span class="hljs-number">200</span>)
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<p><em>Currying and partially applied functions are not available in Kotlin</em></p>
+<h3 id="functions-under-the-hood-and-types">Functions under the hood and Types</h3>
+<p><strong>Scala</strong></p>
+<ul>
+<li>Abstract Types</li>
+<li>Higher-kinded Types</li>
+<li>Type Classes, Phantom Types</li>
+<li>Structural Types</li>
+<li>Specialized Types</li>
+<li>Dynamic Types</li>
+<li>Self-Types</li>
+<li>Union Types</li>
+</ul>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Function1</span>[-<span class="hljs-type">T1</span>, +<span class="hljs-type">R</span>] <span class="hljs-keyword">extends</span> <span class="hljs-title">AnyRef</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">apply</span></span>(v1: <span class="hljs-type">T1</span>): <span class="hljs-type">R</span>
+}
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<p>Identical approach for Kotlin Functions, counting up to Function22 like Scala</p>
+<p>Kotlin’s type features are identical to Java with the addition of Variance (contra-, co- invariant) and Type Aliases</p>
+<pre><code class="language-kotlin"><div><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Function1</span>&lt;<span class="hljs-type">in P1, out R</span>&gt; : <span class="hljs-type">Function</span>&lt;<span class="hljs-type">R</span>&gt; </span>{
+  <span class="hljs-keyword">operator</span> <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">invoke</span><span class="hljs-params">(p1: <span class="hljs-type">P1</span>)</span></span>: R
+}
+</div></code></pre>
+<h3 id="type-aliases">Type Aliases</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">IntToStringFun</span> </span>= <span class="hljs-type">Function1</span>[<span class="hljs-type">Int</span>, <span class="hljs-type">String</span>]
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">typealias</span> IntToStringFun = Function1&lt;<span class="hljs-built_in">Int</span>, String&gt;
+</div></code></pre>
+<h2 id="null-safety">Null Safety</h2>
+<h3 id="optional-value">Optional Value</h3>
+<p><strong>Scala</strong></p>
+<p>Scala solves optionality with the <code>Option</code> type, which is well adopted in Scala APIs</p>
+<pre><code class="language-scala"><div><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Booking</span>(<span class="hljs-params">destination: <span class="hljs-type">Option</span>[<span class="hljs-type">Destination</span>] = <span class="hljs-type">None</span></span>)</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Destination</span>(<span class="hljs-params">hotel: <span class="hljs-type">Option</span>[<span class="hljs-type">Hotel</span>] = <span class="hljs-type">None</span></span>)</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hotel</span>(<span class="hljs-params">name: <span class="hljs-type">String</span>, stars: <span class="hljs-type">Option</span>[<span class="hljs-type">Int</span>] = <span class="hljs-type">None</span></span>)</span>
+
+<span class="hljs-comment">// The functional approach </span>
+
+<span class="hljs-keyword">val</span> bOpt = <span class="hljs-type">Some</span>(<span class="hljs-type">Booking</span>(<span class="hljs-type">Some</span>(<span class="hljs-type">Destination</span>(<span class="hljs-type">Some</span>(<span class="hljs-type">Hotel</span>(<span class="hljs-string">"Sunset Paradise"</span>, <span class="hljs-type">Some</span>(<span class="hljs-number">5</span>)))))))
+
+<span class="hljs-keyword">var</span> stars = <span class="hljs-string">"*"</span> * bOpt.flatMap(_.destination).flatMap(_.hotel).flatMap(_.stars).getOrElse(<span class="hljs-number">0</span>)
+
+<span class="hljs-comment">// or `for` expressions can be used to access optional values</span>
+stars = <span class="hljs-string">"*"</span> * (<span class="hljs-keyword">for</span> {
+  booking &lt;- bOpt
+  dest &lt;- booking.destination hotel &lt;- dest.hotel
+  stars &lt;- hotel.stars
+} <span class="hljs-keyword">yield</span> stars).getOrElse(<span class="hljs-number">0</span>)
+</div></code></pre>
+<p>Kotlin solves optionality on the language level with Nullable types. Every type can also be a Nullable Type: Syntax: <Typename>?</p>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Booking</span></span>(<span class="hljs-keyword">val</span> destination:Destination? = <span class="hljs-literal">null</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Destination</span></span>(<span class="hljs-keyword">val</span> hotel:Hotel? = <span class="hljs-literal">null</span>)
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hotel</span></span>(<span class="hljs-keyword">val</span> name:String, <span class="hljs-keyword">val</span> stars:<span class="hljs-built_in">Int</span>? = <span class="hljs-literal">null</span>)
+</div></code></pre>
+<p>Since nullability is part of the type system no wrapper is needed: The required type or null can be used.</p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">val</span> booking:Booking? = Booking(Destination(Hotel(<span class="hljs-string">"Sunset Paradise"</span>, <span class="hljs-number">5</span>))) 
+
+<span class="hljs-comment">// To safely access nullable types the ? can be used with ?: for the alternative case.</span>
+<span class="hljs-keyword">val</span> stars = <span class="hljs-string">"*"</span>.repeat(booking?.destination?.hotel?.stars ?: <span class="hljs-number">0</span>) <span class="hljs-comment">//-&gt; "*****"</span>
+
+<span class="hljs-comment">//  After checking for not null a type is ‘smart casted’ to its non-null type: here from Booking? to Booking</span>
+<span class="hljs-keyword">if</span>(booking != <span class="hljs-literal">null</span>) {
+  println(booking.destination)
+}
+</div></code></pre>
+<h4 id="nullable-types">Nullable Types</h4>
+<ul>
+<li>At first awkward, but eventually they are great to work with</li>
+<li>Less verbose than Options on the declaration and usage side</li>
+<li>Offers much better interoperability with Java than Scala Options</li>
+<li>Most loved feature in Kotlin!</li>
+</ul>
+<h2 id="pattern-matching">Pattern Matching</h2>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">matchItAll</span></span>(p: <span class="hljs-type">Any</span>): <span class="hljs-type">Any</span> = {
+  p <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> x: <span class="hljs-type">Int</span>                       =&gt; <span class="hljs-string">s"<span class="hljs-subst">$x</span>"</span>            <span class="hljs-comment">// (1)</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">"Scala"</span>                      =&gt; <span class="hljs-string">"Scala"</span>          <span class="hljs-comment">// (2)</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Seq</span>(_, <span class="hljs-number">3</span>, _*)                =&gt; <span class="hljs-string">"Seq(?, 3, *)"</span>   <span class="hljs-comment">// (3)</span>
+    <span class="hljs-keyword">case</span> head :: tail                 =&gt; <span class="hljs-string">s"<span class="hljs-subst">$head</span> <span class="hljs-subst">$tail</span>"</span>   <span class="hljs-comment">// (4)</span>
+    <span class="hljs-keyword">case</span> (firstEl, _)                 =&gt; <span class="hljs-string">s"<span class="hljs-subst">$firstEl</span>"</span>      <span class="hljs-comment">// (5)</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-type">Some</span>(s:<span class="hljs-type">Long</span>)                 =&gt; <span class="hljs-string">s"Some Long <span class="hljs-subst">$s</span>"</span>  <span class="hljs-comment">// (6)</span>
+    <span class="hljs-keyword">case</span> x: <span class="hljs-type">Int</span> <span class="hljs-keyword">if</span> <span class="hljs-number">1</span> to <span class="hljs-number">10</span> contains x =&gt; <span class="hljs-string">s"<span class="hljs-subst">$x</span>"</span>            <span class="hljs-comment">// (7)</span>
+    <span class="hljs-keyword">case</span> x: <span class="hljs-type">String</span> <span class="hljs-keyword">if</span> x.endsWith(<span class="hljs-string">"!"</span>) =&gt; <span class="hljs-string">s"<span class="hljs-subst">$x</span>"</span>            <span class="hljs-comment">// (8)</span>
+    <span class="hljs-keyword">case</span> _                            =&gt; <span class="hljs-string">"The default"</span>    <span class="hljs-comment">// (9)</span>
+  }
+}
+</div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">matchItAll</span><span class="hljs-params">(p:<span class="hljs-type">Any</span>?)</span></span>:Any =
+  <span class="hljs-keyword">when</span>(p) {
+    <span class="hljs-keyword">is</span> <span class="hljs-built_in">Int</span> -&gt; <span class="hljs-string">"<span class="hljs-variable">$p</span>"</span> <span class="hljs-comment">// Smart case to Int  // (1) ✅</span>
+    <span class="hljs-string">"Kotlin"</span> -&gt; <span class="hljs-string">"Kotlin"</span>                 <span class="hljs-comment">// (2) ✅</span>
+    <span class="hljs-comment">// N/A                               // (3) ❌</span>
+    <span class="hljs-comment">// N/A                               // (4) ❌</span>
+    Pair(<span class="hljs-string">"literal"</span>, <span class="hljs-string">"only"</span>) -&gt; <span class="hljs-string">"..."</span>     <span class="hljs-comment">// (5) ️️️🔶</span>
+    <span class="hljs-keyword">is</span> <span class="hljs-built_in">Long</span>? -&gt; <span class="hljs-string">"null or Long"</span>️           <span class="hljs-comment">// (6) 🔶</span>
+    <span class="hljs-keyword">in</span> <span class="hljs-number">1</span>..<span class="hljs-number">10</span> -&gt; <span class="hljs-string">"Value in 1..10"</span>         <span class="hljs-comment">// (7) 🔶</span>
+    <span class="hljs-comment">//                                   // (8) 🔶</span>
+    <span class="hljs-keyword">else</span> -&gt; <span class="hljs-string">"The default"</span>                <span class="hljs-comment">// (9) 🔶</span>
+</div></code></pre>
+<p><code>when</code> without arguments provides a more readable if else condition tree</p>
+<pre><code class="language-kotlin"><div><span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">matchItAll</span><span class="hljs-params">(p:<span class="hljs-type">Any</span>?)</span></span>:Any = <span class="hljs-keyword">when</span> {
+  p <span class="hljs-keyword">is</span> String &amp;&amp; p.endsWith(<span class="hljs-string">"!"</span>) -&gt;<span class="hljs-string">"<span class="hljs-variable">$p</span>"</span>
+  <span class="hljs-keyword">else</span> -&gt; <span class="hljs-string">"The default"</span> <span class="hljs-comment">// No smart cast</span>
+}
+</div></code></pre>
+<h3 id="destructuring">Destructuring</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span>(<span class="hljs-params">name:<span class="hljs-type">String</span>, age:<span class="hljs-type">Int</span></span>)</span>
+<span class="hljs-keyword">val</span> john = <span class="hljs-type">Person</span>(<span class="hljs-string">"John"</span>, <span class="hljs-number">42</span>)
+<span class="hljs-keyword">val</span> <span class="hljs-type">Person</span>(name, age) = john
+
+<span class="hljs-comment">// ...</span>
+
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Person</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">unapply</span></span>(person: <span class="hljs-type">Person</span>): <span class="hljs-type">Option</span>[(<span class="hljs-type">String</span>, <span class="hljs-type">Int</span>)] =
+    <span class="hljs-type">Some</span>((person.name, person.age))
+}
+</div></code></pre>
+<p>Every class with an <code>unapply</code> method in Scala can be destructured. By default generated in case classes.</p>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">data</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>(<span class="hljs-keyword">val</span> name:String, <span class="hljs-keyword">val</span> age:<span class="hljs-built_in">Int</span>)
+<span class="hljs-keyword">val</span> john = Person(<span class="hljs-string">"John"</span>, <span class="hljs-number">42</span>)
+<span class="hljs-keyword">val</span> (name, age) = john <span class="hljs-comment">// // Kotlin support destructuring too.</span>
+
+john.component1() <span class="hljs-comment">//-&gt; John</span>
+john.component2() <span class="hljs-comment">//-&gt; 45</span>
+
+<span class="hljs-comment">// ...</span>
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">component1</span><span class="hljs-params">()</span></span> = name
+<span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">component2</span><span class="hljs-params">()</span></span> = age
+</div></code></pre>
+<p>For destructuring to work operator <code>component&lt;extractor-param-nr&gt;</code> methods need to be available, which are by default generated in data classes.</p>
+<ul>
+<li>Kotlin’s when is no ‘match’ for Scala’s Pattern Matching features</li>
+<li>No <code>PartialFunctions</code> support</li>
+<li>Destructuring allows not for Pattern Matching</li>
+<li>when is more of an advanced switch statement</li>
+</ul>
+<h2 id="composition">Composition</h2>
+<h3 id="composition-with-traits">Composition with Traits</h3>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ship</span>(<span class="hljs-params">var health: <span class="hljs-type">Int</span> = 100</span>)</span>
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Gun</span> </span>{
+  <span class="hljs-keyword">val</span> strength: <span class="hljs-type">Int</span> = <span class="hljs-number">1</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">fireAt</span></span>(ship: <span class="hljs-type">Ship</span>) = { ship.health -= (<span class="hljs-number">1</span> * strength) }
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Medic</span> </span>{
+  <span class="hljs-keyword">val</span> lives: <span class="hljs-type">Int</span> = <span class="hljs-number">10</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">repair</span></span>(ship: <span class="hljs-type">Ship</span>) = { ship.health += lives }
+}
+</div></code></pre>
+<p>Scala traits allow mixing in state and behavior a.o.</p>
+<pre><code class="language-scala"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Commander</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Ship</span>(<span class="hljs-params"></span>) <span class="hljs-keyword">with</span> <span class="hljs-title">Gun</span> <span class="hljs-keyword">with</span> <span class="hljs-title">Medic</span> </span>{
+  <span class="hljs-keyword">val</span> info = <span class="hljs-string">s"Gun strength: <span class="hljs-subst">$strength</span>, Medic capacity: <span class="hljs-subst">$lives</span>"</span>
+}
+</div></code></pre>
+<p>Besides state and behavior the mixed-in types are unified in the implementing class</p>
+<pre><code class="language-scala"><div><span class="hljs-keyword">val</span> commander = <span class="hljs-keyword">new</span> <span class="hljs-type">Commander</span>()
+commander.fireAt(...)
+commander.strength            <span class="hljs-comment">//-&gt; 1</span>
+commander.isInstanceOf[<span class="hljs-type">Gun</span>]   <span class="hljs-comment">//-&gt; true</span>
+commander.isInstanceOf[<span class="hljs-type">Medic</span>] <span class="hljs-comment">//-&gt; true</span>
+</div></code></pre>
+<h3 id="composition-with-delegation">Composition with Delegation</h3>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ship</span></span>(<span class="hljs-keyword">var</span> health:<span class="hljs-built_in">Int</span> = <span class="hljs-number">100</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Gun</span> </span>{
+  <span class="hljs-keyword">val</span> strength:<span class="hljs-built_in">Int</span>
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">fireAt</span><span class="hljs-params">(ship: <span class="hljs-type">Ship</span>)</span></span> { ship.health =- (<span class="hljs-number">1</span> * strength) } 
+}
+
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Medic</span> </span>{
+  <span class="hljs-keyword">val</span> lives:<span class="hljs-built_in">Int</span>
+  <span class="hljs-function"><span class="hljs-keyword">fun</span> <span class="hljs-title">repair</span><span class="hljs-params">(ship:<span class="hljs-type">Ship</span>)</span></span> { ship.health =+ lives } 
+}
+</div></code></pre>
+<p>Using <code>by</code>, all public members of the given interface will be delegated to its implementation</p>
+<pre><code class="language-kotlin"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LazerGun</span></span>(<span class="hljs-keyword">override</span> <span class="hljs-keyword">val</span> strength: <span class="hljs-built_in">Int</span> = <span class="hljs-number">5</span>) : Gun
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MinorRepair</span></span>(<span class="hljs-keyword">override</span> <span class="hljs-keyword">val</span> lives: <span class="hljs-built_in">Int</span> = <span class="hljs-number">10</span>) : Medic
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Commander</span></span>(gun:Gun, repair:Medic): Ship(), Gun <span class="hljs-keyword">by</span> gun, Medic <span class="hljs-keyword">by</span> repair
+</div></code></pre>
+<pre><code class="language-kotlin"><div><span class="hljs-keyword">val</span> commander = Commander(LazerGun(), MinorRepair())
+commander.fireAt(...)
+
+<span class="hljs-comment">// yielding more or less the same results like traits</span>
+commander.strength <span class="hljs-comment">// -&gt; 5</span>
+commander <span class="hljs-keyword">is</span> Gun   <span class="hljs-comment">// -&gt; true</span>
+commander <span class="hljs-keyword">is</span> Medic <span class="hljs-comment">// -&gt; true</span>
+</div></code></pre>
+<h2 id="extensions">Extensions</h2>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div></div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div></div></code></pre>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div></div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div></div></code></pre>
+<p><strong>Scala</strong></p>
+<pre><code class="language-scala"><div></div></code></pre>
+<p><strong>Kotlin</strong></p>
+<pre><code class="language-kotlin"><div></div></code></pre>
+
+    </body>
+    </html>
