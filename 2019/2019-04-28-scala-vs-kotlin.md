@@ -464,6 +464,17 @@ commander is Medic // -> true
 
 ## Extensions
 
+Scala `implicits` are a (too?) powerful language feature which allows implementing a variety of patterns:
+
+- Extensions for existing classes (implicit classes)
+- Implicit contexts (implicit parameters)
+- Implicit conversions (implicit methods)
+- Type-classes (Context Bounds)
+
+Kotlin’s extension mechanism is more limited and similar to:
+
+- Extensions for existing classes
+ 
 **Scala**
 
 ```scala
