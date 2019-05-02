@@ -23,6 +23,10 @@ This page is just collection of notes from ["Kotlin vs Scala" by Urs Peter & Joo
   - [Composition with Traits](#composition-with-traits)
   - [Composition with Delegation](#composition-with-delegation)
 - [Extensions](#extensions)
+  - [Extensions ++ (Function types with receiver)](#extensions--function-types-with-receiver)
+- [Collections](#collections)
+  - [Collection Examples](#collection-examples)
+- [Concurrency](#concurrency)
 
 ---
 
@@ -446,6 +450,7 @@ interface Medic {
 ```
 
 Using `by`, all public members of the given interface will be delegated to its implementation
+
 ```kotlin
 class LazerGun(override val strength: Int = 5) : Gun
 class MinorRepair(override val lives: Int = 10) : Medic
@@ -474,26 +479,177 @@ Scala `implicits` are a (too?) powerful language feature which allows implementi
 Kotlin’s extension mechanism is more limited and similar to:
 
 - Extensions for existing classes
- 
+
 **Scala**
 
 ```scala
+implicit class RichInt(val value:Int) extends AnyVal {
+  def square = value * value
+}
+
+2.square //-> 4
+```
+
+**Kotlin**
+
+The syntax for an extension is: `<type-to-extend>.methodName() {...}`.
+The type to extend can also be a generic
+
+```kotlin
+// this refers to the instance of the extended class
+fun Int.square(): Int = this * this
+
+2.square() //-> 4
+```
+
+```kotlin
+listOf(1,2,3).sum()  // Convenience methods on Collections
+
+listOf("a", "a", "a").map{it.toUpperCase()}  // Higher-Order Functions
+
+"hi".reversed() // Convenience methods on Collections
+
+File("/tmp.txt").useLines {
+  lines -> lines.joinToString(" ") // Loans on IO APIs
+}
+
+val x:Int? = null
+x?.let{ it * it} ?: -1 // counterpart of Scala’s Option.map(...)
+```
+
+### Extensions ++ (Function types with receiver)
+
+Kotlin supports *Function Types with Receiver* which are the key ingredient for *type safe builders and DSLs*.
+
+**Kotlin**
+
+```kotlin
+class PersonBuilder(var name:String? = null, var age:Int? = null) {
+  fun toPerson() = Person(name ?: "John Doe", age ?: 0)
+}
+
+// Function Types with Receiver
+// read like: when invoking create() on PersonBuilder, the builder instance is provided
+fun person(create:PersonBuilder.() -> Unit):Person {
+  val builder = PersonBuilder()
+  builder.create()
+  return builder.toPerson()
+}
+```
+
+Consequently, DSL-like syntax can be used to create complex objects
+
+```kotlin
+person {
+  name = "Super Trooper"
+  age = 42
+}
+```
+
+Example Spring’s Routing DSL solely built on Extensions
+
+```kotlin
+router { 
+  accept(TEXT_HTML).nest {
+    GET("/") { ok().render("index") }
+    GET("/sse") { ok().render("sse") }
+    GET("/users", userHandler::findAllView)
+  }
+  "/api".nest {
+    accept(APPLICATION_JSON).nest {
+      GET("/users", userHandler::findAll)
+    }
+  accept(TEXT_EVENT_STREAM).nest {
+    GET("/users", userHandler::stream) }
+  }
+  resources("/**", ClassPathResource("static/"))
+}
+```
+
+## Collections
+
+**Scala** created its own (very advanced) mutable, immutable and parallel collections
+
+- `Vector`, `List`, `Stream`, `Map`, `Set` etc.
+- Scala collections can be extended with little effort
+- Interoperability with Java is achieved with implicit conversions `scala.collection.JavaConversions`
+
+**Kotlin** relies - for the time being - on Java collections with some additions:
+
+- Builder methods: `listOf(1,2,3)`, `mapOf("a" to 1)`
+- Rich set of higher-order functions (`zip`, `windowed`, `fold`)
+- Additions on numeric collections (`sum()`, `average()`)
+- Immutable Views on mutable collections
+
+### Collection Examples
+
+**Scala**
+
+```scala
+// (1) Immutable coll. (default)
+val l = Seq(1,2,3)
+val l2 = l :+ 4
+// l -> 1,2,3
+// l 2 -> 1,2,3,4
+
+// (2) Mutable coll.
+val ml = ListBuffer(1,2,3)
+ml :+ 4
+// ml -> 1,2,3,4
+
+// (3) Ranges
+(1 to 3).map(_ + 1)
+
+// (4) Higher Order functions
+Map("a" -> 1).forall(_._2 > 10)
+// true
+
+// (5) Advanced methods
+List(1,2,3).sliding(2)
+// List(List(1,2), List(2,3))
+
+// (6) Conversion from coll. X->Y
+Set("a" -> 1).toMap
+
+// (7) Union
+List(1,2) ++ List(3,4)
+//1,2,3,4
 ```
 
 **Kotlin**
 
 ```kotlin
+// (1) Immutable coll. (default)
+val l = listOf(1,2,3)
+val l2 = l + 4
+// l -> 1,2,3
+// l2 -> 1,2,3,4
+
+// (2) Mutable coll.
+val ml = mutableListOf(1,2,3)
+ml + 4
+//ml -> 1,2,3,4
+
+// (3) Ranges
+(1..3).map{it + 1}
+
+// (4) Higher Order functions
+mapOf("a" to 1).all{it.value > 10}
+// true
+
+// (5) Advanced methods
+listOf(1,2,3).windowed(2)
+// List(List(1,2), List(2,3))
+
+// (6) Conversion from coll. X->Y
+setOf("a" to 1).toMap()
+
+// (7) Union
+listOf(1,2) + listOf(3,4)
+// 1,2,3,4
 ```
 
-**Scala**
-
-```scala
-```
-
-**Kotlin**
-
-```kotlin
-```
+## Concurrency
 
 **Scala**
 
