@@ -27,6 +27,12 @@ This page is just collection of notes from ["Kotlin vs Scala" by Urs Peter & Joo
 - [Collections](#collections)
   - [Collection Examples](#collection-examples)
 - [Concurrency](#concurrency)
+  - [Scala Futures](#scala-futures)
+  - [Kotlin Coroutines](#kotlin-coroutines)
+    - [Kotlin Coroutines to the rescue](#kotlin-coroutines-to-the-rescue)
+    - [Kotlin Coroutines under the hood](#kotlin-coroutines-under-the-hood)
+    - [Kotlin Coroutines Interoperability](#kotlin-coroutines-interoperability)
+  - [Some final words on Coroutines](#some-final-words-on-coroutines)
 
 ---
 
@@ -651,12 +657,135 @@ listOf(1,2) + listOf(3,4)
 
 ## Concurrency
 
+### Scala Futures
+
 **Scala**
 
+*Sequential Programming...*
+
 ```scala
+def temperatureIn(city: String):Int = Random.nextInt(30)
+val ams = temperatureIn("Amsterdam")
+val zrh = temperatureIn("Zurich")
+println(s"AMS: ${ams} ZRH: ${zrh}")
+//AMS: 24 ZRH: 26
 ```
+
+*Async on the other hand...*
+
+Futures, Streams and Actors are the common building blocks for concurrency in Scala
+
+```scala
+def temperatureIn(city: String):Future[Int] = Future{
+  Thread.sleep(1000)
+  Random.nextInt(30)
+}
+
+val amsFuture = temperatureIn("Amsterdam")
+val zrhFuture = temperatureIn("Zurich")
+// Since they are libraries - and not language features -
+// they force you to tightly bind your code to their API and abstractions.
+val temperatures = amsFuture.flatMap(ams =>
+  zrhFuture.map(zrh => s"AMS: ${ams} ZRH: ${zrh}")
+)
+
+println(Await.result(temperatures, 5 seconds))
+//AMS: 24 ZRH: 26
+```
+
+The business intent of my code gets lost in all the ‘combinator jungle’
+
+### Kotlin Coroutines
 
 **Kotlin**
 
+#### Kotlin Coroutines to the rescue
+
+The concurrency building blocks of Kotlin rely on Coroutines.
+With Coroutines logic can be expressed sequentially whereas the underlying
+implementation figures out the asynchrony.
+
 ```kotlin
+// A method marked suspend can be run within a coroutine that can suspend it without blocking a Thread
+suspend fun temperatureIn(city: String): Int {
+  delay(1000)
+  return Random().nextInt(30)
+}
+
+// To start a coroutine at least one suspending function is required (here async)
+val ams = async { temperatureIn("Amsterdam") }
+val zrh = async { temperatureIn("Zurich") }
+
+// await suspends the coroutine until some computation is done and returns the result
+println("AMS: ${ams.await()} ZRH: ${zrh.await()}")
+//AMS: 24 ZRH: 26
 ```
+
+#### Kotlin Coroutines under the hood
+
+```kotlin
+suspend fun temperatureIn(city: String): Int {
+  delay(1000)
+  return Random().nextInt(30)
+}
+```
+
+`suspend` methods get an additional Continuation parameter compiled in
+
+```java
+// Java
+Object temperatureIn(String city, Continuation<Int> cont){...}
+```
+
+`Continuation` is a callback interface used by the underlying async processor
+
+```kotlin
+public interface Continuation<in T> {
+  public val context: CoroutineContext
+  public fun resume(value: T)
+  public fun resumeWithException(exception: Throwable)
+}
+```
+
+#### Kotlin Coroutines Interoperability
+
+```kotlin
+public CompletableFuture<Integer> temperatureIn(String city) {
+  return CompletableFuture.supplyAsync(() -> {
+   return new Random().nextInt(30);
+   });
+}
+```
+
+```kotlin
+suspend fun <T> CompletableFuture<T>.await(): T =
+  suspendCoroutine<T> { cont: Continuation<T> ->
+    whenComplete { result, exception ->
+      if (exception == null) // the future has been completed normally
+        cont.resume(result)
+      else // the future has completed with an exception
+        cont.resumeWithException(exception)
+    }
+  }
+```
+
+Kotlin’s coroutine integration library offers suspended extension methods that ‘lift’ other concurrency abstractions into coroutines
+
+### Some final words on Coroutines
+
+**Kotlin**
+
+Coroutines is not a new concept. It already exists in a variety of languages:
+
+- async/await in C#, ECMAScript
+- channels and select in Go
+- generators/yield in C# and Python
+
+Besides basic Coroutines Kotlin also supports:
+
+- **channels** for stateless communication between Coroutines
+- **actors** for stateful communication between Coroutines
+
+**Scala**
+
+- [scala/scala-async](https://github.com/scala/scala-async)
