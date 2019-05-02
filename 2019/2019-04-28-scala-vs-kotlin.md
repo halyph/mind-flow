@@ -659,8 +659,6 @@ listOf(1,2) + listOf(3,4)
 
 ### Scala Futures
 
-**Scala**
-
 *Sequential Programming...*
 
 ```scala
@@ -696,8 +694,6 @@ println(Await.result(temperatures, 5 seconds))
 The business intent of my code gets lost in all the ‘combinator jungle’
 
 ### Kotlin Coroutines
-
-**Kotlin**
 
 #### Kotlin Coroutines to the rescue
 
