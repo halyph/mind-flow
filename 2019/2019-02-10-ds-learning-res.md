@@ -91,7 +91,7 @@ Mr. Giles has collected amazing collection of resources in the next video [Can y
 
 ## Data Structure and Algorithms in Python
 
-- [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
+- [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/static/pythonds/index.html)
 - [Udacity - Data Structures & Algorithms in Python](https://eu.udacity.com/course/data-structures-and-algorithms-in-python--ud513)
 
 ## Tensorflow
