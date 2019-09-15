@@ -17,7 +17,7 @@
 
 ### Main resources
 
-This section contains the most "important" resources/sites. It's simply not possible to work with difference Coding Challenges platform. We should select one or two platforms and stick to it since our goal is to master codding challenges skill in limited amount of time.
+This section contains the most "important" resources/sites. It's simply not possible to work with difference Coding Challenges platforms. We should select one or two platform(s) and stick to it since our goal is to master codding challenges skill in **limited** amount of time.
 
 - [LeetCode](https://leetcode.com)
 - [HackerRank](https://www.hackerrank.com)
