@@ -8,20 +8,20 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 - [References](#references)
   - [Original sources](#original-sources)
   - [Python standard library](#python-standard-library)
-- [Bad Practices](#bad-practices)
-  - [B.1. Iterate over a list](#b1-iterate-over-a-list)
-  - [B.2. Iterate over a list in reverse order](#b2-iterate-over-a-list-in-reverse-order)
-  - [B.3. Access the last element in a list](#b3-access-the-last-element-in-a-list)
-  - [B.4. Use sequence unpacking](#b4-use-sequence-unpacking)
-  - [B.5. Use lists comprehensions](#b5-use-lists-comprehensions)
-  - [B.6. Use enumerate function](#b6-use-enumerate-function)
-  - [B.7. Use keys to sort list](#b7-use-keys-to-sort-list)
-  - [B.8. Use all/any functions](#b8-use-allany-functions)
-  - [B.9. Dictionaries: avoid using keys() function](#b9-dictionaries-avoid-using-keys-function)
-  - [B.10. Dictionaries: Iterate over keys and values](#b10-dictionaries-iterate-over-keys-and-values)
-  - [B.11. Use dictionaries comprehension](#b11-use-dictionaries-comprehension)
-  - [B.12. Use `namedtuple`](#b12-use-namedtuple)
-  - [B.13. Use `defaultdict` and/or `Counter`](#b13-use-defaultdict-andor-counter)
+- [1 - Collections](#1---collections)
+  - [1.1 - Iterate over a list](#11---iterate-over-a-list)
+  - [1.2 - Iterate over a list in reverse order](#12---iterate-over-a-list-in-reverse-order)
+  - [1.3 - Access the last element in a list](#13---access-the-last-element-in-a-list)
+  - [1.4 - Use sequence unpacking](#14---use-sequence-unpacking)
+  - [1.5 - Use lists comprehensions](#15---use-lists-comprehensions)
+  - [1.6 - Use enumerate function](#16---use-enumerate-function)
+  - [1.7 - Use keys to sort list](#17---use-keys-to-sort-list)
+  - [1.8 - Use all/any functions](#18---use-allany-functions)
+  - [1.9 - Dictionaries: avoid using keys() function](#19---dictionaries-avoid-using-keys-function)
+  - [1.10 - Dictionaries: Iterate over keys and values](#110---dictionaries-iterate-over-keys-and-values)
+  - [1.11 - Use dictionaries comprehension](#111---use-dictionaries-comprehension)
+  - [1.12 - Use `namedtuple`](#112---use-namedtuple)
+  - [1.13 - Use `defaultdict` and/or `Counter`](#113---use-defaultdict-andor-counter)
 
 ---
 ## References
@@ -44,9 +44,9 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 - [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 - [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
 
-## Bad Practices
+## 1 - Collections
 
-### B.1. Iterate over a list
+### 1.1 - Iterate over a list
 
 Ref: [3]
 
@@ -76,7 +76,7 @@ for v in l:
 
 ---
 
-### B.2. Iterate over a list in reverse order
+### 1.2 - Iterate over a list in reverse order
 
 Ref: [3]
 
@@ -96,7 +96,7 @@ for i in reversed(l):
 
 ---
 
-### B.3. Access the last element in a list
+### 1.3 - Access the last element in a list
 
 Ref: [3]
 
@@ -124,7 +124,7 @@ l = [1, 2, 3, 4, 5]
 
 ---
 
-### B.4. Use sequence unpacking
+### 1.4 - Use sequence unpacking
 
 Ref: [3]
 
@@ -151,7 +151,7 @@ l1, l2, l3 = [1, 2, 3]
 
 ---
 
-### B.5. Use lists comprehensions
+### 1.5 - Use lists comprehensions
 
 Ref: [3]
 
@@ -172,7 +172,7 @@ under_18_grades = [grade for grade in grades if grade.age <= 18]
 
 ---
 
-### B.6. Use enumerate function
+### 1.6 - Use enumerate function
 
 Ref: [3]
 
@@ -193,7 +193,7 @@ for i, menu_items in enumerate(menu_items):
 
 ---
 
-### B.7. Use keys to sort list
+### 1.7 - Use keys to sort list
 
 Ref: [3]
 
@@ -226,7 +226,7 @@ sorted(people, key=lambda p: p.age)
 
 ---
 
-### B.8. Use all/any functions
+### 1.8 - Use all/any functions
 
 Ref: [3]
 
@@ -250,7 +250,6 @@ any([True, False])
 >> True
 ```
 
-
 ```python
 all([person.age > 18 for person in people])
 
@@ -261,7 +260,7 @@ all(person.age > 18 for person in people)
 
 ---
 
-### B.9. Dictionaries: avoid using keys() function
+### 1.9 - Dictionaries: avoid using keys() function
 
 Ref: [3]
 
@@ -281,7 +280,7 @@ for k in d:
 
 ---
 
-### B.10. Dictionaries: Iterate over keys and values
+### 1.10 - Dictionaries: Iterate over keys and values
 
 Ref: [3]
 
@@ -302,7 +301,7 @@ for k, v in d.items():
 
 ---
 
-### B.11. Use dictionaries comprehension
+### 1.11 - Use dictionaries comprehension
 
 Ref: [3]
 
@@ -322,7 +321,7 @@ d = {person.name: person for person in people}
 
 ---
 
-### B.12. Use `namedtuple`
+### 1.12 - Use `namedtuple`
 
 Ref: [3]
 
@@ -353,7 +352,7 @@ True
 
 ---
 
-### B.13. Use `defaultdict` and/or `Counter`
+### 1.13 - Use `defaultdict` and/or `Counter`
 
 Ref: [3]
 
