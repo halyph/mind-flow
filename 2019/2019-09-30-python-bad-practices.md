@@ -46,7 +46,6 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 
 ## Bad Practices
 
----
 ### B.1. Iterate over a list
 
 Ref: [3]
@@ -175,7 +174,7 @@ under_18_grades = [grade for grade in grades if grade.age <= 18]
 
 ### B.6. Use enumerate function
 
-Ref: [3] and [](https://docs.python.org/3/library/functions.html#enumerate)
+Ref: [3]
 
 **Bad**
 
