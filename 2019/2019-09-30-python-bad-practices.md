@@ -20,8 +20,14 @@ I've been using Python as scripting language on a non-regular basis. It means I 
   - [1.9 - Dictionaries: avoid using keys() function](#19---dictionaries-avoid-using-keys-function)
   - [1.10 - Dictionaries: Iterate over keys and values](#110---dictionaries-iterate-over-keys-and-values)
   - [1.11 - Use dictionaries comprehension](#111---use-dictionaries-comprehension)
-  - [1.12 - Use `namedtuple`](#112---use-namedtuple)
+  - [1.12 - Use `namedtuple` instead of simple class](#112---use-namedtuple-instead-of-simple-class)
   - [1.13 - Use `defaultdict` and/or `Counter`](#113---use-defaultdict-andor-counter)
+  - [1.14 - Modifying a list while iterating over it](#114---modifying-a-list-while-iterating-over-it)
+- [2 - Functions](#2---functions)
+  - [2.1 - Mutable Default Args](#21---mutable-default-args)
+- [3 - Variable](#3---variable)
+  - [3.1 - Misunderstanding Python scope rules](#31---misunderstanding-python-scope-rules)
+  - [3.2 - Confusing how Python binds variables in closures](#32---confusing-how-python-binds-variables-in-closures)
 
 ---
 ## References
@@ -31,6 +37,8 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 1. [Python Patterns](https://python-patterns.guide/) (see [src](https://github.com/brandon-rhodes/python-patterns))
 2. [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/) (see [src](https://github.com/quantifiedcode/python-anti-patterns))
 3. [Python Data Structures Idioms](https://dev.to/mushketyk/python-data-structures-idioms-6ae) by Ivan Mushketyk
+4. [Buggy Python Code: The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make) by Martin Chikilian
+5. [Youtube: 5 Common Python Mistakes and How to Fix Them](https://www.youtube.com/watch?v=zdJEYhA2AZQ) by Corey Schafer
 
 ### Python standard library
 
@@ -44,11 +52,13 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 - [`collections.defaultdict`](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 - [`collections.Counter`](https://docs.python.org/3/library/collections.html#collections.Counter)
 
+---
+
 ## 1 - Collections
 
 ### 1.1 - Iterate over a list
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Very Bad**
 
@@ -321,7 +331,7 @@ d = {person.name: person for person in people}
 
 ---
 
-### 1.12 - Use `namedtuple`
+### 1.12 - Use `namedtuple` instead of simple class
 
 Ref: [3]
 
@@ -392,6 +402,223 @@ from collections import Counter
 >>> counter = Counter(lst)
 >>> counter
 Counter({4: 3, 1: 2, 2: 1, 3: 1, 5: 1})
+```
+
+---
+
+### 1.14 - Modifying a list while iterating over it
+
+Ref: [4]
+
+**Bad**
+
+```python
+>>> odd = lambda x : bool(x % 2)
+>>> numbers = [n for n in range(10)]
+>>> for i in range(len(numbers)):
+...     if odd(numbers[i]):
+...         del numbers[i]  # BAD: Deleting item from a list while iterating over it
+...
+Traceback (most recent call last):
+  	  File "<stdin>", line 2, in <module>
+IndexError: list index out of range
+```
+
+**Good**
+
+```python
+>>> odd = lambda x : bool(x % 2)
+>>> numbers = [n for n in range(10)]
+>>> numbers[:] = [n for n in numbers if not odd(n)]  # ahh, the beauty of it all
+>>> numbers
+[0, 2, 4, 6, 8]
+```
+
+---
+
+## 2 - Functions
+
+### 2.1 - Mutable Default Args
+
+Ref: [[4, 5](#original-sources)]
+
+**Bad**
+
+```python
+def foo(bar=[]): # bar is optional and defaults to [] if not specified
+    bar.append("baz")
+    return bar
+```
+
+```python
+>>> foo()
+["baz"]
+>>> foo()
+["baz", "baz"]
+>>> foo()
+["baz", "baz", "baz"]
+```
+
+The default value for a function argument is only evaluated once, at the time that the function is defined. Thus, the *bar* argument is initialized to its default (i.e., an empty list) only when *foo()* is first defined, but then calls to *foo()* (i.e., without a bar argument specified) will continue to use the same list to which bar was originally initialized.
+
+**Good**
+
+```python
+def foo(bar=None):
+    if bar is None:  # or if not bar:
+        bar = []
+    bar.append("baz")
+    return bar
+```
+
+```python
+>>> foo()
+["baz"]
+>>> foo()
+["baz"]
+>>> foo()
+["baz"]
+```
+
+---
+
+## 3 - Variable
+
+### 3.1 - Misunderstanding Python scope rules
+
+Ref:
+
+- [[4](#original-sources)]
+- [Python scoping: understanding LEGB](https://blog.mozilla.org/webdev/2011/01/31/python-scoping-understanding-legb/)
+- [Python Frequently Asked Questions: Why am I getting an UnboundLocalError when the variable has a value?](https://docs.python.org/3/faq/programming.html#why-am-i-getting-an-unboundlocalerror-when-the-variable-has-a-valu)
+
+#### Sample 1 <!-- omit in toc -->
+
+**Bad**
+
+```python
+def func1(param=None):
+    def func2():
+        if not param:
+            param = 'default'
+        print param
+    # Just return func2.
+    return func2
+
+
+if __name__ == '__main__':
+   func1('test')()
+```
+
+```python
+$ python test.py 
+Traceback (most recent call last):
+  File "test.py", line 11, in 
+    func1('test')()
+  File "test.py", line 3, in func2
+    if not param:
+UnboundLocalError: local variable 'param' referenced before assignment
+```
+
+**Good**
+
+```python
+def func1(param=None):
+    def func2(param2=param):
+        if not param2:
+            param2 = 'default'
+        print param2
+    # Just return func2.
+    return func2
+```
+
+#### Sample 2 <!-- omit in toc -->
+
+**Bad**
+
+```python
+>>> x = 10
+>>> def foo():
+...     x += 1
+...     print x
+...
+>>> foo()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in foo
+UnboundLocalError: local variable 'x' referenced before assignment
+```
+
+```python
+>>> lst = [1, 2, 3]
+>>> def foo1():
+...     lst.append(5)   # This works ok...
+...
+>>> foo1()
+>>> lst
+[1, 2, 3, 5]
+
+>>> lst = [1, 2, 3]
+>>> def foo2():
+...     lst += [5]      # ... but this bombs!
+...
+>>> foo2()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in foo
+UnboundLocalError: local variable 'lst' referenced before assignment
+```
+
+---
+
+### 3.2 - Confusing how Python binds variables in closures
+
+Ref: [[4](#original-sources)]
+
+**Bad**
+
+```python
+>>> def create_multipliers():
+...     return [lambda x : i * x for i in range(5)]
+>>> for multiplier in create_multipliers():
+...     print multiplier(2)
+...
+```
+
+Expected
+
+```
+0
+2
+4
+6
+8
+```
+
+Actual
+
+```
+8
+8
+8
+8
+8
+```
+
+**Good**
+
+```python
+>>> def create_multipliers():
+...     return [lambda x, i=i : i * x for i in range(5)]
+...
+>>> for multiplier in create_multipliers():
+...     print multiplier(2)
+...
+0
+2
+4
+6
+8
 ```
 
 ---
