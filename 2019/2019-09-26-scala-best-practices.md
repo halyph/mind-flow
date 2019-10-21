@@ -14,3 +14,5 @@ Here is a small collection of Scala best practices.
 5. [Effective Scala](https://twitter-archive.github.io/effectivescala/) by [Marius Eriksen](https://github.com/mariusae)
 6. [SO: What is the advantage of using abstract classes instead of traits?](https://stackoverflow.com/questions/1991042/what-is-the-advantage-of-using-abstract-classes-instead-of-traits), see [answer by Eugene Yokota](https://stackoverflow.com/a/15330312)
 7. [Safari: Best Practices in Scala Programming by Joshua Backfield](https://www.oreilly.com/library/view/best-practices-in/9781491959275/#toc-start)
+8. [Effective Scala: Reloaded! by Mirco Dotta](https://www.youtube.com/watch?v=pAc-0TmnlcE)
+9. [Effective Scala - Recommendations for a Pleasant Scala Experience](https://github.com/gstro/effective-scala)
