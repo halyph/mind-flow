@@ -6,6 +6,9 @@ _Another try of blogging or personal knowledge base_
 
 ## 2019
 
+- 2019-09-30 - [Python Bad Practices](2019/2019-09-30-python-bad-practices.md)
+- 2019-09-27 - [Design Patterns in Scala/FP Java](2019/2019-09-27-gof-in-scala.md)
+- 2019-09-26 - [Scala Best Practices](2019/2019-09-26-scala-best-practices.md)
 - 2019-04-28 - [Scala vs Kotlin](2019/2019-04-28-scala-vs-kotlin.md)
 - 2019-04-10 - [Common misuses of Java 8+ features](2019/2019-04-10-java8-misuse.md)
 - 2019-03-02 - [Scala and FP Conferences](2019/2019-03-02-scala-conferences.md)

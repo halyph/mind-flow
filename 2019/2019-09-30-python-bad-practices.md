@@ -25,11 +25,20 @@ I've been using Python as scripting language on a non-regular basis. It means I 
   - [1.14 - Modifying a list while iterating over it](#114---modifying-a-list-while-iterating-over-it)
 - [2 - Functions](#2---functions)
   - [2.1 - Mutable Default Args](#21---mutable-default-args)
-- [3 - Variable](#3---variable)
+  - [2.2 - Generally using lambdas](#22---generally-using-lambdas)
+- [3 - Variables](#3---variables)
   - [3.1 - Misunderstanding Python scope rules](#31---misunderstanding-python-scope-rules)
   - [3.2 - Confusing how Python binds variables in closures](#32---confusing-how-python-binds-variables-in-closures)
+  - [3.3 - Variable naming](#33---variable-naming)
+  - [3.4 - Identifying variable types with prefixes](#34---identifying-variable-types-with-prefixes)
+- [4 - Classes](#4---classes)
+  - [4.1 - Implementing Java-style getters and setters](#41---implementing-java-style-getters-and-setters)
+  - [4.2 - Using property setters as action methods](#42---using-property-setters-as-action-methods)
+- [5 - Exceptions](#5---exceptions)
+  - [5.1 - Passing Generic Exceptions silently](#51---passing-generic-exceptions-silently)
 
 ---
+
 ## References
 
 ### Original sources
@@ -39,6 +48,10 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 3. [Python Data Structures Idioms](https://dev.to/mushketyk/python-data-structures-idioms-6ae) by Ivan Mushketyk
 4. [Buggy Python Code: The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make) by Martin Chikilian
 5. [Youtube: 5 Common Python Mistakes and How to Fix Them](https://www.youtube.com/watch?v=zdJEYhA2AZQ) by Corey Schafer
+6. [Python Worst Practices](https://www.slideshare.net/pydanny/python-worst-practices) by Daniel Greenfeld
+7. [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html) ([*my fork*](https://github.com/halyph/python-anti-patterns))
+8. [Python Patterns](https://python-patterns.guide) ([*my fork*](https://github.com/halyph/python-patterns))
+
 
 ### Python standard library
 
@@ -88,7 +101,8 @@ for v in l:
 
 ### 1.2 - Iterate over a list in reverse order
 
-Ref: [3]
+Ref: [[3](#original-sources)]
+
 
 **Bad**
 
@@ -108,7 +122,7 @@ for i in reversed(l):
 
 ### 1.3 - Access the last element in a list
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -136,7 +150,7 @@ l = [1, 2, 3, 4, 5]
 
 ### 1.4 - Use sequence unpacking
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -163,7 +177,7 @@ l1, l2, l3 = [1, 2, 3]
 
 ### 1.5 - Use lists comprehensions
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -184,7 +198,9 @@ under_18_grades = [grade for grade in grades if grade.age <= 18]
 
 ### 1.6 - Use enumerate function
 
-Ref: [3]
+Ref: [[3, 6](#original-sources)]
+
+#### Sample 1 <!-- omit in toc -->
 
 **Bad**
 
@@ -201,11 +217,29 @@ for i, menu_items in enumerate(menu_items):
     print("{}. {}".format(i, menu_items))
 ```
 
+#### Sample 2 <!-- omit in toc -->
+
+**Bad**
+
+```python
+foo = [1, 2, 3]
+for i, item in zip(range(len(foo)), foo):
+    print i, item
+```
+
+**Good**
+
+```python
+foo = [1, 2, 3]
+for i, item in enumerate(foo):
+    print i, item
+```
+
 ---
 
 ### 1.7 - Use keys to sort list
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 ```python
 people = [Person('John', 30), Person('Peter', 28), Person('Joe', 42)]
@@ -238,7 +272,7 @@ sorted(people, key=lambda p: p.age)
 
 ### 1.8 - Use all/any functions
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -272,7 +306,7 @@ all(person.age > 18 for person in people)
 
 ### 1.9 - Dictionaries: avoid using keys() function
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -292,7 +326,7 @@ for k in d:
 
 ### 1.10 - Dictionaries: Iterate over keys and values
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -313,7 +347,7 @@ for k, v in d.items():
 
 ### 1.11 - Use dictionaries comprehension
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -333,7 +367,7 @@ d = {person.name: person for person in people}
 
 ### 1.12 - Use `namedtuple` instead of simple class
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 **Bad**
 
@@ -364,7 +398,7 @@ True
 
 ### 1.13 - Use `defaultdict` and/or `Counter`
 
-Ref: [3]
+Ref: [[3](#original-sources)]
 
 > We need to count a number of times an element is encountered in a collection
 
@@ -408,7 +442,7 @@ Counter({4: 3, 1: 2, 2: 1, 3: 1, 5: 1})
 
 ### 1.14 - Modifying a list while iterating over it
 
-Ref: [4]
+Ref: [[4](#original-sources)]
 
 **Bad**
 
@@ -482,7 +516,40 @@ def foo(bar=None):
 
 ---
 
-## 3 - Variable
+### 2.2 - Generally using lambdas
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+- Too many characters on one line
+- Lambdas by design does not have docstrings
+- Does not necessarily mean less characters
+- I can’t get this sample to work!
+
+```python
+swap = lambda a, x, y:
+        lambda f = a.__setitem__:
+        (f(x, (a[x], a[y])),
+        f(y, a[x][0]), f(x, a[x][1]))()
+```
+
+**Good**
+
+- Doc strings that show up nicely in help/Sphinx
+- Easier to read
+- In Python, functions are first class objects
+- Whenever possible avoid using lambdas
+
+```python
+def swap(a, x, y):
+    """ Swap two position values in a list """
+    a[x],a[y] = a[y],a[x]
+```
+
+---
+
+## 3 - Variables
 
 ### 3.1 - Misunderstanding Python scope rules
 
@@ -619,6 +686,209 @@ Actual
 4
 6
 8
+```
+
+---
+
+### 3.3 - Variable naming
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+```python
+object = MyObject()
+map = Map()
+zip = 90213 # common US developer mistake
+id = 34 # I still fight this one
+```
+
+**Good**
+
+```python
+obj = MyObject() # necessary abbreviation
+object_ = MyObject() # Underscore so we don't overwrite
+
+map_obj = Map() # combine name w/necessary abbreviation
+map_ = Map()
+
+zip_code = 90213 # Explicit name with US focus
+postal_code = 90213 # i18n explicit name
+zip_ = 90213
+
+pk = 34 # pk is often synonymous with id
+id_ = 34
+```
+
+---
+
+### 3.4  - Identifying variable types with prefixes
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+```python
+c = "green"
+a = False
+p = 20
+t = "04/20/2011"
+```
+
+```python
+clr = "green"
+ctv = False
+pythnYrs = 20
+pthnFrstSd = "04/20/2011"
+```
+
+```python
+strColor = "green"
+boolActive = False
+intPythonYears = 20
+dtPythonFirstUsed = "04/20/2011"
+```
+
+**Good**
+
+```python
+color = "green"
+active = False
+python_years = 20
+python_first_used = "04/20/2011"
+```
+
+---
+
+## 4 - Classes
+
+### 4.1 - Implementing Java-style getters and setters
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+```python
+import logging
+log = logging.getLogger()
+
+class JavaStyle:
+    """ Quiz: what else am I doing wrong here? """
+
+    def __init__(self):
+        self.name = ""
+
+    def get_name(self):
+        return self.name
+
+    def set_name(self, name):
+        log.debug("Setting the name to %s" % name)
+        if isinstance(name, str):
+            self.name = name
+        else:
+            raise TypeError()
+
+    if __name__ == "__main__":
+        j = JavaStyle()
+        j.set_name("pydanny did this back in 2006!")
+        print(j.get_name())
+```
+
+**Good**
+
+```python
+import logging
+log = logging.getLogger()
+
+class PythonStyle(object):
+
+    def __init__(self):
+        self._name = ""
+
+    @property
+    def name(self):
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        """ Because name is probably a string we'll assume that we can
+            infer the type from the variable name"""
+        log.debug("Setting the name to %s" % value)
+        self._name = value
+
+    if __name__ == "__main__":
+        p = PythonStyle()
+        p.name = "pydanny doing it the right way"
+        print(p.name)
+```
+
+---
+
+### 4.2 - Using property setters as action methods
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+```python
+class WebService:
+
+    @property
+    def connect(self):
+        self.proxy = xmlrpc.Server("http://service.xml")
+
+if __name__ == '__main__':
+    ws = WebService()
+    ws.connect
+```
+
+**Good**
+
+```python
+class WebService:
+
+    def connect(self):
+        self.proxy = xmlrpc.Server("http://service.xml")
+
+if __name__ == '__main__':
+    ws = WebService()
+    ws.connect()
+```
+
+---
+
+## 5 - Exceptions
+
+### 5.1 - Passing Generic Exceptions silently
+
+Ref: [[6](#original-sources)]
+
+**Bad**
+
+```python
+try:
+    do_akshun(value)
+except:
+    pass
+```
+
+**Good**
+
+Use specific exceptions and/or logging
+
+```python
+class AkshunDoesNotDo(Exception):
+    """ Custom exceptions makes for maintainable code """
+    pass
+
+try:
+    do_akshun(value)
+except AttributeError as e:
+    log.info("Can I get attribution for these slides?")
+    do_bakup_akshun(vlue)
+except Exception as e:
+    log.debug(str(e))
+    raise AkshunDoesNotDo(e)
 ```
 
 ---
