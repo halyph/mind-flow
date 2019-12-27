@@ -49,6 +49,7 @@ I've been using Python as scripting language on a non-regular basis. It means I 
 4. [Buggy Python Code: The 10 Most Common Mistakes That Python Developers Make](https://www.toptal.com/python/top-10-mistakes-that-python-programmers-make) by Martin Chikilian
 5. [Youtube: 5 Common Python Mistakes and How to Fix Them](https://www.youtube.com/watch?v=zdJEYhA2AZQ) by Corey Schafer
 6. [Python Worst Practices](https://www.slideshare.net/pydanny/python-worst-practices) by Daniel Greenfeld
+7. [What the f\*ck Python! 😱](https://github.com/satwikkansal/wtfpython)
 
 ### Python standard library
 
