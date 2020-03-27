@@ -4,6 +4,8 @@
 
 _Another try of blogging or personal knowledge base_
 
+![logo.png](logo.png)
+
 ## 2019
 
 - 2019-09-30 - [Python Bad Practices](2019/2019-09-30-python-bad-practices.md)

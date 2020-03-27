@@ -9,6 +9,8 @@ README_HEADER = """# Mind~Flow
 [[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]
 
 _Another try of blogging or personal knowledge base_
+
+![logo.png](logo.png)
 """
 #-----------------------------------------------------------------------------------------
 
