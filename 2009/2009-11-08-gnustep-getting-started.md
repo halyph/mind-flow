@@ -37,14 +37,14 @@ this project is to implement a set of administrative applications and
 user level applications using GNUstep. Another aim of this project is to
 port as many applications from OPENSTEP/Cocoa to GNUstep as possible.
 Great place to look into real application.
-* [Objective-C: Links,Resources, Stuff](http://www.foldr.org/%7Emichaelw/objective-c/) -- dig deeper in Objective-C culture
-* [GNUstep Library](http://gnustep.made-it.com/) -- additional info: Build
+* [Objective-C: Links,Resources, Stuff](http://www.foldr.org/%7Emichaelw/objective-c/) - dig deeper in Objective-C culture
+* [GNUstep Library](http://gnustep.made-it.com/) - additional info: Build
 Guides, User Documentation, Developer Documentation
 * [GNUstep forum](http://old.nabble.com/GNUstep-f1880.html) - it covers
 the next categories: General, Help, Dev, Webmasters, Bugs, Announce, Apps
-* [GNUstep HelpCenter](http://www.roard.com/docs/) -- links to various
+* [GNUstep HelpCenter](http://www.roard.com/docs/) - links to various
 tutorials and articles on GNUstep.
-* [GNUstepWiki](http://wiki.gnustep.org/) -- just _wiki_
+* [GNUstepWiki](http://wiki.gnustep.org/) - just _wiki_
 
 ## How to build your first GNUstep application in Windows?
 
