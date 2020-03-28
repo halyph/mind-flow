@@ -23,7 +23,7 @@ But this language has a _"soul"_. I could not explain, but I feel _happiness_ wh
 ## Groovy
 
 Groovy is nice JVM language which has own _pros & cons_. But now, this language has some problems with popularity (_see_ link:{2016-groovy-post}[The state of Groovy and other JVM Languages]). And for me it's a very important point.
-Also, due to JVM nature, the script startup  is very slow (I do not count https://kobo.github.io/groovyserv/quickstart.html[GroovyServ]).
+Also, due to JVM nature, the script startup  is very slow (I do not count [GroovyServ](https://kobo.github.io/groovyserv/quickstart.html)).
 
 Groovy language syntax is much better for me than Ruby. I like Groovy _packages_ and hate Ruby _Modules and Namespaces_. Again, it just a matter of taste.
 
@@ -44,10 +44,10 @@ On the another hand, Python has huge ecosystem, it has library for almost everyt
 And the most important it has a momentum in terms of _Data Science_, _Machine Learning_ and _Artificial Intelligence_ (where I have big interests as the other people).
 Unfortunately, Ruby has lost this fight.
 
-For several month, I have been using a lot of Python-based tools (https://aws.amazon.com/cli/[AWS CLI], https://zmon.io/[ZMON], https://stups.io/[Stups]) during my work day
+For several month, I have been using a lot of Python-based tools ([AWS CLI](https://aws.amazon.com/cli/), [ZMON](https://zmon.io/), [Stups](https://stups.io/)) during my work day
 and this is another big motivation for me to look into the Python as my potential next scripting language.
 
-There is a very interesting moment. I *do not* like Python syntax (I am not dogmatic). For some reason Python syntax (and language features) is very *_ugly_* for me.
+There is a very interesting moment. I **do not** like Python syntax (I am not dogmatic). For some reason Python syntax (and language features) is very *_ugly_* for me.
 And I would pick Python only because of pragmatism and not because I like it.
 But, I am not sure whether Python will be my main scripting language since Python is *not* equal to "happiness" :-(
 
