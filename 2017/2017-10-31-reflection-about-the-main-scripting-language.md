@@ -10,7 +10,7 @@ So, any automation task can have the next implementations evolution, _e.g._:
 
 - `bash` script
 - then any scripting language (`Python`, `Ruby`, `Groovy`, `Perl`, etc.)
-- https://en.wikipedia.org/wiki/Command-line_interface[CLI] application
+- [CLI](https://en.wikipedia.org/wiki/Command-line_interface) application
 
 I have been using several languages which have such characteristics (or similar): _Ruby_ and _Groovy_.
 
