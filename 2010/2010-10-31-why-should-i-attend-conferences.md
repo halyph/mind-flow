@@ -10,7 +10,9 @@ I'm mainly a Java developer. But, I always do some "diving" around new technolog
 5. [PyCon Ukraine](http://ua.pycon.org/) (October 23-24, 2010)
 
 All these conference related to non-Java technologies. And what? The main benefit I've got is the real face-to-face communication with technology addicted people.
-I've seen great, good and *ugly *presentations. This experience has opened my mind. Why?
+I've seen great, good and **ugly** presentations. This experience has opened my mind. Why?
+
 Every conference which I've attended gave me the additional energy for the next attempts to learn something new, something great and interesting. Even if it's unpopular in my company and inside my local developer's community.
 These conferences showed me the real people which stand behind the blog posts, forum posts, frameworks and libraries.
+
 I'm a 100% sure that every developer must attend a conference just to feel the spirit of community.
