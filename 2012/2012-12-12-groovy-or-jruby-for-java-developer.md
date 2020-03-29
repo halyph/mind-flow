@@ -1,5 +1,5 @@
 # Groovy or JRuby for Java developer
-> | groovy | jruby |
+> | groovy | jruby | vs | comparison | java |
 
 Today I've decided to share my own perception about the subject "Groovy vs JRuby" for Java developers.
 
