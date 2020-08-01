@@ -5,7 +5,7 @@
 
 Well, I like the [Groovy](http://groovy-lang.org/) language in general. This language has nice pragmatic applications and all other related “cookie”, but it looks like other languages, Scala especially, are more popular or trendy.
 
-![blog_post_image](2016-05-14-the-state-of-groovy-and-other-jvm-languages/img2.jpg)
+![blog_post_image](2016-05-14-the-state-of-groovy-and-other-jvm-languages/img2.jpg)  
 *Figure 1. JVM language History (image created by [zeroturnaround](https://zeroturnaround.com/rebellabs/the-adventurous-developers-guide-to-jvm-languages-java-scala-groovy-fantom-clojure-ceylon-kotlin-xtend/))*
 
 The actual motivation was based on the numbers provided by https://libraries.io

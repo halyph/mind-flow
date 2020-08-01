@@ -11,7 +11,7 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
   - [1.3 - Optional for resulted (method returns) Collections](#13---optional-for-resulted-method-returns-collections)
   - [1.4 - Use `flatMap` for getting nested Optional values](#14---use-flatmap-for-getting-nested-optional-values)
   - [1.5 - `if` statement with `Optional` is not always bad thing](#15---if-statement-with-optional-is-not-always-bad-thing)
-  - [1.6 - Optional "elvis"](#16---optional-%22elvis%22)
+  - [1.6 - Optional "elvis"](#16---optional-elvis)
   - [1.7 - Optional Over Engineering (`if` not `null` might be *simpler*)](#17---optional-over-engineering-if-not-null-might-be-simpler)
   - [1.8 - Value presence strict check (chained `ifPresent`)](#18---value-presence-strict-check-chained-ifpresent)
 - [2 - Lambdas](#2---lambdas)
