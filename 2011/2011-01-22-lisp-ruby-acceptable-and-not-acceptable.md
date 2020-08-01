@@ -1,6 +1,11 @@
 # Lisp, Ruby, Acceptable and not Acceptable
 > | review | lisp | ruby |
 
+There is one really (in)famous essay [Why Ruby is an acceptable LISP](http://www.randomhacks.net.s3-website-us-east-1.amazonaws.com/2005/12/03/why-ruby-is-an-acceptable-lisp/) by Eric Kidd. The most interesting of all this stuff are comments and other responsive blog posts (e.g. [Lisp is Not an Acceptable Lisp by Steve Yegge](http://steve-yegge.blogspot.com/2006/04/lisp-is-not-acceptable-lisp.html))
+I can say this is something like "vs" essay which is very popular nowadays. 
+
+Here is the list of some quotes and key ideas:
+
 * Lisp macros are far more powerful than the trivial use cases you’ve listed. I could give a lot of examples here, but just ask yourself: why is most of the programming community so fond with “Design Patterns”, while the Lisp community generally isn’t? **Well, that’s because patterns are nothing but high-level specifications for code being rewritten again and again and again. The Lisp approach is to create some macros and auxiliary functions that actually implement the pattern, thus extending the language capabilities and avoiding continuous reinvention of the wheel.**
 * This article sounds like it was written for folks who really want to use Lisp, but have chosen Ruby because all the* cool kids* are using it and want to reasonably justify an emotional decision.
 * If you want to learn a language that can change with the times and incorporate whatever latest fad the programming cool kids have to offer, Lisp is the choice. Lisp is the red pill.
