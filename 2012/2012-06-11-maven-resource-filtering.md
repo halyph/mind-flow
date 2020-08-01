@@ -1,4 +1,4 @@
-# 2012-06-11-maven-resource-filtering.html
+# Maven Resource Filtering
 > | maven |
 
 * [Using Maven profiles and resource filtering](http://www.manydesigns.com/en/portofino/documentation/tutorials/using-maven-profiles-and-resource-filtering)

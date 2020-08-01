@@ -97,23 +97,35 @@ _Another try of blogging or personal knowledge base_
 ## 2013
 
 - 2013-12-03 - [List of Real Spring-Based Projects](2013/2013-12-03-list-of-real-spring-based-projects.md)
+- 2013-08-27 - [How to remove .svn folders recursively?](2013/2013-08-27-how-to-remove-svn-folders-recursively.md)
+- 2013-04-27 - [The long way to Evernote](2013/2013-04-27-the-long-way-to-evernote.md)
+- 2013-04-23 - [Java PDF Libraries](2013/2013-04-23-java-pdf-libraries.md)
+- 2013-02-09 - [i18n vs l10n](2013/2013-02-09-i18n-vs-l10n.md)
 - 2013-01-21 - [Auto install required Ruby gems via script](2013/2013-01-21-auto-install-required-ruby-gems-via.md)
 
 ## 2012
 
 - 2012-12-12 - [Groovy or JRuby for Java developer](2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
+- 2012-10-20 - [Git command extension](2012/2012-10-20-git-command-extention.md)
+- 2012-06-27 - [Maven Build Number Plugin - Sample Usage](2012/2012-06-27-maven-build-number-plugin-sample-usage.md)
+- 2012-06-11 - [Maven Resource Filtering](2012/2012-06-11-maven-resource-filtering.md)
+- 2012-03-27 - [Why you should join a user group?](2012/2012-03-27-why-you-should-join-user-group.md)
+- 2012-01-21 - [Quick way to join array of String in Java without third party libraries](2012/2012-01-21-quick-way-to-join-array-of-string.md)
 
 ## 2011
 
 - 2011-12-25 - [How to decide which technology hype is worth personal investments?](2011/2011-12-25-how-to-decide-which-technology-hype-is.md)
 - 2011-08-31 - [Java Code Quality Tools - Overview](2011/2011-08-31-java-code-quality-tools-overview.md)
 - 2011-07-20 - [How to disable System.out?](2011/2011-07-20-how-to-disable-systemout.md)
+- 2011-06-28 - [How to Add Jars at Runtime?](2011/2011-06-28-how-to-add-jars-at-runtime.md)
+- 2011-06-20 - [`@Override` Java Annotation Issue](2011/2011-06-20-override-java-annotation-issue.md)
 - 2011-02-15 - [Lisp Balkanization?](2011/2011-02-15-lisp-balkanization.md)
 - 2011-02-11 - [How to choose the next programming language to learn?](2011/2011-02-11-how-to-choose-next-programming-language.md)
 - 2011-01-26 - [Review: Language Grubbing](2011/2011-01-26-review-language-grubbing.md)
 - 2011-01-25 - [Review: Beating the Averages](2011/2011-01-25-review-beating-averages.md)
 - 2011-01-22 - [Lisp, Ruby, Acceptable and not Acceptable](2011/2011-01-22-lisp-ruby-acceptable-and-not-acceptable.md)
 - 2011-01-14 - [Review: You Should Write Blogs?](2011/2011-01-14-review-you-should-write-blogs.md)
+- 2011-01-12 - [Should I Learn Lisp?](2011/2011-01-12-should-i-learn-lisp.md)
 - 2011-01-10 - [Review: How To Become A Hacker?](2011/2011-01-10-review-how-to-become-hacker.md)
 
 ## 2010
