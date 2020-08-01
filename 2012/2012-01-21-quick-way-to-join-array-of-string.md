@@ -22,7 +22,7 @@ How to implement the similar stuff in Java SE? The easiest what came to my head 
   String result = joined.substring(1, joined.length()-1);
   return result;
  }
- ```
+```
 
 Usage is pretty trivial:
 
