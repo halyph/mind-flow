@@ -14,7 +14,7 @@ Then, I started googling to find other opinions about Lisp (when I say “Lisp�
 Bill Clementson wrote about this: 
 >“Usually, rather than trying to convince people … I feel it is better to just spread the "seeds" and let people convince themselves. This is often better done with quotes and/or stories because these often highlight some salient feature that resonates better with people than arguments do.”
 
-Also, check [P]aul Graham Quotes List](http://paulgraham.com/quotes.html).
+Also, check [Paul Graham Quotes List](http://paulgraham.com/quotes.html).
 I like this one:
 
 >"Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot." (Eric Raymond, "How to Become a Hacker")"
