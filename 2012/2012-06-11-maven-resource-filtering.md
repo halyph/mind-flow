@@ -274,7 +274,6 @@ application.password=cust_mysql_password
 application.databaseName=cust_mysql_databaseName
 ```
 
-Have you noticed that we've got properties values from `cust_mysql_filters.properties`a nd Maven hasn't applied properties from `mysql_filters.properties` file? 
+Have you noticed that we've got properties values from `cust_mysql_filters.properties`a nd Maven hasn't applied properties from `mysql_filters.properties` file?
 
-So, as you can see we have several ways for managing/filtering properties with Maven. And, it's very convenient. 
-
+So, as you can see we have several ways for managing/filtering properties with Maven. And, it's very convenient.
