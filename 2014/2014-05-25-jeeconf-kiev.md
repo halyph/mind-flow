@@ -1,4 +1,4 @@
-# JEEConf - Kiev, 2014 - Report
+# JEEConf - Kyiv, 2014 - Report
 > | conference | java |
 
 I attended the forth [JEEConf](http://jeeconf.com), May 23-24, 2014. The situation in my country (Ukraine) is difficult that’s why I was amazed to see so many foreign speakers. The organizers did really tremendous work.
