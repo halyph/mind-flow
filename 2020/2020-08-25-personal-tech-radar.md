@@ -57,7 +57,8 @@ Other languages:
 - **Ruby** I used it many years ago. But now this niche is occupied by **Python**. But estetically **Ruby** is much better language than **Python**. I've been using **Python** only because of its total dominance. Sad, but true ;-(
 - **Groovy**. Another sad story. **Groovy** was my main scriping languge for several years. Then there was a huge popularity decrease and I switched to **Scala**/**Python**.
 - **Javascript** (via *Node.js*). I think it's pretty good alternative, but I am with **Python** now.
-
+- **Golang** is well suited to CLI application. I think it's a perfect fit.
+ 
 ### Infrastructure
 
 - **Golang** is very popular in this domain. Kubernetes and all other Cloud Native stuff it is **Golang** (mainly). Furtunatelly, we can use other languages (e.g. **Python**) while implementing Kubernetes operators. But, I would use **Golang** if it is required. Nothing domatic.
@@ -96,13 +97,10 @@ All other languages ([Clojurescript](https://clojurescript.org), [CoffeeScript](
 | Java        | ADOPT  | ADOPT    |                      |                |        | ADOPT   |                  |                    |
 | Scala       | ADOPT  | ADOPT    |                      |                |        |         |                  |                    |
 | Python      | ADOPT  |          | ADOPT                | ASSESS         |        | ADOPT   | ADOPT            |                    |
-| Golang      | ASSESS |          |                      | ASSESS         |        |         |                  |                    |
-| Javascript  | ADOPT  |          |                      |                | ADOPT  |         |                  |                    |
-| TypeScript  | ASSESS |          |                      |                | ASSESS |         |                  |                    |
+| Golang      | TRIAL  |          | ASSESS               | TRIAL          |        |         |                  |                    |
+| Javascript  | ADOPT  |          | HOLD                 |                | ADOPT  |         |                  |                    |
+| TypeScript  | ASSESS |          | HOLD                 |                | ASSESS |         |                  |                    |
 | Haskell     | ASSESS | ASSESS   |                      |                |        |         |                  |                    |
-| Groovy      | HOLD   |          |                      |                |        |         |                  |                    |
-| Ruby        | HOLD   |          |                      |                |        |         |                  |                    |
-| Julia       | HOLD   |          |                      |                |        |         | HOLD             |                    |
 | R           | ASSESS |          |                      |                |        |         | ASSESS           |                    |
 | C           | ADOPT  |          |                      |                |        |         |                  | ADOPT              |
 | C++         | HOLD   |          |                      |                |        | HOLD    |                  | HOLD               |
@@ -111,3 +109,6 @@ All other languages ([Clojurescript](https://clojurescript.org), [CoffeeScript](
 | Kotlin      | HOLD   | HOLD     |                      |                |        |         |                  |                    |
 | Clojure     | HOLD   | HOLD     |                      |                |        |         |                  |                    |
 | Objective-C | HOLD   |          |                      |                |        | HOLD    |                  |                    |
+| Groovy      | HOLD   |          | HOLD                 |                |        |         |                  |                    |
+| Ruby        | HOLD   |          | HOLD                 |                |        |         |                  |                    |
+| Julia       | HOLD   |          |                      |                |        |         | HOLD             |                    |
