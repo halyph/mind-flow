@@ -58,11 +58,11 @@ Other languages:
 - **Groovy**. Another sad story. **Groovy** was my main scriping languge for several years. Then there was a huge popularity decrease and I switched to **Scala**/**Python**.
 - **Javascript** (via *Node.js*). I think it's pretty good alternative, but I am with **Python** now.
 - **Golang** is well suited to CLI application. I think it's a perfect fit.
- 
+
 ### Infrastructure
 
-- **Golang** is very popular in this domain. Kubernetes and all other Cloud Native stuff it is **Golang** (mainly). Furtunatelly, we can use other languages (e.g. **Python**) while implementing Kubernetes operators. But, I would use **Golang** if it is required. Nothing domatic.
-- **Rust**. Another interesting language, but it's much more complicated than **Golang** and community is not as big as in **Golang**.
+- **Golang** is very popular in this domain. Kubernetes and Cloud Native all these is **Golang** (mainly). Furtunatelly, we can use other languages (e.g. **Python**) while implementing Kubernetes operators. But, I would use **Golang** if it is required.
+- **Rust**. Another interesting language, but it's much more complicated than **Golang** and community is not as big as for **Golang**.
 
 ### Web
 
