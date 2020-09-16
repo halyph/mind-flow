@@ -6,6 +6,10 @@ _Another try of blogging or personal knowledge base_
 
 ![logo.png](logo.png)
 
+## 2020
+
+- 2020-08-25 - [Personal Techradar for Programming Languages - 2020 H2](2020/2020-08-25-personal-tech-radar.md)
+
 ## 2019
 
 - 2019-09-30 - [Python Bad Practices](2019/2019-09-30-python-bad-practices.md)
@@ -56,7 +60,7 @@ _Another try of blogging or personal knowledge base_
 - 2016-11-28 - [Reserved Words of Programming languages](2016/2016-11-28-prog-lang-reserved-words.md)
 - 2016-11-27 - [Who left Ruby Community?](2016/2016-11-27-who-left-ruby-community.md)
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
-- 2016-05-22 - [JEEConf - Kiev, 2016 - Report](2016/2016-05-22-jeeconf-kiev.md)
+- 2016-05-22 - [JEEConf - Kyiv, 2016 - Report](2016/2016-05-22-jeeconf-kiev.md)
 - 2016-05-14 - [The state of Groovy and other JVM Languages](2016/2016-05-14-the-state-of-groovy-and-other-jvm-languages.md)
 
 ## 2015
@@ -67,7 +71,7 @@ _Another try of blogging or personal knowledge base_
 - 2015-09-20 - [JDay - Lviv, 2015 - Report](2015/2015-09-20-jday-lviv-2015-report.md)
 - 2015-07-20 - [Grails 2.x best practices collection](2015/2015-07-20-grails-best-practices-collection.md)
 - 2015-06-29 - [DevoxxPL - Krakow, 2015 - Report](2015/2015-06-29-devoxxpl.md)
-- 2015-05-25 - [JEEConf - Kiev, 2015 - Report](2015/2015-05-25-jeeconf-kiev.md)
+- 2015-05-25 - [JEEConf - Kyiv, 2015 - Report](2015/2015-05-25-jeeconf-kiev.md)
 - 2015-05-19 - [Grails 2.5.0 debug in IntelliJ IDEA](2015/2015-05-19-grails-2-dot-5-0-debug-in-intellij-idea.md)
 - 2015-05-18 - [Go presentation tool](2015/2015-05-18-golang-presentation-tool.md)
 - 2015-04-06 - [Java full stack web framework](2015/2015-04-06-java-full-stack-web-framework.md)
@@ -89,7 +93,7 @@ _Another try of blogging or personal knowledge base_
 - 2014-08-13 - [Groovy Notes: Pretty print JSON from the command line](2014/2014-08-13-groovy-notes-pretty-print-json-from.md)
 - 2014-08-12 - [How to disable Tomcat session serialization](2014/2014-08-12-how-to-disable-tomcat-session.md)
 - 2014-07-23 - [Review: Programming Groovy 2: Dynamic Productivity for the Java Developer](2014/2014-07-23-review-programming-groovy-2-dynamic.md)
-- 2014-05-25 - [JEEConf - Kiev, 2014 - Report](2014/2014-05-25-jeeconf-kiev-2014-report.md)
+- 2014-05-25 - [JEEConf - Kyiv, 2014 - Report](2014/2014-05-25-jeeconf-kiev.md)
 - 2014-04-19 - [Thor notes](2014/2014-04-19-thor-notes.md)
 - 2014-03-17 - [Review: Making Java Groovy](2014/2014-03-17-review-making-java-groovy.md)
 - 2014-01-26 - [About Learning New Programming Languages](2014/2014-01-26-about-learning-new-programming-languages.md)
@@ -97,28 +101,57 @@ _Another try of blogging or personal knowledge base_
 ## 2013
 
 - 2013-12-03 - [List of Real Spring-Based Projects](2013/2013-12-03-list-of-real-spring-based-projects.md)
+- 2013-10-21 - [REST with JAX-RS: Part 3 - Embedded Jetty](2013/2013-10-21-rest-with-jax-rs-part-3-embedded-jetty.md)
+- 2013-10-20 - [REST with JAX-RS: Part 2 - Spring Java Config and CXF Improvement](2013/2013-10-20-rest-with-jax-rs-part-2-spring-java.md)
+- 2013-10-19 - [REST with JAX-RS: Part 1 - Spring Java Config](2013/2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
+- 2013-10-03 - [Java Object to Object Mapper](2013/2013-10-03-java-object-to-object-mapper.md)
 - 2013-08-27 - [How to remove .svn folders recursively?](2013/2013-08-27-how-to-remove-svn-folders-recursively.md)
+- 2013-08-17 - [Git, Jenkins, Gerrit, Code Review and pre-tested commits](2013/2013-08-17-git-jenkins-gerrit-code-review-and-pre.md)
+- 2013-07-02 - [Concurrency vs. Parallelism Definitions](2013/2013-07-02-concurrency-vs-parallelism-definitions.md)
+- 2013-07-01 - [JAI and Image Processing in Java](2013/2013-07-01-jai-and-image-processing-in-java.md)
+- 2013-06-14 - [Java Barcode Generation and Scanning Library](2013/2013-06-14-java-barcode-generation-and-scanning.md)
+- 2013-05-27 - [JEEConf - Kyiv, 2013 - Report](2013/2013-05-27-jeeconf-kiev.md)
+- 2013-05-23 - [Graphics Unit Conversion](2013/2013-05-23-graphics-unit-conversion.md)
+- 2013-05-20 - [Equals, HashCode and toString in Java](2013/2013-05-20-equals-hashcode-and-tostring-in-java.md)
+- 2013-05-13 - [iText Useful Resources](2013/2013-05-13-itext-useful-resources.md)
 - 2013-04-27 - [The long way to Evernote](2013/2013-04-27-the-long-way-to-evernote.md)
 - 2013-04-23 - [Java PDF Libraries](2013/2013-04-23-java-pdf-libraries.md)
 - 2013-02-09 - [i18n vs l10n](2013/2013-02-09-i18n-vs-l10n.md)
+- 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2013-01-21 - [Auto install required Ruby gems via script](2013/2013-01-21-auto-install-required-ruby-gems-via.md)
 
 ## 2012
 
+- 2012-12-31 - [Jenkins enhancements without plugins](2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 - 2012-12-12 - [Groovy or JRuby for Java developer](2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
+- 2012-11-02 - [](2012/2012-11-02-how-to-configure-git-diff-and-merge.md)
+- 2012-11-02 - [How to configure git diff and merge tools?](2011/2012-11-02-how-to-configure-git-diff-and-merge.md)
+- 2012-10-27 - [Mac OS X terminal supports colored output](2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 - 2012-10-20 - [Git command extension](2012/2012-10-20-git-command-extention.md)
+- 2012-10-01 - [RubyShift 2012 Conference Report](2012/2012-10-01-rubyshift-2012-conference-report.md)
+- 2012-09-10 - [Ruby Style Guides](2012/2012-09-10-ruby-style-guides.md)
+- 2012-09-04 - [How to prepare to pass Oracle Web Component Developer Certified Expert Exam](2012/2012-09-04-how-to-prepare-to-pass-oracle-web.md)
 - 2012-06-27 - [Maven Build Number Plugin - Sample Usage](2012/2012-06-27-maven-build-number-plugin-sample-usage.md)
+- 2012-06-12 - [How to improve cmd.exe prompt](2012/2012-06-12-how-to-improve-cmdexe-prompt.md)
 - 2012-06-11 - [Maven Resource Filtering](2012/2012-06-11-maven-resource-filtering.md)
+- 2012-05-20 - [JEEConf - Kyiv, 2012 - Report](2012/2012-05-20-jeeconf-kiev.md)
 - 2012-03-27 - [Why you should join a user group?](2012/2012-03-27-why-you-should-join-user-group.md)
+- 2012-02-26 - [State of numerical computation languages](2012/2012-02-26-state-of-numerical-computation.md)
+- 2012-02-13 - [UML Sketching Tools](2012/2012-02-13-uml-sketching-tools.md)
 - 2012-01-21 - [Quick way to join array of String in Java without third party libraries](2012/2012-01-21-quick-way-to-join-array-of-string.md)
 
 ## 2011
 
 - 2011-12-25 - [How to decide which technology hype is worth personal investments?](2011/2011-12-25-how-to-decide-which-technology-hype-is.md)
+- 2011-11-03 - [How to run ANT script from .BAT/.CMD?](2011/2011-11-03-how-to-run-ant-script-from-batcmd.md)
+- 2011-10-21 - [Java Reflection: Invoke Constructor Issue](2011/2011-10-21-java-reflection-invoke-constructor.md)
+- 2011-10-10 - [Overview: Optimistic vs. Pessimistic Locking](2011/2011-10-10-overview-optimistic-vs-pessimistic.md)
 - 2011-08-31 - [Java Code Quality Tools - Overview](2011/2011-08-31-java-code-quality-tools-overview.md)
+- 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 - 2011-07-20 - [How to disable System.out?](2011/2011-07-20-how-to-disable-systemout.md)
 - 2011-06-28 - [How to Add Jars at Runtime?](2011/2011-06-28-how-to-add-jars-at-runtime.md)
 - 2011-06-20 - [`@Override` Java Annotation Issue](2011/2011-06-20-override-java-annotation-issue.md)
+- 2011-05-24 - [JEEConf - Kyiv, 2011 - Report](2011/2011-05-24-jeeconf-kiev.md)
 - 2011-02-15 - [Lisp Balkanization?](2011/2011-02-15-lisp-balkanization.md)
 - 2011-02-11 - [How to choose the next programming language to learn?](2011/2011-02-11-how-to-choose-next-programming-language.md)
 - 2011-01-26 - [Review: Language Grubbing](2011/2011-01-26-review-language-grubbing.md)
@@ -133,6 +166,8 @@ _Another try of blogging or personal knowledge base_
 - 2010-12-15 - [Java Build Tools and Future](2010/2010-12-15-java-build-tools-and-future.md)
 - 2010-10-31 - [Why Should I Attend Conferences?](2010/2010-10-31-why-should-i-attend-conferences.md)
 - 2010-08-12 - [(J)Ruby or Groovy for scripting in Java environment](2010/2010-08-12-jruby-or-groovy-for-scripting-in-java.md)
+- 2010-04-22 - [How to setup Ruby/Rails development environment, Part 2 - E-TextEditor](2010/2010-04-22-how-to-setup-rubyrails-development.md)
+- 2010-04-16 - [How to setup Ruby/Rails development environment, Part 1 - Ubuntu VM](2010/2010-04-16-how-to-setup-rubyrails-development.md)
 
 ## 2009
 
