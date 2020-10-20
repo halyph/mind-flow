@@ -101,13 +101,13 @@ All other languages ([Clojurescript](https://clojurescript.org), [CoffeeScript](
 |-------------|--------|----------|----------------------|----------------|--------|---------|------------------|--------------------|
 | Java        | ADOPT  | ADOPT    |                      |                |        | ADOPT   |                  |                    |
 | Scala       | ADOPT  | ADOPT    |                      |                |        |         |                  |                    |
-| Python      | ADOPT  |          | ADOPT                | ASSESS         |        | ASSESS  | ADOPT            |                    |
-| Golang      | TRIAL  |          | ASSESS               | TRIAL          |        |         |                  |                    |
+| Python      | ADOPT  |          | ADOPT                | ASSESS         |        |         | ADOPT            |                    |
+| Golang      | TRIAL  |          |                      | TRIAL          |        |         |                  |                    |
 | Javascript  | ADOPT  |          | HOLD                 |                | ADOPT  |         |                  |                    |
 | TypeScript  | ASSESS |          | HOLD                 |                | ASSESS |         |                  |                    |
 | Haskell     | ASSESS | ASSESS   |                      |                |        |         |                  |                    |
 | R           | TRIAL  |          |                      |                |        |         | TRIAL            |                    |
-| C           | ASSESS |          |                      |                |        |         |                  | ASESS              |
+| C           | TRIAL  |          |                      |                |        |         |                  | TRIAL              |
 | C++         | HOLD   |          |                      |                |        | HOLD    |                  | HOLD               |
 | Rust        | HOLD   | HOLD     |                      | HOLD           |        |         |                  | HOLD               |
 | Swift       | HOLD   |          |                      |                |        | HOLD    |                  |                    |
@@ -122,9 +122,10 @@ So, for **2020 H2** I have selected languages that are in ring **TRIAL** and upp
 
 |             | Ring   | Back-End | Scripting/Automation | Infrastructure | Web    | Desktop | ML/DS/DA         | System programming |
 |-------------|--------|----------|----------------------|----------------|--------|---------|------------------|--------------------|
-| Java        | ADOPT  | ADOPT    |                      |                |        | ADOPT   |                  |                    |
 | Scala       | ADOPT  | ADOPT    |                      |                |        |         |                  |                    |
-| Python      | ADOPT  |          | ADOPT                | ASSESS         |        | ASSESS  | ADOPT            |                    |
-| Golang      | TRIAL  |          | ASSESS               | TRIAL          |        |         |                  |                    |
+| Java        | ADOPT  | ADOPT    |                      |                |        | ADOPT   |                  |                    |
+| Python      | ADOPT  |          | ADOPT                | ASSESS         |        |         | ADOPT            |                    |
+| Golang      | TRIAL  |          |                      | TRIAL          |        |         |                  |                    |
 | Javascript  | ADOPT  |          | HOLD                 |                | ADOPT  |         |                  |                    |
 | R           | TRIAL  |          |                      |                |        |         | TRIAL            |                    |
+| C           | TRIAL  |          |                      |                |        |         |                  | TRIAL              |
