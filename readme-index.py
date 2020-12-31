@@ -6,7 +6,7 @@ from collections import defaultdict
 
 README_HEADER = """# Mind~Flow
 
-[[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]
+[[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]  [[books](misc/books.md)]
 
 _Another try of blogging or personal knowledge base_
 
@@ -27,7 +27,7 @@ def read_line(file_name):
 
 def list_files():
     files = glob.glob('**/*.md', recursive=True)
-    pair = [f for f in files if '/' in f] 
+    pair = [f for f in files if '/' in f and not f.startswith('misc') ] 
     return pair
 
 def define_date_ranges():
@@ -55,8 +55,6 @@ def write_index_to_file(file):
         print(f"\n## {year}\n", file=file)
         for year_line in sorted(post_by_year[year], reverse = True):
             print(f"- {year_line}", file=file)
-
-
 
 with open(INDEX_FILE, 'w') as f:
     f.write(README_HEADER)

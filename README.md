@@ -1,6 +1,6 @@
 # Mind~Flow
 
-[[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]
+[[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]  [[books](misc/books.md)]
 
 _Another try of blogging or personal knowledge base_
 
