@@ -1,6 +1,9 @@
 # Books
 
-Here is a list of books I've read or listened from the beginning till the end.
+*Here is a list of books I've read or listened from the beginning till the end.*
+
+See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) profile.
+
 
 ## 2020
 
