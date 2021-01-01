@@ -4,7 +4,6 @@
 
 See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) profile.
 
-
 ## 2020
 
 ### Read (Book or EBook)
@@ -61,7 +60,7 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 
 ### Read (Book or EBook)
 
-1. _The Neophyte's Guide to Scala_, by **Daniel Westheide** (2013) 
+1. _The Neophyte's Guide to Scala_, by **Daniel Westheide** (2013)
 2. _Building Microservices: Designing Fine-Grained Systems_, by **Sam Newman** (O'Reilly Media, 2015), ISBN 9781491950357
 3. _Reactive Microservices Architecture_, by **Jonas Bonér** (O’Reilly Media, 2016)
 4. _SBT in Action_, by **Joshua Suereth**, **Matthew Farwell** (Manning, 2014), ISBN 9781617291272 
@@ -111,7 +110,7 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 5. _Refactoring: Improving the Design of Existing Code_, by **Martin Fowler**, **Kent Beck** (Contributor), **Don Roberts** (Contributor) (Addison-Wesley Object Technology Series, 1999), ISBN 9780201485677
 6. _Software Estimation: Demystifying the Black Art_, by **Steve McConnell** (Microsoft Press, 2006), ISBN 9780735605350
 
-## 2012 - 2000 
+## 2012 - 2000
 
 ### Read (Book or EBook)
 
@@ -134,4 +133,3 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 17. _Programming Ruby: The Pragmatic Programmers' Guide_, by **Dave Thomas**, **Chad Fowler**, **Andy Hunt** (Pragmatic Bookshelf, 2004), ISBN 9780974514055
 18. _The Clean Coder: A Code of Conduct for Professional Programmers_, by **Robert C. Martin** (Prentice Hall, 2011), ISBN 9780137081073
 19. _Pro Git_, by **Scott Chacon** (Apress, 2009), ISBN 9781430218333
-
