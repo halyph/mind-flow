@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2020
 
+- 2020-12-30 - [Ruby 3 and static typing](2020/2020-12-30-ruby-3.md)
 - 2020-08-25 - [Personal Techradar for Programming Languages - 2020 H2](2020/2020-08-25-personal-tech-radar.md)
 
 ## 2019
