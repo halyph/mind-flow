@@ -12,7 +12,7 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 2. _Python Interviews: Discussions with Python Experts_, by **Michael Driscoll** (Packt Publishing, 2018), ISBN 9781788391764
 3. _1984_, by **George Orwell**, ISBN 9789662355574
 4. _Animal Farm,_ by **George Orwell**, ISBN 9780452284241
-5. _Вторжение. Краткая история русских хакеров_, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 139785604262733
+5. _Вторжение. Краткая история русских хакеров_, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 9785604262733
 6. _UNIX: A History and a Memoir_, by **Brian W. Kernighan** (Independently Published, 2019), ISBN 9781695978553
 7. _Lab Rats: How Silicon Valley Made Work Miserable for the Rest of Us_, by **Dan Lyons** (Hachette Books, 2018), ISBN 9780316561860
 
