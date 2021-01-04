@@ -4,6 +4,16 @@
 
 See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) profile.
 
+## 2021
+
+### Read (Book or EBook)
+
+1. TBD
+
+### Listened (Audiobook)
+
+1. _Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon_, by **Kim Zetter** (Crown, 2014), ISBN 9780770436179
+
 ## 2020
 
 ### Read (Book or EBook)
@@ -16,7 +26,7 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 6. _UNIX: A History and a Memoir_, by **Brian W. Kernighan** (Independently Published, 2019), ISBN 9781695978553
 7. _Lab Rats: How Silicon Valley Made Work Miserable for the Rest of Us_, by **Dan Lyons** (Hachette Books, 2018), ISBN 9780316561860
 
-### Listended (Audiobook)
+### Listened (Audiobook)
 
 1. _Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers_, by **Andy Greenberg** (Doubleday Books, 2019), ISBN 9780385544405
 2. _AI Superpowers: China, Silicon Valley, and the New World Order_, by **Kai-Fu Lee** (Brilliance Audio, 2018), ISBN 9781328546395
