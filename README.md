@@ -6,6 +6,10 @@ _Another try of blogging or personal knowledge base_
 
 ![logo.png](logo.png)
 
+## 2021
+
+- 2021-02-07 - [Thoughts about Audiobooks](2021/2021-02-07-audiobooks.md)
+
 ## 2020
 
 - 2020-12-30 - [Ruby 3 and static typing](2020/2020-12-30-ruby-3.md)
