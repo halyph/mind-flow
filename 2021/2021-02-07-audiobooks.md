@@ -13,8 +13,8 @@ That's why I picked some stories about hackers and cybersecurity, companies and 
 As you can see, there is nothing "important" and it's easy to listen on the walk.
 
 But, even this doesn't work for me. 70% of all books were interesting, but I almost forgot the content. My head cleaned out all information.
-So, I pay for audiobooks, but the result is as after some ordinary podcast. I continued asking myself "what is the value"? Unfortunately, I concluded
-that there is no real value in audiobooks for me :-(. Waste of time and money.
+So, I pay for audiobooks, but the result is as after some ordinary podcast. I continued asking myself "what is the value"?  
+Unfortunately, I concluded that there is no real value in audiobooks for me :-(. Waste of time and money.
 
 ## Conclusion
 
