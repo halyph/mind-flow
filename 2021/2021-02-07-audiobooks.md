@@ -2,7 +2,8 @@
 > | book |
 
 Last 2020 year was "special" in many senses. But, today I'd like to talk about audiobooks.
-I decided to listen as much I can - 22 books. A vital remark - I've been listening to something (podcasts, audiobooks) while walking,
+I decided to listen as much I can - 22 books.  
+A vital remark - I've been listening to something (podcasts, audiobooks) while walking,
 i.e. only outside, never at home.
 
 ## Title selection
