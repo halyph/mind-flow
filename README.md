@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2021
 
+- 2021-04-05 - [How to remove image background color using JVM?](2021/2021-04-05-remove-bg.md)
 - 2021-02-07 - [Thoughts about Audiobooks](2021/2021-02-07-audiobooks.md)
 
 ## 2020
