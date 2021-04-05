@@ -8,7 +8,8 @@ See my [Googreads](https://www.goodreads.com/user/show/13822762-orest-ivasiv) pr
 
 ### Read (Book or EBook)
 
-1. TBD
+1. *Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More*, by **Julien Danjou** (No Starch Press, 2018), ISBN 1593278780
+2. *A Brief History of Artificial Intelligence: What It Is, Where We Are, and Where We Are Going* by **Michael Wooldridge** (Flatiron Books, 2021), ISBN 1250770734
 
 ### Listened (Audiobook)
 
