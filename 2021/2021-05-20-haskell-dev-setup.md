@@ -1,4 +1,4 @@
-# Haskell: Development Environment Setup Log
+# Haskell: Development Environment Setup
 > | haskell |
 
 - [References](#references)
@@ -21,7 +21,7 @@
 
 ## References
 
-- **Youtube** playlist [Learning Haskell for dummies](https://www.youtube.com/watch?v=1UyQ0fn6ke4&list=PLE-CSy3N6yEd_WTossnDB7pK9wb4eJD9r) by [**Cmdv** aka *Vincent Orr*](https://github.com/Cmdv)
+- These notes are based on **Youtube** playlist [Learning Haskell for dummies](https://www.youtube.com/watch?v=1UyQ0fn6ke4&list=PLE-CSy3N6yEd_WTossnDB7pK9wb4eJD9r) by [**Cmdv** aka *Vincent Orr*](https://github.com/Cmdv)
 - [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/) - Stack is a cross-platform program for developing Haskell projects. It is aimed at Haskellers both new and experienced.
 - [Hoogle](https://hoogle.haskell.org) is a Haskell API search engine, which allows you to search the Haskell libraries on Stackage by either function name, or by approximate type signature.
 - [Stackage](https://www.stackage.org) provides consistent sets of Haskell packages, known to build together and pass their tests before becoming Stackage Nightly snapshots and LTS (Long Term Support) releases.
