@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2021
 
+- 2021-11-22 - [`base64` encoding/decoding on MacOS](2021/2021-11-22-base64-macos.md)
 - 2021-05-20 - [Haskell: Development Environment Setup](2021/2021-05-20-haskell-dev-setup.md)
 - 2021-04-13 - [OpenCV tutorials and learning materials](2021/2021-04-13-opencv.md)
 - 2021-04-05 - [How to remove image background color using JVM?](2021/2021-04-05-remove-bg.md)
