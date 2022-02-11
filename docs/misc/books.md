@@ -17,7 +17,7 @@ TBD
 3. *The Hundred-Page Machine Learning Book*, by **Andriy Burkov** (Andriy Burkov, 2019)), ISBN 1777005477
 4. *Безмежна сила математики. Як завдяки матаналізу винайшли смартфони, телебачення і GPS*, by **Стівен Строґац** (Наш Формат, 2020), ISBN 9786177866212
 5. *Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground*, by **Kevin Poulsen** (Crown, 2011), ISBN 0307588688
-6. *П’ять вад у роботі команди. Історії реальних викликів та перемог*, by Патрік Ленсіоні (Книжковий Клуб «Клуб Сімейного Дозвілля», 2017), ISBN 9786171224643
+6. *П’ять вад у роботі команди. Історії реальних викликів та перемог*, by **Патрік Ленсіоні** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2017), ISBN 9786171224643
 7. *Не работайте с м*даками. И что делать, если они вокруг вас*, by **Роберт Саттон** (Манн, Иванов и Фербер, 2015), ISBN 9785000576175
 8. *Go Bootcamp*, by **Matt Aimonetti** (2014), ISBN N/A
 9. *97 Things Every Java Programmer Should Know: Collective Wisdom from the Experts*, by **Kevlin Henney** (O'Reilly Media, 2020), ISBN 1491952695
