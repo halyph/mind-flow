@@ -12,32 +12,29 @@ theme:
   font:
     text: Roboto Slab
     code: JetBrains Mono
-    
+
   # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   palette:
     - media: "(prefers-color-scheme: light)"
       primary: light-blue
       accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/lightbulb
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       accent: deep orange
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-outline
         name: Switch to light mode
   features:
+    - navigation.top
     # - navigation.instant
     # - navigation.sections
     - navigation.tabs
     # - navigation.indexes
 
-# CHANGE ME: change the URL to the git repository as needed
-# repo_url: https://github.bus.zalan.do/octopus/documentation
-# repo_name: GHE
-# edit_uri: edit/master/docs/
 
 # Possible extensions: https://python-markdown.github.io/sitemap.html
 # More extensions: https://facelessuser.github.io/pymdown-extensions/
