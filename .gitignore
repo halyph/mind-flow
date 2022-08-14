@@ -1,5 +1,4 @@
 .idea
-site
 *.iml
 
 
@@ -14,6 +13,3 @@ venv.bak/
 
 #Mac files
 .DS_Store
-
-# public/
-# out/
