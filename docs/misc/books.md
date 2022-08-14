@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Bookshelf
 
 *Here is a list of books I've read or listened from the beginning till **the end**.*
