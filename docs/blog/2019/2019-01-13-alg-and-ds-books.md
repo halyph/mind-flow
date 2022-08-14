@@ -3,18 +3,16 @@
 
 I have a my list several books related to this topic. I've decided to list it here for easy referencing
 
-- [Top "Algorithms and Data Structures" Books](#top-%22algorithms-and-data-structures%22-books)
-  - [Algorithms, 4th Edition](#algorithms-4th-edition)
-  - [Introduction to Algorithms, 3rd Edition](#introduction-to-algorithms-3rd-edition)
-  - [The Algorithm Design Manual, 2nd Edition](#the-algorithm-design-manual-2nd-edition)
-  - [Data Structures and Algorithms in Python, 1st Edition](#data-structures-and-algorithms-in-python-1st-edition)
+- [Algorithms, 4th Edition](#algorithms-4th-edition)
+- [Introduction to Algorithms, 3rd Edition](#introduction-to-algorithms-3rd-edition)
+- [The Algorithm Design Manual, 2nd Edition](#the-algorithm-design-manual-2nd-edition)
+- [Data Structures and Algorithms in Python, 1st Edition](#data-structures-and-algorithms-in-python-1st-edition)
 
 ---
 
 ## Algorithms, 4th Edition
 
-<img src="2019-01-13-alg-and-ds-books/sedgewick.jpg" width="30%" height="30%"/>
-
+![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.jpg)
 - ["Algorithms" 4th Edition by *Robert Sedgewick, Kevin Wayne*](https://www.amazon.com/dp/032157351X/)
 - Hardcover: 976 pages
 - Publisher: Addison-Wesley Professional; 4th edition (March 19, 2011)
@@ -54,7 +52,7 @@ I have a my list several books related to this topic. I've decided to list it he
 
 ## Introduction to Algorithms, 3rd Edition
 
-<img src="2019-01-13-alg-and-ds-books/into_to-alg.jpg" width="30%" height="30%"/>
+![into_to-alg.jpg](2019-01-13-alg-and-ds-books/into_to-alg.jpg)
 
 - ["Introduction to Algorithms", 3rd Edition
 by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
@@ -113,7 +111,7 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
 
 ## The Algorithm Design Manual, 2nd Edition
 
-<img src="2019-01-13-alg-and-ds-books/skiena.jpg" width="30%" height="30%"/>
+![skiena.jpg](2019-01-13-alg-and-ds-books/skiena.jpg)
 
 -  ["The Algorithm Design Manual", 2nd ed. 2008 Edition by *Steven S. Skiena*](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
 - Paperback: 730 pages
@@ -146,7 +144,7 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
 
 ## Data Structures and Algorithms in Python, 1st Edition
 
-<img src="2019-01-13-alg-and-ds-books/ds_n_alg_in_py.jpg" width="30%" height="30%"/>
+![ds_n_alg_in_py.jpg](2019-01-13-alg-and-ds-books/ds_n_alg_in_py.jpg)
 
 - ["Data Structures and Algorithms in Python", 1st Edition
 by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich-dp-1118290275/dp/1118290275/)
@@ -156,19 +154,19 @@ by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser](https://www.ama
 **Table of Contents**:
 
 1. Python Primer
-1. Object-Oriented Programming
-1. Algorithm Analysis
-1. Recursion
-1. Array-Based Sequences
-1. Stacks, Queues, and Deques
-1. Linked Lists
-1. Trees
-1. Priority Queues
-1. Maps, Hash Tables, and Skip Lists
-1. Search Trees
-1. Sorting and Selection
-1. Text Processing
-1. Graph Algorithms
-1. Memory Management and B-Trees
-1. A. Character Strings in Python
-1. B. Useful Mathematical Facts
+2. Object-Oriented Programming
+3. Algorithm Analysis
+4. Recursion
+5. Array-Based Sequences
+6. Stacks, Queues, and Deques
+7. Linked Lists
+8. Trees
+9. Priority Queues
+10. Maps, Hash Tables, and Skip Lists
+11. Search Trees
+12. Sorting and Selection
+13. Text Processing
+14. Graph Algorithms
+15. Memory Management and B-Trees
+16. A. Character Strings in Python
+17. B. Useful Mathematical Facts

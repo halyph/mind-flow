@@ -11,13 +11,23 @@ _Another try of blogging or personal knowledge base_
 
 ![logo.png](docs/logo.png)
 """
+
+MKDOCS_HEADER = """---
+hide:
+  - navigation
+---
+
+![logo.png](../logo.png)
+"""
+
 #-----------------------------------------------------------------------------------------
 
 # Simple ugly script to generate README.md
 
 year_format = 'YYYY'
 date_format = 'YYYY-MM-DD'
-INDEX_FILE = 'README.md'
+README_INDEX_FILE = 'README.md'
+MKDOCS_INDEX_FILE = 'docs/blog/index.md'
 PREFIX = 'docs/blog/'
 
 def define_date_ranges():
@@ -34,7 +44,7 @@ def read_line(file_name):
 
 def list_files():
     files = glob.glob(PREFIX + '**/*.md', recursive=True)
-    pair = [f for f in files if '/' in f and not f.startswith('misc') ] 
+    pair = [f for f in files if '/' in f and not f.startswith('misc') and not f.endswith('index.md') ] 
     return pair
 
 def extract_date(line):
@@ -42,13 +52,14 @@ def extract_date(line):
     year = date[:len(year_format)]
     return (date, year)
 
-def write_index_to_file(file):
+def write_index_to_file(file, keep_prefix = True):
     post_by_year = defaultdict(list)
 
     for file_name in list_files():
         title = read_line(file_name)[1:-1].strip() # remove leading `# ` and strip spaces
         date, year = extract_date(file_name)
-        line = f"{date} - [{title}]({file_name})"
+        file_name_write = file_name if keep_prefix else file_name[len(PREFIX):]
+        line = f"{date} - [{title}]({file_name_write})"
         post_by_year[year].append(line)
 
     for year in sorted(post_by_year.keys(), reverse = True):
@@ -57,9 +68,13 @@ def write_index_to_file(file):
             print(f"- {year_line}", file=file)
 
 def main():
-    with open(INDEX_FILE, 'w') as f:
+    with open(README_INDEX_FILE, 'w') as f:
         f.write(README_HEADER)
         write_index_to_file(f)
+
+    with open(MKDOCS_INDEX_FILE, 'w') as f:
+        f.write(MKDOCS_HEADER)
+        write_index_to_file(f, keep_prefix=False)
 
 if __name__ == "__main__":
     main()
