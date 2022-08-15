@@ -3,7 +3,6 @@
 
 This page is just collection of notes from ["Kotlin vs Scala" by Urs Peter & Joost Heijkoop](https://www.youtube.com/watch?v=MsMejigb1Zk)
 
-**Table of Contents**
 - [Object Orientation](#object-orientation)
   - [Class](#class)
   - [Comparing OO between](#comparing-oo-between)
