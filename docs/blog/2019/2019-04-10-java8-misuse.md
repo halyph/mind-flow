@@ -3,7 +3,6 @@
 
 These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjection/java8-misuses) repository.
 
-**Table of Contents**
 - [Domain Model](#domain-model)
 - [1 - Optional](#1---optional)
   - [1.1 - Internal Optional Usage](#11---internal-optional-usage)
@@ -38,7 +37,7 @@ These notes are copy of [xpinjection/java8-misuses](https://github.com/xpinjecti
     - [3.6 - Do not use external collection for grouping](#36---do-not-use-external-collection-for-grouping)
     - [3.7 - Calculate statistics in single run with collector](#37---calculate-statistics-in-single-run-with-collector)
     - [3.8 - Convert stream to array](#38---convert-stream-to-array)
-    - [3.9 - Use functional approach when "map-reduce"](#39---use-functional-approach-when-%22map-reduce%22)
+    - [3.9 - Use functional approach when "map-reduce"](#39---use-functional-approach-when-map-reduce)
   - [Misuses](#misuses)
     - [3.10 - Stream generation](#310---stream-generation)
     - [3.11 - Use data structure features](#311---use-data-structure-features)
