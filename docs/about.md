@@ -6,4 +6,4 @@ hide:
 
 # About
 
-about
+TODO: add about content
