@@ -13,3 +13,10 @@
 4. `pip install -r requirements.txt`
 5. *Do smth useful*
 6. `deactivate`
+
+## Publish
+
+1. `git clone git@github.com:halyph/halyph.github.io.git site` - clone target "publish" repo
+2. `mkdocs build` - build
+3. `git add .` and `git commit -m "Publish"`
+4. `git push` - "deploy"/publish site

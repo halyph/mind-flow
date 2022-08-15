@@ -13,3 +13,5 @@ venv.bak/
 
 #Mac files
 .DS_Store
+
+site/

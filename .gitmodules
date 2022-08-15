@@ -1,4 +1,0 @@
-[submodule "site"]
-	path = site
-	url = git@github.com:halyph/halyph.github.io.git
-	branch = master
