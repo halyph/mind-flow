@@ -1,11 +1,7 @@
 .PHONY: publish
 
-
-
 publish:
 	mkdocs build
-	cd site
-	git add .
-	git commit -m "Publish"
-	git push
-	cd ..
+	git -C site add --all
+	git -C site commit -m "Publish"
+	git -C site push --force
