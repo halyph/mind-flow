@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pandoc/latex
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install mkdocs
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+        run: pip install -r requirements.txt
+      - name: generate blog into 'site' folder
+        run: mkdocs build
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@ssh-deploy-key
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: site/
+          destination-github-username: 'halyph'
+          destination-repository-name: 'temp_site'
+          user-email: halyph@gmail.com
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+          target-branch: master
+      - name: Test get variable exported by push-to-another-repository
+        run: echo $DESTINATION_CLONED_DIRECTORY
