@@ -15,7 +15,7 @@ TBD
 
 ## 2021
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Serious Python: Black-Belt Advice on Deployment, Scalability, Testing, and More*, by **Julien Danjou** (No Starch Press, 2018), ISBN 1593278780
 2. *A Brief History of Artificial Intelligence: What It Is, Where We Are, and Where We Are Going*, by **Michael Wooldridge** (Flatiron Books, 2021), ISBN 1250770734
@@ -27,13 +27,13 @@ TBD
 8. *Go Bootcamp*, by **Matt Aimonetti** (2014), ISBN N/A
 9. *97 Things Every Java Programmer Should Know: Collective Wisdom from the Experts*, by **Kevlin Henney** (O'Reilly Media, 2020), ISBN 1491952695
 
-### Listened (Audiobook)
+**Listened (Audiobook)**
 
 1. *Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon*, by **Kim Zetter** (Crown, 2014), ISBN 9780770436179
 
 ## 2020
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Live Work Work Work Die: A Journey into the Savage Heart of Silicon Valley*, by **Corey Pein** (Metropolitan Books, 2018), ISBN 9781627794855
 2. *Python Interviews: Discussions with Python Experts*, by **Michael Driscoll** (Packt Publishing, 2018), ISBN 9781788391764
@@ -43,7 +43,7 @@ TBD
 6. *UNIX: A History and a Memoir*, by **Brian W. Kernighan** (Independently Published, 2019), ISBN 9781695978553
 7. *Lab Rats: How Silicon Valley Made Work Miserable for the Rest of Us*, by **Dan Lyons** (Hachette Books, 2018), ISBN 9780316561860
 
-### Listened (Audiobook)
+**Listened (Audiobook)**
 
 1. *Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers*, by **Andy Greenberg** (Doubleday Books, 2019), ISBN 9780385544405
 2. *AI Superpowers: China, Silicon Valley, and the New World Order*, by **Kai-Fu Lee** (Brilliance Audio, 2018), ISBN 9781328546395
@@ -69,7 +69,7 @@ TBD
 
 ## 2019
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Прокрастинація. Чому ви вдаєтеся до неї і що можна зробити із цим вже сьогодні*, by **Джейн Б. Бурка (Jane B. Burka)**, **Ленора М. Юен (Lenora M. Yuen)** (Видавництво Старого Лева, 2018), ISBN 9786176795643
 2. *The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win*, by **Gene Kim**, **Kevin Behr**, **George Spafford** (It Revolution Press, 2014), ISBN 9780988262508
@@ -77,7 +77,7 @@ TBD
 
 ## 2018
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Моє життя та робота*, by **Henry Ford** (Наш Формат, 2015), ISBN 9789669742551
 2. *Кмітливіші, швидші, кращі. Секрети продуктивності в житті та бізнесі*, by **Charles Duhigg** (КСД, 2017), ISBN 9786171222809
@@ -85,7 +85,7 @@ TBD
 
 ## 2017
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *The Neophyte's Guide to Scala*, by **Daniel Westheide** (2013)
 2. *Building Microservices: Designing Fine-Grained Systems*, by **Sam Newman** (O'Reilly Media, 2015), ISBN 9781491950357
@@ -96,7 +96,7 @@ TBD
 
 ## 2016
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Pro Vagrant*, by **Wlodzimierz Gajda** (Apress, 2015), ISBN 9781484200742
 2. *Functional Programming in Java: Harnessing the Power of Java 8 Lambda Expressions*, by **Venkat Subramaniam** (Pragmatic Press, 2013), ISBN 9781937785468
@@ -109,7 +109,7 @@ TBD
 
 ## 2015
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *The Well-Grounded Java Developer: Vital techniques of Java 7 and polyglot programming*, by **Benjamin J. Evans**, **Martijn Verburg** (Manning Publications, 2012), ISBN 9781617290060
 2. *Lisp Hackers*, by **Vsevolod Dyomkin** (Leanpub, 2013)
@@ -119,7 +119,7 @@ TBD
 
 ## 2014
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Making Java Groovy*, by **Kenneth Kousen** (Manning, 2013), ISBN 9781935182948
 2. *Single Page Web Applications*, by **Michael S. Mikowski**, **Josh C. Powell** (Manning Publications, 2012), ISBN 9781617290756
@@ -128,7 +128,7 @@ TBD
 
 ## 2013
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *Pro Spring 3*, by **Rob Harrop**, **Clarence Ho** (Apress, 2012), ISBN 9781430241072
 2. *Scrum and XP from the Trenches*, by **Henrik Kniberg** (Lulu.com, 2007), ISBN 9781430322641
@@ -139,7 +139,7 @@ TBD
 
 ## 2012 - 2000
 
-### Read (Book or EBook)
+**Read (Book or EBook)**
 
 1. *C++ In Action: Industrial Strength Programming Techniques*, by **Bartosz Milewski** (Addison Wesley Publishing Company, 2001), ISBN 9780201699487
 2. *The Deadline: A Novel about Project Management*, by **Tom DeMarco** (Dorset House, 2002), ISBN 9780932633392
