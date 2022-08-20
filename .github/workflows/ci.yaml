@@ -25,7 +25,7 @@ jobs:
           destination-github-username: 'halyph'
           destination-repository-name: 'temp_site2'
           user-email: halyph@gmail.com
-          commit-message: Update from $REPOSITORY_URL@commit
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: master
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
