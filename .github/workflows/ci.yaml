@@ -23,7 +23,7 @@ jobs:
         with:
           source-directory: site/
           destination-github-username: 'halyph'
-          destination-repository-name: 'temp_site2'
+          destination-repository-name: 'halyph.github.io'
           user-email: halyph@gmail.com
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: master
