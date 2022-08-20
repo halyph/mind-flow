@@ -10,12 +10,12 @@ jobs:
     container: pandoc/latex
     steps:
       - uses: actions/checkout@v2
-      - name: Install mkdocs
-        uses: actions/setup-python@v2
+      - uses: actions/setup-python@v2
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
       - run: mkdocs build
+      - run: ls site/
       - name: Pushes to another repository
         id: push_directory
         uses: cpina/github-action-push-to-another-repository@ssh-deploy-key
