@@ -9,10 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           python-version: 3.x
       - run: pip install -r requirements.txt
-      - run: git remote add site git@github.com:halyph/temp_site.git
-      - run: mkdocs gh-deploy --force --verbose --remote-name site --remote-branch master
+      - run: mkdocs build
+      - run: ls site/
