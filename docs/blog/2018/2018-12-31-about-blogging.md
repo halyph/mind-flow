@@ -14,7 +14,7 @@ In total, I wrote there 116 posts (the last one I don't count), see grouped by y
 I do not remember the reason "why I started blogging". But, the posts were/are not so good. (You can check it [halyph.blogspot.com](https://halyph.blogspot.com/))
 
 Then I decided to move away from **Blogger** platform and use **Github Pages** as a blog hosting platform. In that time [Octopress](http://octopress.org/) looks appealing.
-Check out my post [2014-09-07 - Migration to Octopress](https://github.com/halyph/old-octopress-blog/blob/source/source/_posts/2014-09-07-migration-to-octopress.markdown) about this "great" migration.
+Check out my post [2014-09-07 - Migration to Octopress](../2014/2014-09-07-migration-to-octopress.md) about this "great" migration.
 
 **Octopress** has very nice features. The most attractive for me was the markdown as a source for my posts. I thought it will speed up the post creation and give a boost for creativity.
 

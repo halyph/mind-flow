@@ -5,6 +5,10 @@ hide:
 
 ![logo.png](../logo.png)
 
+## 2022
+
+- 2022-08-20 - [Rethinking Bloging](2022/2022-08-20-mkdocs-gh-actions.md)
+
 ## 2021
 
 - 2021-11-22 - [`base64` encoding/decoding on MacOS](2021/2021-11-22-base64-macos.md)
