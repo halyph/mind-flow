@@ -2,3 +2,4 @@ mkdocs
 mkdocs-material
 mdx_truly_sane_lists
 mkdocs-awesome-pages-plugin
+mkdocs-git-revision-date-localized-plugin>=1.0

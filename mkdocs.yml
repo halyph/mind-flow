@@ -75,3 +75,4 @@ plugins:
   - search:
       min_search_length: 2
   - awesome-pages
+  - git-revision-date-localized
