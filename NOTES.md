@@ -1,3 +1,4 @@
+# NOTES
 
 ## Useful MkDocs commands to get you started
 
@@ -5,7 +6,7 @@
 * `mkdocs build` - Build the documentation site.
 * `mkdocs -h` - Print this help message.
 
-## How to setup local development environment? 
+## How to setup local development environment?
 
 1. `python3 --version`
 2. `python3 -m venv .venv`
