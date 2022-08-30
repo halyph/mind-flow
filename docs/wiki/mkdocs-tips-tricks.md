@@ -11,3 +11,7 @@ Here is a collections of MkDocs-based sites and repos for my inspiration
 
 - https://3os.org
 - [mkdocs-material *Github Action*](https://github.com/squidfunk/mkdocs-material/blob/master/.github/workflows/documentation.yml) - clean sample for site deployment
+
+## Deployment
+
+- [github-action-push-to-another-repository](https://github.com/marketplace/actions/push-directory-to-another-repository)

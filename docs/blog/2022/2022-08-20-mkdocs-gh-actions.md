@@ -67,6 +67,8 @@ Of cause, MkDocs has meta data section, but it is not mandatory and I can skip i
 ## Github Action
 
 I host my rendered site via Github Pages. I could deploy it manually, but it's 2022 and I can easily use Github actions for free deployment.
+I've decided to use [github-action-push-to-another-repository](https://github.com/marketplace/actions/push-directory-to-another-repository). It's pretty simple and transparent, has narrow scope and well documented.
+
 Just write post, commit and push to repo and site generation will be done automatically and transparent for me. Profit!
 
 ## Epilogue
