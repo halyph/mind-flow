@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2022
 
+- 2022-09-09 - [Lightbend is Changing the License for Akka](docs/blog/2022/2022-09-09-akka-license.md)
 - 2022-08-20 - [Rethinking Bloging](docs/blog/2022/2022-08-20-mkdocs-gh-actions.md)
 
 ## 2021
