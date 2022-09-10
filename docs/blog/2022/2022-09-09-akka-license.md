@@ -28,3 +28,12 @@ I see the following alternatives for Scala: [Typelevel](https://typelevel.org/pr
 For now, I have decided to check *Typelevel* stack.
 
 But, in case of failure on Scala front, I have Java backup - **Spring Boot** and *Co*. People are saying that Java 18 is cool.
+
+## Historical Notes
+
+I forgot to mention that Lightbend has stopped [Lagom](https://www.lagomframework.com) active development and made [Playframework](https://www.playframework.com) community-led project.
+
+Read more here:
+
+- [On the future of Play Framework](https://www.lightbend.com/blog/on-the-future-of-play-framework) - October 2021
+- [The future of Lagom](https://discuss.lightbend.com/t/the-future-of-lagom/8962) - October 2021
