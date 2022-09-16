@@ -1,6 +1,6 @@
 # Java Frameworks
 
-*Collection of framework I find interesting or important for Java Ecosystem*
+*Collection of frameworks I find interesting or important for Java Ecosystem*
 
 - [Spring](https://spring.io/)
 - [Micronaut](https://micronaut.io/)
