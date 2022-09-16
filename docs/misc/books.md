@@ -24,6 +24,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 5. *Розгадка геніальності. Як працює інженерія ідей*, by **Ron Friedman** (Лабораторія, 2021), ISBN 9786177965748
 6. *Моссад. Найвидатніші операції ізраїльської розвідки*, by **Michael Bar-Zohar**, **Nissim Mishal** (Наш Формат, 2022), ISBN 9786177973873
 7. *Фактор Черчиля. Як одна людина змінила історію*, by **Боріс Джонсон** (Віват, 2019), ISBN 9789669427960
+8. *Where Wizards Stay Up Late: The Origins of the Internet*, by **Katie Hafner**, **Matthew Lyon** (Simon Schuste, 1998), ISBN 9780684832678
 
 ## 2021
 
