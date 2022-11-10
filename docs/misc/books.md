@@ -15,6 +15,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 1. *Культурна карта. Бар’єри міжкультурного спілкування в бізнесі*, by **Ерін Меєр** (Наш Формат, 2020), ISBN 9786177863297
 2. *Ми — Bellingcat. Онлайн-розслідування міжнародних злочинів та інформаційна війна з Росією*, by **Eliot Higgins** (Наш формат, 2022), ISBN 9786177973811
+3. *Призма головного шпигуна. Боротьба з російською агресією*, by **Jack Devine** (Фоліо, 2021), ISBN 9789660397644
 
 **Listened (Audiobook)**
 
@@ -26,6 +27,9 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 6. *Моссад. Найвидатніші операції ізраїльської розвідки*, by **Michael Bar-Zohar**, **Nissim Mishal** (Наш Формат, 2022), ISBN 9786177973873
 7. *Фактор Черчиля. Як одна людина змінила історію*, by **Боріс Джонсон** (Віват, 2019), ISBN 9789669427960
 8. *Where Wizards Stay Up Late: The Origins of the Internet*, by **Katie Hafner**, **Matthew Lyon** (Simon Schuste, 1998), ISBN 9780684832678
+9. *Escaping the Build Trap: How Effective Product Management Creates Real Value*, by **Melissa Perri** (O'Reilly Media, 2018), ISBN 9781491973790
+10. *The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change*, by **Camille Fournier** (O'Reilly Media, 2017), ISBN 9781491973899
+11. *Hackers & Painters: Big Ideas from the Computer Age*, by **Paul Graham**, **Allen Noren** (O'Reilly Media, 2004), ISBN 9780596006624
 
 ## 2021
 
@@ -37,7 +41,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 4. *Безмежна сила математики. Як завдяки матаналізу винайшли смартфони, телебачення і GPS*, by **Стівен Строґац** (Наш Формат, 2020), ISBN 9786177866212
 5. *Kingpin: How One Hacker Took Over the Billion-Dollar Cybercrime Underground*, by **Kevin Poulsen** (Crown, 2011), ISBN 0307588688
 6. *П’ять вад у роботі команди. Історії реальних викликів та перемог*, by **Патрік Ленсіоні** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2017), ISBN 9786171224643
-7. *Не работайте с м*даками. И что делать, если они вокруг вас*, by **Роберт Саттон** (Манн, Иванов и Фербер, 2015), ISBN 9785000576175
+7. *Не работайте с мудаками. И что делать, если они вокруг вас*, by **Роберт Саттон** (Манн, Иванов и Фербер, 2015), ISBN 9785000576175
 8. *Go Bootcamp*, by **Matt Aimonetti** (2014), ISBN N/A
 9. *97 Things Every Java Programmer Should Know: Collective Wisdom from the Experts*, by **Kevlin Henney** (O'Reilly Media, 2020), ISBN 1491952695
 
