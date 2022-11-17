@@ -7,6 +7,7 @@ hide:
 
 ## 2022
 
+- 2022-11-17 - [Popularity of Programming Languages - 2022](2022/2022-11-17-prog-lang-pop.md)
 - 2022-09-09 - [Lightbend is Changing the License for Akka](2022/2022-09-09-akka-license.md)
 - 2022-08-20 - [Rethinking Bloging](2022/2022-08-20-mkdocs-gh-actions.md)
 
