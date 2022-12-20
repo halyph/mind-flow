@@ -40,10 +40,10 @@ There are several exceptions:
 
 - **Web**: Javascript/Typescript
 - **System Programming**: C
+- **Back-End**: Go, Java, Scala
 
 The following domains will be covered by Python ([PoC](https://en.wikipedia.org/wiki/Proof_of_concept), my personal projects):
 
-- Back-End
 - Scripting
 - Infrastructure
 - CLI
