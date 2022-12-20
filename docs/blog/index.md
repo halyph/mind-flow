@@ -7,6 +7,7 @@ hide:
 
 ## 2022
 
+- 2022-12-20 - [Python is the second best language for anything](2022/2022-12-20-py_2nd_best_language_for_anything.md)
 - 2022-12-01 - [ZSH on MacOS](2022/2022-12-01-zsh-on-mac.md)
 - 2022-11-17 - [Popularity of Programming Languages - 2022](2022/2022-11-17-prog-lang-pop.md)
 - 2022-09-09 - [Lightbend is Changing the License for Akka](2022/2022-09-09-akka-license.md)
