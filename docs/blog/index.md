@@ -140,7 +140,6 @@ hide:
 
 - 2012-12-31 - [Jenkins enhancements without plugins](2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 - 2012-12-12 - [Groovy or JRuby for Java developer](2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
-- 2012-11-02 - [How to configure git diff and merge tools?](2011/2012-11-02-how-to-configure-git-diff-and-merge.md)
 - 2012-11-02 - [How to Configure Git Diff and Merge Tools?](2012/2012-11-02-how-to-configure-git-diff-and-merge.md)
 - 2012-10-27 - [Mac OS X terminal supports colored output](2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 - 2012-10-20 - [Git command extension](2012/2012-10-20-git-command-extention.md)
