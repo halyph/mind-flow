@@ -13,6 +13,7 @@ Here is a collections of MkDocs-based sites and repos for my inspiration
 - https://3os.org
 - [mkdocs-material *Github Action*](https://github.com/squidfunk/mkdocs-material/blob/master/.github/workflows/documentation.yml) - clean sample for site deployment
 - [Made With ML](https://madewithml.com) and corresponding [repo](https://github.com/GokuMohandas/mlops-course)
+- [The Blue Book](https://lyz-code.github.io/blue-book/) - *"my personal digital garden where I share everything I learn about a huge variety of topics"*
 
 ## Deployment
 
