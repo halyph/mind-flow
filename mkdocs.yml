@@ -59,6 +59,11 @@ markdown_extensions:
         class: mermaid
         format: !!python/name:pymdownx.superfences.fence_div_format
 
+extra:
+  analytics:
+    provider: google
+    property: G-2RPGPZG08J
+
 extra_css:
   - css/mermaid.css
   - css/extra.css
