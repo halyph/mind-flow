@@ -26,8 +26,11 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install -r requirements.txt
-      
+
       - name: Build Site
+        id: build_site
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
           mkdocs build
           ls site/
