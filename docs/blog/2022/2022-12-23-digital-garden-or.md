@@ -13,7 +13,7 @@ So, for me it sounds like personal *Wiki*, but for external audience :-).
 
 But, I don't want to stick to "Digital Garden" as is and want to have both ideas simultaneously: Blog and Wiki ("Digital Garden").
 
-Blog is kinda snapshot of your ideas. It's very interesting reading it in retrospective.
+Blog is kinda snapshot of your ideas. It's very interesting to read it in retrospective.
 
 Regarding *Wiki*, currently it's very small (à la initial state) and "dirty". I will be evolve with one big disclamer: "This *Wiki* is for me, but you can read it as well". I.e. I don't plan to polish every article to make it perfect. I just make a note, update here and there and that's it.
 
