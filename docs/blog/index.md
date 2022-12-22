@@ -3,17 +3,16 @@ hide:
   - navigation
 ---
 
-# Blog
-
 ![logo.png](../logo.png)
 
 ## 2022
 
+- 2022-12-23 - [Blog, Digital Garden, Wiki. FTW?](2022/2022-12-23-digital-garden-or.md)
 - 2022-12-20 - [Python is the second best language for anything](2022/2022-12-20-py_2nd_best_language_for_anything.md)
 - 2022-12-01 - [ZSH on MacOS](2022/2022-12-01-zsh-on-mac.md)
 - 2022-11-17 - [Popularity of Programming Languages - 2022](2022/2022-11-17-prog-lang-pop.md)
 - 2022-09-09 - [Lightbend is Changing the License for Akka](2022/2022-09-09-akka-license.md)
-- 2022-08-20 - [Rethinking Bloging](2022/2022-08-20-mkdocs-gh-actions.md)
+- 2022-08-20 - [Rethinking Bloging](2022/2022-08-20-rethinking-bloging.md)
 
 ## 2021
 
