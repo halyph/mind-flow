@@ -3,6 +3,8 @@ hide:
   - navigation
 ---
 
+# Blog
+
 ![logo.png](../logo.png)
 
 ## 2022
