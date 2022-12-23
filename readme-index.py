@@ -17,7 +17,7 @@ hide:
   - navigation
 ---
 
-# Blog
+# Blog Posts
 
 ![logo.png](../logo.png)
 """
