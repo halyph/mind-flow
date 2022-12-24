@@ -1,4 +1,15 @@
+# Project information
 site_name: Mind~Flow
+site_url: https://halyph.github.io/
+site_author: Orest Ivasiv 
+site_description: >-
+  Blog and/or personal knowledge base
+
+# Repository
+repo_name: halyph/mind-flow
+repo_url: https://github.com/halyph/mind-flow
+
+copyright: Copyright &copy; 2009 - 2022 Orest Ivasiv
 
 theme:
   name: material
