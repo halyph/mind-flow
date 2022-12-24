@@ -41,13 +41,14 @@ There are several exceptions:
 - **Web**: Javascript/Typescript
 - **System Programming**: C
 - **Back-End**: Go, Java, Scala
+- **CLI**: Go
+- **Desktop**: Java
 
 The following domains will be covered by Python ([PoC](https://en.wikipedia.org/wiki/Proof_of_concept), my personal projects):
 
 - Scripting
 - Infrastructure
-- CLI
 - Machine Learning/Data Science/Data Analysis/Data Engineering
-- Desktop
+- CLI: *when I don't need to distribute the app*
 
 Again, Python is not the best language in the world, it definitely has some sort of ugliness, but it's popular. And I accepted this.
