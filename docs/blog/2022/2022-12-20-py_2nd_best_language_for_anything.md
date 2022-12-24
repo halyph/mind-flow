@@ -68,8 +68,8 @@ It's not related to Python only, but to other scripting languages as well. If yo
 Your users must know how to use [Pip](https://pip.pypa.io) and [virtual environment](https://docs.python.org/3/library/venv.html). But it's not the end of story.
 
 How do you package/assemble your app? There are so many ways for building your Python app, see [PyPA Projects](https://packaging.python.org/en/latest/key_projects/).
-I don't understand why such old community haven't agreed on some one or two recommended build tools. Why do they need such crazy numbers of different tools?
-But I am talking as seasonal Python user. Maybe there are some reason. Anyway, what I wanted to say: I try to avoid as much as possible any Python tool ceremonies and
+I don't understand why such old community hasn't agreed on some recommended build tools. Why do they need such crazy numbers of different tools?
+But I am talking as seasonal Python user. Maybe there are some reason. Anyway, what I wanted to say: I try to avoid as much as possible any Python tools ceremonies and
 use only simplest possible standard tools: `pip`, `venv` and `requirements.txt`.
 
 Just check [Distributing Python Modules](https://docs.python.org/3/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really? 
