@@ -1,6 +1,8 @@
 # Python is the second best language for anything
 > | python |
 
+## Main Part
+
 **Disclaimer**: It's another blah-blah post, feel free to read Hacker News :-P it will be more useful for you.
 
 What other programming languages do I associate with Python, or to be precise what other scripting languages? I would say the following:
@@ -12,7 +14,7 @@ What other programming languages do I associate with Python, or to be precise wh
 - [PHP](https://en.wikipedia.org/wiki/PHP)
 - [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language))
 - [Tcl](https://en.wikipedia.org/wiki/Tcl)
-- [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (_and similar shell scipting languages_)
+- [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (_and similar shell scripting languages_)
 - [Powershell](https://en.wikipedia.org/wiki/PowerShell)
 - [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications)
 - [Autohokey](https://www.autohotkey.com/)
@@ -38,7 +40,7 @@ It means I will start prototyping any simple things, or throw-away scripts in Py
 
 There are several exceptions:
 
-- **Web**: Javascript/Typescript
+- **Web**: Javascript
 - **System Programming**: C
 - **Back-End**: Go, Java, Scala
 - **CLI**: Go
@@ -51,4 +53,27 @@ The following domains will be covered by Python ([PoC](https://en.wikipedia.org/
 - Machine Learning/Data Science/Data Analysis/Data Engineering
 - CLI: *when I don't need to distribute the app*
 
-Again, Python is not the best language in the world, it definitely has some sort of ugliness, but it's popular. And I accepted this.
+Again, Python is not the best language in the world, it definitely has some sort of ugliness, but it's popular, and I accepted this.
+
+## Concerns
+
+### Concurrency
+
+This topic is not well aligned in my head when I am talking about Python and concurrency in the same sentence. I would use JVM languages (Java, Scala)
+or Go instead of Python when I need to implement something performant and concurrent.
+
+### Packaging and Distribution
+
+It's not related to Python only, but to other scripting languages as well. If you need to distribute some Python app you have to be prepared.
+Your users must know how to use [Pip](https://pip.pypa.io) and [virtual environment](https://docs.python.org/3/library/venv.html). But it's not the end of story.
+
+How do you package/assemble your app? There are so many ways for building your Python app, see [PyPA Projects](https://packaging.python.org/en/latest/key_projects/).
+I don't understand why such old community haven't agreed on some one or two recommended build tools. Why do they need such crazy numbers of different tools?
+But I am talking as seasonal Python user. Maybe there are some reason. Anyway, what I wanted to say: I try to avoid as much as possible any Python tool ceremonies and
+use only simplest possible standard tools: `pip`, `venv` and `requirements.txt`.
+
+Just check [Distributing Python Modules](https://docs.python.org/3/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really? 
+
+Do not forget, Python went public in 1991 (31 years ago). FTW!
+
+P.S. [Poetry](https://python-poetry.org) is a new cool kid in Python community. Maybe it will solve all problems, but it's not yet a standard and that's why I am not ready for big investments.
