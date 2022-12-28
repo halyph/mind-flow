@@ -9,6 +9,21 @@ hide:
 
 See my [Googreads](https://www.goodreads.com/halyph) profile.
 
+## Reading/Listening Stats
+
+| Year | Total | (E)Book | Audiobook |
+|------|-------|---------|-----------|
+| 2022 | 19    | 7       | 12        |
+| 2021 | 10    | 9       | 1         |
+| 2020 | 28    | 7       | 21        |
+| 2019 | 3     | 3       | -         |
+| 2018 | 3     | 3       | -         |
+| 2017 | 6     | 6       | -         |
+| 2016 | 8     | 8       | -         |
+| 2015 | 5     | 5       | -         |
+| 2014 | 4     | 4       | -         |
+| 2013 | 6     | 6       | -         |
+
 ## 2022
 
 **Read (Book or EBook)**
@@ -16,6 +31,10 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 1. *Культурна карта. Бар’єри міжкультурного спілкування в бізнесі*, by **Ерін Меєр** (Наш Формат, 2020), ISBN 9786177863297
 2. *Ми — Bellingcat. Онлайн-розслідування міжнародних злочинів та інформаційна війна з Росією*, by **Eliot Higgins** (Наш формат, 2022), ISBN 9786177973811
 3. *Призма головного шпигуна. Боротьба з російською агресією*, by **Jack Devine** (Фоліо, 2021), ISBN 9789660397644
+4. *Rework. Ця книжка змінить ваш погляд на бізнес*, by **Jason Fried**, **David Heinemeier Hansson** (Книжковий клуб "Клуб сімейного дозвілля", 2016), ISBN 9786171204553
+5. *Androids: The Team That Built the Android Operating System*, by **Chet Haase** (No Starch Press, 2022), ISBN 9781718502680
+6. *Engineers Survival Guide: Advice, tactics, and tricks After a decade of working at Facebook, Snapchat, and Microsoft*, by **Merih Taze** (Kindle Edition, 2022), ISBN  9798985349900
+7. *Go Fundamentals: Gopher Guides*, by **Mark Bates**, **Cory Lanou** (Addison-Wesley Professional, 2022), ISBN 9780137918300
 
 **Listened (Audiobook)**
 
@@ -30,6 +49,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 9. *Escaping the Build Trap: How Effective Product Management Creates Real Value*, by **Melissa Perri** (O'Reilly Media, 2018), ISBN 9781491973790
 10. *The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change*, by **Camille Fournier** (O'Reilly Media, 2017), ISBN 9781491973899
 11. *Hackers & Painters: Big Ideas from the Computer Age*, by **Paul Graham**, **Allen Noren** (O'Reilly Media, 2004), ISBN 9780596006624
+12. *How to Fuck Up Your Startup: The Science Behind Why 90% of Companies Fail--and How You Can Avoid It* by **Kim Hvidkjaer** (Matt Holt Books, 2022), ISBN 9781637740590
 
 ## 2021
 
