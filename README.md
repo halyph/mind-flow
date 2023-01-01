@@ -6,6 +6,10 @@ _Another try of blogging or personal knowledge base_
 
 ![logo.png](docs/logo.png)
 
+## 2023
+
+- 2023-01-01 - [Personal Techradar for Programming Languages - 2023](docs/blog/2023/2023-01-01-personal-tech-radar.md)
+
 ## 2022
 
 - 2022-12-23 - [Blog, Digital Garden, Wiki. FTW?](docs/blog/2022/2022-12-23-digital-garden-or.md)

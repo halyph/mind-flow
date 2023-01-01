@@ -1,5 +1,5 @@
 # Personal Techradar for Programming Languages - 2020 H2
-> | python | java | scala |
+> | techradar | python | java | scala |
 
 Why "personal" Tech Radar? Well, [Technology Radar](https://www.thoughtworks.com/de/radar) was "invented" by ThoughtWorks company
 (I guess, and I have zero motivation to prove this).
