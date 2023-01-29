@@ -9,7 +9,7 @@ hide:
 
 ## 2023
 
-- 2023-01-01 - [Personal Techradar for Programming Languages - 2023](2023/2023-01-01-personal-tech-radar.md)
+- 2023-01-01 - [Personal Techradar for Programming Languages - 2023 H1](2023/2023-01-01-personal-tech-radar.md)
 
 ## 2022
 
