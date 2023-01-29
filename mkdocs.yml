@@ -88,8 +88,7 @@ strict: true
 # Useful plugins: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
 # Plugin documentation: https://www.mkdocs.org/user-guide/configuration/#plugins
 plugins:
-  - search:
-      min_search_length: 2
+  - search
   - awesome-pages
   - git-revision-date-localized
   - minify:
