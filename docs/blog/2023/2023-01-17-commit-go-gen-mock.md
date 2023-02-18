@@ -29,13 +29,13 @@ The popularity of Golang mock libraries:
 - [minimock](https://github.com/gojuno/minimock) ⭐ 480
 - [moq](https://github.com/matryer/moq) ⭐ 1.5k
 
-# Sample of popular repos with committed mocks
+## Sample of popular repos with committed mocks
 
 I have decided to check some public repos and whether they are committing generated mocks.
 
 Based on libraries popularity I will concentrate on **golang/mock** and **vektra/mockery** only (see report below).
 
-## Hashicorp
+### Hashicorp
 
 | **Repo**| **Comments or Samples** |
 | -- | -- |
@@ -44,28 +44,28 @@ Based on libraries popularity I will concentrate on **golang/mock** and **vektra
 | [consul-terraform-sync](https://github.com/hashicorp/consul-terraform-sync) ⭐ 110 | <span style="background-color:#ffe090;color:#352917">**vektra/mockery**</span> [terraformExec.go](https://github.com/hashicorp/consul-terraform-sync/blob/40ec791893fec56ea1c57d1e7f3fbdeb467d1775/mocks/client/terraformExec.go)|
 | [consul](https://github.com/hashicorp/consul) ⭐ 26.1k | <span style="background-color:#dfc2ef;color:#451d71">**manually implemented**</span> [mock_api_test.go](https://github.com/hashicorp/consul/blob/bf0f61a87884d444d472b981099163856658d3ea/api/mock_api_test.go) <br /> <span style="background-color:#ffe090;color:#352917">**vektra/mockery**</span> [mock_Login.go](https://github.com/hashicorp/consul/blob/02cff2394d921aeaecaf043fe1b1d519f465c3e6/agent/grpc-external/services/acl/mock_Login.go) |
 
-## Uber
+### Uber
 
 | **Repo**| **Comments or Samples** |
 | -- | -- |
 | [cadence](https://github.com/uber/cadence) ⭐ 6.7k | <span style="background-color:#ccebaf;color:#09643c">**golang/mock**</span> [authority_mock.go](https://github.com/uber/cadence/blob/9f219005095082151ef051826358f7f98e191a67/common/authorization/authority_mock.go), [cadence/search?q=MockGen](https://github.com/uber/cadence/search?q=MockGen>) |
 | [aresdb](https://github.com/uber/aresdb) ⭐ 2.9k | <span style="background-color:#ffe090;color:#352917">**vektra/mockery**</span> [PeerDataNode_BenchmarkFileTransferClient.go](https://github.com/uber/aresdb/blob/a8d2aedc6850b10a6cc9381ba780800290b2756d/datanode/generated/proto/rpc/mocks/PeerDataNode_BenchmarkFileTransferClient.go) |
 
-## Dropbox
+### Dropbox
 
 | **Repo**| **Comments or Samples** |
 | -- | -- |
 | [kglb](https://github.com/dropbox/kglb) ⭐ 131 | <span style="background-color:#dfc2ef;color:#451d71">**manually implemented**</span> [mock_modules.go](https://github.com/dropbox/kglb/blob/7f86d1804d5d14527665302545ef2da2dffed778/kglb/data_plane/mock_modules.go) |
 | [dropbox/godropbox](https://github.com/dropbox/godropbox) ⭐ 4.1k | <span style="background-color:#dfc2ef;color:#451d71">**manually implemented**</span> [mock_client_test.go](https://github.com/dropbox/godropbox/blob/52ad444d35023d078d496d305d75511e772f0295/memcache/mock_client_test.go)|
 
-## Gitlab
+### Gitlab
 
 | **Repo**| **Comments or Samples** |
 | -- | -- |
 | [gitlab-runner](https://gitlab.com/gitlab-org/gitlab-runner) ⭐ 2.1k | <span style="background-color:#ffe090;color:#352917">**vektra/mockery**</span> [mock_requester.go](https://gitlab.com/gitlab-org/gitlab-runner/-/blob/main/network/mock_requester.go) |
 | [fargate](https://gitlab.com/gitlab-org/ci-cd/custom-executor-drivers/fargate) ⭐ 40 | <span style="background-color:#ffe090;color:#352917">**vektra/mockery**</span> [mock_ec2Client.go](https://gitlab.com/gitlab-org/ci-cd/custom-executor-drivers/fargate/-/blob/master/aws/mock_ec2Client.go) |
 
-## Other
+### Other
 
 | **Repo**| **Comments or Samples** |
 | -- | -- |
