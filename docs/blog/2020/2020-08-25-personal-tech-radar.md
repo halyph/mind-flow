@@ -82,13 +82,13 @@ All other languages ([Clojurescript](https://clojurescript.org), [CoffeeScript](
 
 - **Python** is a king on the Machine Learning scene.
 - **R**. This language is losing popularity in ML. But, it's still big. So, I should consider it.
-- **[Julia](https://julialang.org)**. I know nothing about this languge.
+- **[Julia](https://julialang.org)**. I know nothing about this language.
 
 ### System programming
 
 - **C** is simple and quite powerful. For something small, it's good enough.
 - **C++**. Again, I don't want to touch this monster. It doesn't worth investments.
-- **Rust** is a very interesting and powerful language. At least, I preffer **Rust** over **C++**.
+- **Rust** is a very interesting and powerful language. At least, I prefer **Rust** over **C++**.
 
 ## Summary
 
