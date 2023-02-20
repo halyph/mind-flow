@@ -2,4 +2,5 @@ order: asc
 sort_type: natural
 nav:
     - Tools: tools.md
+    - Worth Reading: worth-reading.md
     - ...
