@@ -24,4 +24,4 @@ Inspired by [Scott Hanselman's 2021 Ultimate Developer and Power Users Tool List
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) - Markdown-based documentation static site generator
 - [PlantUML](https://plantuml.com/) is an open-source tool allowing users to create diagrams from a plain text language
 - [Excalidraw](https://excalidraw.com/) is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them
-- [Mermaid](https://mermaid.js.org/) - Diagramming and charting tool. JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically
+- [Mermaid](https://mermaid.js.org/) - JavaScript based diagramming and charting tool that renders Markdown-inspired text definitions to create and modify diagrams dynamically
