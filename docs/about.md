@@ -18,3 +18,4 @@ I am not sure whether it will be valuable for other people. So you are warned ðŸ
 - *"Talk is cheap. Show me the code"* - [Linus Torvalds](https://en.wikiquote.org/wiki/Linus_Torvalds#2000%E2%80%9304)
 - *"You can call me Susan if it makes you happy"* - Bullet Tooth Tony
 - *"You should never underestimate the predictability of stupidity"* - Bullet Tooth Tony
+- *"Always leave the campground cleaner than you found it"* - Boy Scout Rule
