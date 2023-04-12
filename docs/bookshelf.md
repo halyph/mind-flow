@@ -11,8 +11,6 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 ## Reading/Listening Stats
 
-<center>
-
 | Year | Total | (E)Book | Audiobook |
 |------|-------|---------|-----------|
 | 2022 | 19    | 7       | 12        |
@@ -25,9 +23,6 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 | 2015 | 5     | 5       | -         |
 | 2014 | 4     | 4       | -         |
 | 2013 | 6     | 6       | -         |
-
-</center>
-
 
 ## 2022
 
