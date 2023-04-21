@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2023
 
+- 2023-04-06 - [First official Javadoc version](docs/blog/2023/2023-04-06-javadoc.md)
 - 2023-01-17 - [Golang: Do you commit your generated mocks to repo?](docs/blog/2023/2023-01-17-commit-go-gen-mock.md)
 - 2023-01-01 - [Personal Techradar for Programming Languages - 2023 H1](docs/blog/2023/2023-01-01-personal-tech-radar.md)
 
