@@ -53,6 +53,7 @@ puts say.upcase
 # Output "I *love* Ruby"
 # five times
 5.times { puts say }
+```
 </td>
 </tr>
 </table>
