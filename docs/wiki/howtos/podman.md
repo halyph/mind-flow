@@ -3,6 +3,7 @@
 ## Access MacOS host from a podman container
 
 **Reference**:
+
 - [Access MacOS host from a docker container](https://medium.com/@balint_sera/access-macos-host-from-a-docker-container-e0c2d0273d7f)
 - [How Podman can extract a container's external IP address](https://www.redhat.com/sysadmin/container-ip-address-podman)
 - https://github.com/containers/podman/issues/10878
