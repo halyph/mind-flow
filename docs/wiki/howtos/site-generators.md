@@ -17,7 +17,7 @@ Here is a collections of sites and repos for my inspiration
 - [LZone](https://lzone.de) - simple and clean personal wiki
 - **Jekyll**
   - [Google Engineering Practices Documentation](https://google.github.io/eng-practices/) based on *[jekyll-theme-primer]*
-  - [Tom Preston-Werner](https://tom.preston-werner.com) based on 
+  - [Tom Preston-Werner](https://tom.preston-werner.com)
 - **Mkdocs material**
   - https://3os.org
   - [Made With ML](https://madewithml.com) and corresponding [repo](https://github.com/GokuMohandas/mlops-course)
