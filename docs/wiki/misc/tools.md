@@ -1,4 +1,4 @@
-# Developer and Power Users Tool List
+# Developer and Power Users Tools
 
 Inspired by [Scott Hanselman's 2021 Ultimate Developer and Power Users Tool List for Windows](https://www.hanselman.com/blog/scott-hanselmans-2021-ultimate-developer-and-power-users-tool-list-for-windows)
 

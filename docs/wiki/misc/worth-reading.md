@@ -1,5 +1,7 @@
 # Worth reading
 
+## Blogs
+
 ⚠️ *Of course, there is much more to read, but I've decided to add only resources with 100% value.*
 
 - [Paul Graham](http://www.paulgraham.com) is known for [Y Combinator](https://www.ycombinator.com/) and [Hacker News](https://news.ycombinator.com/)
