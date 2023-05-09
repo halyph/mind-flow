@@ -4,9 +4,9 @@ I like selecting programming languages based on my subjective criteria.
 
 ## Programming Languages
 
-- **Main**: Java, Scala
-- *Secondary*: Golang, Python
-- *Third*: C, JavaScript, Typescript
+- :first_place: : :lang-java: Java, :lang-scala: Scala
+- :second_place: : :lang-go: Golang, :lang-python: Python
+- :third_place: : :lang-c: C, :lang-javascript: JavaScript
 
 Tech Radar:
 
@@ -17,7 +17,7 @@ Tech Radar:
 | **Infrastructure**     | Python, Golang |
 | **CLI**                | Golang, Python |
 | **ML/DS/DA/DE**        | Python |
-| **Web**                | Javascript, Typescript |
+| **Web**                | Javascript |
 | **Desktop**            | Python, Java |
 | **System programming** | C |
 
@@ -42,7 +42,7 @@ Tech Radar:
   - D
 - Web
   - ✅ Javascript
-  - ✅ Typescript
+  - Typescript
   - Elm
   - PureScript
   - CoffeeScript
