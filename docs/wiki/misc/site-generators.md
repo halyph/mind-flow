@@ -22,6 +22,7 @@ Here is a collections of sites and repos for my inspiration
   - https://3os.org
   - [Made With ML](https://madewithml.com) and corresponding [repo](https://github.com/GokuMohandas/mlops-course)
   - [The Blue Book](https://lyz-code.github.io/blue-book/) - *"my personal digital garden where I share everything I learn about a huge variety of topics"*
+  - [Awesome-Astra](https://awesome-astra.github.io/docs/pages/develop/languages/java/) - Tutorials, documentation and learning materials to build great applications or connect external tools to Astra.
 - **Sphinx**
   - [Python Developer’s Guide](https://devguide.python.org) based on *[furo](https://github.com/pradyunsg/furo)* theme
   - [Python Enhancement Proposals](https://peps.python.org)
