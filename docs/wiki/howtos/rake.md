@@ -159,7 +159,9 @@ rake one:two:three                  /Users/halyph/Projects/tmp/Rakefile:18:in `b
 rake pwd                            /Users/halyph/Projects/tmp/Rakefile:4:in `<top (required)>'
 ```
 
-## Task arguments
+## Basic User Cases
+
+### Task arguments
 
 ```shell
 ➜ rake "name[John,Doe]"
@@ -167,14 +169,14 @@ First name is John
 Last  name is Doe
 ```
 
-## Nested Tasks
+### Nested Tasks
 
 ```shell
 ➜ rake one:two:three
 Nested task 'one:two:three'
 ```
 
-## Dependent Tasks
+### Dependent Tasks
 
 ```shell
 ➜ rake mac_and_cheese
@@ -185,14 +187,14 @@ Boiling Water
 Making Mac & Cheese
 ```
 
-## Default Task
+### Default Task
 
 ```shell
 ➜ rake
 Going to the Apple Store
 ```
 
-## Dynamic task definition
+### Dynamic task definition
 
 ```shell
 ➜ rake -T "gen"
@@ -206,7 +208,7 @@ echo generate gen:pdf
 generate gen:pdf
 ```
 
-## Silent run
+### Silent run
 
 ```shell
 # Silent OFF by default
