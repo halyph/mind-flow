@@ -159,7 +159,7 @@ rake one:two:three                  /Users/halyph/Projects/tmp/Rakefile:18:in `b
 rake pwd                            /Users/halyph/Projects/tmp/Rakefile:4:in `<top (required)>'
 ```
 
-## Basic User Cases
+## Basic Use Cases
 
 ### Task arguments
 
