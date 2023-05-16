@@ -92,72 +92,73 @@ end
 - `rake -t` (debugging mode)
 - `rake -f` (use a specific Rakefile)
 
-### `rake -T` (list available tasks)
+**Examples**
 
-```shell
-➜ rake -T
-rake apple:go_to_store           # Go to Apple Store
-rake boil_water                  # Boild Water
-rake buy_cheese                  # Buy Cheese
-rake buy_pasta                   # Buy Pasta
-rake gen:epub                    # Generate the book in 'epub'
-rake gen:html                    # Generate the book in 'html'
-rake gen:mobi                    # Generate the book in 'mobi'
-rake gen:pdf                     # Generate the book in 'pdf'
-rake go_to_store                 # Go to Store
-rake mac_and_cheese              # Make Mac and Cheese
-rake name[first_name,last_name]  # Name prints 1st and 2nd arg
-rake one:two:three               # Run task three
-rake pwd                         # Current dir
-```
+??? example "`rake -T` (list available tasks)"
 
-### `rake -P` (list tasks & their dependencies)
+    ```shell
+    ➜ rake -T
+    rake apple:go_to_store           # Go to Apple Store
+    rake boil_water                  # Boild Water
+    rake buy_cheese                  # Buy Cheese
+    rake buy_pasta                   # Buy Pasta
+    rake gen:epub                    # Generate the book in 'epub'
+    rake gen:html                    # Generate the book in 'html'
+    rake gen:mobi                    # Generate the book in 'mobi'
+    rake gen:pdf                     # Generate the book in 'pdf'
+    rake go_to_store                 # Go to Store
+    rake mac_and_cheese              # Make Mac and Cheese
+    rake name[first_name,last_name]  # Name prints 1st and 2nd arg
+    rake one:two:three               # Run task three
+    rake pwd                         # Current dir
+    ```
 
-```shell
-➜ rake -P
-rake apple:go_to_store
-rake boil_water
-    buy_pasta
-    buy_cheese
-rake buy_cheese
-    go_to_store
-rake buy_pasta
-    go_to_store
-rake default
-    mac_and_cheese
-rake gen:epub
-rake gen:html
-rake gen:mobi
-rake gen:pdf
-rake go_to_store
-rake mac_and_cheese
-    boil_water
-    buy_pasta
-    buy_cheese
-rake name
-rake one:two:three
-rake pwd
-```
+??? example "`rake -P` (list tasks & their dependencies)"
 
-### `rake -W` (list tasks & where they are defined)
+    ```shell
+    ➜ rake -P
+    rake apple:go_to_store
+    rake boil_water
+        buy_pasta
+        buy_cheese
+    rake buy_cheese
+        go_to_store
+    rake buy_pasta
+        go_to_store
+    rake default
+        mac_and_cheese
+    rake gen:epub
+    rake gen:html
+    rake gen:mobi
+    rake gen:pdf
+    rake go_to_store
+    rake mac_and_cheese
+        boil_water
+        buy_pasta
+        buy_cheese
+    rake name
+    rake one:two:three
+    rake pwd
+    ```
 
-```shell
-➜ rake -W
-rake apple:go_to_store              /Users/halyph/Projects/tmp/Rakefile:10:in `block in <top (required)>'
-rake boil_water                     /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:17:in `<top (required)>'
-rake buy_cheese                     /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:7:in `<top (required)>'
-rake buy_pasta                      /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:12:in `<top (required)>'
-rake default                        /Users/halyph/Projects/tmp/Rakefile:1:in `<top (required)>'
-rake gen:epub                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
-rake gen:html                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
-rake gen:mobi                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
-rake gen:pdf                        /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
-rake go_to_store                    /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:22:in `<top (required)>'
-rake mac_and_cheese                 /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:2:in `<top (required)>'
-rake name[first_name,last_name]     /Users/halyph/Projects/tmp/Rakefile:25:in `<top (required)>'
-rake one:two:three                  /Users/halyph/Projects/tmp/Rakefile:18:in `block (2 levels) in <top (required)>'
-rake pwd                            /Users/halyph/Projects/tmp/Rakefile:4:in `<top (required)>'
-```
+??? example "`rake -W` (list tasks & where they are defined)"
+    ```shell
+    ➜ rake -W
+    rake apple:go_to_store              /Users/halyph/Projects/tmp/Rakefile:10:in `block in <top (required)>'
+    rake boil_water                     /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:17:in `<top (required)>'
+    rake buy_cheese                     /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:7:in `<top (required)>'
+    rake buy_pasta                      /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:12:in `<top (required)>'
+    rake default                        /Users/halyph/Projects/tmp/Rakefile:1:in `<top (required)>'
+    rake gen:epub                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
+    rake gen:html                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
+    rake gen:mobi                       /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
+    rake gen:pdf                        /Users/halyph/Projects/tmp/Rakefile:35:in `block (2 levels) in <top (required)>'
+    rake go_to_store                    /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:22:in `<top (required)>'
+    rake mac_and_cheese                 /Users/halyph/Projects/tmp/rakelib/mac_cheese.rake:2:in `<top (required)>'
+    rake name[first_name,last_name]     /Users/halyph/Projects/tmp/Rakefile:25:in `<top (required)>'
+    rake one:two:three                  /Users/halyph/Projects/tmp/Rakefile:18:in `block (2 levels) in <top (required)>'
+    rake pwd                            /Users/halyph/Projects/tmp/Rakefile:4:in `<top (required)>'
+    ```
 
 ## Basic Use Cases
 
