@@ -5,7 +5,9 @@ hide:
 
 # Blog Posts
 
-![logo.png](../logo.png)
+!!! note inline end ""
+
+    ![logo.png](../logo.png)
 
 ## 2023
 
