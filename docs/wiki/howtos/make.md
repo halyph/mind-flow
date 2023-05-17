@@ -9,7 +9,7 @@
 
 ![](make/make_color_help.png)
 
-??? example
+??? example `Makefile`
 
     See origin [My Ultimate Makefile for Golang Projects](https://betterprogramming.pub/my-ultimate-makefile-for-golang-projects-fcc8ca20c9bb)
 
