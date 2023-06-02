@@ -19,7 +19,7 @@ hide:
 
 # Blog Posts
 
-![logo.png](../logo.png)
+<div class="note inline end"> <p><img alt="logo.png" src="../logo.png"></p> </div>
 """
 
 #-----------------------------------------------------------------------------------------
