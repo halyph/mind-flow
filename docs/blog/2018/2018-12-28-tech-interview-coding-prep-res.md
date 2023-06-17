@@ -22,6 +22,7 @@ This section contains the most "important" resources/sites. It's simply not poss
 - [LeetCode](https://leetcode.com)
 - [HackerRank](https://www.hackerrank.com)
   - [**Youtube Channel**](https://www.youtube.com/channel/UCOf7UPMHBjAavgD0Qw5q5ww)
+- [Techie Delight](https://www.techiedelight.com)
 
 ### Others resources
 
@@ -59,8 +60,10 @@ This section contains the most "important" resources/sites. It's simply not poss
 ## Books
 
 - [Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition by *Gayle Laakmann McDowell*](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850)
-  - [Cracking the Coding Interview 6th Ed. Solutions in](https://github.com/careercup/CtCI-6th-Edition) 16 programming languages
-  - [Python Solutions to Cracking the Coding Interview, 6th Edition](https://github.com/careercup/CtCI-6th-Edition-Python)
+  - repo [Cracking the Coding Interview 6th Ed. Solutions in](https://github.com/careercup/CtCI-6th-Edition) 16 programming languages
+  - repo [Python Solutions to Cracking the Coding Interview, 6th Edition](https://github.com/careercup/CtCI-6th-Edition-Python)
+- [Elements of Programming Interviews](https://elementsofprogramminginterviews.com)
+  - repo [EPI Judge](https://github.com/adnanaziz/EPIJudge) contains solutions in Java, Python
 - [Programming Interviews Exposed: Secrets to Landing Your Next Job 3rd Edition by *John Mongan, Noah Suojanen Kindler, Eric Giguere*](https://www.amazon.com/Programming-Interviews-Exposed-Secrets-Landing/dp/1118261364)
 
 ## Courses

@@ -54,6 +54,9 @@ I have collected some amount of these repos.
 
 ## Algorithms
 
+- [kodecocodes/swift-algorithm-club](https://github.com/kodecocodes/swift-algorithm-club)
+  - **tags:** [swift]
+  - **Comments:** Swift Algorithm Club - huge collection of well documented popular DS and algorithms in Swift
 - [iiitv/algos](https://github.com/iiitv/algos)
   - **tags:** [java] [python] [algorithm]
   - **Comments:** Popular Algorithms and Data Structures implemented in popular languages
