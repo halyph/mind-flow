@@ -27,7 +27,7 @@ Just collection of cheatsheets.
 
 ## Golang
 
-- [Goland CHEATSHEET](https://cheatsheet.dennyzhang.com/cheatsheet-golang-a4)
+- [Goland CHEATSHEET](https://web.archive.org/web/20220909073810/https://cheatsheet.dennyzhang.com/cheatsheet-golang-a4)
 
 ## Clojure
 
