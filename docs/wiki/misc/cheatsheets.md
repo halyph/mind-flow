@@ -18,6 +18,8 @@ Just collection of cheatsheets.
   - [Java Programming Cheatsheet](https://introcs.cs.princeton.edu/java/11cheatsheet/) - just nice and clean Java lang cheatsheet
   - [Algorithms and Data Structures Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/) - code samples are in Java
 - [Java Collections Cheat Sheet](https://www.jrebel.com/blog/java-collections-cheat-sheet) by JRebel, also there is one-page PDF
+- [Java cheat sheet for interview](https://github.com/jsjtzyy/LeetCode/blob/master/Java%20cheat%20sheet%20for%20interview)
+- [DSA Coding Cheatsheet for Java](https://pradkum.hashnode.dev/dsa-coding-cheatsheet-for-java)
 
 ## Scala
 
@@ -28,6 +30,7 @@ Just collection of cheatsheets.
 ## Golang
 
 - [Goland CHEATSHEET](https://web.archive.org/web/20220909073810/https://cheatsheet.dennyzhang.com/cheatsheet-golang-a4)
+- [a8m/golang-cheat-sheet](https://github.com/a8m/golang-cheat-sheet)
 
 ## Clojure
 
