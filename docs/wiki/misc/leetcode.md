@@ -9,4 +9,3 @@ Just collection of links useful for coding interview
 - Neetcode
   - [Roadmap](https://neetcode.io/roadmap)
   - [Practice Problems](https://neetcode.io/practice)
-- [Big-O Cheatsheet](https://www.bigocheatsheet.com)
