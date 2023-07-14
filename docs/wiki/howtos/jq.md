@@ -1,5 +1,9 @@
 # jq
 
+## References
+
+- ["Reshaping JSON with jq" by Matthew Lincoln](https://programminghistorian.org/en/lessons/json-and-jq)
+
 ## Get Kubernetes pods labels and store them in CSV format
 
 - Get pods in JSON format
