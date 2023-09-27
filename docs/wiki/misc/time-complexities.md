@@ -1,4 +1,4 @@
-# Data Structures and Algorithms
+# Time Complexities
 
 ## Examples Related to Time Complexities
 
