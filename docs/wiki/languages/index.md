@@ -1,11 +1,11 @@
-# My selection
+# My Programming Language Ranking
 
 I like selecting programming languages based on my subjective criteria.
 
 ## Programming Languages
 
-- :first_place: : :lang-java: Java, :lang-scala: Scala
-- :second_place: : :lang-go: Golang, :lang-python: Python
+- :first_place: : :lang-go: Golang, :lang-python: Python
+- :second_place: : :lang-java: Java, :lang-scala: Scala
 - :third_place: : :lang-c: C, :lang-javascript: JavaScript
 
 Tech Radar:
@@ -18,7 +18,7 @@ Tech Radar:
 | **CLI**                | Golang |
 | **ML/DS/DA/DE**        | Python |
 | **Web**                | Javascript |
-| **Desktop**            | Java |
+| **Desktop**            | Python |
 | **System programming** | C |
 
 ## On HOLD
