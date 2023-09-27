@@ -1,4 +1,4 @@
-# My Programming Language Ranking
+# My Programming Languages Ranking
 
 I like selecting programming languages based on my subjective criteria.
 
