@@ -1,3 +1,12 @@
+---
+tags:
+  - video
+  - golang
+  - testing
+  - GopherCon
+  - GopherCon 2017
+---
+
 # Advanced Testing with Go
 
 ## References
@@ -80,6 +89,7 @@ func TestAdd(t *testing.T) {
 	// ... Do something with data
 }
 ```
+
 - `go test` sets pwd as package directory
 - Use relative path `test-fixtures` directory as a place to store test data 
 - Very useful for loading config, model data, binary data, etc.
