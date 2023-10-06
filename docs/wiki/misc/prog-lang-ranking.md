@@ -12,13 +12,13 @@ Tech Radar:
 
 | **Domains**            | **Languages** |
 |------------------------|---------------|
-| **Back-End**           | Java, Golang, Scala |
+| **Back-End**           | Golang, Scala, Java |
 | **Scripting**          | Python |
 | **Infrastructure**     | Golang |
 | **CLI**                | Golang |
 | **ML/DS/DA/DE**        | Python |
 | **Web**                | Javascript |
-| **Desktop**            | Python |
+| **Desktop**            | Java |
 | **System programming** | C |
 
 ## On HOLD
@@ -88,7 +88,7 @@ Tech Radar:
 - Scheme
 - Racket
 
-### References
+## References
 
 List of ratings I used regularly while checking language popularity.
 

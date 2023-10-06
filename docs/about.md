@@ -19,4 +19,4 @@ I am not sure whether it will be valuable for other people. So you are warned ðŸ
 - *"You can call me Susan if it makes you happy"* - Bullet Tooth Tony
 - *"You should never underestimate the predictability of stupidity"* - Bullet Tooth Tony
 - *"Always leave the campground cleaner than you found it"* - Boy Scout Rule
-- *"Prefer good over perfect"*
+- *"Continuous improvement towards perfection"*
