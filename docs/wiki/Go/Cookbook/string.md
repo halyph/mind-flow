@@ -1,3 +1,8 @@
+---
+tags:
+  - golang
+---
+
 # Strings and Text
 
 ## 1. Changing a character in a string

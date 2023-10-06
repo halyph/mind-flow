@@ -1,3 +1,8 @@
+---
+tags:
+  - golang
+---
+
 # Slices
 
 ## Simulating operations with `append`

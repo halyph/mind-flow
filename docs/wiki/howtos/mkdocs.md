@@ -1,3 +1,8 @@
+---
+tags:
+  - mkdocs
+---
+
 # Mkdocs
 
 ## Plugins

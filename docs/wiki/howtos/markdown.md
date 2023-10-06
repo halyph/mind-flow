@@ -1,3 +1,8 @@
+---
+tags:
+  - markdown
+---
+
 # Markdown
 
 ## Basic syntax

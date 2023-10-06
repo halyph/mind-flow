@@ -1,3 +1,9 @@
+---
+tags:
+  - ruby
+  - rake
+---
+
 # Rake
 
 ## Sample Rakefiles

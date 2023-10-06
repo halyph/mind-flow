@@ -1,3 +1,8 @@
+---
+tags:
+  - leetcode
+---
+
 # Leetcode
 
 Just collection of links useful for coding interview

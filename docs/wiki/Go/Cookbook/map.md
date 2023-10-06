@@ -1,3 +1,8 @@
+---
+tags:
+  - golang
+---
+
 # Maps
 
 ## 1. Sort a map

@@ -1,3 +1,13 @@
+---
+tags:
+  - cheatsheet
+  - java
+  - python
+  - scala
+  - golang
+  - clojure
+---
+
 # Cheatsheets
 
 Just collection of cheatsheets.

@@ -101,3 +101,6 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
+  - tags:
+      tags: true
+      tags_file: wiki/tags.md

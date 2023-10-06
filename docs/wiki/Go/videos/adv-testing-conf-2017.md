@@ -1,8 +1,9 @@
 ---
 tags:
-  - video
   - golang
+  - video
   - testing
+  - conference
   - GopherCon
   - GopherCon 2017
 ---
