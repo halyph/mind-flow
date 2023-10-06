@@ -1,11 +1,12 @@
 ---
+date: 2017-07-24
 tags:
+  - video 
   - golang
-  - video
   - testing
   - conference
-  - GopherCon
-  - GopherCon 2017
+  - gopherCon
+  - gopherCon 2017
 ---
 
 # Advanced Testing with Go
@@ -14,7 +15,7 @@ tags:
 
 **GopherCon 2017: Advanced Testing with Go** by *Mitchell Hashimoto*:
 
-- [Video](https://www.youtube.com/watch?v=8hQG7QlcLBk&list=PL2ntRZ1ySWBdD9bru6IR-_WXUgJqvrtx9&index=13)
+- [Video](https://www.youtube.com/watch?v=8hQG7QlcLBk)
 - [Slides](https://speakerdeck.com/mitchellh/advanced-testing-with-go)
 
 ## Table Driven Tests
