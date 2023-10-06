@@ -432,7 +432,8 @@ func main() {
 	- `struct DownloaderMock{}` => Implements Downloder as a mock, allowing recording and replaying of calls.
 
 See:
-- [github.com/mitchellh/go-testing-interface](github.com/mitchellh/go-testing-interface) for `testing.T` interface
+
+- [github.com/mitchellh/go-testing-interface](https://github.com/mitchellh/go-testing-interface) for `testing.T` interface
 - Using the real "testing" package will modify global state (adds flags to
 the global flag), and allows testing your test APls!
 

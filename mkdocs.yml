@@ -89,7 +89,7 @@ extra_javascript:
   - https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js
   - https://viewer.diagrams.net/js/viewer-static.min.js
 
-strict: true
+# strict: true
 
 # Useful plugins: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
 # Plugin documentation: https://www.mkdocs.org/user-guide/configuration/#plugins

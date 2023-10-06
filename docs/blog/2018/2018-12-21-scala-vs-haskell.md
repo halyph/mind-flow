@@ -12,5 +12,5 @@
 - [Haskell vs. Scala programming language: which should you learn in 2017](https://www.freelancinggig.com/blog/2017/02/24/haskell-vs-scala-programming-language-learn-2017/)
 - [The Origins of Scala, A Conversation with Martin Odersky, Part I" by Bill Venners and Frank Sommers, 2009-05-04](https://www.artima.com/scalazine/articles/origins_of_scala.html)
 - Reddit
-  - [r/ProgrammingLanguages - Functional programming in Haskell vs Scala](r/ProgrammingLanguages/comments/7tybv8/functional_programming_in_haskell_vs_scala/)
-  - [r/scala - Functional programming in Haskell vs Scala](r/scala/comments/9krgwx/functional_programming_in_haskell_vs_scala/)
+  - [r/ProgrammingLanguages - Functional programming in Haskell vs Scala](https://www.reddit.com/r/ProgrammingLanguages/comments/7tybv8/functional_programming_in_haskell_vs_scala/)
+  - [r/scala - Functional programming in Haskell vs Scala](https://www.reddit.com/r/scala/comments/9krgwx/functional_programming_in_haskell_vs_scala/)
