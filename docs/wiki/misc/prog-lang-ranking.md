@@ -94,6 +94,6 @@ List of ratings I used regularly while checking language popularity.
 
 - [TIOBE Index](https://www.tiobe.com/tiobe-index/)
 - [PYPL PopularitY of Programming Language Index](https://pypl.github.io/PYPL.html)
-- [IEEE Top Programming Languages - 2022](https://spectrum.ieee.org/top-programming-languages-2022)
-- [The RedMonk Programming Language Rankings: June 2017](https://redmonk.com/sogrady/2022/10/20/language-rankings-6-22/)
-- [PLDB - Programming Language DataBase](https://pldb.com/lists/top1000.html)
+- [IEEE Top Programming Languages - 2023](https://spectrum.ieee.org/the-top-programming-languages-2023)
+- [The RedMonk Programming Language Rankings: January 2023](https://redmonk.com/sogrady/2023/05/16/language-rankings-1-23/)
+- [PLDB - Programming Language DataBase](https://pldb.pub/lists/top1000.html)
