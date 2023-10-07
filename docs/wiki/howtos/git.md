@@ -5,7 +5,7 @@ tags:
 
 [git-reset]: https://www.freecodecamp.org/news/git-revert-commit-how-to-undo-the-last-commit/ "Git Revert Commit – How to Undo the Last Commit"
 
-# Git
+# git
 
 ## Undo the Last Commit
 

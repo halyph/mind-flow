@@ -1,4 +1,4 @@
-# Frameworks
+# Java Frameworks
 
 *Collection of frameworks I find interesting or important for Java Ecosystem*
 
