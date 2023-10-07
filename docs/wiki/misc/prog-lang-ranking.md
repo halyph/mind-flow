@@ -12,7 +12,7 @@ Tech Radar:
 
 | **Domains**            | **Languages** |
 |------------------------|---------------|
-| **Back-End**           | Golang, Scala, Java |
+| **Back-End**           | Golang |
 | **Scripting**          | Python |
 | **Infrastructure**     | Golang |
 | **CLI**                | Golang |
