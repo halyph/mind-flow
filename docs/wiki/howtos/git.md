@@ -13,7 +13,7 @@ tags:
 
 ### soft reset
 
-!!! note
+??? note
 
     The `--soft` option means that you will not lose the uncommitted changes you may have.
 
@@ -23,7 +23,7 @@ git reset --soft HEAD~1
 
 ### hard reset
 
-!!! note
+??? note
   
     If you want to reset to the last commit and also remove all unstaged changes, you can use the `--hard` option
 
