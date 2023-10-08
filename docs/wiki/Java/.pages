@@ -2,9 +2,4 @@ order: asc
 sort_type: natural
 nav:
     - index.md
-    - howtos
-    - Go
-    - Python
-    - Java
     - ...
-    - tags.md

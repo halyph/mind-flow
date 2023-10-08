@@ -3,7 +3,7 @@ tags:
   - python
 ---
 
-# Usesul links
+# Python usesul links
 
 <div class="note inline end"> <p><img alt="logo.png" src="index/python-logo.png"></p> </div>
 
