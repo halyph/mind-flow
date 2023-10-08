@@ -72,7 +72,7 @@ I don't understand why such old community hasn't agreed on some recommended buil
 But I am talking as seasonal Python user. Maybe there are some reason. Anyway, what I wanted to say: I try to avoid as much as possible any Python tools ceremonies and
 use only simplest possible standard tools: `pip`, `venv` and `requirements.txt`.
 
-Just check [Distributing Python Modules](https://docs.python.org/3/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really? 
+Just check [Distributing Python Modules](https://docs.python.org/3.10/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3.10/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really? 
 
 Do not forget, Python went public in 1991 (31 years ago). FTW!
 
