@@ -5,7 +5,7 @@ I have a my list several books related to this topic. I've decided to list it he
 
 - [Algorithms, 4th Edition](#algorithms-4th-edition)
 - [Introduction to Algorithms, 3rd Edition](#introduction-to-algorithms-3rd-edition)
-- [The Algorithm Design Manual, 2nd Edition](#the-algorithm-design-manual-2nd-edition)
+- [The Algorithm Design Manual, 3rd Edition](#the-algorithm-design-manual-3rd-edition)
 - [Data Structures and Algorithms in Python, 1st Edition](#data-structures-and-algorithms-in-python-1st-edition)
 
 ---
@@ -13,6 +13,8 @@ I have a my list several books related to this topic. I've decided to list it he
 ## Algorithms, 4th Edition
 
 ![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.jpg)
+
+- [book site](https://algs4.cs.princeton.edu)
 - ["Algorithms" 4th Edition by *Robert Sedgewick, Kevin Wayne*](https://www.amazon.com/dp/032157351X/)
 - Hardcover: 976 pages
 - Publisher: Addison-Wesley Professional; 4th edition (March 19, 2011)
@@ -109,13 +111,14 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
   - C Counting and Probability
   - D Matrices
 
-## The Algorithm Design Manual, 2nd Edition
+## The Algorithm Design Manual, 3rd Edition
 
 ![skiena.jpg](2019-01-13-alg-and-ds-books/skiena.jpg)
 
--  ["The Algorithm Design Manual", 2nd ed. 2008 Edition by *Steven S. Skiena*](https://www.amazon.com/Algorithm-Design-Manual-Steven-Skiena/dp/1849967202)
-- Paperback: 730 pages
-- Publisher: Springer; 2nd ed. 2008 edition (November 5, 2010)
+- [book site](https://www.algorist.com)
+- ["The Algorithm Design Manual", 3rd ed., 2020  by *Steven S. Skiena*](https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542580/dp/3030542580)
+- Paperback: 810 pages
+- Publisher: Springer; 3rd ed. 2020 edition (October 7, 2021)
 
 **Table of Contents**:
 

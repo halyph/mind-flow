@@ -10,6 +10,7 @@ Just collection of links useful for coding interview
 - mind-flow
   - [Resources for Practicing Coding Interview](../../blog/2018/2018-12-28-tech-interview-coding-prep-res.md)
   - [Algorithms, System Design, Interview Preparation - Github Repos](../../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
+  - [Top "Algorithms and Data Structures" Books](../../blog/2019/2019-01-13-alg-and-ds-books.md)
 - [Leetcode patterns](https://seanprashad.com/leetcode-patterns/), see [*repo*](https://github.com/seanprashad/leetcode-patterns)
 - Neetcode
   - [Roadmap](https://neetcode.io/roadmap)
