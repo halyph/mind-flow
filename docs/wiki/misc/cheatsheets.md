@@ -28,8 +28,10 @@ Just collection of cheatsheets.
   - [Java Programming Cheatsheet](https://introcs.cs.princeton.edu/java/11cheatsheet/) - just nice and clean Java lang cheatsheet
   - [Algorithms and Data Structures Cheatsheet](https://algs4.cs.princeton.edu/cheatsheet/) - code samples are in Java
 - [Java Collections Cheat Sheet](https://www.jrebel.com/blog/java-collections-cheat-sheet) by JRebel, also there is one-page PDF
+- [Cheat Sheet on Java Collection by Tushar Ghosh](https://tusharghosh09006.medium.com/cheat-sheet-on-java-collection-709ca96edc9d)
 - [Java cheat sheet for interview](https://github.com/jsjtzyy/LeetCode/blob/master/Java%20cheat%20sheet%20for%20interview)
 - [DSA Coding Cheatsheet for Java](https://pradkum.hashnode.dev/dsa-coding-cheatsheet-for-java)
+- [Java interview Cheatsheet ](https://yungnickyoung.github.io/Java-Cheatsheet/) - Java notes cheatsheet, focusing on fundamentals and useful interview tips
 
 ## Scala
 
