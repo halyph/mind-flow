@@ -11,7 +11,9 @@ tags:
 
 - [inside.java](https://inside.java) - news
 - [dev.java](https://dev.java) - *entry point for Java*: tutorials, docs, playground
-
+- [The Collections Framework](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/package-summary.html)
+  - [Collections Framework Overview](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/doc-files/coll-overview.html)
+  - [Outline of the Collections Framework](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/doc-files/coll-reference.html) 
 
 ## Sites/Repos
 
