@@ -14,6 +14,7 @@ tags:
 - [**mkdocs-literate-nav**](https://oprypin.github.io/mkdocs-literate-nav/) specifies the navigation in Markdown instead of YAML
 - [**mkdocs-gen-files**](https://oprypin.github.io/mkdocs-gen-files/) programmatically generate documentation pages during the build
 - [**mkdocs-same-dir**](https://oprypin.github.io/mkdocs-same-dir/) allows placing `mkdocs.yml`` in the same directory as documentation
+- [**mkdocstrings**](https://github.com/mkdocstrings/mkdocstrings) automatic documentation from sources
 
 ## Deployment
 
