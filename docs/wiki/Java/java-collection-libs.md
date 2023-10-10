@@ -2,10 +2,10 @@
 tags:
   - java
   - data structure
-  - algorithms
+  - algorithm
 ---
 
-# Java Collection Libraries
+# Java Collections Libraries
 
 ## Overview
 
@@ -20,5 +20,6 @@ tags:
 - *Persistent collections*
   - [**vavr**](https://github.com/vavr-io/vavr) provides persistent collections, functional abstractions for error handling, concurrent programming, pattern matching and much more
 - *Personal*
+  - [**kevin-wayne/algs4**](https://github.com/kevin-wayne/algs4/) repo is "Algorithms", 4th edition textbook code and libraries
   - [**java-algorithms-implementation**](https://github.com/phishman3579/java-algorithms-implementation) sample algorithms and data structures implemented in Java
   - [**williamfiset/Algorithms**](https://github.com/williamfiset/Algorithms) is a collection of algorithms and data structures

@@ -15,6 +15,7 @@ I have a my list several books related to this topic. I've decided to list it he
 ![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.jpg)
 
 - [book site](https://algs4.cs.princeton.edu)
+- **videos**: [part1](https://www.youtube.com/watch?v=9diDWV-fOnE) and [part2](https://www.youtube.com/watch?v=6TW3JSVEJQE)
 - ["Algorithms" 4th Edition by *Robert Sedgewick, Kevin Wayne*](https://www.amazon.com/dp/032157351X/)
 - Hardcover: 976 pages
 - Publisher: Addison-Wesley Professional; 4th edition (March 19, 2011)
