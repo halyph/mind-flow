@@ -21,8 +21,8 @@ theme:
   include_sidebar: false
 
   font:
-    text: Roboto Slab
-    code: JetBrains Mono
+    text: Roboto
+    code: Roboto Mono
 
   # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   palette:
