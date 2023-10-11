@@ -9,7 +9,7 @@ README_HEADER = """# Mind~Flow
 
 _Another try of blogging or personal knowledge base_
 
-![logo.png](docs/logo.png)
+![logo.png](docs/assets/logo.png)
 """
 
 MKDOCS_HEADER = """---
@@ -19,7 +19,7 @@ hide:
 
 # Blog Posts
 
-<div class="note inline end"> <p><img alt="logo.png" src="../logo.png"></p> </div>
+<div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/logo.png"></p> </div>
 """
 
 #-----------------------------------------------------------------------------------------
