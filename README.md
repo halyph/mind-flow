@@ -4,7 +4,7 @@
 
 _Another try of blogging or personal knowledge base_
 
-![logo.png](docs/assets/logo.png)
+![logo.png](docs/assets/images/logo.png)
 
 ## 2023
 

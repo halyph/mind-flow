@@ -5,7 +5,7 @@ hide:
 
 # Blog Posts
 
-<div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/logo.png"></p> </div>
+<div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
 ## 2023
 
