@@ -27,7 +27,8 @@ Here is a collections of sites and repos for my inspiration
   - [Google Engineering Practices Documentation](https://google.github.io/eng-practices/) based on *[jekyll-theme-primer]*
   - [Tom Preston-Werner](https://tom.preston-werner.com)
 - **Mkdocs material**
-  - https://3os.org
+  - [Privacy Guides](https://www.privacyguides.org) - very nice theme
+  - [3os Project](https://3os.org)
   - [Made With ML](https://madewithml.com) and corresponding [repo](https://github.com/GokuMohandas/mlops-course)
   - [The Blue Book](https://lyz-code.github.io/blue-book/) - *"my personal digital garden where I share everything I learn about a huge variety of topics"*
   - [Awesome-Astra](https://awesome-astra.github.io/docs/pages/develop/languages/java/) - Tutorials, documentation and learning materials to build great applications or connect external tools to Astra.
