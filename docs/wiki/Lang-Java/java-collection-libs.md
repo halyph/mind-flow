@@ -25,3 +25,22 @@ tags:
   - [**kevin-wayne/algs4**](https://github.com/kevin-wayne/algs4/) is a repo for "Algorithms" 4th edition book's code and libraries
   - [**java-algorithms-implementation**](https://github.com/phishman3579/java-algorithms-implementation) sample algorithms and data structures implemented in Java
   - [**williamfiset/Algorithms**](https://github.com/williamfiset/Algorithms) is a collection of algorithms and data structures
+
+## Java Collections Framework
+
+Name | Description |
+---------|----------|
+`ArrayList` | An indexed sequence that grows and shrinks dynamically
+`LinkedList` | An ordered sequence that allows efficient insertions and removal at any location
+`ArrayDeque` | A double-ended queue that is implemented as a circular array
+`HashSet` | An unordered collection that rejects duplicates
+`TreeSet` | A sorted set
+`EnumSet` | A set of enumerated type values
+`LinkedHashSet` | A set that remembers the order in which elements were inserted
+`PriorityQueue` | A collection that allows efficient removal of the smallest element
+`HashMap` | A data structure that stores key/value associations
+`TreeMap` | A map in which the keys are sorted
+`EnumMap` | A map in which the keys belong to an enumerated type
+`LinkedHashMap` | A map that remembers the order in which entries were added
+`WeakHashMap` | A map with values that can be reclaimed by the garbage collector if they are not used elsewhere
+`IdentityHashMap` | A map with keys that are compared by ==, not equals
