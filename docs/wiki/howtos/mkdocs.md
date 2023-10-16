@@ -5,6 +5,10 @@ tags:
 
 # Mkdocs
 
+## Official doc
+
+- [Repository icon](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon)
+
 ## Plugins
 
 :star: [mkdocs/catalog](https://github.com/mkdocs/catalog) is a list of awesome MkDocs projects and plugins.

@@ -1,3 +1,13 @@
+---
+icon: material/radar
+tags:
+  - java
+  - scala
+  - python
+  - golang
+  - clojure
+---
+
 # My Programming Languages Ranking
 
 I like selecting programming languages based on my subjective criteria.

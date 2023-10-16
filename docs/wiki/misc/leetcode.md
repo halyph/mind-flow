@@ -1,4 +1,5 @@
 ---
+icon: simple/leetcode
 tags:
   - leetcode
 ---
@@ -59,17 +60,17 @@ Just collection of links useful for coding interview
   - **Map/Set** for *O(1) time* & *O(n) space*
   - **Sort input** for *O(n * log n) time* and *O(1) space*
 
-## Java Way
+## :lang-java: Java
 
 - `<>` diamond operator
 - `Objects` utility class 
 - `0b001_00001`
 - Have a convention for identifiers:
-	- `i, j ,k` for array indices, 
-	- `A,B,C` for arrays, 
-	- `u,v,w` for vectors, 
-	- `s` for a `String`, 
-	- `sb` for a `StringBuilder`
+  - `i, j ,k` for array indices
+  - `A,B,C` for arrays
+  - `u,v,w` for vectors
+  - `s` for a `String`
+  - `sb` for a `StringBuilder`
 
 ## Data structure
 
