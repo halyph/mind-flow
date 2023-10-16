@@ -251,39 +251,3 @@ func main() {
 	fmt.Println("N = 100, Number of instructions O(n) ::", fun10(100))
 }
 ```
-
-## Construct a Double-Linked List
-
-```go
-package main
-
-import (
-	"container/list"
-	"fmt"
-)
-
-func insertListElements(n int) *list.List { // add elements in list from 1 to n
-	lst := list.New()
-	for i := 1; i <= n; i++ {
-		lst.PushBack(i) // insertion here
-	}
-	return lst
-}
-
-func main() {
-	n := 5
-	myList := insertListElements(n)
-	for e := myList.Front(); e != nil; e = e.Next() {
-		fmt.Println(e.Value)
-	}
-}
-```
-
-??? example "Output"
-    ```
-    1
-    2
-    3
-    4
-    5
-    ```
