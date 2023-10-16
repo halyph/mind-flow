@@ -32,6 +32,7 @@ Just collection of links useful for coding interview
   - [Roadmap](https://neetcode.io/roadmap)
   - [Practice Problems](https://neetcode.io/practice)
 - [PIRATE KING](https://www.piratekingdom.com/) - Leetcode Tips and tricks
+- [Awesome Competitive Programming ](https://github.com/lnishan/awesome-competitive-programming) a curated list of awesome Competitive Programming, Algorithm and Data Structure resources
 
 ### Repos
 
