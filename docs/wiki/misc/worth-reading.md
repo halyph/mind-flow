@@ -1,8 +1,8 @@
 # Worth reading
 
-## Blogs
-
 ⚠️ *Of course, there is much more to read, but I've decided to add only resources with 100% value.*
+
+## Blogs
 
 - [Paul Graham](http://www.paulgraham.com) is known for [Y Combinator](https://www.ycombinator.com/) and [Hacker News](https://news.ycombinator.com/)
 - [Joel Spolsky](https://www.joelonsoftware.com) is co-founder of [Stack Overflow](https://stackoverflow.com/)
