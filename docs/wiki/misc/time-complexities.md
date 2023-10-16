@@ -2,7 +2,7 @@
 
 ## Examples Related to Time Complexities
 
-### Ex 1: `O(n)` for loop
+### Ex 1: **O(n)** for loop
 
 ```go
 package main
@@ -24,7 +24,7 @@ func main() {
 }
 ```
 
-### Ex 2: `O(n^2)` Nested for loop
+### Ex 2: **O(n^2^)** Nested for loop
 
 ```go
 package main
@@ -48,7 +48,7 @@ func main() {
 }
 ```
 
-### Ex 3: `O(n^2)` Arithmetic series
+### Ex 3: **O(n^2^)** Arithmetic series
 
 The exact number of steps will go the same way as those of the arithmetic series. In this case, the time complexity will be: `O(n + (n−1) + (n−2) + ...) =  O(n(n+1)/2)  =  O(n^2)`
 
@@ -74,7 +74,7 @@ func main() {
 }
 ```
 
-### Ex 4: `O(log(n))` Double the iteration variable
+### Ex 4: **O(log(n))** Double the iteration variable
 
 ```go
 package main
@@ -98,7 +98,7 @@ func main() {
 }
 ```
 
-### Ex 5: `O(log(n))` Half the iteration variable
+### Ex 5: **O(log(n))** Half the iteration variable
 
 ```go
 package main
@@ -122,7 +122,7 @@ func main() {
 }
 ```
 
-### Ex 6: `O(n ^ (3/2))` Square root iteration
+### Ex 6: **O(n ^3/2^)** Square root iteration
 
 In this example, we consider the size of the inner loop as the square root of `n`. The size of our program is `(n∗√n)`. Thus, its time complexity is `O(n ^ (3/2))`.
 
@@ -150,7 +150,7 @@ func main() {
 }
 ```
 
-### Ex 7: Nested loop in `O(n)`
+### Ex 7: Nested loop in **O(n)**
 
 ```go
 package main
@@ -175,7 +175,7 @@ func main() {
 
 ```
 
-### Ex 8: `O(n^2)` Arithmetic progression
+### Ex 8: **O(n^2^)** Arithmetic progression
 
 ```go
 package main
@@ -199,7 +199,7 @@ func main() {
 }
 ```
 
-### Ex 9: `O(n^3)` Triple nested loop
+### Ex 9: **O(n^3^)** Triple nested loop
 
 ```go
 package main
@@ -225,7 +225,7 @@ func main() {
 }
 ```
 
-### Ex 10: Multiple loops in `O(n)`
+### Ex 10: Multiple loops in **O(n)**
 
 This is a tricky one. In this example, `j` is not initialized for every iteration. For `i=0`, the loop of `j` executes completely. But for the remaining values of `i`, the loop of `j` does not execute. Time complexity, in this case, is `O(n)`
  

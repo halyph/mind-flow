@@ -57,10 +57,17 @@ markdown_extensions:
 - smarty
 - extra
 - codehilite
-- pymdownx.magiclink
+- pymdownx.caret
+- pymdownx.critic
 - pymdownx.details
+- pymdownx.keys
+- pymdownx.magiclink
 - pymdownx.mark
 - pymdownx.superfences
+- pymdownx.tilde
+- pymdownx.highlight:
+    auto_title: true
+    linenums: true
 - mdx_truly_sane_lists
 - tables
 - attr_list
