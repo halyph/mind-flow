@@ -9,6 +9,7 @@ tags:
 
 - [cmd/go](https://pkg.go.dev/cmd/go)
   - [Environment variables](https://pkg.go.dev/cmd/go#hdr-Environment_variables)
+  - [`go test` Testing flags](https://pkg.go.dev/cmd/go#hdr-Testing_flags)
 
 ## Miscellaneous
 
