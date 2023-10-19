@@ -1,7 +1,6 @@
 title: Go
-
+order: asc
 sort_type: natural
-title: Java
 nav:
     - index.md
     - ...
