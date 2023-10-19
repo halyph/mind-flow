@@ -13,4 +13,3 @@
 ## Tech
 
 - [Real Python](https://realpython.com/) high quality Python tutorials
-- [Go: A Documentary](https://golang.design/history/) is a collection of interesting (publicly observable) issues, discussions, proposals, CLs, and talks from the Go development process, which intends to offer a comprehensive reference of the Go **history**.
