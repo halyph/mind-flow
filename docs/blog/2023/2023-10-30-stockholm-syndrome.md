@@ -14,7 +14,7 @@ We can apply the following phases (in terms of develper's experience) to every p
 
 In general when we are learning something new it's an excitement. We tend to like opening a new horizon. We prefer to reveal every new feature just because it's "new". But then we spend more and more time with a programming language and discover different language's nuances, tricks, corner cases etc.
 
-The most interesting that there is no perfect language. But software engineers tend to emotionally attanch to programming language*s* and see only positive side of the it. I saw/see such behaviour in several communities.  
+The most interesting that there is no perfect language. But software engineers tend to emotionally attanch to programming language*s* and see only positive side of it. I saw/see such behaviour in several communities.  
 When people spent so many time with beloved language they couldn't see quirks and design issues. Their common reply to obvious criticism is: "it's not Pythonic", "it's not Go-way" or "we are doing this in X-lang differently" and so on.
 
 Another interesting sign is "us vs them", "our community is better".
