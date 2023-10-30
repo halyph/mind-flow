@@ -8,6 +8,7 @@ _Another try of blogging or personal knowledge base_
 
 ## 2023
 
+- 2023-10-30 - [Stockholm Syndrome and Programming Languages](docs/blog/2023/2023-10-30-stockholm-syndrome.md)
 - 2023-10-14 - [Why MacOS make version is outdated?](docs/blog/2023/2023-10-14-macos-make.md)
 - 2023-06-02 - [P-99: Ninety-Nine Problems](docs/blog/2023/2023-06-02-P99-problems.md)
 - 2023-04-06 - [First official Javadoc version](docs/blog/2023/2023-04-06-javadoc.md)
