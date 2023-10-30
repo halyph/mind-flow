@@ -13,6 +13,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 | Year | Total | (E)Book | Audiobook |
 |------|-------|---------|-----------|
+| 2023 | 13    | 8       | 5         |
 | 2022 | 19    | 7       | 12        |
 | 2021 | 10    | 9       | 1         |
 | 2020 | 28    | 7       | 21        |
@@ -23,6 +24,29 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 | 2015 | 5     | 5       | -         |
 | 2014 | 4     | 4       | -         |
 | 2013 | 6     | 6       | -         |
+
+
+## 2023
+
+**Read (Book or EBook)**
+
+1. *Від нуля до одиниці! Нотатки про стартапи, або як створити майбутнє*, by **Пітер Тіль** (Наш Формат, 2015), ISBN 9786177279142
+2. *We Are The Nerds: The Birth and Tumultuous Life of Reddit, the Internet's Culture Laboratory*, by **Christine Lagorio-Chafkin** (Hachette, 2018), ISBN 0349416362
+3. *NETFLIX. Ця ідея ніколи не спрацює*, by **Marc Randolph** (Book Chef, 2020), ISBN 9789669932044
+4. *Netflix і культура інновацій*, by **Рід Гастінгс, Ерін Маєр** (Віват, 2021), ISBN 9789669823038
+5. *The Tech Resume Inside Out*, by **Gergely Orosz** (2020), ISBN 9781636494166
+6. *Rake Task Management Essentials*, by **Andrey Koleshko** (Packt Publishing, 2014), ISBN 1783280786
+7. *Десять причин видалити акаунт із соцмереж просто зараз*, by **Джарон Ланьє** (Vivat, 2020), ISBN 9789669820952
+8. *100 Go Mistakes and How to Avoid Them*, by **Teiva Harsanyi** (Manning Publications, 2022), ISBN 1617299596
+
+**Listened (Audiobook)**
+
+1. *The Art of Leadership: Small Things, Done Well*, by **Michael Lopp** (O'Reilly Media, 2020), ISBN 1492045691
+2. *The Software Architect Elevator: Redefining the Architect's Role in the Digital Enterprise*, by **Gregor Hohpe** (O'Reilly Media, 2020), ISBN 1492077542
+3. *The Spotify Play: How CEO and Founder Daniel Ek Beat Apple, Google, and Amazon in the Race for Audio Dominance*, by **Sven Carlsson, Jonas Leijonhufvud** (Diversion Books, 2021), ISBN 1635767458
+4. *Танці з кістками*, by **Андрій Сем’янків** (Віхола, 2022), ISBN 6177960677
+5. *Тривожні люди*, by **Фредрік Бакман** (книголав, 2021), ISBN 6177820913
+
 
 ## 2022
 
