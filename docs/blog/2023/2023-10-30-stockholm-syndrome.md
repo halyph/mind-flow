@@ -22,8 +22,8 @@ Another interesting sign is "us vs them", "our community is better".
 > P.S. generalization is bad, just switch on critical thinking 😉
 
 I noticed a distinct characteristic, the *stockholm syndrome* can be applied to software engineer:
-  1. who spend majority of time with minimal number of programming languages and can't compare with others languages
-  2. he spent last several years (e.g. 4+ years) with only one language and convinced himself in language perfection
+  1. who spends majority of time with minimal number of programming languages and can't compare with others languages
+  2. who spent last several years (e.g. 4+ years) with only one language and convinced himself in language perfection
 
 So he has a limited perspective (or bias) and honestly believe that "his" language is the best.
 
