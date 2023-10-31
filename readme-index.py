@@ -5,7 +5,7 @@ from collections import defaultdict
 
 README_HEADER = """# Mind~Flow
 
-[[twitter](https://twitter.com/halyph)]  [[linkedin](https://www.linkedin.com/in/oivasiv/)]  [[bookshelf](docs/bookshelf.md)]
+[[linkedin](https://www.linkedin.com/in/oivasiv/)]  [[bookshelf](docs/bookshelf.md)]
 
 _Another try of blogging or personal knowledge base_
 
