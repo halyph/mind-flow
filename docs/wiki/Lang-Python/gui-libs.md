@@ -29,7 +29,7 @@ For now, I am interesting in **Tkinter** and related libraries (i.e. **PySimpleG
 
 From the official [documentation](https://docs.python.org/3/library/tkinter.html):
 
-> Running `python -m tkinter`` from the command line should open a window demonstrating a simple Tk interface, letting you know that tkinter is properly installed on your system, and also showing what version of Tcl/Tk is installed, so you can read the Tcl/Tk documentation specific to that version.
+> Running `python -m tkinter` from the command line should open a window demonstrating a simple Tk interface, letting you know that tkinter is properly installed on your system, and also showing what version of Tcl/Tk is installed, so you can read the Tcl/Tk documentation specific to that version.
 
 ```shell
 ➜ python3 -m tkinter
