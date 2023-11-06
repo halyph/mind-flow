@@ -1,5 +1,4 @@
 ---
-icon: simple/leetcode
 tags:
   - leetcode
 ---

@@ -1,5 +1,4 @@
 ---
-icon: material/tools
 tags:
   - tool
 ---

@@ -1,5 +1,4 @@
 ---
-icon: material/radar
 tags:
   - java
   - scala
