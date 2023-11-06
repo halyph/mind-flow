@@ -43,3 +43,16 @@ git branch -r | grep origin/dependabot/go_modules/ | cut -d '/' -f 2- | xargs gi
       - [deleted]         dependabot/go_modules/github.com/stoewer/go-strcase-1.2.1
       - [deleted]         dependabot/go_modules/github.com/stretchr/testify-1.8.1
     ```
+
+## Check out a remote Git branch
+
+!!! note "Assumption"
+    we have many remote branches
+
+!!! info
+    In earlier versions of git, you needed an explicit `--track` option, but that is the default now when you are branching off a remote branch
+
+```shell
+git fetch --all --prune
+git checkout -b <branch> <remote_repo>/<remote_branch>
+```
