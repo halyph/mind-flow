@@ -13,3 +13,4 @@
 ## Tech
 
 - [Real Python](https://realpython.com/) high quality Python tutorials
+- [Code With Engineering Playbook](https://microsoft.github.io/code-with-engineering-playbook)
