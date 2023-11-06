@@ -24,7 +24,6 @@ The Eisenhower Matrix is divided into four parts:
 
 ![img2](eisenhower_matrix/img2.jpg)
 
-
 **References**
 
 - [The Eisenhower Matrix: How to prioritize your to-do list](https://asana.com/resources/eisenhower-matrix)
