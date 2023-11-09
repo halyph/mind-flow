@@ -9,6 +9,7 @@ hide:
 
 ## 2023
 
+- 2023-11-09 - [Octoverse 2023: The most popular programming languages](2023/2023-11-09-octoverse.md)
 - 2023-10-30 - [Stockholm Syndrome and Programming Languages](2023/2023-10-30-stockholm-syndrome.md)
 - 2023-10-14 - [Why MacOS make version is outdated?](2023/2023-10-14-macos-make.md)
 - 2023-06-02 - [P-99: Ninety-Nine Problems](2023/2023-06-02-P99-problems.md)
