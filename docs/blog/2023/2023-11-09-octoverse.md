@@ -21,4 +21,4 @@ By I am more interested in "*The most popular programming languages*" section:
 
 ![img3](2023-11-09-octoverse/github-top-languages-by-percentage-growth.png)
 
-Some notable outliers include **Kotlin**, **Rust**, **Go**, and **Lua**, which have seen larger growth across newer projects on GitHub.
+>Some notable outliers include **Kotlin**, **Rust**, **Go**, and **Lua**, which have seen larger growth across newer projects on GitHub.
