@@ -5,9 +5,65 @@ tags:
 
 # Markdown
 
+## README samples
+
+- [stkeky/best-of-scala](https://github.com/stkeky/best-of-scala/blob/main/README.md) A ranked list of awesome Scala projects. It is based on [best-of-lists/best-of-generator](https://github.com/best-of-lists/best-of-generator).
+
 ## Basic syntax
 
 See [Markdown Guide](https://www.markdownguide.org/basic-syntax/#code).
+
+## Folded text
+
+````
+```markdown
+<details>
+<summary>
+<b><a href="https://github.com/sbt/sbt">sbt</a></b> (🥇33 ·  ⭐ 4.7K) - sbt, the interactive build tool. 
+<code>
+  <a href="http://bit.ly/3nYMfla">Apache-2</a>
+</code>
+<code>
+  [MIT](http://bit.ly/34MBwT8)
+</code>
+<code>
+  <img src="https://scalac.io/wp-content/uploads/2021/02/image-125-1.svg" style="display:inline;" width="13" height="13">
+</code>
+</summary>
+
+- [GitHub](https://github.com/sbt/sbt) (👨‍💻 410 · 🔀 920 · 📥 12M · 📋 4.1K - 18% open · ⏱️ 02.11.2023):
+
+	```
+	git clone https://github.com/sbt/sbt
+	```
+</details>
+```
+````
+
+!!! example
+
+    <div class="result">
+    <details>
+    <summary>
+    <b><a href="https://github.com/sbt/sbt">sbt</a></b> (🥇33 ·  ⭐ 4.7K) - sbt, the interactive build tool. 
+    <code>
+      <a href="http://bit.ly/3nYMfla">Apache-2</a>
+    </code>
+    <code>
+      [MIT](http://bit.ly/34MBwT8)
+    </code>
+    <code>
+      <img src="https://scalac.io/wp-content/uploads/2021/02/image-125-1.svg" style="display:inline;" width="13" height="13">
+    </code>
+    </summary>
+
+    - [GitHub](https://github.com/sbt/sbt) (👨‍💻 410 · 🔀 920 · 📥 12M · 📋 4.1K - 18% open · ⏱️ 02.11.2023):
+
+      ```
+      git clone https://github.com/sbt/sbt
+      ```
+    </details>
+    </div>
 
 ## Links at the bottom of the text
 
@@ -21,7 +77,7 @@ See [Markdown Guide](https://www.markdownguide.org/basic-syntax/#code).
 
 ## Table with code blocks
 
-Actually there is no simply solution and you should insert plain HTML table.
+Actually there is no simple solution and you should insert plain HTML table.
 
 ````
 <table>

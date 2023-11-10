@@ -67,10 +67,7 @@ markdown_extensions:
 - pymdownx.mark
 - pymdownx.superfences
 - pymdownx.tilde
-- pymdownx.highlight:
-    # Bad idea, b/c some code blocks shouldn't have title and line-nums
-    # auto_title: true
-    # linenums: true
+- pymdownx.highlight
 - mdx_truly_sane_lists
 - tables
 - attr_list
