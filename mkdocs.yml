@@ -40,6 +40,8 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
   features:
+    - content.code.copy
+    - content.code.annotate
     - navigation.top
     # - navigation.instant
     # - navigation.sections

@@ -3,7 +3,7 @@ tags:
   - mkdocs
 ---
 
-# Mkdocs
+# Mkdocs Material
 
 ## Official doc
 
@@ -28,3 +28,65 @@ tags:
 
 - [github-action-push-to-another-repository](https://github.com/marketplace/actions/push-directory-to-another-repository)
 - [mkdocs-material *Github Action*](https://github.com/squidfunk/mkdocs-material/blob/master/.github/workflows/documentation.yml) - clean sample for site deployment
+
+## Tips and Tricks
+
+### Code blocks
+
+I have discovered that enabling code block title and line numbers globally (in `mkdocs.yml`) is bad idea: 
+
+```yaml title="mkdocs.yml"
+markdown_extensions:
+- pymdownx.highlight: # (1)!
+    auto_title: true
+    linenums: true
+```
+
+1. Code annotations [PyMdown Extensions - Highlight options](https://facelessuser.github.io/pymdown-extensions/extensions/highlight/#options)
+
+
+that's why I will switch on title and line numbers on demand (see more [here](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/)):
+
+```` markdown title="Code block with title"
+``` py title="bubble_sort.py"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+````
+
+<div class="result" markdown>
+
+``` py title="bubble_sort.py"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+</div>
+
+```` markdown title="Code block with line numbers"
+``` py linenums="1"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+````
+
+<div class="result" markdown>
+
+``` py linenums="1"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+</div>
