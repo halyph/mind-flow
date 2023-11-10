@@ -2,7 +2,7 @@
 
 [[linkedin](https://www.linkedin.com/in/oivasiv/)]  [[bookshelf](docs/bookshelf.md)]
 
-_Another try of blogging or personal knowledge base_
+_Another attempt of blogging or personal knowledge base_
 
 ![logo.png](docs/assets/images/logo.png)
 
