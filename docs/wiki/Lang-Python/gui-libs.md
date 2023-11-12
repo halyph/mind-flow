@@ -7,7 +7,7 @@ tags:
 
 ## Popular Libraries
 
-| Name | Github stars  | Licence |
+| Name | Github stars  | License |
 |------|---------------|---------|
 | [Tkinter](https://docs.python.org/3/library/tkinter.html) | - | PSF |
 | [PySimpleGUI](https://github.com/PySimpleGUI/PySimpleGUI) | 12.2k |  LGPL-3.0 | 

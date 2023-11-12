@@ -7,6 +7,7 @@ tags:
 
 ## Official doc
 
+- [Search the icon and emoji](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)
 - [Repository icon](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#repository-icon)
 
 ## Plugins
