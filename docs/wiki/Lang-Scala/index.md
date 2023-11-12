@@ -5,6 +5,8 @@ tags:
 
 # Scala useful links
 
+<div class="note inline end"> <p><img alt="logo.png" src="index/scala-logo.png"></p> </div>
+
 ## Sites/Repos
 
 - [Mutable and Immutable Collections](https://docs.scala-lang.org/overviews/collections-2.13/overview.html)

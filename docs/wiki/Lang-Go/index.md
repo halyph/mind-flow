@@ -5,6 +5,9 @@ tags:
 
 # Go useful links
 
+<div class="note inline end"> <p><img alt="logo.png" src="index/golang-logo.png"></p> </div>
+
+
 ## Official 
 
 - [cmd/go](https://pkg.go.dev/cmd/go)
