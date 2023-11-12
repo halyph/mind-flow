@@ -3,7 +3,7 @@ tags:
   - java
 ---
 
-# Java usesul links
+# Java useful links
 
 <div class="note inline end"> <p><img alt="logo.png" src="index/java-logo.png"></p> </div>
 

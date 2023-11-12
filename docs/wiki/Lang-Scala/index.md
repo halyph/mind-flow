@@ -3,7 +3,7 @@ tags:
   - scala
 ---
 
-# Scala usesul links
+# Scala useful links
 
 ## Sites/Repos
 
