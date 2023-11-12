@@ -1,9 +1,9 @@
 # Octoverse 2023: The most popular programming languages
 > | github |
 
-I decided to capture for future me the latest [Octoverse: The state of open source and rise of AI in 2023](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages) report.
+I decided to capture (for future me) the latest [Octoverse: The state of open source and rise of AI in 2023](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages) report.
 
-By I am more interested in "*The most popular programming languages*" section:
+I am interested only in "*The most popular programming languages*" section:
 
 - **Javascript** remains the most popular language
 - **Cloud-native development** grows with increase in Infrastructure as Code (IaC) languages and cloud-native platforms
