@@ -11,7 +11,8 @@
 - [research!rsc](https://research.swtch.com) thoughts and links about programming, by Russ Cox
 - [Greg Wilson](https://third-bit.com) is author, co-author *and/or* editor for:
   - [The Architecture of Open Source Applications](https://aosabook.org/)
-  - [Software Design by Example](https://third-bit.com/sdxjs/)
+  - [Software Design by Example (*Python*)](https://third-bit.com/sdxpy/)
+  - [Software Design by Example (*JavaScript*)](https://third-bit.com/sdxjs/)
   - [JavaScript for Data Science](https://third-bit.com/js4ds/)
   - [Research Software Engineering with Python](https://merely-useful.tech/py-rse/)
   - [It Will Never Work in Theory](https://neverworkintheory.org)
