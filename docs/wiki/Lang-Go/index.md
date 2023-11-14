@@ -5,10 +5,9 @@ tags:
 
 # Go useful links
 
-<div class="note inline end"> <p><img alt="logo.png" src="index/golang-logo.png"></p> </div>
+<div class="note inline end"> <p><img alt="logo.png" src="img/golang-logo.png"></p> </div>
 
-
-## Official 
+## Official
 
 - [cmd/go](https://pkg.go.dev/cmd/go)
   - [Environment variables](https://pkg.go.dev/cmd/go#hdr-Environment_variables)

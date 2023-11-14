@@ -5,6 +5,8 @@ tags:
 
 # Go Style Guides
 
+<div class="note inline end"> <p><img alt="logo.png" src="../img/gopher-coffee.png"></p> </div>
+
 ## Google Resources
 
 - [**Go Style guide**](https://google.github.io/styleguide/go/)
