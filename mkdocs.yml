@@ -53,7 +53,11 @@ theme:
 # More extensions: https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
 - toc:
+    slugify: !!python/object/apply:pymdownx.slugs.slugify
+      kwds:
+        case: lower
     toc_depth: 3
+    permalink: true
 - meta
 - admonition
 - smarty
