@@ -9,7 +9,12 @@
 - [Will Larson](https://lethain.com) is author of [Staff Engineer](https://lethain.com/staff-engineer/) and [An Elegant Puzzle](https://lethain.com/elegant-puzzle/)
 - [David Heinemeier Hansson (aka DHH)](https://world.hey.com/dhh) is creator of Ruby on Rails, co-owner & CTO of 37signals (Basecamp & HEY)
 - [research!rsc](https://research.swtch.com) thoughts and links about programming, by Russ Cox
-- [Greg Wilson](https://third-bit.com) is author, co-author or editor for: [The Architecture of Open Source Applications](https://aosabook.org/), [Beautiful Code](https://www.oreilly.com/library/view/beautiful-code/9780596510046/), [Teaching Tech Together](http://teachtogether.tech/), [Software Design by Example](https://third-bit.com/sdxjs/), [JavaScript for Data Science](https://third-bit.com/js4ds/), [Research Software Engineering with Python](https://merely-useful.tech/py-rse/), [It Will Never Work in Theory](https://neverworkintheory.org)
+- [Greg Wilson](https://third-bit.com) is author, co-author *and/or* editor for:
+  - [The Architecture of Open Source Applications](https://aosabook.org/)
+  - [Software Design by Example](https://third-bit.com/sdxjs/)
+  - [JavaScript for Data Science](https://third-bit.com/js4ds/)
+  - [Research Software Engineering with Python](https://merely-useful.tech/py-rse/)
+  - [It Will Never Work in Theory](https://neverworkintheory.org)
 
 ## Tech
 
