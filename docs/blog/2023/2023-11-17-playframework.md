@@ -15,7 +15,7 @@ I am more interested in Play 3.0.0 features:
 >
 > Play 3.0 is nearly identical to Play 2.9, and continues to offer support for the latest Java LTS versions and Scala 3. Play 2.9 and 3.0 will offer the same features and receive parallel maintenance, benefiting from identical enhancements and bug fixes.
 
-I guess this release might be interested to some people. But, there are several major issues for me:
+I guess this release might be valuable for some people. But, there are several major issues for me:
 
 1. Play framework was cool/interesting in 2017, but then I personally switched to [Akka-http](https://github.com/akka/akka-http) and it was must better for my needs. In my current company some projects have been using [http4s](https://http4s.org) or [ZIO](https://zio.dev). Playframework is 90% legacy, means new projects will **not** use it and rather pick up Spring Boot Java/Kotlin, [Ktor](https://ktor.io), than looking into Play.
 2. Scala 2 to Scala 3 migration is happening slowly.
