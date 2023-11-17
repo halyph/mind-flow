@@ -8,6 +8,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2023
 
+- 2023-11-17 - [Play 3.0.0 Release and Scala](docs/blog/2023/2023-11-17-playframework.md)
 - 2023-11-09 - [Octoverse 2023: The most popular programming languages](docs/blog/2023/2023-11-09-octoverse.md)
 - 2023-10-30 - [Stockholm Syndrome and Programming Languages](docs/blog/2023/2023-10-30-stockholm-syndrome.md)
 - 2023-10-14 - [Why MacOS make version is outdated?](docs/blog/2023/2023-10-14-macos-make.md)
