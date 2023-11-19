@@ -109,4 +109,3 @@ plugins:
   - tags:
       tags: true
       tags_file: wiki/tags.md
-  - rss
