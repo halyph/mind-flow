@@ -26,6 +26,6 @@ Here is my social networks ban list (❌ deleted account):
 - ❌ Twitter
 - ❌ Quora
 - ❌ Pinterest
-- Instagram
-- TikTok
-- Snapchat
+- 🤮 Instagram
+- 🤮 TikTok
+- 🤮 Snapchat
