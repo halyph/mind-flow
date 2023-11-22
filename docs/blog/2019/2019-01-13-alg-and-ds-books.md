@@ -67,6 +67,7 @@ Details
 <summary>
 Details
 </summary>
+
 - ["Introduction to Algorithms", 4rd Edition
 by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen-ebook/dp/B094WZNKP2)
 - Hardcover: 1312 pages
@@ -132,6 +133,7 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
 <summary>
 Details
 </summary>
+
 - [book site](https://www.algorist.com)
 - ["The Algorithm Design Manual", 3rd ed., 2020  by *Steven S. Skiena*](https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542580/dp/3030542580)
 - Paperback: 810 pages
