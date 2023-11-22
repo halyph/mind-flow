@@ -14,7 +14,7 @@ I have a my list several books related to this topic. I've decided to list it he
 
 ![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.png)
 
-<details>
+<details markdown>
 <summary>
 Details
 </summary>
@@ -57,13 +57,14 @@ Details
   - 5.4. Regular Expressions 
   - 5.5. Data Compression 
 - 6 Context
+
 </details>
 
 ## Introduction to Algorithms, 4th Edition
 
 ![into_to-alg.jpg](2019-01-13-alg-and-ds-books/into_to-alg.jpg)
 
-<details>
+<details markdown>
 <summary>
 Details
 </summary>
@@ -129,7 +130,7 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
 
 ![skiena.jpg](2019-01-13-alg-and-ds-books/skiena.jpg)
 
-<details>
+<details markdown>
 <summary>
 Details
 </summary>
@@ -169,7 +170,7 @@ Details
 
 ![ds_n_alg_in_py.jpg](2019-01-13-alg-and-ds-books/ds_n_alg_in_py.jpg)
 
-<details>
+<details markdown>
 <summary>
 Details
 </summary>

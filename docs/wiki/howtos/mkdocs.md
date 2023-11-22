@@ -91,3 +91,19 @@ def bubble_sort(items):
 ```
 
 </div>
+
+### Render Markdown in `<details />` tag
+
+Use [`md_in_html`](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#markdown-in-html) to render [collapsible blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#collapsible-blocks), which are implemented with `<details />` elements (see issue [*Formatting lost in `<details>` tag*](https://github.com/squidfunk/mkdocs-material/issues/4084)):
+
+```yaml
+markdown_extensions:
+  - md_in_html
+```
+
+```html
+<details markdown>
+  <summary>Title</summary>
+  Content
+</details>
+```
