@@ -13,7 +13,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 | Year | Total | (E)Book | Audiobook |
 |------|-------|---------|-----------|
-| 2023 | 13    | 8       | 5         |
+| 2023 | 15    | 10      | 5         |
 | 2022 | 19    | 7       | 12        |
 | 2021 | 10    | 9       | 1         |
 | 2020 | 28    | 7       | 21        |
@@ -38,6 +38,8 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 6. *Rake Task Management Essentials*, by **Andrey Koleshko** (Packt Publishing, 2014), ISBN 1783280786
 7. *Десять причин видалити акаунт із соцмереж просто зараз*, by **Джарон Ланьє** (Vivat, 2020), ISBN 9789669820952
 8. *100 Go Mistakes and How to Avoid Them*, by **Teiva Harsanyi** (Manning Publications, 2022), ISBN 1617299596
+9. *Кінець гендеру. Розвінчання міфів про стать та ідентичність*, by **Дебра Со** (Наш Формат, 2023), ISBN 9786178120108
+10. *Deep Work: Rules for Focused Success in a Distracted World*, by **Cal Newport** (Piatkus, 2016), ISBN 0349411913
 
 **Listened (Audiobook)**
 
