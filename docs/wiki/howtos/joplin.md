@@ -1,11 +1,16 @@
 ---
 tags:
   - joplin
+  - knowledge management
 ---
 
 # Joplin
 
-## Set TOC depth to 2nd level
+## References
+
+- [Markdown Plugins](https://joplinapp.org/help/apps/markdown#markdown-plugins)
+
+## Set TOC depth to N*th* level
 
 - [Desktop, Mobile: Update Markdown plugins: toc-done-right, anchor #2005](https://github.com/laurent22/joplin/pull/2005)
 
@@ -32,7 +37,7 @@ $<toc{"level":[2]}>
 render levels 2,3 and 4:
 
 ```text
-$<toc{"level":[2,3,4],"listType":"ol"}>
+$<toc{"level":[2,3,4],"listType":"ul"}>
 ```
 
 ??? example
