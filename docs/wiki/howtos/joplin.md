@@ -17,7 +17,7 @@ $<toc{"level":[2]}>
 $<toc{"level":[1,2,3],"listType":"ol"}>
 ```
 
-## Hide horizontal lines in the markdown pane (Solarized Themes)
+## Hide horizontal lines in the markdown pane
 
 - [Horizontal Lines being rendered in the markdown pane on Solarized Themes #4210](https://github.com/laurent22/joplin/issues/4210)
 
