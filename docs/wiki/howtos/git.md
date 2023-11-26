@@ -21,6 +21,12 @@ git push origin -d <branch>        # Shorter version (Git 1.7.0 or newer)
 git push origin :<branch>          # Git versions older than 1.7.0
 ```
 
+## Deleting my Git branches
+
+```shell
+git branch | grep OI | grep -v OI-some-text | xargs git branch -D
+```
+
 ## Batch delete remote stale branches
 
 ```shell
