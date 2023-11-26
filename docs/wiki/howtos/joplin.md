@@ -5,17 +5,39 @@ tags:
 
 # Joplin
 
-## Set TOC depth to 2nd levels
+## Set TOC depth to 2nd level
 
 - [Desktop, Mobile: Update Markdown plugins: toc-done-right, anchor #2005](https://github.com/laurent22/joplin/pull/2005)
+
+### Default TOC
+
+Generate table of contents automatically:
+
+```text
+[TOC]
+```
+
+??? example
+
+    ![Alt text](joplin/toc-std.png)
+
+### Custom TOC levels
+
+render only 2nd level:
 
 ```text
 $<toc{"level":[2]}>
 ```
 
+render levels 2,3 and 4:
+
 ```text
-$<toc{"level":[1,2,3],"listType":"ol"}>
+$<toc{"level":[2,3,4],"listType":"ol"}>
 ```
+
+??? example
+
+    ![Alt text](joplin/toc-2-3-4.png)
 
 ## Hide horizontal lines in the markdown pane
 
