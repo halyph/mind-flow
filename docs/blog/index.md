@@ -9,6 +9,7 @@ hide:
 
 ## 2023
 
+- 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](2023/2023-11-27-tools-go.md)
 - 2023-11-19 - [Social Networks are time killers](2023/2023-11-19-social-networks.md)
 - 2023-11-17 - [Play 3.0.0 Release and Scala](2023/2023-11-17-playframework.md)
 - 2023-11-09 - [Octoverse 2023: The most popular programming languages](2023/2023-11-09-octoverse.md)

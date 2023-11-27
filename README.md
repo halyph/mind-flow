@@ -8,6 +8,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2023
 
+- 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](docs/blog/2023/2023-11-27-tools-go.md)
 - 2023-11-19 - [Social Networks are time killers](docs/blog/2023/2023-11-19-social-networks.md)
 - 2023-11-17 - [Play 3.0.0 Release and Scala](docs/blog/2023/2023-11-17-playframework.md)
 - 2023-11-09 - [Octoverse 2023: The most popular programming languages](docs/blog/2023/2023-11-09-octoverse.md)
