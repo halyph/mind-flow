@@ -3,4 +3,5 @@ order: asc
 sort_type: natural
 nav:
     - index.md
+    - go-styleguide.md
     - ...

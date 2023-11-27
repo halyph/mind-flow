@@ -4,7 +4,7 @@
 I have a my list several books related to this topic. I've decided to list it here for easy referencing
 
 - [Algorithms, 4th Edition](#algorithms-4th-edition)
-- [Introduction to Algorithms, 3rd Edition](#introduction-to-algorithms-3rd-edition)
+- [Introduction to Algorithms, 4th Edition](#introduction-to-algorithms-4th-edition)
 - [The Algorithm Design Manual, 3rd Edition](#the-algorithm-design-manual-3rd-edition)
 - [Data Structures and Algorithms in Python, 1st Edition](#data-structures-and-algorithms-in-python-1st-edition)
 
@@ -12,7 +12,12 @@ I have a my list several books related to this topic. I've decided to list it he
 
 ## Algorithms, 4th Edition
 
-![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.jpg)
+![sedgewick.jpg](2019-01-13-alg-and-ds-books/sedgewick.png)
+
+<details markdown>
+<summary>
+Details
+</summary>
 
 - [book site](https://algs4.cs.princeton.edu)
 - **videos**: [part1](https://www.youtube.com/watch?v=9diDWV-fOnE) and [part2](https://www.youtube.com/watch?v=6TW3JSVEJQE)
@@ -53,14 +58,21 @@ I have a my list several books related to this topic. I've decided to list it he
   - 5.5. Data Compression 
 - 6 Context
 
-## Introduction to Algorithms, 3rd Edition
+</details>
+
+## Introduction to Algorithms, 4th Edition
 
 ![into_to-alg.jpg](2019-01-13-alg-and-ds-books/into_to-alg.jpg)
 
-- ["Introduction to Algorithms", 3rd Edition
-by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](https://www.amazon.com/Introduction-Algorithms-3rd-MIT-Press/dp/0262033844/)
+<details markdown>
+<summary>
+Details
+</summary>
+
+- ["Introduction to Algorithms", 4rd Edition
+by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen-ebook/dp/B094WZNKP2)
 - Hardcover: 1312 pages
-- Publisher: The MIT Press; 3rd edition (July 31, 2009)
+- Publisher: The MIT Press; 4rd edition (April 5, 2022)
 
 **Table of Contents**:
 
@@ -112,9 +124,16 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
   - C Counting and Probability
   - D Matrices
 
+</details>
+
 ## The Algorithm Design Manual, 3rd Edition
 
 ![skiena.jpg](2019-01-13-alg-and-ds-books/skiena.jpg)
+
+<details markdown>
+<summary>
+Details
+</summary>
 
 - [book site](https://www.algorist.com)
 - ["The Algorithm Design Manual", 3rd ed., 2020  by *Steven S. Skiena*](https://www.amazon.com/Algorithm-Design-Manual-Computer-Science-dp-3030542580/dp/3030542580)
@@ -145,10 +164,16 @@ by *Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, Clifford Stein*](h
   - 18 Set and String Problems
   - 19 Algorithmic Resources
 
+</details>
 
 ## Data Structures and Algorithms in Python, 1st Edition
 
 ![ds_n_alg_in_py.jpg](2019-01-13-alg-and-ds-books/ds_n_alg_in_py.jpg)
+
+<details markdown>
+<summary>
+Details
+</summary>
 
 - ["Data Structures and Algorithms in Python", 1st Edition
 by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich-dp-1118290275/dp/1118290275/)
@@ -174,3 +199,5 @@ by Michael T. Goodrich, Roberto Tamassia, Michael H. Goldwasser](https://www.ama
 15. Memory Management and B-Trees
 16. A. Character Strings in Python
 17. B. Useful Mathematical Facts
+
+</details>

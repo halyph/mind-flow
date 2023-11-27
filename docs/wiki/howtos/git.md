@@ -21,6 +21,12 @@ git push origin -d <branch>        # Shorter version (Git 1.7.0 or newer)
 git push origin :<branch>          # Git versions older than 1.7.0
 ```
 
+## Deleting my Git branches
+
+```shell
+git branch | grep OI | grep -v OI-some-text | xargs git branch -D
+```
+
 ## Batch delete remote stale branches
 
 ```shell
@@ -55,4 +61,21 @@ git branch -r | grep origin/dependabot/go_modules/ | cut -d '/' -f 2- | xargs gi
 ```shell
 git fetch --all --prune
 git checkout -b <branch> <remote_repo>/<remote_branch>
+```
+
+## Git branch command behaves like `less`
+
+- SO: [Git branch command behaves like 'less'](https://stackoverflow.com/questions/48341920/git-branch-command-behaves-like-less)
+- [git - Release Notes v.2.16](https://github.com/git/git/blob/master/Documentation/RelNotes/2.16.0.txt#L85)
+
+!!! info
+    ```
+    "git branch --list" learned to show its output through the pager by
+    default when the output is going to a terminal, which is controlled
+    by the pager.branch configuration variable.  This is similar to a
+    recent change to "git tag --list".
+    ```
+
+```shell
+git config --global pager.branch false
 ```

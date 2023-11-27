@@ -20,3 +20,4 @@ I am not sure whether it will be valuable for other people. So you are warned ðŸ
 - *"You should never underestimate the predictability of stupidity"* - Bullet Tooth Tony
 - *"Always leave the campground cleaner than you found it"* - Boy Scout Rule
 - *"Continuous improvement towards perfection"*
+- *"Never confuse education with intelligence, you can have a PhD and still be an idiot"* - Richard P. Feynman

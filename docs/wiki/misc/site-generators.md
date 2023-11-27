@@ -24,7 +24,7 @@ Here is a collections of sites and repos for my inspiration
 
 - [LZone](https://lzone.de) - simple and clean personal wiki
 - **Jekyll**
-  - [Google Engineering Practices Documentation](https://google.github.io/eng-practices/) based on *[jekyll-theme-primer]*
+  - Google [Engineering Practices](https://google.github.io/eng-practices/) and [Style Guides](https://google.github.io/styleguide/) are based on *[jekyll-theme-primer]*
   - [Tom Preston-Werner](https://tom.preston-werner.com)
 - **Mkdocs material**
   - [Privacy Guides](https://www.privacyguides.org) - very nice theme
