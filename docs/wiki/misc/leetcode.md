@@ -9,15 +9,17 @@ tags:
 
 Abbreviation | Meaning |
 -|-
-**CI**  | Coding Interview
-**SDI** | System Design Interview
-**CP**  | Competitive Programming  
-**DSA** | Data Structure and Algorithm  
-**LC**  | LeetCode  
+**CI**   | Coding Interview
+**SDI**  | System Design Interview
+**CP**   | Competitive Programming  
+**DSA**  | Data Structure and Algorithm  
+**LC**   | LeetCode  
 **CLRS** | Cormen, Leiserson, Rivest, and Stein  
-**BFS** | Breadth First Search  
-**DFS** | Depth First Search  
-**DP**  | Dynamic Programming
+**BFS**  | Breadth First Search  
+**DFS**  | Depth First Search  
+**DP**   | Dynamic Programming
+**CTCI** | Cracking the Coding Interview
+**EPI**  | Elements of Programming Interviews
 
 ## References
 
@@ -31,6 +33,9 @@ Just collection of links useful for coding interview
 - Neetcode
   - [Roadmap](https://neetcode.io/roadmap)
   - [Practice Problems](https://neetcode.io/practice)
+- [Grind75](https://www.techinterviewhandbook.org/grind75)
+- [Cracking The Coding Interview 6th Edition In Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
+- [Elements of Programming Interviews (EPI) In Leetcode](https://github.com/slgriff/EPI-to-LC)
 - [PIRATE KING](https://www.piratekingdom.com/) - Leetcode Tips and tricks
 - [Awesome Competitive Programming ](https://github.com/lnishan/awesome-competitive-programming) a curated list of awesome Competitive Programming, Algorithm and Data Structure resources
 
