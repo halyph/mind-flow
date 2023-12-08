@@ -32,3 +32,19 @@ tags:
 ```shell
 ➜ psql -af myquery.sql
 ```
+
+## Terminating long running connections
+
+If you need to terminate a long running query or a connection e.g. because it is in IDLE in transaction admins can run:
+
+```sql
+select user_management.terminate_backend(<pid>);
+```
+
+Or to terminate all application connections:
+
+```sql
+select user_management.terminate_backend(pid)
+  from pg_stat_activity
+ where usename = 'your_application_user';
+```
