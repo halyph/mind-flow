@@ -27,7 +27,7 @@ Tech Radar:
 | **CLI**                | Golang |
 | **ML/DS/DA/DE**        | Python |
 | **Web**                | Javascript |
-| **Desktop**            | Java |
+| **Desktop**            | Python |
 | **System programming** | C |
 
 ## On HOLD
