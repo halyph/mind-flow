@@ -91,3 +91,33 @@ func main() {
 
 ??? example "Output"
     The reversed string using variant is: `犬 yzal eht revo depmuj 狐 nworb kciuq eht`
+
+## 6. Generate random string of fixed length
+
+??? info "References"
+
+    - SO: [How to generate a random string of a fixed length in Go?](https://stackoverflow.com/questions/22892120/how-to-generate-a-random-string-of-a-fixed-length-in-go)
+    - Calhoun.io: [Creating Random Strings in Go](https://www.calhoun.io/creating-random-strings-in-go/)
+
+```go
+package main
+
+import (
+	"fmt"
+	"math/rand"
+)
+
+const letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+func randSeq(n int) string {
+	b := make([]byte, n)
+	for i := range b {
+		b[i] = letters[rand.Intn(len(letters))]
+	}
+	return string(b)
+}
+
+func main() {
+	fmt.Println(randSeq(10)) // e.g. irIXkcjdon
+}
+```
