@@ -106,47 +106,53 @@ Variable | Meaning
 
 ### Initialize List
 
-We can create a list through `*` operator if the item in the list expression is an immutable object.
+Initialize | How 
+-|-
+List   | `[None] * size`
+Matrix | `[[0] * cols for _ in range(rows)]`
 
-```python
->>> a = [None] * 3
->>> a
-[None, None, None]
->>> a[0] = "foo"
->>> a
-['foo', None, None]
-```
+??? warning
 
-However, if the item in the list expression is a **mutable** object, the `*` operator will copy the reference of the item `N` times (i.e. *all objects in the list point to the same address*). In order to avoid this pitfall, we should use a list comprehension to initialize a list:
+    We can create a list through `*` operator if the item in the list expression is an immutable object.
 
+    ```python
+    >>> a = [None] * 3
+    >>> a
+    [None, None, None]
+    >>> a[0] = "foo"
+    >>> a
+    ['foo', None, None]
+    ```
 
-```python
->>> a = [[]] * 3
->>> b = [[] for _ in range(3)]
->>> a[0].append("Hello")
->>> a
-[['Hello'], ['Hello'], ['Hello']]
->>> b[0].append("Python")
->>> b
-[['Python'], [], []]
-```
+    However, if the item in the list expression is a **mutable** object, the `*` operator will copy the reference of the item `N` times (i.e. *all objects in the list point to the same address*). In order to avoid this pitfall, we should use a list comprehension to initialize a list:
 
-### Initialize Matrix (List of Lists)
+    ```python
+    >>> a = [[]] * 3
+    >>> b = [[] for _ in range(3)]
+    >>> a[0].append("Hello")
+    >>> a
+    [['Hello'], ['Hello'], ['Hello']]
+    >>> b[0].append("Python")
+    >>> b
+    [['Python'], [], []]
+    ```
 
-```python
->>> rows = 2
->>> cols = 3
->>> [[0] * cols for _ in range(rows)]
-[[0, 0, 0], [0, 0, 0]]
-```
+    **Initialize Matrix (List of Lists)**
 
-Again, DON'T do this
+    ```python
+    >>> rows = 2
+    >>> cols = 3
+    >>> [[0] * cols for _ in range(rows)]
+    [[0, 0, 0], [0, 0, 0]]
+    ```
 
-```python
->>> a = [[0] * 3] * 3
->>> a
-[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
->>> a[1][1] = 2
->>> a
-[[0, 2, 0], [0, 2, 0], [0, 2, 0]]
-```
+    Again, DON'T do this
+
+    ```python
+    >>> a = [[0] * 3] * 3
+    >>> a
+    [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+    >>> a[1][1] = 2
+    >>> a
+    [[0, 2, 0], [0, 2, 0], [0, 2, 0]]
+    ```
