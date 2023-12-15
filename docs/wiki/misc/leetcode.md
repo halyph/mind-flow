@@ -7,7 +7,7 @@ tags:
 
 ## Glossary
 
-Abbreviation | Meaning |
+Abbreviation | Meaning
 -|-
 **CI**   | Coding Interview
 **SDI**  | System Design Interview
@@ -34,10 +34,11 @@ Just collection of links useful for coding interview
   - [Roadmap](https://neetcode.io/roadmap)
   - [Practice Problems](https://neetcode.io/practice)
 - [Grind75](https://www.techinterviewhandbook.org/grind75)
-- [Cracking The Coding Interview 6th Edition In Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
-- [Elements of Programming Interviews (EPI) In Leetcode](https://github.com/slgriff/EPI-to-LC)
 - [PIRATE KING](https://www.piratekingdom.com/) - Leetcode Tips and tricks
 - [Awesome Competitive Programming ](https://github.com/lnishan/awesome-competitive-programming) a curated list of awesome Competitive Programming, Algorithm and Data Structure resources
+- **Books**' problems on LeetCode:
+  - [Cracking The Coding Interview 6th Edition In Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
+  - [Elements of Programming Interviews (EPI) In Leetcode](https://github.com/slgriff/EPI-to-LC)
 
 ### Repos
 
@@ -64,28 +65,88 @@ Just collection of links useful for coding interview
   - **Map/Set** for *O(1) time* & *O(n) space*
   - **Sort input** for *O(n * log n) time* and *O(1) space*
 
-## :lang-java: Java
-
-- `<>` diamond operator
-- `Objects` utility class 
-- `0b001_00001`
-- Have a convention for identifiers:
-  - `i, j ,k` for array indices
-  - `A,B,C` for arrays
-  - `u,v,w` for vectors
-  - `s` for a `String`
-  - `sb` for a `StringBuilder`
-
 ## Data structure
 
 | Data structure | Key points |
-|----|---|
+|---|---|
 | Primitive types | Know how int, char, double, etc. are represented in memory and the primitive operations on them.|
-| Arrays  | Fast access for element at an index, slow lookups (unless sorted) and insertions. Be comfortable with no¬ tions of iteration, resizing, partitioning, merging, etc.|
+| Arrays  | Fast access for element at an index, slow lookups (unless sorted) and insertions. Be comfortable with notions of iteration, resizing, partitioning, merging, etc.|
 | Strings | Know how strings are represented in memory. Understand basic operators such as comparison, copying, matching, joining, splitting, etc.|
 | Lists | Understand trade-offs with respect to arrays. Be comfortable with iteration, insertion, and deletion within singly and doubly linked lists. Know how to implement a list with dynamic allocation, and with arrays.|
 | Stacks and queues | Recognize where last-in first-out (stack) and first-in first-out (queue) semantics are applicable. Know array and linked list implementations.|
 | Binary trees | Use for representing hierarchical data. Know about depth, height, leaves, search path, traversal sequences, successor/predecessor operations.|
 | Heaps | Key benefit: 0(1) lookup find-max, O(log n) insertion, and 0(log n) deletion of max. Node and array representations. Min-heap variant.|
-| Hash tables | Key benefit: 0(1) insertions, deletions and lookups. Key disadvantages: not suitable for orderrelated queries; need for resizing; poor worst-case performance. Understand implementation using array of buckets and collision chains. Know hash functions for integers, strings, objects.|
-| Binary search trees | Key benefit: O(logn) insertions, deletions, lookups, find-min, find-max, successor, predecessor when tree is height-balanced. Understand node fields, pointer implementation. Be familiar with notion of balance, and operations maintaining balance.|
+| Hash tables | Key benefit: 0(1) insertions, deletions and lookups. Key disadvantages: not suitable for order related queries; need for resizing; poor worst-case performance. Understand implementation using array of buckets and collision chains. Know hash functions for integers, strings, objects.|
+| Binary search trees | Key benefit: O(log n) insertions, deletions, lookups, find-min, find-max, successor, predecessor when tree is height-balanced. Understand node fields, pointer implementation. Be familiar with notion of balance, and operations maintaining balance.|
+
+## :lang-python: Python
+
+### Convention for identifiers
+
+Variable | Meaning
+-|-
+`i`, `j`, `k`     | for array indices
+`lst`, `nums`     | list
+`mat`             | matrix (list of lists)
+`A`, `B`, `C`     | for arrays
+`u`, `v`, `w`     | for vectors
+`s`               | for a `String`
+`sb`              | for a "StringBuilder" (aka `"".join(sb)`)
+`ans`             | answer
+`res`             | result
+`acc`             | accumulator
+`prev`            | previous
+`nxt`             | next
+`curr`            | current
+`l` and `r`       | left and right
+`mid`             | middle
+`slow` and `fast` | pointers
+`p1`, `p2`, `p3`  | pointers
+`ptr`             | pointer
+
+### Initialize List
+
+We can create a list through `*` operator if the item in the list expression is an immutable object.
+
+```python
+>>> a = [None] * 3
+>>> a
+[None, None, None]
+>>> a[0] = "foo"
+>>> a
+['foo', None, None]
+```
+
+However, if the item in the list expression is a **mutable** object, the `*` operator will copy the reference of the item `N` times (i.e. *all objects in the list point to the same address*). In order to avoid this pitfall, we should use a list comprehension to initialize a list:
+
+
+```python
+>>> a = [[]] * 3
+>>> b = [[] for _ in range(3)]
+>>> a[0].append("Hello")
+>>> a
+[['Hello'], ['Hello'], ['Hello']]
+>>> b[0].append("Python")
+>>> b
+[['Python'], [], []]
+```
+
+### Initialize Matrix (List of Lists)
+
+```python
+>>> rows = 2
+>>> cols = 3
+>>> [[0] * cols for _ in range(rows)]
+[[0, 0, 0], [0, 0, 0]]
+```
+
+Again, DON'T do this
+
+```python
+>>> a = [[0] * 3] * 3
+>>> a
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+>>> a[1][1] = 2
+>>> a
+[[0, 2, 0], [0, 2, 0], [0, 2, 0]]
+```
