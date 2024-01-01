@@ -13,7 +13,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 | Year          | Total | (E)Book | Audiobook |
 |---------------|-------|---------|-----------|
-| [2023](#2023) | 15    | 10      | 5         |
+| [2023](#2023) | 16    | 11      | 5         |
 | [2022](#2022) | 19    | 7       | 12        |
 | [2021](#2021) | 10    | 9       | 1         |
 | [2020](#2020) | 28    | 7       | 21        |
@@ -40,6 +40,7 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 8. *100 Go Mistakes and How to Avoid Them*, by **Teiva Harsanyi** (Manning Publications, 2022), ISBN 1617299596
 9. *Кінець гендеру. Розвінчання міфів про стать та ідентичність*, by **Дебра Со** (Наш Формат, 2023), ISBN 9786178120108
 10. *Deep Work: Rules for Focused Success in a Distracted World*, by **Cal Newport** (Piatkus, 2016), ISBN 0349411913
+11. *How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking*, by **Sönke Ahrens** (Kindle Edition, 2022), ISBN 3982438810
 
 **Listened (Audiobook)**
 
