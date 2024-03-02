@@ -3,7 +3,7 @@ tags:
   - make
 ---
 
-# make
+# GNU Make
 
 ## Resources
 
@@ -66,3 +66,81 @@ tags:
             else if (/^## .*$$/) {printf "  ${CYAN}%s${RESET}\n", substr($$1,4)} \
             }' $(MAKEFILE_LIST)
     ```
+
+## Functions
+
+```make
+VERSION  := snapshot
+NAME     := myapp_name
+
+# sample make function: $(call fn_build,1:arg,2:arg,3:arg)
+define fn_build
+@echo arg 1: $(1)
+@echo arg 2: $(2)
+@echo arg 3: $(3)
+endef
+
+.PHONY: build-service
+build-service:
+	$(call fn_build,$@,$(NAME),$(VERSION))
+```
+
+??? note "output"
+
+    ```
+    ➜ make build-service VERSION=1.0.3
+    arg 1: build-service
+    arg 2: myapp_name
+    arg 3: 1.0.3
+    ```
+
+## Automatic Variables
+
+**Variable**     | **Details** 
+-----------------|---------------
+`$@` |  is the file name of the **target** of the rule
+`$<` | is the name of the **first prerequisite**
+`$?` | is the **name of all the prerequisites** that are **newer than the target**, with spaces between them. If the target does not exist, all prerequisites will be included
+`$^` | is the **name of all the prerequisites**, with spaces between them
+
+??? example "Sample `Makefile`"
+
+    ```make
+    main: one two
+        @echo '$$@:' $@
+        @echo '$$<:' $<
+        @echo '$$?:' $?
+        @echo '$$^:' $^
+
+        @touch main
+
+    one:
+        @touch one
+
+    two:
+        @touch two
+
+    clean:
+        @rm -f main one two
+    ```
+    
+    **Output**
+    
+    ```shell
+    ➜ make main
+    $@: main
+    $<: one
+    $?: one two
+    $^: one two
+    
+    # update file "one"
+    ➜ touch one
+
+    # output for '$?' has been changed
+    ➜ make main
+    $@: main
+    $<: one
+    $?: one
+    $^: one two
+    ```
+
