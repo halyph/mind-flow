@@ -144,3 +144,41 @@ build-service:
     $^: one two
     ```
 
+## Loops and Lists
+
+List variable in Makefile can be single-line or multi-line (*can contain comments*).
+
+```make
+LIST_MULTILINE += AAA  # Comment 1
+LIST_MULTILINE += BBB  # Comment 2
+LIST_MULTILINE += CCC  # Comment 3
+LIST_MULTILINE += DDD  # Comment 4
+
+# single-line
+LIST = Xxx Yyy Zzz
+
+.PHONY: print-list
+print-list:
+	@for i in $(LIST_MULTILINE); do \
+		echo elem: $$i; \
+	done
+	@echo '-------------'
+	@for i in $(LIST); do \
+		echo elem: $$i; \
+	done
+```
+
+
+??? note "output"
+
+    ```shell
+    ➜ make print-list
+    elem: AAA
+    elem: BBB
+    elem: CCC
+    elem: DDD
+    -------------
+    elem: Xxx
+    elem: Yyy
+    elem: Zzz
+    ```
