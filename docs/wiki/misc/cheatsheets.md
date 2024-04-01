@@ -17,10 +17,11 @@ Just collection of cheatsheets.
 
 ## Python
 
-1. [gto76/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
-2. [AbdulMalikDev/PythonCheatSheet](https://github.com/AbdulMalikDev/PythonCheatSheet)
-3. [pythoncheatsheet.org](https://www.pythoncheatsheet.org)
-4. [pythonsheets.com](https://www.pythonsheets.com)
+1. [The Best* Python Cheat Sheet](https://kieranholland.com/best-python-cheat-sheet/)
+2. [gto76/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
+3. [AbdulMalikDev/PythonCheatSheet](https://github.com/AbdulMalikDev/PythonCheatSheet)
+4. [pythoncheatsheet.org](https://www.pythoncheatsheet.org)
+5. [pythonsheets.com](https://www.pythonsheets.com)
 
 ## Java
 
