@@ -2,7 +2,7 @@
 > | ruby |
 
 - [Reference](#reference)
-- [The Problem :-)](#the-problem)
+- [The Problem](#the-problem)
 - [The Real Problem](#the-real-problem)
   - [Problems with the Runtime](#problems-with-the-runtime)
   - [Rubygems and Bundler](#rubygems-and-bundler)
@@ -22,7 +22,7 @@ These notes are compilled from: https://speakerdeck.com/bbatsov/ruby-the-bad-par
 - [Ruby: The Bad Parts by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-the-bad-parts)
 - [Ruby 4.0: To Infinity and Beyond (Athens Ruby Meetup) by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-4-dot-0-to-infinity-and-beyond-athens-ruby-meetup)
 
-## The Problem :-)
+## The Problem
 
 - Ruby is object-oriented
 - Ruby is dynamically typed

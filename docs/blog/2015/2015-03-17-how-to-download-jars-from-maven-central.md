@@ -11,7 +11,8 @@ Assume that we'd like to download `spark-core` library (`groupId=com.sparkjava, 
 
 Here is there variants for lib download:
 
-```bash Download library with all dependencies
+```bash 
+# Download library with all dependencies
 # Specify repoUrl (it's optional)
 mvn dependency:get -DrepoUrl=http://download.java.net/maven/2/ -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
 
@@ -24,7 +25,8 @@ mvn dependency:get -Dartifact=com.sparkjava:spark-core:2.1
 
 Now we need to copy just downloaded artifacts in our working directory:
 
-```bash Copy jars from local maven repo
+```bash 
+# Copy jars from local maven repo
 mvn dependency:copy-dependencies -f $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.pom -DoutputDirectory=$(pwd)/lib
 # the previous command doesn't copy spark-core-x.x.jar, that's why we should copy it manually
 cp $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.jar $(pwd)/lib
@@ -48,7 +50,8 @@ As you can see Ivy downloads approach is much simpler. The only cons (or pros, i
 
 Here I've decided to store [Evgeny's Goldin](http://makandracards.com/evgeny-goldin/5817-calling-ivy-from-groovy-or-java) code snippet as a reference for myself. Programmatic artifacts downloads is not a common operation. It's alway nice to know the general concept how it can be done. Especially when Ivy documentation is not very informative.
 
-```java Groovy snippet of calling Ivy
+```java
+// Groovy snippet of calling Ivy
 import org.apache.ivy.Ivy
 import org.apache.ivy.core.module.descriptor.DefaultDependencyDescriptor
 import org.apache.ivy.core.module.descriptor.DefaultModuleDescriptor

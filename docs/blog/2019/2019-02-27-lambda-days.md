@@ -9,16 +9,16 @@ Here is the list of talks I've attended (some talks have been excluded from this
 
 - [Day 1 (February 21, 2019)](#day-1-february-21-2019)
   - [1 - Keynote: F# Code I Love by Don Syme (*F# Language Designer*)](#1---keynote-f-code-i-love-by-don-syme-f-language-designer)
-  - [2 - FP Design Patterns in Micro-Service Inter-Process Communication by Viačeslav Pozdniakov](#2---fp-design-patterns-in-micro-service-inter-process-communication-by-via%C4%8Deslav-pozdniakov)
+  - [2 - FP Design Patterns in Micro-Service Inter-Process Communication by Viaceslav Pozdniakov](#2---fp-design-patterns-in-micro-service-inter-process-communication-by-viaceslav-pozdniakov)
   - [3 - Empowering the Quantum revolution with Q# by John Azariah](#3---empowering-the-quantum-revolution-with-q-by-john-azariah)
-  - [From Haskell to C#, A story of culture shocks and happy reunions by Øystein Kolsrud](#from-haskell-to-c-a-story-of-culture-shocks-and-happy-reunions-by-%C3%B8ystein-kolsrud)
+  - [From Haskell to C#, A story of culture shocks and happy reunions by Øystein Kolsrud](#from-haskell-to-c-a-story-of-culture-shocks-and-happy-reunions-by-øystein-kolsrud)
   - [4 - Elm, Fable, and the Practical Implications of Programming Language Philosophy by Michael Newton](#4---elm-fable-and-the-practical-implications-of-programming-language-philosophy-by-michael-newton)
   - [5 - One year of using F# in production at SBTech by Anton Moldovan](#5---one-year-of-using-f-in-production-at-sbtech-by-anton-moldovan)
   - [6 - (Dys)functional DDD by Jarek Ratajski](#6---dysfunctional-ddd-by-jarek-ratajski)
 - [Day 2 (February 22, 2019)](#day-2-february-22-2019)
   - [7 - Scala superpowers: effortless domain driven design by Bartosz Mikulski](#7---scala-superpowers-effortless-domain-driven-design-by-bartosz-mikulski)
   - [8 - Effective Data Engineering using higher kinded types by Animesh Kumar](#8---effective-data-engineering-using-higher-kinded-types-by-animesh-kumar)
-  - [9 - Fast & Functional by Michał Płachta](#9---fast--functional-by-micha%C5%82-p%C5%82achta)
+  - [9 - Fast \& Functional by Michał Płachta](#9---fast--functional-by-michał-płachta)
   - [10 - Behind collaborative text editing by Bartosz Sypytkowski](#10---behind-collaborative-text-editing-by-bartosz-sypytkowski)
   - [11 - Teaching Functional Programming by Michael Sperber](#11---teaching-functional-programming-by-michael-sperber)
 
@@ -33,7 +33,7 @@ Here is the list of talks I've attended (some talks have been excluded from this
 
 The most interesting for me was this paper: [The Early History of F# (HOPL IV - first draft)](https://fsharp.org/history/hopl-draft-1.pdf). This paper has 36 pages, you will like it if you like **IT history**.
 
-### 2 - FP Design Patterns in Micro-Service Inter-Process Communication by [Viačeslav Pozdniakov](https://github.com/vipo)
+### 2 - FP Design Patterns in Micro-Service Inter-Process Communication by [Viaceslav Pozdniakov](https://github.com/vipo)
 
 > Design of correct and yet simple inter-process communication in micro-service architecture is a tough thing to do: communication protocols might be sync or async, some APIs use request/response model while others use streaming and so on. In this talk we will discuss which micro-service IPC design problems we (Wix.com) faced and how we solve them using FP building blocks: monads, semigroups, etc. Obviously, introduction of FP design patterns at our scale (>500 developers) is a huge effort, so we will also discuss an execution process of such changes.
 

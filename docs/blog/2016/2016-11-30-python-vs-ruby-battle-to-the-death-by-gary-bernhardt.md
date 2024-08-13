@@ -5,12 +5,12 @@
 - [I. Ruby Complaints](#i-ruby-complaints)
   - [The Zen of Python (PEP-20)](#the-zen-of-python-pep-20)
     - [8. Special cases aren't special enough to break the rules](#8-special-cases-arent-special-enough-to-break-the-rules)
-    - [13. There should be one-- and preferably only one --obvious way to do it](#13-there-should-be-one---and-preferably-only-one---obvious-way-to-do-it)
+    - [13. There should be one and preferably only one obvious way to do it](#13-there-should-be-one-and-preferably-only-one-obvious-way-to-do-it)
     - [16. Although never is often better than *right* now](#16-although-never-is-often-better-than-right-now)
     - [17. If the implementation is hard to explain, it's a bad idea](#17-if-the-implementation-is-hard-to-explain-its-a-bad-idea)
       - [Ruby Grammar](#ruby-grammar)
       - [Python Grammar](#python-grammar)
-    - [19. Namespaces are one honking great idea -- let's do more of those!](#19-namespaces-are-one-honking-great-idea----lets-do-more-of-those)
+    - [19. Namespaces are one honking great idea - let's do more of those!](#19-namespaces-are-one-honking-great-idea---lets-do-more-of-those)
 - [II. Ruby Praise](#ii-ruby-praise)
   - [Composability](#composability)
     - [RSpec](#rspec)
@@ -63,7 +63,7 @@ NoMethodError: undefined method `x' for main:Object
 5
 ```
 
-#### 13. There should be one-- and preferably only one --obvious way to do it
+#### 13. There should be one and preferably only one obvious way to do it
 
 > *Yukihiro Matsumoto*: Ruby inherited the Perl philosophy of having more than one way to do the same thing. I inherited that philosophy from Larry Wall, who is my hero actually. *I want to make Ruby users free. I want to give them the freedom to choose. People are different. People choose different criteria. But if there is a better way among many alternatives, I want to encourage that way by making it comfortable. So that's what I've tried to do. Maybe Python code is a bit more readable. Everyone can write the same style of Python code, so it can be easier to read, maybe. But the difference from one person to the next is so big, providing only one way is little help even if you're using Python, I think. I'd rather provide many ways if it's possible, but encourage or guide users to choose a better way if it's possible.*
 - Reference: [The Philosophy of Ruby.A Conversation with Yukihiro Matsumoto, Part I by Bill Venners. September 29, 2003](http://www.artima.com/intv/ruby3.html)
@@ -102,7 +102,7 @@ Now
 
 ![pygr.jpg](2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt/pygr.jpg)
 
-#### 19. Namespaces are one honking great idea -- let's do more of those!
+#### 19. Namespaces are one honking great idea - let's do more of those!
 
 
 ```ruby

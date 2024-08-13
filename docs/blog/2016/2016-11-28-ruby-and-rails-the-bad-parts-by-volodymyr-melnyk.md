@@ -6,13 +6,13 @@
 - [Bad](#bad)
   - [Ruby isn’t Static- typed](#ruby-isnt-static--typed)
   - [Ruby has an unclear concept of Module](#ruby-has-an-unclear-concept-of-module)
-  - [Proc & Lambda](#proc--lambda)
+  - [Proc and Lambda](#proc-and-lambda)
   - [Ruby Standard Library is a ghetto](#ruby-standard-library-is-a-ghetto)
     - [Abbrev](#abbrev)
     - [Delegator](#delegator)
     - [Alternate syntax](#alternate-syntax)
-    - [`&&` versus `and`](#versus-and)
-    - [`||` versus `or`](#versus-or)
+    - [`&&` versus `and`](#-versus-and)
+    - [`||` versus `or`](#-versus-or)
   - [Values against expressions You should know!](#values-against-expressions-you-should-know)
   - [Boolean Algebra Fail](#boolean-algebra-fail)
   - [Ruby is not that strongly-typed language.](#ruby-is-not-that-strongly-typed-language)
@@ -20,8 +20,7 @@
 
 ## References
 
-These notes are compilled from:
-* https://speakerdeck.com/egoholic/ruby-and-rails-the-bad-parts
+These notes are compiled from https://speakerdeck.com/egoholic/ruby-and-rails-the-bad-parts.
 
 ## Good Parts
 
@@ -68,7 +67,7 @@ C.singleton_class.ancestors
 #]
 ```
 
-### Proc & Lambda
+### Proc and Lambda
 
 In Ruby we have a `Proc` class and two types of its instances (it’s strange), but actually we need only one of them (as for me, I prefer lambdas).
 

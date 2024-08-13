@@ -29,7 +29,7 @@ I've been using Python as scripting language on a non-regular basis. It means I 
   - [3.1 - Misunderstanding Python scope rules](#31---misunderstanding-python-scope-rules)
   - [3.2 - Confusing how Python binds variables in closures](#32---confusing-how-python-binds-variables-in-closures)
   - [3.3 - Variable naming](#33---variable-naming)
-  - [3.4  - Identifying variable types with prefixes](#34----identifying-variable-types-with-prefixes)
+  - [3.4 - Identifying variable types with prefixes](#34---identifying-variable-types-with-prefixes)
 - [4 - Classes](#4---classes)
   - [4.1 - Implementing Java-style getters and setters](#41---implementing-java-style-getters-and-setters)
   - [4.2 - Using property setters as action methods](#42---using-property-setters-as-action-methods)
@@ -719,7 +719,7 @@ id_ = 34
 
 ---
 
-### 3.4  - Identifying variable types with prefixes
+### 3.4 - Identifying variable types with prefixes
 
 Ref: [[6](#original-sources)]
 

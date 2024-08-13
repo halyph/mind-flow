@@ -6,7 +6,7 @@ This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World
 Actually, I have found github repository with Jupiter notebooks. But, I don't like this format and decided to store these notes here.
 
 - [References](#references)
-- [01 - For "loops"](#01---for-%22loops%22)
+- [01 - For "loops"](#01---for-loops)
 - [02 - For with yield](#02---for-with-yield)
 - [03 - Options](#03---options)
 - [04 - Future](#04---future)
@@ -18,7 +18,7 @@ Actually, I have found github repository with Jupiter notebooks. But, I don't li
 - [10 - Other Monads](#10---other-monads)
 - [11 - `scala-arm`](#11---scala-arm)
 - [12 - Monads don't mix](#12---monads-dont-mix)
-- [13 - `Emm & M[_]`](#13---emm--m)
+- [13 - `Emm & M[_]`](#13---emm--m_)
 - [14 - How to Option Your Futures](#14---how-to-option-your-futures)
 - [15 - Sink](#15---sink)
 
@@ -1513,7 +1513,7 @@ fListONums: Future[List[Int]] = Success(List(1, 2, 3, 4, 5))
 res4_2: Future[List[Int]] = Success(List(1, 4, 9, 16, 25))
 ```
 
-## 13 - `Emm  & M[_]`
+## 13 - `Emm & M[_]`
 
 ### 13.01<!-- omit in toc -->
 
