@@ -32,7 +32,8 @@ What about [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/) *"T
 
 If `pip` and `venv` are the answer, then why have people created so many 3rd-party solutions?
 
-I'm certain someone might approach me and say, "You’ve mixed up the tools; you should be using A, B, and C". And that’s exactly the issue - there's too much inconsistency in the community, a lack of clear standards, and overall, it's just a mess.
+I'm certain someone might approach me and say, "You’ve mixed up the tools; you should be using A, B, and C".  
+And that’s exactly the issue - there's too much inconsistency in the community, a lack of clear standards, and overall, it's just a mess.
 
 ## Language
 
