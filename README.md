@@ -6,6 +6,10 @@ _Another attempt of blogging or personal knowledge base_
 
 ![logo.png](docs/assets/images/logo.png)
 
+## 2024
+
+- 2024-08-14 - [Everybody Python, FTW?](docs/blog/2024/2024-08-14-rant-python.md)
+
 ## 2023
 
 - 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](docs/blog/2023/2023-11-27-tools-go.md)

@@ -7,6 +7,10 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
+## 2024
+
+- 2024-08-14 - [Everybody Python, FTW?](2024/2024-08-14-rant-python.md)
+
 ## 2023
 
 - 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](2023/2023-11-27-tools-go.md)
