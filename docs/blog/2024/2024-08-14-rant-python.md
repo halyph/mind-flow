@@ -52,11 +52,10 @@ After Go (`gofmt`) and Scala (`scalafmt`, `scalafix`) where we have only several
 - several fat formatters (`black`, `autopep8`, `yapf`)
 - imports formatters (`autoflake`, `isort` and so on)
 - many small/micro/do-one-things formatters (15+)  
-ans many more
 
-There are much more, check this repo [awesome-python-code-formatters](https://github.com/life4/awesome-python-code-formatters)
+and many more, check this repo [awesome-python-code-formatters](https://github.com/life4/awesome-python-code-formatters).
 
-Remember *"There should be one and preferably only one obvious way to do it"*. Pure joke.
+Remember *"There should be one and preferably only one obvious way to do it"* - it's a joke.
 
 ## The End
 
