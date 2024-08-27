@@ -70,6 +70,7 @@ It checks your Java code and find bugs, inconsistencies and synchronization prob
 1. [Eclipse Metrics plugin](http://sourceforge.net/projects/metrics/)
 
  Provide metrics calculation and dependency analyzer plugin for the Eclipse platform. Measure various metrics with average and standard deviation and detect cycles in package and type dependencies and graph them.
+ 
 1. [QJ-Pro](http://qjpro.sourceforge.net/)
  QJ-Pro is a comprehensive software inspection tool targeted towards the software developer. Developers can automatically inspect their Java source code and improve their Java programming skills as they write their programs. QJ-Pro provides descriptive Java patterns explaining error prone code constructs and providing solutions for it.
 1. [Byecycle](http://byecycle.sourceforge.net/)
