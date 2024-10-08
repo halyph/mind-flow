@@ -24,6 +24,7 @@ Even Ruby has smaller numbers of package management tools (last time I worked wi
 - **Haskell** has `stack` and `cabal`
 
 In Python we have many moving parts:
+
 - manage Python versions: `pyenv`, `conda` (like `rbenv`, `sdkman`)  
 - virtual environments `venv` (standard), `virtualenv`, `pipenv`
 - [package managers](https://dublog.net/blog/so-many-python-package-managers/), good luck there. Many can say "use `requirements.txt` or `Poetry`". Really? 
