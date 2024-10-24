@@ -21,3 +21,4 @@ I am not sure whether it will be valuable for other people. So you are warned ðŸ
 - *"Always leave the campground cleaner than you found it"* - Boy Scout Rule
 - *"Continuous improvement towards perfection"*
 - *"Never confuse education with intelligence, you can have a PhD and still be an idiot"* - Richard P. Feynman
+- *"You Canâ€™t Always Get What You Want"* - The Rolling Stones
