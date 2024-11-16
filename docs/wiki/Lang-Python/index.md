@@ -23,6 +23,7 @@ tags:
 - [The Comprehensive Guide to mypy](https://tushar.lol/post/mypy-guide/)
 - [Python has too many **package managers**](https://dublog.net/blog/so-many-python-package-managers/)
 - [Python Application **Layouts**: A Reference](https://realpython.com/python-application-layouts/)
+- [Common Python Data Structures (Guide)](https://realpython.com/python-data-structures/)
 
 ## Books
 
