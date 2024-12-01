@@ -73,7 +73,7 @@ What surprised me it's the investment in **Rust** and some still support **Ruby*
 [Azure]: https://azure.github.io/azure-sdk/
 [GCP]: https://cloud.google.com/sdk
 [Paypal]: https://developer.paypal.com/studio/checkout/standard/integrate
-[Stripe]: https://docs.stripe.com/stripe-cli/overview
+[Stripe]: https://docs.stripe.com/sdks
 [OpenTelemetry]: https://opentelemetry.io/status/
 [IBM]: https://github.com/IBM/ibm-cloud-sdk-common
 [Cloudflare]: https://developers.cloudflare.com/fundamentals/api/reference/sdks/
