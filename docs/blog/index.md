@@ -9,6 +9,7 @@ hide:
 
 ## 2024
 
+- 2024-12-01 - [Languages popularity by SDKs](2024/2024-12-01-lang-pop-by-sdk.md)
 - 2024-08-14 - [Everybody Python, FTW?](2024/2024-08-14-rant-python.md)
 
 ## 2023

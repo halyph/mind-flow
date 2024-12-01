@@ -8,6 +8,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2024
 
+- 2024-12-01 - [Languages popularity by SDKs](docs/blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2024-08-14 - [Everybody Python, FTW?](docs/blog/2024/2024-08-14-rant-python.md)
 
 ## 2023
