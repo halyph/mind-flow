@@ -9,6 +9,7 @@ hide:
 
 ## 2024
 
+- 2024-12-22 - [Paradox of Choice in Ruby](2024/2024-12-22-paradox-of-choice.md)
 - 2024-12-01 - [Languages popularity by SDKs](2024/2024-12-01-lang-pop-by-sdk.md)
 - 2024-08-14 - [Everybody Python, FTW?](2024/2024-08-14-rant-python.md)
 

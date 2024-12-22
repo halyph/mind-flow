@@ -8,6 +8,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2024
 
+- 2024-12-22 - [Paradox of Choice in Ruby](docs/blog/2024/2024-12-22-paradox-of-choice.md)
 - 2024-12-01 - [Languages popularity by SDKs](docs/blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2024-08-14 - [Everybody Python, FTW?](docs/blog/2024/2024-08-14-rant-python.md)
 
