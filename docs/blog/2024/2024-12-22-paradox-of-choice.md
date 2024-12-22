@@ -144,7 +144,7 @@ Using this syntax we tell Ruby that we want the keys to be symbols.
 { one: "eins", two: "zwei", three: "drei" }
 ```
 
-## Conditional Statements `if` vs `unless`
+### Conditional Statements `if` vs `unless`
 
 Executes code if the condition is `false`.
 
@@ -160,7 +160,7 @@ end
 puts "x is negative" unless x >= 0
 ```
 
-## Loops
+### Loops
 
 #### `loop`
 
