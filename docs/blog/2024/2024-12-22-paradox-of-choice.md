@@ -3,13 +3,16 @@
 
 [The Paradox of Choice – Why More Is Less](https://en.wikipedia.org/wiki/The_Paradox_of_Choice) - is it applicable to programming languages?
 
-I've been using simple (in terms of syntax) languages (*Python*,*Go*) for some time and have an understanding of why such fancy, flexible language as *Ruby* has sort of "irritation" from some software engineers.
+I've been using simple (in terms of syntax) languages (*Python*, *Go*) for some time and have an understanding of why such fancy, flexible language as *Ruby* has sort of "irritation" from some software engineers.
 
-*Please note*,  that I am talking about language only, avoiding ecosystem, Rails, and so on.
+*Please note*, that I am talking about language only, avoiding ecosystem, Rails, and so on.
 
-Ruby is too flexible. It has too many ways of doing the same things using different methods. And after Python/Go it is a big deal for me. I want to concentrate on simple code, which I can read and understand quickly. Yes, I want to see elegant code as well, but today it's more important for me to follow a "less is more" approach, with few possible variations.
+**Ruby** is too flexible. It has too many ways of doing the same things using different methods. I want to concentrate on simple code, which I can read and understand quickly. Yes, I want to see elegant code as well, but today it's more important for me to follow a "less is more" approach, with few possible variations.
 
-Based on my subjective experience, Ruby is very close to Perl. I don't understand why they haven't deprecated some legacy in Ruby. It would make the language cleaner and remove ambiguity.
+From my perspective, Ruby aligns more closely with Perl than with Python. I don't understand why they haven't deprecated some legacy in Ruby. It would make the language cleaner and remove ambiguity.
+
+On the other hand, [**Ruby on Rails**](https://rubyonrails.org/) follows the *"Less is More"* principle, exemplified by its [Convention over Configuration](https://rubyonrails.org/doctrine#convention-over-configuration) approach. This principle was a key factor in the framework's early success.
+
 
 ## Samples of "More is More" in Ruby language
 
