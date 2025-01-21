@@ -11,17 +11,17 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 ## Reading/Listening Stats
 
-<div style="text-align:left; float:right;">
+<div>
 <details markdown>
 <summary>
 Ratings explained
 </summary>
 
-`●○○○○` = Terrible!  
-`●●○○○` = Nothing really beneficial here  
-`●●●○○` = It was Good  
-`●●●●○` = A GREAT read!  
-`●●●●●` = Perfection! 
+- ●○○○○ = Terrible!  
+- ●●○○○ = Nothing really beneficial here  
+- ●●●○○ = It was Good  
+- ●●●●○ = A GREAT read!  
+- ●●●●● = Perfection! 
 
 </details>
 </div>
