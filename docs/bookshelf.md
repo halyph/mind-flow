@@ -11,7 +11,6 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 
 ## Reading/Listening Stats
 
-<div>
 <details markdown>
 <summary>
 Ratings explained
@@ -24,7 +23,6 @@ Ratings explained
 - ●●●●● = Perfection! 
 
 </details>
-</div>
 
 | Year          | Total | (E)Book | Audiobook |
 |---------------|-------|---------|-----------|
