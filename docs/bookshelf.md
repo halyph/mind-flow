@@ -17,11 +17,11 @@ See my [Googreads](https://www.goodreads.com/halyph) profile.
 Ratings explained
 </summary>
 
-⭐️☆☆☆☆ = Terrible!  
-⭐️⭐️☆☆☆ = Nothing really beneficial here  
-⭐️⭐⭐☆☆ = It was Good  
-⭐⭐️⭐⭐☆ = A GREAT read!  
-⭐⭐️⭐⭐⭐ = Perfection! 
+`●○○○○` = Terrible!  
+`●●○○○` = Nothing really beneficial here  
+`●●●○○` = It was Good  
+`●●●●○` = A GREAT read!  
+`●●●●●` = Perfection! 
 
 </details>
 </div>
@@ -45,16 +45,16 @@ Ratings explained
 
 **Read (Book or EBook)**
 
-1. ⭐⭐️⭐⭐☆ *Русофоб*, by **Антін Мухарський** (Ukrideabook, 2023), ISBN 9786177852413
-2. ⭐⭐️⭐⭐☆ *Кладовище домашніх тварин*, by **Стівен Кінг** (КСД, 2023), ISBN 9786171504608
-3. ⭐️⭐⭐☆☆ *Бійцівський клуб*, by **Чак Поланік** (Книжковий клуб «Клуб сімейного дозвілля», 2016), ISBN 9786171208490
-4. ⭐⭐️⭐⭐⭐ *Мізері*, by **Стівен Кінг** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2015), ISBN 9786171200791
-5. ⭐⭐️⭐⭐☆ *Самознищення Європи: імміграція, ідентичність, іслам*, by **Дуглас Мюррей** (Наш Формат, 2024), ISBN 9786178277796
-6. ⭐️⭐⭐☆☆ *Найдовша подорож*, by **Оксана Забужко** (Комора, 2022), ISBN 9786177286881
-7. ⭐️⭐⭐☆☆ *Людина в пошуках справжнього сенсу. Психолог у концтаборі*, by **Віктор Франкл** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2016)
-8. ⭐⭐️⭐⭐⭐ *Щоденник кілера*, by **Денні Кінг** (КСД, 2023), ISBN 9786171503946
-9. ⭐️⭐️☆☆☆ *Tidy First?: A Personal Exercise in Empirical Software Design*, by **Kent Beck** (O'Reilly Media, 2023), ISBN 9781098151249
-10. ⭐️⭐⭐☆☆ *Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software*, by **Scott Rosenberg** (Crown Publishing, NY, 2007), ISBN 9781400082469
+1. `●●●●○` *Русофоб*, by **Антін Мухарський** (Ukrideabook, 2023), ISBN 9786177852413
+2. `●●●●○` *Кладовище домашніх тварин*, by **Стівен Кінг** (КСД, 2023), ISBN 9786171504608
+3. `●●●○○` *Бійцівський клуб*, by **Чак Поланік** (Книжковий клуб «Клуб сімейного дозвілля», 2016), ISBN 9786171208490
+4. `●●●●●` *Мізері*, by **Стівен Кінг** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2015), ISBN 9786171200791
+5. `●●●●○` *Самознищення Європи: імміграція, ідентичність, іслам*, by **Дуглас Мюррей** (Наш Формат, 2024), ISBN 9786178277796
+6. `●●●○○` *Найдовша подорож*, by **Оксана Забужко** (Комора, 2022), ISBN 9786177286881
+7. `●●●○○` *Людина в пошуках справжнього сенсу. Психолог у концтаборі*, by **Віктор Франкл** (Книжковий Клуб «Клуб Сімейного Дозвілля», 2016)
+8. `●●●●●` *Щоденник кілера*, by **Денні Кінг** (КСД, 2023), ISBN 9786171503946
+9. `●●○○○` *Tidy First?: A Personal Exercise in Empirical Software Design*, by **Kent Beck** (O'Reilly Media, 2023), ISBN 9781098151249
+10. `●●●○○` *Dreaming in Code: Two Dozen Programmers, Three Years, 4,732 Bugs, and One Quest for Transcendent Software*, by **Scott Rosenberg** (Crown Publishing, NY, 2007), ISBN 9781400082469
 
 ## 2023
 
