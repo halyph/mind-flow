@@ -5,11 +5,12 @@ from collections import defaultdict
 
 README_HEADER = """# Mind~Flow
 
+<img src="docs/assets/images/logo.png" align="right"/>
+
 [`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md)
 
 _Another attempt of blogging or personal knowledge base_
-
-![logo.png](docs/assets/images/logo.png)
+<br /><br /><br />
 """
 
 MKDOCS_HEADER = """---
