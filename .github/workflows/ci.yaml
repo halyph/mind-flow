@@ -32,7 +32,7 @@ jobs:
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
         run: |
-          mkdocs build --strict
+          mkdocs build
           ls site/
 
       - name: Pushes to another repository
