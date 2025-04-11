@@ -1,7 +1,6 @@
 ---
 tags:
   - git
-  - cut
 ---
 
 # git

@@ -1,7 +1,6 @@
 ---
 tags:
   - github
-  - ci
 ---
 
 # GitHub Action

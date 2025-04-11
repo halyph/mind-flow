@@ -5,8 +5,6 @@ tags:
   - golang
   - testing
   - conference
-  - gopherCon
-  - gopherCon 2017
 ---
 
 # Advanced Testing with Go
