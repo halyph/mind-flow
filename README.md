@@ -7,6 +7,10 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
+## 2025
+
+- 2025-04-11 - [Reflection on the Books reading](docs/blog/2025/2025-04-11-books.md)
+
 ## 2024
 
 - 2024-12-22 - [Paradox of Choice in Ruby](docs/blog/2024/2024-12-22-paradox-of-choice.md)

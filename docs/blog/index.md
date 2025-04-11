@@ -7,6 +7,10 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
+## 2025
+
+- 2025-04-11 - [Reflection on the Books reading](2025/2025-04-11-books.md)
+
 ## 2024
 
 - 2024-12-22 - [Paradox of Choice in Ruby](2024/2024-12-22-paradox-of-choice.md)
