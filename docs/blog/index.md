@@ -9,6 +9,7 @@ hide:
 
 ## 2025
 
+- 2025-04-24 - [TIOBE Index for April 2025 hit the floor](2025/2025-04-24-tiobe.md)
 - 2025-04-11 - [Reflection on the Books reading](2025/2025-04-11-books.md)
 
 ## 2024
