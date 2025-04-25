@@ -26,6 +26,7 @@ Ratings explained
 
 | Year          | Total | (E)Book | Audiobook |
 |---------------|-------|---------|-----------|
+| [2025](#2025) | 13    | 13      | -         |
 | [2024](#2024) | 10    | 10      | -         |
 | [2023](#2023) | 16    | 11      | 5         |
 | [2022](#2022) | 19    | 7       | 12        |
@@ -38,6 +39,24 @@ Ratings explained
 | [2015](#2015) | 5     | 5       | -         |
 | [2014](#2014) | 4     | 4       | -         |
 | [2013](#2013) | 6     | 6       | -         |
+
+## 2025
+
+**Read (Book or EBook)**
+
+1. `●●●●●` *Clean Agile: Back to Basics*, by **Robert C. Martin** (Prentice Hall, 2019), ISBN 9780135781869
+2. `●○○○○` *The Limits of Software: People, Projects, and Perspectives*, by **Robert N. Britcher** (Addison-Wesley, 1999), ISBN 9780201433234
+3. `●●○○○` *Software Runaways: Monumental Software Disasters*, by **Robert L. Glass** (Prentice Hall, 1997), ISBN 9780136734437
+4. `●●●○○` *Humans vs Computers*, by **Gojko Adzic** (Neuri Consulting LLP, 2017), ISBN 9780993088148
+5. `●●●●○` *The ONE Thing: The Surprisingly Simple Truth About Extraordinary Results*, by **Gary Keller**, **Jay Papasan** (Bard Press, 2013), ISBN 9781848549258
+6. `●●●●○` *The Fool's Run*, by **John Sandford** (G.P. Putnam's Sons, 1989), Kindle Edition, ASIN B004IATCES
+7. `●●●○○` *The Empress File*, by **John Sandford** (G.P. Putnam's Sons, 1991), Kindle Edition, ASIN B0087ORPFO
+8. `●●●○○` *The Devil's Code*, by **John Sandford** (G.P. Putnam's Sons, 2000), Kindle Edition, ASIN B000OCXHG8
+9. `●●●●○` *The Hanged Man's Song*, by **John Sandford** (Putnam Adult, 2003), Kindle Edition, ASIN B000OCXHFY 
+10. `●●●●○` *Death March*, by **Edward Yourdon** (Prentice Hall, 2003), ISBN 9780131436350
+11. `●●●●●` *Ghost in the Wires: My Adventures as the World's Most Wanted Hacker*, by **Kevin D. Mitnick**, **William L. Simon** (Little, Brown and Company, 2011), ISBN 9780316212182
+12. `●●●●○` *Where Wizards Stay Up Late: The Origins of the Internet*, by **Katie Hafner**, **Matthew Lyon** (Simon & Schuster, 1998), ISBN 9780684832678
+13. `●●●○○` *The Art of Intrusion: The Real Stories Behind the Exploits of Hackers, Intruders and Deceivers*, by **Kevin D. Mitnick**, **William L. Simon** (Wiley, 2005), ISBN 9780471782667
 
 ## 2024
 
@@ -132,7 +151,7 @@ Ratings explained
 2. *Python Interviews: Discussions with Python Experts*, by **Michael Driscoll** (Packt Publishing, 2018), ISBN 9781788391764
 3. *1984*, by **George Orwell**, ISBN 9789662355574
 4. *Animal Farm,* by **George Orwell**, ISBN 9780452284241
-5. *Вторжение. Краткая история русских хакеров*, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 9785604262733
+5. *Вторження. Краткая история русских хакеров*, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 9785604262733
 6. *UNIX: A History and a Memoir*, by **Brian W. Kernighan** (Independently Published, 2019), ISBN 9781695978553
 7. *Lab Rats: How Silicon Valley Made Work Miserable for the Rest of Us*, by **Dan Lyons** (Hachette Books, 2018), ISBN 9780316561860
 
