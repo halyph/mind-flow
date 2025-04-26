@@ -151,7 +151,7 @@ Ratings explained
 2. *Python Interviews: Discussions with Python Experts*, by **Michael Driscoll** (Packt Publishing, 2018), ISBN 9781788391764
 3. *1984*, by **George Orwell**, ISBN 9789662355574
 4. *Animal Farm,* by **George Orwell**, ISBN 9780452284241
-5. *Вторження. Краткая история русских хакеров*, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 9785604262733
+5. *Вторжение. Краткая история русских хакеров*, by **Даниил Туровский** (Индивидуум паблишинг, 2019), ISBN 9785604262733
 6. *UNIX: A History and a Memoir*, by **Brian W. Kernighan** (Independently Published, 2019), ISBN 9781695978553
 7. *Lab Rats: How Silicon Valley Made Work Miserable for the Rest of Us*, by **Dan Lyons** (Hachette Books, 2018), ISBN 9780316561860
 
