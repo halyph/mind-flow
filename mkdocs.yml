@@ -110,3 +110,8 @@ plugins:
   - tags:
       tags: true
       tags_file: wiki/tags.md
+  - rss:
+      match_path: "blog/.*"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
