@@ -60,7 +60,7 @@ For me the future is here and it is called [`uv`](https://github.com/astral-sh/u
 Some may say [`PDM`](https://github.com/pdm-project/pdm) can do the same - but what about speed? A fast tool can change how you think. You can use `uv` for everything.
 You don’t even need Python installed to start using it - `uv` bootstraps Python for you.
 
-Sme Python developers might object that `uv` is implemented in Rust — but honestly, I don’t care what language it’s written in. I care about functionality and performance.
+Some Python developers might object that `uv` is implemented in Rust — but honestly, I don’t care what language it’s written in. I care about functionality and performance.
 
 ## What’s Next?
 
