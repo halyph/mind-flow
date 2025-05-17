@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2025
 
+- 2025-05-17 - [One Python, Who-Knows-How-Many Toolchains, and a Dash of Hope](docs/blog/2025/2025-05-17-py-pkg-madness.md)
 - 2025-05-12 - [How I use the Pomodoro technique in 2025](docs/blog/2025/2025-05-12-pomodoro.md)
 - 2025-04-24 - [TIOBE Index for April 2025 hit the floor](docs/blog/2025/2025-04-24-tiobe.md)
 - 2025-04-11 - [Reflection on the Books reading](docs/blog/2025/2025-04-11-books.md)
