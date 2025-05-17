@@ -24,10 +24,8 @@ But the line *"There should be one-- and preferably only one --obvious way to do
 
 Python is an old language with a lot of baggage. Is that an excuse for the mess in its ecosystem? I don’t think so.
 
-*Note*: I added *Ruby* and *Java* to the picture below, since they’re also old languages - but they have clear and consistent package management systems.
-
 ![alt text](2025-05-17-py-pkg-madness/pic2.png)
-
+<sub>*Note*: I added *Ruby* and *Java* to the picture above, since they’re also old languages - but they have clear and consistent package management systems.</sub>
 ## Tools Madness 
 
 Here’s a list of features Python’s ecosystem should provide for developers:
