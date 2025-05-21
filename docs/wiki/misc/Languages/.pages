@@ -1,0 +1,5 @@
+order: asc
+sort_type: natural
+nav:
+    - My Ranking: prog-lang-ranking.md
+    - ...

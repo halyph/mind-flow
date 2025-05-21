@@ -1,7 +1,7 @@
 order: asc
 sort_type: natural
 nav:
-    - Programming Languages Ranking: prog-lang-ranking.md
+    - Languages
     - My Tools: tools.md
     - Worth Reading: worth-reading.md
     - ...
