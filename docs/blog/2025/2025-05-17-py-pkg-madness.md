@@ -68,13 +68,15 @@ I might dive deeper into using `uv` in a future post - what it can do, what surp
 
 ## References
 
-- Cool articles, tools overviews:
+- **Video** [Python project and package management — Mike Kittridge, Wellington Python Meetup - 17 Apr 2025](https://www.youtube.com/watch?v=uBqkAa8G9Bo)
+- Python package managers overviews:
   - [Python has too many package managers](https://dublog.net/blog/so-many-python-package-managers/)
   - [An unbiased evaluation of environment management and packaging tools](https://alpopkes.com/posts/python/packaging_tools/)  
-- [Video - Python project and package management — Mike Kittridge, Wellington Python Meetup - 17 Apr 2025](https://www.youtube.com/watch?v=uBqkAa8G9Bo)
-- [Wikipedia - History of Python](https://en.wikipedia.org/wiki/History_of_Python)
-- [Wikipedia - Ruby (programming language)](https://en.wikipedia.org/wiki/Ruby_(programming_language))
-- [The Java Version Almanac](https://javaalmanac.io)
-- [PyPA - Packaging History](https://www.pypa.io/en/latest/history/)
-- [Python Packaging User Guide - PyPA Projects](https://packaging.python.org/en/latest/key_projects/#pypa-projects)
-- [Packaging PEPs](https://peps.python.org/topic/packaging/)
+- History:
+  - [Wikipedia - History of Python](https://en.wikipedia.org/wiki/History_of_Python)
+  - [Wikipedia - Ruby (programming language)](https://en.wikipedia.org/wiki/Ruby_(programming_language))
+  - [The Java Version Almanac](https://javaalmanac.io)
+- Python docs
+  - [PyPA - Packaging History](https://www.pypa.io/en/latest/history/)
+  - [Python Packaging User Guide - PyPA Projects](https://packaging.python.org/en/latest/key_projects/#pypa-projects)
+  - [Packaging PEPs](https://peps.python.org/topic/packaging/)
