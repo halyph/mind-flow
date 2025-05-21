@@ -20,11 +20,13 @@ tags:
 ## Posts
 
 - [Understanding all of Python, through its builtins](https://tushar.lol/post/builtins/)
+- [Every dunder method in Python](https://www.pythonmorsels.com/every-dunder-method/)
 - [The Comprehensive Guide to mypy](https://tushar.lol/post/mypy-guide/)
 - [Python Application **Layouts**: A Reference](https://realpython.com/python-application-layouts/)
 - [Common Python Data Structures (Guide)](https://realpython.com/python-data-structures/)
 
 ### Package managers
+
 - [Python has too many **package managers**](https://dublog.net/blog/so-many-python-package-managers/)
 - [An unbiased evaluation of environment management and packaging tools](https://alpopkes.com/posts/python/packaging_tools/)
 
