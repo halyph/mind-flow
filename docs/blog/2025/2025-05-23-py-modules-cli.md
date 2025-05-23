@@ -51,7 +51,7 @@ Some are useful. Some are weird. All are built in.
 | `webbrowser`  | `python3 -m webbrowser https://example.com`                                            | **Open URLs in browser.** Automate browser launches from scripts.                                              |
 | `zipfile`     | `python3 -m zipfile -c archive.zip file1 file2`<br>`python3 -m zipfile -l archive.zip` | **Create/list ZIP files.** Handle ZIP archives without needing external utilities.                             |
 
-Check these modules, some of them might be useful if you have machine with Python only installed.
+These built-in modules can be handy on systems where only Python is available.
 
 ### Python-Specific Tools
 
