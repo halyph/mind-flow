@@ -119,6 +119,16 @@ In the meantime, these built-in CLI tools are still worth knowing about. Especia
   - [PEP 632 – Deprecate distutils module][PEP 632]
 - [Modules command-line interface (CLI)][pydoc-cmdline]
 
+## Bonus: Packages I'd Remove Tomorrow
+
+Here’s my personal hit list of packages I believe should be deprecated—and removed as soon as possible from the standard library:
+
+
+1. [**tkinter**](https://github.com/python/cpython/tree/3.13/Lib/tkinter) — GUI toolkit with a dated feel and platform inconsistencies.
+2. [**turtledemo**](https://github.com/python/cpython/tree/3.13/Lib/turtledemo) — Educational, but better suited as a pip-installable package or separate teaching tool.
+3. [**idlelib**](https://github.com/python/cpython/tree/3.13/Lib/idlelib) — Underused legacy IDE; doesn’t belong in the core distribution anymore.
+4. [**xmlrpc**](https://github.com/python/cpython/tree/main/Lib/xmlrpc) — Outdated protocol, mostly replaced by REST or gRPC in modern projects.
+
 
 [pydoc-cmdline]: https://docs.python.org/3.13/library/cmdline.html
 [PEP 594]: https://peps.python.org/pep-0594/
