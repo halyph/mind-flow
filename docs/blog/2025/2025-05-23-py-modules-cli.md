@@ -121,7 +121,7 @@ In the meantime, these built-in CLI tools are still worth knowing about. Especia
 
 ## Bonus: Packages I'd Remove Tomorrow
 
-Here’s my personal hit list of packages I believe should be deprecated—and removed as soon as possible from the standard library:
+Here’s my personal hit list of packages I believe should be deprecated and removed as soon as possible from the standard library:
 
 
 1. [**tkinter**](https://github.com/python/cpython/tree/3.13/Lib/tkinter) — GUI toolkit with a dated feel and platform inconsistencies.
