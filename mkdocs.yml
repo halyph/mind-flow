@@ -100,6 +100,7 @@ extra_css:
 # Useful plugins: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
 # Plugin documentation: https://www.mkdocs.org/user-guide/configuration/#plugins
 plugins:
+  - meta
   - search
   - awesome-pages
   - git-revision-date-localized
