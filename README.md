@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2025
 
+- 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](docs/blog/2025/2025-05-26-py-sort.md)
 - 2025-05-23 - [Exploring Python’s Hidden CLI Modules](docs/blog/2025/2025-05-23-py-modules-cli.md)
 - 2025-05-17 - [One Python, Who-Knows-How-Many Toolchains, and a Dash of Hope](docs/blog/2025/2025-05-17-py-pkg-madness.md)
 - 2025-05-12 - [How I use the Pomodoro technique in 2025](docs/blog/2025/2025-05-12-pomodoro.md)
