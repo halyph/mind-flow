@@ -6,6 +6,5 @@ nav:
     - Lang-Go
     - Lang-Python
     - Lang-Java
-    - Lang-Scala
     - ...
     - tags.md

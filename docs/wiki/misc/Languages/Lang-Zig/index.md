@@ -5,7 +5,7 @@ tags:
 
 # Zig useful links
 
-<div class="note inline end"> <p><img alt="logo.png" src="zig-logo.png"></p> </div>
+<div class="note inline end"> <p><img alt="logo.png" src="index/zig-logo.png"></p> </div>
 
 ## Sites/Repos
 
