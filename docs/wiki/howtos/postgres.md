@@ -11,11 +11,11 @@ tags:
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 - [Why upgrade PostgreSQL?](https://why-upgrade.depesz.com)
   
-### Tools 
+??? info "Tools"
 
-- [pgx_scripts](https://github.com/pgexperts/pgx_scripts) - A collection of useful little scripts for database analysis and administration
-  - [bloat](https://github.com/pgexperts/pgx_scripts/tree/master/bloat) - queries to estimate bloat in *tables* and *indexes*
-- [pg_repack](https://github.com/reorg/pg_repack) is a PostgreSQL extension which lets you remove *bloat* from *tables* and *indexes*, and optionally restore the physical order of clustered indexes.
+    - [pgx_scripts](https://github.com/pgexperts/pgx_scripts) - A collection of useful little scripts for database analysis and administration
+      - [bloat](https://github.com/pgexperts/pgx_scripts/tree/master/bloat) - queries to estimate bloat in *tables* and *indexes*
+    - [pg_repack](https://github.com/reorg/pg_repack) is a PostgreSQL extension which lets you remove *bloat* from *tables* and *indexes*, and optionally restore the physical order of clustered indexes.
 
 ## 1. Export to CSV with `\copy`
 
