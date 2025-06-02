@@ -52,3 +52,69 @@ select user_management.terminate_backend(pid)
 or use `pg_terminate_backend ( pid integer ) → boolean` sends SIGTERM signal to backend processes identified by process ID [^1]
 
 [^1]: Terminates the session whose backend process has the specified process ID. This is also allowed if the calling role is a member of the role whose backend is being terminated or the calling role has been granted pg_signal_backend, however only superusers can terminate superuser backends (see [Server Signaling Functions](https://www.postgresql.org/docs/13/functions-admin.html#FUNCTIONS-ADMIN-SIGNAL))
+
+## 3. Get all ID columns in PSQL
+
+```sql
+SELECT column_name, data_type
+FROM information_schema.columns
+WHERE table_schema = 'public'
+  AND column_name LIKE '%id';
+```
+
+??? example
+
+    ```
+          column_name      |     data_type
+    -----------------------+-------------------
+    id                    | integer
+    ...
+    some_id               | uuid
+    id                    | text
+    notification_id       | uuid
+    (21 rows)
+    ```
+
+## 4. List and order tables by size
+
+see SO: [PostgreSQL: Get table size](https://stackoverflow.com/questions/21738408/postgresql-list-and-order-tables-by-size)
+
+This shows you the size of all tables in the schema `pg_catalog`:
+
+```sql
+SELECT table_name,
+       PG_SIZE_PRETTY(PG_TOTAL_RELATION_SIZE(QUOTE_IDENT(table_name))),
+       PG_TOTAL_RELATION_SIZE(QUOTE_IDENT(table_name))
+FROM information_schema.tables
+WHERE table_schema = 'pg_catalog'
+ORDER BY 3 DESC;
+```
+
+??? example
+
+    | table\_name | pg\_size\_pretty | pg\_total\_relation\_size |
+    | :--- | :--- | :--- |
+    | pg\_proc | 1320 kB | 1351680 |
+    | pg\_attribute | 856 kB | 876544 |
+    | pg\_rewrite | 776 kB | 794624 |
+
+This shows you the size of all tables in all schemas:
+
+```sql
+SELECT table_schema,
+       table_name,
+       PG_RELATION_SIZE('"' || table_schema || '"."' || table_name || '"')
+FROM information_schema.tables
+ORDER BY 3 DESC;
+```
+
+??? example
+
+    | table\_schema | table\_name | pg\_relation\_size |
+    | :--- | :--- | :--- |
+    | pg\_catalog | pg\_proc | 884736 |
+    | public | content\_production\_briefings | 688128 |
+    | pg\_catalog | pg\_attribute | 573440 |
+    | pg\_catalog | pg\_collation | 114688 |
+    | information\_schema | sql\_features | 65536 |
+    | pg\_catalog | pg\_amop | 57344 |
