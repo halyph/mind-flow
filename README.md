@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2025
 
+- 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](docs/blog/2025/2025-06-04-ms-rusty.md)
 - 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](docs/blog/2025/2025-05-26-py-sort.md)
 - 2025-05-23 - [Exploring Python’s Hidden CLI Modules](docs/blog/2025/2025-05-23-py-modules-cli.md)
 - 2025-05-17 - [One Python, Who-Knows-How-Many Toolchains, and a Dash of Hope](docs/blog/2025/2025-05-17-py-pkg-madness.md)
