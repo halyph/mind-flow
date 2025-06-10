@@ -9,6 +9,7 @@ hide:
 
 ## 2025
 
+- 2025-06-10 - [The State of "Let's Rewrite It in Rust"](2025/2025-06-10-rewrite-in-rust.md)
 - 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](2025/2025-06-04-ms-rusty.md)
 - 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](2025/2025-05-26-py-sort.md)
 - 2025-05-23 - [Exploring Python’s Hidden CLI Modules](2025/2025-05-23-py-modules-cli.md)
