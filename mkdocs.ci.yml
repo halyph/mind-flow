@@ -1,0 +1,22 @@
+# mkdocs.ci.yml
+# CI-specific MkDocs configuration. Extends mkdocs.yml and adds plugins only for CI builds.
+
+INHERIT: mkdocs.yml
+
+plugins:
+  - meta
+  - search
+  - awesome-pages
+  - git-revision-date-localized
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+  - tags:
+      tags: true
+      tags_file: wiki/tags.md
+  - rss:
+      match_path: "blog/.*"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
