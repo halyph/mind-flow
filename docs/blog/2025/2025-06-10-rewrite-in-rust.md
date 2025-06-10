@@ -104,7 +104,6 @@ References
 
 - [Shopify: Our Experience Porting the YJIT Ruby Compiler to Rust, 2022](https://shopify.engineering/porting-yjit-ruby-compiler-to-rust)
 - Youtube [Fitting Rust YJIT into CRuby by Alan Wu, 2023](https://www.youtube.com/watch?v=GI7vvAgP_Qs)
-	- https://www.youtube.com/results?search_query=YJIT+Rust
 
 </details>
 
