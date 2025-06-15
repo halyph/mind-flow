@@ -38,7 +38,7 @@ Tech Radar:
   - ✅ Java
   - ✅ Scala
   - Groovy
-  - Kotlin
+  - ☠️🇷🇺🐷🐶 Kotlin
   - Clojure
 - System / Low-level Programming:
   - ✅ C
