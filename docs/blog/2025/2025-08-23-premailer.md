@@ -421,11 +421,11 @@ No so bad, ugly, but better than with stripped styles.
 
 ### 2. Use LLM to inline CSS styles
 
-- inline CSS styles with LLM `email_inline_styles.html`
+- inlined CSS styles `email_inline_styles.html`
 
 <details>
 <summary>
-See <code>email_inline_styles.html</code> file with inlined CSS styles
+See <code>email_inline_styles.html</code>
 </summary>
 
 ```html
@@ -540,6 +540,6 @@ go run sendme.go email_inline_styles.html
 ## Summary
 
 - Gmail strips most modern CSS - so inline styles are the only reliable way.
-- Manually embedding styles is painful and error-prone
+- Manually inlined styles are painful and error-prone
 - Using a library like[`go-premailer`](https://github.com/vanng822/go-premailer) or an external tool makes emails maintainable.
 - Expect trade-offs: some layouts (e.g., flexbox, grid) still won’t render properly, so keep your HTML email design simple.
