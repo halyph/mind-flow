@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2025
 
+- 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](docs/blog/2025/2025-08-23-premailer.md)
 - 2025-06-10 - [The State of "Let's Rewrite It in Rust"](docs/blog/2025/2025-06-10-rewrite-in-rust.md)
 - 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](docs/blog/2025/2025-06-04-ms-rusty.md)
 - 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](docs/blog/2025/2025-05-26-py-sort.md)
