@@ -421,7 +421,7 @@ No so bad, ugly, but better than with stripped styles.
 
 ### 2. Use LLM to inline CSS styles
 
-- use `email_inline_styles.html`
+- inline CSS styles with LLM `email_inline_styles.html`
 
 <details>
 <summary>
@@ -526,7 +526,14 @@ See <code>email_inline_styles.html</code> file with inlined CSS styles
 ```
 </details>
 
-- send email `<List ENV VARs> go run sendme.go email_inline_styles.html`
+- send email
+
+```bash
+SENDER_EMAIL="your@email.com" \
+RECEIVER_EMAIL="recipient@email.com" \
+SENDER_PASSWORD="your_app_password" \
+go run sendme.go email_inline_styles.html
+```
 
 ![alt text](2025-08-23-premailer/pic4.jpg)
 
