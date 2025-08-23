@@ -21,7 +21,10 @@ But when you sent it GMail client renders it like this:
 ## Send sample email via Go
 
 ```bash
-SENDER_EMAIL="your@email.com" RECEIVER_EMAIL="recipient@email.com" SENDER_PASSWORD="your_app_password" go run sendme.go email.html
+SENDER_EMAIL="your@email.com" \
+RECEIVER_EMAIL="recipient@email.com" \
+SENDER_PASSWORD="your_app_password" \
+go run sendme.go email.html
 ```
 
 <details>
@@ -409,6 +412,7 @@ My demo app is in Go, that's why I've picked [`go-premailer`](https://github.com
 +       return result
 +}
 ```
+
 - Send email
 
 ![alt text](2025-08-23-premailer/pic3.jpg)
@@ -418,108 +422,110 @@ No so bad, ugly, but better than with stripped styles.
 ### 2. Use LLM to inline CSS styles
 
 - use `email_inline_styles.html`
-- <details>
-    <summary>
-    See <code>email_inline_styles.html</code> file with inlined CSS styles
-    </summary>
 
-    ```html
-        <!DOCTYPE html>
-        <html lang="en">
+<details>
+<summary>
+See <code>email_inline_styles.html</code> file with inlined CSS styles
+</summary>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Item Validation Report</title>
-            <!-- All styles are now inline for Gmail compatibility -->
-        </head>
+```html
+    <!DOCTYPE html>
+    <html lang="en">
 
-        <body>
-            <div style="background:#667eea;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:30px;border-radius:10px;margin-bottom:30px;text-align:center;">
-                <h1 style="margin:0 0 10px;font-size:2.5em;font-weight:300;">🎯 Embed styles</h1>
-                <p style="margin:0;">Generated on Fri, 22 Aug 2025 15:52:08 CEST</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Item Validation Report</title>
+        <!-- All styles are now inline for Gmail compatibility -->
+    </head>
+
+    <body>
+        <div style="background:#667eea;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:30px;border-radius:10px;margin-bottom:30px;text-align:center;">
+            <h1 style="margin:0 0 10px;font-size:2.5em;font-weight:300;">🎯 Embed styles</h1>
+            <p style="margin:0;">Generated on Fri, 22 Aug 2025 15:52:08 CEST</p>
+        </div>
+        <div style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+            <h2 style="margin-top:0;">📊 Summary</h2>
+            <p><strong>Total smth:</strong> 123</p>
+        </div>
+        <div style="margin-bottom:40px;">
+            <div style="background:#34495e;background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:15px 25px;border-radius:8px 8px 0 0;margin-bottom:0;">
+                <h3 style="margin:0;font-size:1.3em;font-weight:600;">📅 2025-W29 <span style="font-weight:300;opacity:0.75;color:#ecf0f1;vertical-align:baseline;display:inline-block;">(Jul 14 - Jul 20)</span> - 3 items</h3>
             </div>
-            <div style="background:#fff;padding:20px;border-radius:8px;margin-bottom:30px;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
-                <h2 style="margin-top:0;">📊 Summary</h2>
-                <p><strong>Total smth:</strong> 123</p>
-            </div>
-            <div style="margin-bottom:40px;">
-                <div style="background:#34495e;background:linear-gradient(135deg,#34495e 0%,#2c3e50 100%);color:#fff;padding:15px 25px;border-radius:8px 8px 0 0;margin-bottom:0;">
-                    <h3 style="margin:0;font-size:1.3em;font-weight:600;">📅 2025-W29 <span style="font-weight:300;opacity:0.75;color:#ecf0f1;vertical-align:baseline;display:inline-block;">(Jul 14 - Jul 20)</span> - 3 items</h3>
-                </div>
-                <table style="width:100%;background:#fff;border-radius:0 0 8px 8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);overflow:hidden;border-collapse:collapse;">
-                    <tr style="background:#f8f9fa;border-bottom:2px solid #dee2e6;padding:12px 0;font-weight:600;font-size:0.9em;color:#495057;">
-                        <td style="padding:12px 20px;font-weight:600;">Item</td>
-                        <td style="padding:12px 20px;font-weight:600;">Changes</td>
-                    </tr>
-                    <tr style="border-bottom:1px solid #e9ecef;">
-                        <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
-                            <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">1.</span>
-                            <span style="display:flex;flex-direction:column;gap:2px;">
-                                <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">ABC123</a></span>
-                                <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Blueberry Muffin</span>
+            <table style="width:100%;background:#fff;border-radius:0 0 8px 8px;box-shadow:0 2px 10px rgba(0,0,0,0.1);overflow:hidden;border-collapse:collapse;">
+                <tr style="background:#f8f9fa;border-bottom:2px solid #dee2e6;padding:12px 0;font-weight:600;font-size:0.9em;color:#495057;">
+                    <td style="padding:12px 20px;font-weight:600;">Item</td>
+                    <td style="padding:12px 20px;font-weight:600;">Changes</td>
+                </tr>
+                <tr style="border-bottom:1px solid #e9ecef;">
+                    <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
+                        <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">1.</span>
+                        <span style="display:flex;flex-direction:column;gap:2px;">
+                            <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">ABC123</a></span>
+                            <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Blueberry Muffin</span>
+                        </span>
+                    </td>
+                    <td style="padding:12px 20px;text-align:left;">
+                        <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
+                            <span style="font-size:0.9em;margin-right:6px;">🚫</span>
+                            <span style="font-weight:600;color:#495057;width:180px;">Exclusion:</span>
+                            <span style="color:#6c757d;text-align:left;flex:1;">
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+CZ</span>
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+SK</span>
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+HU</span>
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+GB</span>
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+CH</span>
+                                <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+PL</span>
                             </span>
-                        </td>
-                        <td style="padding:12px 20px;text-align:left;">
-                            <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
-                                <span style="font-size:0.9em;margin-right:6px;">🚫</span>
-                                <span style="font-weight:600;color:#495057;width:180px;">Exclusion:</span>
-                                <span style="color:#6c757d;text-align:left;flex:1;">
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+CZ</span>
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+SK</span>
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+HU</span>
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+GB</span>
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+CH</span>
-                                    <span style="background:#d4edda;color:#155724;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">+PL</span>
-                                </span>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="border-bottom:1px solid #e9ecef;">
-                        <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
-                            <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">2.</span>
-                            <span style="display:flex;flex-direction:column;gap:2px;">
-                                <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">XYZ789</a></span>
-                                <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Red Velvet Cake</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-bottom:1px solid #e9ecef;">
+                    <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
+                        <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">2.</span>
+                        <span style="display:flex;flex-direction:column;gap:2px;">
+                            <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">XYZ789</a></span>
+                            <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Red Velvet Cake</span>
+                        </span>
+                    </td>
+                    <td style="padding:12px 20px;text-align:left;">
+                        <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
+                            <span style="font-size:0.9em;margin-right:6px;">🚫</span>
+                            <span style="font-weight:600;color:#495057;width:180px;">Exclusion:</span>
+                            <span style="color:#6c757d;text-align:left;flex:1;">
+                                <span style="background:#f8d7da;color:#721c24;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">-PL</span>
                             </span>
-                        </td>
-                        <td style="padding:12px 20px;text-align:left;">
-                            <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
-                                <span style="font-size:0.9em;margin-right:6px;">🚫</span>
-                                <span style="font-weight:600;color:#495057;width:180px;">Exclusion:</span>
-                                <span style="color:#6c757d;text-align:left;flex:1;">
-                                    <span style="background:#f8d7da;color:#721c24;padding:2px 6px;border-radius:3px;font-size:0.8em;font-weight:600;margin:0 2px;display:inline-block;">-PL</span>
-                                </span>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="border-bottom:1px solid #e9ecef;">
-                        <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
-                            <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">3.</span>
-                            <span style="display:flex;flex-direction:column;gap:2px;">
-                                <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">LMN456</a></span>
-                                <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Chocolate Croissant</span>
-                            </span>
-                        </td>
-                        <td style="padding:12px 20px;text-align:left;">
-                            <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
-                                <span style="font-size:0.9em;margin-right:6px;">📝</span>
-                                <span style="font-weight:600;color:#495057;width:180px;">Wording:</span>
-                                <span style="color:#6c757d;text-align:left;flex:1;">"Text1" → "Wow"</span>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div style="text-align:center;color:#666;margin-top:40px;padding:20px;border-top:1px solid #ddd;">
-                <p style="margin:0;">This report was automatically generated by some tool</p>
-                <p style="margin:0;">Version: <b>dev</b> | GitHead: <b>unknown</b></p>
-            </div>
-        </body>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="border-bottom:1px solid #e9ecef;">
+                    <td style="padding:12px 20px;min-width:200px;display:flex;align-items:center;text-align:left;">
+                        <span style="font-weight:700;font-size:0.9em;color:#7f8c8d;margin-right:8px;min-width:20px;">3.</span>
+                        <span style="display:flex;flex-direction:column;gap:2px;">
+                            <span style="font-weight:600;font-size:1.1em;color:#2c3e50;"><a href="#" target="_blank" style="color:#3498db;text-decoration:underline;font-weight:600;">LMN456</a></span>
+                            <span style="font-weight:400;font-size:0.85em;color:#7f8c8d;font-style:italic;">Chocolate Croissant</span>
+                        </span>
+                    </td>
+                    <td style="padding:12px 20px;text-align:left;">
+                        <div style="margin-bottom:8px;font-size:0.85em;line-height:1.4;text-align:left;display:flex;align-items:flex-start;">
+                            <span style="font-size:0.9em;margin-right:6px;">📝</span>
+                            <span style="font-weight:600;color:#495057;width:180px;">Wording:</span>
+                            <span style="color:#6c757d;text-align:left;flex:1;">"Text1" → "Wow"</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="text-align:center;color:#666;margin-top:40px;padding:20px;border-top:1px solid #ddd;">
+            <p style="margin:0;">This report was automatically generated by some tool</p>
+            <p style="margin:0;">Version: <b>dev</b> | GitHead: <b>unknown</b></p>
+        </div>
+    </body>
 
-        </html>
-    ```
-    </details>
+    </html>
+```
+</details>
+
 - send email `<List ENV VARs> go run sendme.go email_inline_styles.html`
 
 ![alt text](2025-08-23-premailer/pic4.jpg)
