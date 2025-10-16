@@ -5,6 +5,26 @@ tags:
 
 # git
 
+
+## My base Git aliases
+
+```
+git config --global user.email "halyph@gmail.com"
+git config --global user.name "Orest Ivasiv"
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.hist "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+git config --global alias.cf "!cat .git/config"
+```
+
+## How to change commit author for the last commit
+
+```
+git commit --amend --author="Orest Ivasiv <halyph@gmail.com>"
+```
+
 ## Undo the Last Commit
 
 ```shell
