@@ -1,4 +1,4 @@
-# Claude Code Prompts
+# Claude Code CLI Prompts
 > | genai |
 
 ![alt text](2025-10-29-claude-code-notes/pic0.png)
