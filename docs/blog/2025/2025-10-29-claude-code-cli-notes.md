@@ -22,7 +22,8 @@ I decided to use [mitproxy](https://www.mitmproxy.org). It's free and simple to 
 
 ### Step-by-step guide
 
-- update `.claude/settings.json` **ANTHROPIC_BASE_URL**. It must point to proxy base URL. I guess I could use `export ANTHROPIC_BASE_URL=http://localhost:8000` as well, I haven't tried.
+- update `.claude/settings.json` **ANTHROPIC_BASE_URL**. It must point to proxy base URL.  
+I guess I could use `export ANTHROPIC_BASE_URL=http://localhost:8000` as well, I haven't tried.
 - `cat $HOME/.claude/settings.json`:
 ```json
 {
