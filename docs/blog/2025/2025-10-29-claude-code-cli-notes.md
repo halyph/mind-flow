@@ -15,6 +15,29 @@ So, I would be able to see:
 - request/response flow
 - Claude Code prompts
 
+---
+
+- [System](#system)
+- [Tools](#tools)
+  - [1. Task](#1-task)
+  - [2. Bash](#2-bash)
+  - [3. Glob](#3-glob)
+  - [4. Grep](#4-grep)
+  - [5. Read](#5-read)
+  - [6. ExitPlanMode](#6-exitplanmode)
+  - [7. Edit](#7-edit)
+  - [8. Write](#8-write)
+  - [9. NotebookEdit](#9-notebookedit)
+  - [10. WebFetch](#10-webfetch)
+  - [11. TodoWrite](#11-todowrite)
+  - [12. WebSearch](#12-websearch)
+  - [13. BashOutput](#13-bashoutput)
+  - [14. KillShell](#14-killshell)
+  - [15. AskUserQuestion](#15-askuserquestion)
+  - [16. Skill](#16-skill)
+  - [17. SlashCommand](#17-slashcommand)
+
+---
 
 ## Setup proxy
 
