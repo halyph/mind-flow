@@ -35,7 +35,7 @@ A team had many services split across **Java** and **Scala**, with two main d
 
 Some engineers preferred Domain 2, some Domain 1. But even within Domain 1, new joiners often knew only Spring and not Scala + Play.
 
-This “freedom” of choice created a ticking *tech debt* bomb. No one could be an expert in all services, troubleshooting was hard, and switching between domains was painful. And all of this happened organically - not inherited from previous teams.
+This "freedom" of choice created a ticking *tech debt* bomb. No one could be an expert in all services, troubleshooting was hard, and switching between domains was painful. And all of this happened organically - not inherited from previous teams.
 
 
 ### Case 3: Microservices and the "Unloved Stack"
@@ -58,7 +58,7 @@ No rotation meant knowledge was concentrated in a single person - a perfectly en
 
 ### Case 4: Same Story, Different Tech
 
-A team with many **Go** services enjoyed similar structure. Then they inherited a Java + Spring Boot service from another team.
+A team with many **Go** services enjoyed similar structure, design approaches, tooling. Then they inherited a Java + Spring Boot service from another team.
 
 The story repeated itself: volunteers were scarce, knowledge concentrated, and maintenance painful. Different team, same outcome.
 
