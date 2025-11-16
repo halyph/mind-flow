@@ -54,7 +54,7 @@ When he went on vacation or got sick, the whole system paused:
 - "Don't breathe" they said
 - "Let this shit peacefully run" 🤫
 
-No rotation meant knowledge was concentrated in a single person - a perfectly engineered *"artificial tuberculosis island"* ☣️🧪.
+No rotation meant knowledge was concentrated in a single person - a perfectly engineered *"artificial tuberculosis island"* ☣️.
 
 ### Case 4: Same Story, Different Tech
 
