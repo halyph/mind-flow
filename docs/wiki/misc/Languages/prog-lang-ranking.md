@@ -13,9 +13,9 @@ I like selecting programming languages based on my subjective criteria.
 
 ## Programming Languages
 
-- 🥇 : **Golang**, **Python**
-- 🥈 : Java, Scala
-- 🥉 : C, JavaScript
+- 🥇 **Golang**, **Python**
+- 🥈 Java, Scala
+- 🥉 C, JavaScript
 
 Tech Radar:
 
