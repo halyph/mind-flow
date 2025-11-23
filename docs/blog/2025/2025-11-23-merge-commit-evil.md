@@ -16,6 +16,8 @@ instead of this
 
 **Note, for both cases `main` branch contains the same number of commits.**
 
+---
+
 So many things have gone wrong: 
 
 - polluted history with meaningless commit messages, which "might be useful" based on the author's strong opinion ("fix", "revert", "oops", "failed tests", "merge main" and so on)
@@ -26,6 +28,7 @@ So many things have gone wrong:
 You can't fix human nature, but you can create an environment where this mess will be almost impossible to do:
 
 Let's assume you are using Github. To enforce clean history, you need to:
+
 1. **Enable** "Allow squash merging"
 2. **Disable** "Allow merge commits" and "Allow rebase merging"
 
@@ -54,7 +57,7 @@ This configuration ensures that all commits in the feature branch are combined i
 
 ## Summary 
 
-Choose squash merging *when*:
+Choose **squash merging** *when*:
 
-- clean history matters more than granular change tracking
 - people are careless about the quality of their own commits
+- clean history matters more than granular change tracking
