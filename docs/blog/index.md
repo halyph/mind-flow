@@ -9,6 +9,7 @@ hide:
 
 ## 2025
 
+- 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](2025/2025-11-23-merge-commit-evil.md)
 - 2025-11-15 - [When Tech Stack Chaos Hits Hard](2025/2025-11-15-tech-chaos.md)
 - 2025-10-29 - [Claude Code CLI Prompts](2025/2025-10-29-claude-code-cli-notes.md)
 - 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](2025/2025-08-23-premailer.md)

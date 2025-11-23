@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2025
 
+- 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](docs/blog/2025/2025-11-23-merge-commit-evil.md)
 - 2025-11-15 - [When Tech Stack Chaos Hits Hard](docs/blog/2025/2025-11-15-tech-chaos.md)
 - 2025-10-29 - [Claude Code CLI Prompts](docs/blog/2025/2025-10-29-claude-code-cli-notes.md)
 - 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](docs/blog/2025/2025-08-23-premailer.md)
