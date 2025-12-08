@@ -22,4 +22,5 @@ I am not sure whether it will be valuable for other people. So you are warned �
 - *"Continuous improvement towards perfection"*
 - *"Never confuse education with intelligence, you can have a PhD and still be an idiot"* - Richard P. Feynman
 - *"You Can’t Always Get What You Want"* - The Rolling Stones
-- _"If you’re thinking without writing, you only think you’re thinking"_ - Leslie Lamport
+- *"If you’re thinking without writing, you only think you’re thinking"* - Leslie Lamport
+- *"Hard times create strong men, strong men create good times, good times create weak men, and weak men create hard times"*
