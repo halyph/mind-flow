@@ -20,7 +20,7 @@ So, how am I getting tech news?
 3. RSS feeds (via [Feedly](https://feedly.com))
 4. Podcasts
 
-Here is my social networks ban list (❌ deleted account):
+Here is my social networks ban list (❌ deleted account, 🤮 never used):
 
 - ❌ Facebook
 - ❌ Twitter
