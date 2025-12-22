@@ -1,6 +1,8 @@
 # Paradox of Choice in Ruby
 > | ruby |
 
+![pic0](2024-12-22-paradox-of-choice/pic0.jpeg)
+
 [The Paradox of Choice – Why More Is Less](https://en.wikipedia.org/wiki/The_Paradox_of_Choice) - is it applicable to programming languages?
 
 I've been using simple (in terms of syntax) languages (*Python*, *Go*) for some time and have an understanding of why such fancy, flexible language as *Ruby* has sort of "irritation" from some software engineers.

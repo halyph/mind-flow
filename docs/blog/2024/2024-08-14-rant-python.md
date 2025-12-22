@@ -1,6 +1,8 @@
 # Everybody Python, FTW?
 > | python |
 
+![pic0](2024-08-14-rant-python/pic0.jpeg)
+
 WARN: It's *"Old Man Yells at Cloud"* kind of post.
 
 Just check any languages' popularity site, job sites, or ML/AI madness. People are running and screaming "P-y-t-h-o-n!".  
