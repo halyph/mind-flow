@@ -7,6 +7,10 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
+## 2026
+
+- 2026-01-16 - [A Boring Pomodoro Timer](2026/2026-01-16-pomodoro-timer.md)
+
 ## 2025
 
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](2025/2025-11-23-merge-commit-evil.md)

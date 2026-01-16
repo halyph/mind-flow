@@ -7,6 +7,10 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
+## 2026
+
+- 2026-01-16 - [A Boring Pomodoro Timer](docs/blog/2026/2026-01-16-pomodoro-timer.md)
+
 ## 2025
 
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](docs/blog/2025/2025-11-23-merge-commit-evil.md)
