@@ -9,6 +9,7 @@ hide:
 
 ## 2026
 
+- 2026-01-23 - [No more Telegram](2026/2026-01-23-delete-telegram.md)
 - 2026-01-16 - [A Boring Pomodoro Timer](2026/2026-01-16-pomodoro-timer.md)
 
 ## 2025

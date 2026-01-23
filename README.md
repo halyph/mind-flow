@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2026
 
+- 2026-01-23 - [No more Telegram](docs/blog/2026/2026-01-23-delete-telegram.md)
 - 2026-01-16 - [A Boring Pomodoro Timer](docs/blog/2026/2026-01-16-pomodoro-timer.md)
 
 ## 2025
