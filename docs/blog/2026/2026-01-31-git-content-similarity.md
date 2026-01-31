@@ -1,8 +1,14 @@
-# Git content similarity detection
+# Git Doesn't Track File Renames (And How It Fakes It)
 > | git |
 
 ![pic0](2026-01-31-git-content-similarity/pic0.jpeg)
 
+Ever used `git mv` to rename a file? Many people assume it creates special rename metadata in Git's object database.
+Here's the surprise: **it doesn't**. Git has no concept of a "rename" operation at all.
+
+Instead, Git uses *content similarity detection* algorithm. When you run `git log` or `git diff`, Git analyzes the content of deleted and added files on-the-fly. If two files are similar enough (≥50% by default), Git displays them as a *rename*. If not, you see them as separate *delete* and *create* operations.
+
+In this post, we'll see three scenarios with different similarity percentages, learn how to adjust Git's detection threshold using the `-M` flag, and understand why `git mv` is just a convenience wrapper with no special powers.
 
 ## 1. How Git Stores Renames
 
@@ -44,7 +50,7 @@ git config user.email "demo@example.com"
 ## 2. SCENARIO 1: Move file without changes
 
 ```sh
-# Creating file1.txt with 10 lines..
+# Creating file1.txt with 10 lines...
 
 cat > file1.txt << 'EOF'
 Line 01: This is the first line of the file
@@ -229,10 +235,20 @@ Date:   Sat Jan 31 08:40:39 2026 +0100
 
 **Result:** Git does NOT detect this as a rename. Changed 8/10 lines, so only 2/10 lines unchanged = 20% < 50% threshold. Git shows 'file3.txt' deleted and 'newdir/file3.txt' created.
 
+## 5. Key Takeaways
 
-## 5. Full commit history
+Git's rename detection is a powerful feature that works entirely through content similarity analysis:
 
-### 5.1. With rename detection (default 50% threshold)
+- **No metadata stored**: Git treats `git mv` and `mv + git rm + git add` identically
+- **Default 50% threshold**: Works well for most use cases
+- **Adjustable sensitivity**: Use `-M<percentage>` to tune detection (e.g., `-M30%` for aggressive, `-M90%` for strict)
+- **Post-hoc analysis**: Rename detection happens when you run `git log`, `git show`, or `git diff`, not during commit
+
+---
+
+## Appendix: Full commit history
+
+### A.1. With rename detection (default 50% threshold)
 
 <details>
 <summary>View full commit history</summary>
@@ -263,11 +279,11 @@ f43b480 Add file3.txt
 
 </details>
 
-### 5.2. Experiment with different thresholds
+### A.2. Experiment with different thresholds
 
 You can adjust Git's rename detection sensitivity using the `-M` flag. Let's see how different thresholds affect the detection of our three scenarios:
 
-#### 5.2.1. With 30% threshold (-M30%)
+#### A.2.1. With 30% threshold (-M30%)
 
 Lower threshold = more aggressive rename detection, but File3 (20% similarity) is still below the 30% threshold:
 
@@ -296,7 +312,7 @@ Note: File3 is still shown as delete + add because 20% < 30% threshold.
 
 </details>
 
-#### 5.2.2. With 90% threshold (-M90%)
+#### A.2.2. With 90% threshold (-M90%)
 
 Higher threshold = stricter rename detection. File2 (80% similarity) no longer detected as a **rename**:
 
@@ -326,7 +342,7 @@ Note: File2 is now shown as delete + add because 80% < 90% threshold. Only file1
 
 </details>
 
-### 5.3. Show detailed diff with rename detection
+### A.3. Show detailed diff with rename detection
 
 <details>
 <summary>View detailed diff output</summary>
