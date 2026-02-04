@@ -26,7 +26,7 @@ Ratings explained
 
 | Year          | Total | (E)Book | Audiobook |
 |---------------|-------|---------|-----------|
-| [2025](#2025) | 13    | 13      | -         |
+| [2025](#2025) | 17    | 17      | -         |
 | [2024](#2024) | 10    | 10      | -         |
 | [2023](#2023) | 16    | 11      | 5         |
 | [2022](#2022) | 19    | 7       | 12        |
@@ -39,6 +39,13 @@ Ratings explained
 | [2015](#2015) | 5     | 5       | -         |
 | [2014](#2014) | 4     | 4       | -         |
 | [2013](#2013) | 6     | 6       | -         |
+
+## 2026
+
+**Read (Book or EBook)**
+
+1. `●●●●○` *Frictionless: 7 Steps to Remove Barriers, Unlock Value, and Outpace Your Competition in the AI Era*, by **Nicole Forsgren**, **Abi Noda** (Shift Key Press, 2025), ISBN 9781662966385
+2. `●●●●●` *Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures*, by **Neal Ford**, **Mark Richards**, **Pramod J. Sadalage**, **Zhamak Dehghani** (O'Reilly Media, 2021), ISBN 9781492086895
 
 ## 2025
 
@@ -57,6 +64,10 @@ Ratings explained
 11. `●●●●●` *Ghost in the Wires: My Adventures as the World's Most Wanted Hacker*, by **Kevin D. Mitnick**, **William L. Simon** (Little, Brown and Company, 2011), ISBN 9780316212182
 12. `●●●●○` *Where Wizards Stay Up Late: The Origins of the Internet*, by **Katie Hafner**, **Matthew Lyon** (Simon & Schuster, 1998), ISBN 9780684832678
 13. `●●●○○` *The Art of Intrusion: The Real Stories Behind the Exploits of Hackers, Intruders and Deceivers*, by **Kevin D. Mitnick**, **William L. Simon** (Wiley, 2005), ISBN 9780471782667
+14. `●●●●○` *Політ над гніздом зозулі*, by **Кен Кізі** (1962)
+15. `●●●●○` *The Lost Termini of Berlin: A Biography of the Railway Stations that Shaped the German Capital*, by **Ilja Nieuwland** (De Gruyter Oldenbourg, 2024), ISBN 9783111381213
+16. `●●●○○` *On Writing: A Memoir of the Craft*, by **Stephen King** (Hodder and Stoughton, 2020), ISBN 9781444723250
+17. `●●●●○` *The Software Engineer's Guidebook: Navigating senior, tech lead, and staff engineer positions at tech companies and startups*, by **Gergely Orosz** (Pragmatic Engineer BV, 2023), ISBN 9789083381824
 
 ## 2024
 
