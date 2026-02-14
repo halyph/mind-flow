@@ -43,12 +43,11 @@ make clean                # Remove .venv directory
 The site maintains two distinct content paradigms:
 
 - **Blog**: Chronological posts in `docs/blog/YYYY/YYYY-MM-DD-title.md`
-  - 173 posts spanning 2009-2026
   - Reverse chronological ordering (newest first)
   - Auto-generated index via `readme-index.py`
 
 - **Wiki**: Topic-based knowledge pages in `docs/wiki/`
-  - 53 pages organized by programming language (Lang-Go, Lang-Python, etc.)
+  - Organized by programming language (Lang-Go, Lang-Python, etc.)
   - Manual curation with index pages
   - Represents a "Digital Garden" approach
 
