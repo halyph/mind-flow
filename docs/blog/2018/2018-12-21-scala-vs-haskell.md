@@ -1,5 +1,5 @@
 # [WIP] Scala vs Haskell
-<!-- tags: scala, haskell, vs, comparison -->
+<!-- tags: scala, haskell, vs -->
 
 ## References
 

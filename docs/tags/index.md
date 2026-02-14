@@ -2,6 +2,12 @@
 
 Browse blog posts by tag.
 
+**📊 172 posts • 77 tags**
+
+**Popular**: java (49) • ruby (24) • python (23) • scala (20) • conference (14) • thoughts (11) • golang (10) • groovy (10) • vs (9) • review (8)
+
+---
+
 ## akka (1)
 
 - 2022-09-09 - [Lightbend is Changing the License for Akka](../blog/2022/2022-09-09-akka-license.md)
@@ -56,18 +62,6 @@ Browse blog posts by tag.
 
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
-
-## comparison (9)
-
-- 2019-04-28 - [Scala vs Kotlin](../blog/2019/2019-04-28-scala-vs-kotlin.md)
-- 2019-01-23 - [Go vs Python comparison](../blog/2019/2019-01-23-go-vs-python.md)
-- 2019-01-20 - [Ruby vs Javascript comparison](../blog/2019/2019-01-20-ruby-vs-javascript.md)
-- 2019-01-19 - [Python vs Javascript comparison](../blog/2019/2019-01-19-python-vs-javascript.md)
-- 2018-12-21 - [[WIP] Scala vs Haskell](../blog/2018/2018-12-21-scala-vs-haskell.md)
-- 2016-12-02 - [Scala for Ruby Developers](../blog/2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](../blog/2016/2016-12-01-scala-for-python-developers.md)
-- 2016-11-30 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](../blog/2016/2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt.md)
-- 2012-12-12 - [Groovy or JRuby for Java developer](../blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
 
 ## computation (1)
 

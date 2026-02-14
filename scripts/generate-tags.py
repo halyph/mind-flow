@@ -123,18 +123,38 @@ def generate_tags_page(blog_dir, output_path):
                 'path': rel_path
             })
 
+    # Calculate statistics
+    sorted_tags = sorted(posts_by_tag.keys())
+    unique_posts_count = len(unique_tagged_posts)
+    unique_tags_count = len(sorted_tags)
+
     # Generate tags.md
     with open(output_path, 'w', encoding='utf-8') as f:
         # Write content (frontmatter handled by .meta.yml)
         f.write('# Tags\n\n')
         f.write('Browse blog posts by tag.\n\n')
 
-        # Sort tags alphabetically
-        sorted_tags = sorted(posts_by_tag.keys())
-
         if not sorted_tags:
             f.write('*No tagged posts found.*\n')
             return
+
+        # Get top 10 tags by post count
+        tags_by_count = sorted(
+            [(tag, len(posts_by_tag[tag])) for tag in sorted_tags],
+            key=lambda x: x[1],
+            reverse=True
+        )
+        top_tags = tags_by_count[:10]
+
+        # Write compact statistics
+        f.write(f'**📊 {unique_posts_count} posts • {unique_tags_count} tags**\n\n')
+
+        # Write top tags inline
+        top_tags_str = ' • '.join([f'{tag} ({count})' for tag, count in top_tags])
+        f.write(f'**Popular**: {top_tags_str}\n\n')
+
+        # Separator
+        f.write('---\n\n')
 
         for tag in sorted_tags:
             # Sort posts by date descending (newest first)
@@ -150,9 +170,6 @@ def generate_tags_page(blog_dir, output_path):
             f.write('\n')
 
     # Report statistics
-    unique_posts_count = len(unique_tagged_posts)
-    unique_tags_count = len(sorted_tags)
-
     print(f'✓ Generated {output_path}')
     print(f'  {unique_tags_count} tags, {unique_posts_count} tagged posts')
 
