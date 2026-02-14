@@ -749,16 +749,3 @@ Core API will be frozen.
 http://nodejs.org/  
 ry@tinyclouds.org
 
----
-
-## Summary
-This presentation introduced Node.js as a server-side JavaScript platform built on V8 with non-blocking, event-driven I/O. The key points covered:
-
-1. **The Problem**: Traditional blocking I/O wastes resources during wait times
-2. **The Solution**: Event loops and callbacks allow efficient handling of concurrent connections
-3. **Why JavaScript**: Already designed for event-driven programming with closures and callbacks
-4. **Design Goals**: Non-blocking everything, low-level control, streaming data, protocol support
-5. **Examples**: TCP servers, HTTP servers, file I/O, child processes - all non-blocking
-6. **Architecture**: Built on V8, libev, libeio, and other proven libraries
-
-The presentation was given in November 2009 when Node.js was at version 0.1.16 with plans for version 0.2.
