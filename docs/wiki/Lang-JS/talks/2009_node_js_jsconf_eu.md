@@ -102,7 +102,9 @@ http://blog.webfaction.com/a-little-holiday-present
 ### Slide 11: The Difference
 
 **Apache vs NGINX**  
+
 The difference?
+
 - Apache uses one thread per connection.
 - NGINX doesn't use threads. It uses an event loop.
 
@@ -233,7 +235,8 @@ Most libraries are not.
 
 ### Slide 23: Too Much Infrastructure - Confusion
 
-**Too Much Infrastructure**  
+**Too Much Infrastructure**
+
 EventMachine, Twisted, AnyEvent provide very good event loop platforms.  
 Easy to create efficient servers.  
 But users are confused how to combine with other available libraries.
@@ -242,7 +245,8 @@ But users are confused how to combine with other available libraries.
 
 ### Slide 24: Expert Knowledge Required
 
-**Too Much Infrastructure**  
+**Too Much Infrastructure**
+
 Users still require expert knowledge of event loops, non-blocking I/O.
 
 ---
@@ -272,15 +276,17 @@ To provide a purely evented, non-blocking infrastructure to script highly concur
 
 ### Slide 28: Design Goals - No Direct I/O
 
-**Design Goals**  
-No function should direct perform I/O.  
-To receive info from disk, network, or another process there must be a callback.
+**Design Goals**
+
+- No function should direct perform I/O.  
+- To receive info from disk, network, or another process there must be a callback.
 
 ---
 
 ### Slide 29: Design Goals - Low-level
 
 **Design Goals**
+
 - Low-level.
 - Stream everything; never force the buffering of data.
 - Do not remove functionality present at the POSIX layer. For example, support half-closed TCP connections.
@@ -290,7 +296,9 @@ To receive info from disk, network, or another process there must be a callback.
 ### Slide 30: Design Goals - Protocol Support
 
 **Design Goals**  
+
 Have built-in support for the most important protocols:
+
 - TCP
 - DNS
 - HTTP
@@ -300,7 +308,9 @@ Have built-in support for the most important protocols:
 ### Slide 31: Design Goals - HTTP Features
 
 **Design Goals**  
+
 Support many HTTP features:
+
 - Chunked requests and responses.
 - Keep-alive.
 - Hang requests for comet applications.
@@ -309,7 +319,8 @@ Support many HTTP features:
 
 ### Slide 32: Design Goals - API Familiarity
 
-**Design Goals**  
+**Design Goals**
+
 The API should be both familiar to client-side JS programmers and old school UNIX hackers.  
 Be platform independent.
 
