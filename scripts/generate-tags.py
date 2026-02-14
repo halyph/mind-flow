@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate docs/tags.md from HTML comment tags in blog posts.
+Generate docs/tags/index.md from HTML comment tags in blog posts.
 
 Scans all blog posts for tags in format: <!-- tags: tag1, tag2 -->
 Groups posts by tag, sorted alphabetically with reverse chronological posts.
@@ -16,72 +16,86 @@ from pathlib import Path
 from collections import defaultdict
 
 
-def extract_tags_from_comment(filepath):
-    """
-    Extract tags from HTML comment on line 2.
+# Feature flag: Show "back to top" links after each tag section
+SHOW_BACK_TO_TOP = True
 
-    Expected format: <!-- tags: tag1, tag2, multi word tag -->
+# Back to top link format (used when SHOW_BACK_TO_TOP is True)
+BACK_TO_TOP_LINK = '[⬆️](#tags)'
+
+# Number of popular tags to show in the summary section
+TOP_TAGS_COUNT = 7
+
+
+def create_slug(tag):
+    """
+    Create URL-friendly slug from tag name.
+
+    Args:
+        tag: Tag name (may contain spaces)
 
     Returns:
-        list: List of tags (lowercase, stripped), or empty list if no tags found
+        str: Slug for anchor links (spaces replaced with hyphens)
+    """
+    return tag.replace(' ', '-')
+
+
+def extract_post_metadata(filepath):
+    """
+    Extract tags, title, and date from a blog post.
+
+    Reads first 2 lines to extract:
+    - Line 1: Title (# Title format)
+    - Line 2: Tags (<!-- tags: tag1, tag2 --> format)
+
+    Also extracts date from filename pattern: YYYY/YYYY-MM-DD-*
+
+    Args:
+        filepath: Path to blog post markdown file
+
+    Returns:
+        tuple: (tags_list, title, date) or ([], None, None) on error
     """
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-            if len(lines) >= 2:
-                # Match: <!-- tags: tag1, tag2, multi word tag -->
-                match = re.search(r'<!--\s*tags:\s*(.+?)\s*-->', lines[1])
-                if match:
-                    tags_str = match.group(1)
-                    # Split by comma, strip whitespace, lowercase
-                    tags = [tag.strip().lower() for tag in tags_str.split(',') if tag.strip()]
-                    return tags
-    except Exception as e:
-        print(f"Warning: Could not read {filepath}: {e}")
-
-    return []
-
-
-def extract_title_and_date(filepath):
-    """
-    Extract title from line 1 and date from filename.
-
-    Title format: # Title on first line
-    Date format: YYYY/YYYY-MM-DD-* in filename
-
-    Returns:
-        tuple: (title, date) or (title, None) if date not found
-    """
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
+            # Read only first 2 lines
             title_line = f.readline().strip()
-            title = title_line.lstrip('#').strip()
+            tags_line = f.readline().strip()
+
+        # Extract title
+        title = title_line.lstrip('#').strip()
+
+        # Extract tags from HTML comment
+        tags = []
+        tag_match = re.search(r'<!--\s*tags:\s*(.+?)\s*-->', tags_line)
+        if tag_match:
+            tags_str = tag_match.group(1)
+            tags = [tag.strip().lower() for tag in tags_str.split(',') if tag.strip()]
 
         # Extract date from filename: YYYY/YYYY-MM-DD-*
-        match = re.search(r'(\d{4})/(\d{4}-\d{2}-\d{2})-', filepath)
-        if match:
-            date = match.group(2)
-            return title, date
+        date_match = re.search(r'(\d{4})/(\d{4}-\d{2}-\d{2})-', filepath)
+        if date_match:
+            date = date_match.group(2)
+            return tags, title, date
 
-        return title, None
-    except Exception as e:
-        print(f"Warning: Could not extract title/date from {filepath}: {e}")
-        return None, None
+        return tags, title, None
+
+    except (IOError, UnicodeDecodeError, FileNotFoundError) as e:
+        print(f"Warning: Could not read {filepath}: {e}")
+        return [], None, None
 
 
 def generate_tags_page(blog_dir, output_path):
     """
-    Generate docs/blog/tags.md with all tags and posts.
+    Generate docs/tags/index.md with all tags and posts.
 
-    Format:
-    # Tags
+    Scans all blog posts, extracts tags, and generates an index page with:
+    - Statistics summary (post count, tag count)
+    - Top 10 popular tags (clickable)
+    - All tags alphabetically with their posts (reverse chronological)
 
-    ## tag-name
-    - YYYY-MM-DD - [Post Title](path/to/post.md)
-    - YYYY-MM-DD - [Another Post](path/to/post.md)
-
-    ## another-tag
-    ...
+    Args:
+        blog_dir: Path to blog directory containing posts
+        output_path: Path where tags index will be written
     """
     posts_by_tag = defaultdict(list)
     posts_without_tags = []
@@ -94,12 +108,12 @@ def generate_tags_page(blog_dir, output_path):
         if md_file.endswith('/index.md') or md_file.endswith('\\index.md'):
             continue
 
-        # Skip the tags.md itself
-        if md_file.endswith('/tags.md') or md_file.endswith('\\tags.md'):
+        # Skip the tags index itself
+        if md_file.endswith('/tags/index.md') or md_file.endswith('\\tags\\index.md'):
             continue
 
-        tags = extract_tags_from_comment(md_file)
-        title, date = extract_title_and_date(md_file)
+        # Extract metadata (single file read)
+        tags, title, date = extract_post_metadata(md_file)
 
         if not title or not date:
             continue
@@ -111,7 +125,7 @@ def generate_tags_page(blog_dir, output_path):
         # Track unique posts with tags
         unique_tagged_posts.add(md_file)
 
-        # Relative path from tags.md perspective (in docs/blog/)
+        # Relative path from tags/index.md perspective (in docs/tags/)
         rel_path = os.path.relpath(md_file, os.path.dirname(output_path))
         # Normalize path separators for consistency
         rel_path = rel_path.replace('\\', '/')
@@ -128,7 +142,10 @@ def generate_tags_page(blog_dir, output_path):
     unique_posts_count = len(unique_tagged_posts)
     unique_tags_count = len(sorted_tags)
 
-    # Generate tags.md
+    # Ensure output directory exists
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+    # Generate tags/index.md
     with open(output_path, 'w', encoding='utf-8') as f:
         # Write content (frontmatter handled by .meta.yml)
         f.write('# Tags\n\n')
@@ -138,13 +155,13 @@ def generate_tags_page(blog_dir, output_path):
             f.write('*No tagged posts found.*\n')
             return
 
-        # Get top 10 tags by post count
+        # Get top N tags by post count
         tags_by_count = sorted(
             [(tag, len(posts_by_tag[tag])) for tag in sorted_tags],
             key=lambda x: x[1],
             reverse=True
         )
-        top_tags = tags_by_count[:10]
+        top_tags = tags_by_count[:TOP_TAGS_COUNT]
 
         # Write compact statistics
         f.write(f'**📊 {unique_posts_count} posts • {unique_tags_count} tags**\n\n')
@@ -152,9 +169,8 @@ def generate_tags_page(blog_dir, output_path):
         # Write top tags inline with clickable links
         top_tags_links = []
         for tag, count in top_tags:
-            # Create anchor slug (lowercase, replace spaces with hyphens)
-            slug = tag.replace(' ', '-')
-            top_tags_links.append(f'[{tag} ({count})](#'+slug+')')
+            slug = create_slug(tag)
+            top_tags_links.append(f'[{tag} ({count})](#{slug})')
         top_tags_str = ' • '.join(top_tags_links)
         f.write(f'**Popular**: {top_tags_str}\n\n')
 
@@ -167,9 +183,14 @@ def generate_tags_page(blog_dir, output_path):
             post_count = len(posts)
 
             # Create heading with explicit anchor ID for clickable links
-            slug = tag.replace(' ', '-')
+            slug = create_slug(tag)
             f.write(f'<a id="{slug}"></a>\n')
-            f.write(f'## {tag} ({post_count})\n\n')
+
+            # Add "back to top" link on heading line (if enabled)
+            if SHOW_BACK_TO_TOP:
+                f.write(f'## {tag} ({post_count}) {BACK_TO_TOP_LINK}\n\n')
+            else:
+                f.write(f'## {tag} ({post_count})\n\n')
 
             for post in posts:
                 f.write(f'- {post["date"]} - [{post["title"]}]({post["path"]})\n')
