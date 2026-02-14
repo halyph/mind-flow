@@ -49,3 +49,15 @@ td {
 }
 
 /* Githubs Tables  end */
+
+/* Published date styling */
+.md-content__date {
+  margin-top: -2rem;
+  margin-bottom: 0rem;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 0.65rem;
+}
+
+.md-content__date small {
+  font-size: 0.65rem;
+}

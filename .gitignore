@@ -10,6 +10,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+__pycache__/
 
 # Mac files
 .DS_Store

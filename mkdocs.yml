@@ -98,6 +98,9 @@ plugins:
       enable_creation_date: true
       type: date
       exclude:
-        - blog/index.md
+        - blog/**/*
         - about.md
         - bookshelf.md
+
+hooks:
+  - scripts/hooks.py
