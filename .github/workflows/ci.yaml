@@ -1,10 +1,7 @@
-name: CI Optimized
-
-# This is the optimized version. Test it first, then replace ci.yaml
-# To test: rename this to ci.yaml or change the branch trigger
+name: CI
 
 on:
-  workflow_dispatch:  # Manual trigger for testing
+  workflow_dispatch:
   push:
     branches: [ master ]
 
