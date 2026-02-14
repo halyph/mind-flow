@@ -149,8 +149,13 @@ def generate_tags_page(blog_dir, output_path):
         # Write compact statistics
         f.write(f'**📊 {unique_posts_count} posts • {unique_tags_count} tags**\n\n')
 
-        # Write top tags inline
-        top_tags_str = ' • '.join([f'{tag} ({count})' for tag, count in top_tags])
+        # Write top tags inline with clickable links
+        top_tags_links = []
+        for tag, count in top_tags:
+            # Create anchor slug (lowercase, replace spaces with hyphens)
+            slug = tag.replace(' ', '-')
+            top_tags_links.append(f'[{tag} ({count})](#'+slug+')')
+        top_tags_str = ' • '.join(top_tags_links)
         f.write(f'**Popular**: {top_tags_str}\n\n')
 
         # Separator
@@ -161,7 +166,9 @@ def generate_tags_page(blog_dir, output_path):
             posts = sorted(posts_by_tag[tag], key=lambda p: p['date'], reverse=True)
             post_count = len(posts)
 
-            # Create heading with tag name and count
+            # Create heading with explicit anchor ID for clickable links
+            slug = tag.replace(' ', '-')
+            f.write(f'<a id="{slug}"></a>\n')
             f.write(f'## {tag} ({post_count})\n\n')
 
             for post in posts:
