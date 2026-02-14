@@ -7,7 +7,7 @@ tags:
   - conference
 ---
 
-# Advanced Testing with Go
+# 2017 Advanced Testing with Go
 
 ## References
 
