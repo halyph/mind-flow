@@ -20,3 +20,4 @@ site/
 .vscode
 
 .claude/
+.cache/
