@@ -1,1 +1,6 @@
 title: JS/TS
+order: asc
+sort_type: natural
+nav:
+    - index.md
+    - ...

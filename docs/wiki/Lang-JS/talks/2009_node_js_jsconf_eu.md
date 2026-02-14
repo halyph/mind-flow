@@ -1,4 +1,4 @@
-# Ryan Dahl: Node.js, Evented I/O for V8 Javascript, 2009
+# 2009 Ryan Dahl: Node.js
 
 ### Key Dates
 
@@ -675,11 +675,11 @@ Source code:
 
 ### Slide 63: Dependencies
 
-- V8 (Google)
-- libev event loop library (Marc Lehmann)
-- libeio thread pool library (Marc Lehmann)
-- http-parser a ragel HTTP parser (Me)
-- evcom stream socket library on top of libev (Me)
+- **V8** (Google)
+- **libev** event loop library (Marc Lehmann)
+- **libeio** thread pool library (Marc Lehmann)
+- **http-parser** a ragel HTTP parser (Me)
+- **evcom** stream socket library on top of libev (Me)
 - udns non-blocking DNS resolver (Michael Tokarev)
 
 ---
@@ -687,6 +687,7 @@ Source code:
 ### Slide 64: Thread Pool Usage
 
 Blocking (or possibly blocking) system calls are executed in the thread pool.  
+
 Signal handlers and thread pool callbacks are marshaled back into the main thread via a pipe.
 
 ---
