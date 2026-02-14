@@ -125,6 +125,13 @@ def generate_tags_page(blog_dir, output_path):
 
     # Generate tags.md
     with open(output_path, 'w', encoding='utf-8') as f:
+        # Write frontmatter
+        f.write('---\n')
+        f.write('hide:\n')
+        f.write('  - navigation\n')
+        f.write('---\n\n')
+
+        # Write content
         f.write('# Tags\n\n')
         f.write('Browse blog posts by tag.\n\n')
 
