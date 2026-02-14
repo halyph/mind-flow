@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Tags
 
 Browse blog posts by tag.
