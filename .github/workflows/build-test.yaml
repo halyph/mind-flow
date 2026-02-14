@@ -1,5 +1,30 @@
 name: Build Test (No Deploy)
 
+# Purpose: Validate MkDocs builds without deploying to production
+#
+# Why this workflow exists:
+# - Provides fast feedback on PRs and feature branches
+# - Tests that site builds successfully before merging to master
+# - Does NOT deploy - safe for testing changes without affecting production
+# - Faster than ci.yaml (uses shallow clone, fetch-depth: 1)
+#
+# When it runs:
+# - Pull requests (automatic)
+# - Pushes to any branch except master (automatic)
+# - Manual trigger via workflow_dispatch (on-demand)
+#
+# Artifacts:
+# - Uploads built site as artifact for manual verification
+# - Artifact available for 5 days in GitHub Actions tab
+# - Download to inspect generated HTML locally if needed
+#
+# Difference from ci.yaml:
+# - ci.yaml: Deploys to production (halyph.github.io) on master branch
+# - build-test.yaml: Build-only validation, no deployment
+#
+# Note: You may see warnings about shallow git fetch affecting revision dates.
+# This is expected and acceptable for testing. Production (ci.yaml) uses full history.
+
 on:
   workflow_dispatch:  # Manual trigger
   pull_request:
