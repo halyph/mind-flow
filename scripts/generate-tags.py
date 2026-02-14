@@ -125,13 +125,7 @@ def generate_tags_page(blog_dir, output_path):
 
     # Generate tags.md
     with open(output_path, 'w', encoding='utf-8') as f:
-        # Write frontmatter
-        f.write('---\n')
-        f.write('hide:\n')
-        f.write('  - navigation\n')
-        f.write('---\n\n')
-
-        # Write content
+        # Write content (frontmatter handled by .meta.yml)
         f.write('# Tags\n\n')
         f.write('Browse blog posts by tag.\n\n')
 
@@ -175,7 +169,7 @@ def main():
     repo_root = script_dir.parent
 
     blog_dir = repo_root / 'docs' / 'blog'
-    output_path = repo_root / 'docs' / 'tags.md'
+    output_path = repo_root / 'docs' / 'tags' / 'index.md'
 
     if not blog_dir.exists():
         print(f'Error: Blog directory not found: {blog_dir}')
