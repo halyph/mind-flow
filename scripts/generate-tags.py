@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-Generate docs/blog/tags.md from HTML comment tags in blog posts.
+Generate docs/tags.md from HTML comment tags in blog posts.
 
 Scans all blog posts for tags in format: <!-- tags: tag1, tag2 -->
 Groups posts by tag, sorted alphabetically with reverse chronological posts.
 
-Similar to readme-index.py, this is a read-only script that generates
+Similar to generate-blog-index.py, this is a read-only script that generates
 an index file without modifying source posts.
 """
 
