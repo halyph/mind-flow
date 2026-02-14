@@ -137,11 +137,12 @@ def generate_tags_page(blog_dir, output_path):
             return
 
         for tag in sorted_tags:
-            # Create heading with tag name
-            f.write(f'## {tag}\n\n')
-
             # Sort posts by date descending (newest first)
             posts = sorted(posts_by_tag[tag], key=lambda p: p['date'], reverse=True)
+            post_count = len(posts)
+
+            # Create heading with tag name and count
+            f.write(f'## {tag} ({post_count})\n\n')
 
             for post in posts:
                 f.write(f'- {post["date"]} - [{post["title"]}]({post["path"]})\n')
