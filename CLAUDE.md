@@ -45,7 +45,7 @@ The site maintains two distinct content paradigms:
 
 - **Blog**: Chronological posts in `docs/blog/YYYY/YYYY-MM-DD-title.md`
   - Reverse chronological ordering (newest first)
-  - Auto-generated index via `readme-index.py`
+  - Auto-generated index via `scripts/generate-blog-index.py`
 
 - **Wiki**: Topic-based knowledge pages in `docs/wiki/`
   - Organized by programming language (Lang-Go, Lang-Python, etc.)
@@ -67,14 +67,14 @@ The project uses two MkDocs configurations:
 
 Three scripts automatically generate index files by scanning blog posts:
 
-**1. Blog Index (`readme-index.py`)**
+**1. Blog Index (`scripts/generate-blog-index.py`)**
 - Generates `README.md` and `docs/blog/index.md`
 - Lists all blog posts by year (reverse chronological)
 - Extracts titles from first line (assumes `# Title` format)
 - Parses dates from filename pattern: `YYYY/YYYY-MM-DD-*`
 
 **2. Tags Index (`scripts/generate-tags.py`)**
-- Generates `docs/blog/tags.md`
+- Generates `docs/tags.md`
 - Groups posts by tag (alphabetical tags, reverse chronological posts)
 - Extracts tags from HTML comments: `<!-- tags: tag1, tag2 -->`
 - Provides GitHub-native navigation for tagged posts
@@ -97,7 +97,7 @@ Post content...
 
 **How it works:**
 - HTML comments are invisible on GitHub (clean rendering)
-- `scripts/generate-tags.py` generates `docs/blog/tags.md` for GitHub navigation
+- `scripts/generate-tags.py` generates `docs/tags.md` for GitHub navigation
 - `scripts/hooks.py` extracts tags and injects into MkDocs page metadata
 - MkDocs Material theme renders tags as clickable chips
 
@@ -148,7 +148,7 @@ Each `.pages` file controls navigation for its directory level.
 
 ### Blog Post Format
 - **Location**: `docs/blog/YYYY/YYYY-MM-DD-short-title.md`
-- **First line**: `# Title` (extracted by readme-index.py)
+- **First line**: `# Title` (extracted by scripts/generate-blog-index.py)
 - **Second line**: `<!-- tags: tag1, tag2, multi word tag -->` (lowercase, comma-separated)
 - **Filename**: Date prefix must match directory year
 - **Tags**: HTML comment format, invisible on GitHub, extracted by MkDocs hook
@@ -160,8 +160,8 @@ Each `.pages` file controls navigation for its directory level.
 ## Critical File Paths
 
 ### Index Generation Scripts
-- `readme-index.py` - Blog index generator (README.md, docs/blog/index.md)
-- `scripts/generate-tags.py` - Tags index generator (docs/blog/tags.md)
+- `scripts/generate-blog-index.py` - Blog index generator (README.md, docs/blog/index.md)
+- `scripts/generate-tags.py` - Tags index generator (docs/tags.md)
 - `scripts/migrate-tags.py` - One-time migration script (blockquote → HTML comments)
 - `scripts/validate-tags.py` - Tags validation script
 - `scripts/hooks.py` - MkDocs hooks (date and tag extraction)

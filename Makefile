@@ -55,6 +55,5 @@ serve: ## Run mkdocs server
 tags: ## Generate tags index
 	python3 scripts/generate-tags.py
 
-readme: ## Update readme and tags
-	python3 scripts/generate-tags.py
-	python3 readme-index.py
+readme: tags ## Generate blog index and tags
+	python3 scripts/generate-blog-index.py
