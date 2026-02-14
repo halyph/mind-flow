@@ -13,8 +13,7 @@ copyright: Copyright &copy; 2009 - 2025 Orest Ivasiv
 
 theme:
   name: material
-  # custom_dir is used for configuring feedback via HTML meta tag
-  # see theme/main.html
+  custom_dir: overrides
   favicon: assets/images/favicon.ico
   logo: assets/images/logo.png
   include_sidebar: false
@@ -96,4 +95,10 @@ extra_css:
 plugins:
   - meta
   - awesome-pages
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      exclude:
+        - blog/index.md
+        - about.md
+        - bookshelf.md
