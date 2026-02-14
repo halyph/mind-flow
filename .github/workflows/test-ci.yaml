@@ -1,0 +1,50 @@
+name: Test CI
+
+on:
+  workflow_dispatch:  # Manual trigger only
+  push:
+    branches: [ test-deploy ]  # Only runs on test branch
+
+env:
+  PYTHON_VERSION: 3.x
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1  # Shallow clone for speed
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'  # Built-in pip caching
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Site
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        run: |
+          mkdocs build -f mkdocs.ci.yml
+          ls site/
+
+      - name: Deploy to test branch (using peaceiris action)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
+          external_repository: halyph/halyph.github.io
+          publish_dir: ./site
+          publish_branch: test-deploy  # Deploy to test branch instead of master
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Comment with test URL
+        run: |
+          echo "Test deployment complete!"
+          echo "View at: https://github.com/halyph/halyph.github.io/tree/test-deploy"

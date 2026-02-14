@@ -1,0 +1,58 @@
+name: Build Test (No Deploy)
+
+on:
+  workflow_dispatch:  # Manual trigger
+  pull_request:
+  push:
+    branches-ignore: [ master ]  # Run on all branches except master
+
+env:
+  PYTHON_VERSION: 3.x
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python runtime
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build Site
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        run: |
+          mkdocs build -f mkdocs.ci.yml
+          echo "Build completed successfully!"
+
+      - name: Check build output
+        run: |
+          echo "Checking site directory..."
+          ls -lh site/
+          echo "Total size:"
+          du -sh site/
+          echo "Number of files:"
+          find site/ -type f | wc -l
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: built-site
+          path: site/
+          retention-days: 5
+
+      - name: Summary
+        run: |
+          echo "✅ Build successful!"
+          echo "Download the artifact from the Actions tab to verify the site locally."
+          echo "Artifact will be available for 5 days."
