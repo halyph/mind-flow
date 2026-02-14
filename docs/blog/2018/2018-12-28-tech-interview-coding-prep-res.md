@@ -1,5 +1,5 @@
 # Resources for Practicing Coding Interview
-> | interview |
+<!-- tags: interview -->
 
 **Table of Contents**
 

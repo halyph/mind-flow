@@ -1,5 +1,5 @@
 # Groovy Notes: Pretty print JSON from the command line
-> | groovy |
+<!-- tags: groovy -->
 
 JSON pretty print it's common task while working with JSON from command line. There are many ways of doing this via Python, Ruby, node.js, but here I'd like to concentrate on Groovy one-liner:
 

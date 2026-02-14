@@ -1,6 +1,5 @@
 # Design Patterns in Scala/FP Java
-
-> | scala | java |
+<!-- tags: scala, java -->
 
 ## References
 

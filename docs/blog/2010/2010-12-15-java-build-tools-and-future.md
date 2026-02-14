@@ -1,5 +1,5 @@
 # Java Build Tools and Future
-> | java | ant | maven | gradle |
+<!-- tags: java, ant, maven, gradle -->
 
 It's always interesting to read comparison of Java build tools. There are two major player so far: Ant and Maven. But, I'd like to know more about other tools. 
 

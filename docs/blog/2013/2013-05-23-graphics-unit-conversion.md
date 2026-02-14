@@ -1,5 +1,5 @@
 # Graphics Unit Conversion
-> | java |
+<!-- tags: java -->
 
 Working with PDF files and with scanned images it always required to convert from point to millimeter, or from millimeter to pixel, and so on.  
   

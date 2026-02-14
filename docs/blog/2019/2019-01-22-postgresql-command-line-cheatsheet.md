@@ -1,5 +1,5 @@
 # PostgreSQL command line cheatsheet
-> | postgresql | cheatsheet | database |
+<!-- tags: postgresql, cheatsheet, database -->
 
 - [Install `Postgres.app`](#install-postgresapp)
 - [Run `psql` bundled with **`Postgres.app`**](#run-psql-bundled-with-postgresapp)

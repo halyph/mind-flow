@@ -1,5 +1,5 @@
 # Why MacOS make version is outdated?
-> | macos | make | gnu |
+<!-- tags: macos, make, gnu -->
 
 MacOS `make` version is **3.81**. But the latest [GNU Make](https://savannah.gnu.org/projects/make/) version is 4.4.1.
 Why so?

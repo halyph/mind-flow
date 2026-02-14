@@ -1,5 +1,5 @@
 # Java Object to Object Mapper
-> | java |
+<!-- tags: java -->
 
 I've been using Dozer some time on the project. But, recently I have got very interesting error which motivates me to look around and try to use other Object to Object mapper.  
   

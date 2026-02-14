@@ -1,5 +1,5 @@
 # (J)Ruby or Groovy for scripting in Java environment
-> | ruby | groovy | jruby |
+<!-- tags: ruby, groovy, jruby -->
 
 It's my dilemma. And I come to the conclusion that (J)Ruby is a better choice:
 

@@ -1,4 +1,4 @@
-.PHONY: help venv install clean serve readme
+.PHONY: help venv install clean serve readme tags
 
 all: help
 
@@ -52,5 +52,9 @@ clean: ## Cleaning previous python virtual environment
 serve: ## Run mkdocs server
 	mkdocs serve
 
-readme: ## Update readme
+tags: ## Generate tags index
+	python3 scripts/generate-tags.py
+
+readme: ## Update readme and tags
+	python3 scripts/generate-tags.py
 	python3 readme-index.py

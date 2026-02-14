@@ -1,5 +1,5 @@
 # How to improve cmd.exe prompt
-> | tool | terminal |
+<!-- tags: tool, terminal -->
 
 I'm sure that you have some trouble with _"too long command prompt in windows cmd.exe"_ and it is annoying:
 

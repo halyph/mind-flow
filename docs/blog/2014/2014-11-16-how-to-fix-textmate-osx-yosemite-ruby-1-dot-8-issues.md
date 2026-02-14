@@ -1,5 +1,5 @@
 # How to Fix Textmate OSX Yosemite ruby 1.8 issues?
-> | textmate |
+<!-- tags: textmate -->
 
 Textmate 2.0 is using Ruby 1.8 in own bundles. OSX Yosemite dropped Ruby 1.8 as default Ruby implementation, now it's Ruby 2.0. Based on this all Textmate ruby-based (legacy) bundles do not work. It can be fixed in several steps:
 

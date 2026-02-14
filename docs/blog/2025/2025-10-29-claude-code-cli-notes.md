@@ -1,5 +1,5 @@
 # Claude Code CLI Prompts
-> | genai |
+<!-- tags: genai -->
 
 ![alt text](2025-10-29-claude-code-notes/pic0.png)
 

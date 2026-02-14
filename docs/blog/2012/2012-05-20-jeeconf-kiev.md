@@ -1,5 +1,5 @@
 # JEEConf - Kyiv, 2012 - Report
-> | java | conference |
+<!-- tags: java, conference -->
 
 This year we had the second [JEEConf](http://jeeconf.com/). The amount of stages was increased from three to **four** stages.  
 I was really impressed about conference program "notebooks" :-) it was well done. The amount of people was really huge more then 600. I think it's impressive number for the second conference.  

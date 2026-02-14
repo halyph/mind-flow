@@ -1,5 +1,5 @@
 # Auto install required Ruby gems via script
-> | ruby |
+<!-- tags: ruby -->
 
 When you are writing Ruby scripts for yourself it's cool until you need to distribute it. It might happen (as usual it is) that your scripts requires one or more gems. It means that the consumer of your script should additionally setup all required gems. But it looks ugly. There is a nice simple solution which provide simple way for automatic gem install.
 Let's imagine that we are using some gem in our script, to be concrete, I've picked artii gem as a sample:

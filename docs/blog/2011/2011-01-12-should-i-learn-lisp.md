@@ -1,5 +1,5 @@
 # Should I Learn Lisp?
-> | lisp |
+<!-- tags: lisp -->
 
 I had been asking this question myself every time I had found something (blog post, article, book title, etc.) interesting related to Lisp. But those “ugly” brackets put me away again and again :-). So, what was happen and why I changed my vision? 
 

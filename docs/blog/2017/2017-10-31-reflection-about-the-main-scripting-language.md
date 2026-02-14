@@ -1,5 +1,5 @@
 # Reflection about the next main scripting language
-> | python | ruby | groovy |
+<!-- tags: python, ruby, groovy -->
 
 I differentiate _normal programming language_ and _scripting programming language_.
 

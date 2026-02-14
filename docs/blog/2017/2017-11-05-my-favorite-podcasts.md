@@ -1,5 +1,5 @@
 # My Favorite Podcasts
-> | podcast |
+<!-- tags: podcast -->
 
 ![blog_post_image](2017-11-05-my-favorite-podcasts/podcast.png)
 

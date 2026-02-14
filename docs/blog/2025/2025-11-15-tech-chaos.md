@@ -1,5 +1,5 @@
 # When Tech Stack Chaos Hits Hard
-> | thoughts |
+<!-- tags: thoughts -->
 
 ![alt text](2025-11-15-tech-chaos/pic0.jpg)
 

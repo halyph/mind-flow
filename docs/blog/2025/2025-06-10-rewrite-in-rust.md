@@ -1,5 +1,5 @@
 # The State of "Let's Rewrite It in Rust"
-> | rust |
+<!-- tags: rust -->
 
 ![alt text](2025-06-10-rewrite-in-rust/rewrite_in_rust.jpeg)
 

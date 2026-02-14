@@ -1,5 +1,5 @@
 # UML Sketching Tools
-> | uml | tool | diagram |
+<!-- tags: uml, tool, diagram -->
 
 UML drawing is painful in case your model should evolve very fast and you have to adjust it on the way. Such tool as Visio (and similar) is doing their job well till you don't need "aggressive" redrawing ;-) Have you ever tried to draw "huge" sequence, activity diagrams in Visio? I've "struggled" with grouping, layouting, styling, etc. So, I have decided to concentrate more on modelling and switched to "easy-going" UML tools also knowing as **"Textual UML tools".**  
 Here is the list of my favorite:  

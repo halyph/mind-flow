@@ -1,5 +1,5 @@
 # Why Should I Attend Conferences?
-> | conference |
+<!-- tags: conference -->
 
 I'm mainly a Java developer. But, I always do some "diving" around new technologies, trends and just around other interesting stuff (read blogs, watch screencasts, etc.). And it's not enough for me. So, I've decided to attend some conferences. Here is the chronological list of conferences I've attended:
 

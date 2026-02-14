@@ -1,5 +1,5 @@
 # How to use block comments in Bash Script
-> | bash |
+<!-- tags: bash -->
 
 What is the simplest way to define block comment in Bash script?
 

@@ -1,5 +1,5 @@
 # Lambda Days - Krakow, 2019 - Report
-> | scala | conference | functional programming | haskell |
+<!-- tags: scala, conference, functional programming, haskell -->
 
 I attended [Lambda Days](http://www.lambdadays.org/lambdadays2019) conference (21-22 February, 2019) in Krakow, Poland.
 

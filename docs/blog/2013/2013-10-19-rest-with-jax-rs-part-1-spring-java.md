@@ -1,5 +1,5 @@
 # REST with JAX-RS: Part 1 - Spring Java Config
-> | java | rest | spring | jax-rs |
+<!-- tags: java, rest, spring, jax-rs -->
 
 There are many Java REST frameworks. We can devide these frameworks on three groups:
 

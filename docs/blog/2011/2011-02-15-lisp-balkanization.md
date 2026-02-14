@@ -1,5 +1,5 @@
 # Lisp Balkanization?
-> | review | lisp |
+<!-- tags: review, lisp -->
 
 I've heard this words' pair too often and I never knew what does it mean?
 

@@ -1,5 +1,5 @@
 # How to disable Tomcat session serialization
-> | java |
+<!-- tags: java -->
 
 Suppose you have the next error while restart/stop Tomcat (in my case Tomcat 7.x): 
 

@@ -1,5 +1,5 @@
 # Java Barcode Generation and Scanning Library
-> | java |
+<!-- tags: java -->
 
 Recently I had to pick library which can generate and scan different 2D barcodes. Actually I was interested in [QR Code](http://en.wikipedia.org/wiki/QR_code) and [Data Matrix](http://en.wikipedia.org/wiki/Data_Matrix). There is only ONE open source Java library which generates and scans barcode, it's [Zxing](http://code.google.com/p/zxing/). You might say there are others, but they cost money.  
   

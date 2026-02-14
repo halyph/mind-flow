@@ -1,5 +1,5 @@
 # Who left Ruby Community?
-> | ruby |
+<!-- tags: ruby -->
 
 I've been listening [The Ruby Rogues](https://devchat.tv/ruby-rogues) podcast for several years. Despite the fact the I'm not a Ruby developer ;-). I'm Ruby user if You will.
 

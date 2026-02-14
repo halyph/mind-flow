@@ -1,5 +1,5 @@
 # Scala `for`-comprehensions
-> | scala | video | functional programming |
+<!-- tags: scala, video, functional programming -->
 
 This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: _"For: What is it good for? — Josh Suereth & Dick Wall"_ (see references).
 

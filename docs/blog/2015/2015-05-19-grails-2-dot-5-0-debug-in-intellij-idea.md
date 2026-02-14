@@ -1,5 +1,5 @@
 # Grails 2.5.0 debug in IntelliJ IDEA
-> | groovy | grails |
+<!-- tags: groovy, grails -->
 
 I've been using Grails v.2.5.0 and tried to debug Grails app via traditional Intellij IDEA 14 Debug with no success.
 

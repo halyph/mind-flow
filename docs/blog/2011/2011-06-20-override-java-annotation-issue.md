@@ -1,5 +1,5 @@
 # `@Override` Java Annotation Issue
-> | java |
+<!-- tags: java -->
 
 Let's create one simple interface and class which implements this interface:
 

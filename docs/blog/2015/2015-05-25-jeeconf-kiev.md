@@ -1,5 +1,5 @@
 # JEEConf - Kyiv, 2015 - Report
-> | conference | java |
+<!-- tags: conference, java -->
 
 It happened again - I attend [JEEConf](http://jeeconf.com), May 22-23, 2015. And as usual it was inspiring. Also, I can say that ["Scala"](http://www.scala-lang.org/) was the most dominated buzz word at this conference.
 

@@ -1,5 +1,5 @@
 # Git command extension
-> | git |
+<!-- tags: git -->
 
 You probably know about "git config alias.*" command. See quote from documentation: 
 

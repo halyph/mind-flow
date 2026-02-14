@@ -1,5 +1,5 @@
 # JDay - Lviv, 2015 - Report
-> | conference | java |
+<!-- tags: conference, java -->
 
 *September 19, 2015* I visited [JDay Lviv](http://www.jday.com.ua) Java conference. This report is for myself just to keep track talks I've attended.
 

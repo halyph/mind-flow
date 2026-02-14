@@ -1,5 +1,5 @@
 # Review: Beating the Averages
-> | review |
+<!-- tags: review -->
 
 This Paul's Graham essay ([Beating the Averages](http://www.paulgraham.com/avg.html)) is very popular among Lisp community. Someone told that it was the new Lisp push, the new Lisp wave. I read this essay and companion technical article "[Lisp in Web-Based Applications](http://lib.store.yahoo.net/lib/paulgraham/bbnexcerpts.txt)" in one short. It's really inspired reading.
 

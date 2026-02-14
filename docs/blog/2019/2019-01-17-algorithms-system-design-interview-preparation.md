@@ -1,5 +1,5 @@
 # Algorithms, System Design, Interview Preparation - Github Repos
-> | github | java | python | data science | machine learning | interview | algorithms |
+<!-- tags: github, java, python, data science, machine learning, interview, algorithms -->
 
 I've notice very interesting tendency on Github - people likes to share non-code repos. The most popular is "awesome" and "interview preparation" repos.
 I have collected some amount of these repos.

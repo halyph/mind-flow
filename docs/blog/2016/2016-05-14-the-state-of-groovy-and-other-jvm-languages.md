@@ -1,5 +1,5 @@
 # The state of Groovy and other JVM Languages
-> | groovy | scala |
+<!-- tags: groovy, scala -->
 
 ![blog_post_image](2016-05-14-the-state-of-groovy-and-other-jvm-languages/img1.png)
 

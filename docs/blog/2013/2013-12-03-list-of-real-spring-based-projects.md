@@ -1,5 +1,5 @@
 # List of Real Spring-Based Projects
-> | java | spring |
+<!-- tags: java, spring -->
 
 There are tons of Spring pet-projects on GitHub and it's cool. But, such big and powerful framework as Spring can't be learned by simple project. It requires big and complex samples which can highlight best practices and common approaches while using this framework. Here is the lift of such open sources projects:
 

@@ -1,5 +1,5 @@
 # How to Install Octopress on Windows?
-> | ruby | blog |
+<!-- tags: ruby, blog -->
 
 I've been using [Octopress](http://octopress.org/) on Mac OS X (i.e. have no problem). But, recently I've decided to run my blog on Windows machine and felt pain. Ahh, [Octopress](http://octopress.org/) uses bunch of native extensions which actually cause a lot of cross-platform issues. My first attempt was to try [JRuby](https://www.jruby.org/) due to his better Windows support, but got this:
 

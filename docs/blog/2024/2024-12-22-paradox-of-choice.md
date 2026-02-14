@@ -1,5 +1,5 @@
 # Paradox of Choice in Ruby
-> | ruby |
+<!-- tags: ruby -->
 
 ![pic0](2024-12-22-paradox-of-choice/pic0.jpeg)
 

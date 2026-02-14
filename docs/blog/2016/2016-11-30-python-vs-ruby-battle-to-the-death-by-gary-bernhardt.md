@@ -1,5 +1,5 @@
 # Python vs. Ruby: A Battle to The Death by Gary Bernhardt
-> | ruby | python | vs | comparison |
+<!-- tags: ruby, python, vs, comparison -->
 
 - [Ruby Experience](#ruby-experience)
 - [I. Ruby Complaints](#i-ruby-complaints)

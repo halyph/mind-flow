@@ -1,5 +1,5 @@
 # How to choose the next programming language to learn?
-> | thoughts |
+<!-- tags: thoughts -->
 
 I believe that this question has been appearing in the brains very often.
 *Note*: I'm writing from Java developer point of view.

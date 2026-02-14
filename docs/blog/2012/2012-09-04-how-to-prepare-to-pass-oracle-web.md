@@ -1,5 +1,5 @@
 # How to prepare to pass Oracle Web Component Developer Certified Expert Exam
-> | java |
+<!-- tags: java -->
 
 I've already posted the [Certification Result report on coderanch](http://www.coderanch.com/t/591591/sr/certification/Passed-OCPJWCD).  
 Here are the main resources for preparation for this exam:  

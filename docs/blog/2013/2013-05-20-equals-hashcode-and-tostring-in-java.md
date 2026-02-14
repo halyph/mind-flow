@@ -1,5 +1,5 @@
 # Equals, HashCode and toString in Java
-> | java |
+<!-- tags: java -->
 
 You probably know that [equals](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#equals%28java.lang.Object%29), [hashCode](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode%28%29) and [toString](http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#toString%28%29) methods are very important in Java. And they must be carefully implemented. _Joshua Bloch_ has written about this in his famous book "[Effective Java (2nd Edition)"](http://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683), items 8 and 9.  
   

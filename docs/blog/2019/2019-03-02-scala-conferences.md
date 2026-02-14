@@ -1,5 +1,5 @@
 # Scala and FP Conferences
-> | scala | conference | functional programming |
+<!-- tags: scala, conference, functional programming -->
 
 - **[Scala Days](https://www.scaladays.org/)** - [Videos](https://www.youtube.com/channel/UCOHg8YCiyMVRRxb3mJT_0Mg). **Location**: Lausanne / New York / Berlin / Amsterdam / San Francisco / Copenhagen / Chicago
 - **[Lambda World](http://www.lambda.world)** - [Videos](https://www.youtube.com/channel/UCEBcDOjv-bhAmLavY71RMHA/featured). **Location**: Seattle, USA / Cádiz, Spain

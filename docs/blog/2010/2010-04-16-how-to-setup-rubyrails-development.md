@@ -1,5 +1,5 @@
 # How to setup Ruby/Rails development environment, Part 1 - Ubuntu VM
-> | ruby | rails | linux |
+<!-- tags: ruby, rails, linux -->
 
 The most popular Ruby/Rails development platform isn't Windows. There are a lot of plug-ins, tutorials and blogs about Ruby/Rails on \*nix like system. But, I'm Windows user (yes I know, Linux - rules!), so how can I use all community knowledge and easily apply it?  
 I've decided setup VMWare VM with [Ubuntu Server v.9.10](http://www.ubuntu.com/). And perform all Ruby/Rails development there via Putty (SSH).  

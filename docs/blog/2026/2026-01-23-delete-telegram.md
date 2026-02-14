@@ -1,5 +1,5 @@
 # No more Telegram
-> | thoughts |
+<!-- tags: thoughts -->
 
 ![pic0](./2026-01-23-delete-telegram/pic0.jpeg)
 

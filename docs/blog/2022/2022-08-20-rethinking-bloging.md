@@ -1,5 +1,5 @@
 # Rethinking Bloging
-> | blog |
+<!-- tags: blog -->
 
 *Rethinking Bloging with simplest possible tools: Git repo, Markdown, MkDocs and GitHub Actions*
 

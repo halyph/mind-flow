@@ -1,5 +1,5 @@
 # Play 3.0.0 Release and Scala
-> | scala |
+<!-- tags: scala -->
 
 ## Thoughts
 

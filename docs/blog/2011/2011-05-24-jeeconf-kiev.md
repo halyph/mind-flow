@@ -1,5 +1,5 @@
 # JEEConf - Kyiv, 2011 - Report
-> | conference | java |
+<!-- tags: conference, java -->
 
 I had a chance to attend the first and totally dedicated to [Java conference in Kyiv](http://jeeconf.com/) (May 21, 2011).  
 It was a great. The atmosphere was amazing. The organization was good, really good. The most noticeable thing was that almost every presentation was based on real problem, no metaphysical stuff :-)  

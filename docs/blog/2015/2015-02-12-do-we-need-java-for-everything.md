@@ -1,5 +1,5 @@
 # Do We Need Java for Everything?
-> | java |
+<!-- tags: java -->
 
 Some time ago one guy wrote a post [Java for Everything]. The main idea is to use Java even for shell scripting.
 > I’m even taking this to an extreme and using Java for shell scripts. I’ve found that anything other than a simple wrapper shell script eventually grows to the point where I’m looking up the arcane syntax for removing some middle element from an array in bash ... Write it in Java to start with. If shelling out to run commands is clumsy, write a utility function to make it easy.

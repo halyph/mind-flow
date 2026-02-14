@@ -1,5 +1,5 @@
 # How to Add Jars at Runtime?
-> | java |
+<!-- tags: java -->
 
 Suppose you have the next project structure:
 

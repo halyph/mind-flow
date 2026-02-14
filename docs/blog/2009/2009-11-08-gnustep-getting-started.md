@@ -1,5 +1,5 @@
 # GNUstep Getting Started
-> | Objective-C |
+<!-- tags: objective-c -->
 
 Objective-C popularity aggressively increased based on
 [TIOBE Index (for October 2009)](http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html)

@@ -1,5 +1,5 @@
 # Java PDF Libraries
-> | java |
+<!-- tags: java -->
 
 Recently I had a task to select some Java PDF libraries for PDF generation. But it wasn't a simple task.  
 The first thing which came into my mind was iText. It's well know Java library with good reputation. But... there is some stopper. iText version 5+ is released under the AGPL license. I.e. we have to pay money if we want to use iText in commercial product.  

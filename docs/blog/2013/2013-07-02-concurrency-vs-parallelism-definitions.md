@@ -1,5 +1,5 @@
 # Concurrency vs. Parallelism Definitions
-> | general |
+<!-- tags: general -->
 
 Recently I had long discussion in scope of  "concurrency" and "parallelism" definitions. That's why I've decided to pick the most trusted sources for these definitions in one place:  
   

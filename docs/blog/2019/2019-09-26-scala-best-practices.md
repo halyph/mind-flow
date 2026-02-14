@@ -1,6 +1,5 @@
 # Scala Best Practices
-
-> | scala |
+<!-- tags: scala -->
 
 Here is a small collection of Scala best practices.
 

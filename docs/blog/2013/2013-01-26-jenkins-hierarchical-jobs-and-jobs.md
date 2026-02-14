@@ -1,5 +1,5 @@
 # Jenkins hierarchical jobs and jobs status aggregation
-> | jenkins | ci |
+<!-- tags: jenkins, ci -->
   
 As you probably know, Jenkins is highly configurable CI server. We can setup different custom build process. And I'm going to share some approach I've been using to setup the hierarchy of Jenkins' jobs.  
   

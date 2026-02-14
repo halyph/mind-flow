@@ -1,5 +1,5 @@
 # Review: You Should Write Blogs?
-> | review |
+<!-- tags: review -->
 
 I've just finished reading the Steve Yegge's post ["You Should Write Blogs"](http://sites.google.com/site/steveyegge2/you-should-write-blogs).
 As for me it's very impressive and honest writing about blogging I've ever read. I like this style of writing.

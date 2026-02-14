@@ -1,5 +1,5 @@
 # *nix-like environments for Windows
-> | cygwin | linux | MinGW |
+<!-- tags: cygwin, linux, mingw -->
 
 \*nix like environment is good for developer and sysadmins, and really
 useful for end-user. That's why we've got KDE, Gnome and similar. But, I

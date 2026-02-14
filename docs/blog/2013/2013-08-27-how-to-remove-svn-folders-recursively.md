@@ -1,5 +1,5 @@
 # How to remove .svn folders recursively?
-> | bash |
+<!-- tags: bash -->
 
 Validate the list of folders which will be removed:
 

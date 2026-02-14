@@ -1,5 +1,5 @@
 # Blog, Digital Garden, Wiki. FTW?
-> | blog |
+<!-- tags: blog -->
 
 See my previous post about blogging [Rethinking Bloging](2022-08-20-rethinking-bloging.md).
 

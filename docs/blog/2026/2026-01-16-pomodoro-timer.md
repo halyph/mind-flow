@@ -1,5 +1,5 @@
 # A Boring Pomodoro Timer
-> | pomodoro | 
+<!-- tags: pomodoro -->
 
 ![post img](2026-01-16-pomodoro-timer/pic0.jpg)
 

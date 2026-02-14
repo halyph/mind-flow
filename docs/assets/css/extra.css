@@ -61,3 +61,26 @@ td {
 .md-content__date small {
   font-size: 0.65rem;
 }
+
+/* Tags styling - inline with date */
+.md-tags {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-tags a {
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+.md-tags a:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode tags */
+[data-md-color-scheme='slate'] .md-tags {
+  color: var(--md-default-fg-color--lighter);
+}
+
+[data-md-color-scheme='slate'] .md-tags a {
+  color: var(--md-default-fg-color--lighter);
+}

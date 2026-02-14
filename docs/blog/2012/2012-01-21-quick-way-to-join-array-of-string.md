@@ -1,5 +1,5 @@
 # Quick way to join array of String in Java without third party libraries
-> | java |
+<!-- tags: java -->
 
 As you probably know Java SE doesn't include such useful method as String join. Even old good JavaScript has this nice method:
 

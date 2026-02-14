@@ -1,5 +1,5 @@
 # Everybody Python, FTW?
-> | python |
+<!-- tags: python -->
 
 ![pic0](2024-08-14-rant-python/pic0.jpeg)
 

@@ -1,5 +1,5 @@
 # Distribute application as Native Single binary
-> | golang | python | rust | haskell | ocaml | ruby | lisp |
+<!-- tags: golang, python, rust, haskell, ocaml, ruby, lisp -->
 
 Some time ago I had a pleasure to implement Ruby-based tool which theoretically must be easy to install and have no or limited dependencies.
 I've picked `JRuby` and packed/distribute the application as a `jar`. I.e. JRE was the single dependency I had. In general it was very nice distribution model despite the fact that non-Java users must install JRE (Java SE Runtime Environment) to run the application.

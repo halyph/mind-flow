@@ -1,5 +1,5 @@
 # How to decide which technology hype is worth personal investments?
-> | thoughts |
+<!-- tags: thoughts -->
 
 I think it's very important question. Because studding some new technology requires some time (and maybe money).
 

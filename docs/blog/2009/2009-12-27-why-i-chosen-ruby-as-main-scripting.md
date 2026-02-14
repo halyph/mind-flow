@@ -1,5 +1,5 @@
 # Why I've chosen Ruby as main scripting language for my toolbox
-> | ruby |
+<!-- tags: ruby -->
 
 There are a lot of scripting languages: Perl, Python, Lua, Tcl, Ruby, JavaScript, Scala, Groovy, Erlang, Lisp, Scheme and Bash/Awk(as shell scripting).
 
