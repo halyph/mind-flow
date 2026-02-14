@@ -1,6 +1,10 @@
-name: CI
+name: CI Optimized
+
+# This is the optimized version. Test it first, then replace ci.yaml
+# To test: rename this to ci.yaml or change the branch trigger
 
 on:
+  workflow_dispatch:  # Manual trigger for testing
   push:
     branches: [ master ]
 
@@ -12,41 +16,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0  # Required for git-revision-date-localized-plugin
 
       - name: Set up Python runtime
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'  # This will cache pip dependencies
 
       - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
 
       - name: Build Site
-        id: build_site
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        run: |
-          mkdocs build -f mkdocs.ci.yml
-          ls site/
+        run: mkdocs build -f mkdocs.ci.yml
 
-      - name: Pushes to another repository
-        uses: cpina/github-action-push-to-another-repository@ssh-deploy-key
-        id: push_directory
-        env:
-          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          source-directory: site/
-          destination-github-username: 'halyph'
-          destination-repository-name: 'halyph.github.io'
-          user-email: halyph@gmail.com
-          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-branch: master
-
-      - name: Test get variable exported by push-to-another-repository
-        run: echo $DESTINATION_CLONED_DIRECTORY
+          deploy_key: ${{ secrets.SSH_DEPLOY_KEY }}
+          external_repository: halyph/halyph.github.io
+          publish_dir: ./site
+          publish_branch: master
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Deploy from ${{ github.sha }}'
