@@ -1,5 +1,5 @@
 # Python is the second best language for anything
-> | python |
+<!-- tags: python -->
 
 ## Main Part
 

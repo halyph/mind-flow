@@ -1,5 +1,5 @@
 # The Problem with Merge Commits in Trunk-Based Development
-> | thoughts |
+<!-- tags: thoughts -->
 
 ![alt text](2025-11-23-merge-commit-evil/pic0.png)
 

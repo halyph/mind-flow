@@ -1,5 +1,5 @@
 # How to setup Ruby/Rails development environment, Part 2 - E-TextEditor
-> | ruby | rails | linux |
+<!-- tags: ruby, rails, linux -->
 
 There are tons of text editors which are good enough for Ruby/Rails/web development. And it's not so easier to choose the "best" editor.  
 I'd like to talk about my top three editors which like the most:  

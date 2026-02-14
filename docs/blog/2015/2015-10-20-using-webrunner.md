@@ -1,5 +1,5 @@
 # How to run Netflix Eureka via Webapp Runner?
-> | java |
+<!-- tags: java -->
 
 Some time ago I had to run [Netflix Eureka server](https://github.com/Netflix/eureka) (to be more specific it was version 1.1.151) not using Spring Boot.
 

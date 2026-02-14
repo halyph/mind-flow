@@ -1,5 +1,5 @@
 # Git, Jenkins, Gerrit, Code Review and pre-tested commits
-> | git | tool | jenkins |
+<!-- tags: git, tool, jenkins -->
  
 This post is a note to myself. There are bunch of tools on the market which can be successfully used in yours development process. But, I'm interested in [git](http://git-scm.com/), [Jenkins](http://jenkins-ci.org/) [](http://jenkins-ci.org/) only. Also, git/jenkins supports tons on different workflows, but here I'd like to talk about pre-tested commits.  
   

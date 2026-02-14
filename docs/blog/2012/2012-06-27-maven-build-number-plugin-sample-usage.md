@@ -1,5 +1,5 @@
 # Maven Build Number Plugin - Sample Usage
-> | maven |
+<!-- tags: maven -->
 
 [buildnumber-maven-plugin](http://mojo.codehaus.org/buildnumber-maven-plugin).  
   

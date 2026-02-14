@@ -1,5 +1,5 @@
 # RubyShift 2012 Conference Report
-> | ruby | conference |
+<!-- tags: ruby, conference -->
 
 Recently, a day ago :-) I visited [RubyShift](http://rubyshift.org/) 2012 conference (September 29—30, 2012, Kiev, Ukraine). It's primary a Ruby conference with additional mixing from related technologies.  
   

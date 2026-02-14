@@ -1,5 +1,5 @@
 # Data Science YouTube Channels (Python, R)
-> | python | R | data science | video |
+<!-- tags: python, r, data science, video -->
 
 There are tons of different YouTube channels dedicated to Python and R. Some of them are really cool. I've collected a small list of them.
 

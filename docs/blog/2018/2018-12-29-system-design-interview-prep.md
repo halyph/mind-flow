@@ -1,5 +1,5 @@
 # Resources for System Design Interview
-> | interview |
+<!-- tags: interview -->
 
 **Related posts:**
 

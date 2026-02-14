@@ -1,5 +1,5 @@
 # Scripting in Scala
-> | scala |
+<!-- tags: scala -->
 
 Scala language compiles sources code to Java bytecode.  But, it has some nice scripting facilities. Let's review them.
 

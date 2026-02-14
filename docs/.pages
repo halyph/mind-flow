@@ -1,5 +1,6 @@
 nav:
     - blog
+    - tags.md
     - wiki
     - bookshelf.md
     - ...

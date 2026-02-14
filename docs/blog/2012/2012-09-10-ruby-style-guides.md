@@ -1,5 +1,5 @@
 # Ruby Style Guides
-> | ruby |
+<!-- tags: ruby -->
 
 Ruby language doesn't have an official _Style Guide_. That's why I've decided to collect **most** interesting style guides in one place.  
   

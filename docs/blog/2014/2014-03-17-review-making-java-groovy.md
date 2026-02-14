@@ -1,5 +1,5 @@
 # Review: Making Java Groovy
-> | book | review | groovy |
+<!-- tags: book, review, groovy -->
 
 I can say that this book is special. It’s not a Groovy “cookbook”.
 You won’t find tons of tricky recipes around Groovy. You won’t learn

@@ -1,5 +1,5 @@
 # REST with JAX-RS: Part 3 - Embedded Jetty
-> | java | rest | spring | jax-rs |
+<!-- tags: java, rest, spring, jax-rs -->
 
 See previous posts:  
 

@@ -1,5 +1,5 @@
 # iText Useful Resources
-> | java |
+<!-- tags: java -->
 
 Recently I've begun using iText PDF generation library due to my work needs. I must admit that this library is quite powerful, but for really quick start I needed several resources with nice working samples. Here is the list:  
 

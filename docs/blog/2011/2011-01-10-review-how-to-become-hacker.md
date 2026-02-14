@@ -1,5 +1,5 @@
 # Review: How To Become A Hacker?
-> | review |
+<!-- tags: review -->
 
 Recently I've read these philosophical essays:[How To Become A Hacker, by Eric Steven Raymond](http://www.catb.org/~esr/faqs/hacker-howto.html) and [Teach Yourself Programming in Ten Years, by Peter Norvig.](http://norvig.com/21-days.html)
 

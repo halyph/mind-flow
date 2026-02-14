@@ -1,5 +1,5 @@
 # REST with JAX-RS: Part 2 - Spring Java Config and CXF Improvement
-> | java | rest | spring | jax-rs |
+<!-- tags: java, rest, spring, jax-rs -->
   
 See previous post:  
 

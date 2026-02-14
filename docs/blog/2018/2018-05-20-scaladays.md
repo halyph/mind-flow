@@ -1,5 +1,5 @@
 # Scala Days - Berlin, 2018 - Report
-> | scala | conference |
+<!-- tags: scala, conference -->
 
 I attended Scala Days Berlin conference (May 15th - May 17th, 20018). It was almost two days conference: two full days: day 2 and 3, and one keynote talk for day 1.
 

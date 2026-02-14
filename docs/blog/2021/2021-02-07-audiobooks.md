@@ -1,5 +1,5 @@
 # Thoughts about Audiobooks
-> | book |
+<!-- tags: book -->
 
 Last 2020 year was "special" in many senses. But, today I'd like to talk about audiobooks.
 I decided to listen as much I can - 22 books.  

@@ -1,5 +1,5 @@
 # Top "Algorithms and Data Structures" Books
-> | book | algorithm | data structure |
+<!-- tags: book, algorithm, data structure -->
 
 I have a my list several books related to this topic. I've decided to list it here for easy referencing
 

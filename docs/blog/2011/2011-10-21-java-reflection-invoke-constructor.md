@@ -1,5 +1,5 @@
 # Java Reflection: Invoke Constructor Issue
-> | java |
+<!-- tags: java -->
 
 Let's imagine we have the next classes:
 

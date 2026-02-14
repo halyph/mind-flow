@@ -1,5 +1,5 @@
 # Octoverse 2023: The most popular programming languages
-> | github |
+<!-- tags: github -->
 
 I decided to capture (for future me) the latest [Octoverse: The state of open source and rise of AI in 2023](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages) report.
 

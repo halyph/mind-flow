@@ -1,5 +1,5 @@
 # JEEConf - Kyiv, 2013 - Report
-> | conference | java |
+<!-- tags: conference, java -->
 
 The third [JEEConf](http://jeeconf.com/) was superb. It was well organized, with friendly atmosphere and high-quality speakers. And I had a dilemma what topics/speaker I should visit. :-)
   

@@ -1,5 +1,5 @@
 # Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations
-> | golang |
+<!-- tags: golang -->
 
 ![alt text](2025-08-23-premailer/pic0.jpg)
 

@@ -1,5 +1,5 @@
 # Mac OS X terminal supports colored output
-> | terminal | MacOS |
+<!-- tags: terminal, macos -->
 
 Mac OS X Mountain Lion Terminal hasn't been configured to support coloured output.  
 You can check it via simple command run "ls -la":

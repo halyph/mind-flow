@@ -1,5 +1,5 @@
 # Review: Programming Groovy 2: Dynamic Productivity for the Java Developer
-> | book | groovy | review |
+<!-- tags: book, groovy, review -->
 
 This book is well balanced around Groovy language. I would say there is minimal required knowledge regarding the language. The author (Venkat Subramaniam) fluently covered every important aspect of Groovy. But this book is for experienced developer. The accents were made only in scope of Groovy language and totally avoided any "intro" programming talks, which is actually cool.
 

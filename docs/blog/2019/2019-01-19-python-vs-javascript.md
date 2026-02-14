@@ -1,5 +1,5 @@
 # Python vs Javascript comparison
-> | python | javascript | vs | comparison |
+<!-- tags: python, javascript, vs, comparison -->
 
 First of all it's not my writing and it's just a copy of the posts from [@DjangoTricks](https://djangotricks.blogspot.com) blog by *Aidas Bendoraitis* (see [References](#references) below)
 

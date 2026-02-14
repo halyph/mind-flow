@@ -1,5 +1,5 @@
 # Why you should join a user group?
-> | general |
+<!-- tags: general -->
 
 Here I'd like to highlight the most important benefits for me:
 

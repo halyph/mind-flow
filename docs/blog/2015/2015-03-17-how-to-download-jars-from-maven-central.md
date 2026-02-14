@@ -1,5 +1,5 @@
 # How to download jars from Maven Central
-> | java | maven |
+<!-- tags: java, maven -->
 
 We know how to download Java libraries with it's dependencies (transitive included) via Maven _pom.xml_, Ant/Ivy _build.xml_ script, Gradle _build.gradle_ script etc. 
 But what if we need to download them without these scripts.

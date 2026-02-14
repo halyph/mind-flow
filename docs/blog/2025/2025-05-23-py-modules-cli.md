@@ -1,5 +1,5 @@
 # Exploring Python’s Hidden CLI Modules
-> | python | thoughts |
+<!-- tags: python, thoughts -->
 
 ![alt text](2025-05-23-py-modules-cli/pic0.jpeg)
 

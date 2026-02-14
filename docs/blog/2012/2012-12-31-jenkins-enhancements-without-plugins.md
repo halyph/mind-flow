@@ -1,5 +1,5 @@
 # Jenkins enhancements without plugins
-> | jenkins | ci |
+<!-- tags: jenkins, ci -->
 
 [Jenkins](http://jenkins-ci.org/) is a popular open source continuous integration server. I use it heavily. Jenkins is super extensible CI server with huge plugins repository.  
 But I must admit that there are a lot of cases when all these Jenkins plugin's "zoo" doesn't help. What does it mean?:  

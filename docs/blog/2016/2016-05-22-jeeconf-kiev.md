@@ -1,5 +1,5 @@
 # JEEConf - Kyiv, 2016 - Report
-> | conference | java |
+<!-- tags: conference, java -->
 
 This week (May 20–21, 2016) I attended [JEEConf](https://jeeconf.com) the 6th time. The conference was well organized, but there was one very important improvement — the organizer has changed the venue of the conference. Four of five stages were located on the same floor which was very convenient for attendees.
 

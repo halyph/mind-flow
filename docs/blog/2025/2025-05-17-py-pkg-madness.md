@@ -1,5 +1,5 @@
 # One Python, Who-Knows-How-Many Toolchains, and a Dash of Hope
-> | python | thoughts |
+<!-- tags: python, thoughts -->
 
 ![alt text](2025-05-17-py-pkg-madness/pic0.jpg)  
 <sub>Image adapted from <a href="https://en.wikipedia.org/wiki/Flagellant">Flagellant</a>, used under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</sub>

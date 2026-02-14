@@ -1,5 +1,5 @@
 # Lisp, Ruby, Acceptable and not Acceptable
-> | review | lisp | ruby |
+<!-- tags: review, lisp, ruby -->
 
 There is one really (in)famous essay [Why Ruby is an acceptable LISP](http://www.randomhacks.net.s3-website-us-east-1.amazonaws.com/2005/12/03/why-ruby-is-an-acceptable-lisp/) by Eric Kidd. The most interesting of all this stuff are comments and other responsive blog posts (e.g. [Lisp is Not an Acceptable Lisp by Steve Yegge](http://steve-yegge.blogspot.com/2006/04/lisp-is-not-acceptable-lisp.html))
 I can say this is something like "vs" essay which is very popular nowadays. 

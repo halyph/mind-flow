@@ -1,5 +1,5 @@
 # How to run ANT script from .BAT/.CMD?
-> | tool | java |
+<!-- tags: tool, java -->
 
 Imagine you need to call ANT script from BAT/CMD file.  
 Ant script:  

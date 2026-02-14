@@ -1,5 +1,5 @@
 # About Learning New Programming Languages
-> | programming language |
+<!-- tags: programming language -->
 
 This post is very subjective and reflect the my current point of view.  
   

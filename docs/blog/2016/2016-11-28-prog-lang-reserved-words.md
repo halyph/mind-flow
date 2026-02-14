@@ -1,5 +1,5 @@
 # Reserved Words of Programming languages 
-> | ruby | python | java | scala | golang | cpp | c |
+<!-- tags: ruby, python, java, scala, golang, cpp, c -->
 
 ![blog_post_image](2016-11-28-prog-lang-reserved-words/wordcloud-wide.png)
 

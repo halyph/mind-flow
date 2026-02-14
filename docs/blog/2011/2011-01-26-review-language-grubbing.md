@@ -1,5 +1,5 @@
 # Review: Language Grubbing
-> | review |
+<!-- tags: review -->
 
 Yet another interesting reading from Steve Yegge: [Language Grubbing](http://sites.google.com/site/steveyegge2/language-grubbing).
 

@@ -1,5 +1,5 @@
 # Migration to Octopress
-> | blog |
+<!-- tags: blog -->
 
 ## Objectives
 

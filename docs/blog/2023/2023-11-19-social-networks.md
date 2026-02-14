@@ -1,5 +1,5 @@
 # Social Networks are time killers
-> | thoughts |
+<!-- tags: thoughts -->
 
 I guess many people know that Social Networks steel your time via [doomscrolling](https://en.wikipedia.org/wiki/Doomscrolling).  
 Also, many of them promote negativity, narcissism, fake news, etc. All these bring nothing useful to you. But people keep using social networks.

@@ -1,5 +1,5 @@
 # Rails Architecture and Scalability
-> | ruby | rails |
+<!-- tags: ruby, rails -->
 
 Everybody know when this _"Rails doesn't scale"_ has been begun:
 

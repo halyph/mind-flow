@@ -1,5 +1,5 @@
 # Golang: Do you commit your generated mocks to repo?
-> | golang |
+<!-- tags: golang -->
 
 I've discovered that there is no consensus about "*Committing generate mocks to the repo*". That's why I've looked around and found some discussions, pros&cons (see [References](#references)).
 

@@ -1,5 +1,5 @@
 # State of numerical computation languages
-> | computation |
+<!-- tags: computation -->
 
 When I was a student I spent a huge amount of time doing difference numerical computation with MATLAB and Maple. I must say I was falling in love with MATLAB. This environment, language and visualization possibilities were amazing and very powerful. I simply couldn't choose another stuff. It gave me a chance fully concentrate on engineering problems I had been trying to solve.  
   

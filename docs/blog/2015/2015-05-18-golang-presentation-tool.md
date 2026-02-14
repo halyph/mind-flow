@@ -1,5 +1,5 @@
 # Go presentation tool
-> | golang |
+<!-- tags: golang -->
 
 Have you ever noticed how Go community presents Go-related talks? Their slides are very simple and without any fancy animation features: see [Go talks](http://talks.golang.org). You might say that they are no so feature-rich as [Reveal.js](https://github.com/hakimel/reveal.js/). And it's true. But, simplicity is beauty, as for me. Also, it's very well aligned with Go language philosophy.
 

@@ -1,5 +1,5 @@
 # Thor notes
-> | ruby |
+<!-- tags: ruby -->
 
 Some time ago I used [Thor] for one [CLI] application. I
 investigated several tools, but picked Thor because of its simplicity

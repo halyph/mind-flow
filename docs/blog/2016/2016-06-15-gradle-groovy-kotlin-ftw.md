@@ -1,5 +1,5 @@
 # Gradle, Groovy, Kotlin. FTW?
-> | gradle | groovy | kotlin |
+<!-- tags: gradle, groovy, kotlin -->
 
 You’ve probably heard about [_"Kotlin-based approach to writing Gradle build scripts"_](http://gradle.org/blog/kotlin-meets-gradle/). A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of [Groovy, Gradle and their future relationship](http://melix.github.io/blog/2016/05/gradle-kotlin.html).
 

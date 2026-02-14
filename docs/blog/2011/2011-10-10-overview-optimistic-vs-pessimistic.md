@@ -1,5 +1,5 @@
 # Overview: Optimistic vs. Pessimistic Locking
-> | general |
+<!-- tags: general -->
 
 Data Concurrency is a real problem in multi-user environment. How can we manage the data consistence when several users try to modify the same record(s) at the same time?  
 This is a very interesting subject. Mostly, it's compromise. We can't easily pick one approach and forget about another.  

@@ -1,5 +1,5 @@
 # Git Doesn't Track File Renames (And How It Fakes It)
-> | git |
+<!-- tags: git -->
 
 ![pic0](2026-01-31-git-content-similarity/pic0.jpeg)
 

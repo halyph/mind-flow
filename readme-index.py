@@ -7,7 +7,7 @@ README_HEADER = """# Mind~Flow
 
 <img src="docs/assets/images/logo.png" align="right"/>
 
-[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md)
+[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md) · [`tags`](docs/tags.md)
 
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
@@ -33,6 +33,9 @@ README_INDEX_FILE = 'README.md'
 MKDOCS_INDEX_FILE = 'docs/blog/index.md'
 PREFIX = 'docs/blog/'
 
+# Files to exclude from blog post index
+EXCLUDE_FILES = ['index.md', 'tags.md']
+
 def define_date_ranges():
     start = len(PREFIX) + len(year_format) + len('/')
     end = start + len(date_format)
@@ -47,8 +50,7 @@ def read_line(file_name):
 
 def list_files():
     files = glob.glob(PREFIX + '**/*.md', recursive=True)
-    pair = [f for f in files if '/' in f and not f.startswith('misc') and not f.endswith('index.md') ] 
-    return pair
+    return [f for f in files if '/' in f and not f.startswith('misc') and not any(f.endswith(excluded) for excluded in EXCLUDE_FILES)]
 
 def extract_date(line):
     date =  line[date_start:date_end]

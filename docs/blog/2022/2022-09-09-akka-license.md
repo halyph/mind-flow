@@ -1,5 +1,5 @@
 # Lightbend is Changing the License for Akka
-> | scala | akka |
+<!-- tags: scala, akka -->
 
 ## References
 

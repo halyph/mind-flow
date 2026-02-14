@@ -1,5 +1,5 @@
 # Personal Techradar for Programming Languages - 2023 H1
-> | techradar | golang | python | java | scala |
+<!-- tags: techradar, golang, python, java, scala -->
 
 This **Techradar 2023 H1** is very subjective and based on my current feeling/decision for 2023.
 

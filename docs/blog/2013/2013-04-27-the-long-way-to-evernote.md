@@ -1,5 +1,5 @@
 # The long way to Evernote
-> | general |
+<!-- tags: general -->
   
 Have you ever think about the application (and/or service) which can satisfy all your "productivity" needs? The term "productivity" in this context is very simple - it's something (tools or methods) which helps you work with higher productivity, spent less time resolving boring tasks and concentrate on your business needs.  
   

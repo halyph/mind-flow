@@ -1,5 +1,5 @@
 # Maven Flow for Simple App Creation
-> | java | maven |
+<!-- tags: java, maven -->
 
 I provided my reflections about *"Java for Everything"* in the previous [post](2015-02-12-do-we-need-java-for-everything.md).
 Here we will review other implementation of this concept.

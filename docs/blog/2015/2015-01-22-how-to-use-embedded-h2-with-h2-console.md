@@ -1,5 +1,5 @@
 # How to Use Embedded H2 with web Console?
-> | java |
+<!-- tags: java -->
 
 There are several Java SQL databases which supports both server and embedded modes: [H2](http://www.h2database.com/), [HSQLDB](http://hsqldb.org/) and [Derby](http://db.apache.org/derby/). The most interesting for me is H2 with own web [Console](http://www.h2database.com/html/quickstart.html#h2_console). 
 

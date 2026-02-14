@@ -1,5 +1,5 @@
 # How to disable System.out?
-> | java |
+<!-- tags: java -->
 
 I have a legacy code base with tons of `System.out.println()`. Actually, I don't need this in production, but during development it's cool enough to have. So, I've decided to disable `System.out`:  
 

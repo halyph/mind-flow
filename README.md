@@ -2,7 +2,7 @@
 
 <img src="docs/assets/images/logo.png" align="right"/>
 
-[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md)
+[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md) · [`tags`](docs/tags.md)
 
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />

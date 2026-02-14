@@ -1,5 +1,5 @@
 # Popularity of Programming Languages - 2022
-> | python | java | scala | golang | rust |
+<!-- tags: python, java, scala, golang, rust -->
 
 ## References
 

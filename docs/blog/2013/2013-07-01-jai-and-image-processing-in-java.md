@@ -1,5 +1,5 @@
 # JAI and Image Processing in Java
-> | java |
+<!-- tags: java -->
 
 I have minimal experience with Image Processing and when I'm talking about it I mean:  
 

@@ -1,5 +1,5 @@
 # Stockholm Syndrome and Programming Languages
-> | thoughts |
+<!-- tags: thoughts -->
 
 [Stockholm syndrome](https://en.wikipedia.org/wiki/Stockholm_syndrome) is a proposed condition or theory that tries to explain why hostages sometimes develop a psychological bond with their captors.
 

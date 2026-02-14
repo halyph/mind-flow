@@ -1,5 +1,5 @@
 # Switching to Textmate 2
-> | textmate |
+<!-- tags: textmate -->
 
 Recently I've decided to switch from Sublime Text editor to [TextMate 2](http://macromates.com). At the beginning of [Rails](http://rubyonrails.org/) "era" it was the sexiest text editor in the world. But, at that time, I was a Windows user ;-)
 

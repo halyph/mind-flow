@@ -1,5 +1,5 @@
 # Grails 2.x best practices collection
-> | groovy | grails |
+<!-- tags: groovy, grails -->
 
 Recently, I had a pleasure to look into several Grails v.2.3+ projects. Despite the fact that I'm not a Grails developer I discovered some anti-patterns.
 Then I started looking around to find some *Grails projects best practices*. And  they are well known and people still doing mistakes.

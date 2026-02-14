@@ -1,5 +1,5 @@
 # How to Configure Git Diff and Merge Tools?
-> | tool | git |
+<!-- tags: tool, git -->
 
 Git can use external tools to perform merge and diff:
 

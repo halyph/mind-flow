@@ -1,5 +1,5 @@
 # Languages popularity by SDKs
-> | python | java | golang | ruby | javascript | 
+<!-- tags: python, java, golang, ruby, javascript -->
 
 Unpopular opinion: measure language popularity by their usage in SDKs.
 Here I've collected some random SDKs (see below) and expectedly the following languages are the top:

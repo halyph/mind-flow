@@ -1,5 +1,5 @@
 # Scala vs Kotlin
-> | java | kotlin | vs | comparison |
+<!-- tags: java, kotlin, vs, comparison -->
 
 This page is just collection of notes from ["Kotlin vs Scala" by Urs Peter & Joost Heijkoop](https://www.youtube.com/watch?v=MsMejigb1Zk)
 

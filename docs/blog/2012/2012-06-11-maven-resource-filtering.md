@@ -1,5 +1,5 @@
 # Maven Resource Filtering
-> | maven |
+<!-- tags: maven -->
 
 * [Using Maven profiles and resource filtering](http://www.manydesigns.com/en/portofino/documentation/tutorials/using-maven-profiles-and-resource-filtering)
 * [How do I add resources to my JAR?](http://maven.apache.org/guides/getting-started/index.html#How_do_I_add_resources_to_my_JAR)

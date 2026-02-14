@@ -1,5 +1,5 @@
 # Data Science Learning Resources
-> | data science | video | python | R |
+<!-- tags: data science, video, python, r -->
 
 I've been following [Python Programmer](https://www.youtube.com/channel/UC68KSmHePPePCjW4v57VPQg) YouTube channel by [Giles McMullen](https://twitter.com/GilesMcMullen).
 Mr. Giles has collected amazing collection of resources in the next video [Can you LEARN DATA SCIENCE for FREE? YES! I'll show you HOW!](https://www.youtube.com/watch?v=eTxyviU0Ddo). I do not like YouTube as a reference and copied all content here. Probably, I will comment/modify it based on my preferenes, but for now it is as is.

@@ -1,5 +1,5 @@
 # Java Code Quality Tools - Overview
-> | java |
+<!-- tags: java -->
 
 Recently, I had a chance to present the subject at the local IT community meetup. Here is the basic presentation: 
 

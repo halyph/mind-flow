@@ -1,5 +1,5 @@
 # Haskell: Development Environment Setup
-> | haskell |
+<!-- tags: haskell -->
 
 - [References](#references)
 - [**Lesson 1** - Getting set up](#lesson-1---getting-set-up)

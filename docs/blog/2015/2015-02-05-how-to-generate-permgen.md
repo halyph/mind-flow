@@ -1,5 +1,5 @@
 # How to Generate PermGen leak?
-> | java |
+<!-- tags: java -->
 
 I'm sure that a lot of Java developers experienced `java.lang.OutOfMemoryError: PermGen space` (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here [[1]] and [[2]]).
 
