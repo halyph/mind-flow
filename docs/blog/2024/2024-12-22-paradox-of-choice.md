@@ -1,7 +1,7 @@
 # Paradox of Choice in Ruby
 <!-- tags: ruby -->
 
-![pic0](2024-12-22-paradox-of-choice/pic0.jpeg)
+![thumbnail](2024-12-22-paradox-of-choice/pic0.jpeg)
 
 [The Paradox of Choice – Why More Is Less](https://en.wikipedia.org/wiki/The_Paradox_of_Choice) - is it applicable to programming languages?
 

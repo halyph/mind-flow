@@ -1,7 +1,7 @@
 # Claude Code CLI Prompts
 <!-- tags: genai -->
 
-![alt text](2025-10-29-claude-code-notes/pic0.png)
+![thumbnail](2025-10-29-claude-code-cli-notes/pic0.png)
 
 So, you've installed Claude Code `npm install -g @anthropic-ai/claude-code`, started using this tool and now asking yourself "How does it work?".
 I was interested in Claude's Code REST calls, **system** and **tool**s' prompts.
@@ -75,7 +75,7 @@ I guess I could use `export ANTHROPIC_BASE_URL=http://localhost:8000` as well, I
 ...
 ```
 
-![alt text](2025-10-29-claude-code-notes/pic1.png)
+![alt text](2025-10-29-claude-code-cli-notes/pic1.png)
 
 Below, I've snaped HTTP request and prompts. 
 

@@ -1,7 +1,7 @@
 # No more Telegram
 <!-- tags: thoughts -->
 
-![pic0](./2026-01-23-delete-telegram/pic0.jpeg)
+![thumbnail](2026-01-23-delete-telegram/pic0.jpeg)
 
 **TL;DR: I've deleted my Telegram account.**
 

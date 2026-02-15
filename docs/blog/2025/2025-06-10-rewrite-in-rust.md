@@ -1,7 +1,7 @@
 # The State of "Let's Rewrite It in Rust"
 <!-- tags: rust -->
 
-![alt text](2025-06-10-rewrite-in-rust/rewrite_in_rust.jpeg)
+![thumbnail](2025-06-10-rewrite-in-rust/rewrite_in_rust.jpeg)
 
 By now, you've probably seen the meme or heard the mantra: *"Let's rewrite it in Rust"*.
 It gained traction around 2018-2020, when major players like [**Dropbox**](https://dropbox.tech/infrastructure/rewriting-the-heart-of-our-sync-engine), [**Cloudflare**](https://blog.cloudflare.com/html-parsing-1/), [**Discord**](https://discord.com/blog/why-discord-is-switching-from-go-to-rust) and [**Microsoft**](2025-06-04-ms-rusty.md) began experimenting with Rust for performance-critical parts of their systems.
