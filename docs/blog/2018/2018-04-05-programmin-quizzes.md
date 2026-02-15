@@ -1,5 +1,5 @@
 # Programming Quizzes
-<!-- tags: ruby, scala, js, haskell -->
+<!-- tags: ruby, scala, javascript, haskell -->
 
 Many years ago there was a site with collection of *Ruby Quizzes*: http://rubyquiz.com.
 

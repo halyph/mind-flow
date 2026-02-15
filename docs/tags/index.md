@@ -2,7 +2,7 @@
 
 Browse blog posts by tag.
 
-**📊 172 posts • 75 tags**
+**📊 172 posts • 74 tags**
 
 **Popular**: [java (49)](#java) • [ruby (24)](#ruby) • [python (23)](#python) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
@@ -295,11 +295,12 @@ Browse blog posts by tag.
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
 <a id="javascript"></a>
-## javascript (3) [↑](#tags)
+## javascript (4) [↑](#tags)
 
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2019-01-20 - [Ruby vs Javascript comparison](../blog/2019/2019-01-20-ruby-vs-javascript.md)
 - 2019-01-19 - [Python vs Javascript comparison](../blog/2019/2019-01-19-python-vs-javascript.md)
+- 2018-04-05 - [Programming Quizzes](../blog/2018/2018-04-05-programmin-quizzes.md)
 
 <a id="jax-rs"></a>
 ## jax-rs (3) [↑](#tags)
@@ -320,11 +321,6 @@ Browse blog posts by tag.
 
 - 2012-12-12 - [Groovy or JRuby for Java developer](../blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
 - 2010-08-12 - [(J)Ruby or Groovy for scripting in Java environment](../blog/2010/2010-08-12-jruby-or-groovy-for-scripting-in-java.md)
-
-<a id="js"></a>
-## js (1) [↑](#tags)
-
-- 2018-04-05 - [Programming Quizzes](../blog/2018/2018-04-05-programmin-quizzes.md)
 
 <a id="jvm"></a>
 ## jvm (1) [↑](#tags)
