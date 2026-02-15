@@ -1,7 +1,7 @@
 # Everybody Python, FTW?
 <!-- tags: python -->
 
-![pic0](2024-08-14-rant-python/pic0.jpeg)
+![thumbnail](2024-08-14-rant-python/pic0.jpeg)
 
 WARN: It's *"Old Man Yells at Cloud"* kind of post.
 

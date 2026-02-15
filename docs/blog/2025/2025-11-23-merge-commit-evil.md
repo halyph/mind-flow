@@ -1,7 +1,7 @@
 # The Problem with Merge Commits in Trunk-Based Development
 <!-- tags: thoughts -->
 
-![alt text](2025-11-23-merge-commit-evil/pic0.png)
+![thumbnail](2025-11-23-merge-commit-evil/pic0.png)
 
 *This post is about pain, human nature and careless attitudes toward code history.*  
 

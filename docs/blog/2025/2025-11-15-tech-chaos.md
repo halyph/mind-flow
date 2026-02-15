@@ -1,7 +1,7 @@
 # When Tech Stack Chaos Hits Hard
 <!-- tags: thoughts -->
 
-![alt text](2025-11-15-tech-chaos/pic0.jpg)
+![thumbnail](2025-11-15-tech-chaos/pic0.jpg)
 
 Recently I read [Steve Francia](https://spf13.com/about/)'s post [Why Engineers Can't Be Rational About Programming Languages](https://spf13.com/p/the-hidden-conversation/) which deeply resonates with my experience.
 

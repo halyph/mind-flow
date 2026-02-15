@@ -1,7 +1,7 @@
 # Git Doesn't Track File Renames (And How It Fakes It)
 <!-- tags: git -->
 
-![pic0](2026-01-31-git-content-similarity/pic0.jpeg)
+![thumbnail](2026-01-31-git-content-similarity/pic0.jpeg)
 
 Ever used `git mv` to rename a file? Many people assume it creates special rename metadata in Git's object database.
 Here's the surprise: **it doesn't**. Git has no concept of a "rename" operation at all.

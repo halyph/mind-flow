@@ -1,7 +1,7 @@
 # Exploring Python’s Hidden CLI Modules
 <!-- tags: python, thoughts -->
 
-![alt text](2025-05-23-py-modules-cli/pic0.jpeg)
+![thumbnail](2025-05-23-py-modules-cli/pic0.jpeg)
 
 > **Note**: I am referring to the Python version 3.13.
 
