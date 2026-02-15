@@ -20,7 +20,8 @@ from collections import defaultdict
 SHOW_BACK_TO_TOP = True
 
 # Back to top link format (used when SHOW_BACK_TO_TOP is True)
-BACK_TO_TOP_LINK = '[⬆️](#tags)'
+# potential up arrows: ⬆, ⬆️, 🔝, 🔼, 🔺, ↑
+BACK_TO_TOP_LINK = '[↑](#tags)'
 
 # Number of popular tags to show in the summary section
 TOP_TAGS_COUNT = 7
