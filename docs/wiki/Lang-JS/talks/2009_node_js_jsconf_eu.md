@@ -9,9 +9,11 @@
 
 ## Slides
 
-### Node.js - Original slides from Ryan Dahl's intro talk
-**By: ry@tinyclouds.org**  
-**Date: November 8, 2009**
+Node.js - Original slides from Ryan Dahl's intro talk
+
+- **Who**:  Ryan Dahl
+- **Where**: JS Conf EU
+- **When**: November 8, 2009
 
 ---
 
