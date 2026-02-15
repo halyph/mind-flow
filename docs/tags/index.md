@@ -9,39 +9,39 @@ Browse blog posts by tag.
 ---
 
 <a id="akka"></a>
-## akka (1) [⬆️](#tags)
+## akka (1) [↑](#tags)
 
 - 2022-09-09 - [Lightbend is Changing the License for Akka](../blog/2022/2022-09-09-akka-license.md)
 
 <a id="algorithm"></a>
-## algorithm (1) [⬆️](#tags)
+## algorithm (1) [↑](#tags)
 
 - 2019-01-13 - [Top "Algorithms and Data Structures" Books](../blog/2019/2019-01-13-alg-and-ds-books.md)
 
 <a id="algorithms"></a>
-## algorithms (1) [⬆️](#tags)
+## algorithms (1) [↑](#tags)
 
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 
 <a id="ant"></a>
-## ant (1) [⬆️](#tags)
+## ant (1) [↑](#tags)
 
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
 <a id="api"></a>
-## api (1) [⬆️](#tags)
+## api (1) [↑](#tags)
 
 - 2018-03-15 - [REST API Guidelines](../blog/2018/2018-03-15-rest-api-guidelines.md)
 
 <a id="bash"></a>
-## bash (3) [⬆️](#tags)
+## bash (3) [↑](#tags)
 
 - 2018-12-19 - [How to configure docker bash completion on Mac](../blog/2018/2018-12-19-docker-bash-complition.md)
 - 2014-10-09 - [How to use block comments in Bash Script](../blog/2014/2014-10-09-bash-block-comments.md)
 - 2013-08-27 - [How to remove .svn folders recursively?](../blog/2013/2013-08-27-how-to-remove-svn-folders-recursively.md)
 
 <a id="blog"></a>
-## blog (5) [⬆️](#tags)
+## blog (5) [↑](#tags)
 
 - 2022-12-23 - [Blog, Digital Garden, Wiki. FTW?](../blog/2022/2022-12-23-digital-garden-or.md)
 - 2022-08-20 - [Rethinking Bloging](../blog/2022/2022-08-20-rethinking-bloging.md)
@@ -50,7 +50,7 @@ Browse blog posts by tag.
 - 2014-09-07 - [Migration to Octopress](../blog/2014/2014-09-07-migration-to-octopress.md)
 
 <a id="book"></a>
-## book (5) [⬆️](#tags)
+## book (5) [↑](#tags)
 
 - 2025-04-11 - [Reflection on the Books reading](../blog/2025/2025-04-11-books.md)
 - 2021-02-07 - [Thoughts about Audiobooks](../blog/2021/2021-02-07-audiobooks.md)
@@ -59,34 +59,34 @@ Browse blog posts by tag.
 - 2014-03-17 - [Review: Making Java Groovy](../blog/2014/2014-03-17-review-making-java-groovy.md)
 
 <a id="c"></a>
-## c (1) [⬆️](#tags)
+## c (1) [↑](#tags)
 
 - 2016-11-28 - [Reserved Words of Programming languages](../blog/2016/2016-11-28-prog-lang-reserved-words.md)
 
 <a id="cheatsheet"></a>
-## cheatsheet (1) [⬆️](#tags)
+## cheatsheet (1) [↑](#tags)
 
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 
 <a id="ci"></a>
-## ci (2) [⬆️](#tags)
+## ci (2) [↑](#tags)
 
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 
 <a id="computation"></a>
-## computation (1) [⬆️](#tags)
+## computation (1) [↑](#tags)
 
 - 2012-02-26 - [State of numerical computation languages](../blog/2012/2012-02-26-state-of-numerical-computation.md)
 
 <a id="computer-vision"></a>
-## computer vision (2) [⬆️](#tags)
+## computer vision (2) [↑](#tags)
 
 - 2021-04-13 - [OpenCV tutorials and learning materials](../blog/2021/2021-04-13-opencv.md)
 - 2021-04-05 - [How to remove image background color using JVM?](../blog/2021/2021-04-05-remove-bg.md)
 
 <a id="conference"></a>
-## conference (14) [⬆️](#tags)
+## conference (14) [↑](#tags)
 
 - 2019-03-02 - [Scala and FP Conferences](../blog/2019/2019-03-02-scala-conferences.md)
 - 2019-02-27 - [Lambda Days - Krakow, 2019 - Report](../blog/2019/2019-02-27-lambda-days.md)
@@ -104,17 +104,17 @@ Browse blog posts by tag.
 - 2010-10-31 - [Why Should I Attend Conferences?](../blog/2010/2010-10-31-why-should-i-attend-conferences.md)
 
 <a id="cpp"></a>
-## cpp (1) [⬆️](#tags)
+## cpp (1) [↑](#tags)
 
 - 2016-11-28 - [Reserved Words of Programming languages](../blog/2016/2016-11-28-prog-lang-reserved-words.md)
 
 <a id="cygwin"></a>
-## cygwin (1) [⬆️](#tags)
+## cygwin (1) [↑](#tags)
 
 - 2009-11-18 - [*nix-like environments for Windows](../blog/2009/2009-11-18-nix-like-environments-for-windows.md)
 
 <a id="data-science"></a>
-## data science (4) [⬆️](#tags)
+## data science (4) [↑](#tags)
 
 - 2019-02-10 - [Data Science Learning Resources](../blog/2019/2019-02-10-ds-learning-res.md)
 - 2019-02-07 - [Data Science YouTube Channels (Python, R)](../blog/2019/2019-02-07-py-r-youtube-channels.md)
@@ -122,27 +122,27 @@ Browse blog posts by tag.
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 
 <a id="data-structure"></a>
-## data structure (1) [⬆️](#tags)
+## data structure (1) [↑](#tags)
 
 - 2019-01-13 - [Top "Algorithms and Data Structures" Books](../blog/2019/2019-01-13-alg-and-ds-books.md)
 
 <a id="database"></a>
-## database (1) [⬆️](#tags)
+## database (1) [↑](#tags)
 
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 
 <a id="diagram"></a>
-## diagram (1) [⬆️](#tags)
+## diagram (1) [↑](#tags)
 
 - 2012-02-13 - [UML Sketching Tools](../blog/2012/2012-02-13-uml-sketching-tools.md)
 
 <a id="docker"></a>
-## docker (1) [⬆️](#tags)
+## docker (1) [↑](#tags)
 
 - 2018-12-19 - [How to configure docker bash completion on Mac](../blog/2018/2018-12-19-docker-bash-complition.md)
 
 <a id="functional-programming"></a>
-## functional programming (4) [⬆️](#tags)
+## functional programming (4) [↑](#tags)
 
 - 2019-03-02 - [Scala and FP Conferences](../blog/2019/2019-03-02-scala-conferences.md)
 - 2019-02-27 - [Lambda Days - Krakow, 2019 - Report](../blog/2019/2019-02-27-lambda-days.md)
@@ -150,12 +150,12 @@ Browse blog posts by tag.
 - 2018-12-20 - [Scala `for`-comprehensions](../blog/2018/2018-12-20-scala-for-compr.md)
 
 <a id="genai"></a>
-## genai (1) [⬆️](#tags)
+## genai (1) [↑](#tags)
 
 - 2025-10-29 - [Claude Code CLI Prompts](../blog/2025/2025-10-29-claude-code-cli-notes.md)
 
 <a id="general"></a>
-## general (5) [⬆️](#tags)
+## general (5) [↑](#tags)
 
 - 2013-07-02 - [Concurrency vs. Parallelism Definitions](../blog/2013/2013-07-02-concurrency-vs-parallelism-definitions.md)
 - 2013-04-27 - [The long way to Evernote](../blog/2013/2013-04-27-the-long-way-to-evernote.md)
@@ -164,7 +164,7 @@ Browse blog posts by tag.
 - 2011-10-10 - [Overview: Optimistic vs. Pessimistic Locking](../blog/2011/2011-10-10-overview-optimistic-vs-pessimistic.md)
 
 <a id="git"></a>
-## git (5) [⬆️](#tags)
+## git (5) [↑](#tags)
 
 - 2026-01-31 - [Git Doesn't Track File Renames (And How It Fakes It)](../blog/2026/2026-01-31-git-content-similarity.md)
 - 2018-12-20 - [Git Notes](../blog/2018/2018-12-20-git-notes.md)
@@ -173,19 +173,19 @@ Browse blog posts by tag.
 - 2012-10-20 - [Git command extension](../blog/2012/2012-10-20-git-command-extention.md)
 
 <a id="github"></a>
-## github (3) [⬆️](#tags)
+## github (3) [↑](#tags)
 
 - 2023-11-09 - [Octoverse 2023: The most popular programming languages](../blog/2023/2023-11-09-octoverse.md)
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 - 2018-12-18 - [[WIP] Verify Ruby `github/markup` gem for markdown rendering](../blog/2018/2018-12-18-github-markup-gem.md)
 
 <a id="gnu"></a>
-## gnu (1) [⬆️](#tags)
+## gnu (1) [↑](#tags)
 
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (10) [⬆️](#tags)
+## golang (10) [↑](#tags)
 
 - 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](../blog/2025/2025-08-23-premailer.md)
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
@@ -199,19 +199,19 @@ Browse blog posts by tag.
 - 2015-05-18 - [Go presentation tool](../blog/2015/2015-05-18-golang-presentation-tool.md)
 
 <a id="gradle"></a>
-## gradle (2) [⬆️](#tags)
+## gradle (2) [↑](#tags)
 
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
 <a id="grails"></a>
-## grails (2) [⬆️](#tags)
+## grails (2) [↑](#tags)
 
 - 2015-07-20 - [Grails 2.x best practices collection](../blog/2015/2015-07-20-grails-best-practices-collection.md)
 - 2015-05-19 - [Grails 2.5.0 debug in IntelliJ IDEA](../blog/2015/2015-05-19-grails-2-dot-5-0-debug-in-intellij-idea.md)
 
 <a id="groovy"></a>
-## groovy (10) [⬆️](#tags)
+## groovy (10) [↑](#tags)
 
 - 2017-10-31 - [Reflection about the next main scripting language](../blog/2017/2017-10-31-reflection-about-the-main-scripting-language.md)
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
@@ -225,7 +225,7 @@ Browse blog posts by tag.
 - 2010-08-12 - [(J)Ruby or Groovy for scripting in Java environment](../blog/2010/2010-08-12-jruby-or-groovy-for-scripting-in-java.md)
 
 <a id="haskell"></a>
-## haskell (6) [⬆️](#tags)
+## haskell (6) [↑](#tags)
 
 - 2021-05-20 - [Haskell: Development Environment Setup](../blog/2021/2021-05-20-haskell-dev-setup.md)
 - 2019-02-27 - [Lambda Days - Krakow, 2019 - Report](../blog/2019/2019-02-27-lambda-days.md)
@@ -235,14 +235,14 @@ Browse blog posts by tag.
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
 
 <a id="interview"></a>
-## interview (3) [⬆️](#tags)
+## interview (3) [↑](#tags)
 
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 - 2018-12-29 - [Resources for System Design Interview](../blog/2018/2018-12-29-system-design-interview-prep.md)
 - 2018-12-28 - [Resources for Practicing Coding Interview](../blog/2018/2018-12-28-tech-interview-coding-prep-res.md)
 
 <a id="java"></a>
-## java (49) [⬆️](#tags)
+## java (49) [↑](#tags)
 
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2023-06-02 - [P-99: Ninety-Nine Problems](../blog/2023/2023-06-02-P99-problems.md)
@@ -295,67 +295,67 @@ Browse blog posts by tag.
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
 <a id="javascript"></a>
-## javascript (3) [⬆️](#tags)
+## javascript (3) [↑](#tags)
 
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2019-01-20 - [Ruby vs Javascript comparison](../blog/2019/2019-01-20-ruby-vs-javascript.md)
 - 2019-01-19 - [Python vs Javascript comparison](../blog/2019/2019-01-19-python-vs-javascript.md)
 
 <a id="jax-rs"></a>
-## jax-rs (3) [⬆️](#tags)
+## jax-rs (3) [↑](#tags)
 
 - 2013-10-21 - [REST with JAX-RS: Part 3 - Embedded Jetty](../blog/2013/2013-10-21-rest-with-jax-rs-part-3-embedded-jetty.md)
 - 2013-10-20 - [REST with JAX-RS: Part 2 - Spring Java Config and CXF Improvement](../blog/2013/2013-10-20-rest-with-jax-rs-part-2-spring-java.md)
 - 2013-10-19 - [REST with JAX-RS: Part 1 - Spring Java Config](../blog/2013/2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
 
 <a id="jenkins"></a>
-## jenkins (3) [⬆️](#tags)
+## jenkins (3) [↑](#tags)
 
 - 2013-08-17 - [Git, Jenkins, Gerrit, Code Review and pre-tested commits](../blog/2013/2013-08-17-git-jenkins-gerrit-code-review-and-pre.md)
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 
 <a id="jruby"></a>
-## jruby (2) [⬆️](#tags)
+## jruby (2) [↑](#tags)
 
 - 2012-12-12 - [Groovy or JRuby for Java developer](../blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
 - 2010-08-12 - [(J)Ruby or Groovy for scripting in Java environment](../blog/2010/2010-08-12-jruby-or-groovy-for-scripting-in-java.md)
 
 <a id="js"></a>
-## js (1) [⬆️](#tags)
+## js (1) [↑](#tags)
 
 - 2018-04-05 - [Programming Quizzes](../blog/2018/2018-04-05-programmin-quizzes.md)
 
 <a id="jvm"></a>
-## jvm (1) [⬆️](#tags)
+## jvm (1) [↑](#tags)
 
 - 2021-04-05 - [How to remove image background color using JVM?](../blog/2021/2021-04-05-remove-bg.md)
 
 <a id="kotlin"></a>
-## kotlin (2) [⬆️](#tags)
+## kotlin (2) [↑](#tags)
 
 - 2019-04-28 - [Scala vs Kotlin](../blog/2019/2019-04-28-scala-vs-kotlin.md)
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
 
 <a id="language"></a>
-## language (1) [⬆️](#tags)
+## language (1) [↑](#tags)
 
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 
 <a id="learning"></a>
-## learning (1) [⬆️](#tags)
+## learning (1) [↑](#tags)
 
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 
 <a id="linux"></a>
-## linux (3) [⬆️](#tags)
+## linux (3) [↑](#tags)
 
 - 2010-04-22 - [How to setup Ruby/Rails development environment, Part 2 - E-TextEditor](../blog/2010/2010-04-22-how-to-setup-rubyrails-development.md)
 - 2010-04-16 - [How to setup Ruby/Rails development environment, Part 1 - Ubuntu VM](../blog/2010/2010-04-16-how-to-setup-rubyrails-development.md)
 - 2009-11-18 - [*nix-like environments for Windows](../blog/2009/2009-11-18-nix-like-environments-for-windows.md)
 
 <a id="lisp"></a>
-## lisp (5) [⬆️](#tags)
+## lisp (5) [↑](#tags)
 
 - 2023-06-02 - [P-99: Ninety-Nine Problems](../blog/2023/2023-06-02-P99-problems.md)
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
@@ -364,13 +364,13 @@ Browse blog posts by tag.
 - 2011-01-12 - [Should I Learn Lisp?](../blog/2011/2011-01-12-should-i-learn-lisp.md)
 
 <a id="machine-learning"></a>
-## machine learning (2) [⬆️](#tags)
+## machine learning (2) [↑](#tags)
 
 - 2019-01-26 - [Machine Learning and Data Science MOOCs](../blog/2019/2019-01-26-ml-ds-mooc.md)
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 
 <a id="macos"></a>
-## macos (4) [⬆️](#tags)
+## macos (4) [↑](#tags)
 
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 - 2022-12-01 - [ZSH on MacOS](../blog/2022/2022-12-01-zsh-on-mac.md)
@@ -378,17 +378,17 @@ Browse blog posts by tag.
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 
 <a id="make"></a>
-## make (1) [⬆️](#tags)
+## make (1) [↑](#tags)
 
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="markdown"></a>
-## markdown (1) [⬆️](#tags)
+## markdown (1) [↑](#tags)
 
 - 2018-12-18 - [[WIP] Verify Ruby `github/markup` gem for markdown rendering](../blog/2018/2018-12-18-github-markup-gem.md)
 
 <a id="maven"></a>
-## maven (5) [⬆️](#tags)
+## maven (5) [↑](#tags)
 
 - 2015-03-17 - [How to download jars from Maven Central](../blog/2015/2015-03-17-how-to-download-jars-from-maven-central.md)
 - 2015-02-13 - [Maven Flow for Simple App Creation](../blog/2015/2015-02-13-maven-flow-for-simple-app-creation.md)
@@ -397,54 +397,54 @@ Browse blog posts by tag.
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
 <a id="mingw"></a>
-## mingw (1) [⬆️](#tags)
+## mingw (1) [↑](#tags)
 
 - 2009-11-18 - [*nix-like environments for Windows](../blog/2009/2009-11-18-nix-like-environments-for-windows.md)
 
 <a id="mooc"></a>
-## mooc (2) [⬆️](#tags)
+## mooc (2) [↑](#tags)
 
 - 2019-01-26 - [Machine Learning and Data Science MOOCs](../blog/2019/2019-01-26-ml-ds-mooc.md)
 - 2018-10-30 - [Russian MOOCs](../blog/2018/2018-10-30-russian-moocs.md)
 
 <a id="objective-c"></a>
-## objective-c (1) [⬆️](#tags)
+## objective-c (1) [↑](#tags)
 
 - 2009-11-08 - [GNUstep Getting Started](../blog/2009/2009-11-08-gnustep-getting-started.md)
 
 <a id="ocaml"></a>
-## ocaml (1) [⬆️](#tags)
+## ocaml (1) [↑](#tags)
 
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
 
 <a id="opencv"></a>
-## opencv (1) [⬆️](#tags)
+## opencv (1) [↑](#tags)
 
 - 2021-04-13 - [OpenCV tutorials and learning materials](../blog/2021/2021-04-13-opencv.md)
 
 <a id="podcast"></a>
-## podcast (1) [⬆️](#tags)
+## podcast (1) [↑](#tags)
 
 - 2017-11-05 - [My Favorite Podcasts](../blog/2017/2017-11-05-my-favorite-podcasts.md)
 
 <a id="pomodoro"></a>
-## pomodoro (2) [⬆️](#tags)
+## pomodoro (2) [↑](#tags)
 
 - 2026-01-16 - [A Boring Pomodoro Timer](../blog/2026/2026-01-16-pomodoro-timer.md)
 - 2025-05-12 - [How I use the Pomodoro technique in 2025](../blog/2025/2025-05-12-pomodoro.md)
 
 <a id="postgresql"></a>
-## postgresql (1) [⬆️](#tags)
+## postgresql (1) [↑](#tags)
 
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 
 <a id="programming-language"></a>
-## programming language (1) [⬆️](#tags)
+## programming language (1) [↑](#tags)
 
 - 2014-01-26 - [About Learning New Programming Languages](../blog/2014/2014-01-26-about-learning-new-programming-languages.md)
 
 <a id="python"></a>
-## python (23) [⬆️](#tags)
+## python (23) [↑](#tags)
 
 - 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](../blog/2025/2025-05-26-py-sort.md)
 - 2025-05-23 - [Exploring Python’s Hidden CLI Modules](../blog/2025/2025-05-23-py-modules-cli.md)
@@ -471,20 +471,20 @@ Browse blog posts by tag.
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
 
 <a id="r"></a>
-## r (2) [⬆️](#tags)
+## r (2) [↑](#tags)
 
 - 2019-02-10 - [Data Science Learning Resources](../blog/2019/2019-02-10-ds-learning-res.md)
 - 2019-02-07 - [Data Science YouTube Channels (Python, R)](../blog/2019/2019-02-07-py-r-youtube-channels.md)
 
 <a id="rails"></a>
-## rails (3) [⬆️](#tags)
+## rails (3) [↑](#tags)
 
 - 2015-04-04 - [Rails Architecture and Scalability](../blog/2015/2015-04-04-rails-architecture-and-scalability-issues.md)
 - 2010-04-22 - [How to setup Ruby/Rails development environment, Part 2 - E-TextEditor](../blog/2010/2010-04-22-how-to-setup-rubyrails-development.md)
 - 2010-04-16 - [How to setup Ruby/Rails development environment, Part 1 - Ubuntu VM](../blog/2010/2010-04-16-how-to-setup-rubyrails-development.md)
 
 <a id="rest"></a>
-## rest (4) [⬆️](#tags)
+## rest (4) [↑](#tags)
 
 - 2018-03-15 - [REST API Guidelines](../blog/2018/2018-03-15-rest-api-guidelines.md)
 - 2013-10-21 - [REST with JAX-RS: Part 3 - Embedded Jetty](../blog/2013/2013-10-21-rest-with-jax-rs-part-3-embedded-jetty.md)
@@ -492,7 +492,7 @@ Browse blog posts by tag.
 - 2013-10-19 - [REST with JAX-RS: Part 1 - Spring Java Config](../blog/2013/2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
 
 <a id="review"></a>
-## review (8) [⬆️](#tags)
+## review (8) [↑](#tags)
 
 - 2014-07-23 - [Review: Programming Groovy 2: Dynamic Productivity for the Java Developer](../blog/2014/2014-07-23-review-programming-groovy-2-dynamic.md)
 - 2014-03-17 - [Review: Making Java Groovy](../blog/2014/2014-03-17-review-making-java-groovy.md)
@@ -504,7 +504,7 @@ Browse blog posts by tag.
 - 2011-01-10 - [Review: How To Become A Hacker?](../blog/2011/2011-01-10-review-how-to-become-hacker.md)
 
 <a id="ruby"></a>
-## ruby (24) [⬆️](#tags)
+## ruby (24) [↑](#tags)
 
 - 2024-12-22 - [Paradox of Choice in Ruby](../blog/2024/2024-12-22-paradox-of-choice.md)
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
@@ -532,7 +532,7 @@ Browse blog posts by tag.
 - 2009-12-27 - [Why I've chosen Ruby as main scripting language for my toolbox](../blog/2009/2009-12-27-why-i-chosen-ruby-as-main-scripting.md)
 
 <a id="rust"></a>
-## rust (4) [⬆️](#tags)
+## rust (4) [↑](#tags)
 
 - 2025-06-10 - [The State of "Let's Rewrite It in Rust"](../blog/2025/2025-06-10-rewrite-in-rust.md)
 - 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](../blog/2025/2025-06-04-ms-rusty.md)
@@ -540,7 +540,7 @@ Browse blog posts by tag.
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
 
 <a id="scala"></a>
-## scala (20) [⬆️](#tags)
+## scala (20) [↑](#tags)
 
 - 2023-11-17 - [Play 3.0.0 Release and Scala](../blog/2023/2023-11-17-playframework.md)
 - 2023-06-02 - [P-99: Ninety-Nine Problems](../blog/2023/2023-06-02-P99-problems.md)
@@ -564,7 +564,7 @@ Browse blog posts by tag.
 - 2015-02-02 - [Scripting in Scala](../blog/2015/2015-02-02-scripting-in-scala.md)
 
 <a id="spring"></a>
-## spring (4) [⬆️](#tags)
+## spring (4) [↑](#tags)
 
 - 2013-12-03 - [List of Real Spring-Based Projects](../blog/2013/2013-12-03-list-of-real-spring-based-projects.md)
 - 2013-10-21 - [REST with JAX-RS: Part 3 - Embedded Jetty](../blog/2013/2013-10-21-rest-with-jax-rs-part-3-embedded-jetty.md)
@@ -572,25 +572,25 @@ Browse blog posts by tag.
 - 2013-10-19 - [REST with JAX-RS: Part 1 - Spring Java Config](../blog/2013/2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
 
 <a id="techradar"></a>
-## techradar (2) [⬆️](#tags)
+## techradar (2) [↑](#tags)
 
 - 2023-01-01 - [Personal Techradar for Programming Languages - 2023 H1](../blog/2023/2023-01-01-personal-tech-radar.md)
 - 2020-08-25 - [Personal Techradar for Programming Languages - 2020 H2](../blog/2020/2020-08-25-personal-tech-radar.md)
 
 <a id="terminal"></a>
-## terminal (2) [⬆️](#tags)
+## terminal (2) [↑](#tags)
 
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 - 2012-06-12 - [How to improve cmd.exe prompt](../blog/2012/2012-06-12-how-to-improve-cmdexe-prompt.md)
 
 <a id="textmate"></a>
-## textmate (2) [⬆️](#tags)
+## textmate (2) [↑](#tags)
 
 - 2014-11-16 - [How to Fix Textmate OSX Yosemite ruby 1.8 issues?](../blog/2014/2014-11-16-how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.md)
 - 2014-10-20 - [Switching to Textmate 2](../blog/2014/2014-10-20-switching-to-textmate-2.md)
 
 <a id="thoughts"></a>
-## thoughts (11) [⬆️](#tags)
+## thoughts (11) [↑](#tags)
 
 - 2026-01-23 - [No more Telegram](../blog/2026/2026-01-23-delete-telegram.md)
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](../blog/2025/2025-11-23-merge-commit-evil.md)
@@ -605,7 +605,7 @@ Browse blog posts by tag.
 - 2011-02-11 - [How to choose the next programming language to learn?](../blog/2011/2011-02-11-how-to-choose-next-programming-language.md)
 
 <a id="tool"></a>
-## tool (5) [⬆️](#tags)
+## tool (5) [↑](#tags)
 
 - 2013-08-17 - [Git, Jenkins, Gerrit, Code Review and pre-tested commits](../blog/2013/2013-08-17-git-jenkins-gerrit-code-review-and-pre.md)
 - 2012-11-02 - [How to Configure Git Diff and Merge Tools?](../blog/2012/2012-11-02-how-to-configure-git-diff-and-merge.md)
@@ -614,12 +614,12 @@ Browse blog posts by tag.
 - 2011-11-03 - [How to run ANT script from .BAT/.CMD?](../blog/2011/2011-11-03-how-to-run-ant-script-from-batcmd.md)
 
 <a id="uml"></a>
-## uml (1) [⬆️](#tags)
+## uml (1) [↑](#tags)
 
 - 2012-02-13 - [UML Sketching Tools](../blog/2012/2012-02-13-uml-sketching-tools.md)
 
 <a id="video"></a>
-## video (4) [⬆️](#tags)
+## video (4) [↑](#tags)
 
 - 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](../blog/2025/2025-06-04-ms-rusty.md)
 - 2019-02-10 - [Data Science Learning Resources](../blog/2019/2019-02-10-ds-learning-res.md)
@@ -627,7 +627,7 @@ Browse blog posts by tag.
 - 2018-12-20 - [Scala `for`-comprehensions](../blog/2018/2018-12-20-scala-for-compr.md)
 
 <a id="vs"></a>
-## vs (9) [⬆️](#tags)
+## vs (9) [↑](#tags)
 
 - 2019-04-28 - [Scala vs Kotlin](../blog/2019/2019-04-28-scala-vs-kotlin.md)
 - 2019-01-23 - [Go vs Python comparison](../blog/2019/2019-01-23-go-vs-python.md)
@@ -640,7 +640,7 @@ Browse blog posts by tag.
 - 2012-12-12 - [Groovy or JRuby for Java developer](../blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
 
 <a id="zsh"></a>
-## zsh (1) [⬆️](#tags)
+## zsh (1) [↑](#tags)
 
 - 2022-12-01 - [ZSH on MacOS](../blog/2022/2022-12-01-zsh-on-mac.md)
 
