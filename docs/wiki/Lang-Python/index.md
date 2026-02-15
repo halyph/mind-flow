@@ -3,7 +3,7 @@ tags:
   - python
 ---
 
-# Python useful links
+# Python
 
 <div class="note inline end"> <p><img alt="logo.png" src="index/python-logo.png"></p> </div>
 
