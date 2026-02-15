@@ -5,6 +5,6 @@ tags:
   - javascript
 ---
 
-# JavaScript
+# JS/TS
 
 TBA
