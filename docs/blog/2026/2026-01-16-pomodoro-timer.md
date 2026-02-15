@@ -1,7 +1,7 @@
 # A Boring Pomodoro Timer
 <!-- tags: pomodoro -->
 
-![post img](2026-01-16-pomodoro-timer/pic0.jpg)
+![thumbnail](2026-01-16-pomodoro-timer/pic0.jpg)
 
 My phone timer annoyed me more than it helped.
 
@@ -13,7 +13,7 @@ Pomodoro itself is *"less is more"*: one task, one timer, one constraint.
 
 In the past, I’ve tried a classic kitchen timer:
 
-![Classic kitchen timer](2026-01-16-pomodoro-timer/pic1.jpg)
+![Classic kitchen timer](2026-01-16-pomodoro-timer/pic1.png)
 
 | Cons | Pros |
 |------|------|
@@ -26,7 +26,7 @@ A timer should remove decisions, not add them.
 
 What I need: 3-4 preset time periods and a simple, intuitive interface. And I found it. 
 
-![Rotating Cube Timer ](2026-01-16-pomodoro-timer/pic2.jpg)
+![Rotating Cube Timer ](2026-01-16-pomodoro-timer/pic2.png)
 
 - Rotating Cube Timer  
 - Predefined durations: 5, 10, 30, and 60 minutes - perfectly fit my Pomodoro setup  
