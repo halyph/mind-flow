@@ -2,9 +2,9 @@
 
 Browse blog posts by tag.
 
-**📊 172 posts • 77 tags**
+**📊 172 posts • 75 tags**
 
-**Popular**: [java (49)](#java) • [ruby (24)](#ruby) • [python (23)](#python) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (11)](#thoughts) • [golang (10)](#golang)
+**Popular**: [java (49)](#java) • [ruby (24)](#ruby) • [python (23)](#python) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 ---
 
@@ -337,16 +337,6 @@ Browse blog posts by tag.
 - 2019-04-28 - [Scala vs Kotlin](../blog/2019/2019-04-28-scala-vs-kotlin.md)
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
 
-<a id="language"></a>
-## language (1) [↑](#tags)
-
-- 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
-
-<a id="learning"></a>
-## learning (1) [↑](#tags)
-
-- 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
-
 <a id="linux"></a>
 ## linux (3) [↑](#tags)
 
@@ -439,9 +429,10 @@ Browse blog posts by tag.
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 
 <a id="programming-language"></a>
-## programming language (1) [↑](#tags)
+## programming language (2) [↑](#tags)
 
 - 2014-01-26 - [About Learning New Programming Languages](../blog/2014/2014-01-26-about-learning-new-programming-languages.md)
+- 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 
 <a id="python"></a>
 ## python (23) [↑](#tags)
@@ -590,7 +581,7 @@ Browse blog posts by tag.
 - 2014-10-20 - [Switching to Textmate 2](../blog/2014/2014-10-20-switching-to-textmate-2.md)
 
 <a id="thoughts"></a>
-## thoughts (11) [↑](#tags)
+## thoughts (12) [↑](#tags)
 
 - 2026-01-23 - [No more Telegram](../blog/2026/2026-01-23-delete-telegram.md)
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](../blog/2025/2025-11-23-merge-commit-evil.md)
@@ -602,6 +593,7 @@ Browse blog posts by tag.
 - 2023-11-19 - [Social Networks are time killers](../blog/2023/2023-11-19-social-networks.md)
 - 2023-10-30 - [Stockholm Syndrome and Programming Languages](../blog/2023/2023-10-30-stockholm-syndrome.md)
 - 2011-12-25 - [How to decide which technology hype is worth personal investments?](../blog/2011/2011-12-25-how-to-decide-which-technology-hype-is.md)
+- 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 - 2011-02-11 - [How to choose the next programming language to learn?](../blog/2011/2011-02-11-how-to-choose-next-programming-language.md)
 
 <a id="tool"></a>
