@@ -1,30 +1,53 @@
 """
 MkDocs hooks for mind-flow blog.
 
-Automatically extracts dates from blog post filenames and injects them
-into page metadata for rendering by MkDocs Material theme.
+This hook performs three transformations on blog posts during the build:
 
-Tags are stored in HTML comments (<!-- tags: tag1, tag2 -->) which are:
-- Invisible on GitHub (clean rendering)
-- Extracted by scripts/generate-tags.py to create docs/blog/tags.md
-- Injected as visible HTML badges in MkDocs by this hook
+1. **Date Extraction**: Extracts publication date from filename pattern (YYYY-MM-DD)
+   and injects it as HTML metadata below the title.
+
+2. **Tag Processing**: Extracts tags from HTML comments (<!-- tags: tag1, tag2 -->)
+   and injects them as clickable badge links in the rendered post.
+   - Tags are invisible on GitHub (clean markdown rendering)
+   - Extracted by scripts/generate-tags.py to create docs/tags/index.md
+   - Transformed to clickable links by this hook in MkDocs
+
+3. **Thumbnail Transformation**: Converts markdown images with alt text "thumbnail"
+   to floating right-aligned HTML divs.
+   - Source: ![thumbnail](path/to/image.ext)
+   - Output: <div class="note inline end"><p><img src="filename.ext"></p></div>
+   - Works for both GitHub (uses relative path) and MkDocs (extracts filename only)
+   - Styled by docs/assets/css/extra.css
+   - Toggle with ENABLE_THUMBNAIL_TRANSFORM flag
+
+MkDocs Hook Reference:
+- on_page_markdown: Called for every page before markdown->HTML conversion
+  https://www.mkdocs.org/dev-guide/plugins/#on_page_markdown
 """
 
 import re
 from datetime import datetime
 
+# ============================================================================
+# Feature Flags
+# ============================================================================
+
+ENABLE_THUMBNAIL_TRANSFORM = True
+"""
+Toggle thumbnail transformation feature.
+
+When True:  ![thumbnail](path/image.ext) → Floating right-aligned div
+When False: ![thumbnail](path/image.ext) → Normal markdown image (no transformation)
+
+Change this to False if you want to temporarily disable thumbnail styling
+without modifying post content or CSS.
+"""
+
 
 def on_page_markdown(markdown, page, config, files):
     """
-    Extract date and tags from blog post and inject them below the title.
-
-    Date extraction:
-    - Extracts from filename pattern: blog/YYYY/YYYY-MM-DD-*.md
-    - Injects published date HTML after the first heading
-
-    Tag extraction:
-    - Extracts from HTML comment on line 2: <!-- tags: tag1, tag2 -->
-    - Injects as visible badge HTML after the date
+    Process blog posts: inject date/tags metadata and transform thumbnail images.
+    See module docstring for details.
     """
     # Get the source file path
     src_path = page.file.src_path
@@ -88,5 +111,23 @@ def on_page_markdown(markdown, page, config, files):
         replacement = r'\1' + date_and_tags_html
 
         markdown = re.sub(pattern, replacement, markdown, count=1, flags=re.MULTILINE)
+
+    # === Transform thumbnail images ===
+    # Convert: ![thumbnail](path/to/image.ext) → <div class="note inline end">...</div>
+    # Extracts just filename for MkDocs (since it creates post/index.html in same dir as images)
+    # Works for both GitHub (normal markdown) and MkDocs (floating right-aligned div)
+    if ENABLE_THUMBNAIL_TRANSFORM:
+        def transform_thumbnail(match):
+            """Callback for re.sub() - extracts filename and wraps in floating div."""
+            full_path = match.group(1)
+            filename = full_path.split('/')[-1]  # Extract just filename from path
+            return f'<div class="note inline end"> <p><img alt="thumbnail" src="{filename}"></p> </div>'
+
+        # Match markdown images with alt text "thumbnail"
+        markdown = re.sub(
+            r'!\[thumbnail\]\(([^)]+)\)',
+            transform_thumbnail,
+            markdown
+        )
 
     return markdown
