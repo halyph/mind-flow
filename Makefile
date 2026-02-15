@@ -50,7 +50,7 @@ clean: ## Cleaning previous python virtual environment
 ## Development environment:
 
 serve: ## Run mkdocs server
-	mkdocs serve
+	mkdocs serve --livereload
 
 tags: ## Generate tags index
 	python3 scripts/generate-tags.py
