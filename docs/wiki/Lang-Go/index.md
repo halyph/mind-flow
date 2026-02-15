@@ -3,7 +3,7 @@ tags:
   - golang
 ---
 
-# Go
+# 🔵 Go
 
 <div class="note inline end"> <p><img alt="logo.png" src="img/golang-logo.png"></p> </div>
 
