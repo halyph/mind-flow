@@ -84,3 +84,44 @@ td {
 [data-md-color-scheme='slate'] .md-tags a {
   color: var(--md-default-fg-color--lighter);
 }
+
+/* Inline floating thumbnail images (right-aligned)
+ *
+ * Usage in markdown: ![thumbnail](path/to/image.jpg)
+ * The MkDocs hook (scripts/hooks.py) transforms this to a floating div
+ *
+ * Customization options:
+ * - Thumbnail size: Change --thumbnail-size (e.g., 96px, 150px, 200px)
+ * - Border radius: Change border-radius value
+ *   - 0px = sharp corners
+ *   - 12px = rounded corners (default)
+ *   - 50% = perfect circle
+ * - Margins: Adjust margin values to control spacing around thumbnail
+ * - Shadow: Add box-shadow property if desired (currently none)
+ * - Hover effects: Add :hover pseudo-class if interactivity is needed
+ */
+:root {
+  --thumbnail-size: 128px;  /* Default: 128px square */
+}
+
+.note.inline.end {
+  float: right;
+  margin: 0 0 1em 1em;  /* bottom=1em, left=1em spacing from text */
+  width: var(--thumbnail-size);
+  height: var(--thumbnail-size);
+}
+
+@media screen and (max-width: 76.25em) {
+  .note.inline.end {
+    float: none;
+    margin: 0 auto 1em auto;  /* Center on mobile */
+  }
+}
+
+.note.inline.end img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Crop image to fill square (maintains aspect ratio) */
+  display: block;
+  border-radius: 12px;  /* Rounded corners - change to 0px (square) or 50% (circle) */
+}
