@@ -1,5 +1,5 @@
-# --- Bugfix: Pin Click to 8.2.1 to resolve MkDocs livereload bug on macOS ---
-click==8.2.1
+# --- Bugfix: Pin Click to <8.3.0 due to livereload regression ---
+click>=8.2.1,<8.3.0
 
 # Core Theme & Extensions
 mkdocs-material>=9.6

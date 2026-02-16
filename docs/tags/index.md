@@ -2,9 +2,9 @@
 
 Browse blog posts by tag.
 
-**📊 172 posts • 74 tags**
+**📊 173 posts • 75 tags**
 
-**Popular**: [java (49)](#java) • [ruby (24)](#ruby) • [python (23)](#python) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
+**Popular**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 ---
 
@@ -387,6 +387,11 @@ Browse blog posts by tag.
 
 - 2009-11-18 - [*nix-like environments for Windows](../blog/2009/2009-11-18-nix-like-environments-for-windows.md)
 
+<a id="mkdocs"></a>
+## mkdocs (1) [↑](#tags)
+
+- 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](../blog/2026/2026-02-16-mkdocs-livereload-bug.md)
+
 <a id="mooc"></a>
 ## mooc (2) [↑](#tags)
 
@@ -431,8 +436,9 @@ Browse blog posts by tag.
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 
 <a id="python"></a>
-## python (23) [↑](#tags)
+## python (24) [↑](#tags)
 
+- 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](../blog/2026/2026-02-16-mkdocs-livereload-bug.md)
 - 2025-05-26 - [Schwartzian transform: Python’s Secret Sorting Sauce](../blog/2025/2025-05-26-py-sort.md)
 - 2025-05-23 - [Exploring Python’s Hidden CLI Modules](../blog/2025/2025-05-23-py-modules-cli.md)
 - 2025-05-17 - [One Python, Who-Knows-How-Many Toolchains, and a Dash of Hope](../blog/2025/2025-05-17-py-pkg-madness.md)
