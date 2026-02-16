@@ -7,6 +7,29 @@
 - **Where**: JS Conf Berlin
 - **When**: June 2018
 - **Slides**: http://tinyclouds.org/jsconf2018.pdf
+
+---
+
+## TL;DR
+
+Ryan Dahl, Node.js creator, reflects on design mistakes that shaped the platform. These regrets later inspired **Deno**:
+
+**1. [Not Sticking with Promises](#slide-7-regret-1---not-sticking-with-promises)** – Removed promises in 2010, delaying async/await adoption and leaving Node with aging callback-based APIs.
+
+**2. [Security](#slide-8-regret-2---security)** – Failed to leverage V8's security sandbox. Scripts get unrestricted file system and network access by default (e.g., your linter shouldn't access everything).
+
+**3. [Build System (GYP)](#slide-9-regret-3---the-build-system-gyp)** – Adopted Chrome's GYP build system, but Chrome later abandoned it. Node became the sole user of this ugly Python-based tool. Should have provided FFI instead of forcing users into C++ bindings.
+
+**4. [package.json](#slide-11-regret-4---packagejson)** – Created a centralized module system with non-specific imports (`require("somemodule")`). The file became boilerplate noise (license, repository, description). Should have used relative/URL imports like browsers.
+
+**5. [node_modules](#slide-13-regret-5---node_modules)** – Massively complicated module resolution, deviated from browser semantics. Vendoring could have been achieved with `$NODE_PATH` instead.
+
+**6. [Extension-less requires](#slide-14-regret-6---requiremodule-without-the-extension-js)** – `require("module")` without `.js` forces filesystem probing. Browsers require explicit extensions in script tags.
+
+**7. [index.js](#slide-15-regret-7---indexjs)** – Seemed cute (like index.html) but needlessly complicated module loading, especially after package.json support.
+
+**Result:** These issues led to **[Deno](#slide-18-introducing-deno)** – a TypeScript runtime with security-by-default, URL imports, explicit extensions, no package.json, and no node_modules.
+
 ---
 
 ### Slide 1: Title
