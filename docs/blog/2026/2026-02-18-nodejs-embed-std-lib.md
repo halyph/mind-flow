@@ -57,7 +57,7 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheung�
 
 ## Nuances (Worth Knowing)
 
-- **“Embedded sources” isn’t the whole story:** modern Node versions also leverage **V8 snapshots** to speed up startup. The practical outcome is similar (core code is inside the binary), but some initialization work can be effectively pre-done at build time.
+- **“Embedded sources” isn’t the whole story:** modern Node versions also leverage **V8 snapshots** to speed up startup (see V8: [Custom startup snapshots](https://v8.dev/blog/custom-startup-snapshots)). The practical outcome is similar (core code is inside the binary), but some initialization work can be effectively pre-done at build time.
 - **You *can* build Node to load JS from disk:** Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
 - **JS modules vs native code:** embedding covers the JavaScript sources in `lib/`, but many built-ins also depend on native (C/C++) code and bindings (for example filesystem, crypto, compression, inspector). Those native parts are compiled and linked separately; embedding doesn’t mean “everything is JS”.
 
