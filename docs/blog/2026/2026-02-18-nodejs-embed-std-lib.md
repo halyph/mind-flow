@@ -67,7 +67,7 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheung�
 - [How does Node.js load its built-in/native modules?](https://joyeecheung.github.io/blog/2021/07/06/how-does-node-js-load-its-builtins-native-modules) by [Joyee Cheung](https://github.com/joyeecheung)
 - [Stack Overflow: Are JS files in node/lib used during compilation of the node executable?](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
 - Node.js source:
-   - [`node.gyp`](https://github.com/nodejs/node/blob/main/node.gyp)
+   - [`node.gyp`](https://github.com/nodejs/node/blob/main/node.gyp) — Node’s top-level build configuration; it hooks the `js2c`-generated C++ into the final `node` executable (not to be confused with [`node-gyp`](https://github.com/nodejs/node-gyp), which builds native addons)
    - [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc)
 - [node/BUILDING.md - Loading JS files from disk instead of embedding](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding)
 > The resulting binary won't include any JS files and will try to load them from the specified directory. 
