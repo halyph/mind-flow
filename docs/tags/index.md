@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 173 posts • 75 tags**
+**📊 174 posts • 77 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="552" height="513" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="552" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="595" height="513" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="595" alt="Word Cloud">
   </object>
 </div>
 
@@ -405,6 +405,11 @@ Browse blog posts by tag.
 - 2019-01-26 - [Machine Learning and Data Science MOOCs](../blog/2019/2019-01-26-ml-ds-mooc.md)
 - 2018-10-30 - [Russian MOOCs](../blog/2018/2018-10-30-russian-moocs.md)
 
+<a id="node.js"></a>
+## node.js (1) [↑](#tags)
+
+- 2026-02-18 - [How Node.js Embeds Built-in JS Modules](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
+
 <a id="objective-c"></a>
 ## objective-c (1) [↑](#tags)
 
@@ -604,6 +609,11 @@ Browse blog posts by tag.
 - 2011-12-25 - [How to decide which technology hype is worth personal investments?](../blog/2011/2011-12-25-how-to-decide-which-technology-hype-is.md)
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
 - 2011-02-11 - [How to choose the next programming language to learn?](../blog/2011/2011-02-11-how-to-choose-next-programming-language.md)
+
+<a id="til"></a>
+## til (1) [↑](#tags)
+
+- 2026-02-18 - [How Node.js Embeds Built-in JS Modules](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
 
 <a id="tool"></a>
 ## tool (5) [↑](#tags)
