@@ -4,7 +4,14 @@ Browse blog posts by tag.
 
 **📊 173 posts • 75 tags**
 
-**Popular**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
+
+
+<div style="text-align: center;">
+  <object data="./cloud.svg" type="image/svg+xml" width="552" height="513" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="552" alt="Word Cloud">
+  </object>
+</div>
 
 ---
 
