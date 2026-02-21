@@ -1,9 +1,11 @@
-# How Node.js Embeds the Standard Library
+# How Node.js Embeds Built-in JS Modules
 <!-- tags: node.js, til -->
 
 ![thumbnail](2026-02-18-nodejs-embed-std-lib/pic0.jpg)
 
-**TL;DR** *Node.js* embeds the JavaScript standard library source code into the binary as static C++ arrays. At runtime, V8 compiles and executes those sources as built-in modules.
+**TL;DR** *Node.js* embeds many of its built-in JavaScript modules (the sources under `lib/`, including `lib/internal/*`) into the `node` executable as static C++ arrays. At runtime, V8 compiles and executes those sources on demand.
+
+*Terminology note*: here “built-in modules” means Node’s built-ins like `fs`/`http` (not the ECMAScript language built-ins like `Array.prototype.map`).
 
 Based on the sources below:
 
@@ -33,17 +35,31 @@ The `BuiltinLoader` distinguishes between two types of embedded modules:
 
 Both types are embedded using the same [`js2c`](https://github.com/nodejs/node/blob/main/tools/js2c.cc) process, but runtime access rules differ.
 
+## How Node Loads an Embedded Module (Runtime)
+
+Conceptually, when you do `require('fs')` (or `require('node:fs')`), Node detects that the request refers to a built-in module and asks the built-in loader for its source.
+
+At a high level:
+
+1. Node identifies the request as a built-in.
+2. `BuiltinLoader` returns the module’s source text from the embedded in-memory table (not from disk).
+3. V8 compiles the source into a function (Node wraps modules in a function like CommonJS modules).
+4. Node executes it and caches the resulting module exports.
+
+For a detailed, source-linked walkthrough of the real call chain, Joyee Cheung’s post in the references is the best starting point.
+
 ## Embedding Benefits
 
 1. **Performance** - Faster startup, no disk I/O for core modules
 2. **Distribution** - Single binary is easier to distribute
-3. **Security** - Core modules can't be tampered with
+3. **Integrity** - In the default build, core JS sources aren’t read from disk, so you can’t swap out `lib/*.js` without rebuilding
 4. **Self-Contained Runtime** - No external dependencies needed for core functionality
 
 ## Nuances (Worth Knowing)
 
 - **“Embedded sources” isn’t the whole story:** modern Node versions also leverage **V8 snapshots** to speed up startup. The practical outcome is similar (core code is inside the binary), but some initialization work can be effectively pre-done at build time.
 - **You *can* build Node to load JS from disk:** Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
+- **JS modules vs native code:** embedding covers the JavaScript sources in `lib/`, but many built-ins also depend on native (C/C++) code and bindings (for example filesystem, crypto, compression, inspector). Those native parts are compiled and linked separately; embedding doesn’t mean “everything is JS”.
 
 
 ## References

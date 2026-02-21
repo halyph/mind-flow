@@ -408,7 +408,7 @@ Browse blog posts by tag.
 <a id="node.js"></a>
 ## node.js (1) [↑](#tags)
 
-- 2026-02-18 - [How Node.js Embeds the Standard Library](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
+- 2026-02-18 - [How Node.js Embeds Built-in JS Modules](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
 
 <a id="objective-c"></a>
 ## objective-c (1) [↑](#tags)
@@ -613,7 +613,7 @@ Browse blog posts by tag.
 <a id="til"></a>
 ## til (1) [↑](#tags)
 
-- 2026-02-18 - [How Node.js Embeds the Standard Library](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
+- 2026-02-18 - [How Node.js Embeds Built-in JS Modules](../blog/2026/2026-02-18-nodejs-embed-std-lib.md)
 
 <a id="tool"></a>
 ## tool (5) [↑](#tags)
