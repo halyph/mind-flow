@@ -6,6 +6,9 @@ Browse blog posts by tag.
 
 **Popular**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
+
+[<img src="./cloud.svg" width="600" alt="Word Cloud">](./cloud.svg)
+
 ---
 
 <a id="akka"></a>
