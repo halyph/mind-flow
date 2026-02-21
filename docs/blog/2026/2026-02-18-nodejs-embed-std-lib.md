@@ -1,20 +1,39 @@
 # How Node.js Embeds the Standard Library
 <!-- tags: node.js, til -->
 
+![thumbnail](2026-02-18-nodejs-embed-std-lib/pic0.jpg)
+
 **TL;DR** *Node.js* embeds the JavaScript standard library source code into the binary as static C++ arrays. At runtime, V8 compiles and executes those sources as built-in modules.
 
 According to the mentioned below sources
 
-1. The built-in JS files (lib/*.js) are encoded into C++ byte arrays during build.
+1. The built-in JS files (`lib/*.js`) are encoded into C++ byte arrays during build.
 2. At runtime the arrays get compiled into functions by V8.
 3. They’re stored inside the Node executable rather than loaded from disk.
 
 
-https://github.com/nodejs/node/blob/main/node.gyp
-https://github.com/nodejs/node/blob/main/tools/js2c.cc
+## Internal vs Public Modules
 
-- [node/BUILDING.md - Loading JS files from disk instead of embedding](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding)
-> The resulting binary won't include any JS files and will try to load them from the specified directory. 
+The `BuiltinLoader` distinguishes between two types of embedded modules:
+
+1. **Public modules** (e.g., `fs`, `http`, `crypto`, `os`)
+   - Can be loaded via `require('fs')` from user code
+   - Exposed API surface
+
+2. **Internal modules** (e.g., `lib/internal/*`)
+   - Cannot be `require()`d from user applications
+   - Used internally by Node.js core
+   - Access restricted by the loader
+
+Both types are embedded using the same [`js2c`](https://github.com/nodejs/node/blob/main/tools/js2c.cc) process, but runtime access rules differ.
+
+*## Embedding Benefits
+
+1. **Performance** - Faster startup, no disk I/O for core modules
+2. **Distribution** - Single binary is easier to distribute
+3. **Security** - Core modules can't be tampered with
+4. **Self-Contained Runtime** - No external dependencies needed for core functionality*
+
 
 ## References
 
@@ -22,20 +41,27 @@ https://github.com/nodejs/node/blob/main/tools/js2c.cc
 - [Stack Overflow Answer](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
 - and Node.js documentation:
 
+https://github.com/nodejs/node/blob/main/node.gyp
+https://github.com/nodejs/node/blob/main/tools/js2c.cc
+
+- [node/BUILDING.md - Loading JS files from disk instead of embedding](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding)
+> The resulting binary won't include any JS files and will try to load them from the specified directory. 
+
+
 
 ## Appendix A - Node.js Built-in modules
 
 - Ref: [Node.js Doc - Built-in modules](https://nodejs.org/api/modules.html#built-in-modules)
 
-> Node.js has several modules compiled into the binary. These modules are described in greater detail elsewhere in this documentation.
+> Node.js has several modules compiled into the binary. ...
 > 
-> The built-in modules are defined within the Node.js source and are located in the lib/ folder.
+> The built-in modules are defined within the Node.js source and are located in the `lib/` folder.
 > 
-> Built-in modules can be identified using the node: prefix, in which case it bypasses the require cache. For instance, require('node:http') will always return the built in HTTP module, even if there is require.cache entry by that name.
+> Built-in modules can be identified using the node: prefix, in which case it bypasses the require cache. For instance, `require('node:http')` will always return the built in HTTP module, even if there is require.cache entry by that name.
 > 
-> Some built-in modules are always preferentially loaded if their identifier is passed to require(). For instance, require('http') will always return the built-in HTTP module, even if there is a file by that name.
+> Some built-in modules are always preferentially loaded if their identifier is passed to `require()`. For instance, `require('http')` will always return the built-in HTTP module, even if there is a file by that name.
 > 
-> The list of all the built-in modules can be retrieved from [module.builtinModules](https://nodejs.org/api/module.html#modulebuiltinmodules). The modules being all listed without the node: prefix, except those that mandate such prefix (as explained in the next section).
+> The list of all the built-in modules can be retrieved from [`module.builtinModules`](https://nodejs.org/api/module.html#modulebuiltinmodules). The modules being all listed without the node: prefix, except those that mandate such prefix (as explained in the next section).
 
 
 ```js
@@ -84,7 +110,7 @@ You can apply the **"inspector"** trick
 **Sample**
 
 ```shell
- node --inspect
+node --inspect
 Debugger listening on ws://127.0.0.1:9229/a5b189d2-6358-4fa9-9f71-7e82c835fff8
 For help, see: https://nodejs.org/en/docs/inspector
 Welcome to Node.js v24.9.0.
@@ -95,7 +121,7 @@ Type ".help" for more information.
 
 ![appendix-b-02](2026-02-18-nodejs-embed-std-lib/appendix-b-02.png)
 
-Here you can inspect/read embed in Node.js binary JS files: both *public* and *internal*.
+Here you can inspect/read embed in **Node.js** binary JS files: both *public* and *internal*.
 
 ----
 

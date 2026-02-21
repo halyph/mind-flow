@@ -189,21 +189,7 @@ Beyond just embedding source code, modern Node.js uses **V8 Snapshots** for even
 - `tools/snapshot/node_mksnapshot.cc` - Main snapshot builder
 - Built on top of V8's own startup snapshot system
 
-### Internal vs Public Modules
-
-The `BuiltinLoader` distinguishes between two types of embedded modules:
-
-1. **Public modules** (e.g., `fs`, `http`, `crypto`)
-   - Can be loaded via `require('fs')` from user code
-   - Exposed API surface
-
-2. **Internal modules** (e.g., `lib/internal/*`)
-   - Cannot be `require()`d from user applications
-   - Used internally by Node.js core
-   - Access restricted by the loader
-
-Both types are embedded using the same `js2c` process, but runtime access rules differ.
-
+=
 ## Embedded Modules (73 files)
 
 All standard library modules are embedded:

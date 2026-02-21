@@ -7,8 +7,13 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
+## node
+
+- nodejs-std - [How Node.js Embeds the Standard Library](docs/blog/2026/nodejs-stdlib-embedding.md)
+
 ## 2026
 
+- 2026-02-18 - [How Node.js Embeds the Standard Library](docs/blog/2026/2026-02-18-nodejs-embed-std-lib.md)
 - 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](docs/blog/2026/2026-02-16-mkdocs-livereload-bug.md)
 - 2026-01-31 - [Git Doesn't Track File Renames (And How It Fakes It)](docs/blog/2026/2026-01-31-git-content-similarity.md)
 - 2026-01-23 - [No more Telegram](docs/blog/2026/2026-01-23-delete-telegram.md)
