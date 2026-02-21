@@ -15,6 +15,13 @@ import os
 from pathlib import Path
 from collections import defaultdict
 
+# Import tag cloud generator
+from tag_cloud import (
+    generate_word_cloud_svg,
+    WORD_CLOUD_WIDTH,
+    WORD_CLOUD_HEIGHT,
+)
+
 
 # Feature flag: Show "back to top" links after each tag section
 SHOW_BACK_TO_TOP = True
@@ -25,6 +32,11 @@ BACK_TO_TOP_LINK = '[↑](#tags)'
 
 # Number of popular tags to show in the summary section
 TOP_TAGS_COUNT = 7
+TOP_TAGS_LABEL = 'Top Tags'  # Label for the popular tags section
+
+# Word cloud configuration
+WORD_CLOUD_ENABLED = True
+WORD_CLOUD_TAGS_LIMIT = 0  # 0 means all tags, otherwise limit to N tags
 
 
 def create_slug(tag):
@@ -193,7 +205,7 @@ def format_popular_tags_line(top_tags):
     return ' • '.join(top_tags_links)
 
 
-def write_tags_page_header(f, sorted_tags, unique_posts_count, unique_tags_count, posts_by_tag):
+def write_tags_page_header(f, sorted_tags, unique_posts_count, unique_tags_count, top_tags, cloud_width=None, cloud_height=None):
     """
     Write header section of tags page.
 
@@ -202,7 +214,9 @@ def write_tags_page_header(f, sorted_tags, unique_posts_count, unique_tags_count
         sorted_tags: List of all tags (sorted alphabetically)
         unique_posts_count: Number of unique posts with tags
         unique_tags_count: Number of unique tags
-        posts_by_tag: Dictionary mapping tags to post lists
+        top_tags: List of (tag, count) tuples for popular tags
+        cloud_width: Actual width of generated word cloud SVG (None if disabled)
+        cloud_height: Actual height of generated word cloud SVG (None if disabled)
     """
     # Write content (frontmatter handled by .meta.yml)
     f.write('# Tags\n\n')
@@ -212,18 +226,24 @@ def write_tags_page_header(f, sorted_tags, unique_posts_count, unique_tags_count
         f.write('*No tagged posts found.*\n')
         return
 
-    # Get top N tags by post count
-    top_tags = calculate_top_tags(posts_by_tag, sorted_tags)
-
     # Write compact statistics
     f.write(f'**📊 {unique_posts_count} posts • {unique_tags_count} tags**\n\n')
 
     # Write top tags inline with clickable links
     top_tags_str = format_popular_tags_line(top_tags)
-    f.write(f'**Popular**: {top_tags_str}\n\n')
+    f.write(f'**{TOP_TAGS_LABEL}**: {top_tags_str}\n\n')
+
+    # Add word cloud if dimensions are provided
+    if cloud_width and cloud_height:
+        f.write('\n')
+        f.write('<div style="text-align: center;">\n')
+        f.write(f'  <object data="./cloud.svg" type="image/svg+xml" width="{cloud_width}" height="{cloud_height}" aria-label="Word Cloud">\n')
+        f.write(f'    <img src="./cloud.svg" width="{cloud_width}" alt="Word Cloud">\n')
+        f.write('  </object>\n')
+        f.write('</div>\n')
 
     # Separator
-    f.write('---\n\n')
+    f.write('\n---\n\n')
 
 
 def write_tag_section(f, tag, posts):
@@ -306,7 +326,7 @@ def collect_posts_by_tag(blog_dir, output_path):
     return posts_by_tag, posts_without_tags, unique_tagged_posts
 
 
-def report_generation_results(output_path, unique_tags_count, unique_posts_count, posts_without_tags):
+def report_generation_results(output_path, unique_tags_count, unique_posts_count, posts_without_tags, repo_root):
     """
     Report generation results to console.
 
@@ -315,19 +335,21 @@ def report_generation_results(output_path, unique_tags_count, unique_posts_count
         unique_tags_count: Number of unique tags
         unique_posts_count: Number of unique posts with tags
         posts_without_tags: List of (date, title, filepath) tuples for posts without tags
+        repo_root: Repository root path for relative path calculation
     """
-    # Report statistics
-    print(f'✓ Generated {output_path}')
-    print(f'  {unique_tags_count} tags, {unique_posts_count} tagged posts')
+    # Report statistics with relative path
+    rel_path = Path(output_path).relative_to(repo_root)
+    print(f'✓ Generated {rel_path}')
+    print(f'✓ Summary: {unique_tags_count} tags, {unique_posts_count} tagged posts')
 
     if posts_without_tags:
-        print(f'\nWarning: {len(posts_without_tags)} posts without tags:')
+        print(f'\n⚠ Warning: {len(posts_without_tags)} posts without tags:')
         for date, title, filepath in sorted(posts_without_tags, reverse=True):
             print(f'  - {date} - {title}')
             print(f'    {filepath}')
 
 
-def generate_tags_page(blog_dir, output_path):
+def generate_tags_page(blog_dir, output_path, repo_root):
     """
     Generate docs/tags/index.md with all tags and posts.
 
@@ -339,6 +361,7 @@ def generate_tags_page(blog_dir, output_path):
     Args:
         blog_dir: Path to blog directory containing posts
         output_path: Path where tags index will be written
+        repo_root: Repository root path for relative path calculation
     """
     # Phase 1: Data Collection
     posts_by_tag, posts_without_tags, unique_tagged_posts = collect_posts_by_tag(
@@ -350,13 +373,37 @@ def generate_tags_page(blog_dir, output_path):
         posts_by_tag, unique_tagged_posts
     )
 
-    # Phase 3: File Setup
+    # Calculate top tags for both popular section and word cloud
+    top_tags = calculate_top_tags(posts_by_tag, sorted_tags)
+
+    # Phase 3: File Setup and Word Cloud Generation
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    # Phase 4: Write Content
+    # Generate word cloud SVG with all tags
+    cloud_width = None
+    cloud_height = None
+    if WORD_CLOUD_ENABLED and sorted_tags:
+        # Prepare tags with counts, sorted by count descending
+        tags_with_counts = [(tag, len(posts_by_tag[tag])) for tag in sorted_tags]
+        tags_with_counts.sort(key=lambda x: x[1], reverse=True)
+
+        svg_output_path = os.path.join(os.path.dirname(output_path), 'cloud.svg')
+        result = generate_word_cloud_svg(
+            tags_with_counts,
+            svg_output_path,
+            width=WORD_CLOUD_WIDTH,
+            height=WORD_CLOUD_HEIGHT,
+            tags_limit=WORD_CLOUD_TAGS_LIMIT,
+            repo_root=repo_root
+        )
+        if result:
+            cloud_width, cloud_height = result
+
+    # Phase 4: Write Tags Index Content
     with open(output_path, 'w', encoding='utf-8') as f:
         write_tags_page_header(
-            f, sorted_tags, unique_posts_count, unique_tags_count, posts_by_tag
+            f, sorted_tags, unique_posts_count, unique_tags_count, top_tags,
+            cloud_width, cloud_height
         )
 
         # Early return if no tags (handled in header)
@@ -369,7 +416,7 @@ def generate_tags_page(blog_dir, output_path):
 
     # Phase 5: Console Reporting
     report_generation_results(
-        output_path, unique_tags_count, unique_posts_count, posts_without_tags
+        output_path, unique_tags_count, unique_posts_count, posts_without_tags, repo_root
     )
 
 
@@ -386,8 +433,8 @@ def main():
         print(f'Error: Blog directory not found: {blog_dir}')
         return 1
 
-    print('Generating tags index...')
-    generate_tags_page(str(blog_dir), str(output_path))
+    print('✓ Generating tags index...')
+    generate_tags_page(str(blog_dir), str(output_path), str(repo_root))
 
     return 0
 

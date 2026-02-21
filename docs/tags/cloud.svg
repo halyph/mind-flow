@@ -1,31 +1,308 @@
-<svg width="600" height="300" viewBox="0 0 600 300" 
-     xmlns="http://www.w3.org/2000/svg" 
-     xmlns:xlink="http://www.w3.org/1999/xlink"> <style>
+<svg width="552" height="513" viewBox="0 0 552 513"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; cursor: pointer; }
     text:hover { opacity: 0.7; text-decoration: underline; fill: #0969da; }
   </style>
-  
-  <a xlink:href="https://github.com/topics/python">
-    <text x="50" y="120" font-size="50" font-weight="bold" fill="#3776AB">Python</text>
+
+  <a href="./#java" target="_parent">
+    <text x="197.21168475297884" y="275.1490695318203" font-size="48" font-weight="bold" fill="#007396">java</text>
   </a>
 
-  <a xlink:href="https://github.com/topics/react">
-    <text x="280" y="80" font-size="35" fill="#61DAFB">React</text>
+  <a href="./#python" target="_parent">
+    <text x="203.8013875398604" y="215.69462392476146" font-size="29" fill="#3776AB">python</text>
   </a>
 
-  <a xlink:href="https://github.com/topics/docker">
-    <text x="220" y="160" font-size="22" fill="#2496ED">Docker</text>
+  <a href="./#ruby" target="_parent">
+    <text x="226.704237333229" y="325.20376705564996" font-size="29" fill="#CC342D">ruby</text>
   </a>
 
-  <a xlink:href="https://github.com/topics/artificial-intelligence">
-    <text x="380" y="180" font-size="42" font-weight="bold" fill="#FF6F61">AI</text>
+  <a href="./#scala" target="_parent">
+    <text x="204.75169463789587" y="364.2536783656473" font-size="26" fill="#DC322F">scala</text>
   </a>
 
-  <a xlink:href="https://github.com/topics/typescript">
-    <text x="80" y="220" font-size="30" fill="#3178C6">TypeScript</text>
+  <a href="./#conference" target="_parent">
+    <text x="169.26843678206774" y="176.24933559090067" font-size="21" fill="#8B5CF6">conference</text>
   </a>
 
-  <a xlink:href="https://github.com/topics/rust">
-    <text x="310" y="240" font-size="25" fill="#DEA584">Rust</text>
+  <a href="./#thoughts" target="_parent">
+    <text x="113.99435094177227" y="320.1535258835963" font-size="20" fill="#10B981">thoughts</text>
   </a>
+
+  <a href="./#golang" target="_parent">
+    <text x="124.97197123994056" y="261.8338502488952" font-size="18" fill="#00ADD8">golang</text>
+  </a>
+
+  <a href="./#groovy" target="_parent">
+    <text x="321.86125785449633" y="256.4384063762607" font-size="18" fill="#F59E0B">groovy</text>
+  </a>
+
+  <a href="./#vs" target="_parent">
+    <text x="167.53744242992673" y="234.37254928745222" font-size="18" fill="#EC4899">vs</text>
+  </a>
+
+  <a href="./#review" target="_parent">
+    <text x="317.72109279502257" y="283.4306634788133" font-size="17" fill="#6366F1">review</text>
+  </a>
+
+  <a href="./#haskell" target="_parent">
+    <text x="123.90821695801742" y="289.4618652093694" font-size="15" fill="#007396">haskell</text>
+  </a>
+
+  <a href="./#blog" target="_parent">
+    <text x="314.05602899886276" y="219.89011572346527" font-size="15" fill="#3776AB">blog</text>
+  </a>
+
+  <a href="./#book" target="_parent">
+    <text x="310.7527629961988" y="325.7611624503871" font-size="15" fill="#CC342D">book</text>
+  </a>
+
+  <a href="./#general" target="_parent">
+    <text x="309.9072630799792" y="349.20516344643676" font-size="15" fill="#DC322F">general</text>
+  </a>
+
+  <a href="./#git" target="_parent">
+    <text x="163.80493766573466" y="345.90374473732675" font-size="15" fill="#8B5CF6">git</text>
+  </a>
+
+  <a href="./#lisp" target="_parent">
+    <text x="303.55549020580423" y="172.52623312558308" font-size="15" fill="#10B981">lisp</text>
+  </a>
+
+  <a href="./#maven" target="_parent">
+    <text x="239.43025497841995" y="141.65812256947902" font-size="15" fill="#00ADD8">maven</text>
+  </a>
+
+  <a href="./#tool" target="_parent">
+    <text x="247.40594746537124" y="390.9866472779862" font-size="15" fill="#F59E0B">tool</text>
+  </a>
+
+  <a href="./#data-science" target="_parent">
+    <text x="126.45947982689142" y="144.71543484508226" font-size="14" fill="#EC4899">data science</text>
+  </a>
+
+  <a href="./#functional-programming" target="_parent">
+    <text x="183.4214096905206" y="117.57644218439081" font-size="14" fill="#6366F1">functional programming</text>
+  </a>
+
+  <a href="./#javascript" target="_parent">
+    <text x="295.00143954529653" y="372.9681881443444" font-size="14" fill="#007396">javascript</text>
+  </a>
+
+  <a href="./#macos" target="_parent">
+    <text x="113.5723700531696" y="221.718635819949" font-size="14" fill="#3776AB">macos</text>
+  </a>
+
+  <a href="./#rest" target="_parent">
+    <text x="362.1155126319109" y="227.04181200707342" font-size="14" fill="#CC342D">rest</text>
+  </a>
+
+  <a href="./#rust" target="_parent">
+    <text x="160.0966404654447" y="371.19519382466007" font-size="14" fill="#DC322F">rust</text>
+  </a>
+
+  <a href="./#spring" target="_parent">
+    <text x="292.8795269625076" y="146.66572629878743" font-size="14" fill="#8B5CF6">spring</text>
+  </a>
+
+  <a href="./#video" target="_parent">
+    <text x="121.31012460838122" y="194.10871920242022" font-size="14" fill="#10B981">video</text>
+  </a>
+
+  <a href="./#bash" target="_parent">
+    <text x="325.4442413450314" y="197.20998729963617" font-size="13" fill="#00ADD8">bash</text>
+  </a>
+
+  <a href="./#github" target="_parent">
+    <text x="354.96385751888033" y="319.8785207496328" font-size="13" fill="#F59E0B">github</text>
+  </a>
+
+  <a href="./#interview" target="_parent">
+    <text x="292.03205051508974" y="397.0353535771421" font-size="13" fill="#EC4899">interview</text>
+  </a>
+
+  <a href="./#jax-rs" target="_parent">
+    <text x="184.6514959836462" y="392.9199883493948" font-size="13" fill="#6366F1">jax-rs</text>
+  </a>
+
+  <a href="./#jenkins" target="_parent">
+    <text x="363.5966783424637" y="202.37122486365456" font-size="13" fill="#007396">jenkins</text>
+  </a>
+
+  <a href="./#linux" target="_parent">
+    <text x="123.25573416507473" y="167.8643873638997" font-size="13" fill="#3776AB">linux</text>
+  </a>
+
+  <a href="./#rails" target="_parent">
+    <text x="235.309405086075" y="415.89908150869786" font-size="13" fill="#CC342D">rails</text>
+  </a>
+
+  <a href="./#ci" target="_parent">
+    <text x="386.4045664000878" y="283.50929904603106" font-size="12" fill="#DC322F">ci</text>
+  </a>
+
+  <a href="./#computer-vision" target="_parent">
+    <text x="202.30794908457102" y="95.5986471527513" font-size="12" fill="#8B5CF6">computer vision</text>
+  </a>
+
+  <a href="./#gradle" target="_parent">
+    <text x="105.26832869946125" y="346.49783031297085" font-size="12" fill="#10B981">gradle</text>
+  </a>
+
+  <a href="./#grails" target="_parent">
+    <text x="350.08856984269596" y="163.406613348338" font-size="12" fill="#00ADD8">grails</text>
+  </a>
+
+  <a href="./#jruby" target="_parent">
+    <text x="75.94577165267151" y="286.5515191216156" font-size="12" fill="#F59E0B">jruby</text>
+  </a>
+
+  <a href="./#kotlin" target="_parent">
+    <text x="290.05147433193724" y="420.2846055643301" font-size="12" fill="#EC4899">kotlin</text>
+  </a>
+
+  <a href="./#machine-learning" target="_parent">
+    <text x="182.40291965045583" y="440.0429942375846" font-size="12" fill="#6366F1">machine learning</text>
+  </a>
+
+  <a href="./#mooc" target="_parent">
+    <text x="380.8342893319151" y="341.8739562021935" font-size="12" fill="#007396">mooc</text>
+  </a>
+
+  <a href="./#pomodoro" target="_parent">
+    <text x="58.97970248159834" y="251.01461064979196" font-size="12" fill="#3776AB">pomodoro</text>
+  </a>
+
+  <a href="./#programming-language" target="_parent">
+    <text x="200.7997535443617" y="71.36161768922936" font-size="12" fill="#CC342D">programming language</text>
+  </a>
+
+  <a href="./#r" target="_parent">
+    <text x="147.58511461299037" y="368.43214134309517" font-size="12" fill="#DC322F">r</text>
+  </a>
+
+  <a href="./#techradar" target="_parent">
+    <text x="392.0366003915278" y="253.83077699689665" font-size="12" fill="#8B5CF6">techradar</text>
+  </a>
+
+  <a href="./#terminal" target="_parent">
+    <text x="95.41928871885028" y="390.95329544452744" font-size="12" fill="#10B981">terminal</text>
+  </a>
+
+  <a href="./#textmate" target="_parent">
+    <text x="50.32529248151599" y="312.95148872005933" font-size="12" fill="#00ADD8">textmate</text>
+  </a>
+
+  <a href="./#akka" target="_parent">
+    <text x="75.21196059295008" y="213.88371099207512" font-size="12" fill="#F59E0B">akka</text>
+  </a>
+
+  <a href="./#algorithm" target="_parent">
+    <text x="406.7576030149422" y="280.70905791758054" font-size="12" fill="#EC4899">algorithm</text>
+  </a>
+
+  <a href="./#algorithms" target="_parent">
+    <text x="364.3572057892711" y="143.07771156269354" font-size="12" fill="#6366F1">algorithms</text>
+  </a>
+
+  <a href="./#ant" target="_parent">
+    <text x="146.56420554630932" y="411.76721752004806" font-size="12" fill="#007396">ant</text>
+  </a>
+
+  <a href="./#api" target="_parent">
+    <text x="89.02982126734162" y="176.98749963042496" font-size="12" fill="#3776AB">api</text>
+  </a>
+
+  <a href="./#c" target="_parent">
+    <text x="402.5641405593" y="231.71362669396188" font-size="12" fill="#CC342D">c</text>
+  </a>
+
+  <a href="./#cheatsheet" target="_parent">
+    <text x="388.1884789434657" y="361.81045999510724" font-size="12" fill="#DC322F">cheatsheet</text>
+  </a>
+
+  <a href="./#computation" target="_parent">
+    <text x="224.75412631081645" y="460.32817441156084" font-size="12" fill="#8B5CF6">computation</text>
+  </a>
+
+  <a href="./#cpp" target="_parent">
+    <text x="149.67516142891782" y="113.04217727413656" font-size="12" fill="#10B981">cpp</text>
+  </a>
+
+  <a href="./#cygwin" target="_parent">
+    <text x="419.47085389170365" y="227.62471148632477" font-size="12" fill="#00ADD8">cygwin</text>
+  </a>
+
+  <a href="./#data-structure" target="_parent">
+    <text x="411.4271564715094" y="300.4364153149559" font-size="12" fill="#F59E0B">data structure</text>
+  </a>
+
+  <a href="./#database" target="_parent">
+    <text x="407.4555630373976" y="321.53742349143124" font-size="12" fill="#EC4899">database</text>
+  </a>
+
+  <a href="./#diagram" target="_parent">
+    <text x="402.43065519258516" y="174.8479839897525" font-size="12" fill="#6366F1">diagram</text>
+  </a>
+
+  <a href="./#docker" target="_parent">
+    <text x="381.4804588869996" y="399.4487888282452" font-size="12" fill="#007396">docker</text>
+  </a>
+
+  <a href="./#genai" target="_parent">
+    <text x="84.76416715535734" y="145.43131465366014" font-size="12" fill="#3776AB">genai</text>
+  </a>
+
+  <a href="./#gnu" target="_parent">
+    <text x="167.43211530777262" y="86.72808304813383" font-size="12" fill="#CC342D">gnu</text>
+  </a>
+
+  <a href="./#jvm" target="_parent">
+    <text x="346.13583954080156" y="431.4225356637583" font-size="12" fill="#DC322F">jvm</text>
+  </a>
+
+  <a href="./#make" target="_parent">
+    <text x="114.21205663019612" y="111.51851188082578" font-size="12" fill="#8B5CF6">make</text>
+  </a>
+
+  <a href="./#markdown" target="_parent">
+    <text x="40.0" y="343.57180160920063" font-size="12" fill="#10B981">markdown</text>
+  </a>
+
+  <a href="./#mingw" target="_parent">
+    <text x="378.4905090268205" y="110.23546824720889" font-size="12" fill="#00ADD8">mingw</text>
+  </a>
+
+  <a href="./#mkdocs" target="_parent">
+    <text x="431.8092972952438" y="196.89814899928245" font-size="12" fill="#F59E0B">mkdocs</text>
+  </a>
+
+  <a href="./#objective-c" target="_parent">
+    <text x="95.34771235802825" y="438.8820209724593" font-size="12" fill="#EC4899">objective-c</text>
+  </a>
+
+  <a href="./#ocaml" target="_parent">
+    <text x="318.60474284264933" y="458.77816953395387" font-size="12" fill="#6366F1">ocaml</text>
+  </a>
+
+  <a href="./#opencv" target="_parent">
+    <text x="224.7076701041612" y="50.8" font-size="12" fill="#007396">opencv</text>
+  </a>
+
+  <a href="./#podcast" target="_parent">
+    <text x="161.79344598433488" y="469.9566295663961" font-size="12" fill="#3776AB">podcast</text>
+  </a>
+
+  <a href="./#postgresql" target="_parent">
+    <text x="60.431530797010396" y="412.5447356025937" font-size="12" fill="#CC342D">postgresql</text>
+  </a>
+
+  <a href="./#uml" target="_parent">
+    <text x="48.01335920159573" y="287.87286355494945" font-size="12" fill="#DC322F">uml</text>
+  </a>
+
+  <a href="./#zsh" target="_parent">
+    <text x="60.3596419240929" y="190.87875003038357" font-size="12" fill="#8B5CF6">zsh</text>
+  </a>
+
 </svg>
