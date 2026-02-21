@@ -5,11 +5,17 @@
 
 **TL;DR** *Node.js* embeds the JavaScript standard library source code into the binary as static C++ arrays. At runtime, V8 compiles and executes those sources as built-in modules.
 
-According to the mentioned below sources
+Based on the sources below:
 
 1. The built-in JS files (`lib/*.js`) are encoded into C++ byte arrays during build.
 2. At runtime the arrays get compiled into functions by V8.
 3. They’re stored inside the Node executable rather than loaded from disk.
+
+## How the Embedding Works (Build Time)
+
+Node’s build includes a step that converts JavaScript sources from `lib/` into a generated C++ translation unit (commonly called `node_javascript.cc` in build artifacts). That generated C++ file is then compiled and linked into the final `node` executable.
+
+The converter is [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc).
 
 
 ## Internal vs Public Modules
@@ -27,23 +33,26 @@ The `BuiltinLoader` distinguishes between two types of embedded modules:
 
 Both types are embedded using the same [`js2c`](https://github.com/nodejs/node/blob/main/tools/js2c.cc) process, but runtime access rules differ.
 
-*## Embedding Benefits
+## Embedding Benefits
 
 1. **Performance** - Faster startup, no disk I/O for core modules
 2. **Distribution** - Single binary is easier to distribute
 3. **Security** - Core modules can't be tampered with
-4. **Self-Contained Runtime** - No external dependencies needed for core functionality*
+4. **Self-Contained Runtime** - No external dependencies needed for core functionality
+
+## Nuances (Worth Knowing)
+
+- **“Embedded sources” isn’t the whole story:** modern Node versions also leverage **V8 snapshots** to speed up startup. The practical outcome is similar (core code is inside the binary), but some initialization work can be effectively pre-done at build time.
+- **You *can* build Node to load JS from disk:** Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
 
 
 ## References
 
 - [How does Node.js load its built-in/native modules?](https://joyeecheung.github.io/blog/2021/07/06/how-does-node-js-load-its-builtins-native-modules) by [Joyee Cheung](https://github.com/joyeecheung)
-- [Stack Overflow Answer](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
-- and Node.js documentation:
-
-https://github.com/nodejs/node/blob/main/node.gyp
-https://github.com/nodejs/node/blob/main/tools/js2c.cc
-
+- [Stack Overflow: Are JS files in node/lib used during compilation of the node executable?](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
+- Node.js source:
+   - [`node.gyp`](https://github.com/nodejs/node/blob/main/node.gyp)
+   - [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc)
 - [node/BUILDING.md - Loading JS files from disk instead of embedding](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding)
 > The resulting binary won't include any JS files and will try to load them from the specified directory. 
 
@@ -97,7 +106,7 @@ node -e "console.log(require('module').builtinModules)"
 
 ## Appendix B - Node.js Inspector
 
-Since the JS is converted to bytes in the C++ source, you can't "read" it by opening the node binary in a text editor
+Because the JS is converted into byte arrays inside C++ source, you can't realistically "read" it by opening the node binary in a text editor.
 
 You can apply the **"inspector"** trick 
 
@@ -121,42 +130,4 @@ Type ".help" for more information.
 
 ![appendix-b-02](2026-02-18-nodejs-embed-std-lib/appendix-b-02.png)
 
-Here you can inspect/read embed in **Node.js** binary JS files: both *public* and *internal*.
-
-----
-
-This is an **excellent and highly accurate** breakdown of how Node.js handles its internal architecture. Your research correctly identifies that this wasn't a single "Eureka!" moment documented in a white paper, but rather a pragmatic inheritance from the V8 project's own design patterns.
-
-I have reviewed the details, and they align perfectly with the historical record and the current state of the `nodejs/node` codebase. Here is a brief "proof" and a few minor nuances to add to your documentation.
-
----
-
-## Verification & Proof
-
-### 1. The V8 Ancestry (The "Why")
-
-You are 100% correct that this was a "borrowed" pattern. V8’s `js2c` tool was designed because JavaScript engines need to implement parts of the ECMAScript specification (like `Array.prototype.map`) in JavaScript itself for performance and ease of maintenance. Since an engine cannot depend on an external file system to find its own basic functions, embedding them as C++ byte arrays was the only logical path. Ryan Dahl simply extended this logic to the entire standard library (`fs`, `http`, etc.).
-
-### 2. The `js2c` Evolution
-
-Your timeline regarding the shift from Python to C++ (`js2c.cc`) is accurate. This was a significant "quality of life" improvement for Node.js contributors. Using C++ for the build tool removed the dependency on Python for that specific step and, as you noted, drastically cut down the build time by avoiding the overhead of spawning a Python interpreter to process hundreds of files.
-
-### 3. Structural Accuracy
-
-The flow you described—from `lib/` to `node_javascript.cc` via `js2c.cc`—is the literal backbone of the Node.js build process.
-
----
-
-## 🔍 Minor Nuances & Clarifications
-
-To make your documentation even more "bulletproof," you might consider these small additions:
-
-* **Snapshotting (The "Modern" Twist):** While `js2c` embeds the *source code*, modern Node.js (v12+) also uses **V8 Snapshots**. Instead of just embedding the text and parsing it every time you start Node, Node.js executes the code during the build process and saves the "heap state" into the binary. This means the standard library isn't just *stored* in memory; it’s practically *pre-initialized*.
-* **The "Internal" vs "Public" Distinction:** It's worth noting that the loader distinguishes between `internal/` modules (which you cannot `require()` from a user app) and public modules. Both are embedded using the same `js2c` process, but the `BuiltinLoader` applies different access rules to them.
-* **The "Linker" limit:** One reason for the move to `js2c.cc` was also to handle memory more efficiently during the linking phase. Extremely large static arrays in C++ can sometimes stress compilers/linkers; the C++ implementation handles the generation of these data structures more gracefully than the old Python script.
-
-## ⚖️ Final Verdict
-
-**Your document is factually sound.** It correctly identifies the lack of "formal" ADRs—which is common for early-2000s open-source projects—and accurately traces the technical lineage back to V8.
-
-**Would you like me to help you draft a section on how "V8 Snapshots" further optimize this embedding process?**
+Here you can inspect/read JS files embedded in the **Node.js** binary: both *public* and *internal*.
