@@ -59,15 +59,22 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheung�
 ## Nuances (Worth Knowing)
 
 - **"Embedded sources" isn't the whole story:** there are two distinct build-time optimizations worth separating:
-  - **V8 Code Cache**: During the build, Node.js pre-compiles each built-in module's JavaScript into bytecode and embeds that cache in the binary. At runtime, the bytecode is deserialized directly, saving the parsing and compilation cost entirely. This integration was originally proposed by Yang Guo (a V8 engineer) and implemented by Joyee Cheung in 2018 — the change that made Node.js startup noticeably faster.
-  - **V8 Startup Snapshots**: Goes a step further by actually *pre-executing* bootstrap routines at build time (setting up globals like `process`, `setTimeout`, etc.) and saving the resulting V8 heap context as a blob. At runtime, Node.js deserializes this heap snapshot, completely skipping the execution of those bootstrap steps. See V8: [Custom startup snapshots](https://v8.dev/blog/custom-startup-snapshots).
+  - **V8 Code Cache**: During the build, Node.js pre-compiles each built-in module's JavaScript into bytecode and embeds that cache in the binary. At runtime, the bytecode is deserialized directly, saving the parsing and compilation cost entirely. This integration was originally proposed by *Yang Guo* (a V8 engineer) and implemented by *Joyee Cheung* in 2018 — the change that made Node.js startup noticeably faster.
+  - **V8 Startup Snapshots**: Goes a step further by actually *pre-executing* bootstrap routines at build time and saving the resulting V8 heap context as a blob. At runtime, Node.js deserializes this heap snapshot, completely skipping the executio of those bootstrap steps. See V8: [Custom startup snapshots](https://v8.dev/blog/custom-startup-snapshots).
 - **You *can* build Node to load JS from disk:** Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
 - **JS modules vs native code:** embedding covers the JavaScript sources in `lib/`, but many built-ins also depend on native (C/C++) code and bindings (for example filesystem, crypto, compression, inspector). Those native parts are compiled and linked separately; embedding doesn’t mean “everything is JS”.
 
+| Original | Since 2018: JS is pre-compiled to V8 bytecode at build time |
+|---|---|
+| ![V1 node](2026-02-18-nodejs-embed-std-lib/V1_node.svg) | ![V2 node](2026-02-18-nodejs-embed-std-lib/V2_node.svg) |
+
+<p style="margin-top: -0.6rem; font-size: 0.85em; color: #666;">
+  Diagram inspired by Joyee Cheung talk “Evolving the Node.js module loader” at JSConf JP 2025
+</p>
 
 ## References
 
-- **2025 - Evolving the Node.js module loader** ([talk](https://www.youtube.com/watch?v=qC_gA6he3aI), [slides](https://www.igalia.com/downloads/slides/JoyeeCheung-EvolvingTheNodejsModuleLoader.pdf)) by [Joyee Cheung](https://github.com/joyeecheung)
+- **2025 - Evolving the Node.js module loader** ([talk](https://www.youtube.com/watch?v=qC_gA6he3aI), [slides](https://github.com/joyeecheung/talks/blob/6a8a098ec083d8e9e4537aeeb6bd83aa50245e3f/jsconfjp_2025/evolving-the-nodejs-module-loader.pdf)) by [Joyee Cheung](https://github.com/joyeecheung)
 - [2021 - How does Node.js load its built-in/native modules?](https://joyeecheung.github.io/blog/2021/07/06/how-does-node-js-load-its-builtins-native-modules) by [Joyee Cheung](https://github.com/joyeecheung)
 - [Stack Overflow: Are JS files in node/lib used during compilation of the node executable?](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
 - Node.js source:
