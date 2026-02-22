@@ -5,14 +5,7 @@
 
 **TL;DR** *Node.js* embeds many of its built-in JavaScript modules (the sources under `lib/`, including `lib/internal/*`) into the `node` executable as static C++ arrays. Since 2018, Node.js no longer compiles these sources from scratch at runtime — during the build process, the JavaScript is pre-compiled into a **V8 code cache** (bytecode + metadata), which is also embedded in the binary. At runtime, Node.js simply deserializes the bytecode from this cache, skipping the expensive parsing and compilation steps entirely.
 
-*Terminology note*: here “built-in modules” means Node’s built-ins like `fs`/`http` (not the ECMAScript language built-ins like `Array.prototype.map`).
-
-Based on the sources below:
-
-1. The built-in JS files (`lib/*.js`) are encoded into C++ byte arrays during build.
-2. Alongside the raw source, a **V8 code cache** (pre-compiled bytecode) is also embedded in the binary. The raw source is kept primarily for debugging purposes and generating readable stack traces; the cached bytecode is what is actually deserialized at runtime.
-3. At runtime, Node.js deserializes the bytecode from the cache — no parsing or JIT compilation needed for core modules.
-4. They're stored inside the Node executable rather than loaded from disk.
+*Terminology note*: here "built-in modules" means Node's built-ins like `fs`/`http` (not the ECMAScript language built-ins like `Array.prototype.map`).
 
 ## How the Embedding Works (Build Time)
 
