@@ -16,7 +16,23 @@ Based on the sources below:
 
 ## How the Embedding Works (Build Time)
 
-Node’s build includes a step that converts JavaScript sources from `lib/` into a generated C++ translation unit (commonly called `node_javascript.cc` in build artifacts). That generated C++ file is then compiled and linked into the final `node` executable.
+Node's build includes a step that converts JavaScript sources from `lib/` into a generated C++ translation unit (commonly called `node_javascript.cc` in build artifacts). That generated C++ file is then compiled and linked into the final `node` executable.
+
+### V8 Code Cache: The Performance Key
+
+Since 2018, Node.js doesn't just embed the raw JavaScript source - it **pre-compiles each built-in module into V8 bytecode** during the build process. This cache is embedded alongside the source in the binary.
+
+**Why this matters**: Before 2018, Node.js would parse and compile the embedded JavaScript at runtime. Now it simply deserializes pre-compiled bytecode, completely skipping those expensive steps.
+
+| Original | Since 2018: JS is pre-compiled to V8 bytecode at build time |
+|---|---|
+| ![V1 node](2026-02-18-nodejs-embed-std-lib/V1_node.svg) | ![V2 node](2026-02-18-nodejs-embed-std-lib/V2_node.svg) |
+
+*Diagrams inspired by Joyee Cheung's talk "Evolving the Node.js module loader" at JSConf JP 2025*
+
+This optimization was originally proposed by *Yang Guo* (a V8 engineer) and implemented by *Joyee Cheung* - the change that made Node.js startup noticeably faster.
+
+**At runtime**: Node.js deserializes the cached bytecode directly. The raw source is kept primarily for debugging purposes and generating readable stack traces.
 
 The converter is [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc).
 
@@ -56,21 +72,11 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheung�
 3. **Integrity** - In the default build, core JS sources aren’t read from disk, so you can’t swap out `lib/*.js` without rebuilding
 4. **Self-Contained Runtime** - No external dependencies needed for core functionality
 
-## Nuances (Worth Knowing)
+## Important Clarification
 
-- **"Embedded sources" isn't the whole story:** there are two distinct build-time optimizations worth separating:
-  - **V8 Code Cache**: During the build, Node.js pre-compiles each built-in module's JavaScript into bytecode and embeds that cache in the binary. At runtime, the bytecode is deserialized directly, saving the parsing and compilation cost entirely. This integration was originally proposed by *Yang Guo* (a V8 engineer) and implemented by *Joyee Cheung* in 2018 — the change that made Node.js startup noticeably faster.
-  - **V8 Startup Snapshots**: Goes a step further by actually *pre-executing* bootstrap routines at build time and saving the resulting V8 heap context as a blob. At runtime, Node.js deserializes this heap snapshot, completely skipping the executio of those bootstrap steps. See V8: [Custom startup snapshots](https://v8.dev/blog/custom-startup-snapshots).
-- **You *can* build Node to load JS from disk:** Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
-- **JS modules vs native code:** embedding covers the JavaScript sources in `lib/`, but many built-ins also depend on native (C/C++) code and bindings (for example filesystem, crypto, compression, inspector). Those native parts are compiled and linked separately; embedding doesn’t mean “everything is JS”.
+**Embedding covers only JavaScript sources** - Many built-ins like `fs`, `crypto`, and `zlib` also depend on native C/C++ code and bindings. Those native parts are compiled and linked separately; embedding doesn't mean "everything is JS".
 
-| Original | Since 2018: JS is pre-compiled to V8 bytecode at build time |
-|---|---|
-| ![V1 node](2026-02-18-nodejs-embed-std-lib/V1_node.svg) | ![V2 node](2026-02-18-nodejs-embed-std-lib/V2_node.svg) |
-
-<p style="margin-top: -0.6rem; font-size: 0.85em; color: #666;">
-  Diagram inspired by Joyee Cheung talk “Evolving the Node.js module loader” at JSConf JP 2025
-</p>
+**Alternative builds** - Node supports a build option that produces a binary without embedded JS files and loads them from a directory instead. See [BUILDING.md](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding).
 
 ## References
 
