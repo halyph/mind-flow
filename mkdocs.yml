@@ -9,7 +9,7 @@ site_description: >-
 repo_name: halyph/mind-flow
 repo_url: https://github.com/halyph/mind-flow
 
-copyright: Copyright &copy; 2009 - 2026 Orest Ivasiv
+copyright: Copyright &copy; 2009 Orest Ivasiv
 
 theme:
   name: material
