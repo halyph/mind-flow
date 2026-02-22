@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+"""
+Generates blog index files (README.md and docs/blog/index.md) by scanning all blog posts.
+
+This script:
+- Scans all markdown files in docs/blog/YYYY/ directories
+- Extracts post titles from the first heading (# Title)
+- Extracts dates from filenames (YYYY-MM-DD-title.md)
+- Groups posts by year
+- Generates two index files with reverse chronological ordering
+"""
 
 import glob
 from collections import defaultdict
