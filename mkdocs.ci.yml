@@ -12,10 +12,6 @@ plugins:
       minify_html: true
       minify_js: true
       minify_css: true
-  # Tags plugin disabled - using HTML comments + docs/blog/tags.md instead
-  # - tags:
-  #     tags: true
-  #     tags_file: wiki/tags.md
   - rss:
       match_path: "blog/.*"
       date_from_meta:
