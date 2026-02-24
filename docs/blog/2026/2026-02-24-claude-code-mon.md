@@ -7,8 +7,6 @@
 
 ## The Problem
 
-While exploring Claude Code's OpenTelemetry integration, I realized the monitoring capabilities could solve a real problem: visibility into costs and token usage. What started as an integration experiment became a practical observability stack.
-
 Claude Code gives you no built-in visibility into:
 
 - Which models are eating your budget
@@ -30,18 +28,11 @@ I configured an observability stack using industry-standard tools:
 - **Loki** stores logs (session logs, real-time activity)
 - **Grafana** visualizes everything with pre-built dashboards
 
-**Why this stack?**
-
-- Industry-standard tools with excellent documentation
-- No vendor lock-in (all open-source)
-- Minimal resource usage (runs on laptop)
-- Easy to extend with additional metrics or alerts
-
 All configuration, automation, and dashboards are in the GitHub repo: [halyph/claude-mon](https://github.com/halyph/claude-mon).
 
 ## Quick Demo
 
-The entire stack starts with one command:
+One command:
 
 ```bash
 git clone https://github.com/halyph/claude-mon.git
@@ -51,25 +42,7 @@ cd claude-mon
 
 ![setup_sh](2026-02-24-claude-code-mon/setup_sh.jpg)
 
-Wait 2 minutes while the script:
-
-1. Pulls Docker images (first run only)
-2. Starts all services in detached mode (OTel Collector, Prometheus, Loki, Grafana)
-3. Waits for Grafana to become healthy
-4. Configures Grafana datasources via API
-5. Imports two pre-built dashboards (metrics + logs)
-
-Open `http://localhost:3000` and you're monitoring Claude Code.
-
-The script automates all the boring stuff - datasource UIDs, dashboard imports, health checks. Just run it and it works.
-
-For configuration details, check the repo README. It covers:
-
-- Enabling telemetry in Claude Code
-- Docker Compose architecture
-- Configuration files (OTel, Prometheus)
-- Data persistence with volumes
-- Troubleshooting
+Wait 2 minutes for setup to complete, then open `http://localhost:3000`. Default credentials: `admin/admin`.
 
 ## What You Get
 
@@ -79,7 +52,7 @@ For configuration details, check the repo README. It covers:
 
 ![pic2](2026-02-24-claude-code-mon/pic2_cc_monitoring.png)
 
-16 panels tracking everything that matters:
+16 panels:
 
 - **Cost tracking**: Total spend by model, cost distribution pie chart
 - **Token usage**: Input/output/cache tokens over time
@@ -98,7 +71,7 @@ Real-time log streaming with:
 - Per-session filtering
 - Model-based categorization
 
-**NOTE**: The dashboards are pre-configured starting points. You can customize metrics calculations and visualizations to match your specific needs.
+**NOTE**: Dashboards are pre-configured templates. Customize as needed.
 
 ## Key Metrics Reference
 
@@ -127,8 +100,6 @@ Docker volumes preserve all historical data:
 docker-compose down      # Stops services, keeps data
 docker-compose down -v   # Stops services, deletes data
 ```
-
-This lets you analyze long-term trends - weekly costs, monthly token usage, development patterns over time.
 
 ## References
 
