@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 175 posts • 78 tags**
+**📊 175 posts • 82 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="573" height="529" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="573" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="595" height="531" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="595" alt="Word Cloud">
   </object>
 </div>
 
@@ -212,6 +212,11 @@ Browse blog posts by tag.
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
 
+<a id="grafana"></a>
+## grafana (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+
 <a id="grails"></a>
 ## grails (2) [↑](#tags)
 
@@ -400,6 +405,11 @@ Browse blog posts by tag.
 
 - 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](../blog/2026/2026-02-16-mkdocs-livereload-bug.md)
 
+<a id="monitoring"></a>
+## monitoring (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+
 <a id="mooc"></a>
 ## mooc (2) [↑](#tags)
 
@@ -415,6 +425,11 @@ Browse blog posts by tag.
 ## objective-c (1) [↑](#tags)
 
 - 2009-11-08 - [GNUstep Getting Started](../blog/2009/2009-11-08-gnustep-getting-started.md)
+
+<a id="observability"></a>
+## observability (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="ocaml"></a>
 ## ocaml (1) [↑](#tags)
@@ -452,6 +467,11 @@ Browse blog posts by tag.
 
 - 2014-01-26 - [About Learning New Programming Languages](../blog/2014/2014-01-26-about-learning-new-programming-languages.md)
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
+
+<a id="prometheus"></a>
+## prometheus (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="python"></a>
 ## python (24) [↑](#tags)

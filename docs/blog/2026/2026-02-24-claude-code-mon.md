@@ -1,5 +1,5 @@
 # How to Monitor Claude Code with OpenTelemetry
-<!-- tags: claude code, otel -->
+<!-- tags: claude code, otel, grafana, prometheus, observability, monitoring  -->
 
 ![thumbnail](2026-02-24-claude-code-mon/pic0.jpg)
 
