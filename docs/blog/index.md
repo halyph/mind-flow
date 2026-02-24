@@ -9,6 +9,7 @@ hide:
 
 ## 2026
 
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](2026/2026-02-24-claude-code-mon.md)
 - 2026-02-18 - [How Node.js Embeds Built-in JS Modules](2026/2026-02-18-nodejs-embed-std-lib.md)
 - 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](2026/2026-02-16-mkdocs-livereload-bug.md)
 - 2026-01-31 - [Git Doesn't Track File Renames (And How It Fakes It)](2026/2026-01-31-git-content-similarity.md)

@@ -1,5 +1,5 @@
 # Claude Code CLI Prompts
-<!-- tags: genai -->
+<!-- tags: claude code -->
 
 ![thumbnail](2025-10-29-claude-code-cli-notes/pic0.png)
 

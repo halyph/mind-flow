@@ -2,13 +2,13 @@
 
 Browse blog posts by tag.
 
-**📊 174 posts • 77 tags**
+**📊 175 posts • 82 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="595" height="513" aria-label="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="595" height="531" aria-label="Word Cloud">
     <img src="./cloud.svg" width="595" alt="Word Cloud">
   </object>
 </div>
@@ -80,6 +80,12 @@ Browse blog posts by tag.
 
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
+
+<a id="claude-code"></a>
+## claude code (2) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+- 2025-10-29 - [Claude Code CLI Prompts](../blog/2025/2025-10-29-claude-code-cli-notes.md)
 
 <a id="computation"></a>
 ## computation (1) [↑](#tags)
@@ -156,11 +162,6 @@ Browse blog posts by tag.
 - 2018-12-30 - [Functional programming in Haskell - Part 1](../blog/2018/2018-12-30-fp-in-haskell-part1.md)
 - 2018-12-20 - [Scala `for`-comprehensions](../blog/2018/2018-12-20-scala-for-compr.md)
 
-<a id="genai"></a>
-## genai (1) [↑](#tags)
-
-- 2025-10-29 - [Claude Code CLI Prompts](../blog/2025/2025-10-29-claude-code-cli-notes.md)
-
 <a id="general"></a>
 ## general (5) [↑](#tags)
 
@@ -210,6 +211,11 @@ Browse blog posts by tag.
 
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
 - 2010-12-15 - [Java Build Tools and Future](../blog/2010/2010-12-15-java-build-tools-and-future.md)
+
+<a id="grafana"></a>
+## grafana (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="grails"></a>
 ## grails (2) [↑](#tags)
@@ -399,6 +405,11 @@ Browse blog posts by tag.
 
 - 2026-02-16 - [The "Silent Watcher" Regression in MkDocs 1.6.1](../blog/2026/2026-02-16-mkdocs-livereload-bug.md)
 
+<a id="monitoring"></a>
+## monitoring (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+
 <a id="mooc"></a>
 ## mooc (2) [↑](#tags)
 
@@ -415,6 +426,11 @@ Browse blog posts by tag.
 
 - 2009-11-08 - [GNUstep Getting Started](../blog/2009/2009-11-08-gnustep-getting-started.md)
 
+<a id="observability"></a>
+## observability (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+
 <a id="ocaml"></a>
 ## ocaml (1) [↑](#tags)
 
@@ -424,6 +440,11 @@ Browse blog posts by tag.
 ## opencv (1) [↑](#tags)
 
 - 2021-04-13 - [OpenCV tutorials and learning materials](../blog/2021/2021-04-13-opencv.md)
+
+<a id="otel"></a>
+## otel (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="podcast"></a>
 ## podcast (1) [↑](#tags)
@@ -446,6 +467,11 @@ Browse blog posts by tag.
 
 - 2014-01-26 - [About Learning New Programming Languages](../blog/2014/2014-01-26-about-learning-new-programming-languages.md)
 - 2011-08-15 - [My reflection on "Programming Achievements: How to Level Up as a Developer"](../blog/2011/2011-08-15-recently-ive-read-amazing-blog-post.md)
+
+<a id="prometheus"></a>
+## prometheus (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="python"></a>
 ## python (24) [↑](#tags)
