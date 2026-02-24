@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 174 posts • 77 tags**
+**📊 175 posts • 78 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="595" height="513" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="595" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="573" height="529" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="573" alt="Word Cloud">
   </object>
 </div>
 
@@ -80,6 +80,12 @@ Browse blog posts by tag.
 
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
+
+<a id="claude-code"></a>
+## claude code (2) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
+- 2025-10-29 - [Claude Code CLI Prompts](../blog/2025/2025-10-29-claude-code-cli-notes.md)
 
 <a id="computation"></a>
 ## computation (1) [↑](#tags)
@@ -155,11 +161,6 @@ Browse blog posts by tag.
 - 2019-02-27 - [Lambda Days - Krakow, 2019 - Report](../blog/2019/2019-02-27-lambda-days.md)
 - 2018-12-30 - [Functional programming in Haskell - Part 1](../blog/2018/2018-12-30-fp-in-haskell-part1.md)
 - 2018-12-20 - [Scala `for`-comprehensions](../blog/2018/2018-12-20-scala-for-compr.md)
-
-<a id="genai"></a>
-## genai (1) [↑](#tags)
-
-- 2025-10-29 - [Claude Code CLI Prompts](../blog/2025/2025-10-29-claude-code-cli-notes.md)
 
 <a id="general"></a>
 ## general (5) [↑](#tags)
@@ -424,6 +425,11 @@ Browse blog posts by tag.
 ## opencv (1) [↑](#tags)
 
 - 2021-04-13 - [OpenCV tutorials and learning materials](../blog/2021/2021-04-13-opencv.md)
+
+<a id="otel"></a>
+## otel (1) [↑](#tags)
+
+- 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](../blog/2026/2026-02-24-claude-code-mon.md)
 
 <a id="podcast"></a>
 ## podcast (1) [↑](#tags)

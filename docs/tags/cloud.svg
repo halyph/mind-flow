@@ -1,4 +1,4 @@
-<svg width="595" height="513" viewBox="0 0 595 513"
+<svg width="573" height="529" viewBox="0 0 573 529"
      xmlns="http://www.w3.org/2000/svg">
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; cursor: pointer; }
@@ -6,311 +6,315 @@
   </style>
 
   <a href="./#java" target="_parent">
-    <text x="240.73265958207938" y="275.1490695318203" font-size="48" font-weight="bold" fill="#007396">java</text>
+    <text x="218.64698082717464" y="275.1490695318203" font-size="48" font-weight="bold" fill="#007396">java</text>
   </a>
 
   <a href="./#python" target="_parent">
-    <text x="247.32236236896094" y="215.69462392476146" font-size="29" fill="#3776AB">python</text>
+    <text x="225.2366836140562" y="215.69462392476146" font-size="29" fill="#3776AB">python</text>
   </a>
 
   <a href="./#ruby" target="_parent">
-    <text x="270.2252121623295" y="325.20376705564996" font-size="29" fill="#CC342D">ruby</text>
+    <text x="248.1395334074248" y="325.20376705564996" font-size="29" fill="#CC342D">ruby</text>
   </a>
 
   <a href="./#scala" target="_parent">
-    <text x="248.2726694669964" y="364.2536783656473" font-size="26" fill="#DC322F">scala</text>
+    <text x="226.18699071209167" y="364.2536783656473" font-size="26" fill="#DC322F">scala</text>
   </a>
 
   <a href="./#conference" target="_parent">
-    <text x="212.78941161116828" y="176.24933559090067" font-size="21" fill="#8B5CF6">conference</text>
+    <text x="190.70373285626354" y="176.24933559090067" font-size="21" fill="#8B5CF6">conference</text>
   </a>
 
   <a href="./#thoughts" target="_parent">
-    <text x="157.5153257708728" y="320.1535258835963" font-size="20" fill="#10B981">thoughts</text>
+    <text x="135.42964701596807" y="320.1535258835963" font-size="20" fill="#10B981">thoughts</text>
   </a>
 
   <a href="./#golang" target="_parent">
-    <text x="168.4929460690411" y="261.8338502488952" font-size="18" fill="#00ADD8">golang</text>
+    <text x="146.40726731413636" y="261.8338502488952" font-size="18" fill="#00ADD8">golang</text>
   </a>
 
   <a href="./#groovy" target="_parent">
-    <text x="365.38223268359684" y="256.4384063762607" font-size="18" fill="#F59E0B">groovy</text>
+    <text x="343.2965539286921" y="256.4384063762607" font-size="18" fill="#F59E0B">groovy</text>
   </a>
 
   <a href="./#vs" target="_parent">
-    <text x="211.05841725902727" y="234.37254928745222" font-size="18" fill="#EC4899">vs</text>
+    <text x="188.97273850412253" y="234.37254928745222" font-size="18" fill="#EC4899">vs</text>
   </a>
 
   <a href="./#review" target="_parent">
-    <text x="361.24206762412314" y="283.4306634788133" font-size="17" fill="#6366F1">review</text>
+    <text x="339.1563888692184" y="283.4306634788133" font-size="17" fill="#6366F1">review</text>
   </a>
 
   <a href="./#haskell" target="_parent">
-    <text x="167.42919178711796" y="289.4618652093694" font-size="15" fill="#007396">haskell</text>
+    <text x="145.34351303221322" y="289.4618652093694" font-size="15" fill="#007396">haskell</text>
   </a>
 
   <a href="./#blog" target="_parent">
-    <text x="357.57700382796327" y="219.89011572346527" font-size="15" fill="#3776AB">blog</text>
+    <text x="335.49132507305853" y="219.89011572346527" font-size="15" fill="#3776AB">blog</text>
   </a>
 
   <a href="./#book" target="_parent">
-    <text x="354.27373782529935" y="325.7611624503871" font-size="15" fill="#CC342D">book</text>
+    <text x="332.1880590703946" y="325.7611624503871" font-size="15" fill="#CC342D">book</text>
   </a>
 
   <a href="./#general" target="_parent">
-    <text x="353.4282379090797" y="349.20516344643676" font-size="15" fill="#DC322F">general</text>
+    <text x="331.342559154175" y="349.20516344643676" font-size="15" fill="#DC322F">general</text>
   </a>
 
   <a href="./#git" target="_parent">
-    <text x="207.3259124948352" y="345.90374473732675" font-size="15" fill="#8B5CF6">git</text>
+    <text x="185.24023373993046" y="345.90374473732675" font-size="15" fill="#8B5CF6">git</text>
   </a>
 
   <a href="./#lisp" target="_parent">
-    <text x="347.0764650349048" y="172.52623312558308" font-size="15" fill="#10B981">lisp</text>
+    <text x="324.99078628000007" y="172.52623312558308" font-size="15" fill="#10B981">lisp</text>
   </a>
 
   <a href="./#maven" target="_parent">
-    <text x="282.95122980752046" y="141.65812256947902" font-size="15" fill="#00ADD8">maven</text>
+    <text x="260.86555105261573" y="141.65812256947902" font-size="15" fill="#00ADD8">maven</text>
   </a>
 
   <a href="./#tool" target="_parent">
-    <text x="290.92692229447175" y="390.9866472779862" font-size="15" fill="#F59E0B">tool</text>
+    <text x="268.841243539567" y="390.9866472779862" font-size="15" fill="#F59E0B">tool</text>
   </a>
 
   <a href="./#data-science" target="_parent">
-    <text x="169.98045465599196" y="144.71543484508226" font-size="14" fill="#EC4899">data science</text>
+    <text x="147.89477590108723" y="144.71543484508226" font-size="14" fill="#EC4899">data science</text>
   </a>
 
   <a href="./#functional-programming" target="_parent">
-    <text x="226.94238451962113" y="117.57644218439081" font-size="14" fill="#6366F1">functional programming</text>
+    <text x="204.8567057647164" y="117.57644218439081" font-size="14" fill="#6366F1">functional programming</text>
   </a>
 
   <a href="./#javascript" target="_parent">
-    <text x="338.52241437439704" y="372.9681881443444" font-size="14" fill="#007396">javascript</text>
+    <text x="316.4367356194923" y="372.9681881443444" font-size="14" fill="#007396">javascript</text>
   </a>
 
   <a href="./#macos" target="_parent">
-    <text x="157.09334488227015" y="221.718635819949" font-size="14" fill="#3776AB">macos</text>
+    <text x="135.0076661273654" y="221.718635819949" font-size="14" fill="#3776AB">macos</text>
   </a>
 
   <a href="./#rest" target="_parent">
-    <text x="405.6364874610115" y="227.04181200707342" font-size="14" fill="#CC342D">rest</text>
+    <text x="383.55080870610675" y="227.04181200707342" font-size="14" fill="#CC342D">rest</text>
   </a>
 
   <a href="./#rust" target="_parent">
-    <text x="203.61761529454523" y="371.19519382466007" font-size="14" fill="#DC322F">rust</text>
+    <text x="181.5319365396405" y="371.19519382466007" font-size="14" fill="#DC322F">rust</text>
   </a>
 
   <a href="./#spring" target="_parent">
-    <text x="336.4005017916081" y="146.66572629878743" font-size="14" fill="#8B5CF6">spring</text>
+    <text x="314.3148230367034" y="146.66572629878743" font-size="14" fill="#8B5CF6">spring</text>
   </a>
 
   <a href="./#video" target="_parent">
-    <text x="164.83109943748175" y="194.10871920242022" font-size="14" fill="#10B981">video</text>
+    <text x="142.74542068257702" y="194.10871920242022" font-size="14" fill="#10B981">video</text>
   </a>
 
   <a href="./#bash" target="_parent">
-    <text x="368.9652161741319" y="197.20998729963617" font-size="13" fill="#00ADD8">bash</text>
+    <text x="346.8795374192272" y="197.20998729963617" font-size="13" fill="#00ADD8">bash</text>
   </a>
 
   <a href="./#github" target="_parent">
-    <text x="398.48483234798084" y="319.8785207496328" font-size="13" fill="#F59E0B">github</text>
+    <text x="376.3991535930761" y="319.8785207496328" font-size="13" fill="#F59E0B">github</text>
   </a>
 
   <a href="./#interview" target="_parent">
-    <text x="335.55302534419025" y="397.0353535771421" font-size="13" fill="#EC4899">interview</text>
+    <text x="313.4673465892855" y="397.0353535771421" font-size="13" fill="#EC4899">interview</text>
   </a>
 
   <a href="./#jax-rs" target="_parent">
-    <text x="228.17247081274675" y="392.9199883493948" font-size="13" fill="#6366F1">jax-rs</text>
+    <text x="206.08679205784202" y="392.9199883493948" font-size="13" fill="#6366F1">jax-rs</text>
   </a>
 
   <a href="./#jenkins" target="_parent">
-    <text x="407.11765317156426" y="202.37122486365456" font-size="13" fill="#007396">jenkins</text>
+    <text x="385.0319744166595" y="202.37122486365456" font-size="13" fill="#007396">jenkins</text>
   </a>
 
   <a href="./#linux" target="_parent">
-    <text x="166.77670899417527" y="167.8643873638997" font-size="13" fill="#3776AB">linux</text>
+    <text x="144.69103023927053" y="167.8643873638997" font-size="13" fill="#3776AB">linux</text>
   </a>
 
   <a href="./#rails" target="_parent">
-    <text x="278.8303799151755" y="415.89908150869786" font-size="13" fill="#CC342D">rails</text>
+    <text x="256.7447011602708" y="415.89908150869786" font-size="13" fill="#CC342D">rails</text>
   </a>
 
   <a href="./#ci" target="_parent">
-    <text x="429.9255412291883" y="283.50929904603106" font-size="12" fill="#DC322F">ci</text>
+    <text x="407.83986247428356" y="283.50929904603106" font-size="12" fill="#DC322F">ci</text>
+  </a>
+
+  <a href="./#claude-code" target="_parent">
+    <text x="238.1432451587668" y="95.5986471527513" font-size="12" fill="#8B5CF6">claude code</text>
   </a>
 
   <a href="./#computer-vision" target="_parent">
-    <text x="245.82892391367156" y="95.5986471527513" font-size="12" fill="#8B5CF6">computer vision</text>
+    <text x="207.4382157246516" y="440.0429942375846" font-size="12" fill="#10B981">computer vision</text>
   </a>
 
   <a href="./#gradle" target="_parent">
-    <text x="148.7893035285618" y="346.49783031297085" font-size="12" fill="#10B981">gradle</text>
+    <text x="126.70362477365705" y="346.49783031297085" font-size="12" fill="#00ADD8">gradle</text>
   </a>
 
   <a href="./#grails" target="_parent">
-    <text x="393.60954467179647" y="163.406613348338" font-size="12" fill="#00ADD8">grails</text>
+    <text x="371.52386591689174" y="163.406613348338" font-size="12" fill="#F59E0B">grails</text>
   </a>
 
   <a href="./#jruby" target="_parent">
-    <text x="119.46674648177205" y="286.5515191216156" font-size="12" fill="#F59E0B">jruby</text>
+    <text x="97.38106772686731" y="286.5515191216156" font-size="12" fill="#EC4899">jruby</text>
   </a>
 
   <a href="./#kotlin" target="_parent">
-    <text x="333.57244916103775" y="420.2846055643301" font-size="12" fill="#EC4899">kotlin</text>
+    <text x="311.486770406133" y="420.2846055643301" font-size="12" fill="#6366F1">kotlin</text>
   </a>
 
   <a href="./#machine-learning" target="_parent">
-    <text x="225.92389447955637" y="440.0429942375846" font-size="12" fill="#6366F1">machine learning</text>
+    <text x="236.63504961855747" y="71.36161768922936" font-size="12" fill="#007396">machine learning</text>
   </a>
 
   <a href="./#mooc" target="_parent">
-    <text x="424.3552641610156" y="341.8739562021935" font-size="12" fill="#007396">mooc</text>
+    <text x="402.2695854061109" y="341.8739562021935" font-size="12" fill="#3776AB">mooc</text>
   </a>
 
   <a href="./#pomodoro" target="_parent">
-    <text x="102.50067731069888" y="251.01461064979196" font-size="12" fill="#3776AB">pomodoro</text>
+    <text x="80.41499855579414" y="251.01461064979196" font-size="12" fill="#CC342D">pomodoro</text>
   </a>
 
   <a href="./#programming-language" target="_parent">
-    <text x="244.32072837346223" y="71.36161768922936" font-size="12" fill="#CC342D">programming language</text>
+    <text x="213.78942238501227" y="460.32817441156084" font-size="12" fill="#DC322F">programming language</text>
   </a>
 
   <a href="./#r" target="_parent">
-    <text x="191.1060894420909" y="368.43214134309517" font-size="12" fill="#DC322F">r</text>
+    <text x="169.02041068718617" y="368.43214134309517" font-size="12" fill="#8B5CF6">r</text>
   </a>
 
   <a href="./#techradar" target="_parent">
-    <text x="435.55757522062834" y="253.83077699689665" font-size="12" fill="#8B5CF6">techradar</text>
+    <text x="413.4718964657236" y="253.83077699689665" font-size="12" fill="#10B981">techradar</text>
   </a>
 
   <a href="./#terminal" target="_parent">
-    <text x="138.94026354795082" y="390.95329544452744" font-size="12" fill="#10B981">terminal</text>
+    <text x="116.85458479304609" y="390.95329544452744" font-size="12" fill="#00ADD8">terminal</text>
   </a>
 
   <a href="./#textmate" target="_parent">
-    <text x="93.84626731061653" y="312.95148872005933" font-size="12" fill="#00ADD8">textmate</text>
+    <text x="71.76058855571179" y="312.95148872005933" font-size="12" fill="#F59E0B">textmate</text>
   </a>
 
   <a href="./#akka" target="_parent">
-    <text x="118.73293542205062" y="213.88371099207512" font-size="12" fill="#F59E0B">akka</text>
+    <text x="96.64725666714588" y="213.88371099207512" font-size="12" fill="#EC4899">akka</text>
   </a>
 
   <a href="./#algorithm" target="_parent">
-    <text x="450.27857784404273" y="280.70905791758054" font-size="12" fill="#EC4899">algorithm</text>
+    <text x="428.192899089138" y="280.70905791758054" font-size="12" fill="#6366F1">algorithm</text>
   </a>
 
   <a href="./#algorithms" target="_parent">
-    <text x="407.87818061837163" y="143.07771156269354" font-size="12" fill="#6366F1">algorithms</text>
+    <text x="385.7925018634669" y="143.07771156269354" font-size="12" fill="#007396">algorithms</text>
   </a>
 
   <a href="./#ant" target="_parent">
-    <text x="190.08518037540986" y="411.76721752004806" font-size="12" fill="#007396">ant</text>
+    <text x="167.99950162050513" y="411.76721752004806" font-size="12" fill="#3776AB">ant</text>
   </a>
 
   <a href="./#api" target="_parent">
-    <text x="132.55079609644216" y="176.98749963042496" font-size="12" fill="#3776AB">api</text>
+    <text x="110.46511734153742" y="176.98749963042496" font-size="12" fill="#CC342D">api</text>
   </a>
 
   <a href="./#c" target="_parent">
-    <text x="446.0851153884005" y="231.71362669396188" font-size="12" fill="#CC342D">c</text>
+    <text x="423.99943663349575" y="231.71362669396188" font-size="12" fill="#DC322F">c</text>
   </a>
 
   <a href="./#cheatsheet" target="_parent">
-    <text x="431.70945377256623" y="361.81045999510724" font-size="12" fill="#DC322F">cheatsheet</text>
+    <text x="409.6237750176615" y="361.81045999510724" font-size="12" fill="#8B5CF6">cheatsheet</text>
   </a>
 
   <a href="./#computation" target="_parent">
-    <text x="268.27510113991696" y="460.32817441156084" font-size="12" fill="#8B5CF6">computation</text>
+    <text x="110.4473527043919" y="111.51851188082578" font-size="12" fill="#10B981">computation</text>
   </a>
 
   <a href="./#cpp" target="_parent">
-    <text x="193.19613625801836" y="113.04217727413656" font-size="12" fill="#10B981">cpp</text>
+    <text x="204.13990096017866" y="91.41571737281582" font-size="12" fill="#00ADD8">cpp</text>
   </a>
 
   <a href="./#cygwin" target="_parent">
-    <text x="462.99182872080416" y="227.62471148632477" font-size="12" fill="#00ADD8">cygwin</text>
+    <text x="440.90614996589943" y="227.62471148632477" font-size="12" fill="#F59E0B">cygwin</text>
   </a>
 
   <a href="./#data-structure" target="_parent">
-    <text x="454.94813130060993" y="300.4364153149559" font-size="12" fill="#F59E0B">data structure</text>
+    <text x="432.8624525457052" y="300.4364153149559" font-size="12" fill="#EC4899">data structure</text>
   </a>
 
   <a href="./#database" target="_parent">
-    <text x="450.9765378664981" y="321.53742349143124" font-size="12" fill="#EC4899">database</text>
+    <text x="428.8908591115934" y="321.53742349143124" font-size="12" fill="#6366F1">database</text>
   </a>
 
   <a href="./#diagram" target="_parent">
-    <text x="445.9516300216857" y="174.8479839897525" font-size="12" fill="#6366F1">diagram</text>
+    <text x="423.86595126678094" y="174.8479839897525" font-size="12" fill="#007396">diagram</text>
   </a>
 
   <a href="./#docker" target="_parent">
-    <text x="425.0014337161001" y="399.4487888282452" font-size="12" fill="#007396">docker</text>
-  </a>
-
-  <a href="./#genai" target="_parent">
-    <text x="128.28514198445788" y="145.43131465366014" font-size="12" fill="#3776AB">genai</text>
+    <text x="402.9157549611954" y="399.4487888282452" font-size="12" fill="#3776AB">docker</text>
   </a>
 
   <a href="./#gnu" target="_parent">
-    <text x="210.95309013687316" y="86.72808304813383" font-size="12" fill="#CC342D">gnu</text>
+    <text x="113.39946322955313" y="145.43131465366014" font-size="12" fill="#CC342D">gnu</text>
   </a>
 
   <a href="./#jvm" target="_parent">
-    <text x="389.6568143699021" y="431.4225356637583" font-size="12" fill="#DC322F">jvm</text>
+    <text x="367.5711356149974" y="431.4225356637583" font-size="12" fill="#DC322F">jvm</text>
   </a>
 
   <a href="./#make" target="_parent">
-    <text x="157.73303145929665" y="111.51851188082578" font-size="12" fill="#8B5CF6">make</text>
+    <text x="75.83529607419578" y="343.57180160920063" font-size="12" fill="#8B5CF6">make</text>
   </a>
 
   <a href="./#markdown" target="_parent">
-    <text x="83.52097482910054" y="343.57180160920063" font-size="12" fill="#10B981">markdown</text>
+    <text x="446.04459336943967" y="196.89814899928245" font-size="12" fill="#10B981">markdown</text>
   </a>
 
   <a href="./#mingw" target="_parent">
-    <text x="422.011483855921" y="110.23546824720889" font-size="12" fill="#00ADD8">mingw</text>
+    <text x="360.85628815940674" y="87.83753140029974" font-size="12" fill="#00ADD8">mingw</text>
   </a>
 
   <a href="./#mkdocs" target="_parent">
-    <text x="475.33027212434433" y="196.89814899928245" font-size="12" fill="#F59E0B">mkdocs</text>
+    <text x="396.3258051010163" y="110.23546824720889" font-size="12" fill="#F59E0B">mkdocs</text>
   </a>
 
   <a href="./#node.js" target="_parent">
-    <text x="354.9257176717499" y="458.77816953395387" font-size="12" fill="#EC4899">node.js</text>
+    <text x="131.18300843222406" y="438.8820209724593" font-size="12" fill="#EC4899">node.js</text>
   </a>
 
   <a href="./#objective-c" target="_parent">
-    <text x="138.86868718712878" y="438.8820209724593" font-size="12" fill="#6366F1">objective-c</text>
+    <text x="228.142966178357" y="50.8" font-size="12" fill="#6366F1">objective-c</text>
   </a>
 
   <a href="./#ocaml" target="_parent">
-    <text x="271.8286449332618" y="50.8" font-size="12" fill="#007396">ocaml</text>
+    <text x="148.60762857208263" y="81.36048389461591" font-size="12" fill="#007396">ocaml</text>
   </a>
 
   <a href="./#opencv" target="_parent">
-    <text x="208.91442081343538" y="469.9566295663961" font-size="12" fill="#3776AB">opencv</text>
+    <text x="96.2668268712062" y="412.5447356025937" font-size="12" fill="#3776AB">opencv</text>
+  </a>
+
+  <a href="./#otel" target="_parent">
+    <text x="78.24309566769264" y="156.52687008833664" font-size="12" fill="#CC342D">otel</text>
   </a>
 
   <a href="./#podcast" target="_parent">
-    <text x="114.75250562611095" y="412.5447356025937" font-size="12" fill="#CC342D">podcast</text>
+    <text x="40.0" y="210.95203692180428" font-size="12" fill="#DC322F">podcast</text>
   </a>
 
   <a href="./#postgresql" target="_parent">
-    <text x="40.0" y="272.21749332274055" font-size="12" fill="#DC322F">postgresql</text>
+    <text x="232.4107755241533" y="485.48845975507965" font-size="12" fill="#8B5CF6">postgresql</text>
   </a>
 
   <a href="./#til" target="_parent">
-    <text x="103.88061675319344" y="190.87875003038357" font-size="12" fill="#8B5CF6">til</text>
+    <text x="69.44865527579154" y="287.87286355494945" font-size="12" fill="#10B981">til</text>
   </a>
 
   <a href="./#uml" target="_parent">
-    <text x="177.89330732698735" y="81.36048389461591" font-size="12" fill="#10B981">uml</text>
+    <text x="81.7949379982887" y="190.87875003038357" font-size="12" fill="#00ADD8">uml</text>
   </a>
 
   <a href="./#zsh" target="_parent">
-    <text x="423.401865197966" y="431.88831386582456" font-size="12" fill="#00ADD8">zsh</text>
+    <text x="53.02439312330063" y="257.76290961564274" font-size="12" fill="#F59E0B">zsh</text>
   </a>
 
 </svg>
