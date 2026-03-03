@@ -1,4 +1,4 @@
-.PHONY: help venv install clean serve readme tags
+.PHONY: help install clean serve readme tags
 
 all: help
 
@@ -7,11 +7,6 @@ YELLOW := $(shell tput -Txterm setaf 3)
 WHITE  := $(shell tput -Txterm setaf 7)
 CYAN   := $(shell tput -Txterm setaf 6)
 RESET  := $(shell tput -Txterm sgr0)
-
-VENV = .venv
-ACTIVATE = $(VENV)/bin/activate
-PYTHON = $(VENV)/bin/python3
-PIP = $(VENV)/bin/pip3
 
 ## Help:
 
@@ -28,32 +23,24 @@ help: ## Show this help
 
 ## Local Setup:
 
-venv: ## Init virtual environment
-	@echo "Creating python virtual environment in '.venv' folder..."
-	@python3 -m venv .venv
-
-# !!! this does NOT work. Requires additional Makefile magic
-# activate: ## Activate local virtual environment
-# 	@eval $(echo ". .venv/bin/activate")
-
-install: venv ## Install dependecies
-	@echo "Installing python packages..."
-	@$(PIP) install -r requirements.txt
+install: ## Install dependencies and create venv
+	@echo "Installing dependencies with uv..."
+	@uv sync
 	@echo
-	@echo Run the following command to activate virtual environment:
-	@echo . .venv/bin/activate
+	@echo "✓ Dependencies installed in .venv/"
+	@echo "Note: No need to manually activate venv - use 'uv run' or Makefile targets"
 
-clean: ## Cleaning previous python virtual environment
-	@echo "Cleaning previous python virtual environment '.venv'..."
+clean: ## Remove .venv directory
+	@echo "Cleaning .venv..."
 	@rm -rf .venv
 
 ## Development environment:
 
 serve: ## Run mkdocs server
-	mkdocs serve --livereload
+	uv run mkdocs serve --livereload
 
 tags: ## Generate tags index
-	python3 scripts/generate-tags.py
+	uv run python scripts/generate-tags.py
 
 readme: tags ## Generate blog index and tags
-	python3 scripts/generate-blog-index.py
+	uv run python scripts/generate-blog-index.py

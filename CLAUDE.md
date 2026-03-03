@@ -15,21 +15,22 @@ Personal technical blog and knowledge base built with MkDocs Material theme, dep
 
 ### Initial Setup
 ```bash
-make install              # Creates .venv and installs dependencies from requirements.txt
-source .venv/bin/activate # Activate venv manually after install
+make install              # Installs dependencies with uv sync (creates .venv automatically)
 ```
 
 ### Development
 ```bash
-mkdocs serve              # Run local dev server at http://127.0.0.1:8000
+uv run mkdocs serve       # Run local dev server at http://127.0.0.1:8000
 make readme               # Regenerate README.md, docs/blog/index.md, and docs/blog/tags.md
 make tags                 # Regenerate only docs/blog/tags.md
 ```
 
+Note: No need to manually activate venv - use `uv run` prefix or Makefile targets.
+
 ### Build
 ```bash
-mkdocs build              # Build with mkdocs.yml (local config)
-mkdocs build -f mkdocs.ci.yml  # Build with CI config (includes production plugins)
+uv run mkdocs build              # Build with mkdocs.yml (local config)
+uv run mkdocs build -f mkdocs.ci.yml  # Build with CI config (includes production plugins)
 ```
 
 ### Cleanup
@@ -189,7 +190,8 @@ Optional floating thumbnail images displayed on the right side of content.
 ### Configuration
 - `mkdocs.yml` - Base MkDocs configuration
 - `mkdocs.ci.yml` - CI configuration (inherits base)
-- `requirements.txt` - Python dependencies
+- `pyproject.toml` - Python dependencies (managed by uv)
+- `uv.lock` - Dependency lock file (committed for reproducible builds)
 - `Makefile` - Development commands
 - `docs/assets/css/extra.css` - Custom CSS (includes thumbnail styling)
 
