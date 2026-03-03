@@ -9,8 +9,11 @@ tags:
 ## My base Git aliases
 
 ```
+git config user.email "halyph@gmail.com"
+
 git config --global user.email "halyph@gmail.com"
 git config --global user.name "Orest Ivasiv"
+
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
