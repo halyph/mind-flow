@@ -5,7 +5,7 @@ on:
     branches: [ master ]
 
 env:
-  PYTHON_VERSION: 3.x
+  PYTHON_VERSION: 3.14
 
 jobs:
   build:
@@ -17,19 +17,21 @@ jobs:
         with:
           fetch-depth: 0  # Required for git-revision-date-localized-plugin
 
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
       - name: Set up Python runtime
         uses: actions/setup-python@v5
         with:
           python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'  # This will cache pip dependencies
 
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
+      - name: Install dependencies
+        run: uv sync
 
       - name: Build Site
         env:
           GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
-        run: mkdocs build -f mkdocs.ci.yml
+        run: uv run mkdocs build -f mkdocs.ci.yml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
