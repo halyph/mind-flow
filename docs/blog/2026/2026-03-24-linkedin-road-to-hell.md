@@ -20,9 +20,10 @@ Today I asked ChatGPT, and it led me to a *"better"* place in hell.
 >I’ve been thinking a lot about growth, ownership, and what it really means to *show up* every day—not just for your team, but for yourself.
 >
 >We often talk about outcomes, but rarely about the invisible work:
->– the late nights no one sees
->– the uncomfortable conversations
->– the moments you choose long-term impact over short-term comfort
+>
+> - the late nights no one sees
+> - the uncomfortable conversations
+> - the moments you choose long-term impact over short-term comfort
 >
 >One thing that’s become clear to me: **progress isn’t linear, but intentionality compounds.**
 >
@@ -44,17 +45,19 @@ Today I asked ChatGPT, and it led me to a *"better"* place in hell.
 >Not titles. Not roles. Not org charts. Just… people.
 >
 >It’s easy to get caught up in deliverables and deadlines, but at the end of the day, everything we >build is shaped by the people around us:
->– the ones who challenge our thinking
->– the ones who quietly support us
->– the ones who bring energy into the room (or the Slack channel)
+>
+> - the ones who challenge our thinking
+> - the ones who quietly support us
+> - the ones who bring energy into the room (or the Slack channel)
 >
 >One thing I’m learning: **you can’t separate outcomes from relationships.**
 >The strongest teams I’ve seen aren’t just aligned on goals—they’re aligned on trust.
 >
 >And trust isn’t built in big moments. It’s built in the small ones:
->– following through when it’s inconvenient
->– giving credit when no one is watching
->– listening, even when you disagree
+>
+> - following through when it’s inconvenient
+> - giving credit when no one is watching
+> - listening, even when you disagree
 >
 >We spend so much time optimizing processes, tools, and frameworks…
 >but the real multiplier is how we show up for each other.
