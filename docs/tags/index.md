@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 175 posts • 82 tags**
+**📊 176 posts • 82 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (12)](#thoughts) • [golang (10)](#golang)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (13)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="595" height="531" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="595" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="598" height="529" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="598" alt="Word Cloud">
   </object>
 </div>
 
@@ -621,8 +621,9 @@ Browse blog posts by tag.
 - 2014-10-20 - [Switching to Textmate 2](../blog/2014/2014-10-20-switching-to-textmate-2.md)
 
 <a id="thoughts"></a>
-## thoughts (12) [↑](#tags)
+## thoughts (13) [↑](#tags)
 
+- 2026-03-24 - [LinkedIn and road to hell](../blog/2026/2026-03-24-linkedin-road-to-hell.md)
 - 2026-01-23 - [No more Telegram](../blog/2026/2026-01-23-delete-telegram.md)
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](../blog/2025/2025-11-23-merge-commit-evil.md)
 - 2025-11-15 - [When Tech Stack Chaos Hits Hard](../blog/2025/2025-11-15-tech-chaos.md)
