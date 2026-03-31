@@ -2,13 +2,13 @@
 
 Browse blog posts by tag.
 
-**📊 176 posts • 82 tags**
+**📊 177 posts • 83 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (13)](#thoughts) • [golang (10)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="598" height="529" aria-label="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="598" height="531" aria-label="Word Cloud">
     <img src="./cloud.svg" width="598" alt="Word Cloud">
   </object>
 </div>
@@ -345,6 +345,11 @@ Browse blog posts by tag.
 
 - 2019-04-28 - [Scala vs Kotlin](../blog/2019/2019-04-28-scala-vs-kotlin.md)
 - 2016-06-15 - [Gradle, Groovy, Kotlin. FTW?](../blog/2016/2016-06-15-gradle-groovy-kotlin-ftw.md)
+
+<a id="kubernetes"></a>
+## kubernetes (1) [↑](#tags)
+
+- 2026-03-31 - [Automating Kubernetes ConfigMap Updates with Reloader](../blog/2026/2026-03-31-k8s-reloader.md)
 
 <a id="linux"></a>
 ## linux (3) [↑](#tags)
