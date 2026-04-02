@@ -1,7 +1,7 @@
 # LinkedIn and road to hell
 <!-- tags: thoughts -->
 
-![alt](2026-03-24-linkedin-road-to-hell/pic0.png)
+![alt](2026-03-24-linkedin-road-to-hell/pic0.jpg)
 
 ⚠️ **WARNING**: It is a rant, skip it to protect your sanity.
 
