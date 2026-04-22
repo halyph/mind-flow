@@ -15,7 +15,7 @@ I like selecting programming languages based on my subjective criteria.
 
 - 🥇 **Golang**, **Python**
 - 🥈 Java, Scala
-- 🥉 C, JavaScript
+- 🥉 C, JavaScript, Typescript
 
 Tech Radar:
 
@@ -38,7 +38,7 @@ Tech Radar:
   - ✅ Java
   - ✅ Scala
   - Groovy
-  - ☠️🇷🇺🐷🐶 Kotlin
+  - Kotlin
   - Clojure
 - System / Low-level Programming:
   - ✅ C
@@ -51,7 +51,7 @@ Tech Radar:
   - D
 - Web
   - ✅ Javascript
-  - Typescript
+  - ✅ Typescript
   - Elm
   - PureScript
   - CoffeeScript
