@@ -9,6 +9,7 @@ _Another attempt of blogging or personal knowledge base_
 
 ## 2026
 
+- 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](docs/blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2026-03-31 - [Automating Kubernetes ConfigMap Updates with Reloader](docs/blog/2026/2026-03-31-k8s-reloader.md)
 - 2026-03-24 - [LinkedIn and road to hell](docs/blog/2026/2026-03-24-linkedin-road-to-hell.md)
 - 2026-02-24 - [How to Monitor Claude Code with OpenTelemetry](docs/blog/2026/2026-02-24-claude-code-mon.md)
