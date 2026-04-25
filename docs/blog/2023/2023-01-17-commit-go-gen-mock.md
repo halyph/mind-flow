@@ -1,6 +1,8 @@
 # Golang: Do you commit your generated mocks to repo?
 <!-- tags: golang -->
 
+![thumbnail](2023-01-17-commit-go-gen-mock/pic0.jpg)
+
 I've discovered that there is no consensus about "*Committing generate mocks to the repo*". That's why I've looked around and found some discussions, pros&cons (see [References](#references)).
 
 Also there is interesting statement in the official Golang article [About the go command](https://go.dev/doc/articles/go_command):

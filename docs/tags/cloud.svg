@@ -137,44 +137,44 @@
     <text x="360.0374024178234" y="397.0353535771421" font-size="13" fill="#CC342D">linux</text>
   </a>
 
+  <a href="./#make" target="_parent">
+    <text x="163.67368060219488" y="346.7978303129708" font-size="13" fill="#DC322F">make</text>
+  </a>
+
   <a href="./#rails" target="_parent">
-    <text x="159.7736806021949" y="346.7978303129708" font-size="13" fill="#DC322F">rails</text>
+    <text x="404.5939217454296" y="163.70661334833795" font-size="13" fill="#8B5CF6">rails</text>
   </a>
 
   <a href="./#ci" target="_parent">
-    <text x="438.8099183028214" y="283.50929904603106" font-size="12" fill="#8B5CF6">ci</text>
+    <text x="438.8099183028214" y="283.50929904603106" font-size="12" fill="#10B981">ci</text>
   </a>
 
   <a href="./#computer-vision" target="_parent">
-    <text x="254.71330098730468" y="95.5986471527513" font-size="12" fill="#10B981">computer vision</text>
+    <text x="254.71330098730468" y="95.5986471527513" font-size="12" fill="#00ADD8">computer vision</text>
   </a>
 
   <a href="./#gradle" target="_parent">
-    <text x="402.4939217454296" y="163.406613348338" font-size="12" fill="#00ADD8">gradle</text>
+    <text x="124.75112355540517" y="286.5515191216156" font-size="12" fill="#F59E0B">gradle</text>
   </a>
 
   <a href="./#grails" target="_parent">
-    <text x="124.75112355540517" y="286.5515191216156" font-size="12" fill="#F59E0B">grails</text>
+    <text x="184.63059409593947" y="397.0637150984598" font-size="12" fill="#EC4899">grails</text>
   </a>
 
   <a href="./#jruby" target="_parent">
-    <text x="188.2305940959395" y="397.0637150984598" font-size="12" fill="#EC4899">jruby</text>
+    <text x="122.185054384332" y="251.01461064979196" font-size="12" fill="#6366F1">jruby</text>
   </a>
 
   <a href="./#kotlin" target="_parent">
-    <text x="118.58505438433201" y="251.01461064979196" font-size="12" fill="#6366F1">kotlin</text>
+    <text x="455.2419522942614" y="253.83077699689665" font-size="12" fill="#007396">kotlin</text>
   </a>
 
   <a href="./#machine-learning" target="_parent">
-    <text x="234.80827155318948" y="440.0429942375846" font-size="12" fill="#007396">machine learning</text>
-  </a>
-
-  <a href="./#make" target="_parent">
-    <text x="433.23964123464873" y="341.8739562021935" font-size="12" fill="#3776AB">make</text>
+    <text x="234.80827155318948" y="440.0429942375846" font-size="12" fill="#3776AB">machine learning</text>
   </a>
 
   <a href="./#mooc" target="_parent">
-    <text x="462.44195229426145" y="253.83077699689665" font-size="12" fill="#CC342D">mooc</text>
+    <text x="433.23964123464873" y="341.8739562021935" font-size="12" fill="#CC342D">mooc</text>
   </a>
 
   <a href="./#pomodoro" target="_parent">
@@ -310,11 +310,11 @@
   </a>
 
   <a href="./#otel" target="_parent">
-    <text x="497.58141639672806" y="255.28705011841424" font-size="12" fill="#00ADD8">otel</text>
+    <text x="109.2131514962305" y="156.52687008833664" font-size="12" fill="#00ADD8">otel</text>
   </a>
 
   <a href="./#podcast" target="_parent">
-    <text x="82.77374107069457" y="164.4840177823586" font-size="12" fill="#F59E0B">podcast</text>
+    <text x="435.4627157227194" y="429.8017185970004" font-size="12" fill="#F59E0B">podcast</text>
   </a>
 
   <a href="./#postgresql" target="_parent">
@@ -326,15 +326,15 @@
   </a>
 
   <a href="./#til" target="_parent">
-    <text x="432.2862422715991" y="431.88831386582456" font-size="12" fill="#007396">til</text>
+    <text x="228.5987978870685" y="469.9566295663961" font-size="12" fill="#007396">til</text>
   </a>
 
   <a href="./#uml" target="_parent">
-    <text x="228.5987978870685" y="469.9566295663961" font-size="12" fill="#3776AB">uml</text>
+    <text x="85.99128689645099" y="318.5707942595704" font-size="12" fill="#3776AB">uml</text>
   </a>
 
   <a href="./#zsh" target="_parent">
-    <text x="85.99128689645099" y="318.5707942595704" font-size="12" fill="#CC342D">zsh</text>
+    <text x="136.51406458008182" y="116.03687525393359" font-size="12" fill="#CC342D">zsh</text>
   </a>
 
 </svg>

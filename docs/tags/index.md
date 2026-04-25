@@ -384,9 +384,10 @@ Browse blog posts by tag.
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 
 <a id="make"></a>
-## make (2) [↑](#tags)
+## make (3) [↑](#tags)
 
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
+- 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](../blog/2023/2023-11-27-tools-go.md)
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="markdown"></a>
