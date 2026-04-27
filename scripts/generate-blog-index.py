@@ -19,7 +19,7 @@ README_HEADER = """# Mind~Flow
 
 [`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md) · [`tags`](docs/tags/index.md)
 
-_Another attempt of blogging or personal knowledge base_
+_Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](https://halyph.github.io/feed.xml) · [`atom`](https://halyph.github.io/feed.atom))
 <br /><br /><br />
 """
 
