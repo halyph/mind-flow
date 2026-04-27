@@ -62,6 +62,9 @@ jobs:
           uv run mkdocs build -f mkdocs.ci.yml
           echo "Build completed successfully!"
 
+      - name: Generate RSS feed
+        run: uv run python scripts/generate-rss.py
+
       - name: Check build output
         run: |
           echo "Checking site directory..."
