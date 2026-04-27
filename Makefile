@@ -1,4 +1,4 @@
-.PHONY: help install clean serve readme tags
+.PHONY: help install clean serve readme tags rss build
 
 all: help
 
@@ -30,17 +30,23 @@ install: ## Install dependencies and create venv
 	@echo "✓ Dependencies installed in .venv/"
 	@echo "Note: No need to manually activate venv - use 'uv run' or Makefile targets"
 
-clean: ## Remove .venv directory
-	@echo "Cleaning .venv..."
-	@rm -rf .venv
+clean: ## Remove .venv and site directories
+	@echo "Cleaning .venv and site directories..."
+	@rm -rf .venv site
 
 ## Development environment:
 
 serve: ## Run mkdocs server
 	uv run mkdocs serve --livereload
 
+build: ## Build site with CI config
+	uv run mkdocs build -f mkdocs.ci.yml
+
 tags: ## Generate tags index
 	uv run python scripts/generate-tags.py
 
 readme: tags ## Generate blog index and tags
 	uv run python scripts/generate-blog-index.py
+
+rss: build ## Generate RSS and Atom feeds (requires built site)
+	uv run python scripts/generate-rss.py
