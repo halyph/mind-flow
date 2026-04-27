@@ -136,6 +136,17 @@ def generate_feeds(posts):
     fg.subtitle(SITE_DESCRIPTION)
     fg.language(LANGUAGE)
 
+    # Add favicon/logo for feed readers
+    fg.logo(SITE_URL + 'assets/images/logo.png')
+    fg.icon(SITE_URL + 'assets/images/favicon.ico')
+
+    # Add image for RSS feed
+    fg.image(
+        url=SITE_URL + 'assets/images/logo.png',
+        title=SITE_NAME,
+        link=SITE_URL
+    )
+
     # Add entries
     for post in sorted_posts:
         fe = fg.add_entry()
