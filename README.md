@@ -7,7 +7,7 @@
 _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](https://halyph.github.io/feed.xml) · [`atom`](https://halyph.github.io/feed.atom))
 <br /><br /><br />
 
-## 2026
+## 2026 · 9
 
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](docs/blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2026-03-31 - [Automating Kubernetes ConfigMap Updates with Reloader](docs/blog/2026/2026-03-31-k8s-reloader.md)
@@ -19,7 +19,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2026-01-23 - [No more Telegram](docs/blog/2026/2026-01-23-delete-telegram.md)
 - 2026-01-16 - [A Boring Pomodoro Timer](docs/blog/2026/2026-01-16-pomodoro-timer.md)
 
-## 2025
+## 2025 · 12
 
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](docs/blog/2025/2025-11-23-merge-commit-evil.md)
 - 2025-11-15 - [When Tech Stack Chaos Hits Hard](docs/blog/2025/2025-11-15-tech-chaos.md)
@@ -34,13 +34,13 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2025-04-24 - [TIOBE Index for April 2025 hit the floor](docs/blog/2025/2025-04-24-tiobe.md)
 - 2025-04-11 - [Reflection on the Books reading](docs/blog/2025/2025-04-11-books.md)
 
-## 2024
+## 2024 · 3
 
 - 2024-12-22 - [Paradox of Choice in Ruby](docs/blog/2024/2024-12-22-paradox-of-choice.md)
 - 2024-12-01 - [Languages popularity by SDKs](docs/blog/2024/2024-12-01-lang-pop-by-sdk.md)
 - 2024-08-14 - [Everybody Python, FTW?](docs/blog/2024/2024-08-14-rant-python.md)
 
-## 2023
+## 2023 · 10
 
 - 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](docs/blog/2023/2023-11-27-tools-go.md)
 - 2023-11-19 - [Social Networks are time killers](docs/blog/2023/2023-11-19-social-networks.md)
@@ -53,7 +53,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2023-01-17 - [Golang: Do you commit your generated mocks to repo?](docs/blog/2023/2023-01-17-commit-go-gen-mock.md)
 - 2023-01-01 - [Personal Techradar for Programming Languages - 2023 H1](docs/blog/2023/2023-01-01-personal-tech-radar.md)
 
-## 2022
+## 2022 · 6
 
 - 2022-12-23 - [Blog, Digital Garden, Wiki. FTW?](docs/blog/2022/2022-12-23-digital-garden-or.md)
 - 2022-12-20 - [Python is the second best language for anything](docs/blog/2022/2022-12-20-py_2nd_best_language_for_anything.md)
@@ -62,7 +62,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2022-09-09 - [Lightbend is Changing the License for Akka](docs/blog/2022/2022-09-09-akka-license.md)
 - 2022-08-20 - [Rethinking Bloging](docs/blog/2022/2022-08-20-rethinking-bloging.md)
 
-## 2021
+## 2021 · 5
 
 - 2021-11-22 - [`base64` encoding/decoding on MacOS](docs/blog/2021/2021-11-22-base64-macos.md)
 - 2021-05-20 - [Haskell: Development Environment Setup](docs/blog/2021/2021-05-20-haskell-dev-setup.md)
@@ -70,12 +70,12 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2021-04-05 - [How to remove image background color using JVM?](docs/blog/2021/2021-04-05-remove-bg.md)
 - 2021-02-07 - [Thoughts about Audiobooks](docs/blog/2021/2021-02-07-audiobooks.md)
 
-## 2020
+## 2020 · 2
 
 - 2020-12-30 - [Ruby 3 and static typing](docs/blog/2020/2020-12-30-ruby-3.md)
 - 2020-08-25 - [Personal Techradar for Programming Languages - 2020 H2](docs/blog/2020/2020-08-25-personal-tech-radar.md)
 
-## 2019
+## 2019 · 16
 
 - 2019-09-30 - [Python Bad Practices](docs/blog/2019/2019-09-30-python-bad-practices.md)
 - 2019-09-27 - [Design Patterns in Scala/FP Java](docs/blog/2019/2019-09-27-gof-in-scala.md)
@@ -94,7 +94,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](docs/blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 - 2019-01-13 - [Top "Algorithms and Data Structures" Books](docs/blog/2019/2019-01-13-alg-and-ds-books.md)
 
-## 2018
+## 2018 · 13
 
 - 2018-12-31 - [Thoughts about Blogging](docs/blog/2018/2018-12-31-about-blogging.md)
 - 2018-12-30 - [Functional programming in Haskell - Part 1](docs/blog/2018/2018-12-30-fp-in-haskell-part1.md)
@@ -110,12 +110,12 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2018-04-05 - [Programming Quizzes](docs/blog/2018/2018-04-05-programmin-quizzes.md)
 - 2018-03-15 - [REST API Guidelines](docs/blog/2018/2018-03-15-rest-api-guidelines.md)
 
-## 2017
+## 2017 · 2
 
 - 2017-11-05 - [My Favorite Podcasts](docs/blog/2017/2017-11-05-my-favorite-podcasts.md)
 - 2017-10-31 - [Reflection about the next main scripting language](docs/blog/2017/2017-10-31-reflection-about-the-main-scripting-language.md)
 
-## 2016
+## 2016 · 10
 
 - 2016-12-02 - [Scala for Ruby Developers](docs/blog/2016/2016-12-02-scala-for-ruby-developers.md)
 - 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](docs/blog/2016/2016-12-01-scala-for-python-developers.md)
@@ -128,7 +128,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2016-05-22 - [JEEConf - Kyiv, 2016 - Report](docs/blog/2016/2016-05-22-jeeconf-kiev.md)
 - 2016-05-14 - [The state of Groovy and other JVM Languages](docs/blog/2016/2016-05-14-the-state-of-groovy-and-other-jvm-languages.md)
 
-## 2015
+## 2015 · 18
 
 - 2015-11-08 - [Java Day - Kiev, 2015 - Report](docs/blog/2015/2015-11-08-java-day-kiev-2015-report.md)
 - 2015-10-20 - [How to run Netflix Eureka via Webapp Runner?](docs/blog/2015/2015-10-20-using-webrunner.md)
@@ -149,7 +149,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2015-02-02 - [Scripting in Scala](docs/blog/2015/2015-02-02-scripting-in-scala.md)
 - 2015-01-22 - [How to Use Embedded H2 with web Console?](docs/blog/2015/2015-01-22-how-to-use-embedded-h2-with-h2-console.md)
 
-## 2014
+## 2014 · 11
 
 - 2014-11-16 - [How to Fix Textmate OSX Yosemite ruby 1.8 issues?](docs/blog/2014/2014-11-16-how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues.md)
 - 2014-10-20 - [Switching to Textmate 2](docs/blog/2014/2014-10-20-switching-to-textmate-2.md)
@@ -163,7 +163,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2014-03-17 - [Review: Making Java Groovy](docs/blog/2014/2014-03-17-review-making-java-groovy.md)
 - 2014-01-26 - [About Learning New Programming Languages](docs/blog/2014/2014-01-26-about-learning-new-programming-languages.md)
 
-## 2013
+## 2013 · 19
 
 - 2013-12-03 - [List of Real Spring-Based Projects](docs/blog/2013/2013-12-03-list-of-real-spring-based-projects.md)
 - 2013-10-21 - [REST with JAX-RS: Part 3 - Embedded Jetty](docs/blog/2013/2013-10-21-rest-with-jax-rs-part-3-embedded-jetty.md)
@@ -185,7 +185,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](docs/blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2013-01-21 - [Auto install required Ruby gems via script](docs/blog/2013/2013-01-21-auto-install-required-ruby-gems-via.md)
 
-## 2012
+## 2012 · 16
 
 - 2012-12-31 - [Jenkins enhancements without plugins](docs/blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 - 2012-12-12 - [Groovy or JRuby for Java developer](docs/blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
@@ -204,7 +204,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2012-02-13 - [UML Sketching Tools](docs/blog/2012/2012-02-13-uml-sketching-tools.md)
 - 2012-01-21 - [Quick way to join array of String in Java without third party libraries](docs/blog/2012/2012-01-21-quick-way-to-join-array-of-string.md)
 
-## 2011
+## 2011 · 18
 
 - 2011-12-25 - [How to decide which technology hype is worth personal investments?](docs/blog/2011/2011-12-25-how-to-decide-which-technology-hype-is.md)
 - 2011-11-03 - [How to run ANT script from .BAT/.CMD?](docs/blog/2011/2011-11-03-how-to-run-ant-script-from-batcmd.md)
@@ -225,7 +225,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2011-01-12 - [Should I Learn Lisp?](docs/blog/2011/2011-01-12-should-i-learn-lisp.md)
 - 2011-01-10 - [Review: How To Become A Hacker?](docs/blog/2011/2011-01-10-review-how-to-become-hacker.md)
 
-## 2010
+## 2010 · 5
 
 - 2010-12-15 - [Java Build Tools and Future](docs/blog/2010/2010-12-15-java-build-tools-and-future.md)
 - 2010-10-31 - [Why Should I Attend Conferences?](docs/blog/2010/2010-10-31-why-should-i-attend-conferences.md)
@@ -233,7 +233,7 @@ _Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](http
 - 2010-04-22 - [How to setup Ruby/Rails development environment, Part 2 - E-TextEditor](docs/blog/2010/2010-04-22-how-to-setup-rubyrails-development.md)
 - 2010-04-16 - [How to setup Ruby/Rails development environment, Part 1 - Ubuntu VM](docs/blog/2010/2010-04-16-how-to-setup-rubyrails-development.md)
 
-## 2009
+## 2009 · 3
 
 - 2009-12-27 - [Why I've chosen Ruby as main scripting language for my toolbox](docs/blog/2009/2009-12-27-why-i-chosen-ruby-as-main-scripting.md)
 - 2009-11-18 - [*nix-like environments for Windows](docs/blog/2009/2009-11-18-nix-like-environments-for-windows.md)

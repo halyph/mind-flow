@@ -80,7 +80,7 @@ def write_index_to_file(file, keep_prefix = True):
         post_by_year[year].append(line)
 
     for year in sorted(post_by_year.keys(), reverse = True):
-        print(f"\n## {year}\n", file=file)
+        print(f"\n## {year} · {len(post_by_year[year])}\n", file=file)
         for year_line in sorted(post_by_year[year], reverse = True):
             print(f"- {year_line}", file=file)
 
