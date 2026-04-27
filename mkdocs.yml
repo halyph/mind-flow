@@ -84,6 +84,13 @@ extra:
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/solid/square-rss
+      link: /feed.xml
+      name: RSS Feed
+    - icon: fontawesome/solid/rss
+      link: /feed.atom
+      name: Atom Feed
 
 extra_css:
   - assets/css/mermaid.css
