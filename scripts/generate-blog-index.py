@@ -13,13 +13,13 @@ This script:
 import glob
 from collections import defaultdict
 
-README_HEADER = """# Mind~Flow
+README_HEADER = """# mind<i>FLOW</i>
 
 <img src="docs/assets/images/logo.png" align="right"/>
 
-[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md) · [`tags`](docs/tags/index.md)
+[`linkedin`](https://www.linkedin.com/in/halyph/) · [`bookshelf`](docs/bookshelf.md) · [`tags`](docs/tags/index.md)               ⟨ [`rss`](https://halyph.github.io/feed.xml) ✧ [`atom`](https://halyph.github.io/feed.atom) ⟩
 
-_Another attempt of blogging or personal knowledge base_ (**Feed:** [`rss`](https://halyph.github.io/feed.xml) · [`atom`](https://halyph.github.io/feed.atom))
+_Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 """
 
