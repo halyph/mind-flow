@@ -50,6 +50,25 @@ td {
 
 /* Githubs Tables  end */
 
+/* Italicize "FLOW" in site name header */
+.md-header__title .md-header__topic .md-ellipsis {
+  font-size: 0;
+}
+
+.md-header__title .md-header__topic .md-ellipsis::before {
+  content: "mind";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.md-header__title .md-header__topic .md-ellipsis::after {
+  content: "FLOW";
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Darker blog titles */
 .md-typeset h1 {
   color: #000 !important;

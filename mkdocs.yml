@@ -1,5 +1,5 @@
 # Project information
-site_name: mind<i>FLOW</i>
+site_name: mindFLOW
 site_url: https://halyph.github.io/
 site_author: Orest Ivasiv 
 site_description: >-
@@ -19,7 +19,7 @@ theme:
 
   font:
     text: Rubik
-    code: Rubik Mono
+    code: Ubuntu Mono
 
   # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   palette:
