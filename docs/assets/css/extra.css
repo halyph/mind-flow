@@ -50,11 +50,20 @@ td {
 
 /* Githubs Tables  end */
 
+/* Darker blog titles */
+.md-typeset h1 {
+  color: #000 !important;
+}
+
+[data-md-color-scheme='slate'] .md-typeset h1 {
+  color: #fff !important;
+}
+
 /* Published date styling */
 .md-content__date {
   margin-top: -2rem;
   margin-bottom: 0rem;
-  color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
   font-size: 0.65rem;
 }
 
@@ -64,11 +73,11 @@ td {
 
 /* Tags styling - inline with date */
 .md-tags {
-  color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color);
 }
 
 .md-tags a {
-  color: var(--md-default-fg-color--light);
+  color: var(--md-default-fg-color);
   text-decoration: none;
 }
 
@@ -78,11 +87,11 @@ td {
 
 /* Dark mode tags */
 [data-md-color-scheme='slate'] .md-tags {
-  color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
 }
 
 [data-md-color-scheme='slate'] .md-tags a {
-  color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
 }
 
 /* Inline floating thumbnail images (right-aligned)
