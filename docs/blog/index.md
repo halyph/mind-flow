@@ -9,8 +9,9 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
-## 2026 · 9
+## 2026 · 10
 
+- 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](2026/2026-04-23-standardizing-go-build-systems.md)
 - 2026-03-31 - [Automating Kubernetes ConfigMap Updates with Reloader](2026/2026-03-31-k8s-reloader.md)
 - 2026-03-24 - [LinkedIn and road to hell](2026/2026-03-24-linkedin-road-to-hell.md)

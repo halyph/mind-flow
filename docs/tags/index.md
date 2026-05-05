@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 178 posts • 83 tags**
+**📊 179 posts • 83 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (13)](#thoughts) • [golang (11)](#golang)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (13)](#thoughts) • [golang (12)](#golang)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="590" height="529" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="590" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="591" height="537" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="591" alt="Word Cloud">
   </object>
 </div>
 
@@ -194,8 +194,9 @@ Browse blog posts by tag.
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (11) [↑](#tags)
+## golang (12) [↑](#tags)
 
+- 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](../blog/2025/2025-08-23-premailer.md)
 - 2024-12-01 - [Languages popularity by SDKs](../blog/2024/2024-12-01-lang-pop-by-sdk.md)
@@ -384,8 +385,9 @@ Browse blog posts by tag.
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 
 <a id="make"></a>
-## make (3) [↑](#tags)
+## make (4) [↑](#tags)
 
+- 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](../blog/2023/2023-11-27-tools-go.md)
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)

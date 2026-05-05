@@ -19,7 +19,7 @@ theme:
 
   font:
     text: Rubik
-    code: Ubuntu Mono
+    code: Rubik Mono
 
   # See https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   palette:
