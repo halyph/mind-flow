@@ -29,7 +29,6 @@ SITE_URL = 'https://halyph.github.io/'
 SITE_DESCRIPTION = 'Blog and/or personal knowledge base'
 SITE_AUTHOR = 'Orest Ivasiv'
 SITE_AUTHOR_EMAIL = 'halyph@gmail.com'
-REPO_URL = 'https://github.com/halyph/mind-flow'
 LANGUAGE = 'en'
 MAX_ITEMS = 20  # Limit feed to most recent posts
 
@@ -39,7 +38,6 @@ def list_blog_files():
     files = glob.glob(PREFIX + '**/*.md', recursive=True)
     return [f for f in files
             if '/' in f
-            and not f.startswith('misc')
             and not any(f.endswith(excluded) for excluded in EXCLUDE_FILES)]
 
 
@@ -122,9 +120,13 @@ def generate_feeds(posts):
 
     Args:
         posts: List of post metadata dicts
+
+    Returns:
+        FeedGenerator: Configured feed generator (caller sets self-link before writing)
     """
-    # Sort posts by date (newest first) and limit
-    sorted_posts = sorted(posts, key=lambda p: p['datetime'], reverse=True)[:MAX_ITEMS]
+    # feedgen reverses insertion order for both RSS and Atom output.
+    # Sort oldest-first, take last MAX_ITEMS → feedgen reverses → newest-first output
+    sorted_posts = sorted(posts, key=lambda p: p['datetime'])[-MAX_ITEMS:]
 
     # Initialize feed generator
     fg = FeedGenerator()
@@ -132,7 +134,6 @@ def generate_feeds(posts):
     fg.title(SITE_NAME)
     fg.author({'name': SITE_AUTHOR, 'email': SITE_AUTHOR_EMAIL})
     fg.link(href=SITE_URL, rel='alternate')
-    fg.link(href=SITE_URL + ATOM_FILE, rel='self')
     fg.subtitle(SITE_DESCRIPTION)
     fg.language(LANGUAGE)
 
@@ -167,8 +168,35 @@ def generate_feeds(posts):
     return fg
 
 
+def write_feed(posts, site_path, feed_file, feed_type):
+    """Generate and write a feed file.
+
+    Args:
+        posts: List of post metadata dicts
+        site_path: Path to site directory
+        feed_file: Feed filename (e.g., 'feed.xml')
+        feed_type: 'rss' or 'atom'
+    """
+    fg = generate_feeds(posts)
+    fg.link(href=SITE_URL + feed_file, rel='self')
+    file_path = site_path / feed_file
+
+    try:
+        if feed_type == 'rss':
+            fg.rss_file(str(file_path), pretty=True)
+        else:
+            fg.atom_file(str(file_path), pretty=True)
+        print(f"Generated {file_path} with {min(len(posts), MAX_ITEMS)} items")
+    except Exception as e:
+        print(f"Error writing {feed_type.upper()} feed: {e}")
+        raise
+
+
 def main():
     """Main entry point."""
+    # Validate configuration
+    assert SITE_URL.endswith('/'), "SITE_URL must end with /"
+
     # Collect all blog posts
     posts = []
     for file_path in list_blog_files():
@@ -178,22 +206,18 @@ def main():
 
     print(f"Found {len(posts)} blog posts")
 
-    # Generate feeds
-    fg = generate_feeds(posts)
+    # Validate we have posts to process
+    if not posts:
+        print("Warning: No blog posts found, skipping feed generation")
+        return
 
     # Ensure site directory exists
     site_path = Path(SITE_DIR)
     site_path.mkdir(exist_ok=True)
 
-    # Write RSS feed
-    rss_file_path = site_path / RSS_FILE
-    fg.rss_file(str(rss_file_path), pretty=True)
-    print(f"Generated {rss_file_path} with {min(len(posts), MAX_ITEMS)} items")
-
-    # Write Atom feed
-    atom_file_path = site_path / ATOM_FILE
-    fg.atom_file(str(atom_file_path), pretty=True)
-    print(f"Generated {atom_file_path} with {min(len(posts), MAX_ITEMS)} items")
+    # Generate feeds
+    write_feed(posts, site_path, RSS_FILE, 'rss')
+    write_feed(posts, site_path, ATOM_FILE, 'atom')
 
 
 if __name__ == "__main__":
