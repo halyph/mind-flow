@@ -3,7 +3,7 @@
 
 ![thumbnail](2026-05-08-go-middleware/pic0.jpg)
 
-Building reliable HTTP clients means handling failures gracefully. This post shows how a simple retry middleware evolved into a robust three-layer system: Cache, Retry, and RateLimitRetry.
+Building reliable HTTP clients means handling failures gracefully. This post shows how a simple retry middleware evolved into a robust three-layer system: *Cache*, *Retry*, and *RateLimitRetry*.
 
 ## The Starting Point: Basic Retry
 
@@ -28,6 +28,7 @@ func createHTTPClient(tracer trace.Tracer, timeout time.Duration) *http.Client {
 ```
 
 This handles transient failures (5xx errors) but has limitations:
+
 - Every request hits the external API
 - Rate limits (429) get treated like any other retry
 - No awareness of `Retry-After` headers
