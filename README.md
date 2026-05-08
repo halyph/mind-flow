@@ -7,8 +7,9 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
-## 2026 · 10
+## 2026 · 11
 
+- 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](docs/blog/2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](docs/blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](docs/blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2026-03-31 - [Automating Kubernetes ConfigMap Updates with Reloader](docs/blog/2026/2026-03-31-k8s-reloader.md)

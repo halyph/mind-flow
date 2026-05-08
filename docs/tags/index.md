@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 179 posts • 83 tags**
+**📊 180 posts • 83 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [thoughts (13)](#thoughts) • [golang (12)](#golang)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [golang (13)](#golang) • [thoughts (13)](#thoughts)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="591" height="537" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="591" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="586" height="537" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="586" alt="Word Cloud">
   </object>
 </div>
 
@@ -194,8 +194,9 @@ Browse blog posts by tag.
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (12) [↑](#tags)
+## golang (13) [↑](#tags)
 
+- 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](../blog/2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2025-08-23 - [Sending Styled HTML Emails with Go: Fixing Gmail’s CSS Limitations](../blog/2025/2025-08-23-premailer.md)
