@@ -18,37 +18,55 @@
 */
 
 
-/* Githubs Tables */
-/* Copied from https://github.com/fire1ce/3os.org/blob/main/theme/css/extra.css */
-th,
-td {
-  border: 1px solid var(--md-typeset-table-color);
-  border-spacing: 0;
-  border-bottom: none;
-  border-left: none;
-  border-top: none;
-}
+/* GitHub-style Tables */
+/* Based on https://github.com/fire1ce/3os.org/blob/main/theme/css/extra.css */
 
+/* Table border collapse */
 .md-typeset__table table:not([class]) {
-  border-right: none;
+  border-collapse: collapse;
+  border: none;
 }
 
-.md-typeset__table table:not([class]) td,
-.md-typeset__table table:not([class]) th {
+/* Reset all cell borders, keep only bottom - light mode */
+.md-typeset__table table:not([class]) th,
+.md-typeset__table table:not([class]) td {
+  border: none !important;
+  border-bottom: 1px solid #c0c0c0 !important;
   padding: 9px;
 }
 
-/* light mode alternating table bg colors */
+/* Header bottom border (thicker) - light mode */
+.md-typeset__table table:not([class]) thead tr {
+  border-bottom: 2px solid #c0c0c0;
+}
+
+/* Dark mode borders */
+[data-md-color-scheme='slate'] .md-typeset__table table:not([class]) th,
+[data-md-color-scheme='slate'] .md-typeset__table table:not([class]) td {
+  border-bottom: 1px solid #505050 !important;
+}
+
+[data-md-color-scheme='slate'] .md-typeset__table table:not([class]) thead tr {
+  border-bottom: 2px solid #505050;
+}
+
+/* Remove bottom border on last row */
+.md-typeset__table table:not([class]) tbody tr:last-child th,
+.md-typeset__table table:not([class]) tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* Alternating row background - light mode */
 .md-typeset__table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
 
-/* dark mode alternating table bg colors */
+/* Alternating row background - dark mode */
 [data-md-color-scheme='slate'] .md-typeset__table tr:nth-child(2n) {
   background-color: hsla(var(--md-hue), 25%, 25%, 1);
 }
 
-/* Githubs Tables  end */
+/* GitHub-style Tables end */
 
 /* Italicize "FLOW" in site name header */
 .md-header__title .md-header__topic .md-ellipsis {
