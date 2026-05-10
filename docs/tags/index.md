@@ -2,9 +2,9 @@
 
 Browse blog posts by tag.
 
-**📊 180 posts • 83 tags**
+**📊 181 posts • 83 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [golang (13)](#golang) • [thoughts (13)](#thoughts)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [golang (14)](#golang) • [thoughts (14)](#thoughts)
 
 
 <div style="text-align: center;">
@@ -194,8 +194,9 @@ Browse blog posts by tag.
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (13) [↑](#tags)
+## golang (14) [↑](#tags)
 
+- 2026-05-10 - [Default Config Values are Actually Hidden Landmines](../blog/2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](../blog/2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
@@ -633,8 +634,9 @@ Browse blog posts by tag.
 - 2014-10-20 - [Switching to Textmate 2](../blog/2014/2014-10-20-switching-to-textmate-2.md)
 
 <a id="thoughts"></a>
-## thoughts (13) [↑](#tags)
+## thoughts (14) [↑](#tags)
 
+- 2026-05-10 - [Default Config Values are Actually Hidden Landmines](../blog/2026/2026-05-10-default-config-vals.md)
 - 2026-03-24 - [LinkedIn and road to hell](../blog/2026/2026-03-24-linkedin-road-to-hell.md)
 - 2026-01-23 - [No more Telegram](../blog/2026/2026-01-23-delete-telegram.md)
 - 2025-11-23 - [The Problem with Merge Commits in Trunk-Based Development](../blog/2025/2025-11-23-merge-commit-evil.md)

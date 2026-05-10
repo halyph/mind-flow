@@ -9,8 +9,9 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
-## 2026 · 11
+## 2026 · 12
 
+- 2026-05-10 - [Default Config Values are Actually Hidden Landmines](2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](2026/2026-04-23-standardizing-go-build-systems.md)
