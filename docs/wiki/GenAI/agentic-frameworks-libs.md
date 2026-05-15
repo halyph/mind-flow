@@ -1,58 +1,63 @@
-# 🧠 AI Agentic Frameworks & Libraries
+# 🧠 AI Agent Frameworks & Coding Agents
 
-This page collects the most relevant **agentic frameworks** across **JVM**, **Python**, and **Go** ecosystems — useful for building LLM-powered coding assistants, multi-agent systems, and autonomous workflows.
+This page collects the most relevant **agentic frameworks** across **Python**, **JavaScript/TypeScript**, **Go**, and **JVM** ecosystems — useful for building LLM-powered coding assistants, multi-agent systems, and autonomous workflows.
 
-##  Agentic Frameworks
+## Agent Frameworks
 
-### ☕ JVM (Java / Kotlin)
+### Python
 
-| Framework                                                             | Description / Highlights                                                                                                       | Suitable for Coding Agent? | GitHub Stars |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------- | ------------- |
-| **[LangChain4j](https://github.com/langchain4j/langchain4j)**         | Java/Kotlin implementation of LangChain. Provides chains, tools, retrievers, memory, and function calling.                     | ✅ Excellent                | 9.4k          |
-| **[Spring AI](https://github.com/spring-projects/spring-ai)**         | Official Spring framework for integrating LLMs into Java apps. Supports OpenAI, Anthropic, Mistral, Ollama, and vector stores. | ✅ Excellent                | 7k            |
-| **[Embabel](https://github.com/embabel/embabel-agent)**               | JVM-native agentic flows framework (Java/Kotlin) for authoring agent workflows with goals, actions, planning.                  | ✅ Excellent                | 2.8k          |
-| **[Agent Development Kit (ADK)](https://github.com/google/adk-java)** | *Google*’s code-first agent framework for Java (and Python). Multi-agent orchestration, tools, workflow definitions.           | ✅ Excellent                | 773           |
-| **[Koog](https://github.com/JetBrains/koog)**                         | Koog is a Kotlin-based framework designed to build and run AI agents entirely in idiomatic Kotlin.                             |                            | 3.3k          |
+| Framework | Description / Highlights | License | GitHub Stars |
+| ----------| ------------------------ | ------- | ------------ |
+| **[LangChain](https://github.com/langchain-ai/langchain)** | Modular LLM framework (chains, tools, memory, planners). The agent engineering platform. | MIT | 137k |
+| ~~**[AutoGen (Microsoft)](https://github.com/microsoft/autogen)**~~ | ~~Multi-agent message-passing framework.~~ ⚠️ Now in **maintenance mode** — new projects should use [Microsoft Agent Framework](https://github.com/microsoft/agent-framework). | MIT | ~~58.1k~~ |
+| **[CrewAI](https://github.com/crewAIInc/crewAI)** | Multi-agent orchestration with roles and collaboration. Standalone, no LangChain dependency. | MIT | 51.5k |
+| **[LlamaIndex](https://github.com/run-llama/llama_index)** | Context & retrieval-first agentic framework, integrates with tools and chat. | MIT | 49.4k |
+| **[Aider](https://github.com/Aider-AI/aider)** | CLI coding agent editing repos using GPT/Claude + git diffs. | Apache-2.0 | 44.8k |
+| **[LangGraph](https://github.com/langchain-ai/langgraph)** | Stateful graph-based agent orchestration. Durable execution, human-in-the-loop. | MIT | 32.1k |
+| **[smolagents](https://github.com/huggingface/smolagents)** | HuggingFace's minimal code-first agent library. `CodeAgent` writes actions as Python, runs in sandboxed envs (E2B, Modal, Docker). | Apache-2.0 | 27.3k |
+| **[OpenAI Agents SDK](https://github.com/openai/openai-agents-python)** | Official SDK for building multi-step reasoning agents with tool calling, memory, and loops. | MIT | 26.3k |
+| **[Google ADK Python](https://github.com/google/adk-python)** | Google’s code-first Python agent framework. Multi-agent orchestration, evals, deployment. Gemini-optimized, model-agnostic. | Apache-2.0 | 19.6k |
+| **[PydanticAI](https://github.com/pydantic/pydantic-ai)** | FastAPI-inspired agent framework by the Pydantic team. Fully type-safe, model-agnostic, with dependency injection and graph support. | MIT | 17.1k |
+| **[Anthropic APIs](https://docs.anthropic.com/)** | Native Claude agent capabilities — tool use + computer use. | Proprietary | (not applicable) |
 
-### 🐍 Python
+### JavaScript / TypeScript (JS/TS)
 
-| Framework                                                               | Description / Highlights                                                                    | Suitable for Coding Agent?      | GitHub Stars          |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------- | ---------------------- |
-| **[OpenAI Agents SDK](https://github.com/openai/openai-agents-python)** | Official SDK for building multi-step reasoning agents with tool calling, memory, and loops. | ✅ Excellent                     | (stars not found)      |
-| **[Anthropic APIs](https://docs.anthropic.com/)**                       | Native Claude agent capabilities — tool use + computer use.                                 | ✅ Excellent low-level API layer | (stars not applicable) |
-| **[LangChain](https://python.langchain.com/)**                          | Modular LLM framework (chains, tools, memory, planners).                                    | ✅ Excellent                     | (stars not found)      |
-| **[CrewAI](https://github.com/joaomdmoura/crewAI)**                     | Multi-agent orchestration with roles and collaboration.                                     | ✅ Excellent                     | (stars not found)      |
-| **[AutoGen (Microsoft)](https://github.com/microsoft/autogen)**         | Multi-agent message-passing framework (Dev, Reviewer, Tester roles).                        | ✅ Excellent                     | (stars not found)      |
-| **[LlamaIndex](https://gpt-index.readthedocs.io/)**                     | Context & retrieval-first agentic framework, integrates with tools and chat.                | ⚙️ Good                         | (stars not found)      |
-| **[Aider](https://github.com/Aider-AI/aider)**                          | CLI coding agent editing repos using GPT/Claude + git diffs.                                | ✅ Excellent                     | (stars not found)      |
+| Framework | Description / Highlights | License | GitHub Stars |
+| --------- | ------------------------ | ------- | ------------ |
+| **[Vercel AI SDK](https://github.com/vercel/ai)** | Provider-agnostic TypeScript SDK from the Next.js team. Streaming UI, structured outputs, agentic loops. | Apache-2.0 | 24.2k |
+| **[Mastra](https://github.com/mastra-ai/mastra)** | TypeScript-native agent framework by the Gatsby team. Agents, graph-based workflows, RAG, evals, human-in-the-loop, MCP server authoring, and observability out of the box. | Apache-2.0 | 23.9k |
+| **[ElizaOS](https://github.com/elizaOS/eliza)** | Multi-agent runtime with rich plugin ecosystem. Built for social/conversational agents. | MIT | 18.4k |
+| **[LangChain.js](https://github.com/langchain-ai/langchainjs)** | JS/TS agent platform. Chains, tools, memory, retrievers. Runs anywhere JS runs. | MIT | 17.7k |
+| **[OpenAI Agents SDK JS](https://github.com/openai/openai-agents-js)** | Official OpenAI TypeScript SDK. Agents, handoffs, guardrails, tracing, voice agents. | MIT | 3k |
+| **[LangGraph.js](https://github.com/langchain-ai/langgraphjs)** | Low-level stateful agent orchestration for TypeScript. Graph-based workflows, human-in-the-loop, long-term memory. JS counterpart to Python LangGraph. | MIT | 2.9k |
 
-### 🦫 Go (Golang)
+### Go (Golang)
 
-| Framework / Project                                             | Description / Highlights                                                                                      | Suitable for Coding Agent? | GitHub Stars    |
-| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------------- |
-| **[Agent SDK Go](https://github.com/Ingenimax/agent-sdk-go)**   | Full-featured Go SDK for agents: multi-LLM (OpenAI, Anthropic, Gemini), tool integration, structured outputs. | ✅ Excellent                | ~278              |
-| **[Plandex](https://github.com/plandex-ai/plandex)**            | Go-based **coding agent** for large codebases; supports diffs, sandboxed edits, and multiple model backends.  | ✅ Excellent                | (stars not found) |
-| **[Go-Calque](https://github.com/calque‐ai/go-calque)**         | Idiomatic Go agent framework: streaming-first, supports LLMs, tools, memory, concurrency.                     | ✅ Excellent                | (stars not found) |
-| **[AgentKit](https://agentkit.tech/docs/intro)**                | Toolkit for LLM agents in Go: abstracts providers, manages conversations, tools, streaming.                   | ✅ Good                     | (stars not found) |
-| **[Goated Agents](https://github.com/bcanfield/goated-agents)** | Chain-of-thought and tool orchestration in Go, lightweight and extensible.                                    | ⚙️ Good                    | (stars not found) |
-| **[Go OpenAI SDK](https://github.com/sashabaranov/go-openai)**  | Popular Go client for OpenAI APIs with tool-calling and streaming; good base for custom agents.               | ⚙️ Good foundation         | (stars not found) |
+| Framework | Description / Highlights | License | GitHub Stars |
+| --------- | ------------------------ | ------- | ------------ |
+| **[Go OpenAI SDK](https://github.com/sashabaranov/go-openai)** | Popular Go client for OpenAI APIs — chat, completions, tools, streaming, DALL·E, Whisper. Good foundation for building custom Go agents. | MIT | 10.7k |
+| **[LangChain Go](https://github.com/tmc/langchaingo)** | Go implementation of LangChain. Chains, agents, tools, memory, retrievers, and 20+ LLM provider integrations. | MIT | 9.2k |
+| **[Genkit Go](https://github.com/genkit-ai/genkit)** | Google’s production-ready Go AI framework. Flows, tool calling, RAG, structured outputs, multi-provider. | Apache-2.0 | 5.9k |
 
-### ⚡ Quick Comparison Summary
+### JVM (Java / Kotlin)
 
-| Language              | Best Mature Frameworks                        | Learning Curve   | Ideal Use Case                                                                | Ecosystem Maturity    |
-| --------------------- | --------------------------------------------- | ---------------- | ----------------------------------------------------------------------------- | --------------------- |
-| **Python**            | LangChain, CrewAI, AutoGen, OpenAI Agents SDK | 🟢 Easy → Medium | Building sophisticated multi-tool or multi-agent coding assistants            | 🟢 Very Mature        |
-| **JVM (Java/Kotlin)** | LangChain4j, Spring AI, Embabel, ADK, Koog    | 🟠 Medium → Hard | Enterprise or backend AI services; integrating AI into Spring or Quarkus apps | 🟠 Growing Fast       |
-| **Go (Golang)**       | Go-Calque, Agent SDK Go, Plandex              | 🟢 Easy → Medium | CLI-based or service-oriented code assistants; high performance tools         | 🟡 Emerging but solid |
+| Framework | Description / Highlights | License | GitHub Stars |
+| --------- | ------------------------ | ------- | ------------ |
+| **[LangChain4j](https://github.com/langchain4j/langchain4j)** | Idiomatic Java LLM library (not a LangChain port). Unified API over 20+ providers, 30+ vector stores, MCP, RAG, agents; integrates with Spring Boot, Quarkus, Helidon. | Apache-2.0 | 12k |
+| **[Spring AI](https://github.com/spring-projects/spring-ai)** | Official Spring framework for integrating LLMs into Java apps. Supports OpenAI, Anthropic, Mistral, Ollama, and vector stores. | Apache-2.0 | 8.7k |
+| **[Koog](https://github.com/JetBrains/koog)** | Kotlin Multiplatform agent framework by JetBrains. Idiomatic Kotlin DSL + Java API, Spring Boot/Ktor integration, MCP, cross-platform (JVM, JS, iOS, Android). | Apache-2.0 | 4.2k |
+| **[Embabel](https://github.com/embabel/embabel-agent)** | JVM-native agentic flows framework (Java/Kotlin). Dynamic GOAP planning, goal/action/condition model, Spring-based. By the creator of Spring. | Apache-2.0 | 3.4k |
+| **[ADK Java](https://github.com/google/adk-java)** | Google's code-first Java agent framework. Multi-agent orchestration, tools, workflow definitions. Java counterpart to ADK Python. | Apache-2.0 | 1.6k |
 
 
-## 🧰 Open-Source Coding Agents Comparison
+## OSS Coding Agents
 
-| Tool                                                      | Language Support | GitHub Repository                                                       |
-| --------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------- |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | TypeScript       | [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) |
-| [Codex CLI](https://github.com/openai/codex)              | Rust             | [openai/codex](https://github.com/openai/codex)                         |
-| [Aider](https://github.com/Aider-AI/aider)                | Python           | [Aider-AI/aider](https://github.com/Aider-AI/aider)                     |
-| [Plandex](https://github.com/plandex-ai/plandex)          | Go               | [plandex-ai/plandex](https://github.com/plandex-ai/plandex)             |
-| [OpenCode](https://github.com/opencode-ai/opencode)       | Go, JavaScript   | [opencode-ai/opencode](https://github.com/opencode-ai/opencode)         |
-| [Open-Codex](https://github.com/codingmoh/open-codex)     | Go               | [codingmoh/open-codex](https://github.com/codingmoh/open-codex)         |
+| Tool | Language | Description / Highlights | License | GitHub Stars |
+| ---- | -------- | ------------------------ | ------- | ------------ |
+| **[OpenCode](https://github.com/anomalyco/opencode)** | TypeScript | Terminal-based AI coding agent from SST. Fast TUI with support for Claude, GPT-4o, Gemini, and more. | MIT | 161k |
+| **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** | TypeScript | Google’s open-source terminal AI agent. Brings Gemini’s large context window and multimodal capabilities to the command line. | Apache-2.0 | 104k |
+| **[Codex CLI](https://github.com/openai/codex)** | Rust | OpenAI’s lightweight open-source CLI coding agent. Runs in a sandboxed environment, applies diffs, and executes shell commands. | Apache-2.0 | 82.8k |
+| **[Pi](https://github.com/earendil-works/pi)** | TypeScript | Minimal self-extensible terminal coding harness. TypeScript plugin ecosystem, session branching, context compaction. | MIT | 49.7k |
+| **[Aider](https://github.com/Aider-AI/aider)** | Python | CLI coding agent that edits repos via GPT/Claude + git diffs. Strong pair-programming workflow, supports 100+ LLMs. | Apache-2.0 | 44.8k |
+| **[Crush](https://github.com/charmbracelet/crush)** | Go | Charmbracelet’s terminal-based AI coding assistant with a polished TUI. Supports Claude, OpenAI, and local models. | MIT | 24.3k |
+| **[Plandex](https://github.com/plandex-ai/plandex)** | Go | AI coding engine for large, multi-step tasks. Plans and implements changes across many files with rollback support. | AGPL-3.0 | 15.4k |
