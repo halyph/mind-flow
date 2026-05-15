@@ -30,7 +30,7 @@ I like selecting programming languages based on my subjective criteria.
 | **Web**                | JavaScript, TypeScript |
 | **Desktop**            | Python |
 | **GenAI**              | Python, Go |
-| **System programming** | C, Zig, Rust |
+| **System programming** | C, Rust |
 
 ## On HOLD
 
