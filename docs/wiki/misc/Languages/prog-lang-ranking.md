@@ -14,10 +14,11 @@ I like selecting programming languages based on my subjective criteria.
 ## Programming Languages
 
 - 🥇 **Golang**, **Python**
-- 🥈 Java, Scala
-- 🥉 C, JavaScript, Typescript
+- 🥈 JavaScript, TypeScript
+- 🥉 C, Rust
+- Java, Scala
 
-Tech Radar:
+### Tech Radar
 
 | **Domains**            | **Languages** |
 |------------------------|---------------|
@@ -26,32 +27,27 @@ Tech Radar:
 | **Infrastructure**     | Golang |
 | **CLI**                | Golang |
 | **ML/DS/DA/DE**        | Python |
-| **Web**                | Javascript |
+| **Web**                | JavaScript, TypeScript |
 | **Desktop**            | Python |
-| **System programming** | C |
+| **GenAI**              | Python, Go |
+| **System programming** | C, Zig, Rust |
 
 ## On HOLD
 
-> ✅ - indicates "in use"
-
 - JVM:
-  - ✅ Java
-  - ✅ Scala
   - Groovy
   - Kotlin
   - Clojure
 - System / Low-level Programming:
-  - ✅ C
+  - Zig
   - C++
-  - Rust
   - Swift
   - Objective-C (MacOS)
-  - Zig
   - Nim
   - D
+  - Odin
+  - C3
 - Web
-  - ✅ Javascript
-  - ✅ Typescript
   - Elm
   - PureScript
   - CoffeeScript
@@ -103,6 +99,6 @@ List of ratings I used regularly while checking language popularity.
 
 - [TIOBE Index](https://www.tiobe.com/tiobe-index/)
 - [PYPL PopularitY of Programming Language Index](https://pypl.github.io/PYPL.html)
-- [IEEE Top Programming Languages - 2023](https://spectrum.ieee.org/the-top-programming-languages-2023)
-- [The RedMonk Programming Language Rankings: January 2023](https://redmonk.com/sogrady/2023/05/16/language-rankings-1-23/)
+- [IEEE Top Programming Languages - 2025](https://spectrum.ieee.org/top-programming-languages-2025)
+- [The RedMonk Programming Language Rankings: January 2026](https://redmonk.com/sogrady/2026/04/14/language-rankings-1-26/)
 - [PLDB - Programming Language DataBase](https://pldb.pub/lists/top1000.html)
