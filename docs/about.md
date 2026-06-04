@@ -24,3 +24,4 @@ I am not sure whether it will be valuable for other people. So you are warned �
 - *"You Can’t Always Get What You Want"* - The Rolling Stones
 - *"If you’re thinking without writing, you only think you’re thinking"* - Leslie Lamport
 - *"Hard times create strong men, strong men create good times, good times create weak men, and weak men create hard times"*
+- *"Likability is a jail"* - John Mulaney
