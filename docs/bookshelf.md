@@ -46,6 +46,10 @@ Ratings explained
 
 1. `●●●●○` *Frictionless: 7 Steps to Remove Barriers, Unlock Value, and Outpace Your Competition in the AI Era*, by **Nicole Forsgren**, **Abi Noda** (Shift Key Press, 2025), ISBN 9781662966385
 2. `●●●●●` *Software Architecture: The Hard Parts: Modern Trade-Off Analyses for Distributed Architectures*, by **Neal Ford**, **Mark Richards**, **Pramod J. Sadalage**, **Zhamak Dehghani** (O'Reilly Media, 2021), ISBN 9781492086895
+3. `●●●●○` *AI Engineering: Building Applications with Foundation Models*, by **Chip Huyen** (O'Reilly Media, 2025), ISBN 9781098166304
+4. `●●●○○` *The Pragmatic Programmer: Your Journey to Mastery*, by **David Thomas**, **Andrew Hunt** (Addison-Wesley Professional, 2019), ISBN 9780135957059
+5. `●●●○○` *The Technological Republic: Hard Power, Soft Belief, and the Future of the West*, by **Alexander C. Karp**,  **Nicholas W. Zamiska** (The Bodley Head Ltd, 2025), ISBN 9781847928528
+6. `●●●○○` *Mega Builds: The Sunday Times Bestseller - Ten Colossal Construction Projects That Will Change Our World*, by **Fred Mills** (Virgin Digital, 2026), ISBN 9780753561645
 
 ## 2025
 
