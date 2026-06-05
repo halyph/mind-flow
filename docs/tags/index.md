@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 181 posts • 83 tags**
+**📊 182 posts • 83 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [conference (14)](#conference) • [golang (14)](#golang) • [thoughts (14)](#thoughts)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [golang (15)](#golang) • [conference (14)](#conference) • [thoughts (14)](#thoughts)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="586" height="537" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="586" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="613" height="542" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="613" alt="Word Cloud">
   </object>
 </div>
 
@@ -194,8 +194,9 @@ Browse blog posts by tag.
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (14) [↑](#tags)
+## golang (15) [↑](#tags)
 
+- 2026-06-04 - [Go Vanity Import Paths](../blog/2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](../blog/2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](../blog/2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
