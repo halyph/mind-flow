@@ -170,7 +170,7 @@ It's **optional** for GitHub but **available** for custom domains. Only use it w
 
 The real win: migrate from GitHub → GitLab → self-hosted without breaking downstream imports. Maximum flexibility, minimal code.
 
-## Reference
+## References
 
 - [Remote import paths](https://pkg.go.dev/cmd/go#hdr-Remote_import_paths) - Official spec
 - [Module VCS Discovery](https://go.dev/ref/mod#vcs-find) - How Go discovers repositories
