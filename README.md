@@ -7,8 +7,9 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
-## 2026 · 12
+## 2026 · 13
 
+- 2026-06-04 - [Go Vanity Import Paths](docs/blog/2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](docs/blog/2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](docs/blog/2026/2026-05-08-go-middleware.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](docs/blog/2026/2026-05-05-common-make.md)
