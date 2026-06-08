@@ -3,7 +3,7 @@
 
 Recently, I had a pleasure to look into several Grails v.2.3+ projects. Despite the fact that I'm not a Grails developer I discovered some anti-patterns.
 Then I started looking around to find some *Grails projects best practices*. And  they are well known and people still doing mistakes.
-However, I've found several nice resources and I'm (_going to quite_) quoting them here. I keep references back to original source and use "copy-paste" approach to have aggregated post in single place.
+However, I've found several nice resources and I'm (*going to quite*) quoting them here. I keep references back to original source and use "copy-paste" approach to have aggregated post in single place.
 
 ## References
 
@@ -12,7 +12,7 @@ However, I've found several nice resources and I'm (_going to quite_) quoting th
 - [Groovy & Grails Design Best Practices](http://tech-my-talk.blogspot.com/2013/04/groovy-grails-design-best-practices.html) very detailed
   - [Grails Design Best Practices, 2013, by Nitin Kumar](http://tutorials.techmytalk.com/2013/04/01/groovy-grails-design-best-practices-2/)
 - [Grails Best Practices, 2013, by Nitin Kumar](https://dzone.com/articles/grails-best-practices)
-- [Grails Best Practice Resources, 2011](https://earlyandoften.wordpress.com/2011/10/11/grails-best-practice-resources/) 
+- [Grails Best Practice Resources, 2011](https://earlyandoften.wordpress.com/2011/10/11/grails-best-practice-resources/)
 - [Best practices with services and controllers, 2012](http://grails.1312388.n4.nabble.com/Best-practices-with-services-and-controllers-td4410927.html)
 - [InfoQ - Grails Best Practices, 2012](http://www.infoq.com/articles/grails-best-practices)
 - [SO - Best Practices to be followed while developing Grails Application, 2011](http://stackoverflow.com/questions/6226759/best-practices-to-be-followed-while-developing-grails-application)
@@ -30,5 +30,5 @@ However, I've found several nice resources and I'm (_going to quite_) quoting th
 
 Interesting Grails people:
 
-- http://www.anyware.co.uk/2005/2011/09/12/optimising-your-application-with-grails-resources-plugin/ 
-- http://www.bobbywarner.com/ 
+- <http://www.anyware.co.uk/2005/2011/09/12/optimising-your-application-with-grails-resources-plugin/>
+- <http://www.bobbywarner.com/>

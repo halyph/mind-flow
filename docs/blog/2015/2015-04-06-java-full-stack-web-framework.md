@@ -12,7 +12,7 @@ Let's define the desired items for full-stack web framework:
 - CoC - [Convention over configuration](http://en.wikipedia.org/wiki/Convention_over_configuration)
 - MVC - [Model-view-controller](http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
 - DRY - [Don't repeat yourself](http://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
-- Scaffolding (_it was one of the major selling point on the early stage of Rails_)
+- Scaffolding (*it was one of the major selling point on the early stage of Rails*)
   - Easy prototyping
 - Data/Persistent Layer / ORM
 - DB schema migration

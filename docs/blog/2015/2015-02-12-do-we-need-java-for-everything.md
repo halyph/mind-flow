@@ -99,15 +99,15 @@ public class helloworld {
 
 It can be run like this: `$ ./helloworld`
 
-### So, how does java_launcher work?
+## So, how does java_launcher work?
 
-1. This launcher script works on Linux/MacOSX only. We should have additional **java_launcher.bat** script for Windows (cygwin and msys are not native Windows solution).    
+1. This launcher script works on Linux/MacOSX only. We should have additional **java_launcher.bat** script for Windows (cygwin and msys are not native Windows solution).
 2. It supports two types of CLASSPATH lib folders
-    - *default* **$SCRIPT_DIR/java_lib** located in the same folder where the actual Java script located 
-    - *custom* libs, they should be listed at the head **lib** section of the script (see sample above). The script uses AWK to extract jars from **lib** section 
-3. **java_launcher** uses MD5 hashing to track source changes and (re)compile the source script only when it has been changed. See MD5 calculated `SUM` variable above 
-4. *launcher* has dedicated folder where it stores the processed and compiled script (based on MD5 hash changes). See the next variables: `CACHE_DIR`, `PROCESSED_SOURCE` and `PROCESSED_CLASS`.   
-5. Then it combines the *default* and *custom* libs in resulted CLASSPATH 
+    - *default* **$SCRIPT_DIR/java_lib** located in the same folder where the actual Java script located
+    - *custom* libs, they should be listed at the head **lib** section of the script (see sample above). The script uses AWK to extract jars from **lib** section
+3. **java_launcher** uses MD5 hashing to track source changes and (re)compile the source script only when it has been changed. See MD5 calculated `SUM` variable above
+4. *launcher* has dedicated folder where it stores the processed and compiled script (based on MD5 hash changes). See the next variables: `CACHE_DIR`, `PROCESSED_SOURCE` and `PROCESSED_CLASS`.
+5. Then it combines the *default* and *custom* libs in resulted CLASSPATH
 
 ### Drawbacks
 

@@ -1,7 +1,7 @@
 # How to download jars from Maven Central
 <!-- tags: java, maven -->
 
-We know how to download Java libraries with it's dependencies (transitive included) via Maven _pom.xml_, Ant/Ivy _build.xml_ script, Gradle _build.gradle_ script etc. 
+We know how to download Java libraries with it's dependencies (transitive included) via Maven *pom.xml*, Ant/Ivy *build.xml* script, Gradle *build.gradle* script etc.
 But what if we need to download them without these scripts.
 
 There are several ways to do this.
@@ -11,7 +11,7 @@ Assume that we'd like to download `spark-core` library (`groupId=com.sparkjava, 
 
 Here is there variants for lib download:
 
-```bash 
+```bash
 # Download library with all dependencies
 # Specify repoUrl (it's optional)
 mvn dependency:get -DrepoUrl=http://download.java.net/maven/2/ -DgroupId=com.sparkjava -DartifactId=spark-core -Dversion=2.1
@@ -25,7 +25,7 @@ mvn dependency:get -Dartifact=com.sparkjava:spark-core:2.1
 
 Now we need to copy just downloaded artifacts in our working directory:
 
-```bash 
+```bash
 # Copy jars from local maven repo
 mvn dependency:copy-dependencies -f $HOME/.m2/repository/com/sparkjava/spark-core/2.1/spark-core-2.1.pom -DoutputDirectory=$(pwd)/lib
 # the previous command doesn't copy spark-core-x.x.jar, that's why we should copy it manually

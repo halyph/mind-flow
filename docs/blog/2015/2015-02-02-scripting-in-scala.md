@@ -9,26 +9,27 @@ According to official [scala utility] documentation (here highlighted only post-
 
 > `scala [ <option> ]... [ <torun> <argument>... ]`
 >
-> The `scala` utility runs Scala code using a Java runtime environment. 
+> The `scala` utility runs Scala code using a Java runtime environment.
 >
->If a **script** file is specified to run, then the file is read and all Scala statements and declarations in the file are processed in order. Any arguments specified will be available via the argsvariable. 
+>If a **script** file is specified to run, then the file is read and all Scala statements and declarations in the file are processed in order. Any arguments specified will be available via the argsvariable.
 >
 >Script files may have an **optional header** that is ignored if present. There are two ways to format the header: either beginning with #! and ending with !#, or beginning with ::#! and ending with ::!#.
 >
 > Such a header must have each header boundary start at the beginning of a line. Headers can be used to make stand-alone script files, as shown in the examples below.
-> 
+>
 >Here is a complete Scala script (**check.sh**) for Unix:
 >
->```
+>```bash
 >#!/bin/sh
 >exec scala "$0" "$@"
 >!#
 >Console.println("Hello, world!")
 >argv.toList foreach Console.println
 >```
+>
 >Here is a complete Scala script (**check.bat**) for MS Windows:
 >
->```
+>```batch
 >::#!
 >@echo off
 >call scala %0 %*
@@ -37,9 +38,10 @@ According to official [scala utility] documentation (here highlighted only post-
 >Console.println("Hello, world!")
 >argv.toList foreach Console.println
 >```
+>
 >If you want to use the compilation cache to speed up multiple executions of the script (**check.sh**), then add **-savecompiled** to the scala command:
 >
->```
+>```bash
 >#!/bin/sh
 >exec scala -savecompiled "$0" "$@"
 >!#
@@ -61,10 +63,10 @@ Linux script header uses the next items:
 - `exec` is used to run `scala` without creation new process. Commands which go right after `exec` will not be executed
 - `!#` is simple marker for `scala` utility (see notes below)
 
-E.g. 
-This script 
+E.g.
+This script
 
-```
+```bash
 #! /bin/sh
 echo Header
 exec echo
@@ -74,14 +76,14 @@ echo Body
 
 will have the next output
 
-```
+```text
 $ ./test.sh
 Header
 ```
 
 We will get error in case `exec` is removed:
 
-```
+```bash
 #! /bin/sh
 echo Header
 !#
@@ -90,7 +92,7 @@ echo Body
 
 Output
 
-```
+```text
 $ ./test.sh
 Header
 ./test.sh: line 4: !#: command not found
@@ -115,41 +117,41 @@ The OS-specific script settings were identified, now let's dive deeper to unders
 
 This utility performs the next flow to run script:
 
-1. Run `scala.tools.nsc.MainGenericRunner#process` and identify run target "as Script" (there are other targets) `ScriptRunner.runScriptAndCatch(settings, thingToRun, command.arguments)` 
+1. Run `scala.tools.nsc.MainGenericRunner#process` and identify run target "as Script" (there are other targets) `ScriptRunner.runScriptAndCatch(settings, thingToRun, command.arguments)`
 2. `ScriptRunner` creates temp file `File.makeTemp("scalacmd", ".scala")`
 3. Run compiler and clean script header
 
-```scala
-class ScriptRunner extends HasCompileSocket {
-...
-  private def withCompiledScript(
-      settings: GenericRunnerSettings,
-      scriptFile: String)
-      (handler: String => Boolean): Boolean =
-    {
-      def mainClass = scriptMain(settings)
-  
-         val compiler = newGlobal(settings, reporter)
-         new compiler.Run compile List(scriptFile)
-```
+  ```scala
+  class ScriptRunner extends HasCompileSocket {
+  ...
+    private def withCompiledScript(
+        settings: GenericRunnerSettings,
+        scriptFile: String)
+        (handler: String => Boolean): Boolean =
+      {
+        def mainClass = scriptMain(settings)
+    
+          val compiler = newGlobal(settings, reporter)
+          new compiler.Run compile List(scriptFile)
+  ```
 
-```scala
-class Global
-    /** If this compilation is scripted, convert the source to a script source. */
-    private def scripted(s: SourceFile) = s match {
-      case b: BatchSourceFile if settings.script.isSetByUser => ScriptSourceFile(b)
-      case _ => s
-    }
+  ```scala
+  class Global
+      /** If this compilation is scripted, convert the source to a script source. */
+      private def scripted(s: SourceFile) = s match {
+        case b: BatchSourceFile if settings.script.isSetByUser => ScriptSourceFile(b)
+        case _ => s
+      }
 
-    /** Compile abstract file until `globalPhase`, but at least
-     *  to phase "namer".
-     */
-    def compileLate(file: AbstractFile) {
-      if (!compiledFiles(file.path))
-        compileLate(new CompilationUnit(scripted(getSourceFile(file))))
-    }
+      /** Compile abstract file until `globalPhase`, but at least
+      *  to phase "namer".
+      */
+      def compileLate(file: AbstractFile) {
+        if (!compiledFiles(file.path))
+          compileLate(new CompilationUnit(scripted(getSourceFile(file))))
+      }
 
-```
+  ```
 
 4. Cleanup shell script (remove header) via `SourceFile`. Now, it's clear why script's header have such *strange* closing markers (see line 21, `content drop headerLen` - actual header remove)
 
