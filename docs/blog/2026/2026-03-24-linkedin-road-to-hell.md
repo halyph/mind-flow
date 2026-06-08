@@ -7,7 +7,7 @@
 
 I guess many of you read total bullshit posts on LinkedIn with zero meaning.
 It's like a fart into the water.  
-You read text, a lot of text which has no sense. 
+You read text, a lot of text which has no sense.
 
 ---
 

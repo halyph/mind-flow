@@ -77,11 +77,11 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheungâ€
 - [2021 - How does Node.js load its built-in/native modules?](https://joyeecheung.github.io/blog/2021/07/06/how-does-node-js-load-its-builtins-native-modules) by [Joyee Cheung](https://github.com/joyeecheung)
 - [Stack Overflow: Are JS files in node/lib used during compilation of the node executable?](https://stackoverflow.com/questions/53680439/are-js-files-in-node-lib-used-during-compilation-of-the-node-executable)
 - Node.js source:
-   - [`node.gyp`](https://github.com/nodejs/node/blob/main/node.gyp) - Nodeâ€™s top-level build configuration; it hooks the `js2c`-generated C++ into the final `node` executable (not to be confused with [`node-gyp`](https://github.com/nodejs/node-gyp), which builds native addons)
-   - [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc)
+  - [`node.gyp`](https://github.com/nodejs/node/blob/main/node.gyp) - Nodeâ€™s top-level build configuration; it hooks the `js2c`-generated C++ into the final `node` executable (not to be confused with [`node-gyp`](https://github.com/nodejs/node-gyp), which builds native addons)
+  - [`tools/js2c.cc`](https://github.com/nodejs/node/blob/main/tools/js2c.cc)
 - [node/BUILDING.md - Loading JS files from disk instead of embedding](https://github.com/nodejs/node/blob/main/BUILDING.md#loading-js-files-from-disk-instead-of-embedding)
-> The resulting binary won't include any JS files and will try to load them from the specified directory. 
 
+> The resulting binary won't include any JS files and will try to load them from the specified directory.
 
 
 ## Appendix A - Node.js Built-in modules
@@ -89,13 +89,13 @@ For a detailed, source-linked walkthrough of the real call chain, Joyee Cheungâ€
 - Ref: [Node.js Doc - Built-in modules](https://nodejs.org/api/modules.html#built-in-modules)
 
 > Node.js has several modules compiled into the binary. ...
-> 
+>
 > The built-in modules are defined within the Node.js source and are located in the `lib/` folder.
-> 
+>
 > Built-in modules can be identified using the node: prefix, in which case it bypasses the require cache. For instance, `require('node:http')` will always return the built in HTTP module, even if there is require.cache entry by that name.
-> 
+>
 > Some built-in modules are always preferentially loaded if their identifier is passed to `require()`. For instance, `require('http')` will always return the built-in HTTP module, even if there is a file by that name.
-> 
+>
 > The list of all the built-in modules can be retrieved from [`module.builtinModules`](https://nodejs.org/api/module.html#modulebuiltinmodules). The modules being all listed without the node: prefix, except those that mandate such prefix (as explained in the next section).
 
 
@@ -134,7 +134,7 @@ node -e "console.log(require('module').builtinModules)"
 
 Because the JS is converted into byte arrays inside C++ source, you can't realistically "read" it by opening the node binary in a text editor.
 
-You can apply the **"inspector"** trick 
+You can apply the **"inspector"** trick
 
 1. Run `node --inspect`.
 2. Open Chrome and go to `chrome://inspect`.

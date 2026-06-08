@@ -44,9 +44,11 @@ The updated process:
 
 ### Future Enhancement: External Config Sync
 
-For full automation, a **ConfigSync** operator could fetch configs from external APIs (e.g., GitHub raw URLs, REST API) and sync them to ConfigMaps. Combined with **Reloader**, this enables end-to-end automation:   
+For full automation, a **ConfigSync** operator could fetch configs from external APIs (e.g., GitHub raw URLs, REST API) and sync them to ConfigMaps. Combined with **Reloader**, this enables end-to-end automation:
 
-    External API → ConfigMap → Automatic Service Restart.
+```text
+External API → ConfigMap → Automatic Service Restart.
+```
 
 ![pic4](2026-03-31-k8s-reloader/pic4.png)
 
@@ -305,6 +307,7 @@ metadata:
 ```
 
 ### Simple App with Reloader Auto-Reload
+
 ```yaml
 # This demonstrates how Reloader automatically restarts pods on ConfigMap changes
 #

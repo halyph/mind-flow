@@ -134,7 +134,7 @@ The complete implementation with a live demo is ready to run: **[demo-http-middl
 
 ### Run the Demo
 
-One command launches everything: 
+One command launches everything:
 
 ```shell
 ➜ make demo

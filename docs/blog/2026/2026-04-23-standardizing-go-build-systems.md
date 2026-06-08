@@ -98,7 +98,7 @@ Claude Code analyzed 9 repositories and discovered Makefiles were 95% identical 
 
 **Architecture:**
 
-```
+```text
 go-service-common-make/
 ├── common.mk              # Entry point
 ├── common.build.mk        # Multi-arch builds
@@ -141,9 +141,11 @@ All services built successfully on first try. Nearly all tests passed—the one 
 ## References
 
 ### GitHub Repositories
+
 - [go-service-blueprint](https://github.com/halyph/go-service-blueprint)
 - [go-service-common-make](https://github.com/halyph/go-service-common-make)
 
 ### Related Blog Posts
+
 - [Manage Go CLI tools via Go modules and tools.go](../2023/2023-11-27-tools-go.md)
 - [Golang: Do you commit your generated mocks to repo?](../2023/2023-01-17-commit-go-gen-mock.md)

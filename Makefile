@@ -1,4 +1,4 @@
-.PHONY: help install clean serve readme tags rss build
+.PHONY: help install clean serve readme tags rss build lint lint-fix
 
 all: help
 
@@ -7,6 +7,9 @@ YELLOW := $(shell tput -Txterm setaf 3)
 WHITE  := $(shell tput -Txterm setaf 7)
 CYAN   := $(shell tput -Txterm setaf 6)
 RESET  := $(shell tput -Txterm sgr0)
+
+BLOG_MD_FILES := "docs/blog/**/*.md"
+BLOG_2026_MD_FILES := "docs/blog/2026/*.md"
 
 ## Help:
 
@@ -50,3 +53,17 @@ readme: tags ## Generate blog index and tags
 
 rss: build ## Generate RSS and Atom feeds (requires built site)
 	uv run python scripts/generate-rss.py
+
+## Linting:
+
+lint: ## Lint markdown files in docs/blog
+	npx markdownlint-cli2 $(BLOG_MD_FILES)
+
+lint-fix: ## Auto-fix markdown issues in docs/blog
+	npx markdownlint-cli2 --fix $(BLOG_MD_FILES)
+
+lint-2026: ## Lint only 2026 blog posts
+	npx markdownlint-cli2 $(BLOG_2026_MD_FILES)
+
+lint-fix-2026: ## Auto-fix markdown issues in 2026 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2026_MD_FILES)
