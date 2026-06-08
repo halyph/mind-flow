@@ -9,16 +9,16 @@ Yet another interesting reading from Steve Yegge: [Language Grubbing](http://sit
 >
 > For instance, you can do Prolog-like logic/constraint programming in Lisp or OCaml pretty easily, and they're both broader/better languages than Prolog. Pascal gives you nothing that C doesn't already do better. ... Lua is a cleaned-up Tcl, but neither one of them is as interesting (to me, anyway) as Python for doing embedded languages, unless you really need to strip it down to practically nothing, in which case Lua is useful.
 
- IMHO, reasonable comments. 
+ IMHO, reasonable comments.
  He mentioned about language groups:
 
-* Java, C\# and C++ (*I would add Objective-C and Smalltalk*)
-* Haskell, SML, OCaml (*I would add F\#, Scala*)
-* Common Lisp, Emacs Lisp, Scheme (*I would add Clojure*)
-* Perl, Python, Ruby (I would add PHP)
-* Erlang (*I would add Prolog, Oz*)
-* Lua, Tcl, JavaScript (*I would add Io, Ioke, R, REBOL*)
-* C, Pascal
+- Java, C\# and C++ (*I would add Objective-C and Smalltalk*)
+- Haskell, SML, OCaml (*I would add F\#, Scala*)
+- Common Lisp, Emacs Lisp, Scheme (*I would add Clojure*)
+- Perl, Python, Ruby (I would add PHP)
+- Erlang (*I would add Prolog, Oz*)
+- Lua, Tcl, JavaScript (*I would add Io, Ioke, R, REBOL*)
+- C, Pascal
 
  I wrote about this but I'll repeat again. I time wasting if you learn several languages from the same group. E.g. Python and Ruby, or Java and C\#.
  So, just a pick the "major" language from each group and learn it. E.g.: Java, Haskell, Clojure, Ruby, JavaScript and C.

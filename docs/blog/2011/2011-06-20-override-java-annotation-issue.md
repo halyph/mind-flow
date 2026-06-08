@@ -26,9 +26,9 @@ src\Overridden.java:2: method does not override a method from its superclass
 
 Let's try to do the same on **JDK v.1.6** - And, You've got **no** compilation error.
 
->Between Java 5 and Java 6 changes to the specification of @Override have been made. In Java 6 it is possible to add the @Override annotation to methods that implement methods of an interface which is not allowed in Java 5. (http://dertompson.com/2008/01/25/override-specification-changes-in-java-6/)
+>Between Java 5 and Java 6 changes to the specification of @Override have been made. In Java 6 it is possible to add the @Override annotation to methods that implement methods of an interface which is not allowed in Java 5. (<http://dertompson.com/2008/01/25/override-specification-changes-in-java-6/>)
 
-Also, I've found very interesting discussion on StackOverflow: http://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why:
+Also, I've found very interesting discussion on StackOverflow: <http://stackoverflow.com/questions/94361/when-do-you-use-javas-override-annotation-and-why>:
 
 Q:
 > What are the best practices for using Java's @Override annotation and why?

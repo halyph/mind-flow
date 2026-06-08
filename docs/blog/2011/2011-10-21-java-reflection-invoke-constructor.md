@@ -34,16 +34,16 @@ public class SecondArg  extends FirstArg{
 
 And we can easily instantiate `First` class with `FirstArg` or `SecondArg`:
 
-```
+```java
 First f1Old = new First(new FirstArg());
 First f2Old = new First(new SecondArg());
 System.out.println(f1Old.getArg().getClass());
 System.out.println(f2Old.getArg().getClass());
 ```
 
-We'll get the next output: 
+We'll get the next output:
 
-```
+```text
 FirstArg.FirstArg()
 First() - constructor
 FirstArg.FirstArg()
@@ -84,9 +84,9 @@ System.out.println(f1.getArg().getClass());
 System.out.println(f2.getArg().getClass());
 ```
 
-And we'll get Exception: 
+And we'll get Exception:
 
-```
+```text
 FirstArg.FirstArg()
 First() - constructor
 FirstArg.FirstArg()
@@ -147,7 +147,7 @@ System.out.println(f2.getArg().getClass());
 
 Output:
 
-```
+```text
 FirstArg.FirstArg()
 First() - constructor
 FirstArg.FirstArg()

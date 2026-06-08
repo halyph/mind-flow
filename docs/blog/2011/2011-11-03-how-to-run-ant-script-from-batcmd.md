@@ -14,7 +14,7 @@ Ant script:
 
 And here is BAT file:  
   
-```
+```batch
 @echo off  
 echo BAT - Before Ant run  
 ant -f build.xml  
@@ -23,7 +23,7 @@ echo BAT - After Ant run
   
 Unfortunately, when you run this BAT you get the next output:  
 
-```
+```text
 BAT - Before Ant run  
 Buildfile: D:\\Projects\\blog\\build.xml  
   
@@ -38,7 +38,7 @@ So, where is the `"BAT - After Ant run"` echo message?
   
 The problem is that Ant on Windows executed via `ant.bat` file and based on this we're calling one BAT file from another. We have to use CALL command to solve this issues, here is official note from CALL help:  
 
->```
+>```text
 > Calls one batch program from another.  
 > CALL [drive:][path]filename [batch-parameters]  
 > batch-parameters   Specifies any command-line information required by the batch program.
@@ -46,7 +46,7 @@ The problem is that Ant on Windows executed via `ant.bat` file and based on this
 
 And, here is the update BAT file:  
   
-```
+```batch
 @echo off  
 echo BAT - Before Ant run  
 call ant -f build.xml  
