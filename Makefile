@@ -10,6 +10,10 @@ RESET  := $(shell tput -Txterm sgr0)
 
 BLOG_MD_FILES := "docs/blog/**/*.md"
 BLOG_2026_MD_FILES := "docs/blog/2026/*.md"
+BLOG_2025_MD_FILES := "docs/blog/2025/*.md"
+BLOG_2024_MD_FILES := "docs/blog/2024/*.md"
+BLOG_2023_MD_FILES := "docs/blog/2023/*.md"
+BLOG_2022_MD_FILES := "docs/blog/2022/*.md"
 
 ## Help:
 
@@ -67,3 +71,27 @@ lint-2026: ## Lint only 2026 blog posts
 
 lint-fix-2026: ## Auto-fix markdown issues in 2026 blog posts only
 	npx markdownlint-cli2 --fix $(BLOG_2026_MD_FILES)
+
+lint-2025: ## Lint only 2025 blog posts
+	npx markdownlint-cli2 $(BLOG_2025_MD_FILES)
+
+lint-fix-2025: ## Auto-fix markdown issues in 2025 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2025_MD_FILES)
+
+lint-2024: ## Lint only 2024 blog posts
+	npx markdownlint-cli2 $(BLOG_2024_MD_FILES)
+
+lint-fix-2024: ## Auto-fix markdown issues in 2024 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2024_MD_FILES)
+
+lint-2023: ## Lint only 2023 blog posts
+	npx markdownlint-cli2 $(BLOG_2023_MD_FILES)
+
+lint-fix-2023: ## Auto-fix markdown issues in 2023 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2023_MD_FILES)
+
+lint-2022: ## Lint only 2022 blog posts
+	npx markdownlint-cli2 $(BLOG_2022_MD_FILES)
+
+lint-fix-2022: ## Auto-fix markdown issues in 2022 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2022_MD_FILES)

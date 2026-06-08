@@ -18,7 +18,7 @@ instead of this
 
 ---
 
-So many things have gone wrong: 
+So many things have gone wrong:
 
 - polluted history with meaningless commit messages, which "might be useful" based on the author's strong opinion ("fix", "revert", "oops", "failed tests", "merge main" and so on)
 - nobody asked themselves "do we really need this?"
@@ -41,7 +41,7 @@ This configuration ensures that all commits in the feature branch are combined i
 - clean history - every feature = 1 commit
 - easy to revert
 - encourage small PRs and reduce noise to the max
-- no need to *police* merge garbage-makers 
+- no need to *police* merge garbage-makers
 
 **Cons**
 
@@ -50,12 +50,12 @@ This configuration ensures that all commits in the feature branch are combined i
 - Makes `git bisect` less effective
 - Hides co-author contributions unless explicitly noted
 
-## Miscellaneous 
+## Miscellaneous
 
 1. I intentionally avoided `rebase`, because I am not a big fan of it.
 2. I think big and/or long-lived feature branches shouldn't be squashed, but they must be cleaned up before merging.
 
-## Summary 
+## Summary
 
 Choose **squash merging** *when*:
 

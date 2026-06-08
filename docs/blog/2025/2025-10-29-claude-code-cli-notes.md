@@ -6,7 +6,7 @@
 So, you've installed Claude Code `npm install -g @anthropic-ai/claude-code`, started using this tool and now asking yourself "How does it work?".
 I was interested in Claude's Code REST calls, **system** and **tool**s' prompts.
 
-Unfortunately, installed Node CLI app is obfuscated. I could play with code to extract the required info. 
+Unfortunately, installed Node CLI app is obfuscated. I could play with code to extract the required info.
 But decided it's much easier and interesting to use some HTTP proxy, inspect all Clause Code CLI HTTP requests.
 
 So, I would be able to see:
@@ -48,6 +48,7 @@ I decided to use [mitproxy](https://www.mitmproxy.org). It's free and simple to 
 - update `.claude/settings.json` **ANTHROPIC_BASE_URL**. It must point to proxy base URL.  
 I guess I could use `export ANTHROPIC_BASE_URL=http://localhost:8000` as well, I haven't tried.
 - `cat $HOME/.claude/settings.json`:
+
 ```json
 {
   "apiKeyHelper": "mytool",
@@ -77,7 +78,7 @@ I guess I could use `export ANTHROPIC_BASE_URL=http://localhost:8000` as well, I
 
 ![alt text](2025-10-29-claude-code-cli-notes/pic1.png)
 
-Below, I've snaped HTTP request and prompts. 
+Below, I've snaped HTTP request and prompts.
 
 ## HTTP Request
 

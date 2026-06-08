@@ -22,7 +22,7 @@ I want to share some personal experiences, lessons learned, and thoughts. Of cou
 Team **A** built services in Scala using different frameworks: [Finagle](https://twitter.github.io/finagle/), [Spray](https://github.com/spray/spray), and possibly [Lift](https://www.liftweb.net/). It was early Scala days - no FP, just people experimenting with new toys.
 Eventually, Team **A** shifted focus, leaving these services behind and handing them over to Team **B**, who primarily used Java + Spring.
 
-_Drums are drumming 🥁…_
+*Drums are drumming 🥁…*
 
 Team **B** did **not** enjoy touching this new pile of "fun". The main objective became: *avoid it as much as possible*.
 
@@ -44,7 +44,7 @@ A team had many Scala + [akka-http](https://github.com/akka/akka-http) service
 
 Then they merged with a team whose services were in Java + Spring Boot. As the original maintainers left, the remaining team had to take over.
 
-Guess what happened: there was _so much passion_ whenever we had a bug or a feature request. People fought over who would contribute.  
+Guess what happened: there was *so much passion* whenever we had a bug or a feature request. People fought over who would contribute.  
 Of course, I’m joking.
 
 Everyone avoided the "magical" Spring stack. One brave engineer became the main (and only) contributor. It became his destiny.
@@ -72,7 +72,7 @@ But when the Haskell experts left, no one could maintain them. The only solution
 
 *"Common sense isn’t that common. And sometimes it’s not even sense"*
 
-- **Fewer languages = better outcomes.** Deep expertise, higher velocity, easier hiring.    
+- **Fewer languages = better outcomes.** Deep expertise, higher velocity, easier hiring.
 - **Rotation is mandatory.** If 80–90% of your project(s) uses one dominant stack and 10–20% another, everyone should be able to contribute to the *"ugly duck"*. If resources allow, rewrite it in the dominant stack.
 - **Avoid split teams.** A 50/50 split between stacks usually results in two sub-teams.
 - **New tech stacks require careful thought.** Introduce a new programming language only if there’s a strong, demonstrable need (performance, platform constraints, etc.). A veto until proven necessary is often wise.
