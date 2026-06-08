@@ -14,11 +14,11 @@
 
 ## Reference
 
-These notes are compilled from: https://speakerdeck.com/bbatsov/ruby-the-bad-parts
+These notes are compilled from: <https://speakerdeck.com/bbatsov/ruby-the-bad-parts>
 
-- http://batsov.com
-  - http://batsov.com/articles/categories/style/
-  - http://batsov.com/articles/2014/02/05/a-list-of-deprecated-stuff-in-ruby/
+- <http://batsov.com>
+  - <http://batsov.com/articles/categories/style/>
+  - <http://batsov.com/articles/2014/02/05/a-list-of-deprecated-stuff-in-ruby/>
 - [Ruby: The Bad Parts by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-the-bad-parts)
 - [Ruby 4.0: To Infinity and Beyond (Athens Ruby Meetup) by Bozhidar Batsov](https://speakerdeck.com/bbatsov/ruby-4-dot-0-to-infinity-and-beyond-athens-ruby-meetup)
 
@@ -47,11 +47,12 @@ These notes are compilled from: https://speakerdeck.com/bbatsov/ruby-the-bad-par
 
 - bundle exec rake
 - RubyGems 2.2 introduced support for Gemfile
-  - http://blog.rubygems.org/2013/12/26/2.2.0-released.html
+  - <http://blog.rubygems.org/2013/12/26/2.2.0-released.html>
 
 > *Major enhancements:*
->  - RubyGems can check for gem dependencies files (gem.deps.rb or Gemfile) when rubygems executables are started and uses the found dependencies. This means rake will work similar to bundle exec rake. To enable this set the RUBYGEMS_GEMDEPS environment variable to the location of your dependencies file. See Gem::use_gemdeps for further details.
-> 
+>
+> - RubyGems can check for gem dependencies files (gem.deps.rb or Gemfile) when rubygems executables are started and uses the found dependencies. This means rake will work similar to bundle exec rake. To enable this set the RUBYGEMS_GEMDEPS environment variable to the location of your dependencies file. See Gem::use_gemdeps for further details.
+>
 > - A RubyGems directory may now be shared amongst multiple ruby versions. Upon activation RubyGems will automatically compile missing extensions for the current platform when the built objects are missing. Issue #596 by Michal Papis By default different platforms do not share gem install locations so this must be configured by setting GEM_HOME to a common directory. Some gems use fixed paths for requiring extensions and are not compatible with sharing gem directories. The default sharing location may be configured by RubyGems packagers through Gem.default_ext_dir_for. Pull Request #744 by Vít Ondruch.
 
 ## The Rails Effect
@@ -64,7 +65,7 @@ These notes are compilled from: https://speakerdeck.com/bbatsov/ruby-the-bad-par
 > [Ruby 2.2.0 Released](https://www.ruby-lang.org/en/news/2014/12/25/ruby-2-2-0-released/)
 >
 > Ruby 2.2 includes many new features and improvements for the increasingly diverse and expanding demands for Ruby.
-> 
+>
 > For example, Ruby’s Garbage Collector is now able to collect Symbol type objects. This reduces memory usage of Symbols; because GC was previously unable to collect them before 2.2. Since **Rails** 5.0 will require Symbol GC, it will support only Ruby 2.2 or later. (See **Rails** 4.2 release post for details.)
 >
 > Also, a reduced pause time thanks to the new Incremental Garbage Collector will be helpful for running **Rails** applications. Recent developments mentioned on the Rails blog suggest that **Rails** 5.0 will take advantage of Incremental GC as well as Symbol GC.
@@ -91,6 +92,7 @@ for name in names
     puts name
 end
 ```
+
 ```ruby
 names.each do |name|
   puts name
@@ -99,7 +101,7 @@ end
 
 - `BEGIN` & `END`
   - Kernel#at_exit, anyone?
- 
+
 ```ruby
 
 END {
@@ -119,7 +121,7 @@ puts 'Processing...'
 ```
 
 - flip-flops
-  - https://bugs.ruby-lang.org/issues/5400
+  - <https://bugs.ruby-lang.org/issues/5400>
 
 ```ruby
 DATA.each_line do |line|
@@ -296,7 +298,7 @@ Parent.print_class_var # => will print "child"
   - `Kernel#print`
 
 - `defined?`
-  - Is any of the values returned by defined? a boolean? 
+  - Is any of the values returned by defined? a boolean?
   - Is this the right behaviour for a predicate method?
   
 ```ruby
@@ -309,12 +311,13 @@ Parent.print_class_var # => will print "child"
 ```
 
 - Enumerable#include?
-  - `Enumerable#include`s? 
+  - `Enumerable#include`s?
 
 - `Kernel#%`
   - `'%d %d' % [20, 10]`
   - `sprintf('%d %d', 20, 10)`
-  - 
+  -
+
 ```ruby
 sprintf(
   '%{first} %{second}',
@@ -328,7 +331,7 @@ sprintf(
 - Perl-style global variables
   - `$:`
   - `$LOAD_PATH`
-  - `$;` 
+  - `$;`
   - `$FIELD_SEPARATOR`
   - `$*`
   - `$ARGV`

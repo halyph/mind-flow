@@ -18,9 +18,10 @@
 
 
 ## References
+
 - [Github - Ruby vs Scala](https://github.com/KamilLelonek/scala-vs-ruby)
-  - http://www.slideshare.net/squixy/scala-vs-ruby-45694031
-- http://www.slideshare.net/El_Picador/scala-vs-ruby
+  - <http://www.slideshare.net/squixy/scala-vs-ruby-45694031>
+- <http://www.slideshare.net/El_Picador/scala-vs-ruby>
 
 ---
 
@@ -225,7 +226,6 @@ Not match
 ```
 
 
-
 **Scala**
 
 ```scala
@@ -295,7 +295,7 @@ implicit class SuperString(val string: String) extends AnyVal {
 
 > Usage
 
-**Ruby** 
+**Ruby**
 
 ```ruby
 [0] (pry) main: 0> String.class_eval do    # ALWAYS .class_eval
@@ -398,7 +398,7 @@ res0: String = I'm from helper
 
 ## 9. Line Ending
 
-Both Languages should not end line with `;` 
+Both Languages should not end line with `;`
 
 ## 10. Dynamic calls
 

@@ -24,7 +24,7 @@ The most convenient way to use PostgreSQL server locally is to install [Postgres
 
 Just type `\?` in `psql` console and get the list below
 
-```
+```text
 You are using psql, the command-line interface to PostgreSQL.
 Type:  \copyright for distribution terms
        \h for help with SQL commands
@@ -161,7 +161,7 @@ Large Objects
 
 Connection options:
 
-```
+```text
  -h, --host=HOSTNAME database server host or socket directory
  -p, --port=PORT database server port number
  -U, --username=NAME connect as specified database user
@@ -174,62 +174,63 @@ Connection options:
 
 - restore whole server
 
-```
+```bash
 psql --host=localhost --username=someuser -f /path/to/pgdumpall.sql
 ```
 
 - Run an sql batch script against a database
 
-```
+```bash
 psql -h localhost -U someuser -d somedb -f /path/to/somefile.sql
 ```
 
 - Run an sql batch script against a database and send output to file
 
-```
+```bash
 psql -h localhost -U someuser -d somedb -f /path/to/scriptfile.sql -o /path/to/outputfile.txt
 ```
 
 - Run a single statement against a db
 
-```
+```bash
 psql -U postgres -d pagila -c "CREATE TABLE test(some_id serial PRIMARY KEY, some_text text);"
 ```
 
 - Output data in html format
 
-```
+```bash
 psql -h someserver -p 5432 -U someuser -d somedb -H -c "SELECT * FROM sometable" -o mydata.html
 ```
 
 ## `psql` Interactive mode
 
 - Launch Interactive session
-```
+
+```bash
 psql -h localhost -U postgres -d somedb
 ```
 
 - View help for SELECT * LIMIT
   
-```
+```text
 \h SELECT * LIMIT
 ```
 
 - List all tables in db w ith descriptions
 
-```
+```text
 \dt+
 ```
 
 - List all tables in db w ith s in the name
 
-```
+```text
 \dt *s*
 ```
 
 - Cancel out of MORE screen
 
-```
+```text
 :q
 ```
 

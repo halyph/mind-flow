@@ -20,7 +20,7 @@ I guess this release might be valuable for some people. But, there are several m
 1. Play framework was cool/interesting in 2017, but then I personally switched to [Akka-http](https://github.com/akka/akka-http) and it was must better for my needs. In my current company some projects have been using [http4s](https://http4s.org) or [ZIO](https://zio.dev). Playframework is 90% legacy, means new projects will **not** use it and rather pick up Spring Boot Java/Kotlin, [Ktor](https://ktor.io), than looking into Play.
 2. Scala 2 to Scala 3 migration is happening slowly.
 3. Scala 3 is a "new" language and it's not clear for the business why they need to migrate to it instead of e.g. Kotlin.
-4. Even [Lightbend][lightbend] decided to leave this "ship". 
+4. Even [Lightbend][lightbend] decided to leave this "ship".
 5. Play and Java is not even considered, there are much better frameworks for Java.
 
 ## Rant

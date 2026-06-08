@@ -29,7 +29,7 @@ Here is the list of talks I've attended (some talks have been excluded from this
 ### 1 - Keynote: F# Code I Love by [Don Syme](https://github.com/dsyme) (*F# Language Designer*)
 
 - [Video](https://www.youtube.com/watch?v=MGLxyyTF3OM)
-- [@dsyme](https://twitter.com/dsyme) 
+- [@dsyme](https://twitter.com/dsyme)
 
 The most interesting for me was this paper: [The Early History of F# (HOPL IV - first draft)](https://fsharp.org/history/hopl-draft-1.pdf). This paper has 36 pages, you will like it if you like **IT history**.
 
@@ -85,7 +85,7 @@ The speaker shared his experience with F# and what motivated him to implement [N
 
 > Domain Driven Design patterns are commonly used in business applications.
 > There is, however, a visible mismatch when we look at them from a functional programming perspective. Some concepts seem to fit perfectly: like event sourcing. Some, however, seem to be built around mutability or side effects like aggregates or commands in CQRS. Some are just hard to grasp like domain events, integration events.
-> 
+>
 > In this talk we will try to revisit the core concepts of DDD from a functional perspective and build a simple system using a little bit more functional approach.
 
 - [@jarek000000](https://twitter.com/jarek000000)
@@ -113,7 +113,7 @@ He said that **Flink** it's for real-time process and **Spark** is for batch dat
 
 ### 9 - Fast & Functional by [Michał Płachta](https://github.com/miciek)
 
->  In this talk we are going to create a functional and blazingly fast microservice. We will use functional programming abstractions to quickly mix & match different HTTP libraries, state implementations and concurrency configurations. Each step will be followed by a performance analysis using different tools from JVM toolbox. This talk is for you if you want to see how cats IO monad, async-profiler, flame graphs and wrk are used together to create nanoseconds-fast Scala service for YouTube videos statistics.
+> In this talk we are going to create a functional and blazingly fast microservice. We will use functional programming abstractions to quickly mix & match different HTTP libraries, state implementations and concurrency configurations. Each step will be followed by a performance analysis using different tools from JVM toolbox. This talk is for you if you want to see how cats IO monad, async-profiler, flame graphs and wrk are used together to create nanoseconds-fast Scala service for YouTube videos statistics.
 
 - [Slides](https://speakerdeck.com/miciek/fast-and-functional-66b89d68-5d8c-4d2b-9bc2-5fa4adf16734)
 - [Github - influencer-stats](https://github.com/miciek/influencer-stats) - related repo
@@ -126,7 +126,7 @@ This talk was very interesting: Scala, abstraction, functional programming, perf
 ### 10 - Behind collaborative text editing by [Bartosz Sypytkowski](https://github.com/Horusiath)
 
 > We’ll discuss the topic, that is well known from products such as Google Docs or Etherpad, and explain how Conflict-free Replicated Data Types will allow us to expand it into new territories. We'll take a peer-to-peer approach, with no central servers, constant internet connectivity or human assisted conflict resolution.
-> 
+>
 > During this talk we'll focus on Replicated Growable Array data structure and how it allows us to build peer-to-peer collaborative text editors. What's more, we'll also cover how to properly optimize it to address issues of most common implementations.
 
 - [Slides](https://www.slideshare.net/BartoszSypytkowski1/collaborative-text-editing-132892964)

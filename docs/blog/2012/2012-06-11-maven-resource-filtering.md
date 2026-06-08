@@ -1,8 +1,8 @@
 # Maven Resource Filtering
 <!-- tags: maven -->
 
-* [Using Maven profiles and resource filtering](http://www.manydesigns.com/en/portofino/documentation/tutorials/using-maven-profiles-and-resource-filtering)
-* [How do I add resources to my JAR?](http://maven.apache.org/guides/getting-started/index.html#How_do_I_add_resources_to_my_JAR)
+- [Using Maven profiles and resource filtering](http://www.manydesigns.com/en/portofino/documentation/tutorials/using-maven-profiles-and-resource-filtering)
+- [How do I add resources to my JAR?](http://maven.apache.org/guides/getting-started/index.html#How_do_I_add_resources_to_my_JAR)
 
 I assume that reader has a basic understanding of Maven resources.  
 
@@ -11,7 +11,7 @@ I assume that reader has a basic understanding of Maven resources.
 Let's generate the project:
 
 ```bash
-$ mvn archetype:generate -DgroupId=org.halyph -DartifactId=proptest -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn archetype:generate -DgroupId=org.halyph -DartifactId=proptest -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
 ```xml
@@ -34,15 +34,15 @@ $ mvn archetype:generate -DgroupId=org.halyph -DartifactId=proptest -DarchetypeA
 </project>
 ```
 
-Now, we have an application property file with bunch of properties which must be filtered `\proptest\src\main\resources\application.properties`: 
+Now, we have an application property file with bunch of properties which must be filtered `\proptest\src\main\resources\application.properties`:
 
-```
+```properties
 application.username=${jdbc.username}
 application.password=${jdbc.password}
 application.databaseName=${jdbc.databaseName}
 ```
 
-We have to add build/resources and properties section into pom.xml: 
+We have to add build/resources and properties section into pom.xml:
 
 ```xml
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemalocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -94,7 +94,7 @@ As you can see property values were successfully substituted.
 
 We can extract Maven properties in external property file `\proptest_extfile\src\main\filters\mysql_filters.properties`:
 
-```
+```properties
 jdbc.username=mysql_username
 jdbc.password=mysql_password
 jdbc.databaseName=mysql_databaseName
@@ -133,7 +133,7 @@ also, we have to adjust `pom.xml` to work properly with external filters (added 
 </project>
 ```
 
-Let's check the resulted \proptest\target\classes\application.properties file: 
+Let's check the resulted \proptest\target\classes\application.properties file:
 
 ```bash
 $ mvn process-resources
@@ -147,7 +147,7 @@ application.databaseName=mysql_databaseName
 ## Mixed resource filtering with external/internal properties
 
 What happen if we have overlapped properties in pom.xml with external property file.  
-Modified pom.xml: 
+Modified pom.xml:
 
 ```xml
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemalocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
@@ -254,10 +254,10 @@ Modified `pom.xml`:
 </project>
 ```
 
-Also, we have to add new external property file just to verify the property overlapping issue: 
+Also, we have to add new external property file just to verify the property overlapping issue:
 `\proptest_extfile\src\main\filters\cust_mysql_filters.properties`:
 
-```
+```properties
 jdbc.username=cust_mysql_username
 jdbc.password=cust_mysql_password
 jdbc.databaseName=cust_mysql_databaseName
@@ -265,7 +265,7 @@ jdbc.databaseName=cust_mysql_databaseName
 
 Now, it's time to check the resulted file `\proptest\target\classes\application.properties` file:
 
-```
+```bash
 $ mvn process-resources
 $ cat target/classes/application.properties
 

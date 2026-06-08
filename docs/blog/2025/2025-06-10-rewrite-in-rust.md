@@ -20,7 +20,7 @@ Let's start with the obvious candidates:
 - [**pyrefly**](https://github.com/facebook/pyrefly) - Meta (aka Facebook) Python type checker. They have older [pyre](https://github.com/facebook/pyre-check) type checker written in OCaml
 - [**PyO3**](https://github.com/PyO3/pyo3) - Framework for writing Python extensions in Rust
 - [**maturin**](https://github.com/PyO3/maturin) - Tool for building and publishing Rust-based Python packages
-- [**Polars**](https://github.com/pola-rs/polars) - Blazing-fast DataFrame library with Python bindings 
+- [**Polars**](https://github.com/pola-rs/polars) - Blazing-fast DataFrame library with Python bindings
 - [**pydantic-core**](https://github.com/pydantic/pydantic-core) - core validation logic for [pydantic](https://github.com/pydantic/pydantic)
 - [**tiktoken**](https://github.com/openai/tiktoken) - fast [BPE](https://en.wikipedia.org/wiki/Byte_pair_encoding) tokeniser for use with OpenAI's models
 
@@ -50,7 +50,7 @@ References
 #### Why Rust for Fish?
 
 > Because it seems to be up to the task, because we have people who know it on the team, because it has momentum and because it promises to help us with the threading problem.
-> 
+>
 > - Nobody really likes C++ or CMake, and there's no clear path for getting off old toolchains. Every year the pain will get worse.
 > - C++ is becoming a legacy language and finding contributors in the future will become difficult, while Rust has an active and growing community.
 > - Rust is what we need to turn on concurrent function execution.
@@ -75,9 +75,9 @@ References
 See: [“And Now for Something Completely Different”, 2016](https://blog.asciinema.org/post/and-now-for-something-completely-different/)
 
 > Wait, what? Back to Python? Yes, asciinema 1.3 brings back the original Python implementation of asciinema. It’s based on 0.9.8 codebase and adds all features and bug fixes that have been implemented in asciinema’s Go version between 0.9.8 and 1.2.0. We’ll keep the Go implementation in golang branch, it won’t be maintained though.
-> 
+>
 > While Go definitely has its strengths (easy concurrency, runtime speed, startup speed, stand-alone binary), this project didn’t really benefit from any of these (and suffered from Go’s pain points). Here is a (not exhaustive) list of things that contributed to the decision of dropping Go for Python:  
-> 
+>
 >- No need for concurrency or high speed here.
 >- Python is high level language while Go is lower level language (I think it’s fair to say it’s C 2.0). 95% of asciinema codebase is high level code and there’s basically a single file containing system calls like select/signal/ioctl/fork.
 >- Build problems: pty/terminal related Go libs don’t support as many [architectures](https://github.com/asciinema/asciinema/issues/134) and [operating systems](https://github.com/asciinema/asciinema/issues/144) while Python runs basically on every UNIX-like system.

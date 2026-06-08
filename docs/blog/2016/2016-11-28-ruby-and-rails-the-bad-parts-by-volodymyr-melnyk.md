@@ -20,7 +20,7 @@
 
 ## References
 
-These notes are compiled from https://speakerdeck.com/egoholic/ruby-and-rails-the-bad-parts.
+These notes are compiled from <https://speakerdeck.com/egoholic/ruby-and-rails-the-bad-parts>.
 
 ## Good Parts
 
@@ -154,12 +154,12 @@ end
 Ruby has a lot of alternate syntaxes for different things. Because of that Ruby code can look very differently.
 
 
-- `{...}` vs `do ... end` 
-- `->() {...}`, `-> {}`, `lambda {|| }`, `lambda {}` 
+- `{...}` vs `do ... end`
+- `->() {...}`, `-> {}`, `lambda {|| }`, `lambda {}`
 - `def mtd(a, b)`, `def mtd a, b`
 - `0..10`, `0...10`
-- `%w{}`, `%w[]`, `%w()`, `%w//`, `%w""`, `%w||`, `%w[]`, `%W[]`, `%i[]`, `%i[]` 
-`//`, `%r//`, `%s[]` 
+- `%w{}`, `%w[]`, `%w()`, `%w//`, `%w""`, `%w||`, `%w[]`, `%W[]`, `%i[]`, `%i[]`
+`//`, `%r//`, `%s[]`
 - `''`, `""`
 
 #### `&&` versus `and`
@@ -201,7 +201,7 @@ n = nil or n + 2
 # method `+' for nil
 ```
 
-### Values against expressions You should know!
+### Values against expressions You should know
 
 ### Boolean Algebra Fail
 
@@ -214,7 +214,7 @@ true && "string"
 1 || nil #=> 1
 ```
 
-### Ruby is not that strongly-typed language.
+### Ruby is not that strongly-typed language
 
 Add more cases
 
@@ -225,6 +225,6 @@ Add more cases
 - more code
   - checks
   - special cases
-  - error handling 
+  - error handling
 - more specs / tests  
 - more errors

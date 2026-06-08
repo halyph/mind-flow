@@ -5,13 +5,13 @@ There are many Java REST frameworks. We can devide these frameworks on three gro
 
 1. Spring MVC. It can be used to implement RESTful services. This framework has been widely used, mature, etc. But, Spring, in general, does not support JAX-RS standard.
 2. JAX-RS implementation. I know at least four frameworks:
-   * [Apache CXF](http://cxf.apache.org/ "Apache CXF") 
-   * [Jersey](http://jersey.java.net/), the [reference implementation](http://en.wikipedia.org/wiki/Reference_implementation "Reference implementation") from [Oracle](http://en.wikipedia.org/wiki/Oracle_Corporation "Oracle Corporation")
-   * [RESTeasy](http://www.jboss.org/resteasy), [JBoss](http://en.wikipedia.org/wiki/JBoss "JBoss")'s implementation
-   * [Restlet](http://restlet.org/ "Restlet")
+   - [Apache CXF](http://cxf.apache.org/ "Apache CXF")
+   - [Jersey](http://jersey.java.net/), the [reference implementation](http://en.wikipedia.org/wiki/Reference_implementation "Reference implementation") from [Oracle](http://en.wikipedia.org/wiki/Oracle_Corporation "Oracle Corporation")
+   - [RESTeasy](http://www.jboss.org/resteasy), [JBoss](http://en.wikipedia.org/wiki/JBoss "JBoss")'s implementation
+   - [Restlet](http://restlet.org/ "Restlet")
 3. Non-Standard. I.e. frameworks which do not support JAX-RS, or addition many other features. Please note, it assume that Spring MVC can be called "standard" ;-)
-   * [Dropwizard](http://dropwizard.codahale.com/) very cool frameworks. It supports not only JAX-RS. 
-   * [RESTX](http://restx.io/), lightweight framework.
+   - [Dropwizard](http://dropwizard.codahale.com/) very cool frameworks. It supports not only JAX-RS.
+   - [RESTX](http://restx.io/), lightweight framework.
 
 It's logically to ask yourself why don't use Spring MVC for REST services development. There is a  very good article on InfoQ: [A Comparison of Spring MVC and JAX-RS](http://www.infoq.com/articles/springmvc_jsx-rs). I consider to use JAX-RS frameworks for REST API and Spring MVC for everything else . The most popular are [Apache CXF](http://cxf.apache.org/ "Apache CXF")  and [Jersey](http://jersey.java.net/). Also, [Apache CXF](http://cxf.apache.org/ "Apache CXF") has SOAP services support. Actually, you can easily switch between JAX-RS frameworks till you use standard approaches.  
   
@@ -247,10 +247,10 @@ public class UserServiceImpl implements UserService {
 
 It's time to introduce REST services. with the next endpoints **/api/users** and **/api/exception**. So, we  have bunch of REST URIs:  
 
-* **GET /api/users** - get all users
-* **GET /api/users/{id}** - get user with id
-* **POST /api/users** - accept "user" json and create the specified user on back-end
-* **GET /api/exception** - throw exception
+- **GET /api/users** - get all users
+- **GET /api/users/{id}** - get user with id
+- **POST /api/users** - accept "user" json and create the specified user on back-end
+- **GET /api/exception** - throw exception
 
 ```java
 package com.halyph.rest;  

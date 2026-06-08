@@ -12,33 +12,33 @@ Here is use case.
 
 See sample screenshot below which visualize the general idea. Here:  
 
-* **Main\_Job** is single entry job, which must contain all sibling jobs  statuses
-* **Job\_Set\_1** and **Job\_Set\_2** are two child jobs
-* **Build\_\[1-4\]** are child jobs of **Job\_Set\_1**
-* **Tests\_\[1-3\]** are child jobs of **Job\_Set\_2**
+- **Main\_Job** is single entry job, which must contain all sibling jobs  statuses
+- **Job\_Set\_1** and **Job\_Set\_2** are two child jobs
+- **Build\_\[1-4\]** are child jobs of **Job\_Set\_1**
+- **Tests\_\[1-3\]** are child jobs of **Job\_Set\_2**
 
-![](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip1.png)
+![Jenkins job hierarchy diagram](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip1.png)
   
 Now, we should use some Jenkins plugin to build such hierarchy. I've been using [Multijob Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Multijob+Plugin).  
 See below screenshots of configuration for:
 
 Main\_Job/configure
 
-![](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip2.png)
+![Main Job configuration](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip2.png)
 
-Job\_Set\_1/configure 
+Job\_Set\_1/configure
 
-![](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip3.png)
+![Job Set 1 configuration](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip3.png)
 
-Job\_Set\_2/configure 
+Job\_Set\_2/configure
 
-![](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip4.png)
+![Job Set 2 configuration](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip4.png)
 
 But, it's not enough. We have to aggregate statuses into **Main\_Job** from all sibling jobs. I've been using patched [Groovy Postbuild Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Groovy+Postbuild+Plugin). Modified plugin is located here [https://github.com/halyph/groovy-postbuild-plugin](https://github.com/halyph/groovy-postbuild-plugin)  
   
 Groovy Postbuild Plugin allows us to write groovy scripts for job's Post-build Actions. This script has access to whole Jenkins environment and can consume functionality of all installed Jenkins plugin:
 
-![](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip5.png)
+![Groovy Postbuild configuration](2013-01-26-jenkins-hierarchical-jobs-and-jobs/clip5.png)
 
 Here is the source of this script:  
 
@@ -112,16 +112,16 @@ You can find it on GitHub Gist also: [https://gist.github.com/4610274](https://g
 
 This script is pretty dumb. It simply extracts (prints in Main\_Job console) the next info for each child jobs:  
 
-* job name
-* build number
-* build result (status)
-* build log
+- job name
+- build number
+- build result (status)
+- build log
 
 Also, it has ability to set the **Main\_Job** status based on statuses of child jobs. See `threshold` variable in script.  
 
 And aggregated report looks like this:  
 
-```
+```text
 Started by user anonymous
 Building in workspace C:\Users\oivasiv\.jenkins\jobs\Main_Job\workspace
 Starting build job Job_Set_1.
@@ -232,7 +232,7 @@ Finished: FAILURE
 
 So, what are the benefits of such jobs status aggregation and Groovy post-processing:  
 
-* we have jobs status in one place
-* e-mail notification sent from **Main\_Job** contains this status
-* ability to implement any custom post-processing logic
-* ability to re-use the other plugins features via groovy scrip
+- we have jobs status in one place
+- e-mail notification sent from **Main\_Job** contains this status
+- ability to implement any custom post-processing logic
+- ability to re-use the other plugins features via groovy scrip

@@ -1,11 +1,11 @@
 # Git command extension
 <!-- tags: git -->
 
-You probably know about "git config alias.*" command. See quote from documentation: 
+You probably know about "git config alias.*" command. See quote from documentation:
 
 > **alias.***
-> 
-> ... 
+>
+> ...
 > If the alias expansion is prefixed with an exclamation point, it will be treated as a shell command. For example, defining `alias.new = !gitk --all --not ORIG_HEAD`, the invocation `git new` is equivalent to running the shell command `gitk --all --not ORIG_HEAD`. Note that shell commands will be executed from the top-level directory of a repository, which may not necessarily be the current directory.
 
 Base on this we can define some "new" command via aliases. But, there is another way for extending git. Let's have a quick view into [git.c source](https://github.com/git/git/blob/master/git.c):

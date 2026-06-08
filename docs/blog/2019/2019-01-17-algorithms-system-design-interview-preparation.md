@@ -60,7 +60,7 @@ I have collected some amount of these repos.
 - [iiitv/algos](https://github.com/iiitv/algos)
   - **tags:** [java] [python] [algorithm]
   - **Comments:** Popular Algorithms and Data Structures implemented in popular languages
-- [tayllan/awesome-algorithms](https://github.com/tayllan/awesome-algorithms) 
+- [tayllan/awesome-algorithms](https://github.com/tayllan/awesome-algorithms)
   - **tags:** [java] [python] [awersome] [algorithm]
   - **Comments:** huge collection
 - [trekhleb/javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)

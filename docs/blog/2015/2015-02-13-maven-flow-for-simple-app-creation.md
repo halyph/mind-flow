@@ -394,15 +394,15 @@ This one-liner is very simple and can be transformed to shell/batch scripts depe
 [Maven Application Assembler Plugin] usage:
 
 ```bash  
-$ mvn package
-$ target/appassembler/bin/app
+mvn package
+target/appassembler/bin/app
 ```
 
 > - All dependencies and the artifact itself are placed in the defined assemble directory (defaults to `$project.build.directory/appassembler`).
 >
 > - A `bin/` directory is created in the assemble directory and the generated bin scripts are placed in that directory (defaults to both unix shell scripts and Windows bat files).
 
-Note: [Maven Application Assembler Plugin] have a lot of customization options, just check the documentation. 
+Note: [Maven Application Assembler Plugin] have a lot of customization options, just check the documentation.
 
 ## Summary
 

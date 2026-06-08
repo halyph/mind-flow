@@ -4,7 +4,7 @@
 Some time ago I had a pleasure to implement Ruby-based tool which theoretically must be easy to install and have no or limited dependencies.
 I've picked `JRuby` and packed/distribute the application as a `jar`. I.e. JRE was the single dependency I had. In general it was very nice distribution model despite the fact that non-Java users must install JRE (Java SE Runtime Environment) to run the application.
 
-All other approaches like Ruby, Python, Perl, etc. were not acceptable as they requires additional user's efforts for tool installation and/or package distribution. 
+All other approaches like Ruby, Python, Perl, etc. were not acceptable as they requires additional user's efforts for tool installation and/or package distribution.
 
 The idea was/is to have single native binary for all major platforms which requires no dependencies. Simply copy and run.
 
@@ -12,19 +12,19 @@ Now, the question: did I have other alternatives to implement this tool? Could i
 
 Looking now at this task I can say that this king of application is nice to implement in [Go](https://golang.org). Go has everything I need for really cross-platform application development and single static binary output which is awesome for tools/utilities writers.
 
-I decided to look around and understand which other popular languages support compilation/packaging to native (semi-)single static binary. The term _"semi-single"_ static binary will be explained later.
+I decided to look around and understand which other popular languages support compilation/packaging to native (semi-)single static binary. The term *"semi-single"* static binary will be explained later.
 
 ## Compilers
 
 Quick googling give us the next languages:
 
-* [Rust](https://www.rust-lang.org)
-* [Haskell](https://www.haskell.org)
-* [OCaml](https://ocaml.org/)
-* [Lisp](http://www.cliki.net/creating%20executables)
-  * [SBCL](http://www.sbcl.org/) 
-  * [Clozure CL](http://ccl.clozure.com/)
-* [D](http://dlang.org/)
+- [Rust](https://www.rust-lang.org)
+- [Haskell](https://www.haskell.org)
+- [OCaml](https://ocaml.org/)
+- [Lisp](http://www.cliki.net/creating%20executables)
+  - [SBCL](http://www.sbcl.org/)
+  - [Clozure CL](http://ccl.clozure.com/)
+- [D](http://dlang.org/)
 
 **Haskell**, **OCaml** and **Lisp** are not widely used. And these langs should be picked carefully due to language specific learning curve.
 
@@ -36,7 +36,7 @@ Quick googling give us the next languages:
 
 There is no direct compilation from interpret/dynamic language to native static binary. But, it's possible to pack application with language runtime into "archive"/executable to behave like static native binary.
 
-- Python [freezing](http://docs.python-guide.org/en/latest/shipping/freezing/) (To _"Freeze"_ your code is to distribute to end-users as an executable which includes a bundled Python interpreter)
+- Python [freezing](http://docs.python-guide.org/en/latest/shipping/freezing/) (To *"Freeze"* your code is to distribute to end-users as an executable which includes a bundled Python interpreter)
   - [bbFreeze](https://pypi.python.org/pypi/bbfreeze)
   - [py2exe](http://www.py2exe.org)
   - [pyInstaller](http://www.pyinstaller.org)

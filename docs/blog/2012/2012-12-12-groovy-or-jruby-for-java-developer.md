@@ -20,17 +20,17 @@ But Ruby ecosystem is totally different from Java/Groovy world. And it's really 
 
 Mixing JRuby and Java isn't a difficult task. But using Java API in Ruby code doesn't looks natural. And developing in mixed Java/Ruby environment isn't very comfortable:
 
-* we have two package types: JARs and gems
-* library versioning and dependency management is different
-* Ruby/JRuby still has some cross-plafrom issues, especially on Windows (i.e. many Ruby gems do not support Windows and they must be fixed to support it, very annoying)
-* it might be difficult to convince teammates to use Ruby on Java project
+- we have two package types: JARs and gems
+- library versioning and dependency management is different
+- Ruby/JRuby still has some cross-plafrom issues, especially on Windows (i.e. many Ruby gems do not support Windows and they must be fixed to support it, very annoying)
+- it might be difficult to convince teammates to use Ruby on Java project
 
  I thought that Groovy isn't a (J)Ruby competitor until I've tried to automate some simple tasks in Groovy. I've got seamless integration with Java. It's really transparent and comfortable coding tool for Java developer. I have no mess with gems (Groovy uses JARs). And the Java ecosystem stays the same. Groovy has the similar dynamic power as Ruby. Yes, in some cases this "sugar" isn't so sweet as in Ruby. But, Groovy is really pragmatic choice for Java developer.
 
 **Conclusion**: Ruby language is beautiful and sexy language, no doubts. But, we need a time to master Ruby ecosystem, deployment issues and tools philosophy. Also, JRuby/Java integration doesn't looks to me so pragmatic as Groovy/Java. It means investment in Ruby might be expensive.
- I will recommend to learn Ruby just to open another community for yourself (if you are Java developer), it should be as self-education task, no more. 
+ I will recommend to learn Ruby just to open another community for yourself (if you are Java developer), it should be as self-education task, no more.
 
 Links:
 
-* [Transforming to Groovy](http://www.infoq.com/presentations/Transforming-to-Groovy)
-* [Miro shared his thoughts about similar issue](http://thinkwrap.wordpress.com/2009/03/17/bye-bye-ruby-hello-groovy/)
+- [Transforming to Groovy](http://www.infoq.com/presentations/Transforming-to-Groovy)
+- [Miro shared his thoughts about similar issue](http://thinkwrap.wordpress.com/2009/03/17/bye-bye-ruby-hello-groovy/)

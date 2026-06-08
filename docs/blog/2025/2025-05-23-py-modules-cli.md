@@ -98,7 +98,7 @@ These built-in modules can be handy on systems where only Python is available.
 
 | Module       | Purpose                          |
 | ------------ | -------------------------------- |
-| `antigravity` | **Open XKCD comic.** Launches a browser to the [classic XKCD comic #353](https://xkcd.com/353/) | 
+| `antigravity` | **Open XKCD comic.** Launches a browser to the [classic XKCD comic #353](https://xkcd.com/353/) |
 | `this`       | The Zen of Python                |
 | `turtledemo` | Demos for turtle graphics module |
 
@@ -114,7 +114,7 @@ In the meantime, these built-in CLI tools are still worth knowing about. Especia
 
 ## References
 
-- PEPs: 
+- PEPs:
   - [PEP 594 – Removing dead batteries from the standard library][PEP 594]
   - [PEP 632 – Deprecate distutils module][PEP 632]
 - [Modules command-line interface (CLI)][pydoc-cmdline]

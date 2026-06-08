@@ -1,16 +1,16 @@
 # Gradle, Groovy, Kotlin. FTW?
 <!-- tags: gradle, groovy, kotlin -->
 
-You’ve probably heard about [_"Kotlin-based approach to writing Gradle build scripts"_](http://gradle.org/blog/kotlin-meets-gradle/). A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of [Groovy, Gradle and their future relationship](http://melix.github.io/blog/2016/05/gradle-kotlin.html).
+You’ve probably heard about [*"Kotlin-based approach to writing Gradle build scripts"*](http://gradle.org/blog/kotlin-meets-gradle/). A lot of noise was produced based on this announcement and Cédric Champeau tried to explain the real state of [Groovy, Gradle and their future relationship](http://melix.github.io/blog/2016/05/gradle-kotlin.html).
 
-Just to avoid different speculation about _"Gradle is written in Groovy"_ and now _"it will be re-written in Kotlin"_ here are some *numbers*:
+Just to avoid different speculation about *"Gradle is written in Groovy"* and now *"it will be re-written in Kotlin"* here are some *numbers*:
 
-* Let's check the [Gradle repo](https://github.com/gradle/gradle) language statistic provided by  GitHub
+- Let's check the [Gradle repo](https://github.com/gradle/gradle) language statistic provided by  GitHub
 
 ![blog_post_image](2016-06-15-gradle-groovy-kotlin-ftw/gradle-github.jpg)
 
 - Gradle root folder has several very important sub-folders:
-  - `buildSrc` - https://docs.gradle.org/current/userguide/-ganizing_build_logic.html#sec:build_sources[It's related to Gradle -ild process]
+  - `buildSrc` - <https://docs.gradle.org/current/userguide/-ganizing_build_logic.html#sec:build_sources[It's> related to Gradle -ild process]
   - `config` - nothing interesting: `condenarc` and `checkstyle` configs
   - `design-docs` - markdown documentation
   - `gradle` - Gradle scripts
@@ -18,10 +18,10 @@ Just to avoid different speculation about _"Gradle is written in Groovy"_ and no
 - `subprojects` contains several interesting sub-folders:
   - `src/main` - actual "gradle" source code
   - `src/test`, `src/integTest` and `src/testFixtures` test source code.
-- Now, count the language stats by https://github.com/AlDanial/cloc[cloc] tool:
+- Now, count the language stats by <https://github.com/AlDanial/cloc> tool:
   - `src/main`:
 
-```
+```text
 $ cloc-1.66.exe  --match-d="src/main/" --found=oicloc2.log .
     6052 text files.
 Wrote oicloc2.log
@@ -55,9 +55,9 @@ SUM:                          5815          60117         133711         258402
 
 Based on this raw analysis we have *93% Java* files and *4.7% Groovy* files.
 
-- Let's add *_test_* ( `src/test`, `src/integTest` and `src/testFixtures`) folders to our statistics:
+- Let's add **test** ( `src/test`, `src/integTest` and `src/testFixtures`) folders to our statistics:
 
-```
+```text
 $ cloc-1.66.exe  --match-d="src/(test|integTest|testFixtures)/" --found=oicloc3.log .
     3867 text files.
 Wrote oicloc3.log
@@ -92,5 +92,5 @@ As You can see we have *14.5% Java* files and *82% Groovy* files.
 
 ## Summary
 
-*Gradle* is _Java_-based project and it uses _Groovy_ for testing and as a DSL implementation tool, nothing more.
-The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds strange. _Gradle Inc._ has just made pragmatic decision. That's it.
+*Gradle* is *Java*-based project and it uses *Groovy* for testing and as a DSL implementation tool, nothing more.
+The noise around "Groovy vs Kotlin" for DSL implementation inside Gradle sounds strange. *Gradle Inc.* has just made pragmatic decision. That's it.

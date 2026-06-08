@@ -3,7 +3,7 @@
 
 I'm sure that a lot of Java developers experienced `java.lang.OutOfMemoryError: PermGen space` (OOME PermGen). It was very common to get this error after multiple WAR re-deploys on Tomcat v.6.x. Permanent generation (PermGen) region of memory is used to store the internal representation of loaded classes (and much more, see here [[1]] and [[2]]).
 
-So, we can get **OOME PermGen** when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes. 
+So, we can get **OOME PermGen** when ClassLoader whats to store class definition, but there is not enough space in PermGen - i.e. loaded too many classes.
 
 Based on this **OOME PermGen** error can be generated via:
 
@@ -72,7 +72,7 @@ The main idea is dynamically create a lot of classes via byte code manipulation 
 - Also, we should set **PermGen** and **MaxPermGen** size to 2M and 4M respectively (it gives us a chance to get error as quickly as possible). Maven `Appassembler` plugin [[3]] uses `extraJvmArguments` parameter while generating wrapper scripts: shell and batch (see `pom.xml` above, `<extraJvmArguments>-XX:PermSize=2M -XX:MaxPermSize=2M</extraJvmArguments>`).
 
 > --XX:PermSize<size> - Set initial PermGen Size
-
+>
 > --XX:MaxPermSize<size> - Set the maximum PermGen Size
 
 - Below is a simple application which dynamically creates 1000 classes to cause PermGem leak. Class creation is very simple and self explanatory. The main idea is that we should use byte code manipulation library to create classes dynamically.

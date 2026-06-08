@@ -41,7 +41,7 @@ Yes, JEEConf is simply the best. [XP Injection](http://xpinjection.com/) did ama
 
 ## References
 
-* [JEEConf - Kiev, 2014 - Report](https://halyph.com/2014/05/jeeconf-kiev-2014-report.html)
-* [JEEConf - Kiev, 2013 - Report](https://halyph.blogspot.com/2013/05/jeeconf-kiev-2013-report.html)
-* [JEEConf - Kiev, 2012 - Report](https://halyph.blogspot.com/2012/05/this-year-we-had-second-jeeconf.html)
-* [JEEConf - Kiev, 2011 - Report](https://halyph.blogspot.com/2011/05/jeeconf-kiev-2011-report.html)
+- [JEEConf - Kiev, 2014 - Report](https://halyph.com/2014/05/jeeconf-kiev-2014-report.html)
+- [JEEConf - Kiev, 2013 - Report](https://halyph.blogspot.com/2013/05/jeeconf-kiev-2013-report.html)
+- [JEEConf - Kiev, 2012 - Report](https://halyph.blogspot.com/2012/05/this-year-we-had-second-jeeconf.html)
+- [JEEConf - Kiev, 2011 - Report](https://halyph.blogspot.com/2011/05/jeeconf-kiev-2011-report.html)

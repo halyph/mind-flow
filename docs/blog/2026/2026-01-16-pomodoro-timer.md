@@ -20,11 +20,11 @@ In the past, I’ve tried a classic kitchen timer:
 | Loud ticking | Simple to the max |
 | No preset time periods - setting the “right” duration requires attention | |
 
-I wasn't looking for "features". I was looking for constraints. 
+I wasn't looking for "features". I was looking for constraints.
 
 A timer should remove decisions, not add them.
 
-What I need: 3-4 preset time periods and a simple, intuitive interface. And I found it. 
+What I need: 3-4 preset time periods and a simple, intuitive interface. And I found it.
 
 ![Rotating Cube Timer ](2026-01-16-pomodoro-timer/pic2.png)
 

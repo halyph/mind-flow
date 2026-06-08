@@ -48,17 +48,18 @@ export PATH=$PATH:$GOPATH/bin
 ```
 
 ## Install Go present tool
+
 **present** tool is located in separate package `golang.org/x/tools` which depends on `golang.org/x/net` package:
 
 ```bash
-$ go get golang.org/x/net
-$ go get golang.org/x/tools
-$ go install golang.org/x/tools/cmd/present
+go get golang.org/x/net
+go get golang.org/x/tools
+go install golang.org/x/tools/cmd/present
 ```
 
 Now, we can find **present** tool here:
 
-```
+```bash
 $ which present
 /Users/halyph/Projects/go/bin/present
 ```
@@ -69,7 +70,7 @@ The easiest way to test **present** tool is to render some slides:
 
 - Create sample `slide` file (see `.slide` [file format](http://godoc.org/golang.org/x/tools/present)) in any folder:
 
-```
+```text
 $ cat sample.slide
 
 Title of document
@@ -91,7 +92,7 @@ Some Text
 
 - Run **present** in this folder:
 
-```
+```bash
 $ present
 2015/05/19 00:55:33 Open your web browser and visit http://127.0.0.1:3999
 ```

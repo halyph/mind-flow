@@ -21,9 +21,9 @@ E.g.
 
 ![blog_post_image_inline](2015-05-19-grails-2-dot-5-0-debug-in-intellij-idea/idea1.png)
 
-And run this Configuration. We should get the next output 
+And run this Configuration. We should get the next output
 
-```
+```text
 Listening for transport dt_socket at address: 5005
 |Server running. Browse to http://localhost:8080/TekDays
 ```

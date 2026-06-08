@@ -66,11 +66,13 @@ NoMethodError: undefined method `x' for main:Object
 #### 13. There should be one and preferably only one obvious way to do it
 
 > *Yukihiro Matsumoto*: Ruby inherited the Perl philosophy of having more than one way to do the same thing. I inherited that philosophy from Larry Wall, who is my hero actually. *I want to make Ruby users free. I want to give them the freedom to choose. People are different. People choose different criteria. But if there is a better way among many alternatives, I want to encourage that way by making it comfortable. So that's what I've tried to do. Maybe Python code is a bit more readable. Everyone can write the same style of Python code, so it can be easier to read, maybe. But the difference from one person to the next is so big, providing only one way is little help even if you're using Python, I think. I'd rather provide many ways if it's possible, but encourage or guide users to choose a better way if it's possible.*
+
 - Reference: [The Philosophy of Ruby.A Conversation with Yukihiro Matsumoto, Part I by Bill Venners. September 29, 2003](http://www.artima.com/intv/ruby3.html)
 
 #### 16. Although never is often better than *right* now
 
 ~~Then Ruby v.1.8.6~~
+
 ```ruby
 >> ['a', 'b'].map(&:upcase)
 TypeError: wrong argument type Symbol (expected Proc) form (irb):4
@@ -79,10 +81,12 @@ TypeError: wrong argument type Symbol (expected Proc) form (irb):4
 >> ['a', 'b'].map(&:upcase)
 => ["A", "B"]
 ```
+
 Ruby 1.8.6: No `&:foo`
 Ruby 1.8.7: `&:foo` syntax added
 
 Now
+
 ```ruby
 >> ['a', 'b'].map(&:upcase)
 => ["A", "B"]
@@ -90,9 +94,9 @@ Now
 
 #### 17. If the implementation is hard to explain, it's a bad idea
 
-* [Python grammar dependency graph. Generated from this Python 2.3.3 grammar from antlr.org.](https://www.flickr.com/photos/nicksieger/281055485/in/photostream/)
-* [Ruby 1.8.4 grammar dependency graph](https://www.flickr.com/photos/nicksieger/280661836/in/photostream/)
-  * [Visualization of Ruby's Grammar](http://blog.nicksieger.com/articles/2006/10/27/visualization-of-rubys-grammar/)
+- [Python grammar dependency graph. Generated from this Python 2.3.3 grammar from antlr.org.](https://www.flickr.com/photos/nicksieger/281055485/in/photostream/)
+- [Ruby 1.8.4 grammar dependency graph](https://www.flickr.com/photos/nicksieger/280661836/in/photostream/)
+  - [Visualization of Ruby's Grammar](http://blog.nicksieger.com/articles/2006/10/27/visualization-of-rubys-grammar/)
 
 ##### Ruby Grammar
 
@@ -102,7 +106,7 @@ Now
 
 ![pygr.jpg](2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt/pygr.jpg)
 
-#### 19. Namespaces are one honking great idea - let's do more of those!
+#### 19. Namespaces are one honking great idea - let's do more of those
 
 
 ```ruby
@@ -190,7 +194,7 @@ def describe_integer():
 # OK
 ```
 
-#### WARNING! Extreme Opinions Ahead!
+#### WARNING! Extreme Opinions Ahead
 
 *At the beginning*: Ruby is ugly; Python is beautifyl.
 *Then*:             Nose is ugle; RSpec is beautiful.
@@ -214,6 +218,6 @@ end
 
 ## References
 
-* [Vimeo: Python vs. Ruby: A Battle to The Death](https://vimeo.com/9471538)
-  * This talk was given at Northwest Python Day 2010. The companion blog post is at [blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html](http://blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html)
-* [Blog post: Python vs. Ruby: A Battle to The Death](http://blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html)
+- [Vimeo: Python vs. Ruby: A Battle to The Death](https://vimeo.com/9471538)
+  - This talk was given at Northwest Python Day 2010. The companion blog post is at [blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html](http://blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html)
+- [Blog post: Python vs. Ruby: A Battle to The Death](http://blog.extracheese.org/2010/02/python-vs-ruby-a-battle-to-the-death.html)

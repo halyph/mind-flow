@@ -16,7 +16,7 @@ In general, I've been doing programming language ecosystem discovery before jump
   - [Educational resources](https://github.com/Gabriel439/post-rfc/blob/master/sotu.md#education) - this part is especially important for beginners
 - [How I Start. Haskell With *Chris Allen*](https://howistart.org/posts/haskell/1) - Tutorial "how to write a package in Haskell and interact with the code inside of it."
 - [Learn Haskell, by *Chris Allen*](https://github.com/bitemyapp/learnhaskell) - advices
-- [Blog: "Haskell for all" by *Gabriel Gonzalez*](http://www.haskellforall.com). Gabriel blogs a lot about Haskell. But the next post might be interesting for beginners: 
+- [Blog: "Haskell for all" by *Gabriel Gonzalez*](http://www.haskellforall.com). Gabriel blogs a lot about Haskell. But the next post might be interesting for beginners:
   - [Detailed walkthrough for a beginner Haskell program](http://www.haskellforall.com/2018/10/detailed-walkthrough-for-beginner.html)
 - [Exercism - Haskell](https://exercism.io/my/tracks/haskell) - **Exercism** is an online platform designed to help you improve your coding skills through practice and mentorship
 - [The Haskell Tool Stack](https://docs.haskellstack.org/en/stable/README/) - **Stack** is a cross-platform program for developing Haskell projects
@@ -28,7 +28,7 @@ In general, I've been doing programming language ecosystem discovery before jump
 
 ## Development environment for this course
 
-Right now I do not want to concentrate my attention on Haskell build tools. Also, I know that people do not recommend using Haskell Platform (see [here](https://github.com/bitemyapp/learnhaskell#also-do-not-install-haskell-platform)).
+Right now I do not want to concentrate my attention on Haskell build tools. Also, I know that people do not recommend using Haskell Platform (see [bitemyapp/learnhaskell](https://github.com/bitemyapp/learnhaskell#also-do-not-install-haskell-platform)).
 That's why I've decided to use docker image.
 
 ```bash

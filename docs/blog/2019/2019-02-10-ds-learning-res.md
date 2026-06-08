@@ -56,7 +56,7 @@ Mr. Giles has collected amazing collection of resources in the next video [Can y
 
 ## Practice Python Projects
 
-- https://github.com/tuvtran/project-based-learning#python
+- <https://github.com/tuvtran/project-based-learning#python>
 
 ## More Python
 

@@ -94,6 +94,7 @@ See <code>sendme.go</code>
         fmt.Println("Email sent successfully!")
     }
   ```
+
 </details>
 
 <details>
@@ -358,6 +359,7 @@ See sample <code>email.html</code> file
 
     </html>
   ```
+
 </details>
 
 ## How to fix?
@@ -417,7 +419,7 @@ My demo app is in Go, that's why I've picked [`go-premailer`](https://github.com
 
 ![alt text](2025-08-23-premailer/pic3.jpg)
 
-No so bad, ugly, but better than with stripped styles. 
+No so bad, ugly, but better than with stripped styles.
 
 ### 2. Use LLM to inline CSS styles
 
@@ -524,6 +526,7 @@ See <code>email_inline_styles.html</code>
 
     </html>
 ```
+
 </details>
 
 - send email

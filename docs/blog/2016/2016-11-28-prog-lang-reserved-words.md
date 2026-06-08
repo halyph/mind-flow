@@ -1,26 +1,26 @@
-# Reserved Words of Programming languages 
+# Reserved Words of Programming languages
 <!-- tags: ruby, python, java, scala, golang, cpp, c -->
 
 ![blog_post_image](2016-11-28-prog-lang-reserved-words/wordcloud-wide.png)
 
 Amount of reserved words per programming language:
 
-* **C++** - 92
-* **C89** - 32
-* **C99** - 37
-* **C11** - 42
-* **Python 2** - 31   
-* **Python 3** - 33
-* **Ruby** - 41
-* **Golang** - 25
-* **Java** - 53
-* **Scala** - 50
+- **C++** - 92
+- **C89** - 32
+- **C99** - 37
+- **C11** - 42
+- **Python 2** - 31
+- **Python 3** - 33
+- **Ruby** - 41
+- **Golang** - 25
+- **Java** - 53
+- **Scala** - 50
 
 As You can see **Golang** has the minimal amount of reserved words.
 
 ## [C++ keywords](http://en.cppreference.com/w/cpp/keyword): 92 words
 
-```
+```text
 alignas (since C++11)    dynamic_cast           reinterpret_cast
 alignof (since C++11)    else                   requires (concepts TS)
 and                      enum                   return
@@ -58,7 +58,7 @@ double                   public                 xor
 
 ### C89: 32 words
 
-```
+```text
 auto         goto         
 break        if           
 case         int          
@@ -77,7 +77,7 @@ for          union
 
 ### C99: C89 + 5 words
 
-```
+```text
 _Bool
 _Complex
 _Imaginary
@@ -87,15 +87,16 @@ restrict
 
 ### C11: C99 + 5 words
 
-```
+```text
 _Alignas        _Noreturn
 _Alignof        _Static_assert
 _Atomic         _Thread_local
 _Generic        _Noreturn
 ```
+
 ## [Python 2](https://docs.python.org/2/reference/lexical_analysis.html#keywords): 31 words
 
-```
+```text
 and       del       from      not       while
 as        elif      global    or        with
 assert    else      if        pass      yield
@@ -108,7 +109,7 @@ def       for       lambda    try
 
 ## [Python 3](https://docs.python.org/3/reference/lexical_analysis.html#keywords): 33 words
 
-```
+```text
 False      class      finally    is         return
 None       continue   for        lambda     try
 True       def        from       nonlocal   while
@@ -120,7 +121,7 @@ break      except     in         raise
 
 ## [Ruby](https://docs.ruby-lang.org/en/2.3.0/keywords_rdoc.html): 41 words
 
-```
+```text
 __ENCODING__
 __FILE__  and    def       end     in      or      self   unless
 __LINE__  begin  defined?  ensure  module  redo    super  until
@@ -131,7 +132,7 @@ alias     class  elsif     if      not     return  undef  yield
 
 ## [Golang](https://golang.org/ref/spec#Keywords): 25 words
 
-```
+```text
 break        default      func         interface    select
 case         defer        go           map          struct
 chan         else         goto         package      switch
@@ -141,7 +142,7 @@ continue     for          import       return       var
 
 ## [Java](http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html): 53 words
 
-```
+```text
 abstract    continue   for         new          switch
 assert***   default    goto*       package      synchronized
 boolean     do         if          private      this
@@ -162,7 +163,7 @@ false       true       null
 
 ## [Scala](https://www.scala-lang.org/files/archive/spec/2.11/01-lexical-syntax.html) : 50 words
 
-```
+```text
 abstract    case        catch       class       def
 do          else        extends     false       final
 finally     for         forSome     if          implicit

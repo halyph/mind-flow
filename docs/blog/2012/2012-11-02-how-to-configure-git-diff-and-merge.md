@@ -3,29 +3,29 @@
 
 Git can use external tools to perform merge and diff:
 
-### Use default tool
+## Use default tool
 
-```
+```bash
 git difftool   
 git mergetool  
 ```
   
-### Use custom tool
+## Use custom tool
 
-```
+```bash
 git difftool -t tool\_name  
 git mergetool -t tool\_name
 ```
 
 There are tons on diff/merge tools, I'd like highlight git configuration for three of them:
 
-* [DiffMerge](http://www.sourcegear.com/diffmerge/)
-* [Kdiff3](http://kdiff3.sourceforge.net/)
-* [opendiff](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/opendiff.1.html)
+- [DiffMerge](http://www.sourcegear.com/diffmerge/)
+- [Kdiff3](http://kdiff3.sourceforge.net/)
+- [opendiff](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man1/opendiff.1.html)
 
-### Sample `~/.gitconfig` (Windows)  
+## Sample `~/.gitconfig` (Windows)  
 
-```
+```ini
 [difftool "kdiff3"]
      path = D:/Tools/KDiff3/kdiff3.exe
      keepBackup = false
@@ -48,7 +48,7 @@ There are tons on diff/merge tools, I'd like highlight git configuration for thr
 
 ### Content of `git-diffmerge-merge.sh`
 
-```
+```bash
 $cat D:/Tools/Git/cmd/git-diffmerge-merge.sh
 #!/bin/sh
 localPath="$2"
@@ -64,7 +64,7 @@ fi
 
 ### Sample `~/.gitconfig` (OS X)
 
-```
+```ini
 [diff]
     tool = opendiff
 [merge]
@@ -75,12 +75,12 @@ fi
 
 Sample usage:
 
-```
-$ git difftool -t diffmerge HEAD..HEAD~1
+```bash
+git difftool -t diffmerge HEAD..HEAD~1
 ```
 
 ## References  
 
-* [How to setup KDiff as the diff tool for GIT](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html) 
-* [how to configure your git diff or merge tool](http://www.devinprogress.info/2012/01/how-to-configure-your-git-diff-or-merge.html) 
-* [How to setup Git to use Diffmerge](http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge%20)
+- [How to setup KDiff as the diff tool for GIT](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html)
+- [how to configure your git diff or merge tool](http://www.devinprogress.info/2012/01/how-to-configure-your-git-diff-or-merge.html)
+- [How to setup Git to use Diffmerge](http://adventuresincoding.com/2010/04/how-to-setup-git-to-use-diffmerge%20)

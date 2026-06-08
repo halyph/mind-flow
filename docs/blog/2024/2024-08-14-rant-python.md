@@ -14,7 +14,7 @@ I don't like Python due to many reasons:
 
 ## Package/Dependency management
 
-How come language created in 1991 still has so [many package managers](https://dublog.net/blog/so-many-python-package-managers/)? Community and/or core team could **not** agree upon some standard way of doing things? 
+How come language created in 1991 still has so [many package managers](https://dublog.net/blog/so-many-python-package-managers/)? Community and/or core team could **not** agree upon some standard way of doing things?
 
 Yes, I know there is several PEPs related to this issue, but the fact is - we still need to choose the tool.  
 Even Ruby has smaller numbers of package management tools (last time I worked with Ruby it was `bundler` + `rake`)
@@ -29,7 +29,7 @@ In Python we have many moving parts:
 
 - manage Python versions: `pyenv`, `conda` (like `rbenv`, `sdkman`)  
 - virtual environments `venv` (standard), `virtualenv`, `pipenv`
-- [package managers](https://dublog.net/blog/so-many-python-package-managers/), good luck there. Many can say "use `requirements.txt` or `Poetry`". Really? 
+- [package managers](https://dublog.net/blog/so-many-python-package-managers/), good luck there. Many can say "use `requirements.txt` or `Poetry`". Really?
 
 What about [PEP 20 – The Zen of Python](https://peps.python.org/pep-0020/) *"There should be one and preferably only one obvious way to do it"*. Never heard?! Nah, "it's not applied to package and dependency management".
 

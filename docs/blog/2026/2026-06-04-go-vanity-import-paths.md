@@ -6,7 +6,7 @@
 I've been seeing these import paths in Go projects:
 
 - `go.uber.org/zap`
-- `k8s.io/client-go` 
+- `k8s.io/client-go`
 - `go.opentelemetry.io/otel`
 - `google.golang.org/grpc`
 
@@ -73,6 +73,7 @@ All large organizations with many packages. Makes sense - if you're managing 20+
 I wanted to see how Go actually implements this. Found it in the Go source at `src/cmd/go/internal/vcs/`:
 
 **Building the URL** (`vcs.go`):
+
 ```go
 func urlForImportPath(importPath string) (*url.URL, error) {
     host, path := splitPath(importPath)
@@ -83,6 +84,7 @@ func urlForImportPath(importPath string) (*url.URL, error) {
 Turns `go.uber.org/zap` → `https://go.uber.org/zap?go-get=1`.
 
 **Parsing HTML** (`discovery.go`):
+
 ```go
 func parseMetaGoImports(r io.Reader) ([]metaImport, error) {
     decoder := xml.NewDecoder(r)

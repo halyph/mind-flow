@@ -3,8 +3,8 @@
 
 See previous posts:  
 
-* [REST with JAX-RS: Part 1 - Spring Java Config](2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
-* [REST with JAX-RS: Part 2 - Spring Java Config and CXF Improvement](2013-10-20-rest-with-jax-rs-part-2-spring-java.md)
+- [REST with JAX-RS: Part 1 - Spring Java Config](2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
+- [REST with JAX-RS: Part 2 - Spring Java Config and CXF Improvement](2013-10-20-rest-with-jax-rs-part-2-spring-java.md)
 
 There is one feature which I'd like to add. It's embedded Jetty server. I.e. we should be able to run our application from `main()` method.  
   
@@ -22,7 +22,7 @@ Update `pom.xml`, add jetty server as dependency
 ...  
 ```
 
-Create special **Launcher** class which runs embedded Jetty Server. Jetty configuration registers port, host, base REST URL (**_"/api/\*"_**) and the most important - proper Spring config.  
+Create special **Launcher** class which runs embedded Jetty Server. Jetty configuration registers port, host, base REST URL (***"/api/\*"***) and the most important - proper Spring config.  
 
 ```java
 package com.halyph;  

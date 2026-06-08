@@ -24,7 +24,7 @@ I assume that you install both e-texteditor and ExpanDrive.
 Now, we can create some Rails project:  
 
 ```bash
-$ rails bar
+rails bar
 ```
 
 And check IP address our Ubuntu VM:  
@@ -44,7 +44,7 @@ eth0      Link encap:Ethernet  HWaddr 00:0c:29:2b:58:78
 
 Now open ExpanDrive and setup connection to VM:  
 
-![](2010-04-22-how-to-setup-rubyrails-development/expandrive_01.png)
+![ExpanDrive connection setup](2010-04-22-how-to-setup-rubyrails-development/expandrive_01.png)
 
 ![TIOBE-objc-2009](2010-04-22-how-to-setup-rubyrails-development/expandrive_02.png)
   

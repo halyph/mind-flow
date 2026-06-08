@@ -14,26 +14,26 @@ I've created the next small checklist which covers project needs:
 
 I've reviewed the next libraries:  
 
-* [iText 5.0+](http://itextpdf.com/) AGPL license
-* [iText 4.2](https://github.com/ymasory/iText-4.2.0) MPL/LGPL licenses
-* [PDF Box](http://pdfbox.apache.org/) Apache License, Version 2.0
-* [JPedal](http://sourceforge.net/projects/jpedal/) JPedal has a LGPL release to pride a full java PDF viewer under a LGPL license
-* [FOP](http://xml.apache.org/fop/) Apache License, Version 2.0
-* [gnujpdf](http://gnujpdf.sourceforge.net/) LGPL License
-* [PJX](http://sourceforge.net/projects/pjx/) GPLv2 License
-* [PDFjet](http://pdfjet.com/os/edition.html) Strange Open Source license model
-* [jPod](http://sourceforge.net/projects/jpodlib/) BSD License
-* [PDF Renderer](http://java.net/projects/pdf-renderer) Maintaining is not active
+- [iText 5.0+](http://itextpdf.com/) AGPL license
+- [iText 4.2](https://github.com/ymasory/iText-4.2.0) MPL/LGPL licenses
+- [PDF Box](http://pdfbox.apache.org/) Apache License, Version 2.0
+- [JPedal](http://sourceforge.net/projects/jpedal/) JPedal has a LGPL release to pride a full java PDF viewer under a LGPL license
+- [FOP](http://xml.apache.org/fop/) Apache License, Version 2.0
+- [gnujpdf](http://gnujpdf.sourceforge.net/) LGPL License
+- [PJX](http://sourceforge.net/projects/pjx/) GPLv2 License
+- [PDFjet](http://pdfjet.com/os/edition.html) Strange Open Source license model
+- [jPod](http://sourceforge.net/projects/jpodlib/) BSD License
+- [PDF Renderer](http://java.net/projects/pdf-renderer) Maintaining is not active
 
-### iText review
+## iText review
 
-* iText 2.1.7: the latest official release under the MPL & LGPL license;
-* iText 4.2.0: the latest unofficial release under the MPL & LGPL license;
-* iText 5.0.0 and higher: released under the AGPL license.
+- iText 2.1.7: the latest official release under the MPL & LGPL license;
+- iText 4.2.0: the latest unofficial release under the MPL & LGPL license;
+- iText 5.0.0 and higher: released under the AGPL license.
 
 [Notes about iText 5.0+ vs iText 4.2](https://github.com/ymasory/iText-4.2.0#background)  
 
-> _Beginning with iText version 5.0 the developers have moved to the AGPL to improve their ability to sell commercial licenses. .. To assist those desiring to stick with the old license was made the final MPL/LGPL version more easily available and forked on github._
+> *Beginning with iText version 5.0 the developers have moved to the AGPL to improve their ability to sell commercial licenses. .. To assist those desiring to stick with the old license was made the final MPL/LGPL version more easily available and forked on github.*
 
 ### Apache™ FOP
 
@@ -62,6 +62,6 @@ Here is maven dependency info:
   
 ## References
 
-* [http://stackoverflow.com/questions/14213195/itext-latest-maven-dependency](http://stackoverflow.com/questions/14213195/itext-latest-maven-dependency)
-* [http://java-source.net/open-source/pdf-libraries](http://java-source.net/open-source/pdf-libraries)
-* [http://javatoolbox.com/categories/pdf](http://javatoolbox.com/categories/pdf)
+- [http://stackoverflow.com/questions/14213195/itext-latest-maven-dependency](http://stackoverflow.com/questions/14213195/itext-latest-maven-dependency)
+- [http://java-source.net/open-source/pdf-libraries](http://java-source.net/open-source/pdf-libraries)
+- [http://javatoolbox.com/categories/pdf](http://javatoolbox.com/categories/pdf)

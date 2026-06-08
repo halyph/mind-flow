@@ -1,7 +1,7 @@
 # How to Use Embedded H2 with web Console?
 <!-- tags: java -->
 
-There are several Java SQL databases which supports both server and embedded modes: [H2](http://www.h2database.com/), [HSQLDB](http://hsqldb.org/) and [Derby](http://db.apache.org/derby/). The most interesting for me is H2 with own web [Console](http://www.h2database.com/html/quickstart.html#h2_console). 
+There are several Java SQL databases which supports both server and embedded modes: [H2](http://www.h2database.com/), [HSQLDB](http://hsqldb.org/) and [Derby](http://db.apache.org/derby/). The most interesting for me is H2 with own web [Console](http://www.h2database.com/html/quickstart.html#h2_console).
 
 The aim of this post is to show how to connect from H2 Console to embedded in-memory H2.
 
@@ -12,11 +12,11 @@ The next steps have to be performed to connect to embedded DB and populate initi
 1. Load DB driver
 2. Get `Connection`
 3. Create `Statement` and `executeUpate` queries
-4. Create TCP `Server`. _We should start serve to make in-memory DB available for another process_
+4. Create TCP `Server`. *We should start serve to make in-memory DB available for another process*
 
-### Let's try to implement this: 
+## Let's try to implement this
 
-* Run sample application
+- Run sample application
 
 ```java
 
@@ -69,9 +69,9 @@ public class App {
 }
 ```
 
-* Output for previous run:
+- Output for previous run:
 
-```
+```text
 ResultSet output:
 > Hello
 > World
@@ -84,13 +84,13 @@ $ cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser
 Press [Enter] to stop.
 ```
 
-* We assume that h2 installation bundle (zip file) was downloaded (from http://www.h2database.com/html/download.html) beforehand and unpacked in some folder
-* Go into H2 "install/unpack" folder and run the next command `cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser`
-* Now we should copy URL (from sample App output) and credentials sa/sa to login into Console
-  * **URL:** jdbc:h2:tcp://192.168.1.100:9092/mem:mytest
-  * **Username:** sa
-  * **Password:** sa
-* Login window (opened from shell by `org.h2.tools.Console`)
+- We assume that h2 installation bundle (zip file) was downloaded (from <http://www.h2database.com/html/download.html>) beforehand and unpacked in some folder
+- Go into H2 "install/unpack" folder and run the next command `cd h2/bin; java -cp h2-1.4.185.jar org.h2.tools.Console -web -browser`
+- Now we should copy URL (from sample App output) and credentials sa/sa to login into Console
+  - **URL:** jdbc:h2:tcp://192.168.1.100:9092/mem:mytest
+  - **Username:** sa
+  - **Password:** sa
+- Login window (opened from shell by `org.h2.tools.Console`)
 ![blog_post_image_inline](2015-01-22-how-to-use-embedded-h2-with-h2-console/h2console_login.png)
 
 Verify that our custom table contains just inserted values
@@ -121,10 +121,10 @@ public class App {
 }
 ```
 
-* After this we can access to Web Console without running external service
-  * Simply use URL in  browser (access to **Web Server**): http://localhost:8082/
-* Use any JDBC client (see IntelliJ IDEA as a sample below)
-  * access to **TCP Server**
+- After this we can access to Web Console without running external service
+  - Simply use URL in  browser (access to **Web Server**): <http://localhost:8082/>
+- Use any JDBC client (see IntelliJ IDEA as a sample below)
+  - access to **TCP Server**
 
 ![blog_post_image_inline](2015-01-22-how-to-use-embedded-h2-with-h2-console/h2console_idea.png)
 

@@ -17,4 +17,4 @@ Blog is kinda snapshot of your ideas. It's very interesting to read it in retros
 
 Regarding *Wiki*, currently it's very small (à la initial state) and "dirty". I will evolve it with one big disclamer: "This *Wiki* is for me, but you can read it as well". I.e. I don't plan to polish every article to make it perfect. I just make a note, update here and there and that's it.
 
-I have checked other Digital Gartens (see [here](https://lyz-code.github.io/blue-book/digital_garden/#existing-digital-gardens)) and must say ppl invested a lot. Some use fancy tools, typography etc. I am not ready yet invest so much in design, it's better for me to have content.
+I have checked other Digital Gartens (see [existing digital gardens list](https://lyz-code.github.io/blue-book/digital_garden/#existing-digital-gardens)) and must say ppl invested a lot. Some use fancy tools, typography etc. I am not ready yet invest so much in design, it's better for me to have content.

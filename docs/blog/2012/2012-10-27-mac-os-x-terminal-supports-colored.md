@@ -4,7 +4,7 @@
 Mac OS X Mountain Lion Terminal hasn't been configured to support coloured output.  
 You can check it via simple command run "ls -la":
 
-![](2012-10-27-mac-os-x-terminal-supports-colored/clip1.png)
+![Terminal without colors](2012-10-27-mac-os-x-terminal-supports-colored/clip1.png)
 
 Let's fix this.
 
@@ -35,15 +35,15 @@ $ chmod +x color.sh
   
 3\. Run `./color.sh`, you should get something like this:
 
-![](2012-10-27-mac-os-x-terminal-supports-colored/clip2.png)
+![Color palette output](2012-10-27-mac-os-x-terminal-supports-colored/clip2.png)
 
-Also, command `ls -la` should produce colored output. 
+Also, command `ls -la` should produce colored output.
 
-![](2012-10-27-mac-os-x-terminal-supports-colored/clip3.png)
+![Terminal with colored ls output](2012-10-27-mac-os-x-terminal-supports-colored/clip3.png)
   
 ## References
 
-* [A black OS X Leopard Terminal theme that is actually readable](http://blog.toddwerth.com/entries/6)
-* [Add Color to the Terminal in Mac OS X](http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/)
-* [Tip: Prompt magic](http://www.ibm.com/developerworks/linux/library/l-tip-prompt/)
-* [8 Useful and Interesting Bash Prompts](http://maketecheasier.com/8-useful-and-interesting-bash-prompts/2009/09/04)
+- [A black OS X Leopard Terminal theme that is actually readable](http://blog.toddwerth.com/entries/6)
+- [Add Color to the Terminal in Mac OS X](http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/)
+- [Tip: Prompt magic](http://www.ibm.com/developerworks/linux/library/l-tip-prompt/)
+- [8 Useful and Interesting Bash Prompts](http://maketecheasier.com/8-useful-and-interesting-bash-prompts/2009/09/04)

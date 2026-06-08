@@ -6,7 +6,7 @@
 ## Disclaimer
 
 This post is a follow-up to my previous post [Everybody Python, FTW?](../2024/2024-08-14-rant-python.md), because I noticed a positive trend in Python’s project/package management - and I have to give credit where it's due.
-Actually, [**uv**](https://github.com/astral-sh/uv) is a reason of this post. *One tool to rule them all*. 
+Actually, [**uv**](https://github.com/astral-sh/uv) is a reason of this post. *One tool to rule them all*.
 
 But not so fast - "Where is the rant?" you might ask.
 
@@ -24,7 +24,8 @@ Python is an old language with a lot of baggage. Is that an excuse for the mess 
 
 ![alt text](2025-05-17-py-pkg-madness/pic2.png)
 <sub>*Note*: I added *Ruby* and *Java* to the picture above, since they’re also old languages - but they have clear and consistent package management systems.</sub>
-## Tools Madness 
+
+## Tools Madness
 
 Here’s a list of features Python’s ecosystem should provide for developers:
 

@@ -21,7 +21,7 @@ The `mkdocs serve` command fails to detect file changes because the internal liv
 
 **Expected** behavior after saving a file:
 
-```
+```text
 INFO    -  Detected file change: 'docs/...'
 INFO    -  Building documentation...
 INFO    -  Reloading browsers...
@@ -38,7 +38,7 @@ With LLM help I proved that `watchdog` work properly on my machine.
 
 ## Click 8.3.x did the main harm
 
-The issue is a "silent" breaking change in Click 8.3.0. MkDocs defines the `livereload` option with `default=True`. 
+The issue is a "silent" breaking change in Click 8.3.0. MkDocs defines the `livereload` option with `default=True`.
 In Click 8.3.x, a regression in flag parsing causes these default values to be ignored or set to `False` unless explicitly provided in the command line.
 
 ### Evidence & Public Resources
@@ -56,6 +56,7 @@ def serve(..., livereload=True, **kwargs):
         # Falls back to a static server without a watcher
         server = _get_static_server(...)
 ```
+
 ```python
 # Reference: mkdocs/livereload/__init__.py
 def serve(self, ...):
@@ -104,20 +105,24 @@ if __name__ == '__main__':
 ```
 
 1. Ensure Click 8.3.x is installed
-```python
-pip install "click>=8.3.0"
-```
+
+   ```python
+   pip install "click>=8.3.0"
+   ```
 
 2. Run the script without arguments
-```bash
-python repro_click_bug.py
-```
-**Result**: You will see `❌ BUG DETECTED`. Even though the code says `default=True`, Click passes `False` to the function. This is why MkDocs never starts its watcher.
+
+   ```bash
+   python repro_click_bug.py
+   ```
+
+   **Result**: You will see `❌ BUG DETECTED`. Even though the code says `default=True`, Click passes `False` to the function. This is why MkDocs never starts its watcher.
 
 3. Run with the explicit flag:
-```bash
-python repro_click_bug.py --livereload
-```
+
+   ```bash
+   python repro_click_bug.py --livereload
+   ```
 
 ## Summary
 
