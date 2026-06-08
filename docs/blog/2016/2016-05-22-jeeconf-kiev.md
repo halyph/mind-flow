@@ -72,6 +72,7 @@ Very interesting and clear sample of Scala’s polymorphism.
 ### **WILD microSERVICES v2 (part 1)** by [Aleksandr Tarasov](https://twitter.com/aatarasoff) and [Kirill Tolkachev](https://twitter.com/tolkv) (github: [project](https://github.com/lavcraft/wild-microservices-in-kiev) and [lazybones templates](https://github.com/lavcraft/lazybones-templates))
 
 >The following topics will be covered:
+>
 > - What are microservices? Where is the theory, bro?
 > - What kind of technologies should we choose? What have we chosen and why?
 > - Why RPC is still competetive in REST-domination era?

@@ -1,4 +1,4 @@
-# Scala for Python Developers by _Kevin Stanton_
+# Scala for Python Developers by *Kevin Stanton*
 <!-- tags: scala, python, vs -->
 
 - [Reference](#reference)
@@ -137,7 +137,7 @@ else:
 ```
 
 **Scala**
- 
+
 ```scala
 import scala.io.Source
 
@@ -272,13 +272,13 @@ http://stackoverflow.com/questions/2209179/type-inference-on-method-return-type
 */
 ```
 
-##  8. Java interop
+## 8. Java interop
 
 **Python**
 
-_This isn't for Python programmers, but it is pretty cool to see how seamlessly
+*This isn't for Python programmers, but it is pretty cool to see how seamlessly
 Java code can be used in Scala. The entire world of existing Java libraries
-can be leveraged._
+can be leveraged.*
 
 **Scala**
 
@@ -334,7 +334,7 @@ you're actually making a method call.
 
 `println(l(0))` <-- outputs "one"
 `println(l.apply(0))` <-- outputs "one"
- 
+
 ### 9.2. Concatenating lists
 
 **Python**

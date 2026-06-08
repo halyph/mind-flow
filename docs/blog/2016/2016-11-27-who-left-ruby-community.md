@@ -3,20 +3,20 @@
 
 I've been listening [The Ruby Rogues](https://devchat.tv/ruby-rogues) podcast for several years. Despite the fact the I'm not a Ruby developer ;-). I'm Ruby user if You will.
 
-So, there was one very interesting episode ["#283 - Is Ruby Dying?"](https://devchat.tv/ruby-rogues/283-rr-is-ruby-dying). 
-I'm in Java community and it's very common to hear that _"Java is Dying"_ ;-). But, it's very uncommon to hear such statement in Ruby-related podcast. 
+So, there was one very interesting episode ["#283 - Is Ruby Dying?"](https://devchat.tv/ruby-rogues/283-rr-is-ruby-dying).
+I'm in Java community and it's very common to hear that *"Java is Dying"* ;-). But, it's very uncommon to hear such statement in Ruby-related podcast.
 
 The most interesting part is:
 
-> Charles: Yeah, it’s really interesting too. This goes back, you talking about people coming in, 
-> it comes back at least for me to the people who say that the Ruby community is shrinking. 
-> They see **prominent members of the community leaving** but at the same time they’re typically doing Ruby and something else. 
-> If they’re going and picking up JavaScript, they’re picking up a front-end framework or something 
+> Charles: Yeah, it’s really interesting too. This goes back, you talking about people coming in,
+> it comes back at least for me to the people who say that the Ruby community is shrinking.
+> They see **prominent members of the community leaving** but at the same time they’re typically doing Ruby and something else.
+> If they’re going and picking up JavaScript, they’re picking up a front-end framework or something
 > and occasionally they’ll move off to express or something instead of Rails.
 >
 > But yeah, is the Ruby community really shrinking? Well, the ticket for Rails Conf and Ruby Conf as far as I can tell are getting harder and harder to get. The conference really isn’t getting bigger or smaller, it’s harder and harder to get because more and more people want to go.
 
-And, I've decided to find out who are from _prominent members_ of the community leaving:
+And, I've decided to find out who are from *prominent members* of the community leaving:
 
 | Name            | Info                                                                            | Ruby Community                      | Alt/New Community                                         |
 |-----------------|---------------------------------------------------------------------------------|-------------------------------------|-------------------------------------------------------|
@@ -40,6 +40,6 @@ Please comment/correct me if this table has incorrect info.
 
 ## Died
 
-* [Ezra Zygmuntowicz](https://news.ycombinator.com/item?id=8676140) - a founder of the rails hosting company Engine Yard and original developer of the web framework Merb
-* [Jim Weirich](https://en.wikipedia.org/wiki/Jim_Weirich) - Rake build tool for Ruby
-* [Guy Decoux](https://www.ruby-forum.com/topic/166658)
+- [Ezra Zygmuntowicz](https://news.ycombinator.com/item?id=8676140) - a founder of the rails hosting company Engine Yard and original developer of the web framework Merb
+- [Jim Weirich](https://en.wikipedia.org/wiki/Jim_Weirich) - Rake build tool for Ruby
+- [Guy Decoux](https://www.ruby-forum.com/topic/166658)
