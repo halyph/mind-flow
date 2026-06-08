@@ -13,12 +13,12 @@ OneNote and TodoList is Windows based application. But, I've switched to Mac and
   
 As you probably guess it's [Evernote](https://evernote.com/). Here I highlight features which I love:  
 
-* almost **cross-platform** (Windows, Mac OS X, iOS and Android), Linux isn't supported officially. But there is a work for Linux as well [NixNote](http://sourceforge.net/projects/nevernote/) (old name NeverNote).
-* Evernote is a **service**. I.e. all my notes are synchronized between all my devices. Even more,  Evernote has Web analogue of native note taking application. So, I can have access to my notes from anywhere.
-* Evernote has very power **tag** support. I can apply multiple tags my notes. It improves notes search and classification.
-* Knowledge Base, Pomodoro System and Bookmarks are all integrated into Evernote. I have single application for managing all these stuff. And it's real benefit, because my user experience is shared between all my devices and productivity concepts (KB, Pomodoro/Todo and Bookmarks).
-* Evernote has public Cloud API and Local API. I.e. we can automate Evernote experince.
-* There is very nice browser plugin [Evernote Web Clipper](http://evernote.com/webclipper/) which store web pages (link, selected part of page or full page) into the notes. Very cool feature for bookmarking and KB.
+- almost **cross-platform** (Windows, Mac OS X, iOS and Android), Linux isn't supported officially. But there is a work for Linux as well [NixNote](http://sourceforge.net/projects/nevernote/) (old name NeverNote).
+- Evernote is a **service**. I.e. all my notes are synchronized between all my devices. Even more,  Evernote has Web analogue of native note taking application. So, I can have access to my notes from anywhere.
+- Evernote has very power **tag** support. I can apply multiple tags my notes. It improves notes search and classification.
+- Knowledge Base, Pomodoro System and Bookmarks are all integrated into Evernote. I have single application for managing all these stuff. And it's real benefit, because my user experience is shared between all my devices and productivity concepts (KB, Pomodoro/Todo and Bookmarks).
+- Evernote has public Cloud API and Local API. I.e. we can automate Evernote experince.
+- There is very nice browser plugin [Evernote Web Clipper](http://evernote.com/webclipper/) which store web pages (link, selected part of page or full page) into the notes. Very cool feature for bookmarking and KB.
 
 Evernote is very flexible application and a service. It was required some time for me to completely switch to Evernote from other application and services. But now I'm more productive.  
   

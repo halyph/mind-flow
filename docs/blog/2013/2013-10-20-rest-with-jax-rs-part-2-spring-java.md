@@ -3,7 +3,7 @@
   
 See previous post:  
 
-* [REST with JAX-RS: Part 1 - Spring Java Config](2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
+- [REST with JAX-RS: Part 1 - Spring Java Config](2013-10-19-rest-with-jax-rs-part-1-spring-java.md)
 
 Sample application from part 1 has several issues:
 
@@ -16,8 +16,8 @@ Let's try to fix all these issues.
 JAX-RS has special approach for exception handling - [ExceptionMapper](http://cxf.apache.org/docs/jax-rs-basics.html#JAX-RSBasics-Exceptionhandling).  
 Let's define two mappers:  
 
-* **GeneralExceptionMapper** - will catch and handle all **Exceptions**
-* **NotFoundExceptionMapper** - will catch and handle only **NotFoundException**
+- **GeneralExceptionMapper** - will catch and handle all **Exceptions**
+- **NotFoundExceptionMapper** - will catch and handle only **NotFoundException**
 
 ```java
 package com.halyph.rest.provider;  
@@ -137,7 +137,7 @@ public @interface RestService {
 ```
   
 Now we have to implement Spring bean scanners which scan specified package and register "selected" beans in Spring context.  
-   
+
 ```java
 package com.halyph.util;  
   
@@ -239,11 +239,11 @@ public class ObjectMapperProvider implements ContextResolver<Objectmapper> {
   
 We have to update AppConfig:  
 
-* Add **@ComponentScan** to register services
-* Call **RestProviderBeanScanner** to register providers: json provider, _ExceptionMapper_ and  ObjectMapperProvider
-* Call **RestServiceBeanScanner** to register REST services marked with **@RestService** annotation
+- Add **@ComponentScan** to register services
+- Call **RestProviderBeanScanner** to register providers: json provider, *ExceptionMapper* and  ObjectMapperProvider
+- Call **RestServiceBeanScanner** to register REST services marked with **@RestService** annotation
 
-```java 
+```java
 package com.halyph.config;  
   
 import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;  
