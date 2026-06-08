@@ -48,6 +48,7 @@ To create an array of strings without quotes and commas:
 array = %w[apple banana cherry]
 # => ["apple", "banana", "cherry"]
 ```
+
 For strings with interpolation or escape sequences, use `%W`:
 
 ```ruby
@@ -56,7 +57,7 @@ array = %W[hello #{name} world]
 # => ["hello", "John", "world"]
 ```
 
-#### Using `%i` for Symbols 
+#### Using `%i` for Symbols
 
 To create an array of symbols:
 
@@ -79,7 +80,7 @@ array = Array(1..5)
 #### Alternative to single `'` and double-quote `"` delimiters
 
 Ruby provides an alternative to single and double-quote delimiters, which comes in handy
-sometimes when the string you want to quote contains the delimiter you need. 
+sometimes when the string you want to quote contains the delimiter you need.
 
 You can use various delimiters with `%Q`. The most common are `[ ]`, `{ }`, `( )`, `| |`, or `/ /`. The opening and closing delimiters must match.
 
@@ -288,6 +289,7 @@ arr.delete_if { |x| x.even? } # => [1, 3]
 File.exists?("file.txt")  # => true or false
 File.exist?("file.txt")   # => true or false
 ```
+
 #### `size` / `size?`
 
 - `size`: Returns the size of the file in bytes.
@@ -298,4 +300,4 @@ File.size("file.txt")  # => 1024
 File.size?("file.txt") # => 1024 or nil
 ```
 
-There are more similar cases, but you've got what I mean 😉, right? 
+There are more similar cases, but you've got what I mean 😉, right?
