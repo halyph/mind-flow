@@ -6,10 +6,10 @@ useful for end-user. That's why we've got KDE, Gnome and similar. But, I
 like it a lot even if I'm Windows user ;-). There are several cases to
 set up \*nix environment on Windows:
 
-* setup Virtual Machine with some Linux distributive and you've got
+- setup Virtual Machine with some Linux distributive and you've got
 fully functional Linux. You can use [VMware](http://www.vmware.com/) or
-[VirtualBox](http://www.virtualbox.org/). 
-* or you can setup Linux-like environment in Windows (i.e. bash, gcc,make, grep, find, sed, etc.).
+[VirtualBox](http://www.virtualbox.org/).
+- or you can setup Linux-like environment in Windows (i.e. bash, gcc,make, grep, find, sed, etc.).
 
 Here is "my" list of choice for such environments:
 
