@@ -9,7 +9,7 @@ This report is for myself only just to keep track talks I’ve attended.
 ## Summary
 
 - It nice to see that Scala is not another better Java (see Kotlin). The Scala community has own way of doing stuff, own ecosystem, philosophy if you will etc.
-- Scala Native looks interesting, but I do not see it as an alternative to Rust, Golang. 
+- Scala Native looks interesting, but I do not see it as an alternative to Rust, Golang.
 - Scala.js is a nice tool, but I think that it's an additional mental pressure in Web development: JS (related hell) + Scala.js issues. I am not sure if this is a good direction for me.
 - GraalVM looks super cool. I think this project will have a huge success in future.
 - Akka and Langom talks were interesting in terms of new features.
@@ -50,6 +50,7 @@ This talk was dedicated to the current state of Scala and road map for Scala 3.
 >   - Coexistence with untyped Akka
 > - Multi DC clustering
 > - Artery (Aeron and TCP)
+>
 ____
 
 ### **What can Lagom do for you?** by [Renato Cavalcanti](https://twitter.com/renatocaval)
@@ -81,8 +82,8 @@ ____
 ### **Starting from Scratch with Scala Native** by [Richard Whaling](https://twitter.com/RichardWhaling)
 
 >In this talk, we'll learn how Scala Native uses POSIX and ANSI C API's
-to build concise, expressive programs that run unusually close to bare metal. 
-By examining real-world programs, we'll learn just how accessible and expressive 
+to build concise, expressive programs that run unusually close to bare metal.
+By examining real-world programs, we'll learn just how accessible and expressive
 low-level programming can be with a modern language like Scala.
 
 ### **Compiling Scala Faster with GraalVM** by [Vojin Jovanovic](https://twitter.com/vojjov)
@@ -109,6 +110,6 @@ low-level programming can be with a modern language like Scala.
 
 ### **Applications of Implicit Function Types** by [Olivier Blanvillain](https://github.com/OlivierBlanvillain) ([slides](https://docs.google.com/presentation/d/19-ZfP-51wstP2CDALISJhSRL2YX-ozJD6uqF4ic7a7g/edit))
 
->This talk presents a generalization of implicit parameters to implicit function types, a powerful way to abstract over the context in which some piece of code is run. 
+>This talk presents a generalization of implicit parameters to implicit function types, a powerful way to abstract over the context in which some piece of code is run.
 >
 >To illustrate their abstraction capabilities, we present several applications that make use of implicit function types. We show how to encode the builder pattern, the reader monad, tagless interpreters, and free structures.

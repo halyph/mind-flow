@@ -1,7 +1,7 @@
 # Scala `for`-comprehensions
 <!-- tags: scala, video, functional programming -->
 
-This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: _"For: What is it good for? — Josh Suereth & Dick Wall"_ (see references).
+This is a complete copy of **Josh Suereth** & **Dick Wall** talk on *Scala World* conference: *"For: What is it good for? — Josh Suereth & Dick Wall"* (see references).
 
 Actually, I have found github repository with Jupiter notebooks. But, I don't like this format and decided to store these notes here.
 
@@ -27,7 +27,7 @@ Actually, I have found github repository with Jupiter notebooks. But, I don't li
 - [Youtube: For: What is it good for? — Josh Suereth & Dick Wall](https://www.youtube.com/watch?v=WDaw2yXAa50)
 - [Github: dickwall/use-the-fors-luke](https://github.com/dickwall/use-the-fors-luke) - soutse code realted to "For: What is it good for?" talk
 - [Github: jsuereth/intro-to-fp](https://github.com/jsuereth/intro-to-fp) - This repo contains nice sample of "monadic" Github client
-- [Github: jsuereth/scala-arm](https://github.com/jsuereth/scala-arm) - This project aims to be the Scala Incubator project for Automatic-Resource-Management in the scala library 
+- [Github: jsuereth/scala-arm](https://github.com/jsuereth/scala-arm) - This project aims to be the Scala Incubator project for Automatic-Resource-Management in the scala library
 - ["The Essence of the Iterator Pattern" post by *Eric Torreborre*](http://etorreborre.blogspot.com/2011/06/essence-of-iterator-pattern.html)
 
 ---
@@ -1124,7 +1124,7 @@ object ForExpansion1 {
 }
 ```
 
-```
+```text
 // Output
 $ scalac -Xprint:parser  ForExpansion1.scala 
 [[syntax trees at end of                    parser]] // ForExpansion1.scala
@@ -1153,7 +1153,7 @@ object ForExpansion2 {
 }
 ```
 
-```
+```text
 // Output
 $ scalac -Xprint:parser  ForExpansion2.scala 
 [[syntax trees at end of                    parser]] // ForExpansion2.scala
@@ -1183,7 +1183,7 @@ object ForExpansion3 {
 }
 ```
 
-```
+```text
 // Output
 $ scalac -Xprint:parser  ForExpansion3.scala 
 [[syntax trees at end of                    parser]] // ForExpansion3.scala
@@ -1207,7 +1207,7 @@ package <empty> {
 
 ### 09.04<!-- omit in toc -->
 
-```
+```text
 $ scalac -Xshow-phases
     phase name  id  description
     ----------  --  -----------

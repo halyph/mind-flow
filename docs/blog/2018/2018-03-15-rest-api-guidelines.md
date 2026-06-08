@@ -6,7 +6,7 @@ REST API is the most popular interface for communication between different compo
 There are a lot of different common sense approaches to design RESTful API.
 Despite this fact it is always better to have something written as a reference to follow common principles during API design of the system.
 
-Here I have collected some REST API guidelines and API References. It's nice start point for your _inspiration_.
+Here I have collected some REST API guidelines and API References. It's nice start point for your *inspiration*.
 
 ## REST API Guidelines
 
@@ -36,4 +36,4 @@ Here I have collected some REST API guidelines and API References. It's nice sta
 - [Heroku API](https://devcenter.heroku.com/articles/platform-api-reference)
 - [Travis CI API](https://docs.travis-ci.com/api)
 
-Also, *Apigee* provides huge list of different API providers in one place: https://apigee.com/providers
+Also, *Apigee* provides huge list of different API providers in one place: <https://apigee.com/providers>
