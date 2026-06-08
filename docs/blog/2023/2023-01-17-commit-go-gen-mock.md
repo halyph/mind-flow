@@ -26,7 +26,7 @@ I made a conclusion for myself: **you should commit generated mocks to the repo!
 
 The popularity of Golang mock libraries:
 
-- [golang/mock](https://github.com/golang/mock) ⭐ 8.5k 
+- [golang/mock](https://github.com/golang/mock) ⭐ 8.5k
 - [vektra/mockery](https://github.com/vektra/mockery) ⭐ 4.4k
 - [minimock](https://github.com/gojuno/minimock) ⭐ 480
 - [moq](https://github.com/matryer/moq) ⭐ 1.5k

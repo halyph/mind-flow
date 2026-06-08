@@ -14,7 +14,7 @@ I am interested only in "*The most popular programming languages*" section:
 ![img1](2023-11-09-octoverse/github-top-10-programming-languages.png)
 
 > **JavaScript** has once again taken the crown for the #1 most popular language, and we continue to see familiar languages, such as **Python** and **Java**, remain in the top five languages year over year.
-
+>
 > This year, **TypeScript** overtook **Java** for the first time as the third most popular language across OSS projects on GitHub with 37% growth of its user base.
 
 ![img2](2023-11-09-octoverse/github-top-programming-languages-by-usage.png)

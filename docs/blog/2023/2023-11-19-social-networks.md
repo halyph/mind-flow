@@ -13,7 +13,7 @@ Unfortunately, there are still two big social networks I've been using:
 - **LinkedIn**: profession network, must have in a modern work.
 - **Youtube**: tons of free, valuable and interesting content which I keep consuming. The most important for me is following basic info-hygiene rules and everything will be more-or-less fine. Of cause, Youtube tries to recommend me some new cool shit, but here I must be careful and reject any new unsatisfied recommendations. So such routine makes your Youtube's recommendation feed clean and according to my standards. TBH it doesn't work smoothly all the time and I must fight with Youtube and myself from time to time.
 
-So, how am I getting tech news? 
+So, how am I getting tech news?
 
 1. [Hacker News](https://news.ycombinator.com)
 2. [Reddit](https://www.reddit.com): I follow several technological subreddits. Some people may say that Reddit is a social networks and maybe they are right. I use it like a forum and try to avoid non-tech subreddits.
