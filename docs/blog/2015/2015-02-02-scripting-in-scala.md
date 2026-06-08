@@ -121,66 +121,66 @@ This utility performs the next flow to run script:
 2. `ScriptRunner` creates temp file `File.makeTemp("scalacmd", ".scala")`
 3. Run compiler and clean script header
 
-  ```scala
-  class ScriptRunner extends HasCompileSocket {
-  ...
-    private def withCompiledScript(
-        settings: GenericRunnerSettings,
-        scriptFile: String)
-        (handler: String => Boolean): Boolean =
-      {
-        def mainClass = scriptMain(settings)
-    
-          val compiler = newGlobal(settings, reporter)
-          new compiler.Run compile List(scriptFile)
-  ```
+   ```scala
+   class ScriptRunner extends HasCompileSocket {
+   ...
+     private def withCompiledScript(
+         settings: GenericRunnerSettings,
+         scriptFile: String)
+         (handler: String => Boolean): Boolean =
+       {
+         def mainClass = scriptMain(settings)
+     
+           val compiler = newGlobal(settings, reporter)
+           new compiler.Run compile List(scriptFile)
+   ```
 
-  ```scala
-  class Global
-      /** If this compilation is scripted, convert the source to a script source. */
-      private def scripted(s: SourceFile) = s match {
-        case b: BatchSourceFile if settings.script.isSetByUser => ScriptSourceFile(b)
-        case _ => s
-      }
+   ```scala
+   class Global
+       /** If this compilation is scripted, convert the source to a script source. */
+       private def scripted(s: SourceFile) = s match {
+         case b: BatchSourceFile if settings.script.isSetByUser => ScriptSourceFile(b)
+         case _ => s
+       }
 
-      /** Compile abstract file until `globalPhase`, but at least
-      *  to phase "namer".
-      */
-      def compileLate(file: AbstractFile) {
-        if (!compiledFiles(file.path))
-          compileLate(new CompilationUnit(scripted(getSourceFile(file))))
-      }
+       /** Compile abstract file until `globalPhase`, but at least
+       *  to phase "namer".
+       */
+       def compileLate(file: AbstractFile) {
+         if (!compiledFiles(file.path))
+           compileLate(new CompilationUnit(scripted(getSourceFile(file))))
+       }
 
-  ```
+   ```
 
 4. Cleanup shell script (remove header) via `SourceFile`. Now, it's clear why script's header have such *strange* closing markers (see line 21, `content drop headerLen` - actual header remove)
 
-```scala
-object ScriptSourceFile {
-  /** Length of the script header from the given content, if there is one.
-   *  The header begins with "#!" or "::#!" and ends with a line starting
-   *  with "!#" or "::!#".
-   */
-  def headerLength(cs: Array[Char]): Int = {
-    val headerPattern = Pattern.compile("""((?m)^(::)?!#.*|^.*/env .*)(\r|\n|\r\n)""")
-    val headerStarts  = List("#!", "::#!")
+   ```scala
+   object ScriptSourceFile {
+     /** Length of the script header from the given content, if there is one.
+     *  The header begins with "#!" or "::#!" and ends with a line starting
+     *  with "!#" or "::!#".
+     */
+     def headerLength(cs: Array[Char]): Int = {
+       val headerPattern = Pattern.compile("""((?m)^(::)?!#.*|^.*/env .*)(\r|\n|\r\n)""")
+       val headerStarts  = List("#!", "::#!")
 
-    if (headerStarts exists (cs startsWith _)) {
-      val matcher = headerPattern matcher cs.mkString
-      if (matcher.find) matcher.end
-      else throw new IOException("script file does not close its header with !# or ::!#")
-    }
-    else 0
-  }
+       if (headerStarts exists (cs startsWith _)) {
+         val matcher = headerPattern matcher cs.mkString
+         if (matcher.find) matcher.end
+         else throw new IOException("script file does not close its header with !# or ::!#")
+       }
+       else 0
+     }
 
-  def apply(file: AbstractFile, content: Array[Char]) = {
-    val underlying = new BatchSourceFile(file, content)
-    val headerLen = headerLength(content)
-    val stripped = new ScriptSourceFile(underlying, content drop headerLen, headerLen)
+     def apply(file: AbstractFile, content: Array[Char]) = {
+       val underlying = new BatchSourceFile(file, content)
+       val headerLen = headerLength(content)
+       val stripped = new ScriptSourceFile(underlying, content drop headerLen, headerLen)
 
-    stripped
-  }
-```
+       stripped
+     }
+   ```
 
 ## Add libraries to Scala script
 
