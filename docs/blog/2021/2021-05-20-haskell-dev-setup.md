@@ -72,7 +72,8 @@ export PATH="/Users/oivasiv/.local/bin:$PATH"
 ### 3. Create project from `Stack` template
 
 Run: `stack new haskell-first-prj`  
-Log: 
+Log:
+
 ```bash
 $ stack new haskell-first-prj
 Downloading template "new-template" to create project "haskell-first-prj" in haskell-first-prj/ ...
@@ -400,19 +401,19 @@ Installing executable haskell-first-prj-exe in /Users/oivasiv/Projects/haskell_p
 Registering library for haskell-first-prj-0.1.0.0..
 ```
 
-- run 
+- run
 
 ```bash
 $ stack exec haskell-first-prj-exe
 haskell-first-prj-exe - Hello from the hell
 ```
 
-### 7. Install `ghcid` 
+### 7. Install `ghcid`
 
 - Github [ghcid](https://github.com/ndmitchell/ghcid) - Very low feature GHCi based IDE
 
 Run: `stack install ghcid`  
-Log: 
+Log:
 
 ```bash
 $ stack install ghcid
@@ -890,6 +891,7 @@ index d36ff27..93c9269 100644
 ```
 
 file: `src/Lib.hs`
+
 ```haskell
 module Lib
     ( someFunc
@@ -924,7 +926,8 @@ someFunc = putStrLn _
 
 Run:`stack repl`  
 Log:
-```
+
+```text
 $ stack repl
 Using main module: 1. Package `haskell-first-prj' component haskell-first-prj:exe:haskell-first-prj-exe with main-is file: /Users/oivasiv/Projects/haskell_prj/haskell-first-prj/app/Main.hs
 haskell-first-prj> configure (lib + exe)

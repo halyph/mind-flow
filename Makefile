@@ -14,6 +14,7 @@ BLOG_2025_MD_FILES := "docs/blog/2025/*.md"
 BLOG_2024_MD_FILES := "docs/blog/2024/*.md"
 BLOG_2023_MD_FILES := "docs/blog/2023/*.md"
 BLOG_2022_MD_FILES := "docs/blog/2022/*.md"
+BLOG_2021_MD_FILES := "docs/blog/2021/*.md"
 
 ## Help:
 
@@ -95,3 +96,9 @@ lint-2022: ## Lint only 2022 blog posts
 
 lint-fix-2022: ## Auto-fix markdown issues in 2022 blog posts only
 	npx markdownlint-cli2 --fix $(BLOG_2022_MD_FILES)
+
+lint-2021: ## Lint only 2021 blog posts
+	npx markdownlint-cli2 $(BLOG_2021_MD_FILES)
+
+lint-fix-2021: ## Auto-fix markdown issues in 2021 blog posts only
+	npx markdownlint-cli2 --fix $(BLOG_2021_MD_FILES)
