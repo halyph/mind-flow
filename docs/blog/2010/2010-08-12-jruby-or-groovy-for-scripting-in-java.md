@@ -3,7 +3,7 @@
 
 It's my dilemma. And I come to the conclusion that (J)Ruby is a better choice:
 
-**Groovy** 
+**Groovy**
 
 1. Groovy provides easily integration with existence Java code-base.
 2. Groovy is easy to learn for Java developers
@@ -27,4 +27,3 @@ I know that all these ideas are subjective and you can select own pros/cons.
  The another main item against Groovy is that there are so many JVM languages (Groovy, Jruby, Scala, Jyton, Clojure) and they are change each other in popularity from year to year. Groovy, Scala, Clojure are JVM based mainly (Clojure has CLR implementation). It's hard to get some expensive time to dive deeper in each of them.
 
  Conclusion is pretty simple - use the right tool for the job.
- 

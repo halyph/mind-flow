@@ -7,11 +7,11 @@ I assume that You have installed Ubuntu VM.
   
 This post is base on the next articles:  
 
-* [Install Ruby on Rails on Ubuntu Karmic Koala 9.10](http://www.hackido.com/2009/11/install-ruby-on-rails-on-ubuntu-karmic.html)
-* [Installing Ruby on Rails on Debian/Ubuntu](http://wiki.rubyonrails.org/getting-started/installation/linux)
-* [Ubuntu Community documentation - RubyOnRails](https://help.ubuntu.com/community/RubyOnRails)      
-* [Rails Development On Ubuntu](http://blog.michaelgreenly.com/2009/03/rails-development-on-ubuntu.html)
-* [How Do I Enable Remote Access To MySQL Database Server?](http://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
+- [Install Ruby on Rails on Ubuntu Karmic Koala 9.10](http://www.hackido.com/2009/11/install-ruby-on-rails-on-ubuntu-karmic.html)
+- [Installing Ruby on Rails on Debian/Ubuntu](http://wiki.rubyonrails.org/getting-started/installation/linux)
+- [Ubuntu Community documentation - RubyOnRails](https://help.ubuntu.com/community/RubyOnRails)
+- [Rails Development On Ubuntu](http://blog.michaelgreenly.com/2009/03/rails-development-on-ubuntu.html)
+- [How Do I Enable Remote Access To MySQL Database Server?](http://www.cyberciti.biz/tips/how-do-i-enable-remote-access-to-mysql-database-server.html)
 
 **Step 1:** Install Ubuntu VM - done
 
@@ -71,6 +71,7 @@ sudo gem install rails
 sudo apt-get install sqlite3 libsqlite3-dev  
 sudo gem install sqlite3-ruby    
 ```
+
 **Step 10**: Install MySQL client  
 
 ```bash
@@ -80,6 +81,6 @@ sudo gem install mysql
 
 **Step 11**: Test your Rails instalation  
 
-```
-$ rails myrailsapp
+```bash
+rails myrailsapp
 ```
