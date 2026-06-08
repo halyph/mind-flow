@@ -16,7 +16,7 @@ It's very interesting and pragmatic topic. Even more I can say this presentation
 It was the most low-level topic on this conference. Guys shown the different ways to perform the subject. They review and in pair-speech way very complicated issues in performance optimization from conceptual point of view. I can't say that I will be able to reuse everything from this speech, but it's great start point for me. They are very proficient presenters.  
   
 **4. Becoming a Professional Java Developer by Yakov Fain**  
-I must say "Thank you" for this speech. It was cool. Yakov has highlighted the non-technical aspect of Professional (Java) Developer. Of course his advices and observation are based on own experience and might be biased for somebody. But it's honest and reasonable speech might open "some" boring minds. Also, Yakov recommended to read his free e-book "Enterprise Software without the BS". I've already downloaded it and I'm planning to read it in nearest weeks.   
+I must say "Thank you" for this speech. It was cool. Yakov has highlighted the non-technical aspect of Professional (Java) Developer. Of course his advices and observation are based on own experience and might be biased for somebody. But it's honest and reasonable speech might open "some" boring minds. Also, Yakov recommended to read his free e-book "Enterprise Software without the BS". I've already downloaded it and I'm planning to read it in nearest weeks.
   
 **5. Inject Injection by Yuriy Litvinenko**  
 It was like a case study report about involving DI Framework (in this case Google Guice) in legacy project. It was very interesting, because I believe it's challenging task. The presenter has highlighted the issues which his team faced with. I can say this experience might be valuable when somebody needs to decide the benefits and evaluate the risks of involving DI Framework in something "really old". Well done.  
@@ -27,4 +27,4 @@ It was a pleasure to see ukrainian who is one of the founders of [Jelastic](http
 **7. Why do I hate the Hibernate? by Mikalai Alimenkou**  
 It was pragmatic, based on real experience presentation with tons of Hibernate issues. It's very useful for anyone who's developing application with Hibernate. We must know the weaknesses of our tools. Mikalai has used very interesting approach to blame something/someone: "nasty granny". You should review the slides to this presentation to understand what does it mean.  
   
-I'd like to say _"Thank you"_ JEEConf organizers team. You are doing very important work for Ukrainian Java Community.  
+I'd like to say *"Thank you"* JEEConf organizers team. You are doing very important work for Ukrainian Java Community.  

@@ -1,17 +1,17 @@
 # How to improve cmd.exe prompt
 <!-- tags: tool, terminal -->
 
-I'm sure that you have some trouble with _"too long command prompt in windows cmd.exe"_ and it is annoying:
+I'm sure that you have some trouble with *"too long command prompt in windows cmd.exe"* and it is annoying:
 
-![](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-1.png)
+![Long command prompt example](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-1.png)
   
 Fortunately, it can be easily fixed with PROMPT command (see official help):  
   
-```
+```batch
 \> prompt /?
 ```
   
-```
+```text
 PROMPT \[text\]  
   
   text    Specifies a new command prompt.  
@@ -40,11 +40,11 @@ and the following special codes:
 
 I've configured **PROMPT** User variable to apply my custom PROMPT setting: `[$P]$_$$$S`
 
-![](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-2.png)
+![PROMPT environment variable configuration](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-2.png)
 
 Now the previous console screen looks like this:  
 
-![](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-3.png)
+![Improved command prompt display](2012-06-12-how-to-improve-cmdexe-prompt/Clipboard-3.png)
 
- 
+
 As you can see the full current path is shown one line before the input line. Now, we have a plenty of place for typing what ever we need ;-)

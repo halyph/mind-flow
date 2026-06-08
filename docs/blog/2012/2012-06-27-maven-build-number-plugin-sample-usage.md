@@ -5,10 +5,10 @@
   
 This post is based on:  
 
-* [http://mojo.codehaus.org/buildnumber-maven-plugin/usage.html](http://mojo.codehaus.org/buildnumber-maven-plugin/usage.html)
-* [http://www.site.lalitbhatt.com/maven-build-number-plugin](http://www.site.lalitbhatt.com/maven-build-number-plugin)
-* [http://blog.peterlynch.ca/2009/11/buildnumber-maven-plugin-helpful.html](http://blog.peterlynch.ca/2009/11/buildnumber-maven-plugin-helpful.html)
-* [http://apollo.ucalgary.ca/tlcprojectswiki/index.php/Public/Project\_Versioning\_-\_Best\_Practices#Build\_Versioning](http://apollo.ucalgary.ca/tlcprojectswiki/index.php/Public/Project_Versioning_-_Best_Practices#Build_Versioning)
+- [http://mojo.codehaus.org/buildnumber-maven-plugin/usage.html](http://mojo.codehaus.org/buildnumber-maven-plugin/usage.html)
+- [http://www.site.lalitbhatt.com/maven-build-number-plugin](http://www.site.lalitbhatt.com/maven-build-number-plugin)
+- [http://blog.peterlynch.ca/2009/11/buildnumber-maven-plugin-helpful.html](http://blog.peterlynch.ca/2009/11/buildnumber-maven-plugin-helpful.html)
+- [http://apollo.ucalgary.ca/tlcprojectswiki/index.php/Public/Project\_Versioning\_-\_Best\_Practices#Build\_Versioning](http://apollo.ucalgary.ca/tlcprojectswiki/index.php/Public/Project_Versioning_-_Best_Practices#Build_Versioning)
 
 We have some project and need to include into jar manifest file sequential build number which isn't based on VCS (SVN, Git, Mercurial, etc.) revision number. Let's create appropriate pom.xml file and implement small demo to verify the result.  
   
@@ -160,11 +160,11 @@ public class App
 Build application several time and Run
 
 ```bash
-$ mvn install
+mvn install
 
-$ mvn install
+mvn install
 
-$ mvn install
+mvn install
 ```
 
 ```bash
@@ -186,6 +186,6 @@ Implementation-Build: Build: #3 (Jun 27, 2012)
     1. created `src\main\filtered-resources\build.properties` file  
 ```build.message=${buildNumber}```
     2. added resource filtering, see section `<resource>` flag `<filtering>true</filtering>`
-1. Demo application verifying the filtered resources and build number in jar manifest file
+5. Demo application verifying the filtered resources and build number in jar manifest file
 
  You can git clone this project [github](https://github.com/halyph/blog-sandbox/tree/master/Maven/blogpost_062712)
