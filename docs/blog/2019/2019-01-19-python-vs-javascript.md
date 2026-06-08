@@ -73,7 +73,7 @@ value = age >= 18? 'ADULT': 'CHILD';
 
 **Python** and **JavaScript**
 
-```
+```python
 obj.color = 'YELLOW'
 ```
 
@@ -97,7 +97,7 @@ obj[attribute] = value;
 
 **Python** and **JavaScript**
 
-```
+```python
 dictionary = {}
 dictionary['color'] = 'YELLOW'
 ```
@@ -388,7 +388,7 @@ try {
 
 ## Variables in strings
 
-```
+```python
 name = 'World'
 value = 'Hello, ' + name + '!\nWelcome!'
 ```

@@ -1,7 +1,7 @@
 # Python Bad Practices
 <!-- tags: python -->
 
-I've been using Python as scripting language on a non-regular basis. It means I can (I possibly do) write non-idiomatic Python code. I've decided to collect in one place popular Python anti-patterns and bad practices to avoid them. 
+I've been using Python as scripting language on a non-regular basis. It means I can (I possibly do) write non-idiomatic Python code. I've decided to collect in one place popular Python anti-patterns and bad practices to avoid them.
 
 - [References](#references)
   - [Original sources](#original-sources)
@@ -650,7 +650,7 @@ Ref: [[4](#original-sources)]
 
 Expected
 
-```
+```text
 0
 2
 4
@@ -660,7 +660,7 @@ Expected
 
 Actual
 
-```
+```text
 8
 8
 8

@@ -1,7 +1,7 @@
 # Ruby vs Javascript comparison
 <!-- tags: ruby, javascript, vs -->
 
-First of all it's not my writings and it's just a copy of *Artem's Tyurin* [agentcooper/js-ruby-comparison](https://github.com/agentcooper/js-ruby-comparison) repo 
+First of all it's not my writings and it's just a copy of *Artem's Tyurin* [agentcooper/js-ruby-comparison](https://github.com/agentcooper/js-ruby-comparison) repo
 
 *Note:* This comparison uses pre-*ES6* code snippets.
 
