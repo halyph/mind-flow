@@ -14,7 +14,7 @@ What other programming languages do I associate with Python, or to be precise wh
 - [PHP](https://en.wikipedia.org/wiki/PHP)
 - [Lua](https://en.wikipedia.org/wiki/Lua_(programming_language))
 - [Tcl](https://en.wikipedia.org/wiki/Tcl)
-- [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (_and similar shell scripting languages_)
+- [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) (*and similar shell scripting languages*)
 - [Powershell](https://en.wikipedia.org/wiki/PowerShell)
 - [VBA](https://en.wikipedia.org/wiki/Visual_Basic_for_Applications)
 - [Autohokey](https://www.autohotkey.com/)
@@ -24,7 +24,7 @@ What other programming languages do I associate with Python, or to be precise wh
 - [Matlab](https://en.wikipedia.org/wiki/MATLAB)
 - [Maple](https://en.wikipedia.org/wiki/Maple_(software))
 
-Actually, I decided to make this list only as an exercise for myself, to identify from a historical perspective what I touched during all these years. 
+Actually, I decided to make this list only as an exercise for myself, to identify from a historical perspective what I touched during all these years.
 
 I used some of these languages at the university or early in my career. I.e. I don't know the status quo for them, new features, their communities, etc. But all of them somehow build Python-association in my brain in a way I can use Python instead of them and be "happy".
 If you look closer at this list you will notice some domain-specific language (like GUI automation, scripting, and math tools).
@@ -34,7 +34,7 @@ But the true **Python** competitor in general sense is **Ruby**. These two are v
 I was not too fond of Python. But since everybody around me has been using Python in some or another way, I decided to use it as well, to simplify knowledge/tool sharing, contribution to other tools, etc.
 Even today, I am not a big Python fan, but there is convenience: a massive amount of libs, books, blogs, etc. It's like a universal hammer for everything.
 
-So, what does it mean _"Python is the second best language for anything"_ for me? 
+So, what does it mean *"Python is the second best language for anything"* for me?
 
 It means I will start prototyping any simple things, or throw-away scripts in Python. Even if I don't know the domain I am 99% sure there is at least some library for my current problem.
 
@@ -72,7 +72,7 @@ I don't understand why such old community hasn't agreed on some recommended buil
 But I am talking as seasonal Python user. Maybe there are some reason. Anyway, what I wanted to say: I try to avoid as much as possible any Python tools ceremonies and
 use only simplest possible standard tools: `pip`, `venv` and `requirements.txt`.
 
-Just check [Distributing Python Modules](https://docs.python.org/3.10/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3.10/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really? 
+Just check [Distributing Python Modules](https://docs.python.org/3.10/distributing/index.html), and you will find such creatures: [distutils](https://docs.python.org/3.10/library/distutils.html), [setuptools](https://setuptools.pypa.io), [wheel](https://wheel.readthedocs.io) and so on. What? Really?
 
 Do not forget, Python went public in 1991 (31 years ago). FTW!
 

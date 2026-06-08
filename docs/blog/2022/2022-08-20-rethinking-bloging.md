@@ -42,7 +42,7 @@ When I am saying *"meta data"* I mean this:
 
 - Hugo
 
-```
+```yaml
 ---
 layout: post
 title: "My awesome blog post"
@@ -53,7 +53,7 @@ description: "An insightful description for this page that Google will like"
 
 - JBake
 
-```
+```properties
 title=Weekly Links #2
 date=2013-02-01
 type=post
