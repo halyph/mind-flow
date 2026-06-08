@@ -15,7 +15,7 @@ Here is the list of articles, notes about Thor which might be helpful:
 - [Thor::Group as a sub-command with arguments][]
 - [Thor::Group generators as args of my\_command][]
 - [Namespacing Thor commands in a standalone ruby executable][]
-- [Packaging Thor commands in separate classes/modules/files][] 
+- [Packaging Thor commands in separate classes/modules/files][]
 - [Ruby Thor based executable with namespaces][]
 
 [Thor]: http://whatisthor.com/

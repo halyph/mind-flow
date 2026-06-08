@@ -90,5 +90,5 @@ Ruby was built without documentation, to build it run: rvm docs generate-ri
 - Update Textmate preferences
 ![blog_post_image](2014-11-16-how-to-fix-textmate-osx-yosemite-ruby-1-dot-8-issues/textmate_prefs_ruby.png)
 
-- Verify "updated" Textmate settings via some ruby-based bundles, 
+- Verify "updated" Textmate settings via some ruby-based bundles,
 e.g. `Bundles->Text->Duplicate Line`

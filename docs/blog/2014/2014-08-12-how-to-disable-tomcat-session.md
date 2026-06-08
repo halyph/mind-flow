@@ -1,7 +1,7 @@
 # How to disable Tomcat session serialization
 <!-- tags: java -->
 
-Suppose you have the next error while restart/stop Tomcat (in my case Tomcat 7.x): 
+Suppose you have the next error while restart/stop Tomcat (in my case Tomcat 7.x):
 
 ```java
 WARNING: Cannot serialize session attribute SPRING_SECURITY_CONTEXT for session 54DBA076EDC9B7A24C1AF76824DFD1EF
@@ -25,7 +25,7 @@ It means that Tomcat is trying to persist non-serializable objects which were ad
 
 By default manager implementation configured to perform session persistence across restarts and we want to disable this functionality.
 
-To disable this persistence feature, create a Context configuration file (_context.xml_) for your web application and add the following element there: 
+To disable this persistence feature, create a Context configuration file (*context.xml*) for your web application and add the following element there:
 
 ```xml
 <Manager pathname="" />

@@ -15,8 +15,8 @@ $ echo '{"foo": "lorem", "bar": "ipsum"}' | groovy -e 'import groovy.json.*; pri
 We can slightly improve this one-liner via adding shell alias:
 
 ```bash
-$ alias pp="groovy -e 'import groovy.json.*; println JsonOutput.prettyPrint(System.in.text)'"
-$ echo '{"foo": "lorem", "bar": "ipsum"}' | pp
+alias pp="groovy -e 'import groovy.json.*; println JsonOutput.prettyPrint(System.in.text)'"
+echo '{"foo": "lorem", "bar": "ipsum"}' | pp
 ```
 
 Also, we might use Groovy script which might be handy for simple JSON validation also:
