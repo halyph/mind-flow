@@ -69,7 +69,7 @@ I like selecting programming languages based on my subjective criteria.
 - Clojure
 - Elixir
 
-The following three FP languages are the most interesting to me: Haskell, OCaml, and Scala.
+The following three FP languages are the most interesting to me: *Haskell*, *OCaml*, and *Scala*.
 
 ### Replaced by **Python**
 
