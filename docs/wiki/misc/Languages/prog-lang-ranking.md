@@ -14,7 +14,7 @@ I like selecting programming languages based on my subjective criteria.
 ## Programming Languages
 
 - 🥇 **Golang**, **Python**
-- 🥈 JavaScript
+- 🥈 JavaScript, TypeScript
 - 🥉 C, Rust
 - Java, Scala
 
@@ -27,9 +27,9 @@ I like selecting programming languages based on my subjective criteria.
 | **Infrastructure**     | Golang |
 | **CLI**                | Golang |
 | **ML/DS/DA/DE**        | Python |
-| **Web**                | JavaScript |
+| **Web**                | JavaScript, TypeScript |
 | **Desktop**            | Python |
-| **GenAI**              | Python, Go |
+| **GenAI**              | Python, TypeScript |
 | **System programming** | C, Rust |
 
 ## On HOLD
