@@ -63,11 +63,13 @@ I like selecting programming languages based on my subjective criteria.
 *When I talk about Scala, I mean **Functional Programming**. It doesn't mean it's better than others. It's just my choice.*
 
 - Haskell
+- OCaml
 - F#
 - Elm
 - Clojure
 - Elixir
-- OCaml
+
+The following three FP languages are the most interesting to me: Haskell, OCaml, and Scala.
 
 ### Replaced by **Python**
 
