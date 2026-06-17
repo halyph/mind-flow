@@ -14,9 +14,8 @@ I like selecting programming languages based on my subjective criteria.
 ## Programming Languages
 
 - 🥇 **Golang**, **Python**
-- 🥈 TypeScript, JavaScript
-- 🥉 C, Rust
-- Java, Scala
+- 🥈 TypeScript
+- 🥉 Rust, C
 
 ### Tech Radar
 
@@ -26,7 +25,7 @@ I like selecting programming languages based on my subjective criteria.
 | **Scripting**          | Python |
 | **Infrastructure**     | Golang |
 | **CLI**                | Golang |
-| **ML/DS/DA/DE**        | Python |
+| **ML/DS/DE**           | Python |
 | **Web**                | TypeScript |
 | **Desktop**            | Python |
 | **GenAI**              | Python, TypeScript |
@@ -48,7 +47,6 @@ I like selecting programming languages based on my subjective criteria.
   - Odin
   - C3
 - Web
-  - TypeScript
   - Elm
   - PureScript
   - CoffeeScript
