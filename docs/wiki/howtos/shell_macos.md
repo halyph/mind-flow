@@ -2,7 +2,7 @@
 
 ## `lsof` - list open files
 
-### Find What Process is Locking a Port on Mac
+### Check Process on Port
 
 ```shell
 sudo lsof -i :PORTNUMBER
@@ -18,7 +18,7 @@ sudo lsof -i :PORTNUMBER
     postgres 29756 oivasiv    8u  IPv4 0xa728579d2f85d74d      0t0  TCP localhost:postgresql (LISTEN)
     ```
 
-### Find What Listens on TCP Ports on MacOS
+### List Listening Ports
 
 ```shell
 sudo lsof -iTCP -sTCP:LISTEN -P -n
