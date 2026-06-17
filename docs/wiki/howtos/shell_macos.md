@@ -1,4 +1,4 @@
-# Shell MacOS/Linux
+# Shell MacOS
 
 ## `lsof` - list open files
 
