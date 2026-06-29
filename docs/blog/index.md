@@ -9,8 +9,9 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
-## 2026 · 13
+## 2026 · 14
 
+- 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-06-04 - [Go Vanity Import Paths](2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](2026/2026-05-08-go-middleware.md)
@@ -124,7 +125,7 @@ hide:
 ## 2016 · 10
 
 - 2016-12-02 - [Scala for Ruby Developers](2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](2016/2016-12-01-scala-for-python-developers.md)
+- 2016-12-01 - [Scala for Python Developers by *Kevin Stanton*](2016/2016-12-01-scala-for-python-developers.md)
 - 2016-11-30 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](2016/2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt.md)
 - 2016-11-29 - [Ruby: The Bad Parts by Bozhidar Batsov](2016/2016-11-29-the-bad-parts-by-bozhidar-batsov.md)
 - 2016-11-28 - [Ruby and Rails: The Bad Parts by Volodymyr Melnyk](2016/2016-11-28-ruby-and-rails-the-bad-parts-by-volodymyr-melnyk.md)

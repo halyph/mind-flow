@@ -7,8 +7,9 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
-## 2026 · 13
+## 2026 · 14
 
+- 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](docs/blog/2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-06-04 - [Go Vanity Import Paths](docs/blog/2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](docs/blog/2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](docs/blog/2026/2026-05-08-go-middleware.md)
@@ -122,7 +123,7 @@ _Another attempt of blogging or personal knowledge base_
 ## 2016 · 10
 
 - 2016-12-02 - [Scala for Ruby Developers](docs/blog/2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](docs/blog/2016/2016-12-01-scala-for-python-developers.md)
+- 2016-12-01 - [Scala for Python Developers by *Kevin Stanton*](docs/blog/2016/2016-12-01-scala-for-python-developers.md)
 - 2016-11-30 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](docs/blog/2016/2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt.md)
 - 2016-11-29 - [Ruby: The Bad Parts by Bozhidar Batsov](docs/blog/2016/2016-11-29-the-bad-parts-by-bozhidar-batsov.md)
 - 2016-11-28 - [Ruby and Rails: The Bad Parts by Volodymyr Melnyk](docs/blog/2016/2016-11-28-ruby-and-rails-the-bad-parts-by-volodymyr-melnyk.md)

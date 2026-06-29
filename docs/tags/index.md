@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 182 posts • 83 tags**
+**📊 183 posts • 84 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [golang (15)](#golang) • [conference (14)](#conference) • [thoughts (14)](#thoughts)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="613" height="542" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="613" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="610" height="546" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="610" alt="Word Cloud">
   </object>
 </div>
 
@@ -144,6 +144,11 @@ Browse blog posts by tag.
 ## database (1) [↑](#tags)
 
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
+
+<a id="devex"></a>
+## devex (1) [↑](#tags)
+
+- 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](../blog/2026/2026-06-29-devbox-personal-makefile-extensions.md)
 
 <a id="diagram"></a>
 ## diagram (1) [↑](#tags)
@@ -388,8 +393,9 @@ Browse blog posts by tag.
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 
 <a id="make"></a>
-## make (4) [↑](#tags)
+## make (5) [↑](#tags)
 
+- 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](../blog/2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
 - 2023-11-27 - [Manage Go CLI tools via Go modules and tools.go](../blog/2023/2023-11-27-tools-go.md)
@@ -510,7 +516,7 @@ Browse blog posts by tag.
 - 2019-01-17 - [Algorithms, System Design, Interview Preparation - Github Repos](../blog/2019/2019-01-17-algorithms-system-design-interview-preparation.md)
 - 2017-10-31 - [Reflection about the next main scripting language](../blog/2017/2017-10-31-reflection-about-the-main-scripting-language.md)
 - 2016-12-02 - [Scala for Ruby Developers](../blog/2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](../blog/2016/2016-12-01-scala-for-python-developers.md)
+- 2016-12-01 - [Scala for Python Developers by *Kevin Stanton*](../blog/2016/2016-12-01-scala-for-python-developers.md)
 - 2016-11-30 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](../blog/2016/2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt.md)
 - 2016-11-28 - [Reserved Words of Programming languages](../blog/2016/2016-11-28-prog-lang-reserved-words.md)
 - 2015-09-25 - [Distribute application as Native Single binary](../blog/2015/2015-09-25-programming-languages-to-native-code.md)
@@ -603,7 +609,7 @@ Browse blog posts by tag.
 - 2018-05-20 - [Scala Days - Berlin, 2018 - Report](../blog/2018/2018-05-20-scaladays.md)
 - 2018-04-05 - [Programming Quizzes](../blog/2018/2018-04-05-programmin-quizzes.md)
 - 2016-12-02 - [Scala for Ruby Developers](../blog/2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](../blog/2016/2016-12-01-scala-for-python-developers.md)
+- 2016-12-01 - [Scala for Python Developers by *Kevin Stanton*](../blog/2016/2016-12-01-scala-for-python-developers.md)
 - 2016-11-28 - [Reserved Words of Programming languages](../blog/2016/2016-11-28-prog-lang-reserved-words.md)
 - 2016-05-14 - [The state of Groovy and other JVM Languages](../blog/2016/2016-05-14-the-state-of-groovy-and-other-jvm-languages.md)
 - 2015-02-02 - [Scripting in Scala](../blog/2015/2015-02-02-scripting-in-scala.md)
@@ -688,7 +694,7 @@ Browse blog posts by tag.
 - 2019-01-19 - [Python vs Javascript comparison](../blog/2019/2019-01-19-python-vs-javascript.md)
 - 2018-12-21 - [[WIP] Scala vs Haskell](../blog/2018/2018-12-21-scala-vs-haskell.md)
 - 2016-12-02 - [Scala for Ruby Developers](../blog/2016/2016-12-02-scala-for-ruby-developers.md)
-- 2016-12-01 - [Scala for Python Developers by _Kevin Stanton_](../blog/2016/2016-12-01-scala-for-python-developers.md)
+- 2016-12-01 - [Scala for Python Developers by *Kevin Stanton*](../blog/2016/2016-12-01-scala-for-python-developers.md)
 - 2016-11-30 - [Python vs. Ruby: A Battle to The Death by Gary Bernhardt](../blog/2016/2016-11-30-python-vs-ruby-battle-to-the-death-by-gary-bernhardt.md)
 - 2012-12-12 - [Groovy or JRuby for Java developer](../blog/2012/2012-12-12-groovy-or-jruby-for-java-developer.md)
 
