@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 183 posts • 84 tags**
+**📊 184 posts • 84 tags**
 
-**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [golang (15)](#golang) • [conference (14)](#conference) • [thoughts (14)](#thoughts)
+**Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [golang (16)](#golang) • [conference (14)](#conference) • [thoughts (14)](#thoughts)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="610" height="546" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="610" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="583" height="554" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="583" alt="Word Cloud">
   </object>
 </div>
 
@@ -76,8 +76,9 @@ Browse blog posts by tag.
 - 2019-01-22 - [PostgreSQL command line cheatsheet](../blog/2019/2019-01-22-postgresql-command-line-cheatsheet.md)
 
 <a id="ci"></a>
-## ci (2) [↑](#tags)
+## ci (3) [↑](#tags)
 
+- 2026-11-27 - [Go Parallel Builds: 14 Binaries, One go build](../blog/2026/2026-11-27-go-parallel-builds.md)
 - 2013-01-26 - [Jenkins hierarchical jobs and jobs status aggregation](../blog/2013/2013-01-26-jenkins-hierarchical-jobs-and-jobs.md)
 - 2012-12-31 - [Jenkins enhancements without plugins](../blog/2012/2012-12-31-jenkins-enhancements-without-plugins.md)
 
@@ -199,8 +200,9 @@ Browse blog posts by tag.
 - 2023-10-14 - [Why MacOS make version is outdated?](../blog/2023/2023-10-14-macos-make.md)
 
 <a id="golang"></a>
-## golang (15) [↑](#tags)
+## golang (16) [↑](#tags)
 
+- 2026-11-27 - [Go Parallel Builds: 14 Binaries, One go build](../blog/2026/2026-11-27-go-parallel-builds.md)
 - 2026-06-04 - [Go Vanity Import Paths](../blog/2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](../blog/2026/2026-05-10-default-config-vals.md)
 - 2026-05-08 - [Building Resilient HTTP Clients in Go: A Middleware Journey](../blog/2026/2026-05-08-go-middleware.md)
@@ -393,8 +395,9 @@ Browse blog posts by tag.
 - 2012-10-27 - [Mac OS X terminal supports colored output](../blog/2012/2012-10-27-mac-os-x-terminal-supports-colored.md)
 
 <a id="make"></a>
-## make (5) [↑](#tags)
+## make (6) [↑](#tags)
 
+- 2026-11-27 - [Go Parallel Builds: 14 Binaries, One go build](../blog/2026/2026-11-27-go-parallel-builds.md)
 - 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](../blog/2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-05-05 - [common-make: Zero-Setup Build Automation for Go Services](../blog/2026/2026-05-05-common-make.md)
 - 2026-04-23 - [Standardizing Go Build Systems Across 15 Microservices with Claude Code](../blog/2026/2026-04-23-standardizing-go-build-systems.md)
