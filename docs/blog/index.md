@@ -9,8 +9,9 @@ hide:
 
 <div class="note inline end"> <p><img alt="assets/logo.png" src="../assets/images/logo.png"></p> </div>
 
-## 2026 · 14
+## 2026 · 15
 
+- 2026-11-27 - [Go Parallel Builds: 14 Binaries, One go build](2026/2026-11-27-go-parallel-builds.md)
 - 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-06-04 - [Go Vanity Import Paths](2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](2026/2026-05-10-default-config-vals.md)

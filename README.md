@@ -7,8 +7,9 @@
 _Another attempt of blogging or personal knowledge base_
 <br /><br /><br />
 
-## 2026 · 14
+## 2026 · 15
 
+- 2026-11-27 - [Go Parallel Builds: 14 Binaries, One go build](docs/blog/2026/2026-11-27-go-parallel-builds.md)
 - 2026-06-29 - [devbox: Personal Makefile Extensions Without Team Conflicts](docs/blog/2026/2026-06-29-devbox-personal-makefile-extensions.md)
 - 2026-06-04 - [Go Vanity Import Paths](docs/blog/2026/2026-06-04-go-vanity-import-paths.md)
 - 2026-05-10 - [Default Config Values are Actually Hidden Landmines](docs/blog/2026/2026-05-10-default-config-vals.md)
