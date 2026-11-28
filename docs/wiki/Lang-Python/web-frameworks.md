@@ -11,9 +11,9 @@ The number of Web frameworks is much [bigger](https://wiki.python.org/moin/WebFr
 
 | Name | Category| Github stars  | License |
 |------|---------|---------------|---------|
-:simple-django: [django](https://github.com/django/django) | Fullstack | 30.4k | BSD 3-Clause
-:simple-flask: [flask](https://github.com/pallets/flask/) | Micro | 16k | BSD 3-Clause
-:simple-fastapi: [fastapi](https://github.com/tiangolo/fastapi) | API | 5.5k | MIT
+[django](https://github.com/django/django) | Fullstack | 30.4k | BSD 3-Clause
+[flask](https://github.com/pallets/flask/) | Micro | 16k | BSD 3-Clause
+[fastapi](https://github.com/tiangolo/fastapi) | API | 5.5k | MIT
 
 ## Data Science & ML Web Frameworks
 
