@@ -207,7 +207,7 @@ One snapshot per rewrite, in table order. Figures are as reported by each compan
 - **Result:** 6x CPU and 15x memory efficiency.
 - **By the numbers:** 2 engineers, one quarter (Q2 2026).
 - **AI:** Codex with GPT-5.5.
-- **Source:** [OpenAI](https://openai.com/index/scaling-storage-one-billion-users-part-one/)
+- **Source:** [OpenAI](https://openai.com/index/scaling-storage-one-billion-users-part-one/) — ⭐ *Must-read, though not for the rewrite itself (one short section): measuring asyncio event-loop delay, a metastable failure from aiohttp's LIFO connection reuse, a config poll that stalled workers.*
 
 ### Google: Chrome XML parser
 
