@@ -2,14 +2,14 @@
 
 Browse blog posts by tag.
 
-**📊 184 posts • 84 tags**
+**📊 185 posts • 84 tags**
 
 **Top Tags**: [java (49)](#java) • [python (24)](#python) • [ruby (24)](#ruby) • [scala (20)](#scala) • [golang (16)](#golang) • [conference (14)](#conference) • [thoughts (14)](#thoughts)
 
 
 <div style="text-align: center;">
-  <object data="./cloud.svg" type="image/svg+xml" width="583" height="554" aria-label="Word Cloud">
-    <img src="./cloud.svg" width="583" alt="Word Cloud">
+  <object data="./cloud.svg" type="image/svg+xml" width="558" height="546" aria-label="Word Cloud">
+    <img src="./cloud.svg" width="558" alt="Word Cloud">
   </object>
 </div>
 
@@ -586,8 +586,9 @@ Browse blog posts by tag.
 - 2009-12-27 - [Why I've chosen Ruby as main scripting language for my toolbox](../blog/2009/2009-12-27-why-i-chosen-ruby-as-main-scripting.md)
 
 <a id="rust"></a>
-## rust (4) [↑](#tags)
+## rust (5) [↑](#tags)
 
+- 2026-11-28 - [Big Rust Rewrites, 2025–2026](../blog/2026/2026-11-28-big-rust-rewrites.md)
 - 2025-06-10 - [The State of "Let's Rewrite It in Rust"](../blog/2025/2025-06-10-rewrite-in-rust.md)
 - 2025-06-04 - [Microsoft Gets Rusty: Thoughts on Rust Adoption and C/C++ Departure](../blog/2025/2025-06-04-ms-rusty.md)
 - 2022-11-17 - [Popularity of Programming Languages - 2022](../blog/2022/2022-11-17-prog-lang-pop.md)
